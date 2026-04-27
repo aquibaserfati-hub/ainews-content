@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F8F4EC">
+<title>AINews Weekly — App Icon Candidates</title>
+<style>
+  :root {
+    --cream: #F8F4EC;
+    --card: #FBF7EF;
+    --ink: #1F1813;
+    --ink-2: #5A4D43;
+    --ink-3: #8E7E70;
+    --amber: #9C5F1A;
+    --amber-soft: rgba(156, 95, 26, 0.18);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: -apple-system, "New York", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { padding: 24px 18px 80px; max-width: 720px; margin: 0 auto; }
+  header { padding-bottom: 18px; border-bottom: 1px solid var(--amber-soft); margin-bottom: 22px; }
+  h1 { margin: 0 0 6px; font-size: 28px; font-weight: 600; }
+  .lede { color: var(--ink-2); margin: 0; font-size: 15px; line-height: 1.45; font-family: -apple-system, system-ui, sans-serif; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--amber-soft);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 18px;
+  }
+  .icon-frame {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    margin: 8px 0 14px;
+    box-shadow: 0 4px 16px rgba(31, 24, 19, 0.08);
+  }
+  .icon-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .label { display: flex; align-items: baseline; gap: 10px; }
+  .label .letter { font-size: 24px; font-weight: 700; color: var(--amber); }
+  .label .name { font-size: 18px; font-weight: 600; }
+  .desc { color: var(--ink-2); font-size: 14px; line-height: 1.5; margin: 6px 0 0; font-family: -apple-system, system-ui, sans-serif; }
+  .pros, .cons { font-size: 13px; line-height: 1.45; margin: 8px 0 0; padding-left: 0; list-style: none; font-family: -apple-system, system-ui, sans-serif; }
+  .pros li::before { content: "✓ "; color: #5F9C7A; font-weight: 700; }
+  .cons li::before { content: "× "; color: #B85F5F; font-weight: 700; }
+  .reco {
+    background: var(--amber-soft);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin: 0 0 22px;
+    font-family: -apple-system, system-ui, sans-serif;
+    font-size: 14px; line-height: 1.5;
+  }
+  .reco strong { color: var(--amber); }
+  footer { color: var(--ink-3); font-size: 12px; text-align: center; margin-top: 32px; font-family: -apple-system, system-ui, sans-serif; }
+  /* Real iPhone home-screen squircle preview at the bottom of each card */
+  .squircle-preview {
+    display: flex; align-items: center; gap: 10px;
+    color: var(--ink-3); font-size: 12px;
+    font-family: -apple-system, system-ui, sans-serif;
+    margin-top: 12px;
+  }
+  .squircle-preview .mini {
+    width: 44px; height: 44px; border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(31, 24, 19, 0.12);
+  }
+  .squircle-preview .mini img { width: 100%; height: 100%; object-fit: cover; display: block; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>App icon candidates</h1>
+    <p class="lede">Three directions for AINews Weekly. Each is a 1024 × 1024 PNG (Apple applies the rounded-corner mask itself). Pick one, tell Claude which letter, and we ship.</p>
+  </header>
+
+  <div class="reco"><strong>Recommendation:</strong> B — strongest brand identity (reads &ldquo;AI&rdquo; instantly at any size). Needs one re-render to fill the full square edge-to-edge.</div>
+
+  <article class="card">
+    <div class="label"><span class="letter">A</span><span class="name">Serif &ldquo;A&rdquo;</span></div>
+    <div class="icon-frame"><img src="A.png" alt="Bold serif A in amber on cream"></div>
+    <p class="desc">Single bold serif capital A in deep amber on cream paper, with a thin amber rule beneath.</p>
+    <ul class="pros"><li>Already edge-to-edge, ships clean as-is</li><li>Classic, magazine-masthead aesthetic</li></ul>
+    <ul class="cons"><li>At 29pt the rule may disappear; reads as &ldquo;just a letter A&rdquo;</li></ul>
+    <div class="squircle-preview"><span class="mini"><img src="A.png" alt=""></span><span>How it looks at home-screen size</span></div>
+  </article>
+
+  <article class="card">
+    <div class="label"><span class="letter">B</span><span class="name">AI WEEKLY monogram</span></div>
+    <div class="icon-frame"><img src="B.png" alt="AI WEEKLY monogram in amber serif"></div>
+    <p class="desc">&ldquo;AI&rdquo; large in serif amber, &ldquo;WEEKLY&rdquo; small below in muted gray. Tells the user exactly what the app is.</p>
+    <ul class="pros"><li>Strongest brand identity</li><li>&ldquo;AI&rdquo; reads at any size, even when WEEKLY is too small</li><li>Custom typography, doesn&rsquo;t look like every other AI app</li></ul>
+    <ul class="cons"><li>Has an inner-squircle artifact (model rendered home-screen mockup); needs a quick re-render to fix</li></ul>
+    <div class="squircle-preview"><span class="mini"><img src="B.png" alt=""></span><span>How it looks at home-screen size</span></div>
+  </article>
+
+  <article class="card">
+    <div class="label"><span class="letter">C</span><span class="name">Newspaper page</span></div>
+    <div class="icon-frame"><img src="C.png" alt="Folded newspaper page mark in amber on cream"></div>
+    <p class="desc">Abstract folded newspaper / page icon in amber on cream.</p>
+    <ul class="pros"><li>No typography &mdash; works in any locale</li><li>Already edge-to-edge</li></ul>
+    <ul class="cons"><li>Reads as a generic notes / files app icon</li><li>Loses the editorial brand identity</li></ul>
+    <div class="squircle-preview"><span class="mini"><img src="C.png" alt=""></span><span>How it looks at home-screen size</span></div>
+  </article>
+
+  <footer>Generated by Claude Code on 2026-04-27</footer>
+</main>
+</body>
+</html>
