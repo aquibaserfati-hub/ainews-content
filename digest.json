@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "weekOf": "2026-04-20T00:00:00Z",
+  "reportGeneratedAt": "2026-04-27T14:00:00Z",
+  "learnGeneratedAt": "2026-04-27T14:00:00Z",
+  "report": [
+    {
+      "id": "anthropic-managed-agents-memory-2026-04-23",
+      "title": "Anthropic ships persistent memory for Claude Managed Agents",
+      "summary": "Memory for Claude Managed Agents hit public beta on April 23 — filesystem-backed, auditable, no separate access request needed. Agents can now accumulate and share knowledge across sessions; early users like Rakuten report 97% fewer first-pass errors.",
+      "category": "anthropic",
+      "sourceURL": "https://platform.claude.com/docs/en/release-notes/overview",
+      "significance": 8
+    },
+    {
+      "id": "anthropic-claude-opus-47-2026-04-16",
+      "title": "Claude Opus 4.7 ships with 3x vision resolution and task budgets",
+      "summary": "Opus 4.7 landed April 16 at unchanged $5/$25 pricing. It hits 70% on CursorBench (+12pp over 4.6), supports 3.75MP images (3x resolution), and introduces task budgets and xhigh effort for agentic cost control. Breaking API change: temperature/top_p/top_k now return 400 errors, and the new tokenizer can add up to 35% more billable tokens.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/claude-opus-4-7",
+      "significance": 8
+    },
+    {
+      "id": "google-cloud-next-adk-v1-a2a-2026-04-22",
+      "title": "Google Cloud Next ships ADK v1.0, A2A protocol, and Gemini Enterprise Agent Platform",
+      "summary": "At Cloud Next 2026 in Las Vegas, Google renamed Vertex AI to the Gemini Enterprise Agent Platform, shipped ADK stable v1.0 across Python, Go, Java, and TypeScript, and put A2A protocol v1.0 into production at 150 organizations. Native MCP server hosting, Project Mariner browsing agent, and Workspace Studio no-code builder also shipped.",
+      "category": "google",
+      "sourceURL": "https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era",
+      "significance": 8
+    },
+    {
+      "id": "huggingface-ml-intern-2026-04-21",
+      "title": "Hugging Face open-sources ml-intern, an autonomous ML research and training agent",
+      "summary": "ml-intern is a CLI agent built on smolagents that runs the full post-training loop: paper discovery on arXiv, dataset pulls from the Hub, training job dispatch, and eval-driven iteration. It outscored Claude Code on scientific reasoning and Codex on healthcare benchmarks, and installs in one uv command.",
+      "category": "otherLLM",
+      "sourceURL": "https://github.com/huggingface/ml-intern",
+      "significance": 7
+    },
+    {
+      "id": "google-40b-anthropic-investment-2026-04-24",
+      "title": "Google commits up to $40B in Anthropic, doubling down on enterprise AI",
+      "summary": "Alphabet plans to invest $10B upfront in Anthropic with up to $30B more tied to performance milestones. Anthropic's run-rate revenue has already surpassed $30B, up from $9B at end of 2025 — the investment underscores enterprise AI as Google's primary competitive battleground.",
+      "category": "anthropic",
+      "sourceURL": "https://www.cryptopolitan.com/google-commits-40-billion-investment-to-claude-ai-developer-anthropic/",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-managed-agents-platform-launch-2026-04-08",
+      "title": "Anthropic launches Claude Managed Agents public beta with sandboxed execution",
+      "summary": "Claude Managed Agents (launched April 8) gives teams a fully hosted agent runtime: secure sandboxing, long-running sessions, built-in tool execution, and SSE streaming — all behind the managed-agents-2026-04-01 beta header at $0.08/session-hour plus normal token rates.",
+      "category": "anthropic",
+      "sourceURL": "https://platform.claude.com/docs/en/managed-agents/overview",
+      "significance": 7
+    },
+    {
+      "id": "frontier-labs-model-copying-coalition-2026-04-06",
+      "title": "OpenAI, Anthropic, and Google coordinate to block adversarial model distillation",
+      "summary": "The three labs are sharing detection signals through the Frontier Model Forum to catch Chinese competitors using their APIs to distill model weights without authorization. This is an industry-first coordinated enforcement effort, not just a policy update.",
+      "category": "other",
+      "sourceURL": "https://www.bloomberg.com/news/articles/2026-04-06/openai-anthropic-google-unite-to-combat-model-copying-in-china",
+      "significance": 6
+    }
+  ],
+  "learn": [
+    {
+      "id": "claude-managed-agents-memory-learn",
+      "name": "Claude Managed Agents Memory API",
+      "category": "anthropic",
+      "oneLineDescription": "Filesystem-backed persistent memory for Claude agents that survives across sessions.",
+      "estimatedSetupMinutes": 10,
+      "detail": {
+        "whatItDoes": "Memory on Claude Managed Agents adds a persistent, filesystem-based storage layer to agent sessions. Memories are stored as structured Markdown files in a workspace-scoped memory store. Agents can read, write, and update those files across sessions using the same bash and code execution tools they already use for agentic tasks — no separate memory SDK required.\n\nEvery memory write is logged with an audit trail (agent ID, session ID, timestamp), and developers can view, edit, or delete memories via the Claude Console or the API. The feature is available now in public beta under the standard `managed-agents-2026-04-01` beta header — no separate access request needed.",
+        "whoItsFor": "Backend engineers and platform teams building recurring-task agents: document verification pipelines, code review bots, customer support agents, or any workflow that runs the same agent repeatedly and benefits from accumulated learning. Particularly useful if you are already on Claude Managed Agents and want to reduce prompt-engineering overhead caused by stateless sessions.",
+        "pros": [
+          "No separate memory infrastructure to build or host — mounts directly on the agent's existing filesystem",
+          "Full audit trail per memory change; memories are editable and deletable via API or Claude Console",
+          "Shared memory across agents in the same workspace — one agent's learning is available to others",
+          "Available immediately under the existing managed-agents beta header, no new access request"
+        ],
+        "cons": [
+          "Anthropic-hosted only — sensitive workloads (legal, medical, financial) should review data residency before adopting",
+          "Multi-agent coordination and self-evaluation (the most powerful capabilities) are still research preview, not in public beta",
+          "Adds $0.08/session-hour runtime cost on top of normal token rates"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+ or Node 20+\n- Anthropic API key with Managed Agents access\n- `anthropic` SDK v0.52.0 or later (`pip install -U anthropic`)\n\n## 1. Create a Managed Agent with memory enabled\n\n```bash\nexport ANTHROPIC_API_KEY=sk-ant-...\n```\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\n\n# Create a memory store for your workspace\nmemory_store = client.beta.agents.memory_stores.create(\n    name=\"doc-review-memory\",\n    description=\"Accumulated knowledge for document verification agent\",\n)\nprint(\"Memory store ID:\", memory_store.id)\n```\n\n## 2. Create an agent attached to the memory store\n\n```python\nagent = client.beta.agents.create(\n    model=\"claude-opus-4-7\",\n    name=\"doc-reviewer\",\n    tools=[{\"type\": \"bash_20250124\"}, {\"type\": \"computer_20250124\"}],\n    memory_store_id=memory_store.id,\n    betas=[\"managed-agents-2026-04-01\"],\n)\nprint(\"Agent ID:\", agent.id)\n```\n\n## 3. Run a session — the agent will read and write memory automatically\n\n```python\nsession = client.beta.agents.sessions.create(\n    agent_id=agent.id,\n    betas=[\"managed-agents-2026-04-01\"],\n)\n\nrun = client.beta.agents.sessions.run(\n    agent_id=agent.id,\n    session_id=session.id,\n    input=\"Review the uploaded contract for recurring issues.\",\n    betas=[\"managed-agents-2026-04-01\"],\n)\n\nfor event in run:\n    if event.type == \"message_delta\":\n        print(event.delta.text, end=\"\", flush=True)\n```\n\n## 4. Inspect and edit memories via API\n\n```python\n# List all memories in the store\nmemories = client.beta.agents.memory_stores.memories.list(\n    memory_store_id=memory_store.id,\n    betas=[\"managed-agents-2026-04-01\"],\n)\nfor mem in memories.data:\n    print(mem.id, mem.content[:120])\n\n# Delete a specific memory\nclient.beta.agents.memory_stores.memories.delete(\n    memory_store_id=memory_store.id,\n    memory_id=\"mem_abc123\",\n    betas=[\"managed-agents-2026-04-01\"],\n)\n```\n\n## Gotchas\n- **Beta header is mandatory on every request.** Omitting `managed-agents-2026-04-01` returns a 400. The SDK does NOT add it automatically unless you pass it explicitly.\n- **Memory is workspace-scoped, not agent-scoped.** Multiple agents share the same store — useful for collaboration, but requires naming discipline to avoid memory collisions.\n- **Session billing starts on `run()`, not on `create()`.** Idle sessions do not accrue the $0.08/hr runtime charge.",
+        "sourceURL": "https://platform.claude.com/docs/en/managed-agents/overview"
+      }
+    },
+    {
+      "id": "google-adk-v1-python-learn",
+      "name": "Google Agent Development Kit (ADK) v1.0",
+      "category": "google",
+      "oneLineDescription": "Open-source, code-first framework for building multi-agent systems on Gemini or any model.",
+      "estimatedSetupMinutes": 8,
+      "detail": {
+        "whatItDoes": "Google's Agent Development Kit (ADK) is an open-source agent framework available in Python, TypeScript, Go, and Java. It reached stable v1.0 at Google Cloud Next 2026. ADK lets you compose single agents or multi-agent pipelines using a simple declarative API, attach tools (Google Search, MCP tools, custom functions, OpenAPI specs), and run locally or deploy to Cloud Run or any container runtime.\n\nADK natively supports the A2A (Agent-to-Agent) protocol v1.0, meaning agents built with ADK can interoperate with agents built in LangGraph, CrewAI, AutoGen, Semantic Kernel, or LlamaIndex without custom glue code. The framework also ships a built-in dev UI (`adk web`) for interactive debugging and evaluation.",
+        "whoItsFor": "Backend engineers and ML platform teams building production multi-agent systems. Particularly relevant if you are already on Google Cloud (Vertex AI / Cloud Run) or need A2A interoperability across heterogeneous agent frameworks. The Python SDK is the most mature; Go and Java are also stable. TypeScript is available but the Python 2.0 beta adds more features.",
+        "pros": [
+          "Model-agnostic despite Gemini defaults — adapters for OpenAI, Anthropic, and local models are available",
+          "A2A v1.0 built-in means agents interoperate with LangGraph, CrewAI, AutoGen out of the box",
+          "Ships a local dev UI (`adk web`) and eval harness (`adk eval`) — no external tooling needed to test agents",
+          "Apache 2.0 licensed; deployable to any container or Kubernetes environment"
+        ],
+        "cons": [
+          "Python 2.0 beta (workflows, agent teams) introduces breaking changes from v1.x — pin your version in production",
+          "Heavy Gemini/Google Cloud integration points mean some features require a GCP project and billing enabled"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+ (3.11 recommended)\n- Google AI Studio API key (`GOOGLE_API_KEY`) OR a GCP project with Vertex AI enabled\n- `uv` or `pip` for package management\n\n## 1. Install ADK\n\n```bash\npip install google-adk\n# or with uv:\nuv add google-adk\n```\n\n## 2. Set your API key\n\n```bash\nexport GOOGLE_API_KEY=AIza...   # Google AI Studio key\n# OR for Vertex AI:\nexport GOOGLE_CLOUD_PROJECT=my-project\nexport GOOGLE_CLOUD_LOCATION=us-central1\n```\n\n## 3. Build a simple agent\n\n```python\n# agent.py\nfrom google.adk.agents import Agent\nfrom google.adk.tools import google_search\n\nroot_agent = Agent(\n    name=\"research_assistant\",\n    model=\"gemini-flash-latest\",  # or \"gemini-2.5-pro\", \"claude-opus-4-7\", etc.\n    instruction=\"You are a helpful research assistant. Search the web when needed.\",\n    description=\"Searches and summarizes topics.\",\n    tools=[google_search],\n)\n```\n\n## 4. Run locally with the dev UI\n\n```bash\nadk web\n# Opens http://localhost:8000 — interactive chat + tool trace viewer\n```\n\n## 5. Build a multi-agent system\n\n```python\nfrom google.adk.agents import Agent\n\nresearcher = Agent(\n    name=\"researcher\",\n    model=\"gemini-flash-latest\",\n    instruction=\"Find and summarize relevant information on a topic.\",\n)\n\nwriter = Agent(\n    name=\"writer\",\n    model=\"gemini-2.5-pro\",\n    instruction=\"Write a polished report based on the researcher's findings.\",\n)\n\norchestrator = Agent(\n    name=\"orchestrator\",\n    model=\"gemini-2.5-pro\",\n    instruction=\"Coordinate researcher and writer to produce a final report.\",\n    sub_agents=[researcher, writer],\n)\n```\n\n## 6. Run an eval suite\n\n```bash\nadk eval ./my_agent ./my_agent/eval_set.evalset.json\n```\n\n## Gotchas\n- **`gemini-flash-latest` routing may fail on regional endpoints.** If you are in a non-`us-central1` region, use an explicit version string like `gemini-2.5-flash-001` instead of the alias.\n- **ADK Python 2.0 beta is not backward-compatible with 1.x.** If you are pinning a production deployment, use `pip install google-adk==1.x.x` explicitly.\n- **`adk web` binds to `127.0.0.1` by default.** In Cloud Shell or remote VMs, run `adk web --host 0.0.0.0` and add CORS exemptions as needed.",
+        "sourceURL": "https://github.com/google/adk-python"
+      }
+    },
+    {
+      "id": "huggingface-ml-intern-learn",
+      "name": "Hugging Face ml-intern",
+      "category": "otherLLM",
+      "oneLineDescription": "Open-source CLI agent that autonomously reads papers, trains models, and ships to the HF Hub.",
+      "estimatedSetupMinutes": 10,
+      "detail": {
+        "whatItDoes": "ml-intern is an open-source agentic CLI from Hugging Face that automates end-to-end post-training ML workflows. Built on the smolagents framework, it runs an agentic loop of up to 300 iterations per task. Given a goal (e.g. \"improve reasoning on GPQA\"), it browses arXiv and hf.co/papers, walks citation graphs, pulls and reformats datasets from the Hub, writes training scripts, launches GPU jobs via Hugging Face Jobs when local compute is unavailable, reads eval outputs, diagnoses failures, and retrains until benchmarks improve.\n\nIn its launch demo, ml-intern took Qwen3-1.7B from ~10% to 32% on GPQA in under 10 hours on a single H100 — outscoring Claude Code on scientific reasoning and beating Codex on a healthcare benchmark by 60%. The tool uses Anthropic Claude models by default but accepts any LiteLLM-compatible model ID.",
+        "whoItsFor": "ML researchers and engineers who repeatedly run the post-training loop (dataset curation, fine-tuning, eval, iterate) and want to automate the tedious parts. Also useful for small teams or individuals who lack the bandwidth to continuously monitor training runs — the agent watches runs and self-corrects. Requires an HF account and at least one of: local GPU, HF Jobs access, or an API key for a hosted model.",
+        "pros": [
+          "Installs in one `uv` command; accepts any LiteLLM model ID so you are not locked to one provider",
+          "Treats the entire HF Hub as a filesystem — dataset pulls, model card reads, and job submissions are first-class operations",
+          "Self-correcting training loop: detects reward collapse, runs ablations, and retrains autonomously",
+          "Benchmark results are already public (PostTrainBench, HealthBench) and community-reproducible"
+        ],
+        "cons": [
+          "Very early — issues backlog is growing fast, and several bugs around tool-call arg coercion are open",
+          "Real-world performance on messy datasets (licensing issues, quality variance) is untested outside curated demos"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+ and `uv` installed (`pip install uv` or `brew install uv`)\n- Hugging Face account with an API token (`HF_TOKEN`)\n- At least one of: `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, or another LiteLLM-compatible key\n- Optional: `GITHUB_TOKEN` for code search across GitHub repos\n\n## 1. Clone and install\n\n```bash\ngit clone git@github.com:huggingface/ml-intern.git\ncd ml-intern\nuv sync\nuv tool install -e .\n```\n\n## 2. Configure environment variables\n\n```bash\ncp .env.example .env\n# Then edit .env:\n```\n\n```bash\n# .env\nANTHROPIC_API_KEY=sk-ant-...      # default model provider\nHF_TOKEN=hf_...                    # required for Hub access\nGITHUB_TOKEN=ghp_...               # optional, enables code search\n# OPENAI_API_KEY=sk-...            # alternative if not using Anthropic\n```\n\n## 3. Run ml-intern on a task\n\n```bash\n# Improve reasoning performance on a base model\nml-intern run \"Fine-tune Qwen3-1.7B to improve GPQA reasoning. \\\n  Use RL post-training. Budget: 10 hours on H100.\"\n```\n\n```bash\n# Or launch the web UI (accessible from phone/desktop)\nml-intern web\n```\n\n## 4. Use a different model backend\n\n```bash\n# Any LiteLLM-compatible model ID works\nml-intern run --model openai/gpt-5.4 \"Fine-tune a sentiment classifier on SST-2.\"\nml-intern run --model anthropic/claude-sonnet-4-6 \"...\"\n```\n\n## 5. Monitor a training run\n\nml-intern uses Trackio (HF-native experiment tracker) for logging. View runs at:\n\n```bash\n# Runs are automatically uploaded to your HF profile\nhttps://huggingface.co/<your-username>/trackio\n```\n\n## Gotchas\n- **`HF_TOKEN` is not optional.** The agent uses it to pull datasets, inspect model cards, and submit training jobs. Without it, most tool calls will fail silently.\n- **Local GPU vs. HF Jobs:** If no local GPU is detected, the agent automatically dispatches to Hugging Face Jobs. Make sure your HF account has Jobs access enabled, or the agent will stall waiting for compute.\n- **Context compaction at 170k tokens:** Long runs auto-compact message history. This can lose intermediate reasoning. For critical tasks, check the session logs uploaded to your HF profile after completion.\n- **Tool arg coercion bug (open as of Apr 25):** If the agent crashes with a TypeError on tool calls, it is likely hitting the known `read` tool offset/limit bug (issue #119). Until the fix merges, pin to a stable commit or apply the patch manually.",
+        "sourceURL": "https://github.com/huggingface/ml-intern"
+      }
+    },
+    {
+      "id": "anthropic-claude-opus-47-api-learn",
+      "name": "Claude Opus 4.7 API Migration",
+      "category": "anthropic",
+      "oneLineDescription": "Opus 4.7 has breaking API changes — task budgets, xhigh effort, and a new tokenizer to plan around.",
+      "estimatedSetupMinutes": 15,
+      "detail": {
+        "whatItDoes": "Claude Opus 4.7 (launched April 16, 2026) ships significant capability improvements for agentic coding and vision, but also contains several breaking changes from Opus 4.6. The most impactful: temperature, top_p, and top_k now return 400 errors if set; extended thinking budgets are removed in favor of adaptive thinking only; and a new tokenizer may bill 1.0–1.35x more tokens for the same text at the same $5/$25 list price.\n\nNew features builders should adopt: task budgets (cap token spend for agentic loops via beta header), xhigh effort level (above high, now the default in Claude Code), and /ultrareview (deep multi-agent code review slash command in Claude Code). Vision resolution jumped from 1.15MP to 3.75MP (2576px max), and thinking content is now hidden by default in the response stream.",
+        "whoItsFor": "Any engineering team currently calling claude-opus-4-6 via the Messages API. Migration is not optional if you set temperature or use extended thinking budgets — those requests will start returning 400s. Teams running long-horizon agentic workflows should evaluate task budgets as a cost-control primitive. Claude Code power users should explore /ultrareview for automated PR review.",
+        "pros": [
+          "70% CursorBench (+12pp over 4.6) and 98.5% visual-acuity — real benchmark gains for coding and vision workloads",
+          "Task budgets let agents self-limit token spend without external orchestration logic",
+          "Adaptive thinking reliably outperforms old extended thinking budgets in Anthropic's internal evals",
+          "Same $5/$25 per MTok pricing — no price increase with the upgrade"
+        ],
+        "cons": [
+          "New tokenizer adds up to 35% more billable tokens — must re-benchmark cost on real traffic before switching production",
+          "Setting temperature/top_p/top_k now returns a hard 400 error — silent migration risk if you forget to strip these params"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- `anthropic` Python SDK >= 0.52.0 or Node SDK >= 0.30.0\n- Existing Opus 4.6 integration to migrate\n\n## 1. Update your model identifier\n\n```python\n# Before\nmodel = \"claude-opus-4-6-20260219\"\n\n# After\nmodel = \"claude-opus-4-7\"\n```\n\n## 2. Strip temperature / top_p / top_k (BREAKING)\n\n```python\n# Before (Opus 4.6) — this now returns HTTP 400 on Opus 4.7\nresponse = client.messages.create(\n    model=\"claude-opus-4-7\",\n    max_tokens=4096,\n    temperature=0.7,   # REMOVE THIS\n    top_p=0.9,         # REMOVE THIS\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n\n# After — omit sampling params entirely\nresponse = client.messages.create(\n    model=\"claude-opus-4-7\",\n    max_tokens=4096,\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n## 3. Migrate extended thinking to adaptive thinking (BREAKING)\n\n```python\n# Before (Opus 4.6)\nthinking = {\"type\": \"enabled\", \"budget_tokens\": 32000}  # 400 error on 4.7\n\n# After (Opus 4.7)\nthinking = {\"type\": \"adaptive\"}\noutput_config = {\"effort\": \"high\"}  # or \"xhigh\" for max reasoning\n\nresponse = client.messages.create(\n    model=\"claude-opus-4-7\",\n    max_tokens=128000,\n    thinking=thinking,\n    output_config=output_config,\n    messages=[{\"role\": \"user\", \"content\": \"Refactor this codebase.\"}],\n)\n```\n\n## 4. Add task budgets for agentic loops (new beta feature)\n\n```python\nresponse = client.beta.messages.create(\n    model=\"claude-opus-4-7\",\n    max_tokens=128000,\n    output_config={\n        \"effort\": \"high\",\n        \"task_budget\": {\"type\": \"tokens\", \"total\": 50000},\n    },\n    messages=[{\"role\": \"user\", \"content\": \"Review the codebase and propose a refactor plan.\"}],\n    betas=[\"task-budgets-2026-03-13\"],\n)\n```\n\n## 5. Re-enable visible thinking if your UI streams reasoning\n\n```python\n# Thinking is hidden by default in 4.7 — this causes a silent pause before output\n# Re-enable summarized display:\noutput_config = {\n    \"effort\": \"high\",\n    \"thinking_display\": {\"type\": \"summarized\"},\n}\n```\n\n## 6. Benchmark token costs before switching production traffic\n\n```python\n# Count tokens on both models for your real prompts\ncount_46 = client.messages.count_tokens(\n    model=\"claude-opus-4-6-20260219\",\n    messages=your_real_messages,\n)\ncount_47 = client.messages.count_tokens(\n    model=\"claude-opus-4-7\",\n    messages=your_real_messages,\n)\nprint(f\"Token delta: {count_47.input_tokens / count_46.input_tokens:.2f}x\")\n# Expect 1.0–1.35x. If >1.2x, run a cost projection before flipping.\n```\n\n## Gotchas\n- **The tokenizer change is silent.** Same list price, potentially 35% more tokens billed. Run the count_tokens comparison above before migrating batch jobs or high-volume API calls.\n- **task-budgets beta header is required.** The feature is in public beta; omitting the header silently ignores the `task_budget` field with no error.\n- **Thinking is off by default.** Requests with no `thinking` field run without thinking at all — not the same as old behavior where thinking was implicitly available.",
+        "sourceURL": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7"
+      }
+    }
+  ]
+}
