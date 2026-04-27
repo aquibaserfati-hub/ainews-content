@@ -82,14 +82,41 @@ export async function callClaudeForJson(
   // Use the LAST text block — that's the final answer after any tool use.
   const lastText = textBlocks[textBlocks.length - 1].trim();
 
-  // Strip any accidental code-fence wrapping. Defensive only — the prompt
-  // explicitly forbids fences, but Claude occasionally adds them anyway.
-  return stripCodeFence(lastText);
+  return extractJson(lastText);
 }
 
-function stripCodeFence(s: string): string {
-  // Matches ```json ... ``` or ``` ... ``` at the boundaries.
-  const fenceMatch = s.match(/^```(?:json)?\s*\n([\s\S]*?)\n```\s*$/);
+/**
+ * Pull the JSON object out of Claude's response.
+ *
+ * The prompt asks for raw JSON only, but real-world responses occasionally
+ * include preamble text like "Now I have all the data..." before the JSON,
+ * trailing commentary after, and/or wrap the JSON in ```json fences.
+ *
+ * Strategy:
+ *   1. If a ```json/``` fenced block exists, extract that (highest signal).
+ *   2. Otherwise, slice from the first `{` to the LAST `}` (handles
+ *      preludes, trailing text, and pure JSON in one path).
+ *   3. Throw if no `{` is present at all.
+ *
+ * Brittle on nested JSON-in-string-values containing literal `}` followed
+ * by trailing text in the same field, but our schema doesn't produce that
+ * shape — string values are bounded by quotes, not braces.
+ */
+export function extractJson(s: string): string {
+  const trimmed = s.trim();
+
+  // Case 1: fenced block anywhere in response.
+  const fenceMatch = trimmed.match(/```(?:json)?\s*\n([\s\S]*?)\n```/);
   if (fenceMatch) return fenceMatch[1].trim();
-  return s;
+
+  // Case 2: first `{` to last `}`. Covers pure JSON, preludes, and trailing text.
+  const firstBrace = trimmed.indexOf("{");
+  const lastBrace = trimmed.lastIndexOf("}");
+  if (firstBrace !== -1 && lastBrace > firstBrace) {
+    return trimmed.slice(firstBrace, lastBrace + 1);
+  }
+
+  throw new Error(
+    `Could not extract JSON from Claude response (first 500 chars):\n${trimmed.slice(0, 500)}`,
+  );
 }

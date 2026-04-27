@@ -3,6 +3,7 @@ import {
   withRetries,
   NoRetryError,
   RetryExhaustedError,
+  isRateLimitError,
 } from "../src/retry.ts";
 
 const noopSleep = (_ms: number) => Promise.resolve();
@@ -81,5 +82,49 @@ describe("withRetries", () => {
     await expect(
       withRetries(fn, { max: 0, sleep: noopSleep, log: noopLog }),
     ).rejects.toThrow("max must be >= 1");
+  });
+
+  it("uses longer backoff (>=75s) on rate-limit errors", async () => {
+    const sleepCalls: number[] = [];
+    const sleep = (ms: number) => {
+      sleepCalls.push(ms);
+      return Promise.resolve();
+    };
+    const rateLimitErr = Object.assign(new Error("rate_limit_error"), {
+      status: 429,
+    });
+    const fn = vi.fn().mockRejectedValue(rateLimitErr);
+    await expect(
+      withRetries(fn, {
+        max: 3,
+        backoffMs: [5_000, 30_000, 90_000], // default schedule; rate limits should override
+        sleep,
+        log: noopLog,
+      }),
+    ).rejects.toThrow(RetryExhaustedError);
+    // Both inter-attempt sleeps should be >= 75s because every attempt was a rate limit
+    expect(sleepCalls.length).toBe(2);
+    expect(sleepCalls[0]).toBeGreaterThanOrEqual(75_000);
+    expect(sleepCalls[1]).toBeGreaterThanOrEqual(75_000);
+  });
+});
+
+describe("isRateLimitError", () => {
+  it("detects status 429", () => {
+    expect(isRateLimitError({ status: 429 })).toBe(true);
+  });
+
+  it("detects via error message containing 'rate limit'", () => {
+    expect(isRateLimitError(new Error("hit rate limit on org X"))).toBe(true);
+  });
+
+  it("detects 'rate_limit_error' (Anthropic SDK pattern)", () => {
+    expect(isRateLimitError(new Error("type: rate_limit_error"))).toBe(true);
+  });
+
+  it("returns false for unrelated errors", () => {
+    expect(isRateLimitError(new Error("network timeout"))).toBe(false);
+    expect(isRateLimitError({ status: 500 })).toBe(false);
+    expect(isRateLimitError(null)).toBe(false);
   });
 });
