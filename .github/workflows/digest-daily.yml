@@ -1,0 +1,127 @@
+name: digest-daily
+
+# Daily TL;DR refresh. Cheap; only updates report[] in digest.json.
+# Triggers digest-learn via repository_dispatch when significance >= 8
+# (breaking-news escalation, max one re-run per UTC day).
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # daily 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write   # needed to push to gh-pages and dispatch other workflows
+
+concurrency:
+  group: digest-publish
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Refresh TL;DR
+    runs-on: ubuntu-latest
+    outputs:
+      trigger_learn: ${{ steps.escalation.outputs.trigger }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Restore previous digest from gh-pages
+        run: |
+          mkdir -p build
+          if git ls-remote --exit-code origin gh-pages >/dev/null 2>&1; then
+            git fetch origin gh-pages
+            git show origin/gh-pages:digest.json > build/digest.json || echo "[restore] no existing digest.json on gh-pages, using fixture fallback"
+          else
+            echo "[restore] no gh-pages branch yet, using fixture fallback"
+          fi
+
+      - name: Refresh TL;DR
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run generate:daily
+
+      - name: Verify output passes schema contract
+        run: npx tsx src/verify-digest.ts build/digest.json
+
+      - name: Detect breaking-news escalation
+        id: escalation
+        run: |
+          if [ -f build/trigger-learn.flag ]; then
+            echo "trigger=true" >> "$GITHUB_OUTPUT"
+            echo "[escalation] sentinel file present, will trigger digest-learn"
+            cat build/trigger-learn.flag
+          else
+            echo "trigger=false" >> "$GITHUB_OUTPUT"
+            echo "[escalation] no sentinel, no escalation"
+          fi
+
+      - name: Publish digest.json to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          keep_files: true
+          commit_message: "chore: digest-daily refresh ${{ github.run_id }}"
+          # Don't ship the sentinel file to gh-pages — it's CI-internal.
+          exclude_assets: "trigger-learn.flag"
+
+  fire-learn-on-breaking-news:
+    name: Fire Learn synthesis on breaking news
+    needs: refresh
+    if: needs.refresh.outputs.trigger_learn == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Loop guard — has Learn already fired today?
+        id: guard
+        run: |
+          # Loop guard (locked via /plan-eng-review): only one breaking-news
+          # Learn re-run per UTC day. Use a state file in gh-pages.
+          today=$(date -u +%Y-%m-%d)
+          mkdir -p state
+          if git ls-remote --exit-code origin gh-pages >/dev/null 2>&1; then
+            git fetch origin gh-pages
+            last_run=$(git show origin/gh-pages:state/last-learn-trigger.txt 2>/dev/null || echo "never")
+          else
+            last_run="never"
+          fi
+          if [ "$last_run" = "$today" ]; then
+            echo "[guard] Learn synthesis already triggered today ($today). Skipping."
+            echo "fire=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "[guard] Last Learn trigger: $last_run. Firing for $today."
+            echo "fire=true" >> "$GITHUB_OUTPUT"
+            echo "$today" > state/last-learn-trigger.txt
+          fi
+
+      - name: Update guard state on gh-pages
+        if: steps.guard.outputs.fire == 'true'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./state
+          publish_branch: gh-pages
+          destination_dir: state
+          keep_files: true
+          commit_message: "chore: update breaking-news guard state"
+
+      - name: Dispatch digest-learn workflow
+        if: steps.guard.outputs.fire == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api repos/${{ github.repository }}/dispatches \
+            -X POST \
+            -f event_type=breaking-news-escalation \
+            -F client_payload='{"reason":"daily-refresh-detected-significance-ge-8"}'
+          echo "[dispatch] digest-learn fired via repository_dispatch."

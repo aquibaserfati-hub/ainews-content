@@ -1,0 +1,73 @@
+name: digest-learn
+
+# Full Learn synthesis. Runs Mon + Thu 06:00 UTC, plus on-demand.
+# The breaking-news escalation (digest-daily) fires this via repository_dispatch.
+
+on:
+  schedule:
+    # Mondays + Thursdays at 06:00 UTC. GitHub Actions cron is UTC-only.
+    # That's 07:00 London time during BST, 06:00 during GMT — accept the
+    # 1-hour DST drift in v1 (locked in /plan-eng-review on 2026-04-27).
+    - cron: "0 6 * * 1,4"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [breaking-news-escalation]
+
+permissions:
+  contents: write   # needed to push to gh-pages branch
+
+concurrency:
+  group: digest-publish
+  cancel-in-progress: false
+
+jobs:
+  synthesize:
+    name: Synthesize Learn deep-dive
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run schema contract tests
+        run: npm test -- --run
+
+      - name: Restore previous digest from gh-pages (if it exists)
+        # This lets generate-learn use last week's digest as continuity
+        # context if needed, and ensures generate-daily has something to
+        # merge against on subsequent runs.
+        run: |
+          mkdir -p build
+          if git ls-remote --exit-code origin gh-pages >/dev/null 2>&1; then
+            git fetch origin gh-pages
+            git show origin/gh-pages:digest.json > build/digest.json || echo "[restore] no existing digest.json on gh-pages, will create fresh"
+          else
+            echo "[restore] no gh-pages branch yet, will create fresh"
+          fi
+
+      - name: Generate Learn synthesis
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run generate:learn
+
+      - name: Verify output passes schema contract
+        # Re-runs the schema check against the FRESH digest, not the fixture.
+        # Catches drift between the prompt's output and the schema.
+        run: npx tsx src/verify-digest.ts build/digest.json
+
+      - name: Publish digest.json to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          keep_files: true
+          commit_message: "chore: digest-learn synthesis ${{ github.event.inputs.run_id || github.run_id }}"

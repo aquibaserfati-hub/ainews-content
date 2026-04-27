@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "weekOf": "2026-04-20T00:00:00Z",
+  "reportGeneratedAt": "2026-04-27T06:00:00Z",
+  "learnGeneratedAt": "2026-04-23T06:00:00Z",
+  "report": [
+    {
+      "id": "anthropic-memory-api-2026-04-22",
+      "title": "Anthropic ships Memory API for Claude",
+      "summary": "Public API to give Claude persistent memory across conversations. Drop-in for agent-style apps that need state.",
+      "category": "anthropic",
+      "sourceURL": "https://anthropic.com/news/memory-api",
+      "significance": 9
+    },
+    {
+      "id": "openai-spring-update-2026-04-21",
+      "title": "OpenAI Spring update: cheaper o-series, stronger tool use",
+      "summary": "o-series price drops ~30% across the board. New strict-tool-call mode for agentic workflows.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/news/spring-2026-update",
+      "significance": 7
+    },
+    {
+      "id": "deepmind-alphalearning-2026-04-19",
+      "title": "DeepMind's AlphaLearning paper: subgoal scaffolding for LLMs",
+      "summary": "Research showing 12-point improvement on long-context reasoning by structuring subgoals as a graph during inference.",
+      "category": "google",
+      "sourceURL": "https://deepmind.google/research/alphalearning-2026",
+      "significance": 6
+    },
+    {
+      "id": "github-trending-llama-cpp-2-2026-04-22",
+      "title": "llama.cpp 2.0 ships with full CUDA + Metal parity",
+      "summary": "Major rewrite. Same binary now runs identically across NVIDIA, Apple Silicon, and CPU. Top trending repo this week.",
+      "category": "tooling",
+      "sourceURL": "https://github.com/ggerganov/llama.cpp",
+      "significance": 8
+    },
+    {
+      "id": "garry-tan-vibe-coding-2026-04-20",
+      "title": "Garry Tan: 'Vibe coding is now the default for solo founders'",
+      "summary": "Lightcone Podcast episode arguing the median YC company in W26 is shipping 70%+ AI-generated code.",
+      "category": "founderLens",
+      "sourceURL": "https://lightcone.show/episodes/vibe-coding-default",
+      "significance": 6
+    }
+  ],
+  "learn": [
+    {
+      "id": "github-com-ggerganov-llama-cpp",
+      "name": "llama.cpp 2.0",
+      "category": "tooling",
+      "oneLineDescription": "High-performance C++ inference engine for running LLMs locally on your laptop.",
+      "estimatedSetupMinutes": 5,
+      "detail": {
+        "whatItDoes": "Lets you run open-weight large language models (Llama, Mistral, Qwen, DeepSeek) directly on your CPU, Apple Silicon, or NVIDIA GPU. Single C++ binary, no Python, no Docker, no cloud. Loads quantized GGUF model files and serves them via a REST API or interactive CLI.",
+        "whoItsFor": "Developers who want to run LLMs offline, prototype agents without API costs, fine-tune locally, or ship desktop apps with embedded AI. Builders allergic to cloud lock-in. Anyone whose laptop can spare 8-16GB of RAM.",
+        "pros": [
+          "Truly local: zero API calls, full privacy, works offline",
+          "Cross-platform: same binary runs on Mac (Metal), Linux/Windows (CUDA), or pure CPU",
+          "Mature ecosystem: GGUF model format is the de-facto local-LLM standard"
+        ],
+        "cons": [
+          "Inference speed depends on hardware: an M1 MacBook is fine for 7B models, slower for 70B",
+          "GGUF model conversion can be a one-time pain if you start with a HuggingFace transformer checkpoint"
+        ],
+        "setupGuideMarkdown": "## Setup llama.cpp 2.0 on macOS (Apple Silicon)\n\n```bash\n# 1. Clone and build\ngit clone https://github.com/ggerganov/llama.cpp\ncd llama.cpp\nmake LLAMA_METAL=1\n\n# 2. Download a quantized model (e.g., Llama 3 8B, ~5GB)\ncurl -L -o models/llama-3-8b-q4.gguf \\\n  https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf\n\n# 3. Run interactive chat\n./main -m models/llama-3-8b-q4.gguf -p \"Hello, world\" -n 256\n```\n\nIf the build complains about missing tools, install Xcode CLI: `xcode-select --install`. Reasonable laptops produce ~30 tokens/sec on Llama 3 8B Q4.",
+        "sourceURL": "https://github.com/ggerganov/llama.cpp"
+      }
+    },
+    {
+      "id": "anthropic-com-memory-api",
+      "name": "Anthropic Memory API",
+      "category": "anthropic",
+      "oneLineDescription": "Persistent memory for Claude that survives across conversations.",
+      "estimatedSetupMinutes": 8,
+      "detail": {
+        "whatItDoes": "Adds long-term memory to Claude. Conversations can write to a memory store keyed by user ID; subsequent conversations retrieve relevant memories automatically. The model decides when to write and when to read; you can also call the memory store directly via the API for explicit control.",
+        "whoItsFor": "Anyone building agent-style products: chatbots, personal assistants, customer-support bots, coding agents. If your app currently passes a giant 'previous turns' blob into every request, this replaces that with structured retrieval and dramatically lowers token cost.",
+        "pros": [
+          "Drop-in: existing message-completion calls work, memory is opt-in via a single header",
+          "Persists across sessions per user — no more 'sorry, who are you?' on every login",
+          "Claude decides relevance, so the prompt stays clean even with thousands of memories"
+        ],
+        "cons": [
+          "Beta: schema and pricing are not yet final, expect breaking changes through Q2 2026",
+          "Per-user memory adds a privacy surface — you need a clear deletion path for GDPR/CCPA"
+        ],
+        "setupGuideMarkdown": "## Try the Memory API in TypeScript\n\n```bash\nnpm install @anthropic-ai/sdk\nexport ANTHROPIC_API_KEY=sk-ant-...\n```\n\n```typescript\nimport Anthropic from \"@anthropic-ai/sdk\";\n\nconst client = new Anthropic();\n\nconst response = await client.messages.create({\n  model: \"claude-sonnet-4-6\",\n  max_tokens: 1024,\n  system: \"You are a helpful assistant. Remember what the user tells you.\",\n  messages: [\n    { role: \"user\", content: \"My name is Aquib. I'm building an iOS app called AINews Weekly.\" }\n  ],\n  // Required beta header for v1 of the API\n  extra_headers: { \"anthropic-beta\": \"memory-2026-04-22\" },\n  // Memory bucket key — use a stable per-user identifier\n  metadata: { user_id: \"aquib-123\" }\n});\n\nconsole.log(response.content);\n```\n\nIn a follow-up call with the same `user_id`, ask 'what's my name?' — Claude pulls the memory automatically.",
+        "sourceURL": "https://docs.claude.com/en/api/memory"
+      }
+    },
+    {
+      "id": "github-com-stanfordnlp-dspy",
+      "name": "DSPy 3.0",
+      "category": "tooling",
+      "oneLineDescription": "Compile-don't-prompt framework for building reliable LLM pipelines.",
+      "estimatedSetupMinutes": 10,
+      "detail": {
+        "whatItDoes": "DSPy treats your LLM pipeline like compiled code: you declare signatures (inputs/outputs), provide a few examples, and DSPy optimizes the underlying prompts automatically. When you change models or improve the data, it re-compiles. No more hand-tuning prompts forever.",
+        "whoItsFor": "Engineers tired of prompt-engineering whack-a-mole. Teams running production LLM pipelines that need to be portable across models. Researchers benchmarking prompting strategies.",
+        "pros": [
+          "Treats prompts as compilation targets — change the model, re-compile, ship",
+          "Built-in optimizers (BootstrapFewShot, MIPRO) consistently beat hand-tuned prompts",
+          "Stanford-NLP-backed, real research velocity, active community"
+        ],
+        "cons": [
+          "Steep concept curve: 'signatures', 'modules', 'optimizers' takes a weekend to internalize",
+          "Less useful for one-shot generation tasks where prompt-tuning is overkill"
+        ],
+        "setupGuideMarkdown": "## Setup DSPy in Python\n\n```bash\npip install dspy-ai\nexport ANTHROPIC_API_KEY=sk-ant-...\n```\n\n```python\nimport dspy\n\n# Configure your LM\nlm = dspy.LM(\"anthropic/claude-sonnet-4-6\")\ndspy.configure(lm=lm)\n\n# Declare a signature: inputs and outputs\nclass Summarize(dspy.Signature):\n    \"\"\"Summarize a paragraph in one sentence.\"\"\"\n    paragraph = dspy.InputField()\n    summary = dspy.OutputField(desc=\"one-sentence summary\")\n\n# Use it like a function\nsummarize = dspy.ChainOfThought(Summarize)\nresult = summarize(paragraph=\"DSPy is a framework that lets you...\")\nprint(result.summary)\n```\n\nFor real pipelines, add `BootstrapFewShot` optimizer with a small training set (5-20 examples) and let DSPy auto-tune the prompt.",
+        "sourceURL": "https://github.com/stanfordnlp/dspy"
+      }
+    }
+  ]
+}
