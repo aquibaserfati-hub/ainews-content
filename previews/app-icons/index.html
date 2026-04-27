@@ -27,6 +27,7 @@
   header { padding-bottom: 18px; border-bottom: 1px solid var(--amber-soft); margin-bottom: 22px; }
   h1 { margin: 0 0 6px; font-size: 28px; font-weight: 600; }
   .lede { color: var(--ink-2); margin: 0; font-size: 15px; line-height: 1.45; font-family: -apple-system, system-ui, sans-serif; }
+  h2 { margin: 28px 0 10px; font-size: 20px; font-weight: 600; }
   .card {
     background: var(--card);
     border: 1px solid var(--amber-soft);
@@ -34,6 +35,8 @@
     padding: 18px;
     margin-bottom: 18px;
   }
+  .recommended { border: 2px solid var(--amber); }
+  .badge { display: inline-block; background: var(--amber); color: var(--cream); font-family: -apple-system, system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.6px; padding: 3px 8px; border-radius: 6px; margin-bottom: 8px; }
   .icon-frame {
     aspect-ratio: 1 / 1;
     width: 100%;
@@ -60,8 +63,6 @@
     font-size: 14px; line-height: 1.5;
   }
   .reco strong { color: var(--amber); }
-  footer { color: var(--ink-3); font-size: 12px; text-align: center; margin-top: 32px; font-family: -apple-system, system-ui, sans-serif; }
-  /* Real iPhone home-screen squircle preview at the bottom of each card */
   .squircle-preview {
     display: flex; align-items: center; gap: 10px;
     color: var(--ink-3); font-size: 12px;
@@ -74,45 +75,63 @@
     box-shadow: 0 2px 6px rgba(31, 24, 19, 0.12);
   }
   .squircle-preview .mini img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  footer { color: var(--ink-3); font-size: 12px; text-align: center; margin-top: 32px; font-family: -apple-system, system-ui, sans-serif; }
 </style>
 </head>
 <body>
 <main>
   <header>
     <h1>App icon candidates</h1>
-    <p class="lede">Three directions for AINews Weekly. Each is a 1024 × 1024 PNG (Apple applies the rounded-corner mask itself). Pick one, tell Claude which letter, and we ship.</p>
+    <p class="lede">AINews Weekly. 1024 × 1024 PNG (Apple applies the rounded-corner mask itself). Pick a letter and tell Claude.</p>
   </header>
 
-  <div class="reco"><strong>Recommendation:</strong> B — strongest brand identity (reads &ldquo;AI&rdquo; instantly at any size). Needs one re-render to fill the full square edge-to-edge.</div>
+  <div class="reco"><strong>Updated:</strong> two new variants below with <em>NEWS</em> instead of WEEKLY (your call). B1 is recommended &mdash; already edge-to-edge clean, ready to install.</div>
+
+  <h2>NEWS variants (new — recommended)</h2>
+
+  <article class="card recommended">
+    <span class="badge">RECOMMENDED</span>
+    <div class="label"><span class="letter">B1</span><span class="name">AI &middot; NEWS small</span></div>
+    <div class="icon-frame"><img src="B1.png" alt="AI big with NEWS smaller below in muted gray"></div>
+    <p class="desc">&ldquo;AI&rdquo; large in serif amber, &ldquo;NEWS&rdquo; smaller in muted warm gray underneath. Edge-to-edge cream &mdash; no inner squircle artifact. Ships clean.</p>
+    <ul class="pros"><li>Edge-to-edge, no rendering artifacts</li><li>&ldquo;AI&rdquo; reads at any size, NEWS adds context for sighted users</li><li>Strongest brand identity, classic editorial typography</li></ul>
+    <ul class="cons"><li>NEWS may be too small to read at the smallest icon sizes (29pt)</li></ul>
+    <div class="squircle-preview"><span class="mini"><img src="B1.png" alt=""></span><span>How it looks at home-screen size</span></div>
+  </article>
+
+  <article class="card">
+    <div class="label"><span class="letter">B2</span><span class="name">AI &amp; NEWS balanced</span></div>
+    <div class="icon-frame"><img src="B2.png" alt="AI and NEWS both same height with thin rule between"></div>
+    <p class="desc">AI and NEWS roughly the same height, separated by a thin amber rule. More balanced visual weight, more &ldquo;newspaper masthead.&rdquo;</p>
+    <ul class="pros"><li>Both words readable even at small sizes</li><li>The horizontal rule is a nice editorial flourish</li><li>Reads more like a folded newspaper masthead</li></ul>
+    <ul class="cons"><li>Inner-squircle artifact came back &mdash; needs another re-render to fix</li></ul>
+    <div class="squircle-preview"><span class="mini"><img src="B2.png" alt=""></span><span>How it looks at home-screen size</span></div>
+  </article>
+
+  <h2>Original candidates (for comparison)</h2>
 
   <article class="card">
     <div class="label"><span class="letter">A</span><span class="name">Serif &ldquo;A&rdquo;</span></div>
     <div class="icon-frame"><img src="A.png" alt="Bold serif A in amber on cream"></div>
-    <p class="desc">Single bold serif capital A in deep amber on cream paper, with a thin amber rule beneath.</p>
-    <ul class="pros"><li>Already edge-to-edge, ships clean as-is</li><li>Classic, magazine-masthead aesthetic</li></ul>
-    <ul class="cons"><li>At 29pt the rule may disappear; reads as &ldquo;just a letter A&rdquo;</li></ul>
+    <p class="desc">Single bold serif capital A in deep amber on cream paper, with a thin amber rule beneath. No words at all.</p>
     <div class="squircle-preview"><span class="mini"><img src="A.png" alt=""></span><span>How it looks at home-screen size</span></div>
   </article>
 
   <article class="card">
-    <div class="label"><span class="letter">B</span><span class="name">AI WEEKLY monogram</span></div>
-    <div class="icon-frame"><img src="B.png" alt="AI WEEKLY monogram in amber serif"></div>
-    <p class="desc">&ldquo;AI&rdquo; large in serif amber, &ldquo;WEEKLY&rdquo; small below in muted gray. Tells the user exactly what the app is.</p>
-    <ul class="pros"><li>Strongest brand identity</li><li>&ldquo;AI&rdquo; reads at any size, even when WEEKLY is too small</li><li>Custom typography, doesn&rsquo;t look like every other AI app</li></ul>
-    <ul class="cons"><li>Has an inner-squircle artifact (model rendered home-screen mockup); needs a quick re-render to fix</li></ul>
+    <div class="label"><span class="letter">B</span><span class="name">AI WEEKLY (original)</span></div>
+    <div class="icon-frame"><img src="B.png" alt="Original B with WEEKLY label"></div>
+    <p class="desc">Original B candidate with WEEKLY instead of NEWS. Kept here for comparison.</p>
     <div class="squircle-preview"><span class="mini"><img src="B.png" alt=""></span><span>How it looks at home-screen size</span></div>
   </article>
 
   <article class="card">
     <div class="label"><span class="letter">C</span><span class="name">Newspaper page</span></div>
-    <div class="icon-frame"><img src="C.png" alt="Folded newspaper page mark in amber on cream"></div>
-    <p class="desc">Abstract folded newspaper / page icon in amber on cream.</p>
-    <ul class="pros"><li>No typography &mdash; works in any locale</li><li>Already edge-to-edge</li></ul>
-    <ul class="cons"><li>Reads as a generic notes / files app icon</li><li>Loses the editorial brand identity</li></ul>
+    <div class="icon-frame"><img src="C.png" alt="Folded newspaper page in amber on cream"></div>
+    <p class="desc">Abstract folded newspaper page in amber on cream. (No typography &mdash; least distinctive.)</p>
     <div class="squircle-preview"><span class="mini"><img src="C.png" alt=""></span><span>How it looks at home-screen size</span></div>
   </article>
 
-  <footer>Generated by Claude Code on 2026-04-27</footer>
+  <footer>Updated 2026-04-27 — refresh page to see latest variants</footer>
 </main>
 </body>
 </html>
