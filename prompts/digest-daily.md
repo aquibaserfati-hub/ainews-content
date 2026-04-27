@@ -5,37 +5,47 @@ section of the digest based on what's happened in the AI ecosystem over the
 last 24 hours. You do NOT synthesize the Learn section today; that's a
 separate Mon/Thu job.
 
-## Output
+## Output (CRITICAL — exact field names, no substitutions)
 
-Return ONLY a JSON object matching this shape exactly. No prose before or
-after. No markdown code fences. The output is parsed directly by zod and any
-extra characters cause the run to fail.
+Return ONLY a JSON object matching this shape EXACTLY. Field names are
+LITERAL — `title` is `title`, NOT `headline`. `summary` is `summary`,
+NOT `description`. zod parses the output strictly. No prose before or
+after. No markdown code fences.
 
 ```json
 {
   "reportGeneratedAt": "2026-04-27T06:00:00Z",
   "report": [
     {
-      "id": "kebab-case-stable-id",
-      "title": "Active-voice headline, ~70 chars",
+      "id": "anthropic-memory-api-2026-04-22",
+      "title": "Anthropic ships persistent memory API",
       "summary": "1-2 sentences. Builder-flavored. What changed, why it matters.",
-      "category": "anthropic" | "openai" | "google" | "otherLLM" | "tooling" | "founderLens" | "other",
-      "sourceURL": "https://...",
-      "significance": 0..10
+      "category": "anthropic",
+      "sourceURL": "https://anthropic.com/news/memory-api",
+      "significance": 8
     }
-    // ...5-7 items total
   ]
 }
 ```
 
-- `reportGeneratedAt` MUST be the current UTC time in strict ISO-8601 format
-  with no fractional seconds: `yyyy-MM-ddTHH:mm:ssZ`.
-- `id` MUST be stable across days for the same news event (so the iOS app
-  can detect when an item is "still on the radar"). Use kebab-case derived
-  from source + slug + date, e.g. `anthropic-memory-api-2026-04-22`.
-- `significance` follows `digest-rubric.md` (loaded with this prompt).
-- 5-7 items total. Quality over quantity. If the day is quiet, 4 strong
-  items is better than 7 weak ones.
+### Field reference
+
+- `id` (string): kebab-case, stable across days for the same event.
+- `title` (string): active-voice short title, ~70 chars. **Field name is `title` — NOT `headline`.**
+- `summary` (string): 1-2 sentences. **Field name is `summary` — NOT `description`.**
+- `category` (string): one of `anthropic`, `openai`, `google`, `otherLLM`, `tooling`, `founderLens`, `other`.
+- `sourceURL` (string): real URL, not made up.
+- `significance` (integer 0-10): per the rubric (loaded below).
+
+### Date format
+
+`reportGeneratedAt` MUST match `^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$`.
+No milliseconds. Always ends with `Z`.
+
+### Item count
+
+5-7 items total. Quality over quantity. If the day is quiet, 4 strong
+items beats 7 weak ones.
 
 ## Sources to scan (in priority order)
 
@@ -46,7 +56,11 @@ extra characters cause the run to fail.
 5. GitHub Trending for the last 24h (filter for AI/ML/agent repos)
 6. Garry Tan's recent posts (founder-lens commentary)
 
-Use the web_search tool aggressively. Don't guess. Cite real URLs.
+Use the web_search tool, but BE EFFICIENT. **At most 4 searches total.**
+Each search response adds significantly to input tokens; the API has a
+30K-tokens-per-minute rate limit. Prefer one targeted query that hits a
+release-notes page over multiple broad ones. Don't guess URLs; only cite
+real ones from the search results.
 
 ## Filtering
 
