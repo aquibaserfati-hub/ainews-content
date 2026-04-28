@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F8F4EC">
+<title>AINews Weekly — Privacy Policy</title>
+<style>
+  :root {
+    --cream: #F8F4EC;
+    --card: #FBF7EF;
+    --ink: #1F1813;
+    --ink-2: #5A4D43;
+    --ink-3: #8E7E70;
+    --amber: #9C5F1A;
+    --amber-soft: rgba(156, 95, 26, 0.18);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "New York", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { padding: 24px 22px 80px; max-width: 720px; margin: 0 auto; }
+  header { padding-bottom: 18px; border-bottom: 1px solid var(--amber-soft); margin-bottom: 24px; }
+  h1 { margin: 0 0 6px; font-size: 30px; font-weight: 600; }
+  .lede { color: var(--ink-2); margin: 0; font-size: 15px; line-height: 1.45; font-family: -apple-system, system-ui, sans-serif; }
+  h2 { margin: 26px 0 10px; font-size: 20px; font-weight: 600; }
+  p, li { font-family: -apple-system, system-ui, sans-serif; font-size: 15px; line-height: 1.55; color: var(--ink); }
+  a { color: var(--amber); }
+  ul { padding-left: 20px; }
+  .meta {
+    display: inline-block;
+    background: var(--amber-soft);
+    color: var(--amber);
+    font-family: -apple-system, system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+  }
+  footer {
+    margin-top: 36px; padding-top: 18px;
+    border-top: 1px solid var(--amber-soft);
+    font-family: -apple-system, system-ui, sans-serif;
+    font-size: 13px; color: var(--ink-3);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="meta">PRIVACY POLICY</span>
+    <h1>AINews Weekly</h1>
+    <p class="lede">Last updated April 27, 2026.</p>
+  </header>
+
+  <h2>What we collect</h2>
+  <p><strong>Nothing.</strong> AINews Weekly does not collect, store, or transmit any personal information about you. There are no accounts, no logins, no analytics SDKs, no crash reporting services, no advertising trackers, and no third-party data brokers.</p>
+
+  <h2>What's stored on your device</h2>
+  <p>The app stores two things <em>locally on your iPhone</em>, never transmitted anywhere:</p>
+  <ul>
+    <li><strong>A cached copy of the latest weekly digest</strong>, so the app works offline. This is a JSON file in the app's Documents folder. It contains only the publicly published content of the digest — no information about you.</li>
+    <li><strong>Your bookmarks</strong>, stored in iOS UserDefaults. This is a list of which Learn items you saved, kept on your device only. We never see it.</li>
+  </ul>
+  <p>Both clear automatically when you uninstall the app.</p>
+
+  <h2>How content reaches your phone</h2>
+  <p>The weekly digest is published as a public JSON file at <a href="https://aquibaserfati-hub.github.io/ainews-content/digest.json">aquibaserfati-hub.github.io/ainews-content/digest.json</a> by GitHub Actions. Your phone fetches that URL on launch.</p>
+  <p>This means GitHub (the host) sees your iPhone's IP address as part of normal HTTPS traffic, the same way any website you visit sees your IP. We do not have access to those server logs and do not collect or process them.</p>
+
+  <h2>Links to external sites</h2>
+  <p>Tapping a "View source" link or external URL opens that site in Safari. Once you leave AINews Weekly, the privacy policy of that site applies. We have no control over and accept no responsibility for the content or privacy practices of any third-party sites.</p>
+
+  <h2>Children's privacy</h2>
+  <p>AINews Weekly does not collect data from anyone, including children under 13. The app is rated for general audiences but is editorial in nature and intended for software-builder readers.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "last updated" date at the top will change. Material changes will be summarized in the app's About screen. Because we collect nothing, there's nothing to notify you about — there's no email list to email.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or the app: open an issue at <a href="https://github.com/aquibaserfati-hub/ainews-app/issues">github.com/aquibaserfati-hub/ainews-app/issues</a>.</p>
+
+  <footer>
+    AINews Weekly is open source. Source code: <a href="https://github.com/aquibaserfati-hub/ainews-app">github.com/aquibaserfati-hub/ainews-app</a>. Content pipeline: <a href="https://github.com/aquibaserfati-hub/ainews-content">github.com/aquibaserfati-hub/ainews-content</a>.
+  </footer>
+</main>
+</body>
+</html>
