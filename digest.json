@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-04-20T00:00:00Z",
-  "reportGeneratedAt": "2026-04-27T14:00:00Z",
+  "reportGeneratedAt": "2026-04-28T08:31:40Z",
   "learnGeneratedAt": "2026-04-27T14:00:00Z",
   "report": [
     {
-      "id": "anthropic-managed-agents-memory-2026-04-23",
-      "title": "Anthropic ships persistent memory for Claude Managed Agents",
-      "summary": "Memory for Claude Managed Agents hit public beta on April 23 — filesystem-backed, auditable, no separate access request needed. Agents can now accumulate and share knowledge across sessions; early users like Rakuten report 97% fewer first-pass errors.",
+      "id": "openai-microsoft-deal-amended-2026-04-27",
+      "title": "OpenAI breaks Microsoft exclusivity, goes multi-cloud",
+      "summary": "OpenAI and Microsoft amended their partnership on April 27: OpenAI can now serve all its products across any cloud provider — including AWS and Google Cloud — ending the exclusive arrangement that had blocked enterprise sales. Microsoft's IP license runs non-exclusively through 2032; revenue share from OpenAI to Microsoft continues through 2030 but is now capped, and Microsoft stops paying revenue share to OpenAI entirely.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/next-phase-of-microsoft-partnership/",
+      "significance": 8
+    },
+    {
+      "id": "openai-gpt-55-launch-2026-04-23",
+      "title": "OpenAI ships GPT-5.5 with full API access now live",
+      "summary": "GPT-5.5 launched April 23 for ChatGPT paid tiers and Codex, with API access confirmed live as of April 24. Priced at $5/$30 per million tokens (standard) and $30/$180 (Pro), it is explicitly positioned as an agent runtime — multi-step task completion, computer use, and long-horizon coding — rather than a chat model.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/introducing-gpt-5-5/",
+      "significance": 9
+    },
+    {
+      "id": "anthropic-claude-opus-47-launch-2026-04-16",
+      "title": "Anthropic ships Claude Opus 4.7 as its top generally available model",
+      "summary": "Anthropic released Claude Opus 4.7 — its most capable publicly accessible model — with improvements in software engineering, instruction following, and real-world task completion. Cyber capabilities were deliberately reduced versus Mythos Preview, and it ships with safeguards that auto-block high-risk security requests; available across API, Claude.ai, and all three major clouds at the same price as Opus 4.6.",
       "category": "anthropic",
-      "sourceURL": "https://platform.claude.com/docs/en/release-notes/overview",
-      "significance": 8
+      "sourceURL": "https://www.cnbc.com/2026/04/16/anthropic-claude-opus-4-7-model-mythos.html",
+      "significance": 7
     },
     {
-      "id": "anthropic-claude-opus-47-2026-04-16",
-      "title": "Claude Opus 4.7 ships with 3x vision resolution and task budgets",
-      "summary": "Opus 4.7 landed April 16 at unchanged $5/$25 pricing. It hits 70% on CursorBench (+12pp over 4.6), supports 3.75MP images (3x resolution), and introduces task budgets and xhigh effort for agentic cost control. Breaking API change: temperature/top_p/top_k now return 400 errors, and the new tokenizer can add up to 35% more billable tokens.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/claude-opus-4-7",
-      "significance": 8
-    },
-    {
-      "id": "google-cloud-next-adk-v1-a2a-2026-04-22",
-      "title": "Google Cloud Next ships ADK v1.0, A2A protocol, and Gemini Enterprise Agent Platform",
-      "summary": "At Cloud Next 2026 in Las Vegas, Google renamed Vertex AI to the Gemini Enterprise Agent Platform, shipped ADK stable v1.0 across Python, Go, Java, and TypeScript, and put A2A protocol v1.0 into production at 150 organizations. Native MCP server hosting, Project Mariner browsing agent, and Workspace Studio no-code builder also shipped.",
-      "category": "google",
-      "sourceURL": "https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era",
-      "significance": 8
-    },
-    {
-      "id": "huggingface-ml-intern-2026-04-21",
-      "title": "Hugging Face open-sources ml-intern, an autonomous ML research and training agent",
-      "summary": "ml-intern is a CLI agent built on smolagents that runs the full post-training loop: paper discovery on arXiv, dataset pulls from the Hub, training job dispatch, and eval-driven iteration. It outscored Claude Code on scientific reasoning and Codex on healthcare benchmarks, and installs in one uv command.",
+      "id": "deepseek-v4-open-source-2026-04-24",
+      "title": "DeepSeek V4 open-sourced with 1M-token context and live API",
+      "summary": "DeepSeek shipped V4-Pro (1.6T total / 49B active MoE) and V4-Flash (284B / 13B active) under MIT license, weights on Hugging Face, API live same day. V4-Pro hit 49.93% on the Vibe Code Benchmark — first open-weight model past 40% — and early evals put it roughly on par with GPT-5.4 and Opus 4.6 at a fraction of the inference cost.",
       "category": "otherLLM",
-      "sourceURL": "https://github.com/huggingface/ml-intern",
+      "sourceURL": "https://www.theneuron.ai/explainer-articles/around-the-horn-digest-everything-that-happened-in-ai-today-friday-april-24-2026/",
+      "significance": 8
+    },
+    {
+      "id": "cursor-32-multitask-subagents-2026-04-24",
+      "title": "Cursor 3.2 ships /multitask with async parallel subagents",
+      "summary": "Cursor 3.2, released April 24, adds /multitask: async subagents that run in parallel instead of queuing, plus worktrees for background branch tasks and multi-root workspaces for cross-repo agentic sessions. Available on paid plans; GPT-5.5 is also now live in Cursor at 50% off through May 2.",
+      "category": "tooling",
+      "sourceURL": "https://cursor.com/changelog",
       "significance": 7
     },
     {
-      "id": "google-40b-anthropic-investment-2026-04-24",
-      "title": "Google commits up to $40B in Anthropic, doubling down on enterprise AI",
-      "summary": "Alphabet plans to invest $10B upfront in Anthropic with up to $30B more tied to performance milestones. Anthropic's run-rate revenue has already surpassed $30B, up from $9B at end of 2025 — the investment underscores enterprise AI as Google's primary competitive battleground.",
+      "id": "google-anthropic-40b-investment-2026-04-24",
+      "title": "Google commits up to $40B to Anthropic, adds 5GW of cloud capacity",
+      "summary": "Google plans to invest up to $40 billion in Anthropic and provide a fresh 5 gigawatts of TPU-based compute capacity over five years — layered on top of a prior Google-Broadcom partnership for 3.5GW starting 2027. Anthropic's run-rate revenue has crossed $30B and it now has over 1,000 enterprise customers each spending $1M+ annually.",
       "category": "anthropic",
-      "sourceURL": "https://www.cryptopolitan.com/google-commits-40-billion-investment-to-claude-ai-developer-anthropic/",
+      "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
       "significance": 7
     },
     {
-      "id": "anthropic-managed-agents-platform-launch-2026-04-08",
-      "title": "Anthropic launches Claude Managed Agents public beta with sandboxed execution",
-      "summary": "Claude Managed Agents (launched April 8) gives teams a fully hosted agent runtime: secure sandboxing, long-running sessions, built-in tool execution, and SSE streaming — all behind the managed-agents-2026-04-01 beta header at $0.08/session-hour plus normal token rates.",
-      "category": "anthropic",
-      "sourceURL": "https://platform.claude.com/docs/en/managed-agents/overview",
-      "significance": 7
-    },
-    {
-      "id": "frontier-labs-model-copying-coalition-2026-04-06",
-      "title": "OpenAI, Anthropic, and Google coordinate to block adversarial model distillation",
-      "summary": "The three labs are sharing detection signals through the Frontier Model Forum to catch Chinese competitors using their APIs to distill model weights without authorization. This is an industry-first coordinated enforcement effort, not just a policy update.",
+      "id": "iclr-2026-final-day-2026-04-28",
+      "title": "ICLR 2026 wraps in Rio — Google TurboQuant among standout papers",
+      "summary": "ICLR 2026 (April 24-28, Rio de Janeiro) closes today. The most builder-relevant result is Google's TurboQuant, which slashes KV-cache memory overhead using PolarQuant vector rotation and Quantized Johnson-Lindenstrauss compression — promising up to 6x memory reduction for long-context inference with minimal quality loss.",
       "category": "other",
-      "sourceURL": "https://www.bloomberg.com/news/articles/2026-04-06/openai-anthropic-google-unite-to-combat-model-copying-in-china",
+      "sourceURL": "https://radicaldatascience.wordpress.com/2026/04/23/ai-news-briefs-bulletin-board-for-april-2026/",
       "significance": 6
     }
   ],
