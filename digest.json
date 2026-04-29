@@ -1,64 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-04-20T00:00:00Z",
-  "reportGeneratedAt": "2026-04-28T08:31:40Z",
+  "reportGeneratedAt": "2026-04-29T08:25:23Z",
   "learnGeneratedAt": "2026-04-27T14:00:00Z",
   "report": [
     {
-      "id": "openai-microsoft-deal-amended-2026-04-27",
-      "title": "OpenAI breaks Microsoft exclusivity, goes multi-cloud",
-      "summary": "OpenAI and Microsoft amended their partnership on April 27: OpenAI can now serve all its products across any cloud provider — including AWS and Google Cloud — ending the exclusive arrangement that had blocked enterprise sales. Microsoft's IP license runs non-exclusively through 2032; revenue share from OpenAI to Microsoft continues through 2030 but is now capped, and Microsoft stops paying revenue share to OpenAI entirely.",
+      "id": "openai-gpt-55-api-launch-2026-04-24",
+      "title": "GPT-5.5 ships to API with agentic coding lead",
+      "summary": "OpenAI released GPT-5.5 on April 23 in ChatGPT and Codex, then opened API access on April 24. It scores 82.7% on Terminal-Bench 2.0 — state-of-the-art for command-line agent workflows — and leads SWE-bench Verified at 88.7%, at roughly half the cost of comparable frontier coding models on Artificial Analysis's index.",
       "category": "openai",
-      "sourceURL": "https://openai.com/index/next-phase-of-microsoft-partnership/",
+      "sourceURL": "https://openai.com/index/introducing-gpt-5-5/",
       "significance": 8
     },
     {
-      "id": "openai-gpt-55-launch-2026-04-23",
-      "title": "OpenAI ships GPT-5.5 with full API access now live",
-      "summary": "GPT-5.5 launched April 23 for ChatGPT paid tiers and Codex, with API access confirmed live as of April 24. Priced at $5/$30 per million tokens (standard) and $30/$180 (Pro), it is explicitly positioned as an agent runtime — multi-step task completion, computer use, and long-horizon coding — rather than a chat model.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/introducing-gpt-5-5/",
-      "significance": 9
+      "id": "deepseek-v4-release-2026-04-24",
+      "title": "DeepSeek V4 goes MIT-licensed at 1/7th the cost of GPT-5.5",
+      "summary": "DeepSeek dropped V4-Pro and V4-Flash on April 24 under MIT license — V4-Pro output costs $3.48/M tokens versus $30/M for GPT-5.5 and $25/M for Claude Opus 4.7, while matching or beating them on LiveCodeBench and Codeforces. Drop-in swap: just change the model param to deepseek-v4-pro; legacy deepseek-chat and deepseek-reasoner endpoints retire July 24.",
+      "category": "otherLLM",
+      "sourceURL": "https://api-docs.deepseek.com/news/news260424",
+      "significance": 8
     },
     {
       "id": "anthropic-claude-opus-47-launch-2026-04-16",
-      "title": "Anthropic ships Claude Opus 4.7 as its top generally available model",
-      "summary": "Anthropic released Claude Opus 4.7 — its most capable publicly accessible model — with improvements in software engineering, instruction following, and real-world task completion. Cyber capabilities were deliberately reduced versus Mythos Preview, and it ships with safeguards that auto-block high-risk security requests; available across API, Claude.ai, and all three major clouds at the same price as Opus 4.6.",
+      "title": "Anthropic ships Claude Opus 4.7 with SWE-bench Pro lead",
+      "summary": "Claude Opus 4.7 launched April 16, leading SWE-bench Pro at 64.3% — above GPT-5.5's 58.6% — and topping LM Arena human preference Elo at 1504. Priced at $5/$25 per million tokens input/output, it holds the benchmark edge for real-world software engineering agent tasks over GPT-5.5's terminal-agent strength.",
       "category": "anthropic",
-      "sourceURL": "https://www.cnbc.com/2026/04/16/anthropic-claude-opus-4-7-model-mythos.html",
+      "sourceURL": "https://www.anthropic.com/news",
       "significance": 7
     },
     {
-      "id": "deepseek-v4-open-source-2026-04-24",
-      "title": "DeepSeek V4 open-sourced with 1M-token context and live API",
-      "summary": "DeepSeek shipped V4-Pro (1.6T total / 49B active MoE) and V4-Flash (284B / 13B active) under MIT license, weights on Hugging Face, API live same day. V4-Pro hit 49.93% on the Vibe Code Benchmark — first open-weight model past 40% — and early evals put it roughly on par with GPT-5.4 and Opus 4.6 at a fraction of the inference cost.",
-      "category": "otherLLM",
-      "sourceURL": "https://www.theneuron.ai/explainer-articles/around-the-horn-digest-everything-that-happened-in-ai-today-friday-april-24-2026/",
-      "significance": 8
-    },
-    {
-      "id": "cursor-32-multitask-subagents-2026-04-24",
-      "title": "Cursor 3.2 ships /multitask with async parallel subagents",
-      "summary": "Cursor 3.2, released April 24, adds /multitask: async subagents that run in parallel instead of queuing, plus worktrees for background branch tasks and multi-root workspaces for cross-repo agentic sessions. Available on paid plans; GPT-5.5 is also now live in Cursor at 50% off through May 2.",
-      "category": "tooling",
-      "sourceURL": "https://cursor.com/changelog",
-      "significance": 7
-    },
-    {
-      "id": "google-anthropic-40b-investment-2026-04-24",
-      "title": "Google commits up to $40B to Anthropic, adds 5GW of cloud capacity",
-      "summary": "Google plans to invest up to $40 billion in Anthropic and provide a fresh 5 gigawatts of TPU-based compute capacity over five years — layered on top of a prior Google-Broadcom partnership for 3.5GW starting 2027. Anthropic's run-rate revenue has crossed $30B and it now has over 1,000 enterprise customers each spending $1M+ annually.",
-      "category": "anthropic",
-      "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
-      "significance": 7
-    },
-    {
-      "id": "iclr-2026-final-day-2026-04-28",
-      "title": "ICLR 2026 wraps in Rio — Google TurboQuant among standout papers",
-      "summary": "ICLR 2026 (April 24-28, Rio de Janeiro) closes today. The most builder-relevant result is Google's TurboQuant, which slashes KV-cache memory overhead using PolarQuant vector rotation and Quantized Johnson-Lindenstrauss compression — promising up to 6x memory reduction for long-context inference with minimal quality loss.",
-      "category": "other",
-      "sourceURL": "https://radicaldatascience.wordpress.com/2026/04/23/ai-news-briefs-bulletin-board-for-april-2026/",
+      "id": "openai-workspace-agents-slack-salesforce-2026-04-28",
+      "title": "OpenAI rebuilds custom GPTs into shared Workspace Agents in Slack and Salesforce",
+      "summary": "OpenAI converted its custom GPT product into shared Workspace Agents that live natively inside Slack and Salesforce, making team-deployed agents available without a separate ChatGPT context switch. Meaningful for enterprise builders already on those platforms who want agentic workflows inside existing tooling.",
+      "category": "openai",
+      "sourceURL": "https://asanify.com/blog/news/ai-agents-enterprise-stack-april-28-2026/",
       "significance": 6
+    },
+    {
+      "id": "eu-ai-act-digital-omnibus-trilogue-2026-04-28",
+      "title": "EU AI Act Digital Omnibus reaches final trilogue on April 28",
+      "summary": "The last political trilogue on the Digital Omnibus on AI took place April 28; both Parliament and Council converge on hard delay dates — December 2, 2027 for stand-alone high-risk systems and August 2, 2028 for AI embedded in regulated products. Formal adoption still requires publication in the Official Journal before August 2, so treat August 2026 as the live deadline until that happens.",
+      "category": "other",
+      "sourceURL": "https://cdt.org/insights/cdt-europes-ai-bulletin-april-2026/",
+      "significance": 6
+    },
+    {
+      "id": "iclr-2026-reasoning-trap-hallucination-paper-2026-04-29",
+      "title": "ICLR 2026 paper: stronger reasoning training amplifies tool hallucination",
+      "summary": "A paper titled 'The Reasoning Trap' presented at ICLR 2026 in Rio finds that reinforcement-learning-based reasoning enhancement increases tool-call hallucination rates in lockstep with capability gains — and neither prompt engineering nor DPO closes the gap. Relevant to anyone deploying multi-step agent workflows on current frontier models.",
+      "category": "other",
+      "sourceURL": "https://asanify.com/blog/news/ai-agent-hallucination-april-29-2026/",
+      "significance": 6
+    },
+    {
+      "id": "snap-layoffs-ai-code-generation-2026-04-28",
+      "title": "Snap cuts 1,000 jobs citing AI — AI now writes 65% of its new code",
+      "summary": "Snap CEO Evan Spiegel announced roughly 1,000 layoffs and closure of 300+ open roles, directly citing AI advancements; the company reports AI generates over 65% of its new code. Expected to deliver $500M+ in annualized cost savings — a concrete, public data point on AI-driven headcount compression at a major consumer tech company.",
+      "category": "other",
+      "sourceURL": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+      "significance": 5
     }
   ],
   "learn": [
