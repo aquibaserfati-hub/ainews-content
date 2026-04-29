@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-04-30T12:00:00Z",
+  "tracks": [
+    {
+      "id": "beginner",
+      "title": "Beginner",
+      "description": "Set up the AI tools every builder uses. From zero to your first working agent.",
+      "order": 0,
+      "lessons": [
+        {
+          "id": "setup-claude-code",
+          "trackId": "beginner",
+          "title": "Setting up Claude Code",
+          "oneLineDescription": "Install Anthropic's terminal coding assistant and run your first command.",
+          "estimatedMinutes": 15,
+          "category": "anthropic",
+          "prerequisites": [],
+          "youtubeURL": null,
+          "isProContent": false,
+          "steps": [
+            {
+              "id": "step-1",
+              "title": "Check that you have Node 18+",
+              "body": "Claude Code is distributed as an npm package and requires Node 18 or newer. Most modern Macs already have Node installed.\n\nRun this in your terminal:\n\n```bash\nnode --version\n```\n\nYou should see something like `v20.10.0` or higher. If you see a version older than `v18`, install the latest Node from [nodejs.org](https://nodejs.org). If `node` is not found, you don't have Node installed yet — install it the same way.",
+              "stepType": "verify",
+              "validationHint": "node --version prints v18.0.0 or higher"
+            },
+            {
+              "id": "step-2",
+              "title": "Get an Anthropic API key",
+              "body": "Claude Code authenticates against your Anthropic account. If you don't have one yet, create it at [console.anthropic.com](https://console.anthropic.com).\n\nOnce signed in, go to **Settings → API Keys → Create Key**. Name the key something like `claude-code-laptop` so you can identify it later, then copy the key value (it starts with `sk-ant-`). You will see this key exactly once — paste it somewhere safe before closing the dialog.\n\nClaude Code will read this key the first time you run it, so don't worry about exporting an environment variable yourself.",
+              "stepType": "read",
+              "validationHint": "you have a key starting with sk-ant- saved in a password manager or note"
+            },
+            {
+              "id": "step-3",
+              "title": "Install Claude Code globally",
+              "body": "Install the CLI as a global npm package:\n\n```bash\nnpm install -g @anthropic-ai/claude-code\n```\n\nIf this fails with an `EACCES` permission error, do NOT run with `sudo`. Instead, configure npm to install global packages into your home directory:\n\n```bash\nmkdir -p ~/.npm-global\nnpm config set prefix '~/.npm-global'\nexport PATH=~/.npm-global/bin:$PATH\n```\n\nAdd that last line to your `~/.zshrc` or `~/.bashrc` so it persists across terminal sessions. Then re-run the install command.",
+              "stepType": "runCommand",
+              "validationHint": "command completes without errors"
+            },
+            {
+              "id": "step-4",
+              "title": "Verify the install",
+              "body": "Confirm Claude Code is on your PATH:\n\n```bash\nclaude --version\n```\n\nYou should see a version number like `1.5.0` or higher. If you see `command not found`, your shell isn't picking up the npm global bin directory — restart your terminal, then try again.",
+              "stepType": "verify",
+              "validationHint": "claude --version prints a version string"
+            },
+            {
+              "id": "step-5",
+              "title": "Run claude in a project directory",
+              "body": "Navigate to any code project on your machine — even a tiny one will do.\n\n```bash\ncd ~/Desktop\nmkdir hello-claude && cd hello-claude\necho 'console.log(\"hi\")' > index.js\nclaude\n```\n\nThe first time you run `claude`, it will prompt you to paste your Anthropic API key (the one from step 2). Paste it and press Enter. The key is saved to `~/.claude/credentials.json` with file permissions `600` so only your user account can read it.",
+              "stepType": "runCommand",
+              "validationHint": "claude prompts for an API key the first time, then opens an interactive prompt"
+            },
+            {
+              "id": "step-6",
+              "title": "Send your first message",
+              "body": "With Claude Code running in the `hello-claude` directory, type a request:\n\n```\nadd a new function to index.js that returns the current time in ISO format\n```\n\nClaude will explain what it is about to do, ask for permission to edit `index.js`, and then write the change. Say yes to the permission prompt.\n\nClose Claude Code with `Ctrl+C`, then check the file:\n\n```bash\ncat index.js\n```\n\nYou should see the original `console.log(\"hi\")` plus the new function Claude added.",
+              "stepType": "verify",
+              "validationHint": "index.js now has both the original line and a function returning an ISO timestamp"
+            },
+            {
+              "id": "step-7",
+              "title": "You're done",
+              "body": "You now have Claude Code installed, authenticated, and running in your local projects. From here, the next lesson (\"Setting up Cursor\") covers the editor-based AI workflow as a complement to the terminal-based one you just installed.\n\nTo run Claude Code on any future project, just `cd` into the directory and run `claude`. It picks up the credentials from the first run automatically.",
+              "stepType": "read",
+              "validationHint": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intermediate",
+      "title": "Intermediate",
+      "description": "Once your tools are wired up — build something real. Agents, MCP, and prompt patterns.",
+      "order": 1,
+      "lessons": []
+    },
+    {
+      "id": "advanced",
+      "title": "Advanced",
+      "description": "Production-grade AI engineering. Parallel agents, eval harnesses, and serverless deployment.",
+      "order": 2,
+      "lessons": []
+    }
+  ]
+}
