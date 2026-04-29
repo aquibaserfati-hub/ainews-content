@@ -74,3 +74,56 @@ export const DailyReportUpdate = z.object({
   report: z.array(ReportBullet).min(1),
 });
 export type DailyReportUpdate = z.infer<typeof DailyReportUpdate>;
+
+// ── Curriculum (v2) ───────────────────────────────────────────────────────
+// Hand-curated lesson library, parallel artifact to Digest. Lives at
+// gh-pages/curriculum.json. Independent schemaVersion from Digest.
+
+export const StepType = z.enum(["read", "runCommand", "verify"]);
+export type StepType = z.infer<typeof StepType>;
+
+// Step IDs are no-zero-pad: "step-1", "step-2", ..., "step-12".
+const stepId = z
+  .string()
+  .regex(/^step-[1-9]\d*$/, "must match 'step-N' with no zero-pad (step-1, step-2, ...)");
+
+export const LessonStep = z.object({
+  id: stepId,
+  title: z.string().min(1),
+  body: z.string().min(1), // markdown
+  stepType: StepType,
+  validationHint: z.string().min(1).nullable(),
+});
+export type LessonStep = z.infer<typeof LessonStep>;
+
+export const Lesson = z.object({
+  id: z.string().min(1), // stable kebab id, e.g. "setup-claude-code"
+  trackId: z.string().min(1),
+  title: z.string().min(1),
+  oneLineDescription: z.string().min(1),
+  estimatedMinutes: z.number().int().positive(),
+  category: Category,
+  prerequisites: z.array(z.string().min(1)),
+  youtubeURL: z.string().url().nullable(),
+  steps: z.array(LessonStep).min(1),
+  isProContent: z.boolean(), // ships false in v2; v2.1 will toggle
+});
+export type Lesson = z.infer<typeof Lesson>;
+
+export const CurriculumTrack = z.object({
+  id: z.string().min(1), // "beginner" | "intermediate" | "advanced"
+  title: z.string().min(1),
+  description: z.string().min(1),
+  order: z.number().int().min(0),
+  lessons: z.array(Lesson),
+});
+export type CurriculumTrack = z.infer<typeof CurriculumTrack>;
+
+export const Curriculum = z.object({
+  schemaVersion: z.literal(1),
+  updatedAt: utcIso8601,
+  tracks: z.array(CurriculumTrack).min(1),
+});
+export type Curriculum = z.infer<typeof Curriculum>;
+
+export const CURRICULUM_SCHEMA_VERSION = 1 as const;
