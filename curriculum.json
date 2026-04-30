@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-30T13:30:00Z",
+  "updatedAt": "2026-04-30T18:00:00Z",
   "tracks": [
     {
       "id": "beginner",
@@ -140,7 +140,9 @@
           "oneLineDescription": "Wire up persistent memory so your agent remembers prior conversations.",
           "estimatedMinutes": 25,
           "category": "anthropic",
-          "prerequisites": ["setup-claude-code"],
+          "prerequisites": [
+            "setup-claude-code"
+          ],
           "youtubeURL": null,
           "isProContent": false,
           "steps": [
@@ -194,6 +196,63 @@
               "validationHint": null
             }
           ]
+        },
+        {
+          "id": "mcp-claude-desktop",
+          "trackId": "intermediate",
+          "title": "Wiring up MCP for Claude Desktop",
+          "oneLineDescription": "Connect Claude Desktop to your local tools via the Model Context Protocol.",
+          "estimatedMinutes": 20,
+          "category": "anthropic",
+          "prerequisites": [
+            "setup-claude-code"
+          ],
+          "youtubeURL": null,
+          "isProContent": false,
+          "steps": [
+            {
+              "id": "step-1",
+              "title": "What MCP is (and why it matters)",
+              "body": "Model Context Protocol (MCP) is an open standard that lets Claude interact with external tools — file systems, databases, APIs, local processes — without you having to paste context into the chat window manually.\n\nClaude Desktop has built-in MCP support. Once you wire it up, Claude can read files from your project, query a local SQLite database, or call a custom tool you've built, all from the chat interface.",
+              "stepType": "read",
+              "validationHint": null
+            },
+            {
+              "id": "step-2",
+              "title": "Install Claude Desktop",
+              "body": "Download and install Claude Desktop from [claude.ai/download](https://claude.ai/download). Sign in with your Anthropic account.\n\nVerify it works:\n\n```bash\nopen -a 'Claude'\n```\n\nYou should see the Claude Desktop chat window.",
+              "stepType": "verify",
+              "validationHint": "Claude Desktop opens and shows a chat input"
+            },
+            {
+              "id": "step-3",
+              "title": "Open the MCP config file",
+              "body": "Claude Desktop's MCP configuration lives in a JSON file. Open it:\n\n```bash\nopen ~/Library/Application\\ Support/Claude/claude_desktop_config.json\n```\n\nIf the file doesn't exist yet:\n\n```bash\nmkdir -p ~/Library/Application\\ Support/Claude\ntouch ~/Library/Application\\ Support/Claude/claude_desktop_config.json\necho '{}' > ~/Library/Application\\ Support/Claude/claude_desktop_config.json\n```",
+              "stepType": "runCommand",
+              "validationHint": "claude_desktop_config.json opens in your editor"
+            },
+            {
+              "id": "step-4",
+              "title": "Add the filesystem MCP server",
+              "body": "The easiest MCP server to wire up is the built-in filesystem one — it lets Claude read and write files in directories you whitelist. Edit `claude_desktop_config.json`:\n\n```json\n{\n  \"mcpServers\": {\n    \"filesystem\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@modelcontextprotocol/server-filesystem\",\n        \"/Users/YOUR_USERNAME/Desktop\"\n      ]\n    }\n  }\n}\n```\n\nReplace `YOUR_USERNAME` with your macOS username (run `whoami` if unsure). The path you list is the **only** directory Claude can access — you can add more paths as additional array items.",
+              "stepType": "runCommand",
+              "validationHint": "claude_desktop_config.json saved with the mcpServers block"
+            },
+            {
+              "id": "step-5",
+              "title": "Restart Claude Desktop and verify",
+              "body": "Quit and reopen Claude Desktop — MCP servers only load on startup.\n\nIn the Claude Desktop chat, look for a tools icon (🔧) or a plug icon near the message input. Click it to see the connected MCP tools. You should see \"filesystem\" listed with read/write tools available.\n\nTest it by asking Claude:\n\n```\nList the files on my Desktop\n```\n\nClaude should respond with your actual Desktop file names — not a hallucinated list.",
+              "stepType": "verify",
+              "validationHint": "Claude lists real filenames from your Desktop folder"
+            },
+            {
+              "id": "step-6",
+              "title": "You're done",
+              "body": "You've wired Claude Desktop to your local filesystem via MCP. From here you can add more MCP servers — databases, APIs, Git, web search. The full list of community MCP servers is at [github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers).\n\nThe Advanced track shows how to build your own MCP server and call it from agents.",
+              "stepType": "read",
+              "validationHint": null
+            }
+          ]
         }
       ]
     },
@@ -202,7 +261,123 @@
       "title": "Advanced",
       "description": "Production-grade AI engineering. Parallel agents, eval harnesses, and serverless deployment.",
       "order": 2,
-      "lessons": []
+      "lessons": [
+        {
+          "id": "parallel-agents-cursor",
+          "trackId": "advanced",
+          "title": "Setting up async parallel agents (Cursor 3.2 style)",
+          "oneLineDescription": "Run multiple Cursor agent sessions simultaneously to parallelize independent code tasks.",
+          "estimatedMinutes": 25,
+          "category": "tooling",
+          "prerequisites": [
+            "setup-cursor",
+            "anthropic-memory-api-agent"
+          ],
+          "youtubeURL": null,
+          "isProContent": false,
+          "steps": [
+            {
+              "id": "step-1",
+              "title": "What parallel agents actually means",
+              "body": "A \"parallel agent\" in the Cursor context means running two or more independent Cursor chat sessions, each with a different slice of your codebase, simultaneously. You're not spawning sub-agents in code — you're using Cursor's multi-window support to work two independent tasks at once.\n\nThis is useful when you have two tasks that don't share files — e.g., implementing a new API endpoint AND writing tests for an existing module. Both can run in parallel without merge conflicts.",
+              "stepType": "read",
+              "validationHint": null
+            },
+            {
+              "id": "step-2",
+              "title": "Create a second Cursor window",
+              "body": "In Cursor: **File → New Window** (or `⌘+Shift+N`). This opens a second, fully independent Cursor instance with its own chat history.\n\nOpen each window to a **different directory** within your project — or the same root, but commit to working in non-overlapping files. The goal is zero file-level conflict between the two sessions.",
+              "stepType": "runCommand",
+              "validationHint": "Two Cursor windows are open, each in a separate directory or file scope"
+            },
+            {
+              "id": "step-3",
+              "title": "Decompose your task into parallel lanes",
+              "body": "Good decomposition is the skill. Before launching both agents, write out your task split:\n\n```\nWindow A — API layer:\n  - Add POST /lessons endpoint\n  - Add validation middleware\n  - Write integration test for the endpoint\n\nWindow B — Data model:\n  - Add LessonProgress table migration\n  - Add UserLessonRepository class\n  - Write unit tests for UserLessonRepository\n```\n\nThe split works when: (a) no file appears in both lists, (b) neither lane blocks the other.\n\nIf Window A's output is required input for Window B (e.g., A defines an interface B implements), make A finish first, then hand off to B.",
+              "stepType": "read",
+              "validationHint": null
+            },
+            {
+              "id": "step-4",
+              "title": "Launch both agents simultaneously",
+              "body": "In **Window A**: open the chat panel (`⌘+L`), write a precise task description for Lane A, and press Enter. Don't wait for it to finish.\n\nIn **Window B**: immediately open its chat panel and start Lane B.\n\nBoth agents are now running in parallel — Cursor allocates API requests independently per window. While A is writing the endpoint, B is writing the repository class.\n\nMonitor both windows. If one finishes early, queue the next task in that window.",
+              "stepType": "runCommand",
+              "validationHint": "Both windows show active agent responses simultaneously"
+            },
+            {
+              "id": "step-5",
+              "title": "Review and merge",
+              "body": "Once both finish, review each change in its own window first, then use `git diff` to see the combined change:\n\n```bash\ngit diff\n```\n\nLook for:\n- **File conflicts**: same file touched by both (shouldn't happen if your decomposition was correct)\n- **Import mismatches**: A imports something from B's new file before B committed it\n- **Test failures**: run tests across both lanes\n\n```bash\nnpm test\n```\n\nFix any issues, then commit everything together:",
+              "stepType": "verify",
+              "validationHint": "git diff shows only the expected files from both lanes, tests pass"
+            },
+            {
+              "id": "step-6",
+              "title": "You're done",
+              "body": "You've run your first parallel agent session. The speed gain depends on the task — highly parallelizable work (independent API + independent tests) can cut wall-clock time roughly in half. Non-parallelizable work (anything where A blocks B) is unchanged.\n\nThe next Advanced lesson shows how to apply this same parallel pattern to Cloudflare Worker deployment, where the Worker code and the iOS client integration can be developed simultaneously.",
+              "stepType": "read",
+              "validationHint": null
+            }
+          ]
+        },
+        {
+          "id": "deploy-cloudflare-worker",
+          "trackId": "advanced",
+          "title": "Deploying a Cloudflare Worker for AI APIs",
+          "oneLineDescription": "Set up wrangler, create a KV namespace, add secrets, and deploy your first Worker.",
+          "estimatedMinutes": 20,
+          "category": "tooling",
+          "prerequisites": [
+            "setup-claude-code"
+          ],
+          "youtubeURL": null,
+          "isProContent": false,
+          "steps": [
+            {
+              "id": "step-1",
+              "title": "What Cloudflare Workers give you",
+              "body": "A Cloudflare Worker is a serverless runtime that runs your code on Cloudflare's global edge network — no server to manage, free tier covers millions of requests per month, sub-10ms cold starts, and a built-in KV store for lightweight persistence.\n\nFor AI apps, Workers are the right place to:\n- Proxy API calls so your Anthropic key never ships to the client\n- Rate-limit per user without a database\n- Cache expensive upstream responses\n\nThis lesson deploys a minimal Worker that proxies Anthropic's API.",
+              "stepType": "read",
+              "validationHint": null
+            },
+            {
+              "id": "step-2",
+              "title": "Install wrangler",
+              "body": "Wrangler is Cloudflare's CLI for Workers development. Install it globally:\n\n```bash\nnpm install -g wrangler\n```\n\nVerify:\n\n```bash\nwrangler --version\n```\n\nShould print `3.x.x` or higher.",
+              "stepType": "runCommand",
+              "validationHint": "wrangler --version prints a version string"
+            },
+            {
+              "id": "step-3",
+              "title": "Authenticate with Cloudflare",
+              "body": "Log in to your Cloudflare account from the CLI. If you don't have one, create a free account at [dash.cloudflare.com](https://dash.cloudflare.com) first.\n\n```bash\nwrangler login\n```\n\nThis opens your browser to an OAuth flow. Approve access. Wrangler writes the token to `~/.wrangler/config/default.toml`.",
+              "stepType": "runCommand",
+              "validationHint": "wrangler login completes without an error"
+            },
+            {
+              "id": "step-4",
+              "title": "Scaffold a new Worker",
+              "body": "Create a new Worker project:\n\n```bash\nmkdir my-ai-proxy && cd my-ai-proxy\nnpm create cloudflare@latest . -- --type hello-world --no-git --no-deploy\n```\n\nThis generates `wrangler.toml`, `src/index.ts`, and `package.json`. Open `src/index.ts` — it's a hello-world Worker. You'll replace its body with the proxy logic.\n\nAlso add the Anthropic SDK:\n\n```bash\nnpm install @anthropic-ai/sdk\n```",
+              "stepType": "runCommand",
+              "validationHint": "wrangler.toml and src/index.ts exist in the project"
+            },
+            {
+              "id": "step-5",
+              "title": "Add your Anthropic API key as a secret",
+              "body": "Never put API keys in `wrangler.toml` or source code — they'd end up in your git history and on Cloudflare's dashboard for anyone with repo access to see.\n\nInstead, use Wrangler secrets:\n\n```bash\nwrangler secret put ANTHROPIC_API_KEY\n```\n\nPaste your `sk-ant-...` key when prompted. The key is encrypted at rest in Cloudflare's infrastructure and injected into your Worker's environment at request time — never exposed in deploy output.",
+              "stepType": "runCommand",
+              "validationHint": "wrangler secret put completes with 'Success: Created the secret'"
+            },
+            {
+              "id": "step-6",
+              "title": "Deploy",
+              "body": "```bash\nwrangler deploy\n```\n\nWrangler bundles your TypeScript, uploads it, and prints the live URL:\n\n```\nPublished my-ai-proxy (0.20 sec)\nhttps://my-ai-proxy.<your-subdomain>.workers.dev\n```\n\nTest it with curl:\n\n```bash\ncurl https://my-ai-proxy.<your-subdomain>.workers.dev\n```\n\nShould return `Hello World!` from the default template. From here, replace the handler body with your actual proxy logic and re-run `wrangler deploy` to push updates.",
+              "stepType": "verify",
+              "validationHint": "curl returns a 200 response from the workers.dev URL"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
