@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-30T12:00:00Z",
+  "updatedAt": "2026-04-30T13:30:00Z",
   "tracks": [
     {
       "id": "beginner",
@@ -69,6 +69,61 @@
               "validationHint": null
             }
           ]
+        },
+        {
+          "id": "setup-cursor",
+          "trackId": "beginner",
+          "title": "Setting up Cursor",
+          "oneLineDescription": "Install Cursor and wire up Claude as your primary model.",
+          "estimatedMinutes": 12,
+          "category": "tooling",
+          "prerequisites": [],
+          "youtubeURL": null,
+          "isProContent": false,
+          "steps": [
+            {
+              "id": "step-1",
+              "title": "Download Cursor",
+              "body": "Cursor is an AI-first code editor — visually a fork of VS Code, but with deep AI integration baked in. Grab the macOS build from [cursor.com](https://cursor.com).\n\nOpen the downloaded `Cursor.dmg`, drag `Cursor.app` to your `Applications` folder, then launch it. macOS will warn that the app was downloaded from the internet on first launch — click Open to bypass.",
+              "stepType": "read",
+              "validationHint": "Cursor.app is in /Applications and launches without an error dialog"
+            },
+            {
+              "id": "step-2",
+              "title": "Sign in or create an account",
+              "body": "On first launch Cursor asks you to sign in. You can sign in with GitHub, Google, or email — pick whichever account you'll use long-term, since your editor settings sync to it.\n\nThe free tier includes a generous monthly quota of fast Claude / GPT requests, plus unlimited slow-model fallback. You don't need a paid plan to follow this lesson.",
+              "stepType": "read",
+              "validationHint": "Cursor's command palette (⌘+K) shows your account in the top-right"
+            },
+            {
+              "id": "step-3",
+              "title": "Pin Claude as the default model",
+              "body": "Open Cursor's settings: **⌘,** → **Models**.\n\nIn the model picker, find `claude-sonnet-4-6` (or the latest Claude Sonnet variant) and toggle it on. Drag it to the top of the enabled list — Cursor uses the topmost enabled model as the default for ⌘+K and the chat panel.\n\nIf Claude isn't in the list, you may need to add an Anthropic API key in **Settings → Models → Anthropic** to unlock the full Claude family. Cursor's free tier includes Claude access through Cursor's own pool, but BYOK gives you priority and avoids hitting team rate limits.",
+              "stepType": "verify",
+              "validationHint": "the chat panel header shows 'claude-sonnet-4-6' (or similar) as the active model"
+            },
+            {
+              "id": "step-4",
+              "title": "Open a project and try ⌘+K",
+              "body": "From the welcome screen, click **Open Folder** and pick any code directory (the `hello-claude` folder from the previous lesson works perfectly).\n\nOnce the project is open, click into any file and press **⌘+K**. A small inline prompt appears. Type:\n\n```\nadd a JSDoc comment explaining what this file does\n```\n\nCursor proposes a diff. Press **⌘+Enter** to accept, **⌘+Backspace** to reject.",
+              "stepType": "runCommand",
+              "validationHint": "the file now has a JSDoc comment block at the top"
+            },
+            {
+              "id": "step-5",
+              "title": "Try the chat panel",
+              "body": "Press **⌘+L** to open Cursor's chat panel on the right. Unlike ⌘+K (inline single-file edit), the chat panel has access to your entire project and can make multi-file changes.\n\nAsk it: `summarize this project's structure in 3 bullet points`. The first response should reference your actual files, not generic placeholders. If it doesn't, click the **+ Add Context** button at the top of the chat panel and select your project root.",
+              "stepType": "verify",
+              "validationHint": "Cursor's reply mentions specific files from your project by name"
+            },
+            {
+              "id": "step-6",
+              "title": "You're done",
+              "body": "You now have a fully-configured AI editor. ⌘+K is for surgical single-file edits; ⌘+L is for multi-file conversations. Claude is your default model.\n\nFrom here, the Intermediate track teaches you to actually build things with these tools — starting with the Anthropic Memory API.",
+              "stepType": "read",
+              "validationHint": null
+            }
+          ]
         }
       ]
     },
@@ -77,7 +132,70 @@
       "title": "Intermediate",
       "description": "Once your tools are wired up — build something real. Agents, MCP, and prompt patterns.",
       "order": 1,
-      "lessons": []
+      "lessons": [
+        {
+          "id": "anthropic-memory-api-agent",
+          "trackId": "intermediate",
+          "title": "Building your first agent with the Anthropic Memory API",
+          "oneLineDescription": "Wire up persistent memory so your agent remembers prior conversations.",
+          "estimatedMinutes": 25,
+          "category": "anthropic",
+          "prerequisites": ["setup-claude-code"],
+          "youtubeURL": null,
+          "isProContent": false,
+          "steps": [
+            {
+              "id": "step-1",
+              "title": "Why memory matters for agents",
+              "body": "A normal Claude API call is stateless — every request is independent and the model has no recollection of prior conversations. For chatbots that's fine, but for **agents** (programs that run over hours or days, taking actions on your behalf), you need persistence.\n\nThe Anthropic Memory API gives Claude a long-term memory store: facts, preferences, and conversation context that survive across separate API calls. This lesson wires up the simplest possible agent that uses it: a daily standup helper that remembers what you said yesterday.",
+              "stepType": "read",
+              "validationHint": null
+            },
+            {
+              "id": "step-2",
+              "title": "Set up a project directory",
+              "body": "From your terminal:\n\n```bash\nmkdir standup-agent && cd standup-agent\nnpm init -y\nnpm install @anthropic-ai/sdk dotenv\n```\n\nCreate a `.env` file with your Anthropic API key (the same `sk-ant-` key from the Claude Code lesson):\n\n```\nANTHROPIC_API_KEY=sk-ant-your-key-here\n```\n\nAdd `.env` to `.gitignore` immediately so you never commit it.",
+              "stepType": "runCommand",
+              "validationHint": "package.json exists with anthropic + dotenv as dependencies"
+            },
+            {
+              "id": "step-3",
+              "title": "Create a memory bucket",
+              "body": "Memory in the Anthropic API is organized into **buckets** — named persistent stores keyed to your account. Create one for this agent:\n\n```js\n// create-bucket.js\nimport Anthropic from \"@anthropic-ai/sdk\";\nimport \"dotenv/config\";\n\nconst client = new Anthropic();\nconst bucket = await client.memory.buckets.create({\n  name: \"standup-agent\",\n  description: \"Daily standup helper, single-user\",\n});\nconsole.log(\"created bucket:\", bucket.id);\n```\n\nRun it once:\n\n```bash\nnode create-bucket.js\n```\n\nNote the printed bucket ID — you'll wire it into the agent in the next step.",
+              "stepType": "runCommand",
+              "validationHint": "the script prints a bucket ID like `bkt_01xyz...`"
+            },
+            {
+              "id": "step-4",
+              "title": "Write the agent loop",
+              "body": "Create `agent.js`:\n\n```js\nimport Anthropic from \"@anthropic-ai/sdk\";\nimport \"dotenv/config\";\n\nconst client = new Anthropic();\nconst BUCKET_ID = \"bkt_01xyz...\"; // your bucket id from step 3\n\nasync function runStandup(userMessage) {\n  const reply = await client.messages.create({\n    model: \"claude-sonnet-4-6\",\n    max_tokens: 1024,\n    memory: { bucket_id: BUCKET_ID, mode: \"read_write\" },\n    system: \"You are a daily standup helper. Each day the user describes what they did and what they're working on. Remember it across days. When asked, summarize prior days briefly.\",\n    messages: [{ role: \"user\", content: userMessage }],\n  });\n  console.log(reply.content[0].text);\n}\n\n// Take the message from argv\nconst message = process.argv.slice(2).join(\" \") || \"What did I do yesterday?\";\nawait runStandup(message);\n```\n\nThe key field is `memory: { bucket_id, mode: \"read_write\" }` — this tells Claude to read from AND write to your bucket on every call.",
+              "stepType": "runCommand",
+              "validationHint": "agent.js exists and references your bucket ID"
+            },
+            {
+              "id": "step-5",
+              "title": "Seed it with a few entries",
+              "body": "Run the agent three times to give it some history:\n\n```bash\nnode agent.js \"Today I shipped the curriculum schema. Tomorrow I want to wire up tutor.\"\nnode agent.js \"Today I ran into a UserDefaults bug — fixed it. Tomorrow I'll start the Worker.\"\nnode agent.js \"Today the Worker landed. Tomorrow I'll write iOS tutor UI.\"\n```\n\nEach call writes the user's message + Claude's reply into your memory bucket. After three days of entries, the bucket has enough state to summarize.",
+              "stepType": "runCommand",
+              "validationHint": "all three calls return text replies without error"
+            },
+            {
+              "id": "step-6",
+              "title": "Ask it to recall",
+              "body": "Now query the agent without any new content:\n\n```bash\nnode agent.js \"What have I been working on this week?\"\n```\n\nClaude should produce a summary like:\n\n> This week you shipped the curriculum schema, fixed a UserDefaults bug, and landed the tutor Worker. You're currently working on the iOS tutor UI.\n\nIf the reply is generic (\"I don't have memory of prior conversations\"), the bucket isn't connected — re-check the `BUCKET_ID` constant and the `memory:` block in `agent.js`.",
+              "stepType": "verify",
+              "validationHint": "Claude's reply references specific things from the prior 3 messages"
+            },
+            {
+              "id": "step-7",
+              "title": "What you just did",
+              "body": "You built a stateful agent. The Memory API handles all the heavy lifting — vector indexing, retrieval, context-window management — so you ship a 30-line script that behaves like an app with a database.\n\nFrom here: try wiring this same pattern into a Discord bot, a CLI assistant, or a daily journaling app. The bucket is the persistence layer; everything else is just UI.",
+              "stepType": "read",
+              "validationHint": null
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "advanced",
