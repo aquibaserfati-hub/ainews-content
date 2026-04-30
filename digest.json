@@ -1,158 +1,187 @@
 {
   "schemaVersion": 1,
-  "weekOf": "2026-04-20T00:00:00Z",
-  "reportGeneratedAt": "2026-04-29T08:25:23Z",
-  "learnGeneratedAt": "2026-04-27T14:00:00Z",
+  "weekOf": "2026-04-27T00:00:00Z",
+  "reportGeneratedAt": "2026-04-30T12:00:00Z",
+  "learnGeneratedAt": "2026-04-30T12:00:00Z",
   "report": [
     {
-      "id": "openai-gpt-55-api-launch-2026-04-24",
-      "title": "GPT-5.5 ships to API with agentic coding lead",
-      "summary": "OpenAI released GPT-5.5 on April 23 in ChatGPT and Codex, then opened API access on April 24. It scores 82.7% on Terminal-Bench 2.0 — state-of-the-art for command-line agent workflows — and leads SWE-bench Verified at 88.7%, at roughly half the cost of comparable frontier coding models on Artificial Analysis's index.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/introducing-gpt-5-5/",
-      "significance": 8
-    },
-    {
-      "id": "deepseek-v4-release-2026-04-24",
-      "title": "DeepSeek V4 goes MIT-licensed at 1/7th the cost of GPT-5.5",
-      "summary": "DeepSeek dropped V4-Pro and V4-Flash on April 24 under MIT license — V4-Pro output costs $3.48/M tokens versus $30/M for GPT-5.5 and $25/M for Claude Opus 4.7, while matching or beating them on LiveCodeBench and Codeforces. Drop-in swap: just change the model param to deepseek-v4-pro; legacy deepseek-chat and deepseek-reasoner endpoints retire July 24.",
-      "category": "otherLLM",
-      "sourceURL": "https://api-docs.deepseek.com/news/news260424",
-      "significance": 8
-    },
-    {
-      "id": "anthropic-claude-opus-47-launch-2026-04-16",
-      "title": "Anthropic ships Claude Opus 4.7 with SWE-bench Pro lead",
-      "summary": "Claude Opus 4.7 launched April 16, leading SWE-bench Pro at 64.3% — above GPT-5.5's 58.6% — and topping LM Arena human preference Elo at 1504. Priced at $5/$25 per million tokens input/output, it holds the benchmark edge for real-world software engineering agent tasks over GPT-5.5's terminal-agent strength.",
+      "id": "anthropic-mythos-preview-project-glasswing-2026-04-07",
+      "title": "Anthropic ships Claude Mythos Preview via invite-only Project Glasswing",
+      "summary": "Anthropic confirmed Claude Mythos Preview on April 7 — its most capable model to date, positioned above Opus in a new 'Capybara' tier. Access is invitation-only for defensive cybersecurity orgs; no public API or pricing exists yet. The UK AISI verified it's the first model to solve a 32-step corporate network attack simulation end-to-end.",
       "category": "anthropic",
       "sourceURL": "https://www.anthropic.com/news",
+      "significance": 9
+    },
+    {
+      "id": "google-cloud-next-2026-gemini-enterprise-agent-platform-2026-04-22",
+      "title": "Google Cloud Next 2026: Gemini Enterprise Agent Platform replaces Vertex AI",
+      "summary": "At Cloud Next in Las Vegas (April 22–24), Google rebranded Vertex AI to Gemini Enterprise Agent Platform — shipping ADK 2.0 with graph-based multi-agent orchestration, Agent Studio (low-code), Agent Runtime with sub-second cold starts, Agent Sandbox GA, and managed MCP servers for all Google Cloud services. Existing Vertex customers migrate automatically.",
+      "category": "google",
+      "sourceURL": "https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up",
+      "significance": 8
+    },
+    {
+      "id": "google-anthropic-40b-investment-2026-04-24",
+      "title": "Google commits up to $40B in Anthropic at $350B valuation",
+      "summary": "Google will invest $10B immediately and up to $40B total contingent on milestones, plus dedicate 5 GW of TPU capacity to Anthropic — cementing it as Anthropic's largest chip supplier alongside Amazon's matching 5 GW Trainium commitment. Anthropic's annualized revenue hit $30B, up from $9B at end of 2025.",
+      "category": "anthropic",
+      "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
       "significance": 7
     },
     {
-      "id": "openai-workspace-agents-slack-salesforce-2026-04-28",
-      "title": "OpenAI rebuilds custom GPTs into shared Workspace Agents in Slack and Salesforce",
-      "summary": "OpenAI converted its custom GPT product into shared Workspace Agents that live natively inside Slack and Salesforce, making team-deployed agents available without a separate ChatGPT context switch. Meaningful for enterprise builders already on those platforms who want agentic workflows inside existing tooling.",
+      "id": "openai-symphony-codex-orchestration-2026-04-28",
+      "title": "OpenAI open-sources Symphony: Codex agent orchestrator tied to Linear",
+      "summary": "Symphony is an open-source Elixir spec that turns Linear issue boards into an always-on control plane for Codex agents — one agent per open ticket, running in isolated workspaces with CI proof-of-work before landing PRs. OpenAI reports 500% more landed PRs internally; treats it as a reference implementation, not a maintained product.",
       "category": "openai",
-      "sourceURL": "https://asanify.com/blog/news/ai-agents-enterprise-stack-april-28-2026/",
-      "significance": 6
+      "sourceURL": "https://openai.com/index/open-source-codex-orchestration-symphony/",
+      "significance": 7
     },
     {
-      "id": "eu-ai-act-digital-omnibus-trilogue-2026-04-28",
-      "title": "EU AI Act Digital Omnibus reaches final trilogue on April 28",
-      "summary": "The last political trilogue on the Digital Omnibus on AI took place April 28; both Parliament and Council converge on hard delay dates — December 2, 2027 for stand-alone high-risk systems and August 2, 2028 for AI embedded in regulated products. Formal adoption still requires publication in the Official Journal before August 2, so treat August 2026 as the live deadline until that happens.",
-      "category": "other",
-      "sourceURL": "https://cdt.org/insights/cdt-europes-ai-bulletin-april-2026/",
-      "significance": 6
+      "id": "google-gemma-4-release-2026-04-02",
+      "title": "Google ships Gemma 4: Apache 2.0 open models from 2B to 31B with multimodal and 256K context",
+      "summary": "Gemma 4 launched April 2 in four sizes (E2B, E4B, 26B MoE, 31B Dense), built from Gemini 3 research, under a fully permissive Apache 2.0 license. All sizes handle images and 140+ languages; edge variants add audio; the 31B ranks #3 on Arena AI, beating models 20x its size. Installable locally with a single Ollama command.",
+      "category": "google",
+      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "significance": 8
     },
     {
-      "id": "iclr-2026-reasoning-trap-hallucination-paper-2026-04-29",
-      "title": "ICLR 2026 paper: stronger reasoning training amplifies tool hallucination",
-      "summary": "A paper titled 'The Reasoning Trap' presented at ICLR 2026 in Rio finds that reinforcement-learning-based reasoning enhancement increases tool-call hallucination rates in lockstep with capability gains — and neither prompt engineering nor DPO closes the gap. Relevant to anyone deploying multi-step agent workflows on current frontier models.",
+      "id": "mcp-linux-foundation-97m-installs-2026-04",
+      "title": "MCP crosses 97M installs, donated to Linux Foundation with Anthropic, OpenAI, Google, Microsoft backing",
+      "summary": "Model Context Protocol passed 97 million installs in March 2026 and is now governed by a neutral Linux Foundation body with contributions from Anthropic, OpenAI, Microsoft, and Google. Figma, Slack, and France's government shipped MCP servers the same week — signaling it has crossed from experimental to infrastructure.",
       "category": "other",
-      "sourceURL": "https://asanify.com/blog/news/ai-agent-hallucination-april-29-2026/",
-      "significance": 6
+      "sourceURL": "https://blog.mean.ceo/new-ai-model-releases-news-april-2026/",
+      "significance": 7
     },
     {
-      "id": "snap-layoffs-ai-code-generation-2026-04-28",
-      "title": "Snap cuts 1,000 jobs citing AI — AI now writes 65% of its new code",
-      "summary": "Snap CEO Evan Spiegel announced roughly 1,000 layoffs and closure of 300+ open roles, directly citing AI advancements; the company reports AI generates over 65% of its new code. Expected to deliver $500M+ in annualized cost savings — a concrete, public data point on AI-driven headcount compression at a major consumer tech company.",
-      "category": "other",
-      "sourceURL": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
-      "significance": 5
+      "id": "openai-claude-sonnet-5-april-1-2026",
+      "title": "Claude Sonnet 5 quietly ships April 1 with top coding and reasoning scores",
+      "summary": "Anthropic released Claude Sonnet 5 on April 1 — described by community tracking as leading coding and reasoning benchmarks among publicly available models. Available via the standard Claude API; no separate announcement blog post was published at launch.",
+      "category": "anthropic",
+      "sourceURL": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "significance": 6
     }
   ],
   "learn": [
     {
-      "id": "claude-managed-agents-memory-learn",
-      "name": "Claude Managed Agents Memory API",
-      "category": "anthropic",
-      "oneLineDescription": "Filesystem-backed persistent memory for Claude agents that survives across sessions.",
-      "estimatedSetupMinutes": 10,
+      "id": "openai-symphony-codex-orchestrator",
+      "name": "OpenAI Symphony",
+      "category": "openai",
+      "oneLineDescription": "Open-source Elixir spec that turns Linear boards into an always-on Codex agent control plane.",
+      "estimatedSetupMinutes": 30,
       "detail": {
-        "whatItDoes": "Memory on Claude Managed Agents adds a persistent, filesystem-based storage layer to agent sessions. Memories are stored as structured Markdown files in a workspace-scoped memory store. Agents can read, write, and update those files across sessions using the same bash and code execution tools they already use for agentic tasks — no separate memory SDK required.\n\nEvery memory write is logged with an audit trail (agent ID, session ID, timestamp), and developers can view, edit, or delete memories via the Claude Console or the API. The feature is available now in public beta under the standard `managed-agents-2026-04-01` beta header — no separate access request needed.",
-        "whoItsFor": "Backend engineers and platform teams building recurring-task agents: document verification pipelines, code review bots, customer support agents, or any workflow that runs the same agent repeatedly and benefits from accumulated learning. Particularly useful if you are already on Claude Managed Agents and want to reduce prompt-engineering overhead caused by stateless sessions.",
+        "whatItDoes": "Symphony is an open-source orchestration specification (with a reference implementation in Elixir/BEAM) that connects OpenAI Codex agents to project management boards like Linear. It watches for open tickets in a 'Ready for Agent' state, spawns an isolated Codex agent workspace per ticket, monitors CI, rebases conflicts, and shepherds changes through to a pull request — producing proof-of-work artifacts (CI status, PR diff, walkthrough) before landing code. If an agent crashes, BEAM's OTP supervision trees restart it automatically; the system never sleeps.\n\nThe core shift is from 'supervise each Codex session' to 'manage the work queue.' OpenAI reported a 500% increase in landed PRs on some internal teams within three weeks. OpenAI explicitly labels Symphony a reference implementation and does not plan to maintain it as a standalone product — teams are expected to fork and adapt it.",
+        "whoItsFor": "Engineering teams already using Codex (via the Codex App Server or CLI) who have hit the context-switching bottleneck of managing 3–5 parallel agent sessions. Works best for codebases that have adopted 'harness engineering' practices: modular code, strong automated test coverage, and deterministic CI. Not suitable for legacy monoliths or ambiguous, judgment-heavy tickets.",
         "pros": [
-          "No separate memory infrastructure to build or host — mounts directly on the agent's existing filesystem",
-          "Full audit trail per memory change; memories are editable and deletable via API or Claude Console",
-          "Shared memory across agents in the same workspace — one agent's learning is available to others",
-          "Available immediately under the existing managed-agents beta header, no new access request"
+          "Eliminates the human-as-session-supervisor bottleneck — agents pull work autonomously from your issue tracker",
+          "BEAM/OTP gives fault-tolerant process isolation out of the box; crashed agents restart without intervention",
+          "Proof-of-work gate (CI pass + PR artifacts) before landing means output is verifiable, not just generated",
+          "Fully open-source and forkable under MIT; OpenAI encourages teams to build their own version from the spec",
+          "Supports multi-model runtimes beyond Codex — architecture is model-agnostic by design"
         ],
         "cons": [
-          "Anthropic-hosted only — sensitive workloads (legal, medical, financial) should review data residency before adopting",
-          "Multi-agent coordination and self-evaluation (the most powerful capabilities) are still research preview, not in public beta",
-          "Adds $0.08/session-hour runtime cost on top of normal token rates"
+          "Reference implementation is in Elixir — most teams will need to rewrite it in their preferred language or use it as a spec only",
+          "Requires 'harness engineering' prerequisites (modular code, high test coverage, agent-friendly repo structure) before it delivers value",
+          "OpenAI will not maintain Symphony as a product; community forks will diverge quickly",
+          "500% PR increase metric is directional with no published baseline — validate with your own team before betting on it"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+ or Node 20+\n- Anthropic API key with Managed Agents access\n- `anthropic` SDK v0.52.0 or later (`pip install -U anthropic`)\n\n## 1. Create a Managed Agent with memory enabled\n\n```bash\nexport ANTHROPIC_API_KEY=sk-ant-...\n```\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\n\n# Create a memory store for your workspace\nmemory_store = client.beta.agents.memory_stores.create(\n    name=\"doc-review-memory\",\n    description=\"Accumulated knowledge for document verification agent\",\n)\nprint(\"Memory store ID:\", memory_store.id)\n```\n\n## 2. Create an agent attached to the memory store\n\n```python\nagent = client.beta.agents.create(\n    model=\"claude-opus-4-7\",\n    name=\"doc-reviewer\",\n    tools=[{\"type\": \"bash_20250124\"}, {\"type\": \"computer_20250124\"}],\n    memory_store_id=memory_store.id,\n    betas=[\"managed-agents-2026-04-01\"],\n)\nprint(\"Agent ID:\", agent.id)\n```\n\n## 3. Run a session — the agent will read and write memory automatically\n\n```python\nsession = client.beta.agents.sessions.create(\n    agent_id=agent.id,\n    betas=[\"managed-agents-2026-04-01\"],\n)\n\nrun = client.beta.agents.sessions.run(\n    agent_id=agent.id,\n    session_id=session.id,\n    input=\"Review the uploaded contract for recurring issues.\",\n    betas=[\"managed-agents-2026-04-01\"],\n)\n\nfor event in run:\n    if event.type == \"message_delta\":\n        print(event.delta.text, end=\"\", flush=True)\n```\n\n## 4. Inspect and edit memories via API\n\n```python\n# List all memories in the store\nmemories = client.beta.agents.memory_stores.memories.list(\n    memory_store_id=memory_store.id,\n    betas=[\"managed-agents-2026-04-01\"],\n)\nfor mem in memories.data:\n    print(mem.id, mem.content[:120])\n\n# Delete a specific memory\nclient.beta.agents.memory_stores.memories.delete(\n    memory_store_id=memory_store.id,\n    memory_id=\"mem_abc123\",\n    betas=[\"managed-agents-2026-04-01\"],\n)\n```\n\n## Gotchas\n- **Beta header is mandatory on every request.** Omitting `managed-agents-2026-04-01` returns a 400. The SDK does NOT add it automatically unless you pass it explicitly.\n- **Memory is workspace-scoped, not agent-scoped.** Multiple agents share the same store — useful for collaboration, but requires naming discipline to avoid memory collisions.\n- **Session billing starts on `run()`, not on `create()`.** Idle sessions do not accrue the $0.08/hr runtime charge.",
-        "sourceURL": "https://platform.claude.com/docs/en/managed-agents/overview"
+        "setupGuideMarkdown": "## Prerequisites\n- OpenAI API access with Codex App Server enabled (requires Codex subscription or API access)\n- Linear workspace with API token\n- Elixir 1.17+ and Erlang/OTP 27+ installed, OR Docker\n- PostgreSQL 15+ for state persistence\n- A codebase with automated tests and CI (GitHub Actions, CircleCI, etc.)\n\n## 1. Clone the repository\n\n```bash\ngit clone https://github.com/openai/symphony.git\ncd symphony\n```\n\n## 2. Install dependencies\n\n```bash\nmix deps.get\n```\n\n## 3. Configure environment\n\nCopy the example env file and fill in your credentials:\n\n```bash\ncp .env.example .env\n```\n\nEdit `.env`:\n\n```bash\n# Required\nOPENAI_API_KEY=sk-...\nLINEAR_API_KEY=lin_api_...\nLINEAR_TEAM_ID=your-team-id\nDATABASE_URL=postgres://user:pass@localhost:5432/symphony_dev\n\n# Optional — defaults shown\nSYMPHONY_AGENT_CONCURRENCY=5        # max parallel agent workspaces\nSYMPHONY_POLL_INTERVAL_SECONDS=30   # how often to check Linear for new tasks\nSYMPHONY_READY_STATE=Ready for Agent # Linear status that triggers an agent\n```\n\n> **Gotcha:** Linear API tokens are workspace-scoped. Generate one at Linear → Settings → API → Personal API keys. The token must have `issues:read` and `issues:write` scopes or Symphony will silently skip ticket updates.\n\n## 4. Set up the database\n\n```bash\nmix ecto.create\nmix ecto.migrate\n```\n\n## 5. Configure your repo with WORKFLOW.md\n\nSymphony reads a `WORKFLOW.md` in your target repo root to understand your CI setup, branch naming conventions, and PR checklist. Create one:\n\n```markdown\n# WORKFLOW.md\n\n## Branch naming\nfeature/<linear-issue-id>-<slug>\n\n## CI\n- Run `mix test` before opening a PR\n- All tests must pass; no exceptions\n\n## PR checklist\n- [ ] Tests pass in CI\n- [ ] No new compiler warnings\n- [ ] Changelog entry added\n```\n\n## 6. Start Symphony\n\n```bash\nmix symphony.start\n```\n\nYou should see log output like:\n\n```\n[Symphony] Polling Linear team <id> every 30s\n[Symphony] Found 0 ready tasks. Waiting...\n```\n\n## 7. Test with a real ticket\n\nIn Linear, create a ticket, write a clear description, and move it to the **Ready for Agent** column. Within one poll cycle you'll see:\n\n```\n[Symphony] Picked up issue ENG-42: \"Add input validation to /api/users\"\n[Symphony] Spawned workspace: /tmp/symphony/ENG-42\n[Symphony] Agent running Codex session...\n```\n\n## Tips & gotchas\n\n- **Ambiguous tickets fail.** Codex needs clear acceptance criteria. If the ticket says \"fix the bug\" with no detail, the agent will spin and produce noise.\n- **Keep sandboxes small.** Point Symphony at a single service or package, not a monorepo root. Large context = higher token spend + worse results.\n- **Review the 500% PR stat skeptically.** More PRs ≠ better code. Add a human review step before merging agent PRs to main.\n- **Elixir not your thing?** The `WORKFLOW.md` + Linear state machine spec is language-agnostic. Several community Python and TypeScript reimplementations appeared within days of launch — search GitHub for `symphony-codex` forks.",
+        "sourceURL": "https://github.com/openai/symphony"
       }
     },
     {
-      "id": "google-adk-v1-python-learn",
-      "name": "Google Agent Development Kit (ADK) v1.0",
+      "id": "google-gemma-4-local-inference",
+      "name": "Gemma 4",
       "category": "google",
-      "oneLineDescription": "Open-source, code-first framework for building multi-agent systems on Gemini or any model.",
-      "estimatedSetupMinutes": 8,
+      "oneLineDescription": "Google's Apache 2.0 open models (2B–31B) with multimodal input and 256K context, runnable locally.",
+      "estimatedSetupMinutes": 5,
       "detail": {
-        "whatItDoes": "Google's Agent Development Kit (ADK) is an open-source agent framework available in Python, TypeScript, Go, and Java. It reached stable v1.0 at Google Cloud Next 2026. ADK lets you compose single agents or multi-agent pipelines using a simple declarative API, attach tools (Google Search, MCP tools, custom functions, OpenAPI specs), and run locally or deploy to Cloud Run or any container runtime.\n\nADK natively supports the A2A (Agent-to-Agent) protocol v1.0, meaning agents built with ADK can interoperate with agents built in LangGraph, CrewAI, AutoGen, Semantic Kernel, or LlamaIndex without custom glue code. The framework also ships a built-in dev UI (`adk web`) for interactive debugging and evaluation.",
-        "whoItsFor": "Backend engineers and ML platform teams building production multi-agent systems. Particularly relevant if you are already on Google Cloud (Vertex AI / Cloud Run) or need A2A interoperability across heterogeneous agent frameworks. The Python SDK is the most mature; Go and Java are also stable. TypeScript is available but the Python 2.0 beta adds more features.",
+        "whatItDoes": "Gemma 4 is Google DeepMind's open-weight model family released April 2, 2026, built from the same research as Gemini 3. It ships in four sizes: E2B and E4B (edge-optimized, run on phones and Raspberry Pi), 26B MoE (activates only ~4B parameters at inference for GPU efficiency), and 31B Dense (flagship, fits on a single 80 GB GPU). All sizes support text + image input with variable resolution, 140+ languages, and context windows up to 256K tokens. The E2B and E4B additionally support native audio input. The 31B Dense ranks #3 on Arena AI, beating models 20× its size on reasoning benchmarks.\n\nGemma 4 supports native function calling, structured output, and a configurable 'thinking mode' (chain-of-thought via `<|think|>` tokens) — making it a practical choice for agentic workflows without cloud API dependency. The Apache 2.0 license allows unrestricted commercial use, fine-tuning, and redistribution with no MAU caps.",
+        "whoItsFor": "Backend and mobile developers who need a capable, commercially licensable local model for: privacy-sensitive workloads (medical, legal, financial data that cannot leave the device), offline-capable apps, cost reduction by routing routine tasks away from cloud APIs, or Android on-device AI via the AICore Developer Preview. Also ideal for researchers who want a strong open-weight base for fine-tuning — QLoRA on the 31B requires ~16 GB VRAM.",
         "pros": [
-          "Model-agnostic despite Gemini defaults — adapters for OpenAI, Anthropic, and local models are available",
-          "A2A v1.0 built-in means agents interoperate with LangGraph, CrewAI, AutoGen out of the box",
-          "Ships a local dev UI (`adk web`) and eval harness (`adk eval`) — no external tooling needed to test agents",
-          "Apache 2.0 licensed; deployable to any container or Kubernetes environment"
+          "Apache 2.0 license — no MAU limits, no royalty payments, commercial fine-tuning and redistribution allowed",
+          "Single Ollama command installs any size; no cloud account needed to start",
+          "31B Dense ranked #3 on Arena AI, outperforming models 20x its parameter count on reasoning",
+          "Native multimodal: images across all sizes, audio on edge variants — no separate vision adapter needed",
+          "Android AICore Developer Preview available today; code is forward-compatible with production Gemini Nano 4 devices"
         ],
         "cons": [
-          "Python 2.0 beta (workflows, agent teams) introduces breaking changes from v1.x — pin your version in production",
-          "Heavy Gemini/Google Cloud integration points mean some features require a GCP project and billing enabled"
+          "31B Dense needs ~80 GB VRAM for full precision (or ~16 GB with QLoRA) — consumer GPU users need the 26B MoE or smaller",
+          "Lags behind Qwen 3.5 on MMLU Pro and SWE-bench coding benchmarks; not the best open model for every task",
+          "Thinking mode tokens add latency and cost — needs explicit tuning to avoid runaway inference budgets in production"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+ (3.11 recommended)\n- Google AI Studio API key (`GOOGLE_API_KEY`) OR a GCP project with Vertex AI enabled\n- `uv` or `pip` for package management\n\n## 1. Install ADK\n\n```bash\npip install google-adk\n# or with uv:\nuv add google-adk\n```\n\n## 2. Set your API key\n\n```bash\nexport GOOGLE_API_KEY=AIza...   # Google AI Studio key\n# OR for Vertex AI:\nexport GOOGLE_CLOUD_PROJECT=my-project\nexport GOOGLE_CLOUD_LOCATION=us-central1\n```\n\n## 3. Build a simple agent\n\n```python\n# agent.py\nfrom google.adk.agents import Agent\nfrom google.adk.tools import google_search\n\nroot_agent = Agent(\n    name=\"research_assistant\",\n    model=\"gemini-flash-latest\",  # or \"gemini-2.5-pro\", \"claude-opus-4-7\", etc.\n    instruction=\"You are a helpful research assistant. Search the web when needed.\",\n    description=\"Searches and summarizes topics.\",\n    tools=[google_search],\n)\n```\n\n## 4. Run locally with the dev UI\n\n```bash\nadk web\n# Opens http://localhost:8000 — interactive chat + tool trace viewer\n```\n\n## 5. Build a multi-agent system\n\n```python\nfrom google.adk.agents import Agent\n\nresearcher = Agent(\n    name=\"researcher\",\n    model=\"gemini-flash-latest\",\n    instruction=\"Find and summarize relevant information on a topic.\",\n)\n\nwriter = Agent(\n    name=\"writer\",\n    model=\"gemini-2.5-pro\",\n    instruction=\"Write a polished report based on the researcher's findings.\",\n)\n\norchestrator = Agent(\n    name=\"orchestrator\",\n    model=\"gemini-2.5-pro\",\n    instruction=\"Coordinate researcher and writer to produce a final report.\",\n    sub_agents=[researcher, writer],\n)\n```\n\n## 6. Run an eval suite\n\n```bash\nadk eval ./my_agent ./my_agent/eval_set.evalset.json\n```\n\n## Gotchas\n- **`gemini-flash-latest` routing may fail on regional endpoints.** If you are in a non-`us-central1` region, use an explicit version string like `gemini-2.5-flash-001` instead of the alias.\n- **ADK Python 2.0 beta is not backward-compatible with 1.x.** If you are pinning a production deployment, use `pip install google-adk==1.x.x` explicitly.\n- **`adk web` binds to `127.0.0.1` by default.** In Cloud Shell or remote VMs, run `adk web --host 0.0.0.0` and add CORS exemptions as needed.",
+        "setupGuideMarkdown": "## Prerequisites\n- macOS (Apple Silicon or Intel) or Linux with at least 8 GB RAM for E4B, 32 GB for 26B MoE, 80 GB VRAM for 31B Dense\n- [Ollama](https://ollama.com) installed (handles model download + quantization automatically)\n\n## Option A: Run via Ollama (fastest, recommended)\n\n```bash\n# Install Ollama (macOS)\nbrew install ollama\n\n# Or Linux one-liner\ncurl -fsSL https://ollama.com/install.sh | sh\n```\n\nPull and run the model you want:\n\n```bash\n# Edge model (~4B, runs on laptops with 8GB RAM)\nollama run gemma4:4b\n\n# MoE model (~26B total, ~4B active — needs ~16GB RAM)\nollama run gemma4:27b\n\n# Dense flagship (needs ~50GB RAM with 4-bit quant)\nollama run gemma4:31b\n```\n\nYou'll be at an interactive prompt immediately. Type `/bye` to exit.\n\n> **Gotcha:** Ollama uses 4-bit quantization by default. If you need higher fidelity (e.g., for fine-tuning evals), pull the `fp16` tag: `ollama pull gemma4:31b-fp16` — but this requires ~62 GB of RAM/VRAM.\n\n## Option B: Python via Hugging Face Transformers\n\n```bash\npip install transformers torch accelerate\n```\n\n```python\nfrom transformers import AutoTokenizer, AutoModelForCausalLM\nimport torch\n\nmodel_id = \"google/gemma-4-4b-it\"  # swap for gemma-4-27b-it or gemma-4-31b-it\n\ntokenizer = AutoTokenizer.from_pretrained(model_id)\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_id,\n    torch_dtype=torch.bfloat16,\n    device_map=\"auto\",\n)\n\nmessages = [\n    {\"role\": \"user\", \"content\": \"Explain function calling in one paragraph.\"}\n]\ninputs = tokenizer.apply_chat_template(\n    messages, return_tensors=\"pt\", return_dict=True\n).to(model.device)\n\noutputs = model.generate(**inputs, max_new_tokens=256)\nprint(tokenizer.decode(outputs[0], skip_special_tokens=True))\n```\n\n> **Gotcha:** You must accept Google's model license on Hugging Face before downloading. Run `huggingface-cli login` first and visit the model card to click 'Agree.'\n\n## Option C: Google AI Studio (no local setup)\n\nVisit [aistudio.google.com](https://aistudio.google.com), select **Gemma 4** from the model picker, and start prompting immediately — free tier available.\n\n## Enable thinking mode (chain-of-thought)\n\n```python\nmessages = [\n    {\n        \"role\": \"user\",\n        \"content\": \"Solve step by step: what is the 47th Fibonacci number? <|think|>\"\n    }\n]\n```\n\nThe model will emit reasoning tokens inside `<|think|>...<|/think|>` tags before the final answer. Strip them from user-facing output but keep them for logging.\n\n## Fine-tuning with QLoRA (16 GB VRAM path)\n\n```bash\npip install unsloth\n```\n\n```python\nfrom unsloth import FastLanguageModel\n\nmodel, tokenizer = FastLanguageModel.from_pretrained(\n    model_name=\"google/gemma-4-31b-it\",\n    max_seq_length=8192,\n    load_in_4bit=True,   # enables QLoRA — fits in 16 GB\n)\n```",
+        "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
+      }
+    },
+    {
+      "id": "google-adk-gemini-enterprise-agent-platform",
+      "name": "Google Agent Development Kit (ADK) 2.0",
+      "category": "google",
+      "oneLineDescription": "Open-source Python/TypeScript framework for multi-agent graph workflows, shipped GA at Cloud Next 2026.",
+      "estimatedSetupMinutes": 15,
+      "detail": {
+        "whatItDoes": "Google's Agent Development Kit (ADK) is an open-source, model-agnostic framework for building production AI agents locally and deploying them to Google Cloud's Gemini Enterprise Agent Platform. ADK 2.0, announced at Cloud Next on April 22, 2026, adds a graph-based orchestration layer: you define agents as nodes in a directed graph, specify how they hand off work to sub-agents, and ADK handles routing, state management, tool dispatch, and observability. It ships in Python, Go, Java, and TypeScript.\n\nAt Cloud Next, Google also announced managed MCP servers across all Google Cloud services — meaning ADK agents can call BigQuery, Cloud Storage, Pub/Sub, and 200+ other services through a single standardized MCP interface without writing custom connectors. Agent Studio (low-code visual builder) and ADK share the same runtime, so teams prototype in the UI and export to ADK code for production.",
+        "whoItsFor": "Backend engineers and ML engineers building multi-step agentic workflows on Google Cloud. Particularly useful for teams that want local development with a path to managed cloud deployment (Agent Engine), or who need to connect agents to Google Workspace, BigQuery, or third-party SaaS (Salesforce, Workday, ServiceNow via Agent Marketplace). Model-agnostic: swap between Gemini, Claude, Gemma, or Llama without rewriting agent logic.",
+        "pros": [
+          "Open-source with Apache 2.0 license — full local dev with no cloud billing until you deploy",
+          "Graph-based multi-agent orchestration is first-class: sub-agents, parallel branches, conditional routing built in",
+          "Managed MCP servers for all Google Cloud services eliminate the connector-writing bottleneck",
+          "Model-agnostic: Claude Opus, Gemini 3.1, Gemma 4, and Llama all work with the same ADK agent code",
+          "Agent Studio → ADK export path lets non-engineers prototype, engineers productionize"
+        ],
+        "cons": [
+          "Deep GCP coupling for production deployment: Agent Engine, Memory Bank, and Agent Registry require Google Cloud billing",
+          "Graph-based orchestration adds conceptual overhead vs. simple sequential chains — overkill for single-agent tasks",
+          "MCP managed servers are Google Cloud-only; connecting to non-GCP services still requires custom MCP server setup"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.11+ (recommended) or Node.js 20+ for TypeScript\n- Google Cloud account with billing enabled (free for local dev; billing needed for Agent Engine deployment)\n- `gcloud` CLI installed and authenticated: `gcloud auth application-default login`\n\n## 1. Install ADK\n\n```bash\npip install google-adk\n```\n\nVerify:\n\n```bash\nadk --version\n# google-adk 2.x.x\n```\n\n## 2. Set up a new agent project\n\n```bash\nadk new my-agent\ncd my-agent\n```\n\nThis scaffolds:\n```\nmy-agent/\n  agent.py          # main agent definition\n  tools/            # custom tool functions\n  .env              # API keys\n  adk.yaml          # agent config\n```\n\n## 3. Configure your model and tools\n\nEdit `.env`:\n\n```bash\nGOOGLE_GENAI_API_KEY=your-key-here\n# Or use Anthropic:\nANTHROPIC_API_KEY=sk-ant-...\n```\n\nEdit `agent.py` for a simple Gemini agent with a custom tool:\n\n```python\nfrom google.adk.agents import Agent\nfrom google.adk.tools import tool\n\n@tool\ndef get_weather(city: str) -> str:\n    \"\"\"Return current weather for a city.\"\"\"\n    # Replace with real weather API call\n    return f\"It is 22°C and sunny in {city}.\"\n\nroot_agent = Agent(\n    name=\"weather-agent\",\n    model=\"gemini-3.1-flash\",   # or \"claude-sonnet-4.6\", \"gemma-4-27b-it\"\n    description=\"Answers weather questions.\",\n    tools=[get_weather],\n)\n```\n\n## 4. Run locally with the ADK dev UI\n\n```bash\nadk web\n```\n\nOpen `http://localhost:8000` — you get a chat UI with full tool call visibility and trace inspection.\n\n> **Gotcha:** The ADK web UI requires the `GOOGLE_GENAI_API_KEY` even if you're using a non-Gemini model for the agent, because it uses Gemini for the UI's built-in eval features. Set a dummy key if you don't have one and are only using Claude.\n\n## 5. Build a multi-agent graph (ADK 2.0 feature)\n\n```python\nfrom google.adk.agents import Agent, GraphOrchestrator\nfrom google.adk.agents.graph import Node, Edge\n\nresearch_agent = Agent(name=\"researcher\", model=\"gemini-3.1-pro\", ...)\nwriter_agent   = Agent(name=\"writer\",     model=\"claude-sonnet-4.6\", ...)\nreviewer_agent = Agent(name=\"reviewer\",   model=\"gemini-3.1-flash\", ...)\n\norchestrator = GraphOrchestrator(\n    nodes=[\n        Node(agent=research_agent, id=\"research\"),\n        Node(agent=writer_agent,   id=\"write\"),\n        Node(agent=reviewer_agent, id=\"review\"),\n    ],\n    edges=[\n        Edge(source=\"research\", target=\"write\"),\n        Edge(source=\"write\",    target=\"review\"),\n    ],\n    entry_point=\"research\",\n)\n\nresult = orchestrator.run(\"Write a report on quantum error correction.\")\nprint(result.output)\n```\n\n## 6. Deploy to Google Cloud Agent Engine\n\n```bash\nadk deploy --project your-gcp-project --region us-central1\n```\n\nThis packages your agent, provisions an Agent Engine runtime, and returns an endpoint URL. Subsequent calls use the Gemini Enterprise Agent Platform managed runtime with sub-second cold starts.\n\n## Tips\n- Use `adk eval` to run automated evals against a golden dataset before deploying.\n- For MCP-connected tools (BigQuery, Cloud Storage), run `adk mcp list` to see all managed MCP servers available in your project — no connector code needed.",
         "sourceURL": "https://github.com/google/adk-python"
       }
     },
     {
-      "id": "huggingface-ml-intern-learn",
-      "name": "Hugging Face ml-intern",
-      "category": "otherLLM",
-      "oneLineDescription": "Open-source CLI agent that autonomously reads papers, trains models, and ships to the HF Hub.",
-      "estimatedSetupMinutes": 10,
+      "id": "mattpocock-skills-claude-directory",
+      "name": "mattpocock/skills",
+      "category": "tooling",
+      "oneLineDescription": "Curated Claude Code skills directory from Matt Pocock — 31K stars and growing fast on GitHub.",
+      "estimatedSetupMinutes": 3,
       "detail": {
-        "whatItDoes": "ml-intern is an open-source agentic CLI from Hugging Face that automates end-to-end post-training ML workflows. Built on the smolagents framework, it runs an agentic loop of up to 300 iterations per task. Given a goal (e.g. \"improve reasoning on GPQA\"), it browses arXiv and hf.co/papers, walks citation graphs, pulls and reformats datasets from the Hub, writes training scripts, launches GPU jobs via Hugging Face Jobs when local compute is unavailable, reads eval outputs, diagnoses failures, and retrains until benchmarks improve.\n\nIn its launch demo, ml-intern took Qwen3-1.7B from ~10% to 32% on GPQA in under 10 hours on a single H100 — outscoring Claude Code on scientific reasoning and beating Codex on a healthcare benchmark by 60%. The tool uses Anthropic Claude models by default but accepts any LiteLLM-compatible model ID.",
-        "whoItsFor": "ML researchers and engineers who repeatedly run the post-training loop (dataset curation, fine-tuning, eval, iterate) and want to automate the tedious parts. Also useful for small teams or individuals who lack the bandwidth to continuously monitor training runs — the agent watches runs and self-corrects. Requires an HF account and at least one of: local GPU, HF Jobs access, or an API key for a hosted model.",
+        "whatItDoes": "mattpocock/skills is a rapidly growing GitHub repository (31.5K stars as of April 29, 2026) containing production-ready Claude Code skill files sourced directly from Matt Pocock's `.claude` directory. Each skill is a markdown file that extends Claude Code's behavior for a specific engineering task — TypeScript type narrowing, test generation, refactor patterns, CI pipeline authoring, and more. Skills live in your project's `.claude/skills/` folder and are invoked by Claude Code automatically when relevant context is detected.\n\nThe repo has become the de facto community hub for sharing Claude Code skills, analogous to what awesome-lists are for libraries. Skills are composable — you can mix Pocock's TypeScript skills with community-contributed DevOps or Python skills in the same project.",
+        "whoItsFor": "Frontend and full-stack engineers using Claude Code as their primary coding agent who want to extend its default behavior without writing custom prompts from scratch. Especially valuable for TypeScript/JavaScript teams — Pocock is the creator of ts-reset and Total TypeScript, so the TS-related skills are particularly well-crafted.",
         "pros": [
-          "Installs in one `uv` command; accepts any LiteLLM model ID so you are not locked to one provider",
-          "Treats the entire HF Hub as a filesystem — dataset pulls, model card reads, and job submissions are first-class operations",
-          "Self-correcting training loop: detects reward collapse, runs ablations, and retrains autonomously",
-          "Benchmark results are already public (PostTrainBench, HealthBench) and community-reproducible"
+          "Zero setup: copy skill files into `.claude/skills/` and Claude Code picks them up automatically",
+          "31K+ stars in weeks — strong community signal that these skills work in real codebases",
+          "MIT licensed — fork, modify, and redistribute freely",
+          "Composable with other skill sources (Google's Huashu Design skill, community SOUL.md configs, etc.)"
         ],
         "cons": [
-          "Very early — issues backlog is growing fast, and several bugs around tool-call arg coercion are open",
-          "Real-world performance on messy datasets (licensing issues, quality variance) is untested outside curated demos"
+          "Quality is uneven outside the TypeScript/JavaScript core skills — community contributions vary significantly",
+          "Skills can conflict if two files give contradictory instructions for the same task — no deduplication mechanism yet"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+ and `uv` installed (`pip install uv` or `brew install uv`)\n- Hugging Face account with an API token (`HF_TOKEN`)\n- At least one of: `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, or another LiteLLM-compatible key\n- Optional: `GITHUB_TOKEN` for code search across GitHub repos\n\n## 1. Clone and install\n\n```bash\ngit clone git@github.com:huggingface/ml-intern.git\ncd ml-intern\nuv sync\nuv tool install -e .\n```\n\n## 2. Configure environment variables\n\n```bash\ncp .env.example .env\n# Then edit .env:\n```\n\n```bash\n# .env\nANTHROPIC_API_KEY=sk-ant-...      # default model provider\nHF_TOKEN=hf_...                    # required for Hub access\nGITHUB_TOKEN=ghp_...               # optional, enables code search\n# OPENAI_API_KEY=sk-...            # alternative if not using Anthropic\n```\n\n## 3. Run ml-intern on a task\n\n```bash\n# Improve reasoning performance on a base model\nml-intern run \"Fine-tune Qwen3-1.7B to improve GPQA reasoning. \\\n  Use RL post-training. Budget: 10 hours on H100.\"\n```\n\n```bash\n# Or launch the web UI (accessible from phone/desktop)\nml-intern web\n```\n\n## 4. Use a different model backend\n\n```bash\n# Any LiteLLM-compatible model ID works\nml-intern run --model openai/gpt-5.4 \"Fine-tune a sentiment classifier on SST-2.\"\nml-intern run --model anthropic/claude-sonnet-4-6 \"...\"\n```\n\n## 5. Monitor a training run\n\nml-intern uses Trackio (HF-native experiment tracker) for logging. View runs at:\n\n```bash\n# Runs are automatically uploaded to your HF profile\nhttps://huggingface.co/<your-username>/trackio\n```\n\n## Gotchas\n- **`HF_TOKEN` is not optional.** The agent uses it to pull datasets, inspect model cards, and submit training jobs. Without it, most tool calls will fail silently.\n- **Local GPU vs. HF Jobs:** If no local GPU is detected, the agent automatically dispatches to Hugging Face Jobs. Make sure your HF account has Jobs access enabled, or the agent will stall waiting for compute.\n- **Context compaction at 170k tokens:** Long runs auto-compact message history. This can lose intermediate reasoning. For critical tasks, check the session logs uploaded to your HF profile after completion.\n- **Tool arg coercion bug (open as of Apr 25):** If the agent crashes with a TypeError on tool calls, it is likely hitting the known `read` tool offset/limit bug (issue #119). Until the fix merges, pin to a stable commit or apply the patch manually.",
-        "sourceURL": "https://github.com/huggingface/ml-intern"
+        "setupGuideMarkdown": "## Prerequisites\n- Claude Code CLI installed: `npm install -g @anthropic-ai/claude-code` (requires Node 20+)\n- An Anthropic API key: `export ANTHROPIC_API_KEY=sk-ant-...`\n\n## 1. Clone or download the skills\n\n```bash\n# Option A: Clone the full repo\ngit clone https://github.com/mattpocock/skills.git /tmp/mattpocock-skills\n\n# Option B: Use degit for a lighter download (no git history)\nnpx degit mattpocock/skills /tmp/mattpocock-skills\n```\n\n## 2. Add skills to your project\n\n```bash\n# Create the Claude skills directory in your project\nmkdir -p .claude/skills\n\n# Copy all skills (or cherry-pick the ones you want)\ncp /tmp/mattpocock-skills/skills/*.md .claude/skills/\n\n# Or copy just the TypeScript skills:\ncp /tmp/mattpocock-skills/skills/typescript-*.md .claude/skills/\n```\n\n## 3. Verify Claude Code detects the skills\n\n```bash\nclaude code --list-skills\n# Should output a list of skill names from your .claude/skills/ directory\n```\n\n## 4. Run Claude Code with skills active\n\n```bash\nclaude code \"Refactor this function to use proper TypeScript generics\"\n```\n\nClaude Code will automatically apply relevant skill instructions from `.claude/skills/` when the task context matches.\n\n> **Gotcha:** Skills are loaded at session start. If you add a skill file while Claude Code is running, restart the session with `claude code --restart` to pick it up.\n\n## 5. Write your own skill\n\nSkills are plain markdown. Create `.claude/skills/my-custom-skill.md`:\n\n```markdown\n# My Team's PR Convention Skill\n\nWhen creating or modifying pull requests:\n- Always add a `## What changed` section at the top of the PR description\n- Reference the Linear ticket ID in the format `[ENG-<id>]`\n- Never merge without at least one approval from a senior engineer\n- Run `pnpm typecheck && pnpm test` before marking ready for review\n```\n\nClaude Code will follow these instructions whenever it creates or reviews PRs in your repo.\n\n## 6. Keep skills updated\n\n```bash\n# Pull latest upstream skills (if you cloned)\ncd /tmp/mattpocock-skills && git pull\ncp skills/*.md /path/to/your/project/.claude/skills/\n```",
+        "sourceURL": "https://github.com/mattpocock/skills"
       }
     },
     {
-      "id": "anthropic-claude-opus-47-api-learn",
-      "name": "Claude Opus 4.7 API Migration",
-      "category": "anthropic",
-      "oneLineDescription": "Opus 4.7 has breaking API changes — task budgets, xhigh effort, and a new tokenizer to plan around.",
-      "estimatedSetupMinutes": 15,
+      "id": "n8n-mcp-client-server-workflow-automation",
+      "name": "n8n (MCP-enabled)",
+      "category": "tooling",
+      "oneLineDescription": "Self-hostable workflow automation with native MCP client/server support and 180K GitHub stars.",
+      "estimatedSetupMinutes": 10,
       "detail": {
-        "whatItDoes": "Claude Opus 4.7 (launched April 16, 2026) ships significant capability improvements for agentic coding and vision, but also contains several breaking changes from Opus 4.6. The most impactful: temperature, top_p, and top_k now return 400 errors if set; extended thinking budgets are removed in favor of adaptive thinking only; and a new tokenizer may bill 1.0–1.35x more tokens for the same text at the same $5/$25 list price.\n\nNew features builders should adopt: task budgets (cap token spend for agentic loops via beta header), xhigh effort level (above high, now the default in Claude Code), and /ultrareview (deep multi-agent code review slash command in Claude Code). Vision resolution jumped from 1.15MP to 3.75MP (2576px max), and thinking content is now hidden by default in the response stream.",
-        "whoItsFor": "Any engineering team currently calling claude-opus-4-6 via the Messages API. Migration is not optional if you set temperature or use extended thinking budgets — those requests will start returning 400s. Teams running long-horizon agentic workflows should evaluate task budgets as a cost-control primitive. Claude Code power users should explore /ultrareview for automated PR review.",
+        "whatItDoes": "n8n is a fair-code workflow automation platform that recently crossed 180K GitHub stars and added native MCP (Model Context Protocol) client and server support. This means n8n workflows can now act as MCP servers — exposing workflow tools to Claude, Cursor, or any MCP-compatible AI agent — and can call out to external MCP servers as part of automation flows. Combined with its existing LangChain integration and 400+ pre-built connectors, n8n has become a practical way to build agent workflows without writing orchestration code from scratch.\n\nThe self-hosted version is free and runs on Docker with a single command. It stores workflow state in SQLite or Postgres and provides a visual canvas for building, testing, and monitoring multi-step AI pipelines. Common patterns: AI-driven email triage, automated content pipelines, customer support agent flows, and data enrichment chains that combine LLM calls with database lookups and API calls.",
+        "whoItsFor": "Engineering teams and solo builders who want agent workflows with visual observability and 400+ pre-built integrations but don't want to write orchestration code. Strong fit for product teams that need non-engineers (ops, marketing) to build and modify AI workflows without touching code. Also useful for MCP server prototyping — expose a workflow as an MCP tool in minutes.",
         "pros": [
-          "70% CursorBench (+12pp over 4.6) and 98.5% visual-acuity — real benchmark gains for coding and vision workloads",
-          "Task budgets let agents self-limit token spend without external orchestration logic",
-          "Adaptive thinking reliably outperforms old extended thinking budgets in Anthropic's internal evals",
-          "Same $5/$25 per MTok pricing — no price increase with the upgrade"
+          "Native MCP client + server: expose any workflow as an MCP tool to Claude or Cursor, or call external MCP servers from within a workflow",
+          "Self-hostable with a single Docker command — data never leaves your infrastructure",
+          "400+ pre-built integrations (Slack, Postgres, HubSpot, GitHub, etc.) reduce connector-writing to near zero",
+          "Visual canvas makes AI workflows auditable and modifiable by non-engineers"
         ],
         "cons": [
-          "New tokenizer adds up to 35% more billable tokens — must re-benchmark cost on real traffic before switching production",
-          "Setting temperature/top_p/top_k now returns a hard 400 error — silent migration risk if you forget to strip these params"
+          "Fair-code license (not MIT/Apache) — self-hosting is free but redistributing n8n as part of a commercial product requires a license",
+          "Visual canvas becomes hard to navigate for very large workflows (50+ nodes) — no built-in modularization"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- `anthropic` Python SDK >= 0.52.0 or Node SDK >= 0.30.0\n- Existing Opus 4.6 integration to migrate\n\n## 1. Update your model identifier\n\n```python\n# Before\nmodel = \"claude-opus-4-6-20260219\"\n\n# After\nmodel = \"claude-opus-4-7\"\n```\n\n## 2. Strip temperature / top_p / top_k (BREAKING)\n\n```python\n# Before (Opus 4.6) — this now returns HTTP 400 on Opus 4.7\nresponse = client.messages.create(\n    model=\"claude-opus-4-7\",\n    max_tokens=4096,\n    temperature=0.7,   # REMOVE THIS\n    top_p=0.9,         # REMOVE THIS\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n\n# After — omit sampling params entirely\nresponse = client.messages.create(\n    model=\"claude-opus-4-7\",\n    max_tokens=4096,\n    messages=[{\"role\": \"user\", \"content\": \"...\"}],\n)\n```\n\n## 3. Migrate extended thinking to adaptive thinking (BREAKING)\n\n```python\n# Before (Opus 4.6)\nthinking = {\"type\": \"enabled\", \"budget_tokens\": 32000}  # 400 error on 4.7\n\n# After (Opus 4.7)\nthinking = {\"type\": \"adaptive\"}\noutput_config = {\"effort\": \"high\"}  # or \"xhigh\" for max reasoning\n\nresponse = client.messages.create(\n    model=\"claude-opus-4-7\",\n    max_tokens=128000,\n    thinking=thinking,\n    output_config=output_config,\n    messages=[{\"role\": \"user\", \"content\": \"Refactor this codebase.\"}],\n)\n```\n\n## 4. Add task budgets for agentic loops (new beta feature)\n\n```python\nresponse = client.beta.messages.create(\n    model=\"claude-opus-4-7\",\n    max_tokens=128000,\n    output_config={\n        \"effort\": \"high\",\n        \"task_budget\": {\"type\": \"tokens\", \"total\": 50000},\n    },\n    messages=[{\"role\": \"user\", \"content\": \"Review the codebase and propose a refactor plan.\"}],\n    betas=[\"task-budgets-2026-03-13\"],\n)\n```\n\n## 5. Re-enable visible thinking if your UI streams reasoning\n\n```python\n# Thinking is hidden by default in 4.7 — this causes a silent pause before output\n# Re-enable summarized display:\noutput_config = {\n    \"effort\": \"high\",\n    \"thinking_display\": {\"type\": \"summarized\"},\n}\n```\n\n## 6. Benchmark token costs before switching production traffic\n\n```python\n# Count tokens on both models for your real prompts\ncount_46 = client.messages.count_tokens(\n    model=\"claude-opus-4-6-20260219\",\n    messages=your_real_messages,\n)\ncount_47 = client.messages.count_tokens(\n    model=\"claude-opus-4-7\",\n    messages=your_real_messages,\n)\nprint(f\"Token delta: {count_47.input_tokens / count_46.input_tokens:.2f}x\")\n# Expect 1.0–1.35x. If >1.2x, run a cost projection before flipping.\n```\n\n## Gotchas\n- **The tokenizer change is silent.** Same list price, potentially 35% more tokens billed. Run the count_tokens comparison above before migrating batch jobs or high-volume API calls.\n- **task-budgets beta header is required.** The feature is in public beta; omitting the header silently ignores the `task_budget` field with no error.\n- **Thinking is off by default.** Requests with no `thinking` field run without thinking at all — not the same as old behavior where thinking was implicitly available.",
-        "sourceURL": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7"
+        "setupGuideMarkdown": "## Prerequisites\n- Docker and Docker Compose installed\n- 2 GB RAM minimum (4 GB recommended for LLM-heavy workflows)\n- An Anthropic or OpenAI API key for LLM nodes\n\n## 1. Start n8n with Docker Compose\n\nCreate `docker-compose.yml`:\n\n```yaml\nversion: '3.8'\nservices:\n  n8n:\n    image: n8nio/n8n:latest\n    ports:\n      - \"5678:5678\"\n    environment:\n      - N8N_BASIC_AUTH_ACTIVE=true\n      - N8N_BASIC_AUTH_USER=admin\n      - N8N_BASIC_AUTH_PASSWORD=changeme\n      - N8N_ENCRYPTION_KEY=your-random-32-char-key\n      # LLM credentials — n8n stores these encrypted\n      - ANTHROPIC_API_KEY=sk-ant-...\n      - OPENAI_API_KEY=sk-...\n    volumes:\n      - n8n_data:/home/node/.n8n\n    restart: unless-stopped\n\nvolumes:\n  n8n_data:\n```\n\n```bash\ndocker compose up -d\n```\n\nOpen `http://localhost:5678` — log in with the credentials above.\n\n> **Gotcha:** The `N8N_ENCRYPTION_KEY` is used to encrypt stored credentials. If you lose it, all saved API keys become unreadable. Store it in a password manager or secret manager before you add any credentials.\n\n## 2. Build a simple AI workflow via the UI\n\n1. Click **New Workflow**\n2. Add a **Webhook** trigger node (gives you an HTTP endpoint)\n3. Add an **Anthropic Chat Model** node — paste your API key, select `claude-sonnet-4.6`\n4. Add an **AI Agent** node — connect the Chat Model to it\n5. Add a **Respond to Webhook** node to return the agent output\n6. Click **Save** and **Activate**\n\nTest it:\n\n```bash\ncurl -X POST http://localhost:5678/webhook/your-webhook-id \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"message\": \"Summarize this: AI is transforming software development.\"}'\n```\n\n## 3. Expose the workflow as an MCP server\n\nIn the workflow, add an **MCP Server Trigger** node instead of a Webhook node. This registers the workflow as an MCP tool with the name and description you provide. Any MCP-compatible client (Claude desktop, Cursor, etc.) can then call it.\n\nIn your Claude desktop `claude_desktop_config.json`:\n\n```json\n{\n  \"mcpServers\": {\n    \"my-n8n-workflow\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@n8n/mcp-client\"],\n      \"env\": {\n        \"N8N_BASE_URL\": \"http://localhost:5678\",\n        \"N8N_API_KEY\": \"your-n8n-api-key\"\n      }\n    }\n  }\n}\n```\n\nRestart Claude desktop — your n8n workflow now appears as a tool Claude can call.\n\n## 4. Upgrade to Postgres for production\n\nAdd to `docker-compose.yml`:\n\n```yaml\n  postgres:\n    image: postgres:16\n    environment:\n      POSTGRES_USER: n8n\n      POSTGRES_PASSWORD: n8npass\n      POSTGRES_DB: n8n\n    volumes:\n      - postgres_data:/var/lib/postgresql/data\n```\n\nAdd to the `n8n` service environment:\n\n```yaml\n      - DB_TYPE=postgresdb\n      - DB_POSTGRESDB_HOST=postgres\n      - DB_POSTGRESDB_PORT=5432\n      - DB_POSTGRESDB_DATABASE=n8n\n      - DB_POSTGRESDB_USER=n8n\n      - DB_POSTGRESDB_PASSWORD=n8npass\n```",
+        "sourceURL": "https://github.com/n8n-io/n8n"
       }
     }
   ]
