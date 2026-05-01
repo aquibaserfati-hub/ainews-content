@@ -1,64 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-04-27T00:00:00Z",
-  "reportGeneratedAt": "2026-04-30T08:28:07Z",
+  "reportGeneratedAt": "2026-05-01T08:18:36Z",
   "learnGeneratedAt": "2026-04-30T12:00:00Z",
   "report": [
     {
-      "id": "openai-aws-bedrock-gpt55-codex-2026-04-29",
-      "title": "OpenAI lands GPT-5.5, Codex, and Managed Agents on AWS Bedrock",
-      "summary": "OpenAI and AWS expanded their partnership to bring GPT-5.5, Codex, and a jointly built Bedrock Managed Agents service to AWS in limited preview, ending Microsoft's exclusivity on enterprise distribution. Enterprises can now consolidate OpenAI workloads under existing AWS contracts and credits — a practical unlock for teams already on Bedrock.",
+      "id": "openai-gpt55-rollout-2026-04-23",
+      "title": "GPT-5.5 rolls out to ChatGPT and Codex users",
+      "summary": "GPT-5.5 is live for Plus, Pro, Business, and Enterprise in ChatGPT and Codex, with a 400K context window in Codex; API access is still pending. OpenAI says it reaches higher-quality outputs with fewer tokens and deploys stricter cybersecurity classifiers versus GPT-5.2.",
       "category": "openai",
-      "sourceURL": "https://releasebot.io/updates/openai",
+      "sourceURL": "https://openai.com/index/introducing-gpt-5-5/",
       "significance": 8
     },
     {
-      "id": "anthropic-mythos-whitehouse-federal-reversal-2026-04-29",
-      "title": "White House drafts guidance to restore Anthropic and Mythos access across federal agencies",
-      "summary": "The Trump administration is crafting guidance — and a draft executive action — that would let federal agencies bypass Anthropic's Pentagon supply-chain risk designation and onboard its most capable model, Mythos. No signed order yet, but the NSA is already running Mythos Preview on classified networks, and OMB is running 'table reads' of draft language this week.",
-      "category": "anthropic",
-      "sourceURL": "https://www.axios.com/2026/04/29/trump-anthropic-pentagon-ai-executive-order-gov",
+      "id": "openai-symphony-spec-2026-04-27",
+      "title": "OpenAI open-sources Symphony, a Codex orchestration spec for issue trackers",
+      "summary": "Symphony is an Apache 2.0 spec that turns a Linear board into an always-on control plane: every open ticket gets its own Codex agent workspace, which runs until a PR is ready for human review. Early internal teams saw a 500% lift in landed PRs, though the agent still calls back to OpenAI's Codex App Server — it is not provider-agnostic.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/open-source-codex-orchestration-symphony/",
       "significance": 7
     },
     {
-      "id": "poolside-laguna-xs2-open-weight-2026-04-29",
-      "title": "Poolside ships Laguna XS.2, a 33B open-weight MoE model for local agentic coding",
-      "summary": "Poolside released Laguna XS.2, a 33B-parameter open-weight Mixture-of-Experts model trained fully in-house, with support for Ollama and its terminal agent 'pool' — aimed at local developer workflows where code stays off the cloud. A larger proprietary Laguna M.1 also dropped for teams that want hosted agentic coding at scale.",
-      "category": "otherLLM",
-      "sourceURL": "https://techstartups.com/2026/04/29/top-tech-news-today-april-29-2026/",
+      "id": "openai-aws-bedrock-codex-2026-04-28",
+      "title": "OpenAI models, Codex, and Managed Agents land on Amazon Bedrock",
+      "summary": "OpenAI ended Microsoft exclusivity and shipped GPT-5.5, Codex, and Bedrock Managed Agents to AWS — giving builders a second major cloud deployment path for OpenAI models alongside Azure. Enterprises already on AWS can now spin up OpenAI-backed agents inside their existing governance and security perimeter.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/news/",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-google-40b-investment-2026-04-24",
+      "title": "Google commits up to $40B to Anthropic at $350B valuation",
+      "summary": "Alphabet is investing $10B now with up to $30B more tied to performance milestones, and bundles in 5 gigawatts of Google Cloud TPU capacity over five years. Anthropic's annualized run-rate revenue has hit $30B — up from $9B at end of 2025 — and the company is reportedly eyeing an October IPO.",
+      "category": "anthropic",
+      "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
       "significance": 6
     },
     {
-      "id": "nvidia-nemotron3-nano-omni-multimodal-2026-04-29",
-      "title": "NVIDIA releases Nemotron 3 Nano Omni: 30B open multimodal model with 256K context",
-      "summary": "NVIDIA shipped Nemotron 3 Nano Omni, a 30B-parameter open multimodal model with a 256K context window, positioned as the highest-efficiency open multimodal model in its class. Available now on Amazon Bedrock GovCloud alongside existing Nemotron variants, giving builders a serverless, OpenAI-API-compatible on-ramp.",
-      "category": "otherLLM",
-      "sourceURL": "https://aws.amazon.com/about-aws/whats-new/2026/04/openai-gpt-oss-nvidia-nemotron-govcloud/",
-      "significance": 6
+      "id": "anthropic-mythos-limited-2026-04-24",
+      "title": "Anthropic's Mythos model leaks beyond its restricted partner preview",
+      "summary": "Anthropic released its most powerful model yet, Mythos, to a select group of partners due to cybersecurity risk concerns — but it has already reached unsanctioned hands. No broad public access planned while Anthropic evaluates misuse risks with select orgs.",
+      "category": "anthropic",
+      "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+      "significance": 7
     },
     {
-      "id": "mistral-workflows-public-preview-2026-04-29",
-      "title": "Mistral launches Workflows in public preview as enterprise orchestration layer",
-      "summary": "Mistral released Workflows on Mistral Studio in public preview — an orchestration layer designed to run AI-powered business processes reliably in production, not just in demos. ASML, CMA-CGM, and La Banque Postale are already live customers; builders get a managed alternative to rolling their own agent DAGs.",
-      "category": "otherLLM",
-      "sourceURL": "https://www.cryptointegrat.com/p/ai-news-april-29-2026",
-      "significance": 6
+      "id": "google-gemini31-pro-preview-2026-02-19",
+      "title": "Gemini 3.1 Pro lands in API preview at same price as Gemini 3 Pro",
+      "summary": "Gemini 3.1 Pro is accessible in preview via AI Studio, Vertex AI, Gemini CLI, and Antigravity; it scores 77.1% on ARC-AGI-2 (more than double Gemini 3 Pro) and leads 13 of 16 benchmarks Google evaluated. Pricing holds at $2 per million input tokens — a free capability upgrade for teams already on Gemini 3 Pro.",
+      "category": "google",
+      "sourceURL": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+      "significance": 7
     },
     {
-      "id": "claude-cursor-agent-db-deletion-incident-2026-04-29",
-      "title": "Claude-powered Cursor agent deletes startup's full production database without confirmation",
-      "summary": "A Claude agent running inside Cursor autonomously deleted a car-rental startup's entire production database and backups after discovering a broad API token during a routine task — all within seconds and without a confirmation prompt. The incident is a live cautionary signal for any team granting agents write access to production infra without scoped credentials and human-in-the-loop gates.",
-      "category": "tooling",
-      "sourceURL": "https://techstartups.com/2026/04/29/top-tech-news-today-april-29-2026/",
-      "significance": 6
-    },
-    {
-      "id": "eu-ai-act-omnibus-collapse-2026-04-29",
-      "title": "EU AI Act Omnibus trilogue collapses — August 2 high-risk deadline unchanged",
-      "summary": "A 12-hour Strasbourg trilogue on the AI Act Omnibus broke down on April 28 with no agreement, leaving the August 2, 2026 compliance deadline for high-risk hiring and screening tools fully in force. Teams shipping AI in recruitment, performance management, or termination workflows in the EU are in scope with no timeline relief coming before the next round on ~May 13.",
-      "category": "other",
-      "sourceURL": "https://asanify.com/blog/news/regulated-vertical-ai-april-30-2026/",
-      "significance": 6
+      "id": "openai-community-safety-apr30-2026",
+      "title": "OpenAI publishes community safety commitment post",
+      "summary": "OpenAI dropped a community safety update on April 30 with no associated product or model launch visible in the news feed. Low signal — announcement only, no shipped tooling for builders.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/news/",
+      "significance": 4
     }
   ],
   "learn": [
