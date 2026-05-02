@@ -1,64 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-04-27T00:00:00Z",
-  "reportGeneratedAt": "2026-05-01T08:18:36Z",
+  "reportGeneratedAt": "2026-05-02T07:50:29Z",
   "learnGeneratedAt": "2026-04-30T12:00:00Z",
   "report": [
     {
-      "id": "openai-gpt55-rollout-2026-04-23",
-      "title": "GPT-5.5 rolls out to ChatGPT and Codex users",
-      "summary": "GPT-5.5 is live for Plus, Pro, Business, and Enterprise in ChatGPT and Codex, with a 400K context window in Codex; API access is still pending. OpenAI says it reaches higher-quality outputs with fewer tokens and deploys stricter cybersecurity classifiers versus GPT-5.2.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/introducing-gpt-5-5/",
-      "significance": 8
-    },
-    {
-      "id": "openai-symphony-spec-2026-04-27",
-      "title": "OpenAI open-sources Symphony, a Codex orchestration spec for issue trackers",
-      "summary": "Symphony is an Apache 2.0 spec that turns a Linear board into an always-on control plane: every open ticket gets its own Codex agent workspace, which runs until a PR is ready for human review. Early internal teams saw a 500% lift in landed PRs, though the agent still calls back to OpenAI's Codex App Server — it is not provider-agnostic.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/open-source-codex-orchestration-symphony/",
+      "id": "microsoft-agent-365-ga-2026-05-01",
+      "title": "Microsoft Agent 365 hits GA with cross-cloud agent registry",
+      "summary": "Microsoft shipped Agent 365 as generally available on May 1, priced at $15/user/month, and launched a public preview of registry sync with AWS Bedrock and Google Cloud so M365 admins can discover, inventory, and perform basic lifecycle governance on agents running on rival clouds. Windows 365 for Agents also hit public preview, giving orgs a Cloud PC purpose-built for agentic workloads managed through Intune.",
+      "category": "tooling",
+      "sourceURL": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
       "significance": 7
     },
     {
-      "id": "openai-aws-bedrock-codex-2026-04-28",
-      "title": "OpenAI models, Codex, and Managed Agents land on Amazon Bedrock",
-      "summary": "OpenAI ended Microsoft exclusivity and shipped GPT-5.5, Codex, and Bedrock Managed Agents to AWS — giving builders a second major cloud deployment path for OpenAI models alongside Azure. Enterprises already on AWS can now spin up OpenAI-backed agents inside their existing governance and security perimeter.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
+      "id": "deepseek-v4-preview-2026-04-24",
+      "title": "DeepSeek ships V4 Pro and Flash preview with 1M-token context",
+      "summary": "DeepSeek released preview weights for V4-Pro (1.6T total / 49B active) and V4-Flash (284B total / 13B active), both with 1M-token context windows — an 8x expansion over V3.2 — and aggressive pricing: V4-Flash at $0.14/$0.28 per million tokens undercuts every major frontier model at its tier. V4-Pro lands as the #2 open-weights model on the Artificial Analysis Intelligence Index but still trails frontier closed-source models on knowledge tasks by roughly 3-6 months, and text-only modality is a real gap.",
+      "category": "otherLLM",
+      "sourceURL": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/",
       "significance": 7
     },
     {
-      "id": "anthropic-google-40b-investment-2026-04-24",
-      "title": "Google commits up to $40B to Anthropic at $350B valuation",
-      "summary": "Alphabet is investing $10B now with up to $30B more tied to performance milestones, and bundles in 5 gigawatts of Google Cloud TPU capacity over five years. Anthropic's annualized run-rate revenue has hit $30B — up from $9B at end of 2025 — and the company is reportedly eyeing an October IPO.",
+      "id": "pentagon-ai-deals-anthropic-excluded-2026-05-01",
+      "title": "Pentagon signs AI deals with 7 labs — Anthropic blacklisted over safety terms",
+      "summary": "The DoD announced agreements with OpenAI, Google, Microsoft, Nvidia, AWS, SpaceX, and Reflection to deploy AI in classified networks, while explicitly excluding Anthropic after the company refused to allow use for autonomous weapons and mass surveillance. Anthropic was labeled a 'supply chain risk' — a designation previously reserved for foreign-adversary-linked companies — and is missing out on substantial defense revenue as a result.",
+      "category": "anthropic",
+      "sourceURL": "https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic",
+      "significance": 7
+    },
+    {
+      "id": "aws-agentcore-sao-paulo-2026-05-02",
+      "title": "AWS Bedrock AgentCore expands to São Paulo region",
+      "summary": "Amazon Bedrock AgentCore is now live in the South America (São Paulo) region, bringing the full AgentCore stack — runtime, identity, gateway, policy, observability, code interpreter, and browser tools — closer to Latin American users and helping customers meet local data residency requirements. Minor expansion, but signals AWS is actively widening AgentCore's geographic footprint.",
+      "category": "tooling",
+      "sourceURL": "https://aws.amazon.com/about-aws/whats-new/2026/05/agentcore-sao-paulo-region/",
+      "significance": 5
+    },
+    {
+      "id": "google-anthropic-40b-investment-2026-04-24",
+      "title": "Google commits up to $40B to Anthropic with 5GW of TPU capacity",
+      "summary": "Google formalized a deal to invest up to $40 billion in Anthropic starting at a $350B valuation, alongside a fresh 5-gigawatt allocation of Google Cloud TPU capacity over five years. Anthropic's run-rate revenue has grown from $9B at end-2025 to $30B as of early April, and the number of enterprise customers spending over $1M/year doubled to 1,000+ in under two months — the compute deal is a direct response to that demand acceleration.",
       "category": "anthropic",
       "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
       "significance": 6
     },
     {
-      "id": "anthropic-mythos-limited-2026-04-24",
-      "title": "Anthropic's Mythos model leaks beyond its restricted partner preview",
-      "summary": "Anthropic released its most powerful model yet, Mythos, to a select group of partners due to cybersecurity risk concerns — but it has already reached unsanctioned hands. No broad public access planned while Anthropic evaluates misuse risks with select orgs.",
+      "id": "claude-opus-47-release-2026-04-16",
+      "title": "Anthropic's Claude Opus 4.7 raises SWE-bench Pro by 11 points",
+      "summary": "Opus 4.7 pushed SWE-bench Pro from 53.4% to 64.3% and raised image resolution to 3.75 megapixels — more than 3x any prior Claude model — while adding an explicit 'xhigh' effort level for developer-controlled reasoning depth. OSWorld autonomous computer use hits 78%, matching GPT-5.5's 78.7%, and on SWE-bench Pro it leads; Anthropic also shipped an Opus Fast variant for lower-latency agent loops.",
       "category": "anthropic",
-      "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+      "sourceURL": "https://www.buildfastwithai.com/blogs/best-ai-models-may-2026-leaderboard",
       "significance": 7
-    },
-    {
-      "id": "google-gemini31-pro-preview-2026-02-19",
-      "title": "Gemini 3.1 Pro lands in API preview at same price as Gemini 3 Pro",
-      "summary": "Gemini 3.1 Pro is accessible in preview via AI Studio, Vertex AI, Gemini CLI, and Antigravity; it scores 77.1% on ARC-AGI-2 (more than double Gemini 3 Pro) and leads 13 of 16 benchmarks Google evaluated. Pricing holds at $2 per million input tokens — a free capability upgrade for teams already on Gemini 3 Pro.",
-      "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
-      "significance": 7
-    },
-    {
-      "id": "openai-community-safety-apr30-2026",
-      "title": "OpenAI publishes community safety commitment post",
-      "summary": "OpenAI dropped a community safety update on April 30 with no associated product or model launch visible in the news feed. Low signal — announcement only, no shipped tooling for builders.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
-      "significance": 4
     }
   ],
   "learn": [
