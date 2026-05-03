@@ -1,56 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-04-27T00:00:00Z",
-  "reportGeneratedAt": "2026-05-02T07:50:29Z",
+  "reportGeneratedAt": "2026-05-03T08:06:00Z",
   "learnGeneratedAt": "2026-04-30T12:00:00Z",
   "report": [
     {
+      "id": "mistral-medium-35-remote-agents-2026-04-29",
+      "title": "Mistral ships Medium 3.5 and async cloud coding agents in Vibe",
+      "summary": "Mistral Medium 3.5 is a 128B dense open-weight model (modified MIT, 256k context, 77.6% SWE-Bench Verified) that collapses Magistral, Devstral 2, and Medium 3.1 into one set of weights with per-request reasoning effort. Vibe coding agents now run in the cloud asynchronously — sessions spawn from CLI or Le Chat, run in isolated sandboxes, and can be teleported from local without losing task state.",
+      "category": "otherLLM",
+      "sourceURL": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+      "significance": 7
+    },
+    {
       "id": "microsoft-agent-365-ga-2026-05-01",
-      "title": "Microsoft Agent 365 hits GA with cross-cloud agent registry",
-      "summary": "Microsoft shipped Agent 365 as generally available on May 1, priced at $15/user/month, and launched a public preview of registry sync with AWS Bedrock and Google Cloud so M365 admins can discover, inventory, and perform basic lifecycle governance on agents running on rival clouds. Windows 365 for Agents also hit public preview, giving orgs a Cloud PC purpose-built for agentic workloads managed through Intune.",
+      "title": "Microsoft Agent 365 hits general availability at $15/user/month",
+      "summary": "Agent 365 is a governance and security control plane — not an agent builder — that inventories every agent across a Microsoft 365 tenant (Copilot Studio, Foundry, shadow agents) and enforces Zero Trust Conditional Access policies per agent identity. Registry sync with AWS Bedrock and Google Cloud is in public preview, making it the first cross-cloud agent governance layer from a major vendor.",
       "category": "tooling",
       "sourceURL": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
       "significance": 7
     },
     {
-      "id": "deepseek-v4-preview-2026-04-24",
-      "title": "DeepSeek ships V4 Pro and Flash preview with 1M-token context",
-      "summary": "DeepSeek released preview weights for V4-Pro (1.6T total / 49B active) and V4-Flash (284B total / 13B active), both with 1M-token context windows — an 8x expansion over V3.2 — and aggressive pricing: V4-Flash at $0.14/$0.28 per million tokens undercuts every major frontier model at its tier. V4-Pro lands as the #2 open-weights model on the Artificial Analysis Intelligence Index but still trails frontier closed-source models on knowledge tasks by roughly 3-6 months, and text-only modality is a real gap.",
-      "category": "otherLLM",
-      "sourceURL": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/",
-      "significance": 7
-    },
-    {
-      "id": "pentagon-ai-deals-anthropic-excluded-2026-05-01",
-      "title": "Pentagon signs AI deals with 7 labs — Anthropic blacklisted over safety terms",
-      "summary": "The DoD announced agreements with OpenAI, Google, Microsoft, Nvidia, AWS, SpaceX, and Reflection to deploy AI in classified networks, while explicitly excluding Anthropic after the company refused to allow use for autonomous weapons and mass surveillance. Anthropic was labeled a 'supply chain risk' — a designation previously reserved for foreign-adversary-linked companies — and is missing out on substantial defense revenue as a result.",
-      "category": "anthropic",
-      "sourceURL": "https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic",
-      "significance": 7
-    },
-    {
-      "id": "aws-agentcore-sao-paulo-2026-05-02",
-      "title": "AWS Bedrock AgentCore expands to São Paulo region",
-      "summary": "Amazon Bedrock AgentCore is now live in the South America (São Paulo) region, bringing the full AgentCore stack — runtime, identity, gateway, policy, observability, code interpreter, and browser tools — closer to Latin American users and helping customers meet local data residency requirements. Minor expansion, but signals AWS is actively widening AgentCore's geographic footprint.",
-      "category": "tooling",
-      "sourceURL": "https://aws.amazon.com/about-aws/whats-new/2026/05/agentcore-sao-paulo-region/",
-      "significance": 5
-    },
-    {
-      "id": "google-anthropic-40b-investment-2026-04-24",
-      "title": "Google commits up to $40B to Anthropic with 5GW of TPU capacity",
-      "summary": "Google formalized a deal to invest up to $40 billion in Anthropic starting at a $350B valuation, alongside a fresh 5-gigawatt allocation of Google Cloud TPU capacity over five years. Anthropic's run-rate revenue has grown from $9B at end-2025 to $30B as of early April, and the number of enterprise customers spending over $1M/year doubled to 1,000+ in under two months — the compute deal is a direct response to that demand acceleration.",
-      "category": "anthropic",
-      "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+      "id": "openai-gpt55-codex-revenue-2026-05-01",
+      "title": "OpenAI: GPT-5.5 API revenue growing 2x faster than any prior launch",
+      "summary": "One week post-launch, OpenAI reports GPT-5.5 API revenue is growing more than 2x faster than any previous model release; Codex doubled revenue in under seven days. Builders can now one-click import settings, plugins, agents, and project configs from other tools into Codex.",
+      "category": "openai",
+      "sourceURL": "https://www.cryptointegrat.com/p/ai-news-may-2-2026",
       "significance": 6
     },
     {
-      "id": "claude-opus-47-release-2026-04-16",
-      "title": "Anthropic's Claude Opus 4.7 raises SWE-bench Pro by 11 points",
-      "summary": "Opus 4.7 pushed SWE-bench Pro from 53.4% to 64.3% and raised image resolution to 3.75 megapixels — more than 3x any prior Claude model — while adding an explicit 'xhigh' effort level for developer-controlled reasoning depth. OSWorld autonomous computer use hits 78%, matching GPT-5.5's 78.7%, and on SWE-bench Pro it leads; Anthropic also shipped an Opus Fast variant for lower-latency agent loops.",
+      "id": "anthropic-mythos-limited-release-2026-04",
+      "title": "Anthropic's Mythos model leaks beyond controlled partner access",
+      "summary": "Anthropic released Mythos — described as its most powerful model to date with significant cybersecurity applications — to a limited partner group, but the model has already reached unsanctioned hands. Access remains restricted while Anthropic evaluates dual-use risks; no public API availability yet.",
       "category": "anthropic",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/best-ai-models-may-2026-leaderboard",
+      "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
       "significance": 7
+    },
+    {
+      "id": "pentagon-ai-deals-openai-google-2026-05-01",
+      "title": "Pentagon signs AI deals with 7 companies for classified networks — Anthropic excluded",
+      "summary": "The DoD signed classified AI deployment deals with OpenAI, Google, Microsoft, AWS, NVIDIA, SpaceX, and Reflection, while Anthropic remains locked out after refusing terms allowing autonomous weapons use. The White House has reopened talks with Anthropic following its Mythos cybersecurity announcements.",
+      "category": "other",
+      "sourceURL": "https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-mcp-97m-installs-linux-foundation-2026",
+      "title": "Anthropic's MCP crosses 97M installs, moves to Linux Foundation governance",
+      "summary": "MCP hit 97 million installs in March 2026, with every major AI provider now shipping MCP-compatible tooling. The Linux Foundation took the protocol under open governance, cementing it as shared infrastructure rather than an Anthropic proprietary standard.",
+      "category": "anthropic",
+      "sourceURL": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+      "significance": 6
     }
   ],
   "learn": [
