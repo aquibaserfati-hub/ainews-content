@@ -1,179 +1,178 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-04-27T00:00:00Z",
-  "reportGeneratedAt": "2026-05-03T08:06:00Z",
-  "learnGeneratedAt": "2026-04-30T12:00:00Z",
+  "reportGeneratedAt": "2026-05-04T12:00:00Z",
+  "learnGeneratedAt": "2026-05-04T12:00:00Z",
   "report": [
     {
-      "id": "mistral-medium-35-remote-agents-2026-04-29",
-      "title": "Mistral ships Medium 3.5 and async cloud coding agents in Vibe",
-      "summary": "Mistral Medium 3.5 is a 128B dense open-weight model (modified MIT, 256k context, 77.6% SWE-Bench Verified) that collapses Magistral, Devstral 2, and Medium 3.1 into one set of weights with per-request reasoning effort. Vibe coding agents now run in the cloud asynchronously — sessions spawn from CLI or Le Chat, run in isolated sandboxes, and can be teleported from local without losing task state.",
-      "category": "otherLLM",
-      "sourceURL": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
-      "significance": 7
-    },
-    {
-      "id": "microsoft-agent-365-ga-2026-05-01",
-      "title": "Microsoft Agent 365 hits general availability at $15/user/month",
-      "summary": "Agent 365 is a governance and security control plane — not an agent builder — that inventories every agent across a Microsoft 365 tenant (Copilot Studio, Foundry, shadow agents) and enforces Zero Trust Conditional Access policies per agent identity. Registry sync with AWS Bedrock and Google Cloud is in public preview, making it the first cross-cloud agent governance layer from a major vendor.",
-      "category": "tooling",
-      "sourceURL": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
-      "significance": 7
-    },
-    {
-      "id": "openai-gpt55-codex-revenue-2026-05-01",
-      "title": "OpenAI: GPT-5.5 API revenue growing 2x faster than any prior launch",
-      "summary": "One week post-launch, OpenAI reports GPT-5.5 API revenue is growing more than 2x faster than any previous model release; Codex doubled revenue in under seven days. Builders can now one-click import settings, plugins, agents, and project configs from other tools into Codex.",
+      "id": "openai-gpt55-launch-2026-04-23",
+      "title": "OpenAI ships GPT-5.5 with 88.7% SWE-bench and 60% fewer hallucinations",
+      "summary": "GPT-5.5 launched April 23 to Plus/Pro/Business/Enterprise users in ChatGPT and Codex, with API access added April 24. It scores 88.7% on SWE-bench Verified, 82.7% on Terminal-Bench 2.0, and 73.1% on Expert-SWE — a meaningful lead over GPT-5.4 — and OpenAI claims 60% fewer hallucinations, making it the default choice for agentic coding pipelines right now.",
       "category": "openai",
-      "sourceURL": "https://www.cryptointegrat.com/p/ai-news-may-2-2026",
+      "sourceURL": "https://openai.com/index/introducing-gpt-5-5/",
+      "significance": 9
+    },
+    {
+      "id": "google-gemini-enterprise-agent-platform-2026-04-22",
+      "title": "Google replaces standalone Vertex AI with Gemini Enterprise Agent Platform",
+      "summary": "Launched at Google Cloud Next '26 on April 22, the Gemini Enterprise Agent Platform folds all Vertex AI roadmap work into a single product with low-code Agent Studio, graph-based ADK for sub-agent networks, Agent Simulation, and Agent Identity security. Every future Vertex AI evolution ships through this platform — builders already on Vertex AI get the new brand in-console with no migration required.",
+      "category": "google",
+      "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "significance": 8
+    },
+    {
+      "id": "google-deep-research-max-api-2026-04-21",
+      "title": "Google ships Deep Research and Deep Research Max via Gemini Interactions API",
+      "summary": "Available April 21 on paid Gemini API tiers, both agents run on Gemini 3.1 Pro and expose full autonomous research loops — up to 160 web searches, MCP private-data connectors, native chart generation, and collaborative plan editing — via a single async API call. Deep Research scores 93.3% on DeepSearchQA; Max targets overnight due-diligence pipelines at higher cost.",
+      "category": "google",
+      "sourceURL": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/",
+      "significance": 8
+    },
+    {
+      "id": "openai-sora-shutdown-2026-04-26",
+      "title": "OpenAI shuts down Sora app and web on April 26; API deprecated through September",
+      "summary": "The Sora consumer app and sora.com went dark April 26 after peaking at ~1M users and burning ~$1M/day in compute costs. The Videos API and all Sora 2 model aliases are deprecated with a hard cutoff September 24, 2026 — no announced replacement. Developers on the Videos API need to migrate before that date; no recommended successor is listed in the deprecations table.",
+      "category": "openai",
+      "sourceURL": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation",
+      "significance": 7
+    },
+    {
+      "id": "google-anthropic-40b-investment-2026-04-24",
+      "title": "Google commits up to $40B to Anthropic at $380B valuation",
+      "summary": "Google is putting in $10B immediately with up to $30B more contingent on performance milestones, expanding a compute deal that now covers 5 gigawatts of Google Cloud TPU capacity over five years. The accounting twist: Google and Amazon both booked a majority of their Q1 2026 profits from Anthropic stake markups, not operating revenue.",
+      "category": "anthropic",
+      "sourceURL": "https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html",
       "significance": 6
     },
     {
-      "id": "anthropic-mythos-limited-release-2026-04",
-      "title": "Anthropic's Mythos model leaks beyond controlled partner access",
-      "summary": "Anthropic released Mythos — described as its most powerful model to date with significant cybersecurity applications — to a limited partner group, but the model has already reached unsanctioned hands. Access remains restricted while Anthropic evaluates dual-use risks; no public API availability yet.",
+      "id": "openai-responses-api-tool-search-2026-04",
+      "title": "OpenAI adds tool_search and Sora API video editing to the Responses API",
+      "summary": "Tool search (gpt-5.4+) lets agents defer loading large tool surfaces until runtime, cutting token waste and preserving cache performance in wide-tool-surface agents. Separately, the Sora API gained reusable character references, 20-second generations, and 1080p output for sora-2-pro before the deprecation clock started — builders should audit any Videos API integrations now.",
+      "category": "openai",
+      "sourceURL": "https://developers.openai.com/api/docs/changelog",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-mythos-restricted-model-2026-04",
+      "title": "Anthropic's Mythos model leaks to unsanctioned hands despite restricted rollout",
+      "summary": "Anthropic released its Mythos cybersecurity model to a limited partner group and confirmed it as the company's most powerful model to date, but it has already reached unauthorized users. The NSA is reportedly using it; Anthropic's refusal to allow autonomous-weapons use prompted the Pentagon to blacklist the company and strike AI deals with seven competing firms.",
       "category": "anthropic",
       "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
-      "significance": 7
-    },
-    {
-      "id": "pentagon-ai-deals-openai-google-2026-05-01",
-      "title": "Pentagon signs AI deals with 7 companies for classified networks — Anthropic excluded",
-      "summary": "The DoD signed classified AI deployment deals with OpenAI, Google, Microsoft, AWS, NVIDIA, SpaceX, and Reflection, while Anthropic remains locked out after refusing terms allowing autonomous weapons use. The White House has reopened talks with Anthropic following its Mythos cybersecurity announcements.",
-      "category": "other",
-      "sourceURL": "https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic",
-      "significance": 6
-    },
-    {
-      "id": "anthropic-mcp-97m-installs-linux-foundation-2026",
-      "title": "Anthropic's MCP crosses 97M installs, moves to Linux Foundation governance",
-      "summary": "MCP hit 97 million installs in March 2026, with every major AI provider now shipping MCP-compatible tooling. The Linux Foundation took the protocol under open governance, cementing it as shared infrastructure rather than an Anthropic proprietary standard.",
-      "category": "anthropic",
-      "sourceURL": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
       "significance": 6
     }
   ],
   "learn": [
     {
-      "id": "openai-symphony-codex-orchestrator",
-      "name": "OpenAI Symphony",
+      "id": "gpt-55-responses-api",
+      "name": "GPT-5.5 via Responses API",
       "category": "openai",
-      "oneLineDescription": "Open-source Elixir spec that turns Linear boards into an always-on Codex agent control plane.",
-      "estimatedSetupMinutes": 30,
-      "detail": {
-        "whatItDoes": "Symphony is an open-source orchestration specification (with a reference implementation in Elixir/BEAM) that connects OpenAI Codex agents to project management boards like Linear. It watches for open tickets in a 'Ready for Agent' state, spawns an isolated Codex agent workspace per ticket, monitors CI, rebases conflicts, and shepherds changes through to a pull request — producing proof-of-work artifacts (CI status, PR diff, walkthrough) before landing code. If an agent crashes, BEAM's OTP supervision trees restart it automatically; the system never sleeps.\n\nThe core shift is from 'supervise each Codex session' to 'manage the work queue.' OpenAI reported a 500% increase in landed PRs on some internal teams within three weeks. OpenAI explicitly labels Symphony a reference implementation and does not plan to maintain it as a standalone product — teams are expected to fork and adapt it.",
-        "whoItsFor": "Engineering teams already using Codex (via the Codex App Server or CLI) who have hit the context-switching bottleneck of managing 3–5 parallel agent sessions. Works best for codebases that have adopted 'harness engineering' practices: modular code, strong automated test coverage, and deterministic CI. Not suitable for legacy monoliths or ambiguous, judgment-heavy tickets.",
-        "pros": [
-          "Eliminates the human-as-session-supervisor bottleneck — agents pull work autonomously from your issue tracker",
-          "BEAM/OTP gives fault-tolerant process isolation out of the box; crashed agents restart without intervention",
-          "Proof-of-work gate (CI pass + PR artifacts) before landing means output is verifiable, not just generated",
-          "Fully open-source and forkable under MIT; OpenAI encourages teams to build their own version from the spec",
-          "Supports multi-model runtimes beyond Codex — architecture is model-agnostic by design"
-        ],
-        "cons": [
-          "Reference implementation is in Elixir — most teams will need to rewrite it in their preferred language or use it as a spec only",
-          "Requires 'harness engineering' prerequisites (modular code, high test coverage, agent-friendly repo structure) before it delivers value",
-          "OpenAI will not maintain Symphony as a product; community forks will diverge quickly",
-          "500% PR increase metric is directional with no published baseline — validate with your own team before betting on it"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- OpenAI API access with Codex App Server enabled (requires Codex subscription or API access)\n- Linear workspace with API token\n- Elixir 1.17+ and Erlang/OTP 27+ installed, OR Docker\n- PostgreSQL 15+ for state persistence\n- A codebase with automated tests and CI (GitHub Actions, CircleCI, etc.)\n\n## 1. Clone the repository\n\n```bash\ngit clone https://github.com/openai/symphony.git\ncd symphony\n```\n\n## 2. Install dependencies\n\n```bash\nmix deps.get\n```\n\n## 3. Configure environment\n\nCopy the example env file and fill in your credentials:\n\n```bash\ncp .env.example .env\n```\n\nEdit `.env`:\n\n```bash\n# Required\nOPENAI_API_KEY=sk-...\nLINEAR_API_KEY=lin_api_...\nLINEAR_TEAM_ID=your-team-id\nDATABASE_URL=postgres://user:pass@localhost:5432/symphony_dev\n\n# Optional — defaults shown\nSYMPHONY_AGENT_CONCURRENCY=5        # max parallel agent workspaces\nSYMPHONY_POLL_INTERVAL_SECONDS=30   # how often to check Linear for new tasks\nSYMPHONY_READY_STATE=Ready for Agent # Linear status that triggers an agent\n```\n\n> **Gotcha:** Linear API tokens are workspace-scoped. Generate one at Linear → Settings → API → Personal API keys. The token must have `issues:read` and `issues:write` scopes or Symphony will silently skip ticket updates.\n\n## 4. Set up the database\n\n```bash\nmix ecto.create\nmix ecto.migrate\n```\n\n## 5. Configure your repo with WORKFLOW.md\n\nSymphony reads a `WORKFLOW.md` in your target repo root to understand your CI setup, branch naming conventions, and PR checklist. Create one:\n\n```markdown\n# WORKFLOW.md\n\n## Branch naming\nfeature/<linear-issue-id>-<slug>\n\n## CI\n- Run `mix test` before opening a PR\n- All tests must pass; no exceptions\n\n## PR checklist\n- [ ] Tests pass in CI\n- [ ] No new compiler warnings\n- [ ] Changelog entry added\n```\n\n## 6. Start Symphony\n\n```bash\nmix symphony.start\n```\n\nYou should see log output like:\n\n```\n[Symphony] Polling Linear team <id> every 30s\n[Symphony] Found 0 ready tasks. Waiting...\n```\n\n## 7. Test with a real ticket\n\nIn Linear, create a ticket, write a clear description, and move it to the **Ready for Agent** column. Within one poll cycle you'll see:\n\n```\n[Symphony] Picked up issue ENG-42: \"Add input validation to /api/users\"\n[Symphony] Spawned workspace: /tmp/symphony/ENG-42\n[Symphony] Agent running Codex session...\n```\n\n## Tips & gotchas\n\n- **Ambiguous tickets fail.** Codex needs clear acceptance criteria. If the ticket says \"fix the bug\" with no detail, the agent will spin and produce noise.\n- **Keep sandboxes small.** Point Symphony at a single service or package, not a monorepo root. Large context = higher token spend + worse results.\n- **Review the 500% PR stat skeptically.** More PRs ≠ better code. Add a human review step before merging agent PRs to main.\n- **Elixir not your thing?** The `WORKFLOW.md` + Linear state machine spec is language-agnostic. Several community Python and TypeScript reimplementations appeared within days of launch — search GitHub for `symphony-codex` forks.",
-        "sourceURL": "https://github.com/openai/symphony"
-      }
-    },
-    {
-      "id": "google-gemma-4-local-inference",
-      "name": "Gemma 4",
-      "category": "google",
-      "oneLineDescription": "Google's Apache 2.0 open models (2B–31B) with multimodal input and 256K context, runnable locally.",
+      "oneLineDescription": "OpenAI's strongest agentic coding model, now in the API with tool_search support.",
       "estimatedSetupMinutes": 5,
       "detail": {
-        "whatItDoes": "Gemma 4 is Google DeepMind's open-weight model family released April 2, 2026, built from the same research as Gemini 3. It ships in four sizes: E2B and E4B (edge-optimized, run on phones and Raspberry Pi), 26B MoE (activates only ~4B parameters at inference for GPU efficiency), and 31B Dense (flagship, fits on a single 80 GB GPU). All sizes support text + image input with variable resolution, 140+ languages, and context windows up to 256K tokens. The E2B and E4B additionally support native audio input. The 31B Dense ranks #3 on Arena AI, beating models 20× its size on reasoning benchmarks.\n\nGemma 4 supports native function calling, structured output, and a configurable 'thinking mode' (chain-of-thought via `<|think|>` tokens) — making it a practical choice for agentic workflows without cloud API dependency. The Apache 2.0 license allows unrestricted commercial use, fine-tuning, and redistribution with no MAU caps.",
-        "whoItsFor": "Backend and mobile developers who need a capable, commercially licensable local model for: privacy-sensitive workloads (medical, legal, financial data that cannot leave the device), offline-capable apps, cost reduction by routing routine tasks away from cloud APIs, or Android on-device AI via the AICore Developer Preview. Also ideal for researchers who want a strong open-weight base for fine-tuning — QLoRA on the 31B requires ~16 GB VRAM.",
+        "whatItDoes": "GPT-5.5 is OpenAI's current frontier model, available in the Responses API and Chat Completions API from April 24, 2026. It scores 88.7% on SWE-bench Verified, 82.7% on Terminal-Bench 2.0, and claims 60% fewer hallucinations than GPT-5.4. It supports a 1,000,000-token context window, full tool calling (web_search, file_search, computer_use, code_interpreter, image_generation), and the new tool_search feature that defers large tool catalogs to runtime.\n\nTool search is the standout new primitive for agent builders: you declare a namespace or MCP server with `defer_loading: true`, and the model fetches only the tools it actually needs for the current task. This cuts prompt token usage dramatically when your agent has dozens of possible tools. GPT-5.5 also introduces configurable `reasoning.effort` (low / medium / high / xhigh) and `text.verbosity` (low / medium) controls that let you trade compute for speed.",
+        "whoItsFor": "Backend engineers building multi-step coding agents, SWE automation pipelines, or customer-facing assistants that currently use GPT-5.4. Also relevant for teams with wide tool surfaces (50+ functions) who are hitting token limits or cache misses on tool definitions. The model slug is a drop-in at the API layer, but OpenAI recommends a fresh prompt baseline rather than porting legacy instructions verbatim.",
         "pros": [
-          "Apache 2.0 license — no MAU limits, no royalty payments, commercial fine-tuning and redistribution allowed",
-          "Single Ollama command installs any size; no cloud account needed to start",
-          "31B Dense ranked #3 on Arena AI, outperforming models 20x its parameter count on reasoning",
-          "Native multimodal: images across all sizes, audio on edge variants — no separate vision adapter needed",
-          "Android AICore Developer Preview available today; code is forward-compatible with production Gemini Nano 4 devices"
+          "88.7% SWE-bench Verified and 73.1% on Expert-SWE — leads all current publicly available models on coding benchmarks",
+          "tool_search reduces token waste on large tool surfaces and preserves prompt cache performance",
+          "1M token context window with configurable reasoning.effort and text.verbosity for latency/cost tuning",
+          "60% fewer hallucinations than GPT-5.4 per OpenAI's internal evals"
         ],
         "cons": [
-          "31B Dense needs ~80 GB VRAM for full precision (or ~16 GB with QLoRA) — consumer GPU users need the 26B MoE or smaller",
-          "Lags behind Qwen 3.5 on MMLU Pro and SWE-bench coding benchmarks; not the best open model for every task",
-          "Thinking mode tokens add latency and cost — needs explicit tuning to avoid runaway inference budgets in production"
+          "Prompts longer than 272K input tokens are billed at 2x input / 1.5x output for the full session — expensive for large-context retrieval workloads",
+          "Requires re-tuning prompts from scratch; carrying over GPT-5.4 system prompts degrades output quality per OpenAI's own guidance"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- macOS (Apple Silicon or Intel) or Linux with at least 8 GB RAM for E4B, 32 GB for 26B MoE, 80 GB VRAM for 31B Dense\n- [Ollama](https://ollama.com) installed (handles model download + quantization automatically)\n\n## Option A: Run via Ollama (fastest, recommended)\n\n```bash\n# Install Ollama (macOS)\nbrew install ollama\n\n# Or Linux one-liner\ncurl -fsSL https://ollama.com/install.sh | sh\n```\n\nPull and run the model you want:\n\n```bash\n# Edge model (~4B, runs on laptops with 8GB RAM)\nollama run gemma4:4b\n\n# MoE model (~26B total, ~4B active — needs ~16GB RAM)\nollama run gemma4:27b\n\n# Dense flagship (needs ~50GB RAM with 4-bit quant)\nollama run gemma4:31b\n```\n\nYou'll be at an interactive prompt immediately. Type `/bye` to exit.\n\n> **Gotcha:** Ollama uses 4-bit quantization by default. If you need higher fidelity (e.g., for fine-tuning evals), pull the `fp16` tag: `ollama pull gemma4:31b-fp16` — but this requires ~62 GB of RAM/VRAM.\n\n## Option B: Python via Hugging Face Transformers\n\n```bash\npip install transformers torch accelerate\n```\n\n```python\nfrom transformers import AutoTokenizer, AutoModelForCausalLM\nimport torch\n\nmodel_id = \"google/gemma-4-4b-it\"  # swap for gemma-4-27b-it or gemma-4-31b-it\n\ntokenizer = AutoTokenizer.from_pretrained(model_id)\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_id,\n    torch_dtype=torch.bfloat16,\n    device_map=\"auto\",\n)\n\nmessages = [\n    {\"role\": \"user\", \"content\": \"Explain function calling in one paragraph.\"}\n]\ninputs = tokenizer.apply_chat_template(\n    messages, return_tensors=\"pt\", return_dict=True\n).to(model.device)\n\noutputs = model.generate(**inputs, max_new_tokens=256)\nprint(tokenizer.decode(outputs[0], skip_special_tokens=True))\n```\n\n> **Gotcha:** You must accept Google's model license on Hugging Face before downloading. Run `huggingface-cli login` first and visit the model card to click 'Agree.'\n\n## Option C: Google AI Studio (no local setup)\n\nVisit [aistudio.google.com](https://aistudio.google.com), select **Gemma 4** from the model picker, and start prompting immediately — free tier available.\n\n## Enable thinking mode (chain-of-thought)\n\n```python\nmessages = [\n    {\n        \"role\": \"user\",\n        \"content\": \"Solve step by step: what is the 47th Fibonacci number? <|think|>\"\n    }\n]\n```\n\nThe model will emit reasoning tokens inside `<|think|>...<|/think|>` tags before the final answer. Strip them from user-facing output but keep them for logging.\n\n## Fine-tuning with QLoRA (16 GB VRAM path)\n\n```bash\npip install unsloth\n```\n\n```python\nfrom unsloth import FastLanguageModel\n\nmodel, tokenizer = FastLanguageModel.from_pretrained(\n    model_name=\"google/gemma-4-31b-it\",\n    max_seq_length=8192,\n    load_in_4bit=True,   # enables QLoRA — fits in 16 GB\n)\n```",
-        "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.9+ or Node 20+\n- `OPENAI_API_KEY` set in your environment (Tier 1+ account; GPT-5.5 requires a paid tier)\n- `openai` SDK >= latest (supports gpt-5.5 slug)\n\n```bash\npip install --upgrade openai\nexport OPENAI_API_KEY=\"sk-...\"\n```\n\n## Basic chat completion\n\n```python\nfrom openai import OpenAI\n\nclient = OpenAI()\n\nresponse = client.responses.create(\n    model=\"gpt-5.5\",\n    input=\"Refactor this Python function to handle None inputs gracefully: ...\",\n    reasoning={\"effort\": \"high\"},   # low | medium | high | xhigh\n    text={\"verbosity\": \"low\"},      # low | medium\n)\nprint(response.output_text)\n```\n\n## Agentic tool use with web_search\n\n```python\nresponse = client.responses.create(\n    model=\"gpt-5.5\",\n    tools=[{\"type\": \"web_search\"}],\n    input=\"What shipped in the OpenAI API this week?\",\n)\nprint(response.output_text)\n```\n\n## Tool search (deferred tool loading) — gpt-5.4+ only\n\nUse this pattern when you have a large tool catalog and want the model to load only what it needs:\n\n```python\ncrm_namespace = {\n    \"type\": \"namespace\",\n    \"name\": \"crm\",\n    \"description\": \"CRM tools for customer lookup and order management.\",\n    \"tools\": [\n        {\n            \"type\": \"function\",\n            \"name\": \"get_customer_profile\",\n            \"description\": \"Fetch a customer profile by ID.\",\n            \"parameters\": {\n                \"type\": \"object\",\n                \"properties\": {\"customer_id\": {\"type\": \"string\"}},\n                \"required\": [\"customer_id\"],\n            },\n        },\n        {\n            \"type\": \"function\",\n            \"name\": \"list_open_orders\",\n            \"description\": \"List open orders for a customer ID.\",\n            \"defer_loading\": True,   # loaded via tool_search, not upfront\n            \"parameters\": {\n                \"type\": \"object\",\n                \"properties\": {\"customer_id\": {\"type\": \"string\"}},\n                \"required\": [\"customer_id\"],\n            },\n        },\n    ],\n}\n\nresponse = client.responses.create(\n    model=\"gpt-5.5\",\n    input=\"List open orders for customer CUST-12345.\",\n    tools=[crm_namespace, {\"type\": \"tool_search\"}],\n)\nprint(response.output_text)\n```\n\n## Gotchas\n- **Use `responses.create`, not `chat.completions.create`**, for any multi-turn or tool-calling workflow. Chat Completions works for single-turn but lacks reasoning.effort and tool_search.\n- **Prompts > 272K tokens are billed at 2x input** for the entire session — watch context accumulation in long agent loops.\n- **Don't port old system prompts verbatim.** GPT-5.5 interprets instructions literally; legacy over-specified prompts narrow the model's reasoning and hurt output quality.\n- **Snapshot to lock behavior:** use `gpt-5.5-2026-04-23` instead of `gpt-5.5` in production to avoid unexpected behavior changes on alias updates.",
+        "sourceURL": "https://developers.openai.com/api/docs/guides/latest-model"
       }
     },
     {
-      "id": "google-adk-gemini-enterprise-agent-platform",
-      "name": "Google Agent Development Kit (ADK) 2.0",
+      "id": "gemini-deep-research-api",
+      "name": "Gemini Deep Research API",
       "category": "google",
-      "oneLineDescription": "Open-source Python/TypeScript framework for multi-agent graph workflows, shipped GA at Cloud Next 2026.",
-      "estimatedSetupMinutes": 15,
-      "detail": {
-        "whatItDoes": "Google's Agent Development Kit (ADK) is an open-source, model-agnostic framework for building production AI agents locally and deploying them to Google Cloud's Gemini Enterprise Agent Platform. ADK 2.0, announced at Cloud Next on April 22, 2026, adds a graph-based orchestration layer: you define agents as nodes in a directed graph, specify how they hand off work to sub-agents, and ADK handles routing, state management, tool dispatch, and observability. It ships in Python, Go, Java, and TypeScript.\n\nAt Cloud Next, Google also announced managed MCP servers across all Google Cloud services — meaning ADK agents can call BigQuery, Cloud Storage, Pub/Sub, and 200+ other services through a single standardized MCP interface without writing custom connectors. Agent Studio (low-code visual builder) and ADK share the same runtime, so teams prototype in the UI and export to ADK code for production.",
-        "whoItsFor": "Backend engineers and ML engineers building multi-step agentic workflows on Google Cloud. Particularly useful for teams that want local development with a path to managed cloud deployment (Agent Engine), or who need to connect agents to Google Workspace, BigQuery, or third-party SaaS (Salesforce, Workday, ServiceNow via Agent Marketplace). Model-agnostic: swap between Gemini, Claude, Gemma, or Llama without rewriting agent logic.",
-        "pros": [
-          "Open-source with Apache 2.0 license — full local dev with no cloud billing until you deploy",
-          "Graph-based multi-agent orchestration is first-class: sub-agents, parallel branches, conditional routing built in",
-          "Managed MCP servers for all Google Cloud services eliminate the connector-writing bottleneck",
-          "Model-agnostic: Claude Opus, Gemini 3.1, Gemma 4, and Llama all work with the same ADK agent code",
-          "Agent Studio → ADK export path lets non-engineers prototype, engineers productionize"
-        ],
-        "cons": [
-          "Deep GCP coupling for production deployment: Agent Engine, Memory Bank, and Agent Registry require Google Cloud billing",
-          "Graph-based orchestration adds conceptual overhead vs. simple sequential chains — overkill for single-agent tasks",
-          "MCP managed servers are Google Cloud-only; connecting to non-GCP services still requires custom MCP server setup"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.11+ (recommended) or Node.js 20+ for TypeScript\n- Google Cloud account with billing enabled (free for local dev; billing needed for Agent Engine deployment)\n- `gcloud` CLI installed and authenticated: `gcloud auth application-default login`\n\n## 1. Install ADK\n\n```bash\npip install google-adk\n```\n\nVerify:\n\n```bash\nadk --version\n# google-adk 2.x.x\n```\n\n## 2. Set up a new agent project\n\n```bash\nadk new my-agent\ncd my-agent\n```\n\nThis scaffolds:\n```\nmy-agent/\n  agent.py          # main agent definition\n  tools/            # custom tool functions\n  .env              # API keys\n  adk.yaml          # agent config\n```\n\n## 3. Configure your model and tools\n\nEdit `.env`:\n\n```bash\nGOOGLE_GENAI_API_KEY=your-key-here\n# Or use Anthropic:\nANTHROPIC_API_KEY=sk-ant-...\n```\n\nEdit `agent.py` for a simple Gemini agent with a custom tool:\n\n```python\nfrom google.adk.agents import Agent\nfrom google.adk.tools import tool\n\n@tool\ndef get_weather(city: str) -> str:\n    \"\"\"Return current weather for a city.\"\"\"\n    # Replace with real weather API call\n    return f\"It is 22°C and sunny in {city}.\"\n\nroot_agent = Agent(\n    name=\"weather-agent\",\n    model=\"gemini-3.1-flash\",   # or \"claude-sonnet-4.6\", \"gemma-4-27b-it\"\n    description=\"Answers weather questions.\",\n    tools=[get_weather],\n)\n```\n\n## 4. Run locally with the ADK dev UI\n\n```bash\nadk web\n```\n\nOpen `http://localhost:8000` — you get a chat UI with full tool call visibility and trace inspection.\n\n> **Gotcha:** The ADK web UI requires the `GOOGLE_GENAI_API_KEY` even if you're using a non-Gemini model for the agent, because it uses Gemini for the UI's built-in eval features. Set a dummy key if you don't have one and are only using Claude.\n\n## 5. Build a multi-agent graph (ADK 2.0 feature)\n\n```python\nfrom google.adk.agents import Agent, GraphOrchestrator\nfrom google.adk.agents.graph import Node, Edge\n\nresearch_agent = Agent(name=\"researcher\", model=\"gemini-3.1-pro\", ...)\nwriter_agent   = Agent(name=\"writer\",     model=\"claude-sonnet-4.6\", ...)\nreviewer_agent = Agent(name=\"reviewer\",   model=\"gemini-3.1-flash\", ...)\n\norchestrator = GraphOrchestrator(\n    nodes=[\n        Node(agent=research_agent, id=\"research\"),\n        Node(agent=writer_agent,   id=\"write\"),\n        Node(agent=reviewer_agent, id=\"review\"),\n    ],\n    edges=[\n        Edge(source=\"research\", target=\"write\"),\n        Edge(source=\"write\",    target=\"review\"),\n    ],\n    entry_point=\"research\",\n)\n\nresult = orchestrator.run(\"Write a report on quantum error correction.\")\nprint(result.output)\n```\n\n## 6. Deploy to Google Cloud Agent Engine\n\n```bash\nadk deploy --project your-gcp-project --region us-central1\n```\n\nThis packages your agent, provisions an Agent Engine runtime, and returns an endpoint URL. Subsequent calls use the Gemini Enterprise Agent Platform managed runtime with sub-second cold starts.\n\n## Tips\n- Use `adk eval` to run automated evals against a golden dataset before deploying.\n- For MCP-connected tools (BigQuery, Cloud Storage), run `adk mcp list` to see all managed MCP servers available in your project — no connector code needed.",
-        "sourceURL": "https://github.com/google/adk-python"
-      }
-    },
-    {
-      "id": "mattpocock-skills-claude-directory",
-      "name": "mattpocock/skills",
-      "category": "tooling",
-      "oneLineDescription": "Curated Claude Code skills directory from Matt Pocock — 31K stars and growing fast on GitHub.",
-      "estimatedSetupMinutes": 3,
-      "detail": {
-        "whatItDoes": "mattpocock/skills is a rapidly growing GitHub repository (31.5K stars as of April 29, 2026) containing production-ready Claude Code skill files sourced directly from Matt Pocock's `.claude` directory. Each skill is a markdown file that extends Claude Code's behavior for a specific engineering task — TypeScript type narrowing, test generation, refactor patterns, CI pipeline authoring, and more. Skills live in your project's `.claude/skills/` folder and are invoked by Claude Code automatically when relevant context is detected.\n\nThe repo has become the de facto community hub for sharing Claude Code skills, analogous to what awesome-lists are for libraries. Skills are composable — you can mix Pocock's TypeScript skills with community-contributed DevOps or Python skills in the same project.",
-        "whoItsFor": "Frontend and full-stack engineers using Claude Code as their primary coding agent who want to extend its default behavior without writing custom prompts from scratch. Especially valuable for TypeScript/JavaScript teams — Pocock is the creator of ts-reset and Total TypeScript, so the TS-related skills are particularly well-crafted.",
-        "pros": [
-          "Zero setup: copy skill files into `.claude/skills/` and Claude Code picks them up automatically",
-          "31K+ stars in weeks — strong community signal that these skills work in real codebases",
-          "MIT licensed — fork, modify, and redistribute freely",
-          "Composable with other skill sources (Google's Huashu Design skill, community SOUL.md configs, etc.)"
-        ],
-        "cons": [
-          "Quality is uneven outside the TypeScript/JavaScript core skills — community contributions vary significantly",
-          "Skills can conflict if two files give contradictory instructions for the same task — no deduplication mechanism yet"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Claude Code CLI installed: `npm install -g @anthropic-ai/claude-code` (requires Node 20+)\n- An Anthropic API key: `export ANTHROPIC_API_KEY=sk-ant-...`\n\n## 1. Clone or download the skills\n\n```bash\n# Option A: Clone the full repo\ngit clone https://github.com/mattpocock/skills.git /tmp/mattpocock-skills\n\n# Option B: Use degit for a lighter download (no git history)\nnpx degit mattpocock/skills /tmp/mattpocock-skills\n```\n\n## 2. Add skills to your project\n\n```bash\n# Create the Claude skills directory in your project\nmkdir -p .claude/skills\n\n# Copy all skills (or cherry-pick the ones you want)\ncp /tmp/mattpocock-skills/skills/*.md .claude/skills/\n\n# Or copy just the TypeScript skills:\ncp /tmp/mattpocock-skills/skills/typescript-*.md .claude/skills/\n```\n\n## 3. Verify Claude Code detects the skills\n\n```bash\nclaude code --list-skills\n# Should output a list of skill names from your .claude/skills/ directory\n```\n\n## 4. Run Claude Code with skills active\n\n```bash\nclaude code \"Refactor this function to use proper TypeScript generics\"\n```\n\nClaude Code will automatically apply relevant skill instructions from `.claude/skills/` when the task context matches.\n\n> **Gotcha:** Skills are loaded at session start. If you add a skill file while Claude Code is running, restart the session with `claude code --restart` to pick it up.\n\n## 5. Write your own skill\n\nSkills are plain markdown. Create `.claude/skills/my-custom-skill.md`:\n\n```markdown\n# My Team's PR Convention Skill\n\nWhen creating or modifying pull requests:\n- Always add a `## What changed` section at the top of the PR description\n- Reference the Linear ticket ID in the format `[ENG-<id>]`\n- Never merge without at least one approval from a senior engineer\n- Run `pnpm typecheck && pnpm test` before marking ready for review\n```\n\nClaude Code will follow these instructions whenever it creates or reviews PRs in your repo.\n\n## 6. Keep skills updated\n\n```bash\n# Pull latest upstream skills (if you cloned)\ncd /tmp/mattpocock-skills && git pull\ncp skills/*.md /path/to/your/project/.claude/skills/\n```",
-        "sourceURL": "https://github.com/mattpocock/skills"
-      }
-    },
-    {
-      "id": "n8n-mcp-client-server-workflow-automation",
-      "name": "n8n (MCP-enabled)",
-      "category": "tooling",
-      "oneLineDescription": "Self-hostable workflow automation with native MCP client/server support and 180K GitHub stars.",
+      "oneLineDescription": "Trigger a full autonomous research loop — up to 160 searches, cited report — in one API call.",
       "estimatedSetupMinutes": 10,
       "detail": {
-        "whatItDoes": "n8n is a fair-code workflow automation platform that recently crossed 180K GitHub stars and added native MCP (Model Context Protocol) client and server support. This means n8n workflows can now act as MCP servers — exposing workflow tools to Claude, Cursor, or any MCP-compatible AI agent — and can call out to external MCP servers as part of automation flows. Combined with its existing LangChain integration and 400+ pre-built connectors, n8n has become a practical way to build agent workflows without writing orchestration code from scratch.\n\nThe self-hosted version is free and runs on Docker with a single command. It stores workflow state in SQLite or Postgres and provides a visual canvas for building, testing, and monitoring multi-step AI pipelines. Common patterns: AI-driven email triage, automated content pipelines, customer support agent flows, and data enrichment chains that combine LLM calls with database lookups and API calls.",
-        "whoItsFor": "Engineering teams and solo builders who want agent workflows with visual observability and 400+ pre-built integrations but don't want to write orchestration code. Strong fit for product teams that need non-engineers (ops, marketing) to build and modify AI workflows without touching code. Also useful for MCP server prototyping — expose a workflow as an MCP tool in minutes.",
+        "whatItDoes": "The Gemini Deep Research API, available from April 21, 2026 via the Gemini Interactions API, exposes two autonomous research agents powered by Gemini 3.1 Pro. The standard agent (`deep-research-preview-04-2026`) targets interactive UIs with lower latency; Deep Research Max (`deep-research-max-preview-04-2026`) runs up to 160 Google searches, processes ~900K input tokens, and produces exhaustive cited reports designed for overnight batch pipelines.\n\nBoth agents support MCP server connections for private data, native chart and infographic generation in HTML, collaborative planning (you can review and edit the research plan before execution starts), and multimodal file uploads (PDFs, CSVs, images, audio, video) as grounding context. Tasks run asynchronously in the background — you fire the request, get an interaction ID, then poll until `status == 'completed'`. Max tasks can run up to 60 minutes.",
+        "whoItsFor": "Product teams building competitive intelligence dashboards, due-diligence automation, literature review tools, or market monitoring pipelines. Also useful for data engineers who want to replace manual analyst research loops with a scheduled API call. Requires a paid Gemini API tier — free-tier keys do not have access.",
         "pros": [
-          "Native MCP client + server: expose any workflow as an MCP tool to Claude or Cursor, or call external MCP servers from within a workflow",
-          "Self-hostable with a single Docker command — data never leaves your infrastructure",
-          "400+ pre-built integrations (Slack, Postgres, HubSpot, GitHub, etc.) reduce connector-writing to near zero",
-          "Visual canvas makes AI workflows auditable and modifiable by non-engineers"
+          "93.3% on DeepSearchQA and 54.6% on Humanity's Last Exam — top-of-leaderboard for research agents as of April 2026",
+          "MCP support lets the agent query your private databases and internal systems alongside the public web",
+          "Native chart generation means reports come back with visual elements ready for dashboards, not just prose",
+          "Collaborative planning lets you steer the research direction before the agent starts, reducing wasted compute on off-target reports"
         ],
         "cons": [
-          "Fair-code license (not MIT/Apache) — self-hosting is free but redistributing n8n as part of a commercial product requires a license",
-          "Visual canvas becomes hard to navigate for very large workflows (50+ nodes) — no built-in modularization"
+          "Deep Research Max costs significantly more per query than standard Gemini models — up to ~160 searches and ~900K tokens per call; design cost controls into your pipeline before scaling",
+          "RPM limits are very low (2–5 RPM for Deep Research); batch pipelines must queue jobs carefully or they will hit rate limits mid-run"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Docker and Docker Compose installed\n- 2 GB RAM minimum (4 GB recommended for LLM-heavy workflows)\n- An Anthropic or OpenAI API key for LLM nodes\n\n## 1. Start n8n with Docker Compose\n\nCreate `docker-compose.yml`:\n\n```yaml\nversion: '3.8'\nservices:\n  n8n:\n    image: n8nio/n8n:latest\n    ports:\n      - \"5678:5678\"\n    environment:\n      - N8N_BASIC_AUTH_ACTIVE=true\n      - N8N_BASIC_AUTH_USER=admin\n      - N8N_BASIC_AUTH_PASSWORD=changeme\n      - N8N_ENCRYPTION_KEY=your-random-32-char-key\n      # LLM credentials — n8n stores these encrypted\n      - ANTHROPIC_API_KEY=sk-ant-...\n      - OPENAI_API_KEY=sk-...\n    volumes:\n      - n8n_data:/home/node/.n8n\n    restart: unless-stopped\n\nvolumes:\n  n8n_data:\n```\n\n```bash\ndocker compose up -d\n```\n\nOpen `http://localhost:5678` — log in with the credentials above.\n\n> **Gotcha:** The `N8N_ENCRYPTION_KEY` is used to encrypt stored credentials. If you lose it, all saved API keys become unreadable. Store it in a password manager or secret manager before you add any credentials.\n\n## 2. Build a simple AI workflow via the UI\n\n1. Click **New Workflow**\n2. Add a **Webhook** trigger node (gives you an HTTP endpoint)\n3. Add an **Anthropic Chat Model** node — paste your API key, select `claude-sonnet-4.6`\n4. Add an **AI Agent** node — connect the Chat Model to it\n5. Add a **Respond to Webhook** node to return the agent output\n6. Click **Save** and **Activate**\n\nTest it:\n\n```bash\ncurl -X POST http://localhost:5678/webhook/your-webhook-id \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"message\": \"Summarize this: AI is transforming software development.\"}'\n```\n\n## 3. Expose the workflow as an MCP server\n\nIn the workflow, add an **MCP Server Trigger** node instead of a Webhook node. This registers the workflow as an MCP tool with the name and description you provide. Any MCP-compatible client (Claude desktop, Cursor, etc.) can then call it.\n\nIn your Claude desktop `claude_desktop_config.json`:\n\n```json\n{\n  \"mcpServers\": {\n    \"my-n8n-workflow\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@n8n/mcp-client\"],\n      \"env\": {\n        \"N8N_BASE_URL\": \"http://localhost:5678\",\n        \"N8N_API_KEY\": \"your-n8n-api-key\"\n      }\n    }\n  }\n}\n```\n\nRestart Claude desktop — your n8n workflow now appears as a tool Claude can call.\n\n## 4. Upgrade to Postgres for production\n\nAdd to `docker-compose.yml`:\n\n```yaml\n  postgres:\n    image: postgres:16\n    environment:\n      POSTGRES_USER: n8n\n      POSTGRES_PASSWORD: n8npass\n      POSTGRES_DB: n8n\n    volumes:\n      - postgres_data:/var/lib/postgresql/data\n```\n\nAdd to the `n8n` service environment:\n\n```yaml\n      - DB_TYPE=postgresdb\n      - DB_POSTGRESDB_HOST=postgres\n      - DB_POSTGRESDB_PORT=5432\n      - DB_POSTGRESDB_DATABASE=n8n\n      - DB_POSTGRESDB_USER=n8n\n      - DB_POSTGRESDB_PASSWORD=n8npass\n```",
-        "sourceURL": "https://github.com/n8n-io/n8n"
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.9+ or Node 20+\n- Gemini API key from [Google AI Studio](https://aistudio.google.com) — **paid tier required**, free tier does not include Deep Research\n- `google-genai` Python SDK\n\n```bash\npip install --upgrade google-genai\nexport GEMINI_API_KEY=\"AIza...\"\n```\n\n## Fire a background research task and poll for completion\n\n```python\nimport time\nfrom google import genai\n\nclient = genai.Client()\n\n# Use 'deep-research-preview-04-2026' for speed\n# Use 'deep-research-max-preview-04-2026' for depth\ninteraction = client.interactions.create(\n    input=\"Analyze the competitive landscape for AI coding assistants in 2026: key players, pricing, benchmark performance, and enterprise adoption trends.\",\n    agent=\"deep-research-max-preview-04-2026\",\n    background=True,   # required for Max; runs async up to 60 min\n)\n\nprint(f\"Research started. Interaction ID: {interaction.id}\")\n\nwhile True:\n    interaction = client.interactions.get(interaction.id)\n    if interaction.status == \"completed\":\n        print(interaction.outputs[-1].text)\n        break\n    elif interaction.status == \"failed\":\n        print(f\"Failed: {interaction.error}\")\n        break\n    print(f\"Status: {interaction.status} — polling in 30s...\")\n    time.sleep(30)\n```\n\n## Curl equivalent (for quick testing)\n\n```bash\n# 1. Start the research task\ncurl -X POST \"https://generativelanguage.googleapis.com/v1beta/interactions\" \\\n  -H \"Content-Type: application/json\" \\\n  -H \"x-goog-api-key: $GEMINI_API_KEY\" \\\n  -d '{\n    \"input\": \"Summarize the latest developments in solid-state battery technology.\",\n    \"agent\": \"deep-research-preview-04-2026\",\n    \"background\": true\n  }'\n\n# Response contains an `id` field — use it below\n\n# 2. Poll for results\ncurl -X GET \"https://generativelanguage.googleapis.com/v1beta/interactions/INTERACTION_ID\" \\\n  -H \"x-goog-api-key: $GEMINI_API_KEY\"\n```\n\n## Gotchas\n- **Do NOT use `generate_content` for Deep Research** — the agent is exclusively available via `client.interactions.create`. Calling it via the standard generate_content endpoint will fail.\n- **`background=True` requires `store=True` implicitly** — the interaction state is persisted server-side. If you are building a multi-user app, treat interaction IDs as sensitive session tokens.\n- **Paid tier only.** As of April 1, 2026, Google removed all Pro-tier models from the free tier. If your key returns a 403 on Deep Research, upgrade your billing account in Google AI Studio.\n- **RPM is very low.** Design any batch pipeline with a queue and sleep between submissions. Hitting the rate limit mid-batch is painful to recover from.\n- **Deep Research Max runtime** can reach 60 minutes for complex queries. Do not set aggressive timeouts in your HTTP client — use async polling instead.",
+        "sourceURL": "https://ai.google.dev/gemini-api/docs/deep-research"
+      }
+    },
+    {
+      "id": "gemini-enterprise-agent-platform-adk",
+      "name": "Gemini Enterprise Agent Platform (ADK)",
+      "category": "google",
+      "oneLineDescription": "Google's unified platform replacing Vertex AI for building, governing, and running production agent fleets.",
+      "estimatedSetupMinutes": 20,
+      "detail": {
+        "whatItDoes": "Launched April 22, 2026 at Google Cloud Next '26, the Gemini Enterprise Agent Platform is the successor to standalone Vertex AI. It combines Agent Studio (low-code visual builder), an upgraded graph-based Agent Development Kit (ADK) that orchestrates networks of sub-agents, Agent Runtime for long-running agents, a Memory Bank for persistent agent state, an Agent Registry with cryptographic IDs for auditing, and Agentic Defense for security. The platform surfaces directly inside the Google Cloud console — existing Vertex AI customers see the new brand without migration.\n\nAlso launched at the same event: the Data Agent Kit (preview), a portable plugin suite that installs directly into VS Code, Gemini CLI, Codex, and Claude Code, providing a Data Engineering Agent (GA), Data Science Agent (GA), and Database Observability Agent (preview). Model Garden now offers 200+ models including Gemini 3.1 Pro, Gemma 4, and third-party models like Claude Opus, Sonnet, and Haiku.",
+        "whoItsFor": "Platform and MLOps engineers managing production agent deployments on Google Cloud, and data engineers who want pre-built agentic skills in their existing IDE. Teams already on Vertex AI are the immediate audience — the platform is the mandatory upgrade path for all future Vertex AI features. Also relevant for enterprises needing governance controls (agent identity, audit logs, permission management) before deploying agents to business users.",
+        "pros": [
+          "Replaces Vertex AI entirely — all future Google Cloud AI roadmap ships through this platform, so migrating now avoids a forced migration later",
+          "Agent Simulation tool lets you stress-test agent behavior against real-world scenarios before shipping to production",
+          "Data Agent Kit installs directly in VS Code, Claude Code, and Gemini CLI — no separate infrastructure needed for data engineering agent skills",
+          "Built-in A2A (Agent-to-Agent) and MCP protocol support for multi-agent orchestration and private data connectors"
+        ],
+        "cons": [
+          "Agent Runtime, Memory Bank, Agent Registry, and the optimization suite require enabling the new Agent Platform plan — existing Vertex AI free tiers may not cover these features",
+          "Platform is newly GA as of April 22; production-hardening, documentation depth, and community support are still ramping up compared to the mature Vertex AI SDK"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Google Cloud account with billing enabled\n- `gcloud` CLI installed and authenticated\n- `google-cloud-aiplatform` Python SDK (Agent Platform builds on the same SDK)\n- Access via [console.cloud.google.com/agent-platform/overview](https://console.cloud.google.com/agent-platform/overview)\n\n```bash\n# Install or upgrade the SDK\npip install --upgrade google-cloud-aiplatform google-adk\n\n# Authenticate\ngcloud auth application-default login\ngcloud config set project YOUR_PROJECT_ID\n```\n\n## Install the Data Agent Kit in VS Code\n\n```bash\n# Install the Gemini CLI (includes Data Agent Kit plugin support)\nnpm install -g @google/gemini-cli\n\n# In VS Code, install the \"Google Cloud AI\" extension from the marketplace\n# Then in settings, enable: \"Gemini: Data Agent Kit\" -> true\n# The Data Engineering Agent and Data Science Agent will appear in the sidebar\n```\n\n## Build a simple sub-agent network with ADK (Python)\n\n```python\nfrom google.adk.agents import Agent, AgentNetwork\nfrom google.adk.tools import google_search, code_execution\n\n# Define a research sub-agent\nresearch_agent = Agent(\n    name=\"researcher\",\n    model=\"gemini-3.1-pro\",\n    tools=[google_search],\n    instruction=\"Search the web and return structured findings on the given topic.\",\n)\n\n# Define a synthesis sub-agent\nwriter_agent = Agent(\n    name=\"writer\",\n    model=\"gemini-3.1-pro\",\n    tools=[code_execution],\n    instruction=\"Take research findings and produce a concise technical summary.\",\n)\n\n# Wire them into a network\nnetwork = AgentNetwork(\n    name=\"research_pipeline\",\n    agents=[research_agent, writer_agent],\n    orchestration=\"sequential\",  # or 'parallel', 'dynamic'\n)\n\nresult = network.run(input=\"What are the key differences between TPU v5 and TPU v6?\")\nprint(result.output)\n```\n\n## Enable MCP server integration\n\n```python\nfrom google.adk.agents import Agent\nfrom google.adk.tools import MCPServerTool\n\nagent = Agent(\n    name=\"internal_data_agent\",\n    model=\"gemini-3.1-pro\",\n    tools=[\n        MCPServerTool(\n            server_url=\"https://your-internal-mcp-server.example.com\",\n            name=\"internal_db\",\n            description=\"Access to internal CRM and analytics database\",\n        )\n    ],\n    instruction=\"Answer questions using internal company data.\",\n)\n\nresponse = agent.run(input=\"What was last quarter's churn rate by region?\")\nprint(response.output)\n```\n\n## Gotchas\n- **Vertex AI is not going away immediately**, but all new features ship exclusively through Agent Platform. If you start a new project today, build on Agent Platform from the start.\n- **Agent Runtime, Memory Bank, and Registry require the Agent Platform plan** to be enabled in your Google Cloud project. Existing Vertex AI projects see the console rebrand but won't have these features without enabling the plan.\n- **MCP server integration is off by default** and requires an Organization Policy Administrator to remove the `constraints/gcp.disableMCPServers` constraint before enabling it.\n- **The ADK `google-adk` package is separate from `google-cloud-aiplatform`** — install both if you want local agent testing before deploying to Agent Runtime.",
+        "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+      }
+    },
+    {
+      "id": "openclaw-local-ai-agent",
+      "name": "OpenClaw",
+      "category": "tooling",
+      "oneLineDescription": "Local-first personal AI agent with 50+ integrations that runs entirely on your own hardware.",
+      "estimatedSetupMinutes": 15,
+      "detail": {
+        "whatItDoes": "OpenClaw is an open-source personal AI assistant that runs as a local gateway connecting AI models to over 50 integrations including WhatsApp, Telegram, Slack, Discord, Signal, and iMessage. Your data never leaves your machine. The agent is always on, can browse the web, fill forms, run shell commands, write and execute code, and control desktop apps. Its standout capability is writing its own new skills — it can extend its own functionality without manual intervention.\n\nThe project went viral in January 2026, growing from 9,000 to over 60,000 stars in days and has since surpassed 210,000 stars. Originally created by PSPDFKit founder Peter Steinberger, it transitioned to an open-source foundation in February 2026 when Steinberger joined OpenAI.",
+        "whoItsFor": "Developers and power users who want an always-on local AI agent for workflow automation, web scraping, browser automation, and personal productivity — without sending data to cloud APIs. Also useful for teams in privacy-sensitive environments who need agent capabilities but cannot use hosted services. Requires comfort with self-hosting and reviewing community-contributed skills before enabling them.",
+        "pros": [
+          "Fully local — no data leaves your machine; compatible with local models via Ollama as well as hosted APIs",
+          "50+ out-of-the-box integrations covering major messaging platforms and productivity tools",
+          "Self-extending: the agent can write and install new skills at runtime, adapting to new tasks without manual code changes"
+        ],
+        "cons": [
+          "The community skill repository lacks rigorous vetting — security researchers have flagged the risk of malicious skill submissions; review any community skill before enabling it",
+          "Broad system permissions required for full functionality (shell access, browser control) — presents a real attack surface on shared or sensitive machines"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- macOS, Linux, or Windows (Docker recommended for Windows)\n- Node.js 20+ and npm\n- An API key for at least one AI provider (OpenAI, Anthropic, or a local Ollama instance)\n\n## Install\n\n```bash\n# Clone the repository\ngit clone https://github.com/openclaw/openclaw.git\ncd openclaw\n\n# Install dependencies\nnpm install\n\n# Copy and edit config\ncp config.example.yml config.yml\n```\n\n## Configure your AI provider in config.yml\n\n```yaml\n# config.yml\nai:\n  provider: openai          # or 'anthropic', 'ollama'\n  model: gpt-5.5            # or 'claude-opus-4-6', 'llama3.3' for Ollama\n  api_key: \"${OPENAI_API_KEY}\"\n\nintegrations:\n  slack:\n    enabled: true\n    token: \"${SLACK_BOT_TOKEN}\"\n  telegram:\n    enabled: false\n    token: \"${TELEGRAM_BOT_TOKEN}\"\n```\n\n## Set environment variables and start\n\n```bash\nexport OPENAI_API_KEY=\"sk-...\"\nexport SLACK_BOT_TOKEN=\"xoxb-...\"\n\nnpm start\n# Agent will be available at http://localhost:3000\n# Web UI for managing skills and integrations opens automatically\n```\n\n## Using Ollama for fully local operation (no cloud API)\n\n```bash\n# Install Ollama first: https://ollama.com\nollama pull llama3.3\n\n# In config.yml, set:\n# ai:\n#   provider: ollama\n#   model: llama3.3\n#   base_url: http://localhost:11434\n\nnpm start\n```\n\n## Gotchas\n- **Skill vetting is your responsibility.** Before installing any community skill from the skill registry, read its source code. Skills run with the same permissions as the OpenClaw process — a malicious skill has full access to your shell and files.\n- **Broad permissions are required by design.** The agent needs browser automation, shell access, and file system access. Do not run OpenClaw on a machine with sensitive credentials stored in plaintext.\n- **Apple Silicon Macs** get the best local model performance via Ollama with Metal acceleration. No extra config needed — Ollama auto-detects the GPU.",
+        "sourceURL": "https://github.com/openclaw/openclaw"
+      }
+    },
+    {
+      "id": "openai-responses-api-tool-search-feature",
+      "name": "OpenAI Tool Search (Responses API)",
+      "category": "openai",
+      "oneLineDescription": "Defer large tool catalogs to runtime so agents load only what they need, cutting prompt token cost.",
+      "estimatedSetupMinutes": 10,
+      "detail": {
+        "whatItDoes": "Tool search is a new Responses API feature (gpt-5.4+ only) that lets agents work with very large tool surfaces without stuffing every tool definition into the context window upfront. You mark tools with `defer_loading: true` inside a namespace or MCP server definition, then add `{\"type\": \"tool_search\"}` to your tools array. At inference time, the model emits a `tool_search_call` describing what it needs; your code returns the matching subset of tools; the model then calls them normally.\n\nThis is especially useful for enterprise agents that have 50–200+ internal functions, where including all definitions upfront burns tokens, destroys cache hit rates, and degrades reasoning quality. Token savings are most material with namespaces and MCP servers, which is the pattern OpenAI recommends over raw deferred functions.",
+        "whoItsFor": "Backend engineers building agents with wide tool surfaces — internal CRM connectors, multi-service APIs, large MCP servers. If your current agent prompt is 30%+ tool definitions by token count, tool search will cut costs and improve cache performance immediately. Requires the Responses API (not Chat Completions) and gpt-5.4 or later.",
+        "pros": [
+          "Dramatically reduces prompt token usage on wide-tool-surface agents — only the tools actually needed for the current task are loaded",
+          "Preserves prompt cache performance by keeping the static portions of the prompt stable across turns",
+          "Works with namespaces, MCP servers, and raw deferred functions — drop-in for existing Responses API integrations"
+        ],
+        "cons": [
+          "Only available with gpt-5.4 and later — not compatible with older models or the Chat Completions API",
+          "Adds a round-trip: the model must emit a tool_search_call, your code resolves the tools, then you send a follow-up request — increases latency by one network hop per tool lookup"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- `openai` Python SDK >= latest or Node `openai` npm package\n- GPT-5.4 or GPT-5.5 (tool_search is not available on older models)\n- `OPENAI_API_KEY` set in your environment\n\n```bash\npip install --upgrade openai\nexport OPENAI_API_KEY=\"sk-...\"\n```\n\n## Pattern 1: Namespace with deferred tools (recommended)\n\n```python\nfrom openai import OpenAI\n\nclient = OpenAI()\n\n# Define a namespace. Tools with defer_loading=True are hidden\n# from the context window until tool_search loads them.\ncrm_namespace = {\n    \"type\": \"namespace\",\n    \"name\": \"crm\",\n    \"description\": \"CRM tools for customer lookup and order management.\",\n    \"tools\": [\n        {\n            \"type\": \"function\",\n            \"name\": \"get_customer_profile\",\n            \"description\": \"Fetch a customer profile by ID.\",\n            # No defer_loading — model sees this upfront\n            \"parameters\": {\n                \"type\": \"object\",\n                \"properties\": {\"customer_id\": {\"type\": \"string\"}},\n                \"required\": [\"customer_id\"],\n                \"additionalProperties\": False,\n            },\n        },\n        {\n            \"type\": \"function\",\n            \"name\": \"list_open_orders\",\n            \"description\": \"List open orders for a customer ID.\",\n            \"defer_loading\": True,  # hidden until tool_search loads it\n            \"parameters\": {\n                \"type\": \"object\",\n                \"properties\": {\"customer_id\": {\"type\": \"string\"}},\n                \"required\": [\"customer_id\"],\n                \"additionalProperties\": False,\n            },\n        },\n    ],\n}\n\nresponse = client.responses.create(\n    model=\"gpt-5.5\",\n    input=\"List open orders for customer CUST-12345.\",\n    tools=[\n        crm_namespace,\n        {\"type\": \"tool_search\"},  # enables deferred loading\n    ],\n)\nprint(response.output_text)\n```\n\n## Pattern 2: MCP server with deferred loading\n\n```python\nresponse = client.responses.create(\n    model=\"gpt-5.5\",\n    input=\"Pull the Q1 sales data from the warehouse and summarize by region.\",\n    tools=[\n        {\n            \"type\": \"mcp\",\n            \"server_label\": \"data_warehouse\",\n            \"server_url\": \"https://your-mcp-server.example.com/mcp\",\n            \"defer_loading\": True,  # MCP tools loaded via tool_search\n            \"headers\": {\"Authorization\": \"Bearer YOUR_MCP_TOKEN\"},\n        },\n        {\"type\": \"tool_search\"},\n    ],\n)\nprint(response.output_text)\n```\n\n## Gotchas\n- **Tool search is only supported on gpt-5.4 and later.** Passing `type: tool_search` to an older model returns a 400 error. Check your model slug before deploying.\n- **Adds a round-trip per deferred tool lookup.** For latency-sensitive, real-time user interactions, test whether the token savings outweigh the extra network hop. For batch/async workflows, the savings almost always win.\n- **Namespaces and MCP servers get better token savings than raw deferred functions.** The model sees only the namespace/server name and description upfront — not individual function signatures — which gives the largest possible context reduction.\n- **Use `parallel_tool_calls=False`** on the first request when using client-side tool_search execution to avoid race conditions during the tool resolution step.",
+        "sourceURL": "https://developers.openai.com/api/docs/guides/tools-tool-search"
       }
     }
   ]
