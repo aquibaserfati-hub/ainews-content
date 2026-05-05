@@ -1,56 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-04-27T00:00:00Z",
-  "reportGeneratedAt": "2026-05-04T08:35:32Z",
+  "reportGeneratedAt": "2026-05-05T08:17:07Z",
   "learnGeneratedAt": "2026-05-04T12:00:00Z",
   "report": [
     {
-      "id": "deepseek-v4-preview-2026-04-24",
-      "title": "DeepSeek V4 previews with 1.6T-param open-weight MoE at frontier-beating price",
-      "summary": "DeepSeek dropped preview versions of V4 Pro (1.6T params, 49B active) and V4 Flash (284B, 13B active), both with 1M-token context windows, MIT-licensed, and priced at roughly 1/7th Claude Opus 4.7 on coding tasks. On LiveCodeBench and Codeforces the Pro variant ties or beats GPT-5.5, making long-horizon coding agents economically rational for the first time — though the models trail frontier labs on knowledge benchmarks by an estimated 3–6 months.",
-      "category": "otherLLM",
-      "sourceURL": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/",
-      "significance": 8
-    },
-    {
-      "id": "openai-gpt55-launch-2026-04-23",
-      "title": "OpenAI ships GPT-5.5 with expanded cyber and agentic coding capabilities",
-      "summary": "GPT-5.5 rolled out April 23 to Plus, Pro, Business, and Enterprise ChatGPT users and to Codex, with API access flagged as coming soon under separate safeguards. OpenAI rates its cybersecurity capabilities as High under the Preparedness Framework — a step up from GPT-5.4 — and is gating the most permissive cyber-capable version behind a Trusted Access program at chatgpt.com/cyber.",
+      "id": "openai-deployment-company-jv-2026-05-04",
+      "title": "OpenAI closes $10B 'Deployment Company' PE joint venture",
+      "summary": "OpenAI finalized DeployCo, a $10B joint venture backed by 19 PE firms including TPG, Bain, and SoftBank, raising $4B+ to embed OpenAI tools directly inside portfolio companies via forward-deployed engineers. The structure guarantees PE backers a 17.5% annual return — unusual for a software vendor — blurring the line between model provider and financial sponsor.",
       "category": "openai",
-      "sourceURL": "https://www.cnbc.com/2026/04/23/openai-announces-latest-artificial-intelligence-model.html",
+      "sourceURL": "https://thenextweb.com/news/openai-deployco-finalized-10-billion-joint-venture",
       "significance": 7
     },
     {
-      "id": "openai-aws-marketplace-2026-05",
-      "title": "OpenAI models now available natively inside AWS alongside existing cloud infra",
-      "summary": "OpenAI confirmed customers can now build with its models directly in AWS, leveraging existing AWS security controls, identity systems, and procurement workflows — a single path from experimentation to production for teams already running workloads on Amazon. This is the first time OpenAI has offered its models through a hyperscaler's native environment rather than a standalone API endpoint.",
+      "id": "anthropic-enterprise-jv-blackstone-2026-05-04",
+      "title": "Anthropic launches $1.5B enterprise JV with Blackstone and Goldman",
+      "summary": "Announced the same day as OpenAI's DeployCo, Anthropic's new firm pairs Blackstone, Hellman & Friedman, and Goldman Sachs to deploy Claude into midsize companies' core operations. Each of the three lead partners put in $300M; Apollo, General Atlantic, and Sequoia also joined.",
+      "category": "anthropic",
+      "sourceURL": "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-managed-agents-beta-2026-04",
+      "title": "Anthropic ships Claude Managed Agents in public beta with agent memory",
+      "summary": "Claude Managed Agents is now in public beta — a fully managed harness for long-horizon agent work with secure sandboxing, durable sessions, and built-in tools via the managed-agents-2026-04-01 header. Agent memory also hit public beta under the same header, giving stateful agent apps a drop-in persistence layer without custom infra.",
+      "category": "anthropic",
+      "sourceURL": "https://platform.claude.com/docs/en/release-notes/overview",
+      "significance": 8
+    },
+    {
+      "id": "anthropic-claude-security-public-beta-2026",
+      "title": "Claude Security enters public beta for Enterprise customers",
+      "summary": "Anthropic opened Claude Security to all Claude Enterprise customers: Opus 4.7-powered code vulnerability scanning with proposed fixes, scheduled and targeted scans, and workflow integrations. Builders shipping regulated or security-sensitive code now have a first-party scan-and-fix loop without leaving the Claude platform.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "significance": 7
+    },
+    {
+      "id": "openai-gpt55-amazon-bedrock-2026-05",
+      "title": "OpenAI brings GPT-5.5, Codex, and Managed Agents to Amazon Bedrock",
+      "summary": "OpenAI and AWS expanded their partnership to land GPT-5.5, Codex, and Bedrock Managed Agents in AWS environments in limited preview. Enterprises that already run workloads on Bedrock can now build with OpenAI's frontier models inside their existing IAM, compliance, and procurement workflows.",
       "category": "openai",
       "sourceURL": "https://releasebot.io/updates/openai",
       "significance": 7
     },
     {
-      "id": "pentagon-ai-contracts-anthropic-excluded-2026-05-01",
-      "title": "Pentagon awards classified AI contracts to 8 vendors, Anthropic formally locked out",
-      "summary": "The DoD awarded classified-network AI contracts (Impact Level 6 and 7) on May 1 to AWS, Google, Microsoft, Nvidia, OpenAI, SpaceX, Reflection AI, and Oracle — with Anthropic excluded under a formal supply chain risk designation. The contracts cover GenAI.mil, which has grown to over 1.3 million DoD users who have already built hundreds of thousands of AI agents; builders relying on Claude for government workflows now sit entirely outside this procurement.",
-      "category": "anthropic",
-      "sourceURL": "https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-claude-opus-47-ga-2026-04",
-      "title": "Anthropic releases Claude Opus 4.7 GA with hard coding gains",
-      "summary": "Claude Opus 4.7 is generally available and benchmarks at 80.8 on SWE-bench Verified — statistically tied with DeepSeek V4 Pro but at roughly 7× higher API cost. Anthropic positions it as the model for handing off the hardest software engineering tasks with less guidance required.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/claude-opus-4-7",
-      "significance": 7
-    },
-    {
-      "id": "google-40b-anthropic-investment-2026-04-24",
-      "title": "Google commits up to $40B in Anthropic with fresh 5-gigawatt compute deal",
-      "summary": "Google is putting in $10B now at Anthropic's $380B valuation, with up to $30B more tied to performance milestones; the deal also expands Google Cloud's compute allocation to 5 gigawatts over five years. The timing is notable: Anthropic's run-rate revenue hit $30B and its $1T secondary-market valuation now exceeds OpenAI's, but the Pentagon exclusion announced days later complicates that enterprise-revenue narrative.",
-      "category": "anthropic",
-      "sourceURL": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+      "id": "pentagon-ai-classified-networks-2026-05-01",
+      "title": "Pentagon clears 8 firms for classified AI networks, excluding Anthropic",
+      "summary": "The DoD signed agreements with AWS, Google, Microsoft, NVIDIA, OpenAI, SpaceX, Oracle, and Reflection to deploy AI on classified networks — conspicuously excluding Anthropic, which the administration has labeled a supply chain risk over AI safety guardrails disputes. The NSA is reportedly using Anthropic's non-public Mythos model regardless.",
+      "category": "other",
+      "sourceURL": "https://breakingdefense.com/2026/05/pentagon-clears-7-tech-firms-to-deploy-their-ai-on-its-classified-networks/",
       "significance": 6
+    },
+    {
+      "id": "claude-code-broad-update-week19-2026-05",
+      "title": "Claude Code ships broad Week 19 update with permission and model picker fixes",
+      "summary": "Claude Code released a wide maintenance update: smarter /model picker pulling from gateway endpoints, a new `claude project purge` command, fixed PreToolUse hook permission bypass (a security regression), Windows/PowerShell reliability fixes, and OpenTelemetry improvements. Teams running Claude Code against custom or Bedrock gateways should update.",
+      "category": "anthropic",
+      "sourceURL": "https://claudefa.st/blog/guide/changelog",
+      "significance": 5
     }
   ],
   "learn": [
