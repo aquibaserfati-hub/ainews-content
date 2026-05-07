@@ -1,178 +1,158 @@
 {
   "schemaVersion": 1,
-  "weekOf": "2026-04-27T00:00:00Z",
-  "reportGeneratedAt": "2026-05-05T08:17:07Z",
-  "learnGeneratedAt": "2026-05-04T12:00:00Z",
+  "weekOf": "2026-05-04T00:00:00Z",
+  "reportGeneratedAt": "2026-05-07T12:00:00Z",
+  "learnGeneratedAt": "2026-05-07T12:00:00Z",
   "report": [
     {
-      "id": "openai-deployment-company-jv-2026-05-04",
-      "title": "OpenAI closes $10B 'Deployment Company' PE joint venture",
-      "summary": "OpenAI finalized DeployCo, a $10B joint venture backed by 19 PE firms including TPG, Bain, and SoftBank, raising $4B+ to embed OpenAI tools directly inside portfolio companies via forward-deployed engineers. The structure guarantees PE backers a 17.5% annual return — unusual for a software vendor — blurring the line between model provider and financial sponsor.",
-      "category": "openai",
-      "sourceURL": "https://thenextweb.com/news/openai-deployco-finalized-10-billion-joint-venture",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-enterprise-jv-blackstone-2026-05-04",
-      "title": "Anthropic launches $1.5B enterprise JV with Blackstone and Goldman",
-      "summary": "Announced the same day as OpenAI's DeployCo, Anthropic's new firm pairs Blackstone, Hellman & Friedman, and Goldman Sachs to deploy Claude into midsize companies' core operations. Each of the three lead partners put in $300M; Apollo, General Atlantic, and Sequoia also joined.",
+      "id": "anthropic-claude-opus-47-financial-agents-2026-05-05",
+      "title": "Anthropic ships Claude Opus 4.7 and 10 financial-services agent templates",
+      "summary": "Anthropic launched Claude Opus 4.7 — a 13% coding-benchmark lift over 4.6, new xhigh effort level, task budgets in API public beta, and GA add-ins for Excel, PowerPoint, and Word — alongside 10 ready-to-run agent templates for pitchbooks, KYC screening, GL reconciliation, and more. Each template ships as a Claude Cowork plugin or Managed Agents cookbook, cutting the path from API access to production financial workflows from months to days.",
       "category": "anthropic",
-      "sourceURL": "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-managed-agents-beta-2026-04",
-      "title": "Anthropic ships Claude Managed Agents in public beta with agent memory",
-      "summary": "Claude Managed Agents is now in public beta — a fully managed harness for long-horizon agent work with secure sandboxing, durable sessions, and built-in tools via the managed-agents-2026-04-01 header. Agent memory also hit public beta under the same header, giving stateful agent apps a drop-in persistence layer without custom infra.",
-      "category": "anthropic",
-      "sourceURL": "https://platform.claude.com/docs/en/release-notes/overview",
+      "sourceURL": "https://www.anthropic.com/news/claude-opus-4-7",
       "significance": 8
     },
     {
-      "id": "anthropic-claude-security-public-beta-2026",
-      "title": "Claude Security enters public beta for Enterprise customers",
-      "summary": "Anthropic opened Claude Security to all Claude Enterprise customers: Opus 4.7-powered code vulnerability scanning with proposed fixes, scheduled and targeted scans, and workflow integrations. Builders shipping regulated or security-sensitive code now have a first-party scan-and-fix loop without leaving the Claude platform.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
-      "significance": 7
-    },
-    {
-      "id": "openai-gpt55-amazon-bedrock-2026-05",
-      "title": "OpenAI brings GPT-5.5, Codex, and Managed Agents to Amazon Bedrock",
-      "summary": "OpenAI and AWS expanded their partnership to land GPT-5.5, Codex, and Bedrock Managed Agents in AWS environments in limited preview. Enterprises that already run workloads on Bedrock can now build with OpenAI's frontier models inside their existing IAM, compliance, and procurement workflows.",
+      "id": "openai-gpt55-instant-default-2026-05-05",
+      "title": "OpenAI makes GPT-5.5 Instant the default ChatGPT model",
+      "summary": "GPT-5.5 Instant rolls out to all ChatGPT tiers and the API as 'chat-latest', delivering 52.5% fewer hallucinated claims on high-stakes prompts versus GPT-5.3 Instant and a jump from 65.4 to 81.2 on AIME 2025. GPT-5.4 mini and nano also hit the Chat Completions and Responses API this week for high-volume workloads.",
       "category": "openai",
-      "sourceURL": "https://releasebot.io/updates/openai",
+      "sourceURL": "https://openai.com/news/",
       "significance": 7
     },
     {
-      "id": "pentagon-ai-classified-networks-2026-05-01",
-      "title": "Pentagon clears 8 firms for classified AI networks, excluding Anthropic",
-      "summary": "The DoD signed agreements with AWS, Google, Microsoft, NVIDIA, OpenAI, SpaceX, Oracle, and Reflection to deploy AI on classified networks — conspicuously excluding Anthropic, which the administration has labeled a supply chain risk over AI safety guardrails disputes. The NSA is reportedly using Anthropic's non-public Mythos model regardless.",
-      "category": "other",
-      "sourceURL": "https://breakingdefense.com/2026/05/pentagon-clears-7-tech-firms-to-deploy-their-ai-on-its-classified-networks/",
+      "id": "openai-symphony-codex-orchestration-2026-04-27",
+      "title": "OpenAI open-sources Symphony, a Codex agent orchestration spec",
+      "summary": "Symphony is a language-agnostic spec (Elixir reference impl, Apache 2.0) that turns Linear issues into an always-on Codex agent farm: each open ticket gets its own agent workspace, CI monitoring, and automatic PR prep. Internal OpenAI teams saw landed PRs rise 500% in three weeks — a real benchmark worth studying for any team already running Codex at scale.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/open-source-codex-orchestration-symphony/",
+      "significance": 7
+    },
+    {
+      "id": "openai-models-aws-bedrock-2026-04-28",
+      "title": "OpenAI GPT-5.4/5.5, Codex, and Managed Agents land on Amazon Bedrock",
+      "summary": "One day after Microsoft's exclusivity deal ended, AWS shipped GPT-5.4, GPT-5.5, Codex, and Bedrock Managed Agents in limited preview — all inheriting IAM, PrivateLink, and CloudTrail controls. Backed by a $50 billion Amazon investment, this gives AWS-native teams a single Bedrock API surface for OpenAI frontier models without a separate vendor relationship.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/openai-on-aws/",
+      "significance": 8
+    },
+    {
+      "id": "anthropic-mythos-cybersecurity-policy-2026-05-05",
+      "title": "Claude Mythos Preview triggers U.S. government AI oversight expansion",
+      "summary": "Google DeepMind, Microsoft, and xAI signed pre-deployment evaluation agreements with CAISI (Commerce Dept) following Mythos — Anthropic's restricted model that autonomously finds zero-day vulnerabilities and saturates existing cybersecurity benchmarks. Anthropic keeps Mythos behind Project Glasswing; the Pentagon blacklisted Anthropic from its eight-company classified AI deal but the White House has reopened talks.",
+      "category": "anthropic",
+      "sourceURL": "https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-google-200b-cloud-deal-2026-05-05",
+      "title": "Anthropic commits $200 billion to Google Cloud over five years",
+      "summary": "Anthropic's spend commitment — reported by The Information — puts it as more than 40% of Google's disclosed cloud revenue backlog, alongside Google's $40 billion equity investment at a $350 billion valuation. Anthropic is also in a $1.5 billion PE joint venture with Blackstone, Hellman & Friedman, and Goldman Sachs to deploy Claude into enterprise operations.",
+      "category": "anthropic",
+      "sourceURL": "https://ca.finance.yahoo.com/news/anthropic-commits-spending-200-billion-204952202.html",
       "significance": 6
     },
     {
-      "id": "claude-code-broad-update-week19-2026-05",
-      "title": "Claude Code ships broad Week 19 update with permission and model picker fixes",
-      "summary": "Claude Code released a wide maintenance update: smarter /model picker pulling from gateway endpoints, a new `claude project purge` command, fixed PreToolUse hook permission bypass (a security regression), Windows/PowerShell reliability fixes, and OpenTelemetry improvements. Teams running Claude Code against custom or Bedrock gateways should update.",
-      "category": "anthropic",
-      "sourceURL": "https://claudefa.st/blog/guide/changelog",
-      "significance": 5
+      "id": "chatgpt-memory-sheets-excel-2026-05-05",
+      "title": "ChatGPT ships persistent memory improvements and a global Excel/Sheets sidebar",
+      "summary": "ChatGPT Plus and Pro now pull context from past chats, saved memories, and connected Gmail to personalize responses without re-prompting. The Excel and Google Sheets sidebar launched globally on the same day — it handles formulas, multi-tab files, budgets, and scenario work inside the spreadsheet without leaving the app.",
+      "category": "openai",
+      "sourceURL": "https://releasebot.io/updates/openai/chatgpt",
+      "significance": 6
     }
   ],
   "learn": [
     {
-      "id": "gpt-55-responses-api",
-      "name": "GPT-5.5 via Responses API",
-      "category": "openai",
-      "oneLineDescription": "OpenAI's strongest agentic coding model, now in the API with tool_search support.",
-      "estimatedSetupMinutes": 5,
+      "id": "openai-symphony-learn-2026-05-07",
+      "name": "OpenAI Symphony",
+      "category": "tooling",
+      "oneLineDescription": "Open-source spec that turns your Linear board into an always-on Codex agent farm.",
+      "estimatedSetupMinutes": 30,
       "detail": {
-        "whatItDoes": "GPT-5.5 is OpenAI's current frontier model, available in the Responses API and Chat Completions API from April 24, 2026. It scores 88.7% on SWE-bench Verified, 82.7% on Terminal-Bench 2.0, and claims 60% fewer hallucinations than GPT-5.4. It supports a 1,000,000-token context window, full tool calling (web_search, file_search, computer_use, code_interpreter, image_generation), and the new tool_search feature that defers large tool catalogs to runtime.\n\nTool search is the standout new primitive for agent builders: you declare a namespace or MCP server with `defer_loading: true`, and the model fetches only the tools it actually needs for the current task. This cuts prompt token usage dramatically when your agent has dozens of possible tools. GPT-5.5 also introduces configurable `reasoning.effort` (low / medium / high / xhigh) and `text.verbosity` (low / medium) controls that let you trade compute for speed.",
-        "whoItsFor": "Backend engineers building multi-step coding agents, SWE automation pipelines, or customer-facing assistants that currently use GPT-5.4. Also relevant for teams with wide tool surfaces (50+ functions) who are hitting token limits or cache misses on tool definitions. The model slug is a drop-in at the API layer, but OpenAI recommends a fresh prompt baseline rather than porting legacy instructions verbatim.",
+        "whatItDoes": "Symphony is an orchestration layer that watches a Linear project board and assigns a dedicated Codex agent workspace to every open ticket. Agents run continuously — restarting on crash, rebasing on conflict, monitoring CI — and hand off a pull request for human review. Behavior per repo is configured via a WORKFLOW.md file, so each project shapes what its agents do.\n\nThe reference implementation is written in Elixir under the Apache 2.0 license and built on top of the Codex App Server. Access to the Linear API token is kept out of subagent containers via a dynamic linear_graphql tool call rather than direct token exposure — a deliberate security tradeoff you should understand before deploying.",
+        "whoItsFor": "Engineering teams already running OpenAI Codex who have hit the context-switching ceiling of managing 3–5 concurrent agent sessions. Works best in repositories that have been hardened for agent use: good test coverage, clear ticket scope, and a CI gate that Codex can read. Solo developers running a Linear workspace will also benefit, though the payoff scales with ticket volume.",
         "pros": [
-          "88.7% SWE-bench Verified and 73.1% on Expert-SWE — leads all current publicly available models on coding benchmarks",
-          "tool_search reduces token waste on large tool surfaces and preserves prompt cache performance",
-          "1M token context window with configurable reasoning.effort and text.verbosity for latency/cost tuning",
-          "60% fewer hallucinations than GPT-5.4 per OpenAI's internal evals"
+          "500% internal PR throughput lift at OpenAI in three weeks — a credible real-world benchmark",
+          "Language-agnostic spec; the Elixir reference impl is a starting point, not a requirement",
+          "WORKFLOW.md per repo means each project gets custom agent behavior without forking the orchestrator",
+          "Apache 2.0 license — no usage fees or lock-in"
         ],
         "cons": [
-          "Prompts longer than 272K input tokens are billed at 2x input / 1.5x output for the full session — expensive for large-context retrieval workloads",
-          "Requires re-tuning prompts from scratch; carrying over GPT-5.4 system prompts degrades output quality per OpenAI's own guidance"
+          "OpenAI treats Symphony as a reference implementation, not a maintained product — you own the fork",
+          "Requires a well-structured repo with automated tests; poorly specified tickets produce poor output",
+          "Codex App Server is still evolving rapidly; Symphony will need updates as the API changes"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.9+ or Node 20+\n- `OPENAI_API_KEY` set in your environment (Tier 1+ account; GPT-5.5 requires a paid tier)\n- `openai` SDK >= latest (supports gpt-5.5 slug)\n\n```bash\npip install --upgrade openai\nexport OPENAI_API_KEY=\"sk-...\"\n```\n\n## Basic chat completion\n\n```python\nfrom openai import OpenAI\n\nclient = OpenAI()\n\nresponse = client.responses.create(\n    model=\"gpt-5.5\",\n    input=\"Refactor this Python function to handle None inputs gracefully: ...\",\n    reasoning={\"effort\": \"high\"},   # low | medium | high | xhigh\n    text={\"verbosity\": \"low\"},      # low | medium\n)\nprint(response.output_text)\n```\n\n## Agentic tool use with web_search\n\n```python\nresponse = client.responses.create(\n    model=\"gpt-5.5\",\n    tools=[{\"type\": \"web_search\"}],\n    input=\"What shipped in the OpenAI API this week?\",\n)\nprint(response.output_text)\n```\n\n## Tool search (deferred tool loading) — gpt-5.4+ only\n\nUse this pattern when you have a large tool catalog and want the model to load only what it needs:\n\n```python\ncrm_namespace = {\n    \"type\": \"namespace\",\n    \"name\": \"crm\",\n    \"description\": \"CRM tools for customer lookup and order management.\",\n    \"tools\": [\n        {\n            \"type\": \"function\",\n            \"name\": \"get_customer_profile\",\n            \"description\": \"Fetch a customer profile by ID.\",\n            \"parameters\": {\n                \"type\": \"object\",\n                \"properties\": {\"customer_id\": {\"type\": \"string\"}},\n                \"required\": [\"customer_id\"],\n            },\n        },\n        {\n            \"type\": \"function\",\n            \"name\": \"list_open_orders\",\n            \"description\": \"List open orders for a customer ID.\",\n            \"defer_loading\": True,   # loaded via tool_search, not upfront\n            \"parameters\": {\n                \"type\": \"object\",\n                \"properties\": {\"customer_id\": {\"type\": \"string\"}},\n                \"required\": [\"customer_id\"],\n            },\n        },\n    ],\n}\n\nresponse = client.responses.create(\n    model=\"gpt-5.5\",\n    input=\"List open orders for customer CUST-12345.\",\n    tools=[crm_namespace, {\"type\": \"tool_search\"}],\n)\nprint(response.output_text)\n```\n\n## Gotchas\n- **Use `responses.create`, not `chat.completions.create`**, for any multi-turn or tool-calling workflow. Chat Completions works for single-turn but lacks reasoning.effort and tool_search.\n- **Prompts > 272K tokens are billed at 2x input** for the entire session — watch context accumulation in long agent loops.\n- **Don't port old system prompts verbatim.** GPT-5.5 interprets instructions literally; legacy over-specified prompts narrow the model's reasoning and hurt output quality.\n- **Snapshot to lock behavior:** use `gpt-5.5-2026-04-23` instead of `gpt-5.5` in production to avoid unexpected behavior changes on alias updates.",
-        "sourceURL": "https://developers.openai.com/api/docs/guides/latest-model"
+        "setupGuideMarkdown": "## Prerequisites\n- Node 20+ (for Codex CLI)\n- Elixir 1.16+ and Erlang/OTP 26+ (for the reference orchestrator)\n- A Linear workspace with API access\n- OpenAI API key with Codex access\n- A repo that already runs CI (GitHub Actions, CircleCI, etc.)\n\n## Step 1 — Install the Codex CLI\n\n```bash\nnpm install -g @openai/codex\ncodex --version\n```\n\n## Step 2 — Clone and configure Symphony\n\n```bash\ngit clone https://github.com/openai/symphony\ncd symphony\ncp .env.example .env\n```\n\nEdit `.env`:\n\n```bash\nOPENAI_API_KEY=sk-...\nLINEAR_API_KEY=lin_api_...\nLINEAR_TEAM_ID=your-team-id\nCODEX_APP_SERVER_URL=http://localhost:8080\n```\n\n## Step 3 — Add WORKFLOW.md to your target repo\n\n```markdown\n# WORKFLOW\n\n## Scope\nFix bugs and implement features described in the linked Linear issue.\n\n## Definition of done\n- All existing tests pass\n- New tests cover the changed code paths\n- PR description summarizes the change in plain English\n\n## Off-limits\nDo not modify migration files or secrets. Escalate to a human if the ticket \nrequires architecture decisions.\n```\n\n## Step 4 — Start the Codex App Server\n\n```bash\ncodex app-server --port 8080\n```\n\n## Step 5 — Start Symphony\n\n```bash\nmix deps.get\nmix run --no-halt\n```\n\nSymphony will now poll your Linear board, spawn one Codex agent workspace per open ticket in the configured state, and push PRs when CI passes.\n\n## Gotcha\nThe `--full-auto` flag in Codex is deprecated. Symphony uses explicit permission profiles instead. If you see warnings about `--full-auto`, update to the latest Codex CLI and set `trust_level = \"sandboxed\"` in your `codex.toml`.",
+        "sourceURL": "https://openai.com/index/open-source-codex-orchestration-symphony/"
       }
     },
     {
-      "id": "gemini-deep-research-api",
-      "name": "Gemini Deep Research API",
-      "category": "google",
-      "oneLineDescription": "Trigger a full autonomous research loop — up to 160 searches, cited report — in one API call.",
-      "estimatedSetupMinutes": 10,
-      "detail": {
-        "whatItDoes": "The Gemini Deep Research API, available from April 21, 2026 via the Gemini Interactions API, exposes two autonomous research agents powered by Gemini 3.1 Pro. The standard agent (`deep-research-preview-04-2026`) targets interactive UIs with lower latency; Deep Research Max (`deep-research-max-preview-04-2026`) runs up to 160 Google searches, processes ~900K input tokens, and produces exhaustive cited reports designed for overnight batch pipelines.\n\nBoth agents support MCP server connections for private data, native chart and infographic generation in HTML, collaborative planning (you can review and edit the research plan before execution starts), and multimodal file uploads (PDFs, CSVs, images, audio, video) as grounding context. Tasks run asynchronously in the background — you fire the request, get an interaction ID, then poll until `status == 'completed'`. Max tasks can run up to 60 minutes.",
-        "whoItsFor": "Product teams building competitive intelligence dashboards, due-diligence automation, literature review tools, or market monitoring pipelines. Also useful for data engineers who want to replace manual analyst research loops with a scheduled API call. Requires a paid Gemini API tier — free-tier keys do not have access.",
-        "pros": [
-          "93.3% on DeepSearchQA and 54.6% on Humanity's Last Exam — top-of-leaderboard for research agents as of April 2026",
-          "MCP support lets the agent query your private databases and internal systems alongside the public web",
-          "Native chart generation means reports come back with visual elements ready for dashboards, not just prose",
-          "Collaborative planning lets you steer the research direction before the agent starts, reducing wasted compute on off-target reports"
-        ],
-        "cons": [
-          "Deep Research Max costs significantly more per query than standard Gemini models — up to ~160 searches and ~900K tokens per call; design cost controls into your pipeline before scaling",
-          "RPM limits are very low (2–5 RPM for Deep Research); batch pipelines must queue jobs carefully or they will hit rate limits mid-run"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.9+ or Node 20+\n- Gemini API key from [Google AI Studio](https://aistudio.google.com) — **paid tier required**, free tier does not include Deep Research\n- `google-genai` Python SDK\n\n```bash\npip install --upgrade google-genai\nexport GEMINI_API_KEY=\"AIza...\"\n```\n\n## Fire a background research task and poll for completion\n\n```python\nimport time\nfrom google import genai\n\nclient = genai.Client()\n\n# Use 'deep-research-preview-04-2026' for speed\n# Use 'deep-research-max-preview-04-2026' for depth\ninteraction = client.interactions.create(\n    input=\"Analyze the competitive landscape for AI coding assistants in 2026: key players, pricing, benchmark performance, and enterprise adoption trends.\",\n    agent=\"deep-research-max-preview-04-2026\",\n    background=True,   # required for Max; runs async up to 60 min\n)\n\nprint(f\"Research started. Interaction ID: {interaction.id}\")\n\nwhile True:\n    interaction = client.interactions.get(interaction.id)\n    if interaction.status == \"completed\":\n        print(interaction.outputs[-1].text)\n        break\n    elif interaction.status == \"failed\":\n        print(f\"Failed: {interaction.error}\")\n        break\n    print(f\"Status: {interaction.status} — polling in 30s...\")\n    time.sleep(30)\n```\n\n## Curl equivalent (for quick testing)\n\n```bash\n# 1. Start the research task\ncurl -X POST \"https://generativelanguage.googleapis.com/v1beta/interactions\" \\\n  -H \"Content-Type: application/json\" \\\n  -H \"x-goog-api-key: $GEMINI_API_KEY\" \\\n  -d '{\n    \"input\": \"Summarize the latest developments in solid-state battery technology.\",\n    \"agent\": \"deep-research-preview-04-2026\",\n    \"background\": true\n  }'\n\n# Response contains an `id` field — use it below\n\n# 2. Poll for results\ncurl -X GET \"https://generativelanguage.googleapis.com/v1beta/interactions/INTERACTION_ID\" \\\n  -H \"x-goog-api-key: $GEMINI_API_KEY\"\n```\n\n## Gotchas\n- **Do NOT use `generate_content` for Deep Research** — the agent is exclusively available via `client.interactions.create`. Calling it via the standard generate_content endpoint will fail.\n- **`background=True` requires `store=True` implicitly** — the interaction state is persisted server-side. If you are building a multi-user app, treat interaction IDs as sensitive session tokens.\n- **Paid tier only.** As of April 1, 2026, Google removed all Pro-tier models from the free tier. If your key returns a 403 on Deep Research, upgrade your billing account in Google AI Studio.\n- **RPM is very low.** Design any batch pipeline with a queue and sleep between submissions. Hitting the rate limit mid-batch is painful to recover from.\n- **Deep Research Max runtime** can reach 60 minutes for complex queries. Do not set aggressive timeouts in your HTTP client — use async polling instead.",
-        "sourceURL": "https://ai.google.dev/gemini-api/docs/deep-research"
-      }
-    },
-    {
-      "id": "gemini-enterprise-agent-platform-adk",
-      "name": "Gemini Enterprise Agent Platform (ADK)",
-      "category": "google",
-      "oneLineDescription": "Google's unified platform replacing Vertex AI for building, governing, and running production agent fleets.",
+      "id": "deerflow-2-learn-2026-05-07",
+      "name": "DeerFlow 2.0",
+      "category": "tooling",
+      "oneLineDescription": "ByteDance's open-source super-agent harness: spawn parallel sub-agents, memory, sandboxes — batteries included.",
       "estimatedSetupMinutes": 20,
       "detail": {
-        "whatItDoes": "Launched April 22, 2026 at Google Cloud Next '26, the Gemini Enterprise Agent Platform is the successor to standalone Vertex AI. It combines Agent Studio (low-code visual builder), an upgraded graph-based Agent Development Kit (ADK) that orchestrates networks of sub-agents, Agent Runtime for long-running agents, a Memory Bank for persistent agent state, an Agent Registry with cryptographic IDs for auditing, and Agentic Defense for security. The platform surfaces directly inside the Google Cloud console — existing Vertex AI customers see the new brand without migration.\n\nAlso launched at the same event: the Data Agent Kit (preview), a portable plugin suite that installs directly into VS Code, Gemini CLI, Codex, and Claude Code, providing a Data Engineering Agent (GA), Data Science Agent (GA), and Database Observability Agent (preview). Model Garden now offers 200+ models including Gemini 3.1 Pro, Gemma 4, and third-party models like Claude Opus, Sonnet, and Haiku.",
-        "whoItsFor": "Platform and MLOps engineers managing production agent deployments on Google Cloud, and data engineers who want pre-built agentic skills in their existing IDE. Teams already on Vertex AI are the immediate audience — the platform is the mandatory upgrade path for all future Vertex AI features. Also relevant for enterprises needing governance controls (agent identity, audit logs, permission management) before deploying agents to business users.",
+        "whatItDoes": "DeerFlow 2.0 is a ground-up rewrite of ByteDance's Deep Research framework — it shares no code with v1. The lead agent decomposes tasks and spawns sub-agents on the fly, each with its own scoped context, tools, and termination conditions. Sub-agents run in parallel and report structured results back for synthesis. Tasks that take minutes to hours — multi-source research reports, code generation pipelines, dashboard creation — are the design target.\n\nBuilt on LangGraph and LangChain, it ships with a filesystem, persistent memory, skill marketplace, sandbox-aware execution, and a message gateway for Slack, Telegram, and other channels. It is model-agnostic and works with any OpenAI-compatible API endpoint, though it performs best with models that have 100k+ context windows and strong tool-use.",
+        "whoItsFor": "Developers and researchers who need to run long-horizon agentic tasks (deep research, competitive analysis, multi-step data pipelines) and want a self-hosted harness rather than a cloud agent product. Also useful for teams building Claude Code or Codex integrations — DeerFlow ships a native /claude-to-deerflow Claude Code skill out of the box. Data engineers automating content workflows or report generation will find the skill system and MCP server support practical.",
         "pros": [
-          "Replaces Vertex AI entirely — all future Google Cloud AI roadmap ships through this platform, so migrating now avoids a forced migration later",
-          "Agent Simulation tool lets you stress-test agent behavior against real-world scenarios before shipping to production",
-          "Data Agent Kit installs directly in VS Code, Claude Code, and Gemini CLI — no separate infrastructure needed for data engineering agent skills",
-          "Built-in A2A (Agent-to-Agent) and MCP protocol support for multi-agent orchestration and private data connectors"
+          "Hit #1 on GitHub Trending on launch day (Feb 28 2026) — large community and active plugin ecosystem",
+          "Native Claude Code integration via /claude-to-deerflow skill command",
+          "MCP server support with OAuth token flows (client_credentials, refresh_token)",
+          "Model-agnostic: swap DeepSeek v3.2, Doubao, Kimi, or any OpenAI-compatible model via config.yaml"
         ],
         "cons": [
-          "Agent Runtime, Memory Bank, Agent Registry, and the optimization suite require enabling the new Agent Platform plan — existing Vertex AI free tiers may not cover these features",
-          "Platform is newly GA as of April 22; production-hardening, documentation depth, and community support are still ramping up compared to the mature Vertex AI SDK"
+          "v2 is a full rewrite — v1 skills and configs do not migrate; check the 1.x branch if you need the old framework",
+          "Complex multi-agent setups can burn tokens quickly; no built-in spend guardrails in the default config"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Google Cloud account with billing enabled\n- `gcloud` CLI installed and authenticated\n- `google-cloud-aiplatform` Python SDK (Agent Platform builds on the same SDK)\n- Access via [console.cloud.google.com/agent-platform/overview](https://console.cloud.google.com/agent-platform/overview)\n\n```bash\n# Install or upgrade the SDK\npip install --upgrade google-cloud-aiplatform google-adk\n\n# Authenticate\ngcloud auth application-default login\ngcloud config set project YOUR_PROJECT_ID\n```\n\n## Install the Data Agent Kit in VS Code\n\n```bash\n# Install the Gemini CLI (includes Data Agent Kit plugin support)\nnpm install -g @google/gemini-cli\n\n# In VS Code, install the \"Google Cloud AI\" extension from the marketplace\n# Then in settings, enable: \"Gemini: Data Agent Kit\" -> true\n# The Data Engineering Agent and Data Science Agent will appear in the sidebar\n```\n\n## Build a simple sub-agent network with ADK (Python)\n\n```python\nfrom google.adk.agents import Agent, AgentNetwork\nfrom google.adk.tools import google_search, code_execution\n\n# Define a research sub-agent\nresearch_agent = Agent(\n    name=\"researcher\",\n    model=\"gemini-3.1-pro\",\n    tools=[google_search],\n    instruction=\"Search the web and return structured findings on the given topic.\",\n)\n\n# Define a synthesis sub-agent\nwriter_agent = Agent(\n    name=\"writer\",\n    model=\"gemini-3.1-pro\",\n    tools=[code_execution],\n    instruction=\"Take research findings and produce a concise technical summary.\",\n)\n\n# Wire them into a network\nnetwork = AgentNetwork(\n    name=\"research_pipeline\",\n    agents=[research_agent, writer_agent],\n    orchestration=\"sequential\",  # or 'parallel', 'dynamic'\n)\n\nresult = network.run(input=\"What are the key differences between TPU v5 and TPU v6?\")\nprint(result.output)\n```\n\n## Enable MCP server integration\n\n```python\nfrom google.adk.agents import Agent\nfrom google.adk.tools import MCPServerTool\n\nagent = Agent(\n    name=\"internal_data_agent\",\n    model=\"gemini-3.1-pro\",\n    tools=[\n        MCPServerTool(\n            server_url=\"https://your-internal-mcp-server.example.com\",\n            name=\"internal_db\",\n            description=\"Access to internal CRM and analytics database\",\n        )\n    ],\n    instruction=\"Answer questions using internal company data.\",\n)\n\nresponse = agent.run(input=\"What was last quarter's churn rate by region?\")\nprint(response.output)\n```\n\n## Gotchas\n- **Vertex AI is not going away immediately**, but all new features ship exclusively through Agent Platform. If you start a new project today, build on Agent Platform from the start.\n- **Agent Runtime, Memory Bank, and Registry require the Agent Platform plan** to be enabled in your Google Cloud project. Existing Vertex AI projects see the console rebrand but won't have these features without enabling the plan.\n- **MCP server integration is off by default** and requires an Organization Policy Administrator to remove the `constraints/gcp.disableMCPServers` constraint before enabling it.\n- **The ADK `google-adk` package is separate from `google-cloud-aiplatform`** — install both if you want local agent testing before deploying to Agent Runtime.",
-        "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.11+\n- `uv` (recommended) or `pip`\n- Docker (optional, for sandboxed execution)\n- An LLM API key (OpenAI, DeepSeek, or any OpenAI-compatible endpoint)\n\n## Step 1 — Clone and install\n\n```bash\ngit clone https://github.com/bytedance/deer-flow\ncd deer-flow\nuv sync\n```\n\nOr with pip:\n\n```bash\npip install -r requirements.txt\n```\n\n## Step 2 — Configure models\n\n```bash\ncp config.yaml.example config.yaml\n```\n\nEdit `config.yaml`:\n\n```yaml\nmodels:\n  - name: primary\n    display_name: GPT-5.5\n    use: langchain_openai:ChatOpenAI\n    model: gpt-5.5\n    api_key: $OPENAI_API_KEY\n\n  - name: fast\n    display_name: DeepSeek v3.2\n    use: langchain_openai:ChatOpenAI\n    model: deepseek-chat\n    base_url: https://api.deepseek.com/v1\n    api_key: $DEEPSEEK_API_KEY\n```\n\n## Step 3 — Set environment variables\n\n```bash\nexport OPENAI_API_KEY=sk-...\nexport DEERFLOW_URL=http://localhost:2026\n```\n\n## Step 4 — Start DeerFlow\n\n```bash\nmake dev\n```\n\nDeerFlow starts on `http://localhost:2026` by default.\n\n## Step 5 — Run a research task\n\n```python\nimport httpx\n\nresponse = httpx.post(\n    \"http://localhost:2026/api/task\",\n    json={\n        \"task\": \"Research the top 5 vector database options for production RAG pipelines. Compare latency, cost, and managed offering availability. Produce a Markdown report.\",\n        \"mode\": \"pro\"  # Options: flash, standard, pro, ultra\n    }\n)\nprint(response.json())\n```\n\n## Gotcha\n`make dev` requires a valid `config.yaml` before it starts — it will fail silently if the file is missing or malformed. Run `make config` first if you haven't copied the example file. The sandbox mode (Docker) adds startup latency; use `local` mode for quick iteration.",
+        "sourceURL": "https://github.com/bytedance/deer-flow"
       }
     },
     {
-      "id": "openclaw-local-ai-agent",
-      "name": "OpenClaw",
-      "category": "tooling",
-      "oneLineDescription": "Local-first personal AI agent with 50+ integrations that runs entirely on your own hardware.",
+      "id": "anthropic-claude-managed-agents-learn-2026-05-07",
+      "name": "Claude Managed Agents",
+      "category": "anthropic",
+      "oneLineDescription": "Anthropic's hosted long-horizon agent runtime with durable sessions, sandboxes, and task budgets.",
       "estimatedSetupMinutes": 15,
       "detail": {
-        "whatItDoes": "OpenClaw is an open-source personal AI assistant that runs as a local gateway connecting AI models to over 50 integrations including WhatsApp, Telegram, Slack, Discord, Signal, and iMessage. Your data never leaves your machine. The agent is always on, can browse the web, fill forms, run shell commands, write and execute code, and control desktop apps. Its standout capability is writing its own new skills — it can extend its own functionality without manual intervention.\n\nThe project went viral in January 2026, growing from 9,000 to over 60,000 stars in days and has since surpassed 210,000 stars. Originally created by PSPDFKit founder Peter Steinberger, it transitioned to an open-source foundation in February 2026 when Steinberger joined OpenAI.",
-        "whoItsFor": "Developers and power users who want an always-on local AI agent for workflow automation, web scraping, browser automation, and personal productivity — without sending data to cloud APIs. Also useful for teams in privacy-sensitive environments who need agent capabilities but cannot use hosted services. Requires comfort with self-hosting and reviewing community-contributed skills before enabling them.",
+        "whatItDoes": "Claude Managed Agents is a public-beta service on the Claude Platform that provides a hosted runtime for long-running agentic tasks. It exposes stable interfaces for sessions, harnesses, and sandboxes — keeping state alive across multi-step work without developers managing the infrastructure. Task budgets (also in public beta) let you cap token spend per run, which matters when a single agent workflow might run for hours.\n\nThe financial-services agent templates shipped May 5 use Managed Agents as the delivery mechanism: each template is a cookbook that packages a skill (domain instructions), connectors (governed data access), and sub-agents (focused Claude models for sub-tasks). The same pattern applies to any vertical — swap the skill markdown and connector list for your domain.",
+        "whoItsFor": "Developers building workflows that run longer than a single API round-trip: document processing pipelines, multi-step research agents, KYC or compliance screening, month-end close automation. Particularly useful for teams on paid Claude plans who want Anthropic-managed infrastructure rather than self-hosted orchestration, and for anyone who wants to use the pre-built financial-services cookbooks as a starting point.",
         "pros": [
-          "Fully local — no data leaves your machine; compatible with local models via Ollama as well as hosted APIs",
-          "50+ out-of-the-box integrations covering major messaging platforms and productivity tools",
-          "Self-extending: the agent can write and install new skills at runtime, adapting to new tasks without manual code changes"
+          "Durable session state — no external database needed to persist agent context across steps",
+          "Task budgets in public beta give explicit token spend control for cost-sensitive production runs",
+          "Ready-to-fork cookbooks for 10 financial workflows available immediately at the financial services marketplace",
+          "Available on all paid Claude plans; works via the claude-opus-4-7 API model identifier"
         ],
         "cons": [
-          "The community skill repository lacks rigorous vetting — security researchers have flagged the risk of malicious skill submissions; review any community skill before enabling it",
-          "Broad system permissions required for full functionality (shell access, browser control) — presents a real attack surface on shared or sensitive machines"
+          "Still in public beta — session limits, pricing at scale, and SLAs are not fully documented yet",
+          "Best model (Opus 4.7) is $5/$25 per million tokens in/out — long agentic runs get expensive fast without task budgets"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- macOS, Linux, or Windows (Docker recommended for Windows)\n- Node.js 20+ and npm\n- An API key for at least one AI provider (OpenAI, Anthropic, or a local Ollama instance)\n\n## Install\n\n```bash\n# Clone the repository\ngit clone https://github.com/openclaw/openclaw.git\ncd openclaw\n\n# Install dependencies\nnpm install\n\n# Copy and edit config\ncp config.example.yml config.yml\n```\n\n## Configure your AI provider in config.yml\n\n```yaml\n# config.yml\nai:\n  provider: openai          # or 'anthropic', 'ollama'\n  model: gpt-5.5            # or 'claude-opus-4-6', 'llama3.3' for Ollama\n  api_key: \"${OPENAI_API_KEY}\"\n\nintegrations:\n  slack:\n    enabled: true\n    token: \"${SLACK_BOT_TOKEN}\"\n  telegram:\n    enabled: false\n    token: \"${TELEGRAM_BOT_TOKEN}\"\n```\n\n## Set environment variables and start\n\n```bash\nexport OPENAI_API_KEY=\"sk-...\"\nexport SLACK_BOT_TOKEN=\"xoxb-...\"\n\nnpm start\n# Agent will be available at http://localhost:3000\n# Web UI for managing skills and integrations opens automatically\n```\n\n## Using Ollama for fully local operation (no cloud API)\n\n```bash\n# Install Ollama first: https://ollama.com\nollama pull llama3.3\n\n# In config.yml, set:\n# ai:\n#   provider: ollama\n#   model: llama3.3\n#   base_url: http://localhost:11434\n\nnpm start\n```\n\n## Gotchas\n- **Skill vetting is your responsibility.** Before installing any community skill from the skill registry, read its source code. Skills run with the same permissions as the OpenClaw process — a malicious skill has full access to your shell and files.\n- **Broad permissions are required by design.** The agent needs browser automation, shell access, and file system access. Do not run OpenClaw on a machine with sensitive credentials stored in plaintext.\n- **Apple Silicon Macs** get the best local model performance via Ollama with Metal acceleration. No extra config needed — Ollama auto-detects the GPU.",
-        "sourceURL": "https://github.com/openclaw/openclaw"
+        "setupGuideMarkdown": "## Prerequisites\n- Anthropic API key on a paid plan\n- `anthropic` Python SDK >= 0.30 (for Managed Agents support)\n- Python 3.11+\n\n## Step 1 — Install the SDK\n\n```bash\npip install --upgrade anthropic\n```\n\n## Step 2 — Create a managed agent session\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()  # Reads ANTHROPIC_API_KEY from env\n\n# Start a durable agent session\nsession = client.beta.managed_agents.sessions.create(\n    model=\"claude-opus-4-7\",\n    system=\"You are a financial analyst. Follow the KYC screening workflow in the attached skill.\",\n    tools=[{\"type\": \"computer_20250124\", \"name\": \"computer\", \"display_width_px\": 1024, \"display_height_px\": 768}],\n    # Task budget caps total tokens across the run\n    task_budget={\"max_tokens\": 200000},\n    betas=[\"managed-agents-2026-05\"]\n)\n\nprint(f\"Session ID: {session.id}\")\n```\n\n## Step 3 — Send work to the session\n\n```python\n# Submit a task into the running session\nresult = client.beta.managed_agents.sessions.run(\n    session_id=session.id,\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": \"Screen the attached onboarding record for KYC/AML compliance. Output a risk rating and flag any document gaps.\"\n        }\n    ]\n)\n\nfor block in result.content:\n    print(block.text)\n```\n\n## Step 4 — Use a pre-built financial cookbook (optional)\n\n```bash\n# Clone the financial-services cookbook repo\ngit clone https://github.com/anthropics/financial-services\ncd financial-services/kyc-screener\n\n# Install dependencies\npip install -r requirements.txt\n\n# Run the KYC screener cookbook\npython run_agent.py --input ./sample_onboarding_record.json\n```\n\n## Gotcha\nThe `betas=[\"managed-agents-2026-05\"]` header is mandatory — requests without it fall back to stateless inference and lose session persistence. The beta header name will change on GA; watch the Anthropic changelog at `releasebot.io/updates/anthropic` for the update.",
+        "sourceURL": "https://www.anthropic.com/news/agents-for-financial-services"
       }
     },
     {
-      "id": "openai-responses-api-tool-search-feature",
-      "name": "OpenAI Tool Search (Responses API)",
-      "category": "openai",
-      "oneLineDescription": "Defer large tool catalogs to runtime so agents load only what they need, cutting prompt token cost.",
+      "id": "openai-codex-cli-learn-2026-05-07",
+      "name": "OpenAI Codex CLI",
+      "category": "tooling",
+      "oneLineDescription": "OpenAI's open-source terminal coding agent with plugin marketplace, /goal workflows, and AWS Bedrock support.",
       "estimatedSetupMinutes": 10,
       "detail": {
-        "whatItDoes": "Tool search is a new Responses API feature (gpt-5.4+ only) that lets agents work with very large tool surfaces without stuffing every tool definition into the context window upfront. You mark tools with `defer_loading: true` inside a namespace or MCP server definition, then add `{\"type\": \"tool_search\"}` to your tools array. At inference time, the model emits a `tool_search_call` describing what it needs; your code returns the matching subset of tools; the model then calls them normally.\n\nThis is especially useful for enterprise agents that have 50–200+ internal functions, where including all definitions upfront burns tokens, destroys cache hit rates, and degrades reasoning quality. Token savings are most material with namespaces and MCP servers, which is the pattern OpenAI recommends over raw deferred functions.",
-        "whoItsFor": "Backend engineers building agents with wide tool surfaces — internal CRM connectors, multi-service APIs, large MCP servers. If your current agent prompt is 30%+ tool definitions by token count, tool search will cut costs and improve cache performance immediately. Requires the Responses API (not Chat Completions) and gpt-5.4 or later.",
+        "whatItDoes": "The Codex CLI is an open-source agentic coding assistant that runs in the terminal and drives file edits, shell commands, and test execution autonomously. This week's release adds persisted /goal workflows (create a goal, pause and resume it across sessions), a plugin marketplace (install from GitHub, git URLs, or local directories), configurable TUI keymaps, Ctrl+R reverse search in prompt history, and first-class Amazon Bedrock support with AWS SigV4 signing.\n\nPermission profiles have been overhauled: the deprecated --full-auto flag is gone, replaced by named profiles (sandboxed, network-restricted, etc.) that can be set per project in codex.toml. MCP server support is now comprehensive — namespaced registration, parallel-call opt-in, and sandbox-state metadata.",
+        "whoItsFor": "Developers who prefer terminal-first workflows over GUI coding assistants. Particularly useful for teams using Symphony (the Codex orchestration spec released last week) — Symphony is built on the Codex App Server, so staying current on the CLI is a prerequisite. AWS-native teams can now route Codex through Bedrock and apply usage toward existing AWS commitments.",
         "pros": [
-          "Dramatically reduces prompt token usage on wide-tool-surface agents — only the tools actually needed for the current task are loaded",
-          "Preserves prompt cache performance by keeping the static portions of the prompt stable across turns",
-          "Works with namespaces, MCP servers, and raw deferred functions — drop-in for existing Responses API integrations"
+          "Open-source (Apache 2.0) with an active changelog and Elixir/Python/TypeScript SDK surface",
+          "AWS Bedrock support: authenticate with AWS credentials, bill to your AWS account, keep data in your VPC",
+          "Plugin marketplace means the community can extend Codex without forking the core",
+          "Persisted /goal workflows survive terminal restarts — critical for multi-hour agentic tasks"
         ],
         "cons": [
-          "Only available with gpt-5.4 and later — not compatible with older models or the Chat Completions API",
-          "Adds a round-trip: the model must emit a tool_search_call, your code resolves the tools, then you send a follow-up request — increases latency by one network hop per tool lookup"
+          "--full-auto is deprecated with no grace period in some versions; old automation scripts will break",
+          "Plugin marketplace vetting is still community-driven — review plugin code before installing in sensitive repos"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- `openai` Python SDK >= latest or Node `openai` npm package\n- GPT-5.4 or GPT-5.5 (tool_search is not available on older models)\n- `OPENAI_API_KEY` set in your environment\n\n```bash\npip install --upgrade openai\nexport OPENAI_API_KEY=\"sk-...\"\n```\n\n## Pattern 1: Namespace with deferred tools (recommended)\n\n```python\nfrom openai import OpenAI\n\nclient = OpenAI()\n\n# Define a namespace. Tools with defer_loading=True are hidden\n# from the context window until tool_search loads them.\ncrm_namespace = {\n    \"type\": \"namespace\",\n    \"name\": \"crm\",\n    \"description\": \"CRM tools for customer lookup and order management.\",\n    \"tools\": [\n        {\n            \"type\": \"function\",\n            \"name\": \"get_customer_profile\",\n            \"description\": \"Fetch a customer profile by ID.\",\n            # No defer_loading — model sees this upfront\n            \"parameters\": {\n                \"type\": \"object\",\n                \"properties\": {\"customer_id\": {\"type\": \"string\"}},\n                \"required\": [\"customer_id\"],\n                \"additionalProperties\": False,\n            },\n        },\n        {\n            \"type\": \"function\",\n            \"name\": \"list_open_orders\",\n            \"description\": \"List open orders for a customer ID.\",\n            \"defer_loading\": True,  # hidden until tool_search loads it\n            \"parameters\": {\n                \"type\": \"object\",\n                \"properties\": {\"customer_id\": {\"type\": \"string\"}},\n                \"required\": [\"customer_id\"],\n                \"additionalProperties\": False,\n            },\n        },\n    ],\n}\n\nresponse = client.responses.create(\n    model=\"gpt-5.5\",\n    input=\"List open orders for customer CUST-12345.\",\n    tools=[\n        crm_namespace,\n        {\"type\": \"tool_search\"},  # enables deferred loading\n    ],\n)\nprint(response.output_text)\n```\n\n## Pattern 2: MCP server with deferred loading\n\n```python\nresponse = client.responses.create(\n    model=\"gpt-5.5\",\n    input=\"Pull the Q1 sales data from the warehouse and summarize by region.\",\n    tools=[\n        {\n            \"type\": \"mcp\",\n            \"server_label\": \"data_warehouse\",\n            \"server_url\": \"https://your-mcp-server.example.com/mcp\",\n            \"defer_loading\": True,  # MCP tools loaded via tool_search\n            \"headers\": {\"Authorization\": \"Bearer YOUR_MCP_TOKEN\"},\n        },\n        {\"type\": \"tool_search\"},\n    ],\n)\nprint(response.output_text)\n```\n\n## Gotchas\n- **Tool search is only supported on gpt-5.4 and later.** Passing `type: tool_search` to an older model returns a 400 error. Check your model slug before deploying.\n- **Adds a round-trip per deferred tool lookup.** For latency-sensitive, real-time user interactions, test whether the token savings outweigh the extra network hop. For batch/async workflows, the savings almost always win.\n- **Namespaces and MCP servers get better token savings than raw deferred functions.** The model sees only the namespace/server name and description upfront — not individual function signatures — which gives the largest possible context reduction.\n- **Use `parallel_tool_calls=False`** on the first request when using client-side tool_search execution to avoid race conditions during the tool resolution step.",
-        "sourceURL": "https://developers.openai.com/api/docs/guides/tools-tool-search"
+        "setupGuideMarkdown": "## Prerequisites\n- Node 20+\n- macOS or Linux (Windows supported but some sandbox features require WSL2)\n- OpenAI API key with Codex access, or AWS credentials for Bedrock routing\n\n## Step 1 — Install\n\n```bash\nnpm install -g @openai/codex\ncodex --version\n```\n\n## Step 2 — Configure (OpenAI direct)\n\n```bash\nexport OPENAI_API_KEY=sk-...\n```\n\nCreate `~/.config/codex/config.toml`:\n\n```toml\n[defaults]\nmodel = \"gpt-5.5\"\ntrust_level = \"sandboxed\"   # replaces deprecated --full-auto\nreasoning_effort = \"high\"   # options: low, medium, high, xhigh\n```\n\n## Step 2 (alt) — Configure for AWS Bedrock\n\n```bash\nexport AWS_REGION=us-east-1\nexport AWS_ACCESS_KEY_ID=...\nexport AWS_SECRET_ACCESS_KEY=...\n```\n\n```toml\n[provider]\ntype = \"bedrock\"\nmodel = \"openai.gpt-5-5\"    # Bedrock model ID\nregion = \"us-east-1\"\n```\n\n## Step 3 — Run your first task\n\n```bash\n# One-shot task\ncodex exec \"Add input validation to the user registration endpoint and write a test for the new edge cases\"\n\n# Interactive TUI\ncodex\n```\n\n## Step 4 — Create a persistent goal\n\nInside the Codex TUI:\n\n```\n/goal create \"Refactor the authentication module to use the new JWT library\"\n# Codex assigns the goal an ID and begins working\n# You can /goal pause <id> and /goal resume <id> across sessions\n```\n\n## Step 5 — Install a marketplace plugin\n\n```bash\ncodex marketplace add https://github.com/example/codex-plugin-linear\n```\n\n## Gotcha\nIf you were using `--full-auto` in CI scripts, replace it with `--trust sandboxed` or `--trust network-restricted` before upgrading. The flag was removed in recent releases and causes a startup error, not a deprecation warning.",
+        "sourceURL": "https://github.com/openai/codex"
       }
     }
   ]
