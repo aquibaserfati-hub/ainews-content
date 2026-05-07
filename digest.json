@@ -1,64 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-04T00:00:00Z",
-  "reportGeneratedAt": "2026-05-07T12:00:00Z",
+  "reportGeneratedAt": "2026-05-07T08:39:54Z",
   "learnGeneratedAt": "2026-05-07T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-claude-opus-47-financial-agents-2026-05-05",
-      "title": "Anthropic ships Claude Opus 4.7 and 10 financial-services agent templates",
-      "summary": "Anthropic launched Claude Opus 4.7 — a 13% coding-benchmark lift over 4.6, new xhigh effort level, task budgets in API public beta, and GA add-ins for Excel, PowerPoint, and Word — alongside 10 ready-to-run agent templates for pitchbooks, KYC screening, GL reconciliation, and more. Each template ships as a Claude Cowork plugin or Managed Agents cookbook, cutting the path from API access to production financial workflows from months to days.",
+      "id": "anthropic-finance-agents-2026-05-05",
+      "title": "Anthropic ships 10 Claude agent templates for financial services",
+      "summary": "Ten ready-to-run agent templates for pitchbooks, KYC screening, GL reconciliation, and month-end close — each deployable as a Claude Cowork plugin or a fully autonomous Managed Agent in days, not months. Claude also gets full Microsoft 365 integration (Excel, PowerPoint, Word GA; Outlook beta) and new data connectors including Moody's full platform as a native app.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/claude-opus-4-7",
+      "sourceURL": "https://www.anthropic.com/news/finance-agents",
       "significance": 8
     },
     {
       "id": "openai-gpt55-instant-default-2026-05-05",
       "title": "OpenAI makes GPT-5.5 Instant the default ChatGPT model",
-      "summary": "GPT-5.5 Instant rolls out to all ChatGPT tiers and the API as 'chat-latest', delivering 52.5% fewer hallucinated claims on high-stakes prompts versus GPT-5.3 Instant and a jump from 65.4 to 81.2 on AIME 2025. GPT-5.4 mini and nano also hit the Chat Completions and Responses API this week for high-volume workloads.",
+      "summary": "GPT-5.5 Instant replaced GPT-5.3 Instant as the ChatGPT default on May 5, with a stated focus on cutting hallucinations in law, medicine, and finance while keeping latency low. Plus and Pro users on web get it first; free and enterprise tiers follow in coming weeks.",
       "category": "openai",
-      "sourceURL": "https://openai.com/news/",
+      "sourceURL": "https://techstartups.com/2026/05/06/top-tech-news-today-may-6-2026/",
       "significance": 7
     },
     {
-      "id": "openai-symphony-codex-orchestration-2026-04-27",
-      "title": "OpenAI open-sources Symphony, a Codex agent orchestration spec",
-      "summary": "Symphony is a language-agnostic spec (Elixir reference impl, Apache 2.0) that turns Linear issues into an always-on Codex agent farm: each open ticket gets its own agent workspace, CI monitoring, and automatic PR prep. Internal OpenAI teams saw landed PRs rise 500% in three weeks — a real benchmark worth studying for any team already running Codex at scale.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/open-source-codex-orchestration-symphony/",
+      "id": "aws-agentcore-workspaces-desktop-agents-2026-05-06",
+      "title": "AWS lets AI agents operate WorkSpaces virtual desktops with assigned identities",
+      "summary": "Amazon Bedrock AgentCore Identity now previews support for agents to log into and operate WorkSpaces VMs under unique non-human identities, making agent actions auditable and distinct from human actions. Practical for enterprises that need agents inside existing desktop workflows rather than rebuilding everything around APIs.",
+      "category": "tooling",
+      "sourceURL": "https://aws.amazon.com/bedrock/agentcore/",
       "significance": 7
     },
     {
-      "id": "openai-models-aws-bedrock-2026-04-28",
-      "title": "OpenAI GPT-5.4/5.5, Codex, and Managed Agents land on Amazon Bedrock",
-      "summary": "One day after Microsoft's exclusivity deal ended, AWS shipped GPT-5.4, GPT-5.5, Codex, and Bedrock Managed Agents in limited preview — all inheriting IAM, PrivateLink, and CloudTrail controls. Backed by a $50 billion Amazon investment, this gives AWS-native teams a single Bedrock API surface for OpenAI frontier models without a separate vendor relationship.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/openai-on-aws/",
-      "significance": 8
-    },
-    {
-      "id": "anthropic-mythos-cybersecurity-policy-2026-05-05",
-      "title": "Claude Mythos Preview triggers U.S. government AI oversight expansion",
-      "summary": "Google DeepMind, Microsoft, and xAI signed pre-deployment evaluation agreements with CAISI (Commerce Dept) following Mythos — Anthropic's restricted model that autonomously finds zero-day vulnerabilities and saturates existing cybersecurity benchmarks. Anthropic keeps Mythos behind Project Glasswing; the Pentagon blacklisted Anthropic from its eight-company classified AI deal but the White House has reopened talks.",
+      "id": "anthropic-fis-aml-agent-2026-05-04",
+      "title": "Anthropic and FIS deploy AML investigation agent at BMO and Amalgamated Bank",
+      "summary": "FIS launched a financial-crimes AI agent co-built with Anthropic's forward-deployed engineers, targeting anti-money laundering workflows — compressing multi-hour investigations to minutes by assembling evidence across bank systems and surfacing high-risk cases with full audit trails. BMO and Amalgamated Bank are the first two live deployments.",
       "category": "anthropic",
-      "sourceURL": "https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html",
+      "sourceURL": "https://www.cio.com/article/4167981/anthropics-financial-agents-expose-forward-deployed-engineers-as-new-ai-limiting-factor.html",
       "significance": 7
     },
     {
-      "id": "anthropic-google-200b-cloud-deal-2026-05-05",
-      "title": "Anthropic commits $200 billion to Google Cloud over five years",
-      "summary": "Anthropic's spend commitment — reported by The Information — puts it as more than 40% of Google's disclosed cloud revenue backlog, alongside Google's $40 billion equity investment at a $350 billion valuation. Anthropic is also in a $1.5 billion PE joint venture with Blackstone, Hellman & Friedman, and Goldman Sachs to deploy Claude into enterprise operations.",
-      "category": "anthropic",
-      "sourceURL": "https://ca.finance.yahoo.com/news/anthropic-commits-spending-200-billion-204952202.html",
+      "id": "google-deepmind-frontier-prerelease-review-2026-05-06",
+      "title": "Google DeepMind, Microsoft, and xAI agree to US pre-release AI model reviews",
+      "summary": "The three labs agreed to let the Commerce Department's AI safety unit review new frontier models before public release, focusing on capabilities and national security risks. No veto power for the government, but it marks pre-release evaluation becoming a standard step in the frontier model release cycle.",
+      "category": "google",
+      "sourceURL": "https://techstartups.com/2026/05/06/top-tech-news-today-may-6-2026/",
       "significance": 6
     },
     {
-      "id": "chatgpt-memory-sheets-excel-2026-05-05",
-      "title": "ChatGPT ships persistent memory improvements and a global Excel/Sheets sidebar",
-      "summary": "ChatGPT Plus and Pro now pull context from past chats, saved memories, and connected Gmail to personalize responses without re-prompting. The Excel and Google Sheets sidebar launched globally on the same day — it handles formulas, multi-tab files, budgets, and scenario work inside the spreadsheet without leaving the app.",
+      "id": "etsy-chatgpt-native-app-2026-05-07",
+      "title": "Etsy launches native ChatGPT app for conversational shopping",
+      "summary": "Etsy shipped a native app inside ChatGPT aimed at conversational product discovery, joining a growing set of retail integrations on the OpenAI platform. No API details yet — announced product, public availability still unclear.",
       "category": "openai",
-      "sourceURL": "https://releasebot.io/updates/openai/chatgpt",
-      "significance": 6
+      "sourceURL": "https://llm-stats.com/ai-news",
+      "significance": 5
+    },
+    {
+      "id": "aws-agentcore-govcloud-2026-05-05",
+      "title": "Amazon Bedrock AgentCore expands to GovCloud (US-West)",
+      "summary": "AgentCore — runtime, identity, gateway, policy, observability, and browser tools — is now available in AWS GovCloud (US-West), opening the production agent platform to US federal and defense workloads with existing FedRAMP/ITAR requirements.",
+      "category": "tooling",
+      "sourceURL": "https://aws.amazon.com/about-aws/whats-new/2026/05/bedrock-agentcore-launch-aws-govcloud-us/",
+      "significance": 5
     }
   ],
   "learn": [
