@@ -1,64 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-04T00:00:00Z",
-  "reportGeneratedAt": "2026-05-07T08:39:54Z",
+  "reportGeneratedAt": "2026-05-08T07:47:34Z",
   "learnGeneratedAt": "2026-05-07T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-finance-agents-2026-05-05",
-      "title": "Anthropic ships 10 Claude agent templates for financial services",
-      "summary": "Ten ready-to-run agent templates for pitchbooks, KYC screening, GL reconciliation, and month-end close — each deployable as a Claude Cowork plugin or a fully autonomous Managed Agent in days, not months. Claude also gets full Microsoft 365 integration (Excel, PowerPoint, Word GA; Outlook beta) and new data connectors including Moody's full platform as a native app.",
+      "id": "anthropic-finance-agents-10-templates-2026-05-05",
+      "title": "Anthropic ships 10 pre-built finance agent templates with Claude Opus 4.7",
+      "summary": "Anthropic released 10 ready-to-run agent templates for investment banks, asset managers, and insurers — covering pitchbook creation, KYC screening, AML investigation, and month-end close. Each template is a deployable reference architecture (skills + connectors + subagents) that drops into Claude Cowork, Claude Code, or Claude Managed Agents, and Claude now integrates across Microsoft 365 Excel, Word, PowerPoint, and Outlook for finance teams.",
       "category": "anthropic",
       "sourceURL": "https://www.anthropic.com/news/finance-agents",
       "significance": 8
     },
     {
       "id": "openai-gpt55-instant-default-2026-05-05",
-      "title": "OpenAI makes GPT-5.5 Instant the default ChatGPT model",
-      "summary": "GPT-5.5 Instant replaced GPT-5.3 Instant as the ChatGPT default on May 5, with a stated focus on cutting hallucinations in law, medicine, and finance while keeping latency low. Plus and Pro users on web get it first; free and enterprise tiers follow in coming weeks.",
+      "title": "OpenAI replaces ChatGPT default with GPT-5.5 Instant, cuts hallucinations 52%",
+      "summary": "GPT-5.5 Instant is now the default ChatGPT model for all users and available in the API via the `chat-latest` alias at $5/$30 per million input/output tokens with a 400K-token context window. OpenAI claims 52.5% fewer hallucinated claims versus GPT-5.3 Instant on high-stakes prompts in medicine, law, and finance — the model also gains memory over past chats, files, and Gmail for Plus and Pro users, with free-tier rollout coming later.",
       "category": "openai",
-      "sourceURL": "https://techstartups.com/2026/05/06/top-tech-news-today-may-6-2026/",
-      "significance": 7
-    },
-    {
-      "id": "aws-agentcore-workspaces-desktop-agents-2026-05-06",
-      "title": "AWS lets AI agents operate WorkSpaces virtual desktops with assigned identities",
-      "summary": "Amazon Bedrock AgentCore Identity now previews support for agents to log into and operate WorkSpaces VMs under unique non-human identities, making agent actions auditable and distinct from human actions. Practical for enterprises that need agents inside existing desktop workflows rather than rebuilding everything around APIs.",
-      "category": "tooling",
-      "sourceURL": "https://aws.amazon.com/bedrock/agentcore/",
+      "sourceURL": "https://openai.com/index/gpt-5-5-instant/",
       "significance": 7
     },
     {
       "id": "anthropic-fis-aml-agent-2026-05-04",
-      "title": "Anthropic and FIS deploy AML investigation agent at BMO and Amalgamated Bank",
-      "summary": "FIS launched a financial-crimes AI agent co-built with Anthropic's forward-deployed engineers, targeting anti-money laundering workflows — compressing multi-hour investigations to minutes by assembling evidence across bank systems and surfacing high-risk cases with full audit trails. BMO and Amalgamated Bank are the first two live deployments.",
+      "title": "Anthropic and FIS deploy Claude AML agent at BMO and Amalgamated Bank",
+      "summary": "FIS is embedding Claude into its anti-money-laundering workflow, with the Financial Crimes AI Agent compressing AML investigations from days to minutes by auto-assembling evidence across core banking systems and surfacing high-risk cases for review. BMO and Amalgamated Bank are the first live deployments; general availability across FIS's thousands of bank clients is planned for H2 2026.",
       "category": "anthropic",
-      "sourceURL": "https://www.cio.com/article/4167981/anthropics-financial-agents-expose-forward-deployed-engineers-as-new-ai-limiting-factor.html",
+      "sourceURL": "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-brings-agentic-ai-to-banking-with-anthropic-starting-with-financial-crimes",
       "significance": 7
     },
     {
-      "id": "google-deepmind-frontier-prerelease-review-2026-05-06",
-      "title": "Google DeepMind, Microsoft, and xAI agree to US pre-release AI model reviews",
-      "summary": "The three labs agreed to let the Commerce Department's AI safety unit review new frontier models before public release, focusing on capabilities and national security risks. No veto power for the government, but it marks pre-release evaluation becoming a standard step in the frontier model release cycle.",
-      "category": "google",
-      "sourceURL": "https://techstartups.com/2026/05/06/top-tech-news-today-may-6-2026/",
+      "id": "openai-voice-models-api-2026-05-07",
+      "title": "OpenAI ships new voice intelligence models to the API",
+      "summary": "OpenAI released updated voice models in the API on May 7, continuing its push to make low-latency voice AI a first-class building block for developers. No pricing details confirmed in available release notes; builders shipping voice-first apps should check the API changelog for model IDs.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/news/",
       "significance": 6
     },
     {
-      "id": "etsy-chatgpt-native-app-2026-05-07",
-      "title": "Etsy launches native ChatGPT app for conversational shopping",
-      "summary": "Etsy shipped a native app inside ChatGPT aimed at conversational product discovery, joining a growing set of retail integrations on the OpenAI platform. No API details yet — announced product, public availability still unclear.",
+      "id": "openai-chatgpt-ads-testing-2026-05-07",
+      "title": "OpenAI starts testing ads inside ChatGPT",
+      "summary": "OpenAI confirmed it is testing an ad product within ChatGPT, with a separate post on new ways to buy ChatGPT ads published the same day. No public details yet on targeting mechanics or inventory access for advertisers — announced, not shipped to builders.",
       "category": "openai",
-      "sourceURL": "https://llm-stats.com/ai-news",
+      "sourceURL": "https://openai.com/news/",
       "significance": 5
     },
     {
-      "id": "aws-agentcore-govcloud-2026-05-05",
-      "title": "Amazon Bedrock AgentCore expands to GovCloud (US-West)",
-      "summary": "AgentCore — runtime, identity, gateway, policy, observability, and browser tools — is now available in AWS GovCloud (US-West), opening the production agent platform to US federal and defense workloads with existing FedRAMP/ITAR requirements.",
-      "category": "tooling",
-      "sourceURL": "https://aws.amazon.com/about-aws/whats-new/2026/05/bedrock-agentcore-launch-aws-govcloud-us/",
-      "significance": 5
+      "id": "anthropic-openai-pwc-enterprise-finance-jvs-2026-05-05",
+      "title": "OpenAI and Anthropic both announce enterprise finance joint ventures on same day",
+      "summary": "Anthropic announced a $1.5B venture with Blackstone, Hellman & Friedman, and Goldman Sachs to roll out Claude across private equity portfolio companies; OpenAI simultaneously announced a partnership with PwC to build finance-focused agents covering forecasting, planning, reporting, and treasury. Both moves are IPO-runway plays — real enterprise commitments, but no shipped product yet for most firms.",
+      "category": "other",
+      "sourceURL": "https://the-decoder.com/anthropic-ships-ten-ai-agents-for-finance-as-both-it-and-openai-chase-ipo-ready-revenue/",
+      "significance": 6
     }
   ],
   "learn": [
