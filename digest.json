@@ -1,55 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-04T00:00:00Z",
-  "reportGeneratedAt": "2026-05-08T07:47:34Z",
+  "reportGeneratedAt": "2026-05-09T08:01:41Z",
   "learnGeneratedAt": "2026-05-07T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-finance-agents-10-templates-2026-05-05",
-      "title": "Anthropic ships 10 pre-built finance agent templates with Claude Opus 4.7",
-      "summary": "Anthropic released 10 ready-to-run agent templates for investment banks, asset managers, and insurers — covering pitchbook creation, KYC screening, AML investigation, and month-end close. Each template is a deployable reference architecture (skills + connectors + subagents) that drops into Claude Cowork, Claude Code, or Claude Managed Agents, and Claude now integrates across Microsoft 365 Excel, Word, PowerPoint, and Outlook for finance teams.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/finance-agents",
-      "significance": 8
-    },
-    {
-      "id": "openai-gpt55-instant-default-2026-05-05",
-      "title": "OpenAI replaces ChatGPT default with GPT-5.5 Instant, cuts hallucinations 52%",
-      "summary": "GPT-5.5 Instant is now the default ChatGPT model for all users and available in the API via the `chat-latest` alias at $5/$30 per million input/output tokens with a 400K-token context window. OpenAI claims 52.5% fewer hallucinated claims versus GPT-5.3 Instant on high-stakes prompts in medicine, law, and finance — the model also gains memory over past chats, files, and Gmail for Plus and Pro users, with free-tier rollout coming later.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/gpt-5-5-instant/",
+      "id": "google-gemini-31-flash-lite-ga-2026-05-08",
+      "title": "Google ships Gemini 3.1 Flash-Lite to GA on Vertex AI and AI Studio",
+      "summary": "Gemini 3.1 Flash-Lite is now generally available, priced at $0.25/M input tokens — roughly one-eighth the cost of Gemini 3.1 Pro — with a 1M-token context window, adjustable thinking levels, and multimodal support across text, image, video, audio, and PDF. Drop-in for high-volume agentic pipelines, translation, and content moderation where latency and cost per request dominate.",
+      "category": "google",
+      "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available",
       "significance": 7
     },
     {
-      "id": "anthropic-fis-aml-agent-2026-05-04",
-      "title": "Anthropic and FIS deploy Claude AML agent at BMO and Amalgamated Bank",
-      "summary": "FIS is embedding Claude into its anti-money-laundering workflow, with the Financial Crimes AI Agent compressing AML investigations from days to minutes by auto-assembling evidence across core banking systems and surfacing high-risk cases for review. BMO and Amalgamated Bank are the first live deployments; general availability across FIS's thousands of bank clients is planned for H2 2026.",
-      "category": "anthropic",
-      "sourceURL": "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-brings-agentic-ai-to-banking-with-anthropic-starting-with-financial-crimes",
-      "significance": 7
-    },
-    {
-      "id": "openai-voice-models-api-2026-05-07",
-      "title": "OpenAI ships new voice intelligence models to the API",
-      "summary": "OpenAI released updated voice models in the API on May 7, continuing its push to make low-latency voice AI a first-class building block for developers. No pricing details confirmed in available release notes; builders shipping voice-first apps should check the API changelog for model IDs.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
+      "id": "scale-ai-swe-atlas-refactoring-leaderboard-2026-05-07",
+      "title": "Scale AI launches SWE Atlas Refactoring Leaderboard, Claude Opus 4.7 tops rankings",
+      "summary": "Scale AI released the final leaderboard in its SWE Atlas suite, targeting large-scale code refactoring — requiring 2x the code changes of SWE-Bench Pro. Claude Code with Opus 4.7 claimed the top spot, followed by Codex with GPT-5.5, giving builders a sharper signal on which coding agents survive real restructuring tasks.",
+      "category": "tooling",
+      "sourceURL": "https://www.cryptointegrat.com/p/ai-news-may-8-2026",
       "significance": 6
     },
     {
-      "id": "openai-chatgpt-ads-testing-2026-05-07",
-      "title": "OpenAI starts testing ads inside ChatGPT",
-      "summary": "OpenAI confirmed it is testing an ad product within ChatGPT, with a separate post on new ways to buy ChatGPT ads published the same day. No public details yet on targeting mechanics or inventory access for advertisers — announced, not shipped to builders.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
-      "significance": 5
+      "id": "tether-qvac-medpsy-open-source-2026-05-07",
+      "title": "Tether releases QVAC MedPsy: open-source medical AI that runs fully on-device",
+      "summary": "Tether's AI Research Group shipped QVAC MedPsy-1.7B and MedPsy-4B under Apache 2.0 — both designed to run locally on smartphones and wearables with no cloud dependency. The 4B model claims to beat Google MedGemma-27B on HealthBench Hard despite being ~7x smaller, available in quantized GGUF at 2.6 GB; worth watching for HIPAA-sensitive clinical tooling.",
+      "category": "otherLLM",
+      "sourceURL": "https://tether.io/news/tether-unveils-medical-ai-that-runs-on-phones-outperforms-much-larger-sota-models-and-can-cut-the-cloud-out-entirely/",
+      "significance": 6
     },
     {
-      "id": "anthropic-openai-pwc-enterprise-finance-jvs-2026-05-05",
-      "title": "OpenAI and Anthropic both announce enterprise finance joint ventures on same day",
-      "summary": "Anthropic announced a $1.5B venture with Blackstone, Hellman & Friedman, and Goldman Sachs to roll out Claude across private equity portfolio companies; OpenAI simultaneously announced a partnership with PwC to build finance-focused agents covering forecasting, planning, reporting, and treasury. Both moves are IPO-runway plays — real enterprise commitments, but no shipped product yet for most firms.",
+      "id": "openai-multi-lab-mrc-spec-2026-05-07",
+      "title": "OpenAI, Nvidia, AMD, and Microsoft jointly publish open GPU interconnect spec MRC",
+      "summary": "Six major hardware and AI firms released the Multipath Reliable Connection specification through the Open Compute Project, targeting GPU cluster resilience and throughput for large-scale AI training. A vendor-neutral interconnect standard matters for anyone building or buying training infrastructure — reduces lock-in and could lower cluster build costs over time.",
+      "category": "openai",
+      "sourceURL": "https://techstartups.com/2026/05/07/top-tech-news-today-may-7-2026/",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-spacex-colossus-compute-2026-05-06",
+      "title": "Anthropic locks in 300 MW of compute at SpaceX Colossus-1 data center",
+      "summary": "Anthropic signed a deal to take all available capacity at SpaceX's Colossus-1 facility in Memphis, directly responding to reliability problems for Claude Pro and Max users after 80x revenue growth in Q1 2026. The deal also opens exploratory talks on orbital compute — a bet on infrastructure that extends well beyond data centers.",
+      "category": "anthropic",
+      "sourceURL": "https://techstartups.com/2026/05/07/top-tech-news-today-may-7-2026/",
+      "significance": 6
+    },
+    {
+      "id": "caisi-google-microsoft-xai-pre-deploy-eval-2026-05-05",
+      "title": "US government secures pre-deployment eval rights for Google, Microsoft, and xAI models",
+      "summary": "The Center for AI Standards and Innovation signed agreements with Google DeepMind, Microsoft, and xAI allowing federal pre-deployment evaluations of frontier models for national security and public safety risks. Triggered directly by the Anthropic Mythos cybersecurity disclosures — the clearest signal yet that pre-release government review is becoming the new floor for frontier labs.",
       "category": "other",
-      "sourceURL": "https://the-decoder.com/anthropic-ships-ten-ai-agents-for-finance-as-both-it-and-openai-chase-ipo-ready-revenue/",
+      "sourceURL": "https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html",
+      "significance": 7
+    },
+    {
+      "id": "google-gemma4-mtp-drafters-3x-speedup-2026-05-05",
+      "title": "Google ships Multi-Token Prediction drafters for Gemma 4, delivering up to 3x inference speedup",
+      "summary": "Google released MTP drafters for the Gemma 4 open model family — already downloaded 60M times — enabling the model to predict multiple tokens simultaneously for up to 3x faster output with no reported quality degradation. Self-hosted Gemma 4 deployments get a free throughput boost; update your serving stack.",
+      "category": "google",
+      "sourceURL": "https://www.cryptointegrat.com/p/ai-news-may-6-2026",
       "significance": 6
     }
   ],
