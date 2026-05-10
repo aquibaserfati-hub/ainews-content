@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-04T00:00:00Z",
-  "reportGeneratedAt": "2026-05-09T08:01:41Z",
+  "reportGeneratedAt": "2026-05-10T08:12:48Z",
   "learnGeneratedAt": "2026-05-07T12:00:00Z",
   "report": [
     {
-      "id": "google-gemini-31-flash-lite-ga-2026-05-08",
-      "title": "Google ships Gemini 3.1 Flash-Lite to GA on Vertex AI and AI Studio",
-      "summary": "Gemini 3.1 Flash-Lite is now generally available, priced at $0.25/M input tokens — roughly one-eighth the cost of Gemini 3.1 Pro — with a 1M-token context window, adjustable thinking levels, and multimodal support across text, image, video, audio, and PDF. Drop-in for high-volume agentic pipelines, translation, and content moderation where latency and cost per request dominate.",
-      "category": "google",
-      "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available",
+      "id": "nvlabs-cuda-oxide-v010-2026-05-10",
+      "title": "NVLabs ships cuda-oxide v0.1.0: write GPU kernels in Rust",
+      "summary": "NVLabs released cuda-oxide v0.1.0, a custom Rust codegen backend that compiles annotated Rust functions to PTX through a Rust to LLVM IR to PTX pipeline. Builders who want memory-safe GPU kernel authoring without dropping to CUDA C now have a real path to do it.",
+      "category": "tooling",
+      "sourceURL": "https://llm-stats.com/ai-news",
       "significance": 7
     },
     {
-      "id": "scale-ai-swe-atlas-refactoring-leaderboard-2026-05-07",
-      "title": "Scale AI launches SWE Atlas Refactoring Leaderboard, Claude Opus 4.7 tops rankings",
-      "summary": "Scale AI released the final leaderboard in its SWE Atlas suite, targeting large-scale code refactoring — requiring 2x the code changes of SWE-Bench Pro. Claude Code with Opus 4.7 claimed the top spot, followed by Codex with GPT-5.5, giving builders a sharper signal on which coding agents survive real restructuring tasks.",
-      "category": "tooling",
-      "sourceURL": "https://www.cryptointegrat.com/p/ai-news-may-8-2026",
-      "significance": 6
-    },
-    {
-      "id": "tether-qvac-medpsy-open-source-2026-05-07",
-      "title": "Tether releases QVAC MedPsy: open-source medical AI that runs fully on-device",
-      "summary": "Tether's AI Research Group shipped QVAC MedPsy-1.7B and MedPsy-4B under Apache 2.0 — both designed to run locally on smartphones and wearables with no cloud dependency. The 4B model claims to beat Google MedGemma-27B on HealthBench Hard despite being ~7x smaller, available in quantized GGUF at 2.6 GB; worth watching for HIPAA-sensitive clinical tooling.",
+      "id": "ibm-granite-41-2026-05-05",
+      "title": "IBM ships Granite 4.1: 8B model matches 32B MoE on benchmarks",
+      "summary": "IBM released Granite 4.1 in 3B, 8B, and 30B dense variants under Apache 2.0, with the 8B reportedly matching 32B mixture-of-experts models on enterprise tasks. The family ships with strong tool-calling, RAG, and structured JSON output — available today on Hugging Face, watsonx, vLLM, and llama.cpp.",
       "category": "otherLLM",
-      "sourceURL": "https://tether.io/news/tether-unveils-medical-ai-that-runs-on-phones-outperforms-much-larger-sota-models-and-can-cut-the-cloud-out-entirely/",
+      "sourceURL": "https://research.ibm.com/blog/granite-4-1-ai-foundation-models",
+      "significance": 7
+    },
+    {
+      "id": "xai-grok-sttspeech-apis-2026-04-30",
+      "title": "xAI launches standalone Grok Speech-to-Text and Text-to-Speech APIs",
+      "summary": "xAI released standalone Grok STT and TTS APIs built on the same stack powering Grok Voice, Tesla vehicles, and Starlink support — offering real-time and batch endpoints, 25+ language support, speaker diarization, and $0.10/hr batch pricing. Drop-in for voice agent and transcription builders who want a competitive alternative to Whisper and ElevenLabs.",
+      "category": "otherLLM",
+      "sourceURL": "https://x.ai/news",
       "significance": 6
     },
     {
-      "id": "openai-multi-lab-mrc-spec-2026-05-07",
-      "title": "OpenAI, Nvidia, AMD, and Microsoft jointly publish open GPU interconnect spec MRC",
-      "summary": "Six major hardware and AI firms released the Multipath Reliable Connection specification through the Open Compute Project, targeting GPU cluster resilience and throughput for large-scale AI training. A vendor-neutral interconnect standard matters for anyone building or buying training infrastructure — reduces lock-in and could lower cluster build costs over time.",
-      "category": "openai",
-      "sourceURL": "https://techstartups.com/2026/05/07/top-tech-news-today-may-7-2026/",
+      "id": "stanford-undergrad-optimizer-5x-speedup-2026-05-07",
+      "title": "Stanford undergrad publishes optimizer claiming 5x training speedup",
+      "summary": "A Stanford undergraduate posted a theory that unifies several deep learning generalization mysteries and turns it into a training optimizer showing 5x speedup in reported tests. No peer review yet — treat as a strong signal worth watching, not a confirmed result.",
+      "category": "other",
+      "sourceURL": "https://radicaldatascience.wordpress.com/2026/05/07/ai-news-briefs-bulletin-board-for-may-2026/",
       "significance": 6
     },
     {
-      "id": "anthropic-spacex-colossus-compute-2026-05-06",
-      "title": "Anthropic locks in 300 MW of compute at SpaceX Colossus-1 data center",
-      "summary": "Anthropic signed a deal to take all available capacity at SpaceX's Colossus-1 facility in Memphis, directly responding to reliability problems for Claude Pro and Max users after 80x revenue growth in Q1 2026. The deal also opens exploratory talks on orbital compute — a bet on infrastructure that extends well beyond data centers.",
-      "category": "anthropic",
-      "sourceURL": "https://techstartups.com/2026/05/07/top-tech-news-today-may-7-2026/",
-      "significance": 6
-    },
-    {
-      "id": "caisi-google-microsoft-xai-pre-deploy-eval-2026-05-05",
-      "title": "US government secures pre-deployment eval rights for Google, Microsoft, and xAI models",
-      "summary": "The Center for AI Standards and Innovation signed agreements with Google DeepMind, Microsoft, and xAI allowing federal pre-deployment evaluations of frontier models for national security and public safety risks. Triggered directly by the Anthropic Mythos cybersecurity disclosures — the clearest signal yet that pre-release government review is becoming the new floor for frontier labs.",
+      "id": "caisi-google-microsoft-xai-predeployment-evals-2026-05-05",
+      "title": "NIST's CAISI signs pre-deployment eval deals with Google, Microsoft, xAI",
+      "summary": "The Center for AI Standards and Innovation announced agreements letting the US government evaluate Google DeepMind, Microsoft, and xAI models before public release — expanding earlier 2024 deals with OpenAI and Anthropic. Builders shipping to regulated sectors should expect this pre-deployment review tier to become a standard compliance checkpoint.",
       "category": "other",
       "sourceURL": "https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html",
+      "significance": 6
+    },
+    {
+      "id": "aisi-gpt55-matches-anthropic-mythos-cybersec-2026-05-05",
+      "title": "UK AISI: GPT-5.5 matches Anthropic's restricted Mythos on cyber benchmarks",
+      "summary": "The UK AI Security Institute ran GPT-5.5 through the same 95-challenge gauntlet used to justify Mythos's restricted rollout and found the two models statistically tied — GPT-5.5 scored 71.4% vs Mythos's 68.6% on Expert tasks. AISI's conclusion: the cyber risk is a byproduct of general frontier model improvements, not unique to Anthropic.",
+      "category": "anthropic",
+      "sourceURL": "https://radicaldatascience.wordpress.com/2026/05/07/ai-news-briefs-bulletin-board-for-may-2026/",
       "significance": 7
     },
     {
-      "id": "google-gemma4-mtp-drafters-3x-speedup-2026-05-05",
-      "title": "Google ships Multi-Token Prediction drafters for Gemma 4, delivering up to 3x inference speedup",
-      "summary": "Google released MTP drafters for the Gemma 4 open model family — already downloaded 60M times — enabling the model to predict multiple tokens simultaneously for up to 3x faster output with no reported quality degradation. Self-hosted Gemma 4 deployments get a free throughput boost; update your serving stack.",
-      "category": "google",
-      "sourceURL": "https://www.cryptointegrat.com/p/ai-news-may-6-2026",
+      "id": "anthropic-run-rate-30b-google-broadcom-compute-2026-04-06",
+      "title": "Anthropic run-rate hits $30B; 1,000+ customers spending $1M+ annually",
+      "summary": "Anthropic disclosed its run-rate revenue has surpassed $30 billion — up from ~$9 billion at end of 2025 — with over 1,000 business customers each spending more than $1 million per year, doubling in under two months. The company also announced a major compute expansion with Google and Broadcom, securing multiple gigawatts of TPU capacity starting in 2027.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
       "significance": 6
     }
   ],
