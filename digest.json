@@ -1,158 +1,165 @@
 {
   "schemaVersion": 1,
-  "weekOf": "2026-05-04T00:00:00Z",
-  "reportGeneratedAt": "2026-05-10T08:12:48Z",
-  "learnGeneratedAt": "2026-05-07T12:00:00Z",
+  "weekOf": "2026-05-11T00:00:00Z",
+  "reportGeneratedAt": "2026-05-11T12:00:00Z",
+  "learnGeneratedAt": "2026-05-11T12:00:00Z",
   "report": [
     {
-      "id": "nvlabs-cuda-oxide-v010-2026-05-10",
-      "title": "NVLabs ships cuda-oxide v0.1.0: write GPU kernels in Rust",
-      "summary": "NVLabs released cuda-oxide v0.1.0, a custom Rust codegen backend that compiles annotated Rust functions to PTX through a Rust to LLVM IR to PTX pipeline. Builders who want memory-safe GPU kernel authoring without dropping to CUDA C now have a real path to do it.",
-      "category": "tooling",
-      "sourceURL": "https://llm-stats.com/ai-news",
-      "significance": 7
-    },
-    {
-      "id": "ibm-granite-41-2026-05-05",
-      "title": "IBM ships Granite 4.1: 8B model matches 32B MoE on benchmarks",
-      "summary": "IBM released Granite 4.1 in 3B, 8B, and 30B dense variants under Apache 2.0, with the 8B reportedly matching 32B mixture-of-experts models on enterprise tasks. The family ships with strong tool-calling, RAG, and structured JSON output — available today on Hugging Face, watsonx, vLLM, and llama.cpp.",
-      "category": "otherLLM",
-      "sourceURL": "https://research.ibm.com/blog/granite-4-1-ai-foundation-models",
-      "significance": 7
-    },
-    {
-      "id": "xai-grok-sttspeech-apis-2026-04-30",
-      "title": "xAI launches standalone Grok Speech-to-Text and Text-to-Speech APIs",
-      "summary": "xAI released standalone Grok STT and TTS APIs built on the same stack powering Grok Voice, Tesla vehicles, and Starlink support — offering real-time and batch endpoints, 25+ language support, speaker diarization, and $0.10/hr batch pricing. Drop-in for voice agent and transcription builders who want a competitive alternative to Whisper and ElevenLabs.",
-      "category": "otherLLM",
-      "sourceURL": "https://x.ai/news",
-      "significance": 6
-    },
-    {
-      "id": "stanford-undergrad-optimizer-5x-speedup-2026-05-07",
-      "title": "Stanford undergrad publishes optimizer claiming 5x training speedup",
-      "summary": "A Stanford undergraduate posted a theory that unifies several deep learning generalization mysteries and turns it into a training optimizer showing 5x speedup in reported tests. No peer review yet — treat as a strong signal worth watching, not a confirmed result.",
-      "category": "other",
-      "sourceURL": "https://radicaldatascience.wordpress.com/2026/05/07/ai-news-briefs-bulletin-board-for-may-2026/",
-      "significance": 6
-    },
-    {
-      "id": "caisi-google-microsoft-xai-predeployment-evals-2026-05-05",
-      "title": "NIST's CAISI signs pre-deployment eval deals with Google, Microsoft, xAI",
-      "summary": "The Center for AI Standards and Innovation announced agreements letting the US government evaluate Google DeepMind, Microsoft, and xAI models before public release — expanding earlier 2024 deals with OpenAI and Anthropic. Builders shipping to regulated sectors should expect this pre-deployment review tier to become a standard compliance checkpoint.",
-      "category": "other",
-      "sourceURL": "https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html",
-      "significance": 6
-    },
-    {
-      "id": "aisi-gpt55-matches-anthropic-mythos-cybersec-2026-05-05",
-      "title": "UK AISI: GPT-5.5 matches Anthropic's restricted Mythos on cyber benchmarks",
-      "summary": "The UK AI Security Institute ran GPT-5.5 through the same 95-challenge gauntlet used to justify Mythos's restricted rollout and found the two models statistically tied — GPT-5.5 scored 71.4% vs Mythos's 68.6% on Expert tasks. AISI's conclusion: the cyber risk is a byproduct of general frontier model improvements, not unique to Anthropic.",
+      "id": "anthropic-finance-agents-claude-opus-47-2026-05-05",
+      "title": "Anthropic ships 10 finance agent templates and Claude Opus 4.7",
+      "summary": "Anthropic released 10 ready-to-run agent templates for pitchbook creation, KYC screening, and month-end close alongside Claude Opus 4.7, which leads Vals AI's Finance Agent benchmark at 64.37%. Templates deploy as Claude Code plugins or headless Managed Agents via API, with full Microsoft 365 add-in support (Excel, PowerPoint, Word, Outlook). JPMorgan's Jamie Dimon appeared on stage at the NYC launch event.",
       "category": "anthropic",
-      "sourceURL": "https://radicaldatascience.wordpress.com/2026/05/07/ai-news-briefs-bulletin-board-for-may-2026/",
+      "sourceURL": "https://www.anthropic.com/news/finance-agents",
+      "significance": 8
+    },
+    {
+      "id": "openai-realtime-2-voice-api-2026-05-07",
+      "title": "OpenAI ships GPT-Realtime-2 with GPT-5-class reasoning and two companion voice models",
+      "summary": "OpenAI released three new Realtime API models on May 7: GPT-Realtime-2 (GPT-5-class reasoning, 128K context, adjustable effort), GPT-Realtime-Translate (70+ input languages, 13 output), and GPT-Realtime-Whisper (streaming STT at $0.017/min). Collapses the stitched-together transcription+reasoning+synthesis stack into a single API surface. Zillow reported a 26-point lift in call-success rate in early testing.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "significance": 8
+    },
+    {
+      "id": "openai-gpt55-instant-default-chatgpt-2026-05-05",
+      "title": "OpenAI makes GPT-5.5 Instant the new default for all ChatGPT users",
+      "summary": "GPT-5.5 Instant replaced GPT-5.3 Instant as ChatGPT's default model on May 5, with 52.5% fewer hallucinated claims on high-stakes prompts per internal evals and improved personalization from past chats, Gmail, and uploaded files. Available in the API as chat-latest; GPT-5.3 Instant stays accessible to paid users for three more months before retirement.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/gpt-5-5-instant/",
       "significance": 7
     },
     {
-      "id": "anthropic-run-rate-30b-google-broadcom-compute-2026-04-06",
-      "title": "Anthropic run-rate hits $30B; 1,000+ customers spending $1M+ annually",
-      "summary": "Anthropic disclosed its run-rate revenue has surpassed $30 billion — up from ~$9 billion at end of 2025 — with over 1,000 business customers each spending more than $1 million per year, doubling in under two months. The company also announced a major compute expansion with Google and Broadcom, securing multiple gigawatts of TPU capacity starting in 2027.",
+      "id": "anthropic-claude-managed-agents-multiagent-public-beta-2026-05",
+      "title": "Anthropic opens Claude Managed Agents multiagent and Outcomes to public beta",
+      "summary": "The Claude Developer Platform expanded Managed Agents to include multiagent sessions and rubric-based Outcomes in public beta under the managed-agents-2026-04-01 beta header, plus webhook support for session and vault lifecycle events. Builders can now coordinate sub-agents and evaluate work against defined criteria without building their own orchestration layer.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "sourceURL": "https://platform.claude.com/docs/en/managed-agents/overview",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-claude-code-rate-limit-doubling-spacex-compute-2026-05",
+      "title": "Anthropic doubles Claude Code rate limits after SpaceX compute deal closes",
+      "summary": "Anthropic doubled five-hour rate limits for Pro, Max, Team, and Enterprise Claude Code tiers and removed peak-hour reductions for Pro and Max, crediting a new compute partnership with SpaceX that taps xAI's Colossus supercomputer. Opus API limits also raised. Effective immediately with no plan changes required.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-mythos-government-oversight-pentagon-2026-05",
+      "title": "Anthropic's Mythos model triggers US government pre-release AI review expansion",
+      "summary": "Google, Microsoft, and xAI agreed to give the US Commerce Department's CAISI early access to models for national security evaluation, joining existing Anthropic and OpenAI partnerships — prompted largely by concern over Anthropic's unreleased Mythos model, which Anthropic says is far ahead of other models in cybersecurity capability and is restricted to approved organizations only.",
+      "category": "other",
+      "sourceURL": "https://www.cnn.com/2026/05/05/tech/microsoft-google-xai-government-test-ai-models",
+      "significance": 6
+    },
+    {
+      "id": "eu-ai-act-deadline-extension-2026-05",
+      "title": "EU AI Act high-risk compliance deadline pushed from August 2026 to December 2027",
+      "summary": "EU negotiators struck a deal extending enforcement of high-risk AI rules by 16 months, giving companies deploying AI in hiring, lending, healthcare, education, and law enforcement substantially more runway. Teams that had been racing Q3 2026 compliance roadmaps can now reprioritize.",
+      "category": "other",
+      "sourceURL": "https://aiweekly.co/issues/anthropic-just-had-ais-biggest-week-of-2026",
       "significance": 6
     }
   ],
   "learn": [
     {
-      "id": "openai-symphony-learn-2026-05-07",
-      "name": "OpenAI Symphony",
-      "category": "tooling",
-      "oneLineDescription": "Open-source spec that turns your Linear board into an always-on Codex agent farm.",
-      "estimatedSetupMinutes": 30,
-      "detail": {
-        "whatItDoes": "Symphony is an orchestration layer that watches a Linear project board and assigns a dedicated Codex agent workspace to every open ticket. Agents run continuously — restarting on crash, rebasing on conflict, monitoring CI — and hand off a pull request for human review. Behavior per repo is configured via a WORKFLOW.md file, so each project shapes what its agents do.\n\nThe reference implementation is written in Elixir under the Apache 2.0 license and built on top of the Codex App Server. Access to the Linear API token is kept out of subagent containers via a dynamic linear_graphql tool call rather than direct token exposure — a deliberate security tradeoff you should understand before deploying.",
-        "whoItsFor": "Engineering teams already running OpenAI Codex who have hit the context-switching ceiling of managing 3–5 concurrent agent sessions. Works best in repositories that have been hardened for agent use: good test coverage, clear ticket scope, and a CI gate that Codex can read. Solo developers running a Linear workspace will also benefit, though the payoff scales with ticket volume.",
-        "pros": [
-          "500% internal PR throughput lift at OpenAI in three weeks — a credible real-world benchmark",
-          "Language-agnostic spec; the Elixir reference impl is a starting point, not a requirement",
-          "WORKFLOW.md per repo means each project gets custom agent behavior without forking the orchestrator",
-          "Apache 2.0 license — no usage fees or lock-in"
-        ],
-        "cons": [
-          "OpenAI treats Symphony as a reference implementation, not a maintained product — you own the fork",
-          "Requires a well-structured repo with automated tests; poorly specified tickets produce poor output",
-          "Codex App Server is still evolving rapidly; Symphony will need updates as the API changes"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Node 20+ (for Codex CLI)\n- Elixir 1.16+ and Erlang/OTP 26+ (for the reference orchestrator)\n- A Linear workspace with API access\n- OpenAI API key with Codex access\n- A repo that already runs CI (GitHub Actions, CircleCI, etc.)\n\n## Step 1 — Install the Codex CLI\n\n```bash\nnpm install -g @openai/codex\ncodex --version\n```\n\n## Step 2 — Clone and configure Symphony\n\n```bash\ngit clone https://github.com/openai/symphony\ncd symphony\ncp .env.example .env\n```\n\nEdit `.env`:\n\n```bash\nOPENAI_API_KEY=sk-...\nLINEAR_API_KEY=lin_api_...\nLINEAR_TEAM_ID=your-team-id\nCODEX_APP_SERVER_URL=http://localhost:8080\n```\n\n## Step 3 — Add WORKFLOW.md to your target repo\n\n```markdown\n# WORKFLOW\n\n## Scope\nFix bugs and implement features described in the linked Linear issue.\n\n## Definition of done\n- All existing tests pass\n- New tests cover the changed code paths\n- PR description summarizes the change in plain English\n\n## Off-limits\nDo not modify migration files or secrets. Escalate to a human if the ticket \nrequires architecture decisions.\n```\n\n## Step 4 — Start the Codex App Server\n\n```bash\ncodex app-server --port 8080\n```\n\n## Step 5 — Start Symphony\n\n```bash\nmix deps.get\nmix run --no-halt\n```\n\nSymphony will now poll your Linear board, spawn one Codex agent workspace per open ticket in the configured state, and push PRs when CI passes.\n\n## Gotcha\nThe `--full-auto` flag in Codex is deprecated. Symphony uses explicit permission profiles instead. If you see warnings about `--full-auto`, update to the latest Codex CLI and set `trust_level = \"sandboxed\"` in your `codex.toml`.",
-        "sourceURL": "https://openai.com/index/open-source-codex-orchestration-symphony/"
-      }
-    },
-    {
-      "id": "deerflow-2-learn-2026-05-07",
-      "name": "DeerFlow 2.0",
-      "category": "tooling",
-      "oneLineDescription": "ByteDance's open-source super-agent harness: spawn parallel sub-agents, memory, sandboxes — batteries included.",
-      "estimatedSetupMinutes": 20,
-      "detail": {
-        "whatItDoes": "DeerFlow 2.0 is a ground-up rewrite of ByteDance's Deep Research framework — it shares no code with v1. The lead agent decomposes tasks and spawns sub-agents on the fly, each with its own scoped context, tools, and termination conditions. Sub-agents run in parallel and report structured results back for synthesis. Tasks that take minutes to hours — multi-source research reports, code generation pipelines, dashboard creation — are the design target.\n\nBuilt on LangGraph and LangChain, it ships with a filesystem, persistent memory, skill marketplace, sandbox-aware execution, and a message gateway for Slack, Telegram, and other channels. It is model-agnostic and works with any OpenAI-compatible API endpoint, though it performs best with models that have 100k+ context windows and strong tool-use.",
-        "whoItsFor": "Developers and researchers who need to run long-horizon agentic tasks (deep research, competitive analysis, multi-step data pipelines) and want a self-hosted harness rather than a cloud agent product. Also useful for teams building Claude Code or Codex integrations — DeerFlow ships a native /claude-to-deerflow Claude Code skill out of the box. Data engineers automating content workflows or report generation will find the skill system and MCP server support practical.",
-        "pros": [
-          "Hit #1 on GitHub Trending on launch day (Feb 28 2026) — large community and active plugin ecosystem",
-          "Native Claude Code integration via /claude-to-deerflow skill command",
-          "MCP server support with OAuth token flows (client_credentials, refresh_token)",
-          "Model-agnostic: swap DeepSeek v3.2, Doubao, Kimi, or any OpenAI-compatible model via config.yaml"
-        ],
-        "cons": [
-          "v2 is a full rewrite — v1 skills and configs do not migrate; check the 1.x branch if you need the old framework",
-          "Complex multi-agent setups can burn tokens quickly; no built-in spend guardrails in the default config"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.11+\n- `uv` (recommended) or `pip`\n- Docker (optional, for sandboxed execution)\n- An LLM API key (OpenAI, DeepSeek, or any OpenAI-compatible endpoint)\n\n## Step 1 — Clone and install\n\n```bash\ngit clone https://github.com/bytedance/deer-flow\ncd deer-flow\nuv sync\n```\n\nOr with pip:\n\n```bash\npip install -r requirements.txt\n```\n\n## Step 2 — Configure models\n\n```bash\ncp config.yaml.example config.yaml\n```\n\nEdit `config.yaml`:\n\n```yaml\nmodels:\n  - name: primary\n    display_name: GPT-5.5\n    use: langchain_openai:ChatOpenAI\n    model: gpt-5.5\n    api_key: $OPENAI_API_KEY\n\n  - name: fast\n    display_name: DeepSeek v3.2\n    use: langchain_openai:ChatOpenAI\n    model: deepseek-chat\n    base_url: https://api.deepseek.com/v1\n    api_key: $DEEPSEEK_API_KEY\n```\n\n## Step 3 — Set environment variables\n\n```bash\nexport OPENAI_API_KEY=sk-...\nexport DEERFLOW_URL=http://localhost:2026\n```\n\n## Step 4 — Start DeerFlow\n\n```bash\nmake dev\n```\n\nDeerFlow starts on `http://localhost:2026` by default.\n\n## Step 5 — Run a research task\n\n```python\nimport httpx\n\nresponse = httpx.post(\n    \"http://localhost:2026/api/task\",\n    json={\n        \"task\": \"Research the top 5 vector database options for production RAG pipelines. Compare latency, cost, and managed offering availability. Produce a Markdown report.\",\n        \"mode\": \"pro\"  # Options: flash, standard, pro, ultra\n    }\n)\nprint(response.json())\n```\n\n## Gotcha\n`make dev` requires a valid `config.yaml` before it starts — it will fail silently if the file is missing or malformed. Run `make config` first if you haven't copied the example file. The sandbox mode (Docker) adds startup latency; use `local` mode for quick iteration.",
-        "sourceURL": "https://github.com/bytedance/deer-flow"
-      }
-    },
-    {
-      "id": "anthropic-claude-managed-agents-learn-2026-05-07",
-      "name": "Claude Managed Agents",
+      "id": "claude-agent-sdk-python-2026-05",
+      "name": "Claude Agent SDK (Python)",
       "category": "anthropic",
-      "oneLineDescription": "Anthropic's hosted long-horizon agent runtime with durable sessions, sandboxes, and task budgets.",
+      "oneLineDescription": "Python SDK that wraps Claude's tool-execution loop — write agents without building the loop yourself.",
+      "estimatedSetupMinutes": 5,
+      "detail": {
+        "whatItDoes": "The Claude Agent SDK is Anthropic's Python library that gives you Claude with built-in tool execution. Unlike the raw Anthropic client where you implement the tool loop yourself, the Agent SDK handles the full agentic loop: Claude reasons, decides which tools to call, executes them (Bash, file I/O, glob, web fetch, etc.), and iterates until the task is done. You stream results back with an async generator. The SDK requires the managed-agents-2026-04-01 beta header, which it sets automatically.\n\nAs of this week the SDK is in public beta, and multiagent sessions and Outcomes (rubric-based task evaluation) are available for early access. The same core capability powers Claude Code; the SDK exposes it for teams building their own branded agents on top of Claude infrastructure.",
+        "whoItsFor": "Backend engineers building autonomous coding agents, research pipelines, or document-processing workflows. Also relevant for teams that want to ship Claude-powered products without maintaining their own tool-execution scaffolding. The SDK is a good fit any time your task requires file reads, shell commands, or multi-step iteration rather than a single prompt-response round trip.",
+        "pros": [
+          "No tool loop to maintain — Claude handles retries, tool dispatch, and context management internally",
+          "Drop-in compatibility with Claude Code workflows; CLI sessions and SDK sessions share the same permission model and skill files",
+          "Multiagent support in public beta: one orchestrator can spin up sub-agents and aggregate results",
+          "Streams results incrementally, so long-running tasks don't block",
+          "Outcomes API lets you evaluate agent work against a rubric without writing your own eval harness"
+        ],
+        "cons": [
+          "All Managed Agents endpoints require the managed-agents-2026-04-01 beta header; forgetting it returns a 400 error that can be confusing",
+          "Multiagent and Outcomes are still in research preview — behaviors may change between releases",
+          "Agent SDK costs more per task than a raw client call because the model handles multiple tool rounds internally; budget token use carefully for high-volume workloads"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+\n- An Anthropic API key (`ANTHROPIC_API_KEY` in your environment)\n- The beta header is handled automatically by the SDK, but note you must be on a **Team, Enterprise, or API plan** to access Managed Agents endpoints.\n\n## Install\n\n```bash\npip install claude-agent-sdk\n```\n\n## Minimal working agent\n\n```python\nimport asyncio\nfrom claude_agent_sdk import query, ClaudeAgentOptions\n\nasync def main():\n    async for message in query(\n        prompt=\"List every Python file in the current directory and print the first 5 lines of each.\",\n        options=ClaudeAgentOptions(\n            allowed_tools=[\"Bash\", \"Glob\", \"Read\"]\n        ),\n    ):\n        if hasattr(message, \"result\"):\n            print(message.result)\n\nasyncio.run(main())\n```\n\n## Run with an explicit model\n\n```python\nfrom claude_agent_sdk import query, ClaudeAgentOptions\n\noptions = ClaudeAgentOptions(\n    model=\"claude-sonnet-4-5\",          # or claude-opus-4-7 for heavier tasks\n    allowed_tools=[\"Bash\", \"Read\", \"Write\"],\n    max_turns=20,                        # cap iterations to control cost\n)\n\nasync def run(prompt: str):\n    async for msg in query(prompt=prompt, options=options):\n        print(msg)\n```\n\n## Gotcha: beta header\nThe SDK sets `anthropic-beta: managed-agents-2026-04-01` automatically. If you're hitting a raw API endpoint alongside the SDK (e.g., for logging), **you must add this header manually** or the Managed Agents endpoint will return 400.\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\nclient.beta = \"managed-agents-2026-04-01\"  # raw client path\n```\n\n## Docs\nFull reference: https://code.claude.com/docs/en/agent-sdk/overview",
+        "sourceURL": "https://code.claude.com/docs/en/agent-sdk/overview"
+      }
+    },
+    {
+      "id": "omlx-apple-silicon-llm-server-2026-05",
+      "name": "oMLX",
+      "category": "tooling",
+      "oneLineDescription": "Local LLM inference server for Apple Silicon with SSD KV-cache and a macOS menu bar UI.",
+      "estimatedSetupMinutes": 5,
+      "detail": {
+        "whatItDoes": "oMLX is a Python-based LLM inference server purpose-built for Apple Silicon (M1–M4). It runs on top of the MLX framework and implements continuous batching and a two-tier KV cache: a hot in-memory tier and a cold SSD tier. KV cache persists across sessions and context changes, so long multi-turn coding sessions with tools like Claude Code don't pay the full prefill cost on every request. The server exposes an OpenAI-compatible and Anthropic-compatible REST API on localhost:8000, so any client that points at those endpoints (Claude Code, Codex, Cursor, Cline) works with zero reconfiguration.\n\nThe menu bar app lets you pin frequently used models in memory, auto-swap heavier models on demand, and monitor memory usage without opening a terminal. A web admin dashboard at /admin provides chat, benchmarks, and per-model settings. Supported model types include text LLMs, vision-language models (VLMs), OCR models, embeddings, and rerankers.",
+        "whoItsFor": "Mac developers who want local inference for coding agents (Claude Code, Codex) without paying API costs or sending data to the cloud. Also useful for teams that need offline operation, GDPR compliance, or reproducible inference across low-latency agentic loops. Requires macOS 15 Sequoia and Apple Silicon; not relevant on Intel Macs or non-Apple hardware.",
+        "pros": [
+          "Two-tier KV cache (RAM + SSD) makes long coding-agent sessions fast — context stays cached across requests even when conversation changes",
+          "OpenAI and Anthropic API compatibility means any agent tool works with zero reconfiguration",
+          "Menu bar UI eliminates terminal management for model loading, pinning, and memory monitoring",
+          "Supports multi-model serving with LRU eviction — pin small everyday models, auto-load larger ones on demand",
+          "Fully offline after model download; all CDN dependencies vendored"
+        ],
+        "cons": [
+          "macOS 15 Sequoia and Apple Silicon required — no Linux, no Intel, no Windows",
+          "Benchmark numbers show slightly higher latency versus other inference engines because the cache snapshot overhead is tuned for agent reuse patterns, not single-shot throughput",
+          "VLM continuous batching requires a recent mlx-vlm build; older pinned versions may not support it"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- macOS 15.0+ (Sequoia)\n- Apple Silicon (M1, M2, M3, or M4)\n- Python 3.10+ (Homebrew path: `brew install python@3.12` recommended)\n- Homebrew (https://brew.sh)\n\n## Install via Homebrew (recommended for CLI usage)\n\n```bash\nbrew tap jundot/omlx https://github.com/jundot/omlx\nbrew install omlx\n\n# Run as a background service that auto-restarts on crash\nbrew services start omlx\n```\n\n## OR: Install as a macOS app (menu bar UI)\n\n1. Download the `.dmg` from https://github.com/jundot/omlx/releases\n2. Drag `oMLX.app` to `/Applications`\n3. Launch it — the Welcome screen walks you through setting a model directory and downloading your first model.\n\nThe app includes in-app auto-update; future upgrades are one click. Note: the macOS app does **not** install the `omlx` CLI. If you need both, install the app AND run the Homebrew step.\n\n## Download a model and start the server\n\n```bash\n# Point oMLX at a directory of MLX-format model subdirectories\nomlx serve --model-dir ~/models\n\n# Or persist the path so you don't need the flag every time\nomlx serve --model-dir ~/models  # writes ~/.omlx/settings.json\nomlx serve                        # next run uses saved settings\n```\n\nModels must be in MLX format. Download from Hugging Face:\n\n```bash\n# Example: download Qwen3-Coder (8-bit quantized) with the HF CLI\npip install huggingface_hub\nhuggingface-cli download mlx-community/Qwen3-Coder-Next-8bit \\\n  --local-dir ~/models/Qwen3-Coder-Next-8bit\n```\n\n## Connect Claude Code to oMLX\n\n```bash\n# oMLX provides a one-command launcher that sets ANTHROPIC_BASE_URL,\n# ANTHROPIC_AUTH_TOKEN, and execs Claude Code with the selected model\nomlx launch claude\n```\n\nThis opens a minimal TUI listing loaded models; pick one, press Enter, and Claude Code starts pointing at your local server.\n\n## Verify the server is running\n\n```bash\ncurl http://localhost:8000/v1/models\n# Should return JSON listing all discovered models\n```\n\nAdmin dashboard (chat, benchmark, monitoring): http://localhost:8000/admin\n\n## Gotcha: MCP support is opt-in\nMCP (Model Context Protocol) is not installed by default. Add it:\n\n```bash\n# Homebrew install path\n/opt/homebrew/opt/omlx/libexec/bin/pip install mcp\n\n# Source install\npip install -e \".[mcp]\"\n```",
+        "sourceURL": "https://github.com/jundot/omlx"
+      }
+    },
+    {
+      "id": "openai-realtime-api-gpt-realtime-2-2026-05",
+      "name": "OpenAI Realtime API (GPT-Realtime-2)",
+      "category": "openai",
+      "oneLineDescription": "GPT-5-class speech-to-speech API with 128K context, tool calling, and real-time translation in one endpoint.",
       "estimatedSetupMinutes": 15,
       "detail": {
-        "whatItDoes": "Claude Managed Agents is a public-beta service on the Claude Platform that provides a hosted runtime for long-running agentic tasks. It exposes stable interfaces for sessions, harnesses, and sandboxes — keeping state alive across multi-step work without developers managing the infrastructure. Task budgets (also in public beta) let you cap token spend per run, which matters when a single agent workflow might run for hours.\n\nThe financial-services agent templates shipped May 5 use Managed Agents as the delivery mechanism: each template is a cookbook that packages a skill (domain instructions), connectors (governed data access), and sub-agents (focused Claude models for sub-tasks). The same pattern applies to any vertical — swap the skill markdown and connector list for your domain.",
-        "whoItsFor": "Developers building workflows that run longer than a single API round-trip: document processing pipelines, multi-step research agents, KYC or compliance screening, month-end close automation. Particularly useful for teams on paid Claude plans who want Anthropic-managed infrastructure rather than self-hosted orchestration, and for anyone who wants to use the pre-built financial-services cookbooks as a starting point.",
+        "whatItDoes": "The OpenAI Realtime API now includes three new models released May 7, 2026. GPT-Realtime-2 is the flagship: a speech-to-speech model with GPT-5-class reasoning, a 128K token context window (up from 32K), adjustable reasoning effort (minimal to xhigh), parallel tool calling, and built-in recovery from interruptions. It keeps the conversation moving while it calls tools, emitting a preamble (e.g. 'let me check that') so users don't sit in silence. GPT-Realtime-Translate handles live speech translation across 70+ input languages into 13 output languages at $0.034/min. GPT-Realtime-Whisper provides streaming speech-to-text at $0.017/min for live captions and meeting notes.\n\nAll three models live in the Realtime API and Playground. They replace the stitched-together stack (Whisper + ElevenLabs + your own reasoning hop) that most voice agent teams were running, collapsing it into one API call with one billing line.",
+        "whoItsFor": "Developers building voice agents, customer support bots, live transcription services, or multilingual products. GPT-Realtime-2 is the right default for any voice agent that needs to call tools or handle complex requests. GPT-Realtime-Translate targets cross-border support and global education platforms. GPT-Realtime-Whisper fits live captioning, healthcare documentation, and post-call summarization pipelines.",
         "pros": [
-          "Durable session state — no external database needed to persist agent context across steps",
-          "Task budgets in public beta give explicit token spend control for cost-sensitive production runs",
-          "Ready-to-fork cookbooks for 10 financial workflows available immediately at the financial services marketplace",
-          "Available on all paid Claude plans; works via the claude-opus-4-7 API model identifier"
+          "128K context window enables long agentic voice sessions without external state stitching",
+          "Single API replaces a 3-component stack (transcription + reasoning + synthesis), reducing latency and ops complexity",
+          "Parallel tool calls with preambles eliminate dead-air pauses during tool execution",
+          "GPT-Realtime-Translate at $0.034/min undercuts most competing translation services",
+          "EU Data Residency supported for GDPR-constrained deployments"
         ],
         "cons": [
-          "Still in public beta — session limits, pricing at scale, and SLAs are not fully documented yet",
-          "Best model (Opus 4.7) is $5/$25 per million tokens in/out — long agentic runs get expensive fast without task budgets"
+          "GPT-Realtime-2 is billed by audio tokens ($32/1M input, $64/1M output) — high-volume call centers should model costs carefully before migrating from per-minute pricing",
+          "Output language coverage for Translate is limited to 13 languages despite 70+ input languages — niche language pairs still require alternatives",
+          "Adjustable reasoning effort defaults to 'low'; xhigh effort adds latency that may feel unnatural in fast conversational turns"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Anthropic API key on a paid plan\n- `anthropic` Python SDK >= 0.30 (for Managed Agents support)\n- Python 3.11+\n\n## Step 1 — Install the SDK\n\n```bash\npip install --upgrade anthropic\n```\n\n## Step 2 — Create a managed agent session\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()  # Reads ANTHROPIC_API_KEY from env\n\n# Start a durable agent session\nsession = client.beta.managed_agents.sessions.create(\n    model=\"claude-opus-4-7\",\n    system=\"You are a financial analyst. Follow the KYC screening workflow in the attached skill.\",\n    tools=[{\"type\": \"computer_20250124\", \"name\": \"computer\", \"display_width_px\": 1024, \"display_height_px\": 768}],\n    # Task budget caps total tokens across the run\n    task_budget={\"max_tokens\": 200000},\n    betas=[\"managed-agents-2026-05\"]\n)\n\nprint(f\"Session ID: {session.id}\")\n```\n\n## Step 3 — Send work to the session\n\n```python\n# Submit a task into the running session\nresult = client.beta.managed_agents.sessions.run(\n    session_id=session.id,\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": \"Screen the attached onboarding record for KYC/AML compliance. Output a risk rating and flag any document gaps.\"\n        }\n    ]\n)\n\nfor block in result.content:\n    print(block.text)\n```\n\n## Step 4 — Use a pre-built financial cookbook (optional)\n\n```bash\n# Clone the financial-services cookbook repo\ngit clone https://github.com/anthropics/financial-services\ncd financial-services/kyc-screener\n\n# Install dependencies\npip install -r requirements.txt\n\n# Run the KYC screener cookbook\npython run_agent.py --input ./sample_onboarding_record.json\n```\n\n## Gotcha\nThe `betas=[\"managed-agents-2026-05\"]` header is mandatory — requests without it fall back to stateless inference and lose session persistence. The beta header name will change on GA; watch the Anthropic changelog at `releasebot.io/updates/anthropic` for the update.",
-        "sourceURL": "https://www.anthropic.com/news/agents-for-financial-services"
+        "setupGuideMarkdown": "## Prerequisites\n- Node 20+ or Python 3.10+\n- An OpenAI API key with Realtime API access\n- `OPENAI_API_KEY` set in your environment\n- Optional: install the OpenAI Node or Python SDK (v4.x+)\n\n## Install the SDK\n\n```bash\n# Node\nnpm install openai\n\n# Python\npip install openai\n```\n\n## Minimal GPT-Realtime-2 session (Node / WebSocket)\n\n```typescript\nimport OpenAI from \"openai\";\n\nconst client = new OpenAI();\n\n// Create a Realtime session\nconst session = await client.beta.realtime.sessions.create({\n  model: \"gpt-realtime-2\",\n  voice: \"alloy\",\n  modalities: [\"audio\", \"text\"],\n  instructions: \"You are a helpful voice assistant.\",\n  // Reasoning effort: \"minimal\" | \"low\" | \"medium\" | \"high\" | \"xhigh\"\n  // Default is \"low\" — good for most conversational use cases\n});\n\nconsole.log(\"Session ID:\", session.id);\nconsole.log(\"Client secret:\", session.client_secret.value);\n// Use client_secret.value with WebRTC or WebSocket transport\n```\n\n## Connect via WebSocket and send audio\n\n```typescript\nimport WebSocket from \"ws\";\n\nconst ws = new WebSocket(\n  \"wss://api.openai.com/v1/realtime?model=gpt-realtime-2\",\n  {\n    headers: {\n      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,\n      \"OpenAI-Beta\": \"realtime=v1\",\n    },\n  }\n);\n\nws.on(\"open\", () => {\n  // Configure the session\n  ws.send(JSON.stringify({\n    type: \"session.update\",\n    session: {\n      modalities: [\"audio\", \"text\"],\n      voice: \"alloy\",\n      // Add tools here if your agent needs to call APIs\n      tools: [],\n    },\n  }));\n});\n\nws.on(\"message\", (data) => {\n  const event = JSON.parse(data.toString());\n  if (event.type === \"response.audio.delta\") {\n    // Stream audio bytes to your output device\n    const audioChunk = Buffer.from(event.delta, \"base64\");\n    // write to speaker / stream to client\n  }\n});\n```\n\n## Live translation (GPT-Realtime-Translate)\n\n```typescript\nconst session = await client.beta.realtime.sessions.create({\n  model: \"gpt-realtime-translate\",\n  // Input: spoken language detected automatically from 70+ supported\n  // Output: one of the 13 supported output languages\n  output_language: \"en\",\n});\n```\n\n## Streaming transcription only (GPT-Realtime-Whisper)\n\n```typescript\nconst session = await client.beta.realtime.sessions.create({\n  model: \"gpt-realtime-whisper\",\n  modalities: [\"text\"],  // text only — returns transcripts, no audio output\n});\n// Billed at $0.017 / minute\n```\n\n## Gotcha: reasoning effort vs. latency\nLeaving reasoning at `xhigh` makes GPT-Realtime-2 pause noticeably before answering simple questions. Use `low` (default) for conversational turns and only escalate to `high`/`xhigh` when the task requires multi-step reasoning (e.g. complex tool orchestration).\n\n## Pricing summary\n| Model | Pricing |\n|---|---|\n| GPT-Realtime-2 | $32 / 1M audio input tokens; $64 / 1M audio output tokens |\n| GPT-Realtime-Translate | $0.034 / minute |\n| GPT-Realtime-Whisper | $0.017 / minute |\n\n## Docs\nhttps://platform.openai.com/docs/guides/realtime",
+        "sourceURL": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/"
       }
     },
     {
-      "id": "openai-codex-cli-learn-2026-05-07",
-      "name": "OpenAI Codex CLI",
-      "category": "tooling",
-      "oneLineDescription": "OpenAI's open-source terminal coding agent with plugin marketplace, /goal workflows, and AWS Bedrock support.",
-      "estimatedSetupMinutes": 10,
+      "id": "anthropic-claude-code-auto-mode-2026-05",
+      "name": "Claude Code Auto Mode",
+      "category": "anthropic",
+      "oneLineDescription": "Runs multi-step Claude Code sessions without per-action approval prompts, using a two-stage safety classifier.",
+      "estimatedSetupMinutes": 2,
       "detail": {
-        "whatItDoes": "The Codex CLI is an open-source agentic coding assistant that runs in the terminal and drives file edits, shell commands, and test execution autonomously. This week's release adds persisted /goal workflows (create a goal, pause and resume it across sessions), a plugin marketplace (install from GitHub, git URLs, or local directories), configurable TUI keymaps, Ctrl+R reverse search in prompt history, and first-class Amazon Bedrock support with AWS SigV4 signing.\n\nPermission profiles have been overhauled: the deprecated --full-auto flag is gone, replaced by named profiles (sandboxed, network-restricted, etc.) that can be set per project in codex.toml. MCP server support is now comprehensive — namespaced registration, parallel-call opt-in, and sandbox-state metadata.",
-        "whoItsFor": "Developers who prefer terminal-first workflows over GUI coding assistants. Particularly useful for teams using Symphony (the Codex orchestration spec released last week) — Symphony is built on the Codex App Server, so staying current on the CLI is a prerequisite. AWS-native teams can now route Codex through Bedrock and apply usage toward existing AWS commitments.",
+        "whatItDoes": "Claude Code Auto Mode, launched in late March 2026 and now generally available, removes the per-action approval prompts that previously interrupted long coding sessions. A two-stage classifier evaluates each proposed action before execution: a fast initial filter passes obviously safe operations (reading files, running tests) instantly, while ambiguous or high-impact operations (modifying production configs, pushing to remote branches) escalate to deeper analysis and may still pause for human approval. The spinner turns red when a permission check fires, giving a clear visual signal.\n\nAuto Mode is distinct from fully disabling permissions (--dangerously-skip-permissions). It does not bypass safety checks; it automates the routine approval decisions while preserving gates for sensitive operations. Enterprise admins can disable it org-wide via managed settings. Hard deny rules, introduced in the latest Claude Code update, let teams block specific operation classes even in Auto Mode.",
+        "whoItsFor": "Developers running large refactors, migrations, or long exploratory tasks where repeated approval dialogs break flow. Also relevant for CI/CD pipelines where Claude Code runs headless on scheduled tasks via Dispatch. Enterprise teams with compliance requirements should use managed settings to configure Auto Mode org-wide rather than leaving it to individual users.",
         "pros": [
-          "Open-source (Apache 2.0) with an active changelog and Elixir/Python/TypeScript SDK surface",
-          "AWS Bedrock support: authenticate with AWS credentials, bill to your AWS account, keep data in your VPC",
-          "Plugin marketplace means the community can extend Codex without forking the core",
-          "Persisted /goal workflows survive terminal restarts — critical for multi-hour agentic tasks"
+          "Eliminates approval fatigue on safe operations without giving up safety gates on high-impact actions",
+          "Visual feedback (red spinner) makes it clear when Auto Mode is pausing for a real approval — not silent",
+          "Hard deny rules let teams permanently block operation classes (e.g. remote git pushes) regardless of Auto Mode state",
+          "Works with Claude Sonnet 4.5 (default) and Opus 4.6/4.7 — no model-specific setup needed",
+          "Enterprise admins can disable it organization-wide with a single managed settings key"
         ],
         "cons": [
-          "--full-auto is deprecated with no grace period in some versions; old automation scripts will break",
-          "Plugin marketplace vetting is still community-driven — review plugin code before installing in sensitive repos"
+          "Still a research preview for some multi-agent sub-agent workflows — behavior may be refined",
+          "Auto Mode does not cover every scenario; some operations the classifier is uncertain about will still interrupt you",
+          "AutoDream tasks run 10–20 classifier steps per complex prompt, which adds token overhead on long sessions"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Node 20+\n- macOS or Linux (Windows supported but some sandbox features require WSL2)\n- OpenAI API key with Codex access, or AWS credentials for Bedrock routing\n\n## Step 1 — Install\n\n```bash\nnpm install -g @openai/codex\ncodex --version\n```\n\n## Step 2 — Configure (OpenAI direct)\n\n```bash\nexport OPENAI_API_KEY=sk-...\n```\n\nCreate `~/.config/codex/config.toml`:\n\n```toml\n[defaults]\nmodel = \"gpt-5.5\"\ntrust_level = \"sandboxed\"   # replaces deprecated --full-auto\nreasoning_effort = \"high\"   # options: low, medium, high, xhigh\n```\n\n## Step 2 (alt) — Configure for AWS Bedrock\n\n```bash\nexport AWS_REGION=us-east-1\nexport AWS_ACCESS_KEY_ID=...\nexport AWS_SECRET_ACCESS_KEY=...\n```\n\n```toml\n[provider]\ntype = \"bedrock\"\nmodel = \"openai.gpt-5-5\"    # Bedrock model ID\nregion = \"us-east-1\"\n```\n\n## Step 3 — Run your first task\n\n```bash\n# One-shot task\ncodex exec \"Add input validation to the user registration endpoint and write a test for the new edge cases\"\n\n# Interactive TUI\ncodex\n```\n\n## Step 4 — Create a persistent goal\n\nInside the Codex TUI:\n\n```\n/goal create \"Refactor the authentication module to use the new JWT library\"\n# Codex assigns the goal an ID and begins working\n# You can /goal pause <id> and /goal resume <id> across sessions\n```\n\n## Step 5 — Install a marketplace plugin\n\n```bash\ncodex marketplace add https://github.com/example/codex-plugin-linear\n```\n\n## Gotcha\nIf you were using `--full-auto` in CI scripts, replace it with `--trust sandboxed` or `--trust network-restricted` before upgrading. The flag was removed in recent releases and causes a startup error, not a deprecation warning.",
-        "sourceURL": "https://github.com/openai/codex"
+        "setupGuideMarkdown": "## Prerequisites\n- Claude Code installed: `npm install -g @anthropic-ai/claude-code` (v2.1+)\n- An Anthropic API key or a Claude Pro/Team/Enterprise plan\n- Update to the latest version: `claude update`\n\n## Enable Auto Mode\n\n**From the CLI:**\n\n```bash\nclaude --enable-auto-mode\n```\n\n**Toggle mid-session:**\nPress `Shift+Tab` to toggle Auto Mode on or off inside a running Claude Code session.\n\n**From VS Code extension:**\nOpen Claude Code sidebar → Settings → Enable Auto Mode.\n\n## Verify Auto Mode is active\n\n```bash\nclaude --status\n# Should show: Auto Mode: enabled\n```\n\nWhen active, watch the spinner in the top-left of the terminal panel. It turns **red** when a permission check fires and Auto Mode is pausing for approval.\n\n## Set hard deny rules (block specific operations regardless of Auto Mode)\n\nCreate or edit `.claude/settings.json` in your project root:\n\n```json\n{\n  \"autoMode\": {\n    \"hardDenyRules\": [\n      { \"tool\": \"Bash\", \"pattern\": \"git push\" },\n      { \"tool\": \"Bash\", \"pattern\": \"rm -rf\" }\n    ]\n  }\n}\n```\n\nThese rules apply even when `--dangerously-skip-permissions` is set.\n\n## Disable org-wide (Enterprise admins)\n\nIn your organization's managed settings JSON (configured via Claude Console):\n\n```json\n{\n  \"disableAutoMode\": \"disable\"\n}\n```\n\nThis prevents any user in the org from enabling Auto Mode, regardless of local settings.\n\n## Gotcha: OAuth + CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS\nIf your deployment sets `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1`, older versions had a bug where OAuth auth entered a 401 retry loop when Auto Mode was active. Update to v2.1.128+ to get the fix:\n\n```bash\nclaude update\n```\n\n## Docs\nhttps://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously",
+        "sourceURL": "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously"
       }
     }
   ]
