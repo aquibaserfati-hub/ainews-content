@@ -1,63 +1,55 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-11T00:00:00Z",
-  "reportGeneratedAt": "2026-05-11T09:48:10Z",
+  "reportGeneratedAt": "2026-05-12T08:46:04Z",
   "learnGeneratedAt": "2026-05-11T12:00:00Z",
   "report": [
     {
-      "id": "openai-chatgpt-excel-sheets-global-2026-05-08",
-      "title": "OpenAI ships ChatGPT for Excel and Google Sheets globally for Business",
-      "summary": "ChatGPT Business now includes a spreadsheet-native sidebar in both Excel and Google Sheets worldwide, supporting Skills and connected data sources. Free preview runs through June 2, 2026; after that it draws from plan credits.",
-      "category": "openai",
-      "sourceURL": "https://releasebot.io/updates/openai",
-      "significance": 6
-    },
-    {
-      "id": "openai-gpt-realtime-2-voice-api-2026-05-08",
-      "title": "OpenAI launches GPT-Realtime-2 for production voice agents",
-      "summary": "GPT-Realtime-2 is designed for live voice interactions where the model reasons through requests, calls tools, handles interruptions, and maintains context mid-conversation. This moves realtime audio from call-and-response toward voice interfaces that can actually do work.",
+      "id": "openai-gpt55-instant-default-2026-05-12",
+      "title": "GPT-5.5 Instant rolls out as default ChatGPT model with 128K context",
+      "summary": "OpenAI replaced GPT-5.3 Instant with GPT-5.5 Instant as the default model for all ChatGPT users and the `chat-latest` API alias, expanding the context window from 32K to 128K and adding five-level adjustable reasoning effort for developers. GPT-5.3 stays available for paid users for three more months before retirement.",
       "category": "openai",
       "sourceURL": "https://releasebot.io/updates/openai",
       "significance": 7
     },
     {
-      "id": "anthropic-claude-agent-sdk-outcomes-pricing-2026-05-07",
-      "title": "Anthropic opens Claude Agent SDK externally, ships outcome-based pricing",
-      "summary": "Anthropic opened its Claude Agent SDK to all external developers and introduced outcome-based billing — charging per result delivered, not per token used. That pricing model shift is a structural change builders should account for now.",
-      "category": "anthropic",
-      "sourceURL": "https://aiweekly.co/issues/anthropic-just-had-ais-biggest-week-of-2026",
-      "significance": 8
-    },
-    {
-      "id": "anthropic-claude-code-rate-limits-doubled-2026-05-08",
-      "title": "Anthropic doubles Claude Code rate limits, removes peak-hour restrictions",
-      "summary": "Claude Code rate limits doubled and peak-hour throttling is gone, following Anthropic's SpaceX compute deal that added significant near-term capacity. Direct unblock for teams hitting quota walls in agentic coding workflows.",
-      "category": "anthropic",
-      "sourceURL": "https://aitoolsrecap.com/Blog/MayNews2026.aspx",
+      "id": "openai-gpt55-cyber-eu-2026-05-12",
+      "title": "OpenAI grants EU vetted access to GPT-5.5-Cyber, Anthropic holds out on Mythos",
+      "summary": "OpenAI opened GPT-5.5-Cyber in limited preview to vetted EU cybersecurity teams under its EU Cyber Action Plan, while Anthropic has yet to grant EU regulators preview access to Claude Mythos despite four or five prior meetings. Builders in regulated industries should watch: this divergence in access posture will shape where enterprise security contracts land.",
+      "category": "openai",
+      "sourceURL": "https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html",
       "significance": 7
     },
     {
-      "id": "chinese-labs-coding-sprint-glm51-minimax-kimi-deepseek-v4-2026-05",
-      "title": "Four Chinese labs drop open-weight coding models in 12-day window",
-      "summary": "Z.ai GLM-5.1, MiniMax M2.7, Moonshot Kimi K2.6, and DeepSeek V4 all shipped at roughly the same agentic-engineering capability ceiling as Western frontier models, each priced at less than a third of Claude Opus 4.7. Real demos backed the releases: Zhipu stock rose ~16% on GLM-5.1 launch day.",
-      "category": "otherLLM",
-      "sourceURL": "https://press.airstreet.com/p/state-of-ai-may-2026",
+      "id": "anthropic-claude-security-public-beta-2026-05-12",
+      "title": "Anthropic ships Claude Security in public beta for Enterprise customers",
+      "summary": "Claude Security, which scans code for vulnerabilities and generates proposed fixes powered by Opus 4.7, is now in public beta for all Claude Enterprise customers. It adds scheduled and targeted scans, triage tracking, and workflow integrations — a direct play against dedicated SAST tooling for teams already running Claude Code.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
       "significance": 7
     },
     {
-      "id": "caisi-google-microsoft-xai-predeployment-evals-2026-05-05",
-      "title": "NIST's CAISI adds Google DeepMind, Microsoft, xAI to pre-deployment eval program",
-      "summary": "The Center for AI Standards and Innovation announced agreements with Google DeepMind, Microsoft, and xAI to evaluate models before public launch, extending the framework already covering OpenAI and Anthropic. Every major frontier lab is now inside the pre-deployment testing tent.",
-      "category": "other",
-      "sourceURL": "https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html",
+      "id": "anthropic-claude-code-broad-update-v2-2026-05-12",
+      "title": "Claude Code ships broad v2 update with gateway model discovery and project purge tools",
+      "summary": "The latest Claude Code release adds opt-in gateway model discovery via the `/v1/models` endpoint, a `claude project purge` command that wipes all project state cleanly, stricter `auto` mode classifier rules, and a memory leak fix for long image-heavy sessions. Windows and PowerShell reliability also see targeted fixes.",
+      "category": "anthropic",
+      "sourceURL": "https://github.com/anthropics/claude-code/releases",
       "significance": 6
     },
     {
-      "id": "anthropic-q1-revenue-80x-arr-44b-2026-05-07",
-      "title": "Anthropic Q1 revenue grew 80x YoY, ARR now above $44B",
-      "summary": "Dario Amodei disclosed in an investor letter that Q1 revenue grew 80x year-over-year, putting Anthropic's ARR above $44 billion — the steepest single-quarter jump any frontier AI lab has publicly reported. Enterprise customers spending over $1M/year doubled to 1,000+ in under two months.",
+      "id": "google-fortune-hackers-ai-cyber-warning-2026-05-12",
+      "title": "Google confirms real-world AI-assisted cyberattack in active threat advisory",
+      "summary": "Google issued a public warning after catching attackers using AI to break into computer systems, stopping short of naming the model used and ruling out Gemini and Claude Mythos. The advisory lands as the White House debates an executive order on pre-deployment AI review and CAISI pre-release evaluation agreements expand to Google DeepMind, Microsoft, and xAI.",
+      "category": "google",
+      "sourceURL": "https://fortune.com/2026/05/11/google-catches-hackers-cybersecurity-warning-ai-anthropic-mythos/",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-q1-revenue-80x-2026-05-11",
+      "title": "Anthropic Q1 revenue up 80x year-over-year, 1,000+ customers at $1M+ ARR",
+      "summary": "Anthropic's annualized run-rate surpassed $30B in Q1 2026, up from $9B at end of 2025, driven by enterprise agentic workflows. The number of customers each spending over $1M annualized crossed 1,000 — double the February figure — with the growth outpacing Anthropic's own 10x internal projections by 8x.",
       "category": "anthropic",
-      "sourceURL": "https://aiweekly.co/issues/anthropic-just-had-ais-biggest-week-of-2026",
+      "sourceURL": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
       "significance": 6
     }
   ],
