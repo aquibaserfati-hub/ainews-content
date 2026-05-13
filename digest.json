@@ -1,56 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-11T00:00:00Z",
-  "reportGeneratedAt": "2026-05-12T08:46:04Z",
+  "reportGeneratedAt": "2026-05-13T08:50:16Z",
   "learnGeneratedAt": "2026-05-11T12:00:00Z",
   "report": [
     {
-      "id": "openai-gpt55-instant-default-2026-05-12",
-      "title": "GPT-5.5 Instant rolls out as default ChatGPT model with 128K context",
-      "summary": "OpenAI replaced GPT-5.3 Instant with GPT-5.5 Instant as the default model for all ChatGPT users and the `chat-latest` API alias, expanding the context window from 32K to 128K and adding five-level adjustable reasoning effort for developers. GPT-5.3 stays available for paid users for three more months before retirement.",
-      "category": "openai",
-      "sourceURL": "https://releasebot.io/updates/openai",
-      "significance": 7
-    },
-    {
-      "id": "openai-gpt55-cyber-eu-2026-05-12",
-      "title": "OpenAI grants EU vetted access to GPT-5.5-Cyber, Anthropic holds out on Mythos",
-      "summary": "OpenAI opened GPT-5.5-Cyber in limited preview to vetted EU cybersecurity teams under its EU Cyber Action Plan, while Anthropic has yet to grant EU regulators preview access to Claude Mythos despite four or five prior meetings. Builders in regulated industries should watch: this divergence in access posture will shape where enterprise security contracts land.",
-      "category": "openai",
-      "sourceURL": "https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-claude-security-public-beta-2026-05-12",
-      "title": "Anthropic ships Claude Security in public beta for Enterprise customers",
-      "summary": "Claude Security, which scans code for vulnerabilities and generates proposed fixes powered by Opus 4.7, is now in public beta for all Claude Enterprise customers. It adds scheduled and targeted scans, triage tracking, and workflow integrations — a direct play against dedicated SAST tooling for teams already running Claude Code.",
+      "id": "anthropic-claude-for-legal-2026-05-12",
+      "title": "Anthropic launches Claude for Legal with 12 plugins and 20+ MCP connectors",
+      "summary": "Anthropic shipped 20+ MCP connectors linking Claude to Thomson Reuters CoCounsel, Harvey, DocuSign, Everlaw, and Box, plus 12 practice-area plugins covering M&A diligence, litigation, employment, IP, and AI governance — each with a cold-start interview that learns your team's playbook. A subset of plugins is also deployable as Managed Agents through the Claude API, making this usable both in Cowork and in production pipelines.",
       "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
+      "sourceURL": "https://www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html",
+      "significance": 8
+    },
+    {
+      "id": "google-gemini-intelligence-android-2026-05-12",
+      "title": "Google unveils Gemini Intelligence as Android's new system-wide AI layer",
+      "summary": "At the Android Show I/O Edition, Google announced Gemini Intelligence — a proactive AI layer that handles multi-step app automation, autonomous Chrome browsing, Gboard's Rambler speech-cleanup feature, and natural-language widget creation. Rollout starts on Galaxy S26 and Pixel 10 this summer; the agentic Auto Browse feature is paywalled behind AI Pro/Ultra subscriptions. Announced, not yet shipping.",
+      "category": "google",
+      "sourceURL": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/",
       "significance": 7
     },
     {
-      "id": "anthropic-claude-code-broad-update-v2-2026-05-12",
-      "title": "Claude Code ships broad v2 update with gateway model discovery and project purge tools",
-      "summary": "The latest Claude Code release adds opt-in gateway model discovery via the `/v1/models` endpoint, a `claude project purge` command that wipes all project state cleanly, stricter `auto` mode classifier rules, and a memory leak fix for long image-heavy sessions. Windows and PowerShell reliability also see targeted fixes.",
-      "category": "anthropic",
-      "sourceURL": "https://github.com/anthropics/claude-code/releases",
+      "id": "google-googlebook-laptop-2026-05-12",
+      "title": "Google enters premium laptop market with Googlebook, built around Gemini",
+      "summary": "Google previewed Googlebook — a new Android-based laptop category with a Gemini Intelligence-first design, Magic Pointer for on-screen contextual AI, and native Android app support. Acer, ASUS, Dell, HP, and Lenovo are building devices for a 2026 launch. No pricing, specs, or availability date confirmed yet.",
+      "category": "google",
+      "sourceURL": "https://www.android.com/new-features-on-android/io-2026/",
       "significance": 6
     },
     {
-      "id": "google-fortune-hackers-ai-cyber-warning-2026-05-12",
-      "title": "Google confirms real-world AI-assisted cyberattack in active threat advisory",
-      "summary": "Google issued a public warning after catching attackers using AI to break into computer systems, stopping short of naming the model used and ruling out Gemini and Claude Mythos. The advisory lands as the White House debates an executive order on pre-deployment AI review and CAISI pre-release evaluation agreements expand to Google DeepMind, Microsoft, and xAI.",
-      "category": "google",
+      "id": "openai-deployment-co-launch-2026-05-11",
+      "title": "OpenAI launches DeployCo consulting subsidiary with $4B and acquires Tomoro",
+      "summary": "OpenAI stood up OpenAI Deployment Co. (DeployCo) — a majority-owned consulting firm seeded with $4B to embed forward-deployed engineers at enterprise customers — and simultaneously acquired Tomoro, adding 150 applied AI engineers. The move mirrors Anthropic's earlier Wall Street services JV and Palantir's field-engineering model, signaling both labs now see deployment as a direct revenue line rather than a partner handoff.",
+      "category": "openai",
+      "sourceURL": "https://aibusiness.com/generative-ai/openai-launches-ai-consulting-company-anthropic",
+      "significance": 7
+    },
+    {
+      "id": "google-ai-zero-day-exploit-2026-05-11",
+      "title": "Google confirms first real-world attacker use of AI to find and weaponize a zero-day",
+      "summary": "Google's Threat Intelligence Group identified a case where an attacker used AI — not Google's Gemini or Anthropic's Claude Mythos — to discover and weaponize a zero-day vulnerability; Google says it stopped the planned mass attack. The disclosure lands as the Mythos-triggered federal oversight debate continues, adding hard evidence that offensive AI exploitation has moved from theoretical to operational.",
+      "category": "other",
       "sourceURL": "https://fortune.com/2026/05/11/google-catches-hackers-cybersecurity-warning-ai-anthropic-mythos/",
       "significance": 7
     },
     {
-      "id": "anthropic-q1-revenue-80x-2026-05-11",
-      "title": "Anthropic Q1 revenue up 80x year-over-year, 1,000+ customers at $1M+ ARR",
-      "summary": "Anthropic's annualized run-rate surpassed $30B in Q1 2026, up from $9B at end of 2025, driven by enterprise agentic workflows. The number of customers each spending over $1M annualized crossed 1,000 — double the February figure — with the growth outpacing Anthropic's own 10x internal projections by 8x.",
+      "id": "anthropic-claude-ad-free-commitment-2026-05",
+      "title": "Anthropic commits Claude will stay ad-free as a product trust signal",
+      "summary": "Anthropic published a post explaining why advertising incentives are incompatible with a trustworthy AI assistant and stated Claude will remain ad-free. A public stance, not a shipped product feature — but a notable positioning move as consumer AI products begin exploring ad-supported tiers.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "significance": 6
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 5
     }
   ],
   "learn": [
