@@ -1,157 +1,162 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-11T00:00:00Z",
-  "reportGeneratedAt": "2026-05-13T08:50:16Z",
-  "learnGeneratedAt": "2026-05-11T12:00:00Z",
+  "reportGeneratedAt": "2026-05-14T12:00:00Z",
+  "learnGeneratedAt": "2026-05-14T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-claude-for-legal-2026-05-12",
-      "title": "Anthropic launches Claude for Legal with 12 plugins and 20+ MCP connectors",
-      "summary": "Anthropic shipped 20+ MCP connectors linking Claude to Thomson Reuters CoCounsel, Harvey, DocuSign, Everlaw, and Box, plus 12 practice-area plugins covering M&A diligence, litigation, employment, IP, and AI governance — each with a cold-start interview that learns your team's playbook. A subset of plugins is also deployable as Managed Agents through the Claude API, making this usable both in Cowork and in production pipelines.",
+      "id": "anthropic-enterprise-ai-services-blackstone-goldman-2026-05-04",
+      "title": "Anthropic launches $1.5B enterprise AI services firm with Blackstone and Goldman",
+      "summary": "Anthropic partnered with Blackstone, Hellman & Friedman, and Goldman Sachs to form a standalone AI-native services firm that embeds engineers directly inside mid-sized companies to deploy Claude into core operations. Backed by ~$1.5B in committed capital and a consortium including Apollo, General Atlantic, and Sequoia, this is Anthropic's direct move into the implementation layer historically owned by big consulting.",
       "category": "anthropic",
-      "sourceURL": "https://www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html",
+      "sourceURL": "https://www.anthropic.com/news/enterprise-ai-services-company",
       "significance": 8
     },
     {
-      "id": "google-gemini-intelligence-android-2026-05-12",
-      "title": "Google unveils Gemini Intelligence as Android's new system-wide AI layer",
-      "summary": "At the Android Show I/O Edition, Google announced Gemini Intelligence — a proactive AI layer that handles multi-step app automation, autonomous Chrome browsing, Gboard's Rambler speech-cleanup feature, and natural-language widget creation. Rollout starts on Galaxy S26 and Pixel 10 this summer; the agentic Auto Browse feature is paywalled behind AI Pro/Ultra subscriptions. Announced, not yet shipping.",
+      "id": "openai-codex-goal-workflows-gpt54-2026-05-08",
+      "title": "OpenAI ships persisted /goal workflows and GPT-5.4 to Codex CLI",
+      "summary": "Codex CLI's May 2026 release adds persistent /goal workflows that survive session restarts — give Codex a high-level objective, walk away, and resume later. GPT-5.4 also lands as the new Codex default, adding native computer-use and experimental 1M context support across CLI, IDE extension, and Codex Cloud.",
+      "category": "openai",
+      "sourceURL": "https://developers.openai.com/codex/changelog",
+      "significance": 8
+    },
+    {
+      "id": "anthropic-mythos-cybersecurity-model-2026-04-07",
+      "title": "Anthropic's Mythos model autonomously exploits zero-days, access restricted",
+      "summary": "Claude Mythos Preview autonomously found and exploited a 17-year-old RCE vulnerability in FreeBSD with no human in the loop — Anthropic calls it their most capable model and is restricting access to vetted partners only under Project Glasswing. No public API access yet; builders shouldn't expect this in their stacks soon.",
+      "category": "anthropic",
+      "sourceURL": "https://red.anthropic.com/2026/mythos-preview/",
+      "significance": 9
+    },
+    {
+      "id": "google-gemini-api-3x-updates-veo31-lyria3-2026-05",
+      "title": "Google Gemini API ships Veo 3.1 Lite, Lyria 3, Gemini 3.1 Flash Live, and Flex tiers",
+      "summary": "Google's Gemini API changelog for May 2026 includes Veo 3.1 Lite for cost-efficient video gen, Lyria 3 music models (clips + full-length songs), Gemini 3.1 Flash Live for real-time voice, and new Flex/Priority inference tiers for latency/cost tradeoffs. Builders on Vertex AI and AI Studio can access all of these now.",
       "category": "google",
-      "sourceURL": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/",
+      "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
       "significance": 7
     },
     {
-      "id": "google-googlebook-laptop-2026-05-12",
-      "title": "Google enters premium laptop market with Googlebook, built around Gemini",
-      "summary": "Google previewed Googlebook — a new Android-based laptop category with a Gemini Intelligence-first design, Magic Pointer for on-screen contextual AI, and native Android app support. Acer, ASUS, Dell, HP, and Lenovo are building devices for a 2026 launch. No pricing, specs, or availability date confirmed yet.",
+      "id": "google-android-gemini-intelligence-rebuild-2026-05-12",
+      "title": "Google rebuilds Android around Gemini Intelligence ahead of Apple AI reboot",
+      "summary": "Google's Android chief told CNBC the OS is being restructured around Gemini Intelligence to handle everyday tasks — framing it as a shift from operating system to intelligence system. Gemini also powers part of Apple's AI strategy, giving Google unusual dual-platform leverage.",
       "category": "google",
-      "sourceURL": "https://www.android.com/new-features-on-android/io-2026/",
+      "sourceURL": "https://www.cnbc.com/2026/05/12/google-races-put-gemini-at-center-of-android-before-apples-ai-reboot.html",
       "significance": 6
     },
     {
-      "id": "openai-deployment-co-launch-2026-05-11",
-      "title": "OpenAI launches DeployCo consulting subsidiary with $4B and acquires Tomoro",
-      "summary": "OpenAI stood up OpenAI Deployment Co. (DeployCo) — a majority-owned consulting firm seeded with $4B to embed forward-deployed engineers at enterprise customers — and simultaneously acquired Tomoro, adding 150 applied AI engineers. The move mirrors Anthropic's earlier Wall Street services JV and Palantir's field-engineering model, signaling both labs now see deployment as a direct revenue line rather than a partner handoff.",
+      "id": "openai-codex-bedrock-support-plugin-system-2026-05",
+      "title": "Codex CLI adds first-class AWS Bedrock support and plugin marketplace",
+      "summary": "Codex CLI now ships a built-in Amazon Bedrock model provider with SigV4 signing and configurable AWS profiles, plus a curated plugin marketplace with per-user and per-project scoping. Teams running on AWS can now route Codex through their own Bedrock accounts without any proxy workarounds.",
       "category": "openai",
-      "sourceURL": "https://aibusiness.com/generative-ai/openai-launches-ai-consulting-company-anthropic",
-      "significance": 7
+      "sourceURL": "https://github.com/openai/codex/releases",
+      "significance": 6
     },
     {
-      "id": "google-ai-zero-day-exploit-2026-05-11",
-      "title": "Google confirms first real-world attacker use of AI to find and weaponize a zero-day",
-      "summary": "Google's Threat Intelligence Group identified a case where an attacker used AI — not Google's Gemini or Anthropic's Claude Mythos — to discover and weaponize a zero-day vulnerability; Google says it stopped the planned mass attack. The disclosure lands as the Mythos-triggered federal oversight debate continues, adding hard evidence that offensive AI exploitation has moved from theoretical to operational.",
-      "category": "other",
-      "sourceURL": "https://fortune.com/2026/05/11/google-catches-hackers-cybersecurity-warning-ai-anthropic-mythos/",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-claude-ad-free-commitment-2026-05",
-      "title": "Anthropic commits Claude will stay ad-free as a product trust signal",
-      "summary": "Anthropic published a post explaining why advertising incentives are incompatible with a trustworthy AI assistant and stated Claude will remain ad-free. A public stance, not a shipped product feature — but a notable positioning move as consumer AI products begin exploring ad-supported tiers.",
+      "id": "anthropic-spacex-compute-usage-limits-2026-05",
+      "title": "Anthropic raises Claude usage limits via new SpaceX compute deal",
+      "summary": "Anthropic struck a compute partnership with SpaceX and raised usage limits across its API, addressing the capacity crunch that had been throttling high-volume builders. Run-rate revenue has now surpassed $30B and the number of million-dollar-ARR customers doubled to 1,000 in under two months.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
-      "significance": 5
+      "sourceURL": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "significance": 6
     }
   ],
   "learn": [
     {
-      "id": "claude-agent-sdk-python-2026-05",
-      "name": "Claude Agent SDK (Python)",
-      "category": "anthropic",
-      "oneLineDescription": "Python SDK that wraps Claude's tool-execution loop — write agents without building the loop yourself.",
-      "estimatedSetupMinutes": 5,
-      "detail": {
-        "whatItDoes": "The Claude Agent SDK is Anthropic's Python library that gives you Claude with built-in tool execution. Unlike the raw Anthropic client where you implement the tool loop yourself, the Agent SDK handles the full agentic loop: Claude reasons, decides which tools to call, executes them (Bash, file I/O, glob, web fetch, etc.), and iterates until the task is done. You stream results back with an async generator. The SDK requires the managed-agents-2026-04-01 beta header, which it sets automatically.\n\nAs of this week the SDK is in public beta, and multiagent sessions and Outcomes (rubric-based task evaluation) are available for early access. The same core capability powers Claude Code; the SDK exposes it for teams building their own branded agents on top of Claude infrastructure.",
-        "whoItsFor": "Backend engineers building autonomous coding agents, research pipelines, or document-processing workflows. Also relevant for teams that want to ship Claude-powered products without maintaining their own tool-execution scaffolding. The SDK is a good fit any time your task requires file reads, shell commands, or multi-step iteration rather than a single prompt-response round trip.",
-        "pros": [
-          "No tool loop to maintain — Claude handles retries, tool dispatch, and context management internally",
-          "Drop-in compatibility with Claude Code workflows; CLI sessions and SDK sessions share the same permission model and skill files",
-          "Multiagent support in public beta: one orchestrator can spin up sub-agents and aggregate results",
-          "Streams results incrementally, so long-running tasks don't block",
-          "Outcomes API lets you evaluate agent work against a rubric without writing your own eval harness"
-        ],
-        "cons": [
-          "All Managed Agents endpoints require the managed-agents-2026-04-01 beta header; forgetting it returns a 400 error that can be confusing",
-          "Multiagent and Outcomes are still in research preview — behaviors may change between releases",
-          "Agent SDK costs more per task than a raw client call because the model handles multiple tool rounds internally; budget token use carefully for high-volume workloads"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+\n- An Anthropic API key (`ANTHROPIC_API_KEY` in your environment)\n- The beta header is handled automatically by the SDK, but note you must be on a **Team, Enterprise, or API plan** to access Managed Agents endpoints.\n\n## Install\n\n```bash\npip install claude-agent-sdk\n```\n\n## Minimal working agent\n\n```python\nimport asyncio\nfrom claude_agent_sdk import query, ClaudeAgentOptions\n\nasync def main():\n    async for message in query(\n        prompt=\"List every Python file in the current directory and print the first 5 lines of each.\",\n        options=ClaudeAgentOptions(\n            allowed_tools=[\"Bash\", \"Glob\", \"Read\"]\n        ),\n    ):\n        if hasattr(message, \"result\"):\n            print(message.result)\n\nasyncio.run(main())\n```\n\n## Run with an explicit model\n\n```python\nfrom claude_agent_sdk import query, ClaudeAgentOptions\n\noptions = ClaudeAgentOptions(\n    model=\"claude-sonnet-4-5\",          # or claude-opus-4-7 for heavier tasks\n    allowed_tools=[\"Bash\", \"Read\", \"Write\"],\n    max_turns=20,                        # cap iterations to control cost\n)\n\nasync def run(prompt: str):\n    async for msg in query(prompt=prompt, options=options):\n        print(msg)\n```\n\n## Gotcha: beta header\nThe SDK sets `anthropic-beta: managed-agents-2026-04-01` automatically. If you're hitting a raw API endpoint alongside the SDK (e.g., for logging), **you must add this header manually** or the Managed Agents endpoint will return 400.\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\nclient.beta = \"managed-agents-2026-04-01\"  # raw client path\n```\n\n## Docs\nFull reference: https://code.claude.com/docs/en/agent-sdk/overview",
-        "sourceURL": "https://code.claude.com/docs/en/agent-sdk/overview"
-      }
-    },
-    {
-      "id": "omlx-apple-silicon-llm-server-2026-05",
-      "name": "oMLX",
-      "category": "tooling",
-      "oneLineDescription": "Local LLM inference server for Apple Silicon with SSD KV-cache and a macOS menu bar UI.",
-      "estimatedSetupMinutes": 5,
-      "detail": {
-        "whatItDoes": "oMLX is a Python-based LLM inference server purpose-built for Apple Silicon (M1–M4). It runs on top of the MLX framework and implements continuous batching and a two-tier KV cache: a hot in-memory tier and a cold SSD tier. KV cache persists across sessions and context changes, so long multi-turn coding sessions with tools like Claude Code don't pay the full prefill cost on every request. The server exposes an OpenAI-compatible and Anthropic-compatible REST API on localhost:8000, so any client that points at those endpoints (Claude Code, Codex, Cursor, Cline) works with zero reconfiguration.\n\nThe menu bar app lets you pin frequently used models in memory, auto-swap heavier models on demand, and monitor memory usage without opening a terminal. A web admin dashboard at /admin provides chat, benchmarks, and per-model settings. Supported model types include text LLMs, vision-language models (VLMs), OCR models, embeddings, and rerankers.",
-        "whoItsFor": "Mac developers who want local inference for coding agents (Claude Code, Codex) without paying API costs or sending data to the cloud. Also useful for teams that need offline operation, GDPR compliance, or reproducible inference across low-latency agentic loops. Requires macOS 15 Sequoia and Apple Silicon; not relevant on Intel Macs or non-Apple hardware.",
-        "pros": [
-          "Two-tier KV cache (RAM + SSD) makes long coding-agent sessions fast — context stays cached across requests even when conversation changes",
-          "OpenAI and Anthropic API compatibility means any agent tool works with zero reconfiguration",
-          "Menu bar UI eliminates terminal management for model loading, pinning, and memory monitoring",
-          "Supports multi-model serving with LRU eviction — pin small everyday models, auto-load larger ones on demand",
-          "Fully offline after model download; all CDN dependencies vendored"
-        ],
-        "cons": [
-          "macOS 15 Sequoia and Apple Silicon required — no Linux, no Intel, no Windows",
-          "Benchmark numbers show slightly higher latency versus other inference engines because the cache snapshot overhead is tuned for agent reuse patterns, not single-shot throughput",
-          "VLM continuous batching requires a recent mlx-vlm build; older pinned versions may not support it"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- macOS 15.0+ (Sequoia)\n- Apple Silicon (M1, M2, M3, or M4)\n- Python 3.10+ (Homebrew path: `brew install python@3.12` recommended)\n- Homebrew (https://brew.sh)\n\n## Install via Homebrew (recommended for CLI usage)\n\n```bash\nbrew tap jundot/omlx https://github.com/jundot/omlx\nbrew install omlx\n\n# Run as a background service that auto-restarts on crash\nbrew services start omlx\n```\n\n## OR: Install as a macOS app (menu bar UI)\n\n1. Download the `.dmg` from https://github.com/jundot/omlx/releases\n2. Drag `oMLX.app` to `/Applications`\n3. Launch it — the Welcome screen walks you through setting a model directory and downloading your first model.\n\nThe app includes in-app auto-update; future upgrades are one click. Note: the macOS app does **not** install the `omlx` CLI. If you need both, install the app AND run the Homebrew step.\n\n## Download a model and start the server\n\n```bash\n# Point oMLX at a directory of MLX-format model subdirectories\nomlx serve --model-dir ~/models\n\n# Or persist the path so you don't need the flag every time\nomlx serve --model-dir ~/models  # writes ~/.omlx/settings.json\nomlx serve                        # next run uses saved settings\n```\n\nModels must be in MLX format. Download from Hugging Face:\n\n```bash\n# Example: download Qwen3-Coder (8-bit quantized) with the HF CLI\npip install huggingface_hub\nhuggingface-cli download mlx-community/Qwen3-Coder-Next-8bit \\\n  --local-dir ~/models/Qwen3-Coder-Next-8bit\n```\n\n## Connect Claude Code to oMLX\n\n```bash\n# oMLX provides a one-command launcher that sets ANTHROPIC_BASE_URL,\n# ANTHROPIC_AUTH_TOKEN, and execs Claude Code with the selected model\nomlx launch claude\n```\n\nThis opens a minimal TUI listing loaded models; pick one, press Enter, and Claude Code starts pointing at your local server.\n\n## Verify the server is running\n\n```bash\ncurl http://localhost:8000/v1/models\n# Should return JSON listing all discovered models\n```\n\nAdmin dashboard (chat, benchmark, monitoring): http://localhost:8000/admin\n\n## Gotcha: MCP support is opt-in\nMCP (Model Context Protocol) is not installed by default. Add it:\n\n```bash\n# Homebrew install path\n/opt/homebrew/opt/omlx/libexec/bin/pip install mcp\n\n# Source install\npip install -e \".[mcp]\"\n```",
-        "sourceURL": "https://github.com/jundot/omlx"
-      }
-    },
-    {
-      "id": "openai-realtime-api-gpt-realtime-2-2026-05",
-      "name": "OpenAI Realtime API (GPT-Realtime-2)",
+      "id": "openai-codex-cli-2026-05",
+      "name": "OpenAI Codex CLI",
       "category": "openai",
-      "oneLineDescription": "GPT-5-class speech-to-speech API with 128K context, tool calling, and real-time translation in one endpoint.",
+      "oneLineDescription": "Terminal-native coding agent with persistent goals, AWS Bedrock, and MCP support.",
+      "estimatedSetupMinutes": 5,
+      "detail": {
+        "whatItDoes": "Codex CLI is an open-source, Rust-built coding agent from OpenAI that runs locally in your terminal. It can read, edit, and execute code in your repo, run tests, spawn sub-agents, and now persist high-level /goal workflows across sessions — meaning you can assign an objective, close your laptop, and resume where it left off. The May 2026 release ships GPT-5.4 as the default model, adding native computer-use and experimental 1M context support.\n\nThe CLI connects to Codex Cloud for parallel cloud sandboxes, supports MCP servers for third-party tool integrations, and has a plugin marketplace for extending agent behavior. AWS Bedrock is now a first-class model provider with SigV4 auth, making it practical for teams that already route everything through AWS.",
+        "whoItsFor": "Engineers who want a terminal-first agentic coding workflow and aren't locked into Cursor or VS Code. Particularly useful for teams on AWS (Bedrock support), shops that want to script headless Codex runs in CI/CD via `codex exec`, and solo builders who want long-running background coding tasks that survive laptop restarts.",
+        "pros": [
+          "Persistent /goal workflows survive session restarts — no babysitting long-running agent tasks",
+          "First-class AWS Bedrock support with SigV4 signing, no proxy required",
+          "MCP integration lets you wire in any third-party tool or context source",
+          "Open-source (Rust) with active weekly releases and a public changelog",
+          "Works across macOS, Linux, and Windows (native PowerShell or WSL2)"
+        ],
+        "cons": [
+          "Requires a ChatGPT Plus/Pro/Business/Enterprise plan or API key — not free for heavy use",
+          "No hard spending cap tied to /goal workflows; runaway loops burn tokens until plan-level limits kick in",
+          "GPT-5.4 computer-use is still experimental; don't rely on it for production automation yet"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Node 20+ (`node --version`)\n- A ChatGPT Plus/Pro/Business/Enterprise account **or** an OpenAI API key (`OPENAI_API_KEY`)\n- macOS, Linux, or Windows with PowerShell / WSL2\n\n## Install\n\n```bash\n# Option A: npm (recommended — gets the latest release)\nnpm install -g @openai/codex\n\n# Option B: Homebrew (macOS)\nbrew install --cask codex\n\n# Verify\ncodex --version\n```\n\n## First run\n\n```bash\n# Navigate to your repo\ncd ~/my-project\n\n# Launch interactively — you'll be prompted to sign in on first run\ncodex\n```\n\nAuthenticate with your ChatGPT account or paste your API key when prompted. The key is stored in `~/.codex/config.toml`.\n\n## Try a /goal (persistent workflow)\n\n```bash\n# Inside the Codex TUI, type:\n/goal Write unit tests for all exported functions in src/utils.ts\n\n# Codex persists this goal. Close the terminal, come back later:\ncodex\n/resume\n# Pick the goal from the list to continue where it left off\n```\n\n## Wire in AWS Bedrock\n\n```toml\n# ~/.codex/config.toml\n[model_providers.bedrock]\ntype = \"bedrock\"\naws_profile = \"my-aws-profile\"   # matches ~/.aws/credentials profile name\nregion = \"us-east-1\"\n```\n\n```bash\n# Then select a Bedrock model in the TUI, or:\ncodex --provider bedrock --model anthropic.claude-3-7-sonnet-20250219-v1:0\n```\n\n## Add an MCP server\n\n```bash\n# Example: add agentmemory for cross-session memory\ncodex mcp add agentmemory -- npx -y @agentmemory/mcp\n```\n\n## Headless / CI mode\n\n```bash\n# Run a single task non-interactively (exits when done)\ncodex exec \"Add JSDoc comments to every exported function in src/\"\n\n# Report reasoning-token usage as JSON (useful for cost tracking)\ncodex exec --json \"Refactor auth.ts to use async/await\"\n```\n\n## Gotcha\n`codex exec` no longer shows a \"research preview\" banner — it's production-ready. But if you don't see GPT-5.4 in the model selector, run `codex update` first to get the latest binary.",
+        "sourceURL": "https://github.com/openai/codex"
+      }
+    },
+    {
+      "id": "agentmemory-persistent-coding-agent-memory-2026-05",
+      "name": "agentmemory",
+      "category": "tooling",
+      "oneLineDescription": "MCP-native persistent memory server for Claude Code, Cursor, Codex CLI, and any MCP client.",
+      "estimatedSetupMinutes": 5,
+      "detail": {
+        "whatItDoes": "agentmemory runs a local Node.js server that silently captures what your coding agent does, compresses sessions into a searchable knowledge store (semantic + BM25 hybrid search), and injects the right context at the start of each new session. It exposes 51 MCP tools (memory_smart_search, memory_save, memory_recall, etc.) and plugs into Claude Code, Codex CLI, Cursor, Gemini CLI, and any other MCP-compatible client via a single `npx` command.\n\nUnder the hood it uses SQLite for state, all-MiniLM-L6-v2 for local embeddings (no API key required), and a knowledge graph for entity relationships. A real-time viewer UI runs at localhost:3113, showing session replays, memory timelines, and a governance audit trail. The project self-describes as the #1 persistent memory solution for AI coding agents based on real-world benchmarks — claims backed by published LONGMEMEVAL and comparison benchmarks in the repo.",
+        "whoItsFor": "Anyone using Claude Code, Codex CLI, Cursor, or Gemini CLI for non-trivial engineering work where context loss across sessions costs time. Especially useful for long-running projects where the agent needs to remember architectural decisions, recurring bugs, and team conventions without cramming them into a 200-line CLAUDE.md file.",
+        "pros": [
+          "Zero external databases — runs entirely local with SQLite and a local embedding model",
+          "Works with any agent that speaks MCP or HTTP; one server serves all agents simultaneously",
+          "Session replay viewer lets you scrub through past agent runs like a debugger",
+          "No API key needed for embeddings — uses local all-MiniLM-L6-v2",
+          "Actively maintained with weekly releases; 5k+ GitHub stars and growing"
+        ],
+        "cons": [
+          "Still pre-1.0 (v0.9.x) — the changelog is full of meaningful bug fixes, including a search regression in v0.9.5 fixed in v0.9.6",
+          "Single maintainer project; governance plan exists but execution depends on one person",
+          "Sandboxed MCP clients (Flatpak, Snap, restrictive containers) need extra env var config to reach localhost"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Node 18+ (`node --version`)\n- Claude Code, Codex CLI, Cursor, or any MCP-compatible agent already installed\n\n## Start the memory server\n\n```bash\n# Terminal 1 — keep this running\nnpx @agentmemory/agentmemory\n\n# Verify it's up\ncurl http://localhost:3111/agentmemory/health\n# Should return: {\"status\":\"ok\",...}\n\n# Optional: open the real-time viewer\nopen http://localhost:3113\n```\n\n## Wire into Claude Code\n\n```bash\n# Inside Claude Code, run:\n/plugin marketplace add rohitg00/agentmemory\n/plugin install agentmemory\n# This registers 12 hooks, 4 skills, and auto-wires the MCP server\n```\n\n## Wire into Codex CLI\n\n```bash\n# One-liner MCP registration\ncodex mcp add agentmemory -- npx -y @agentmemory/mcp\n\n# Or manually in ~/.codex/config.toml:\n# [mcp_servers.agentmemory]\n# type = \"local\"\n# command = [\"npx\", \"-y\", \"@agentmemory/mcp\"]\n# enabled = true\n```\n\n## Wire into Cursor or Gemini CLI\n\nAdd to your MCP config JSON (location varies by client):\n\n```json\n{\n  \"mcpServers\": {\n    \"agentmemory\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@agentmemory/mcp\"]\n    }\n  }\n}\n```\n\n## Seed and test recall\n\n```bash\n# Seeds 3 realistic sessions and runs semantic searches against them\nnpx @agentmemory/agentmemory demo\n```\n\n## Import existing Claude Code session history\n\n```bash\n# Import all JSONL transcripts under ~/.claude/projects\nnpx @agentmemory/agentmemory import-jsonl\n```\n\n## Gotcha\nIf you're on v0.9.5 and `memory_smart_search` returns empty results for memories you saved with `memory_save`, upgrade immediately — this was a known regression fixed in v0.9.6: `npx @agentmemory/agentmemory@latest`.",
+        "sourceURL": "https://github.com/rohitg00/agentmemory"
+      }
+    },
+    {
+      "id": "google-gemini-api-veo31-lyria3-2026-05",
+      "name": "Gemini API: Veo 3.1 Lite + Lyria 3",
+      "category": "google",
+      "oneLineDescription": "Google's new cost-efficient video gen and full-length music generation models, live in the Gemini API.",
+      "estimatedSetupMinutes": 10,
+      "detail": {
+        "whatItDoes": "Google's May 2026 Gemini API update ships two new generative media models builders can call directly. Veo 3.1 Lite (`veo-3.1-lite-generate-preview`) is the most cost-efficient video generation model in the Veo family, designed for high-volume applications and rapid iteration — it now supports 4K output resolution and portrait video in all resolutions. Lyria 3 ships in two variants: `lyria-3-clip-preview` for 30-second clips and `lyria-3-pro-preview` for full-length songs, making it the first GA-track music generation API from a major frontier lab.\n\nBoth are available via the standard Gemini API and Vertex AI. The same update also launched Flex and Priority inference tiers, letting you trade latency for cost on any Gemini model call — Flex is cheaper for batch/async workloads, Priority is for latency-sensitive production paths.",
+        "whoItsFor": "Builders adding generative video or music to products — marketing tools, creative apps, social media automation, game asset pipelines. Also relevant for any team already using the Gemini API who wants to optimize inference costs with the new Flex tier rather than switching providers.",
+        "pros": [
+          "Lyria 3 Pro generates full-length songs via API — first from a major lab at this quality level",
+          "Veo 3.1 Lite adds 4K and portrait video support, useful for mobile-first apps",
+          "Flex/Priority tiers let you tune cost vs. latency on existing Gemini model calls without code changes",
+          "All three features available on Vertex AI for enterprise data residency requirements"
+        ],
+        "cons": [
+          "Both Veo 3.1 Lite and Lyria 3 are still in preview — not GA, subject to breaking changes",
+          "Video generation latency is still measured in seconds-to-minutes; not suitable for real-time interactive use cases"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- A Google Cloud project with billing enabled\n- Gemini API key from [Google AI Studio](https://aistudio.google.com/) **or** a Vertex AI service account\n- Python 3.9+ with `google-genai` SDK\n\n## Install the SDK\n\n```bash\npip install google-genai\n```\n\n## Generate a short video with Veo 3.1 Lite\n\n```python\nimport google.generativeai as genai\nimport os, time\n\ngenai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n\nclient = genai.Client()\n\n# Start async video generation\noperation = client.models.generate_videos(\n    model=\"veo-3.1-lite-generate-preview\",\n    prompt=\"A timelapse of a city skyline at dusk, portrait orientation, 4K\",\n    config={\n        \"number_of_videos\": 1,\n        \"duration_seconds\": 8,\n        \"aspect_ratio\": \"9:16\",   # portrait\n        \"resolution\": \"4k\",\n    }\n)\n\n# Poll until done\nwhile not operation.done:\n    time.sleep(10)\n    operation = client.operations.get(operation)\n\nfor video in operation.response.generated_videos:\n    print(video.video.uri)  # download or embed this URI\n```\n\n## Generate a music clip with Lyria 3\n\n```python\nimport google.generativeai as genai\nimport os\n\ngenai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\nclient = genai.Client()\n\n# 30-second clip\nresponse = client.models.generate_audio(\n    model=\"lyria-3-clip-preview\",\n    prompt=\"Upbeat lo-fi hip hop, 90 BPM, warm Rhodes piano, light vinyl crackle\",\n)\nwith open(\"clip.mp3\", \"wb\") as f:\n    f.write(response.audio_data)\n\n# Full-length song (lyria-3-pro-preview)\nresponse = client.models.generate_audio(\n    model=\"lyria-3-pro-preview\",\n    prompt=\"Cinematic orchestral intro building to a full ensemble, 3 minutes\",\n)\nwith open(\"song.mp3\", \"wb\") as f:\n    f.write(response.audio_data)\n```\n\n## Use Flex tier to cut costs on batch workloads\n\n```python\nresponse = client.models.generate_content(\n    model=\"gemini-3.1-pro-preview\",\n    contents=\"Summarize this 50-page document: ...\",\n    config={\"inference_tier\": \"flex\"}   # cheaper, higher latency\n)\n```\n\n## Gotcha\nVeo and Lyria preview endpoints require the `v1beta` API path — if you're hitting 404s, check that your SDK version is ≥ 1.15.0 (`pip install --upgrade google-genai`) and that your project has the `Generative Language API` enabled in Cloud Console.",
+        "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog"
+      }
+    },
+    {
+      "id": "ml-intern-huggingface-agentic-ml-2026-05",
+      "name": "ml-intern",
+      "category": "tooling",
+      "oneLineDescription": "Autonomous ML agent that researches, fine-tunes, and ships Hugging Face models without babysitting.",
       "estimatedSetupMinutes": 15,
       "detail": {
-        "whatItDoes": "The OpenAI Realtime API now includes three new models released May 7, 2026. GPT-Realtime-2 is the flagship: a speech-to-speech model with GPT-5-class reasoning, a 128K token context window (up from 32K), adjustable reasoning effort (minimal to xhigh), parallel tool calling, and built-in recovery from interruptions. It keeps the conversation moving while it calls tools, emitting a preamble (e.g. 'let me check that') so users don't sit in silence. GPT-Realtime-Translate handles live speech translation across 70+ input languages into 13 output languages at $0.034/min. GPT-Realtime-Whisper provides streaming speech-to-text at $0.017/min for live captions and meeting notes.\n\nAll three models live in the Realtime API and Playground. They replace the stitched-together stack (Whisper + ElevenLabs + your own reasoning hop) that most voice agent teams were running, collapsing it into one API call with one billing line.",
-        "whoItsFor": "Developers building voice agents, customer support bots, live transcription services, or multilingual products. GPT-Realtime-2 is the right default for any voice agent that needs to call tools or handle complex requests. GPT-Realtime-Translate targets cross-border support and global education platforms. GPT-Realtime-Whisper fits live captioning, healthcare documentation, and post-call summarization pipelines.",
+        "whatItDoes": "ml-intern is an open-source agent that operates as an autonomous ML engineer inside the Hugging Face ecosystem. Given a natural-language task — 'fine-tune a sentiment classifier on this dataset' or 'find and benchmark the best small model for legal NER' — it reads relevant papers, hunts down HF datasets, writes training code, runs fine-tuning in a sandbox (up to 300 agentic iterations), uploads training traces to a private HF dataset, and pushes model weights to HF Hub when done.\n\nIt exposes two modes: interactive chat for exploration, and single-prompt headless execution for fully autonomous runs. Every agent run produces a debuggable, shareable session trace on Hugging Face — not a vanished terminal session. Approval gates are built in for sensitive operations like pushing to Hub or deleting datasets.",
+        "whoItsFor": "ML engineers and researchers who spend the back half of their time on repetitive fine-tuning, dataset search, and benchmarking tasks rather than novel modeling. Also useful for small teams that want to run overnight ML experiments without building custom orchestration.",
         "pros": [
-          "128K context window enables long agentic voice sessions without external state stitching",
-          "Single API replaces a 3-component stack (transcription + reasoning + synthesis), reducing latency and ops complexity",
-          "Parallel tool calls with preambles eliminate dead-air pauses during tool execution",
-          "GPT-Realtime-Translate at $0.034/min undercuts most competing translation services",
-          "EU Data Residency supported for GDPR-constrained deployments"
+          "Full HF ecosystem integration — datasets, models, training traces all land in your HF account automatically",
+          "Session traces are replayable HF datasets, not vanished shell logs — every run is auditable",
+          "Headless single-prompt mode works well in CI/CD for scheduled fine-tuning jobs",
+          "Built-in approval gates prevent accidental writes to production Hub repos"
         ],
         "cons": [
-          "GPT-Realtime-2 is billed by audio tokens ($32/1M input, $64/1M output) — high-volume call centers should model costs carefully before migrating from per-minute pricing",
-          "Output language coverage for Translate is limited to 13 languages despite 70+ input languages — niche language pairs still require alternatives",
-          "Adjustable reasoning effort defaults to 'low'; xhigh effort adds latency that may feel unnatural in fast conversational turns"
+          "300-iteration cap means very long fine-tuning jobs may not complete end-to-end in one run",
+          "Tightly coupled to HF ecosystem — less useful if your model registry or data is elsewhere",
+          "GPU compute costs are still your problem; the agent doesn't provision infra"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Node 20+ or Python 3.10+\n- An OpenAI API key with Realtime API access\n- `OPENAI_API_KEY` set in your environment\n- Optional: install the OpenAI Node or Python SDK (v4.x+)\n\n## Install the SDK\n\n```bash\n# Node\nnpm install openai\n\n# Python\npip install openai\n```\n\n## Minimal GPT-Realtime-2 session (Node / WebSocket)\n\n```typescript\nimport OpenAI from \"openai\";\n\nconst client = new OpenAI();\n\n// Create a Realtime session\nconst session = await client.beta.realtime.sessions.create({\n  model: \"gpt-realtime-2\",\n  voice: \"alloy\",\n  modalities: [\"audio\", \"text\"],\n  instructions: \"You are a helpful voice assistant.\",\n  // Reasoning effort: \"minimal\" | \"low\" | \"medium\" | \"high\" | \"xhigh\"\n  // Default is \"low\" — good for most conversational use cases\n});\n\nconsole.log(\"Session ID:\", session.id);\nconsole.log(\"Client secret:\", session.client_secret.value);\n// Use client_secret.value with WebRTC or WebSocket transport\n```\n\n## Connect via WebSocket and send audio\n\n```typescript\nimport WebSocket from \"ws\";\n\nconst ws = new WebSocket(\n  \"wss://api.openai.com/v1/realtime?model=gpt-realtime-2\",\n  {\n    headers: {\n      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,\n      \"OpenAI-Beta\": \"realtime=v1\",\n    },\n  }\n);\n\nws.on(\"open\", () => {\n  // Configure the session\n  ws.send(JSON.stringify({\n    type: \"session.update\",\n    session: {\n      modalities: [\"audio\", \"text\"],\n      voice: \"alloy\",\n      // Add tools here if your agent needs to call APIs\n      tools: [],\n    },\n  }));\n});\n\nws.on(\"message\", (data) => {\n  const event = JSON.parse(data.toString());\n  if (event.type === \"response.audio.delta\") {\n    // Stream audio bytes to your output device\n    const audioChunk = Buffer.from(event.delta, \"base64\");\n    // write to speaker / stream to client\n  }\n});\n```\n\n## Live translation (GPT-Realtime-Translate)\n\n```typescript\nconst session = await client.beta.realtime.sessions.create({\n  model: \"gpt-realtime-translate\",\n  // Input: spoken language detected automatically from 70+ supported\n  // Output: one of the 13 supported output languages\n  output_language: \"en\",\n});\n```\n\n## Streaming transcription only (GPT-Realtime-Whisper)\n\n```typescript\nconst session = await client.beta.realtime.sessions.create({\n  model: \"gpt-realtime-whisper\",\n  modalities: [\"text\"],  // text only — returns transcripts, no audio output\n});\n// Billed at $0.017 / minute\n```\n\n## Gotcha: reasoning effort vs. latency\nLeaving reasoning at `xhigh` makes GPT-Realtime-2 pause noticeably before answering simple questions. Use `low` (default) for conversational turns and only escalate to `high`/`xhigh` when the task requires multi-step reasoning (e.g. complex tool orchestration).\n\n## Pricing summary\n| Model | Pricing |\n|---|---|\n| GPT-Realtime-2 | $32 / 1M audio input tokens; $64 / 1M audio output tokens |\n| GPT-Realtime-Translate | $0.034 / minute |\n| GPT-Realtime-Whisper | $0.017 / minute |\n\n## Docs\nhttps://platform.openai.com/docs/guides/realtime",
-        "sourceURL": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/"
-      }
-    },
-    {
-      "id": "anthropic-claude-code-auto-mode-2026-05",
-      "name": "Claude Code Auto Mode",
-      "category": "anthropic",
-      "oneLineDescription": "Runs multi-step Claude Code sessions without per-action approval prompts, using a two-stage safety classifier.",
-      "estimatedSetupMinutes": 2,
-      "detail": {
-        "whatItDoes": "Claude Code Auto Mode, launched in late March 2026 and now generally available, removes the per-action approval prompts that previously interrupted long coding sessions. A two-stage classifier evaluates each proposed action before execution: a fast initial filter passes obviously safe operations (reading files, running tests) instantly, while ambiguous or high-impact operations (modifying production configs, pushing to remote branches) escalate to deeper analysis and may still pause for human approval. The spinner turns red when a permission check fires, giving a clear visual signal.\n\nAuto Mode is distinct from fully disabling permissions (--dangerously-skip-permissions). It does not bypass safety checks; it automates the routine approval decisions while preserving gates for sensitive operations. Enterprise admins can disable it org-wide via managed settings. Hard deny rules, introduced in the latest Claude Code update, let teams block specific operation classes even in Auto Mode.",
-        "whoItsFor": "Developers running large refactors, migrations, or long exploratory tasks where repeated approval dialogs break flow. Also relevant for CI/CD pipelines where Claude Code runs headless on scheduled tasks via Dispatch. Enterprise teams with compliance requirements should use managed settings to configure Auto Mode org-wide rather than leaving it to individual users.",
-        "pros": [
-          "Eliminates approval fatigue on safe operations without giving up safety gates on high-impact actions",
-          "Visual feedback (red spinner) makes it clear when Auto Mode is pausing for a real approval — not silent",
-          "Hard deny rules let teams permanently block operation classes (e.g. remote git pushes) regardless of Auto Mode state",
-          "Works with Claude Sonnet 4.5 (default) and Opus 4.6/4.7 — no model-specific setup needed",
-          "Enterprise admins can disable it organization-wide with a single managed settings key"
-        ],
-        "cons": [
-          "Still a research preview for some multi-agent sub-agent workflows — behavior may be refined",
-          "Auto Mode does not cover every scenario; some operations the classifier is uncertain about will still interrupt you",
-          "AutoDream tasks run 10–20 classifier steps per complex prompt, which adds token overhead on long sessions"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Claude Code installed: `npm install -g @anthropic-ai/claude-code` (v2.1+)\n- An Anthropic API key or a Claude Pro/Team/Enterprise plan\n- Update to the latest version: `claude update`\n\n## Enable Auto Mode\n\n**From the CLI:**\n\n```bash\nclaude --enable-auto-mode\n```\n\n**Toggle mid-session:**\nPress `Shift+Tab` to toggle Auto Mode on or off inside a running Claude Code session.\n\n**From VS Code extension:**\nOpen Claude Code sidebar → Settings → Enable Auto Mode.\n\n## Verify Auto Mode is active\n\n```bash\nclaude --status\n# Should show: Auto Mode: enabled\n```\n\nWhen active, watch the spinner in the top-left of the terminal panel. It turns **red** when a permission check fires and Auto Mode is pausing for approval.\n\n## Set hard deny rules (block specific operations regardless of Auto Mode)\n\nCreate or edit `.claude/settings.json` in your project root:\n\n```json\n{\n  \"autoMode\": {\n    \"hardDenyRules\": [\n      { \"tool\": \"Bash\", \"pattern\": \"git push\" },\n      { \"tool\": \"Bash\", \"pattern\": \"rm -rf\" }\n    ]\n  }\n}\n```\n\nThese rules apply even when `--dangerously-skip-permissions` is set.\n\n## Disable org-wide (Enterprise admins)\n\nIn your organization's managed settings JSON (configured via Claude Console):\n\n```json\n{\n  \"disableAutoMode\": \"disable\"\n}\n```\n\nThis prevents any user in the org from enabling Auto Mode, regardless of local settings.\n\n## Gotcha: OAuth + CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS\nIf your deployment sets `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1`, older versions had a bug where OAuth auth entered a 401 retry loop when Auto Mode was active. Update to v2.1.128+ to get the fix:\n\n```bash\nclaude update\n```\n\n## Docs\nhttps://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously",
-        "sourceURL": "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously"
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+\n- A Hugging Face account with a write-access token (`HF_TOKEN`)\n- GPU access recommended for fine-tuning (local, Lambda, or RunPod); CPU works for benchmarking tasks\n\n## Install\n\n```bash\n# Clone the repo\ngit clone https://github.com/huggingface/ml-intern\ncd ml-intern\n\n# Install dependencies\npip install -e .\n```\n\n## Configure\n\n```bash\nexport HF_TOKEN=\"hf_your_token_here\"\nexport HF_USERNAME=\"your-hf-username\"   # traces and weights upload here\n\n# Optional: set a default model provider (defaults to HF Inference API)\nexport ML_INTERN_PROVIDER=\"openai\"       # or \"anthropic\", \"hf\"\nexport OPENAI_API_KEY=\"sk-...\"\n```\n\n## Interactive mode\n\n```bash\npython -m ml_intern chat\n\n# Inside the chat:\n# > Find the best small (<1B) English sentiment model on HF and benchmark it on SST-2\n# > Fine-tune distilbert-base-uncased on my dataset hf://datasets/my-org/reviews\n```\n\n## Headless single-prompt execution\n\n```bash\n# Fully autonomous — runs until done or 300 iterations\npython -m ml_intern run \\\n  \"Fine-tune microsoft/deberta-v3-small on glue/mrpc for 3 epochs. \\\n   Push weights to $HF_USERNAME/deberta-mrpc-finetuned.\"\n\n# Watch progress — traces upload to HF as they accumulate\n# https://huggingface.co/datasets/$HF_USERNAME/ml-intern-traces\n```\n\n## Run a benchmark-only task (no GPU needed)\n\n```bash\npython -m ml_intern run \\\n  \"Compare the top 5 English NER models under 500M params on CoNLL-2003. \\\n   Report F1, latency on CPU, and model size.\"\n```\n\n## Gotcha\nThe agent's default approval gate **will pause and ask you before pushing anything to HF Hub**. If you're running headless in CI and want fully non-interactive behavior, set `ML_INTERN_AUTO_APPROVE=hub_push` in your env — but be careful: this also auto-approves dataset writes. Scope it narrowly.",
+        "sourceURL": "https://github.com/huggingface/ml-intern"
       }
     }
   ]
