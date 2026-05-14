@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-30T18:00:00Z",
+  "updatedAt": "2026-05-14T12:00:00Z",
   "tracks": [
     {
       "id": "beginner",
@@ -65,6 +65,61 @@
               "id": "step-7",
               "title": "You're done",
               "body": "You now have Claude Code installed, authenticated, and running in your local projects. From here, the next lesson (\"Setting up Cursor\") covers the editor-based AI workflow as a complement to the terminal-based one you just installed.\n\nTo run Claude Code on any future project, just `cd` into the directory and run `claude`. It picks up the credentials from the first run automatically.",
+              "stepType": "read",
+              "validationHint": null
+            }
+          ]
+        },
+        {
+          "id": "setup-github-copilot",
+          "trackId": "beginner",
+          "title": "Setting up GitHub Copilot",
+          "oneLineDescription": "Install Copilot in VS Code and get AI completions working in under 10 minutes.",
+          "estimatedMinutes": 10,
+          "category": "tooling",
+          "prerequisites": [],
+          "youtubeURL": null,
+          "isProContent": false,
+          "steps": [
+            {
+              "id": "step-1",
+              "title": "What GitHub Copilot is",
+              "body": "GitHub Copilot is an AI coding assistant built into VS Code, JetBrains, and other editors. It autocompletes code inline as you type — you press Tab to accept, Esc to dismiss.\n\nCopilot is trained on public GitHub code, which makes it especially strong at common patterns: API calls, test boilerplate, utility functions, and config files. It complements Claude Code (terminal) and Cursor (agentic edits) by giving you fast inline suggestions without switching context.",
+              "stepType": "read",
+              "validationHint": null
+            },
+            {
+              "id": "step-2",
+              "title": "Install VS Code if needed",
+              "body": "Copilot works in any VS Code-compatible editor. If you don't have VS Code:\n\n```bash\nbrew install --cask visual-studio-code\n```\n\nOr download from [code.visualstudio.com](https://code.visualstudio.com). Launch it once to verify it opens without errors.",
+              "stepType": "verify",
+              "validationHint": "code --version prints a version string"
+            },
+            {
+              "id": "step-3",
+              "title": "Install the Copilot extension",
+              "body": "In VS Code, open the Extensions panel (`⌘+Shift+X`) and search for **GitHub Copilot**. Install the extension published by GitHub (not a third-party clone).\n\nAlternatively, install from the terminal:\n\n```bash\ncode --install-extension GitHub.copilot\n```\n\nYou'll also want the Copilot Chat extension for multi-turn conversations:\n\n```bash\ncode --install-extension GitHub.copilot-chat\n```",
+              "stepType": "runCommand",
+              "validationHint": "the GitHub Copilot icon appears in the VS Code status bar"
+            },
+            {
+              "id": "step-4",
+              "title": "Sign in with your GitHub account",
+              "body": "Click the Copilot icon in the VS Code status bar and select **Sign in to GitHub**. This opens a browser OAuth flow.\n\nCopilot requires a GitHub Copilot subscription — individual plans start at $10/month, or it's included in GitHub Pro/Team. If you're a student, GitHub Education includes Copilot for free at [education.github.com](https://education.github.com).\n\nOnce signed in, the status bar icon should show Copilot as active (no warning icon).",
+              "stepType": "verify",
+              "validationHint": "Copilot status bar icon shows active, no sign-in prompt"
+            },
+            {
+              "id": "step-5",
+              "title": "Try your first inline completion",
+              "body": "Create a new file `utils.js` and start typing:\n\n```javascript\n// format a date as YYYY-MM-DD\nfunction formatDate(\n```\n\nCopilot should suggest the rest of the function body in grey ghost text. Press **Tab** to accept, or keep typing to dismiss and trigger a new suggestion.\n\nIf no suggestion appears after 2 seconds, check that Copilot is enabled for JavaScript: click the Copilot status bar icon → **Enable Completions for JavaScript**.",
+              "stepType": "verify",
+              "validationHint": "Copilot shows a grey ghost text suggestion after you start the function signature"
+            },
+            {
+              "id": "step-6",
+              "title": "You're done",
+              "body": "You now have GitHub Copilot completing code inline as you type. The next lesson (Setting up Cursor) covers agent-mode edits — where the AI makes multi-file changes rather than completing single lines.\n\nThe two tools work together: Copilot for fast inline autocomplete, Cursor for larger architectural changes.",
               "stepType": "read",
               "validationHint": null
             }
@@ -198,6 +253,70 @@
           ]
         },
         {
+          "id": "vercel-ai-sdk",
+          "trackId": "intermediate",
+          "title": "Building a chat UI with the Vercel AI SDK",
+          "oneLineDescription": "Wire up streaming AI responses in a Next.js app in under 30 minutes.",
+          "estimatedMinutes": 30,
+          "category": "tooling",
+          "prerequisites": [
+            "setup-claude-code"
+          ],
+          "youtubeURL": null,
+          "isProContent": false,
+          "steps": [
+            {
+              "id": "step-1",
+              "title": "What the Vercel AI SDK is",
+              "body": "The Vercel AI SDK (`ai` package) is a TypeScript library that makes it easy to stream AI responses from any model provider — Anthropic, OpenAI, Google — directly to your frontend. It handles the hard parts: SSE streaming, React hooks, tool calls, and structured output.\n\nYou write `streamText(...)` on the server and use `useChat()` on the client. The UI updates token-by-token without you writing a single byte of streaming code.",
+              "stepType": "read",
+              "validationHint": null
+            },
+            {
+              "id": "step-2",
+              "title": "Create a Next.js app",
+              "body": "```bash\nnpx create-next-app@latest ai-chat --typescript --app --no-tailwind\ncd ai-chat\n```\n\nThis scaffolds a Next.js 15 app with the App Router, which is required for the AI SDK's streaming route handlers.",
+              "stepType": "runCommand",
+              "validationHint": "package.json shows next 15.x as a dependency"
+            },
+            {
+              "id": "step-3",
+              "title": "Install the AI SDK and Anthropic provider",
+              "body": "```bash\nnpm install ai @ai-sdk/anthropic\n```\n\nCreate a `.env.local` file:\n\n```\nANTHROPIC_API_KEY=sk-ant-your-key-here\n```\n\nAdd `.env.local` to `.gitignore` immediately.",
+              "stepType": "runCommand",
+              "validationHint": "node_modules/ai and node_modules/@ai-sdk/anthropic exist"
+            },
+            {
+              "id": "step-4",
+              "title": "Create the streaming API route",
+              "body": "Create `app/api/chat/route.ts`:\n\n```typescript\nimport { anthropic } from '@ai-sdk/anthropic';\nimport { streamText } from 'ai';\n\nexport async function POST(req: Request) {\n  const { messages } = await req.json();\n  const result = streamText({\n    model: anthropic('claude-sonnet-4-6'),\n    messages,\n  });\n  return result.toDataStreamResponse();\n}\n```\n\nThis is the entire backend. `streamText` calls Anthropic, and `toDataStreamResponse()` handles the streaming response format the client expects.",
+              "stepType": "runCommand",
+              "validationHint": "app/api/chat/route.ts exists with the streamText handler"
+            },
+            {
+              "id": "step-5",
+              "title": "Build the chat UI",
+              "body": "Replace `app/page.tsx`:\n\n```typescript\n'use client';\nimport { useChat } from 'ai/react';\n\nexport default function Chat() {\n  const { messages, input, handleInputChange, handleSubmit } = useChat();\n  return (\n    <main style={{ maxWidth: 600, margin: '40px auto', padding: '0 16px' }}>\n      <div>\n        {messages.map(m => (\n          <div key={m.id} style={{ marginBottom: 16 }}>\n            <strong>{m.role === 'user' ? 'You' : 'Claude'}:</strong>\n            <p style={{ margin: '4px 0' }}>{m.content}</p>\n          </div>\n        ))}\n      </div>\n      <form onSubmit={handleSubmit}>\n        <input\n          value={input}\n          onChange={handleInputChange}\n          placeholder=\"Ask Claude anything...\"\n          style={{ width: '100%', padding: 8, fontSize: 16 }}\n        />\n      </form>\n    </main>\n  );\n}\n```\n\n`useChat()` wires the form to your `/api/chat` route and updates messages as tokens stream in.",
+              "stepType": "runCommand",
+              "validationHint": "app/page.tsx contains the useChat hook"
+            },
+            {
+              "id": "step-6",
+              "title": "Run and test it",
+              "body": "```bash\nnpm run dev\n```\n\nOpen [localhost:3000](http://localhost:3000). Type a message and press Enter. You should see Claude's response stream in word-by-word.\n\nIf you see an error about the API key, verify `.env.local` exists and restart the dev server — Next.js reads env files at startup.",
+              "stepType": "verify",
+              "validationHint": "Claude's response streams in token-by-token in the browser"
+            },
+            {
+              "id": "step-7",
+              "title": "You're done",
+              "body": "You built a streaming AI chat UI in about 30 lines of code. The Vercel AI SDK handles all the streaming plumbing — you just call `streamText` and `useChat`.\n\nFrom here: add tool calls (`tools` param in `streamText`), structured output (`generateObject`), or swap the model to `openai('gpt-4o')` with zero API changes.",
+              "stepType": "read",
+              "validationHint": null
+            }
+          ]
+        },
+        {
           "id": "mcp-claude-desktop",
           "trackId": "intermediate",
           "title": "Wiring up MCP for Claude Desktop",
@@ -315,6 +434,70 @@
               "id": "step-6",
               "title": "You're done",
               "body": "You've run your first parallel agent session. The speed gain depends on the task — highly parallelizable work (independent API + independent tests) can cut wall-clock time roughly in half. Non-parallelizable work (anything where A blocks B) is unchanged.\n\nThe next Advanced lesson shows how to apply this same parallel pattern to Cloudflare Worker deployment, where the Worker code and the iOS client integration can be developed simultaneously.",
+              "stepType": "read",
+              "validationHint": null
+            }
+          ]
+        },
+        {
+          "id": "build-mcp-server",
+          "trackId": "advanced",
+          "title": "Building your own MCP server",
+          "oneLineDescription": "Write a custom MCP server in TypeScript and connect it to Claude Desktop.",
+          "estimatedMinutes": 35,
+          "category": "anthropic",
+          "prerequisites": [
+            "mcp-claude-desktop"
+          ],
+          "youtubeURL": null,
+          "isProContent": false,
+          "steps": [
+            {
+              "id": "step-1",
+              "title": "Why build a custom MCP server",
+              "body": "The pre-built MCP servers (filesystem, GitHub, Postgres) cover common cases. But the real power of MCP is building servers for YOUR tools — your company's internal API, a proprietary database, a CLI you use daily.\n\nOnce you write an MCP server for something, every MCP-compatible client (Claude Desktop, Claude Code, Cursor, any future client) can use it without you writing any client-side integration code.",
+              "stepType": "read",
+              "validationHint": null
+            },
+            {
+              "id": "step-2",
+              "title": "Scaffold the project",
+              "body": "```bash\nmkdir my-mcp-server && cd my-mcp-server\nnpm init -y\nnpm install @modelcontextprotocol/sdk\nnpm install -D typescript @types/node ts-node\nnpx tsc --init\n```\n\nIn `tsconfig.json`, set `\"module\": \"nodenext\"` and `\"moduleResolution\": \"nodenext\"`.",
+              "stepType": "runCommand",
+              "validationHint": "node_modules/@modelcontextprotocol/sdk exists"
+            },
+            {
+              "id": "step-3",
+              "title": "Write a minimal server",
+              "body": "Create `src/index.ts`:\n\n```typescript\nimport { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';\nimport { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';\nimport { z } from 'zod';\n\nconst server = new McpServer({ name: 'my-tools', version: '1.0.0' });\n\nserver.tool(\n  'get_time',\n  'Returns the current UTC time',\n  {},\n  async () => ({\n    content: [{ type: 'text', text: new Date().toISOString() }]\n  })\n);\n\nconst transport = new StdioServerTransport();\nawait server.connect(transport);\n```\n\nThis exposes one tool: `get_time`. Claude can call it when the user asks what time it is.",
+              "stepType": "runCommand",
+              "validationHint": "src/index.ts compiles without TypeScript errors"
+            },
+            {
+              "id": "step-4",
+              "title": "Add a tool with parameters",
+              "body": "Add a second tool that takes user input:\n\n```typescript\nserver.tool(\n  'calculate',\n  'Evaluates a simple math expression',\n  { expression: z.string().describe('A math expression like 2+2 or 10*3.14') },\n  async ({ expression }) => {\n    try {\n      const result = Function('return ' + expression)();\n      return { content: [{ type: 'text', text: String(result) }] };\n    } catch {\n      return { content: [{ type: 'text', text: 'Invalid expression' }], isError: true };\n    }\n  }\n);\n```\n\nZod schemas define the input shape — the MCP SDK uses them to generate the tool's JSON Schema for Claude automatically.",
+              "stepType": "runCommand",
+              "validationHint": "src/index.ts has both get_time and calculate tools"
+            },
+            {
+              "id": "step-5",
+              "title": "Wire it into Claude Desktop",
+              "body": "Add your server to `~/Library/Application Support/Claude/claude_desktop_config.json`:\n\n```json\n{\n  \"mcpServers\": {\n    \"my-tools\": {\n      \"command\": \"npx\",\n      \"args\": [\"ts-node\", \"/absolute/path/to/my-mcp-server/src/index.ts\"]\n    }\n  }\n}\n```\n\nReplace `/absolute/path/to/my-mcp-server` with the real path (run `pwd` in the project directory).\n\nRestart Claude Desktop.",
+              "stepType": "runCommand",
+              "validationHint": "claude_desktop_config.json saved with the my-tools server block"
+            },
+            {
+              "id": "step-6",
+              "title": "Test it in Claude Desktop",
+              "body": "In Claude Desktop, click the tools icon (🔧) — you should see `get_time` and `calculate` listed under **my-tools**.\n\nAsk Claude:\n```\nWhat time is it right now?\n```\n\nClaude should call `get_time` and return the current UTC timestamp from your local machine — not a hallucination.\n\nThen try:\n```\nWhat is 123 * 456?\n```\n\nClaude calls `calculate` with `expression: \"123 * 456\"` and returns `56088`.",
+              "stepType": "verify",
+              "validationHint": "Claude returns the real current time and correct calculation result"
+            },
+            {
+              "id": "step-7",
+              "title": "You're done",
+              "body": "You built and deployed a custom MCP server. The pattern scales: swap `get_time` for a database query, a REST API call, or a shell command. Everything you expose as an MCP tool becomes available to any MCP client — Claude Desktop today, Claude Code and Cursor tomorrow.\n\nNext step: publish your server as an npm package so others can `npx` it directly from their `claude_desktop_config.json`.",
               "stepType": "read",
               "validationHint": null
             }
