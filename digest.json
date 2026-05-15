@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-11T00:00:00Z",
-  "reportGeneratedAt": "2026-05-14T08:43:05Z",
+  "reportGeneratedAt": "2026-05-15T08:54:04Z",
   "learnGeneratedAt": "2026-05-14T12:00:00Z",
   "report": [
     {
-      "id": "google-gemini-intelligence-android-show-2026-05-12",
-      "title": "Google ships Gemini Intelligence as Android's new OS-level agent layer",
-      "summary": "At The Android Show I/O Edition, Google announced Gemini Intelligence — a suite of agentic features that can move across apps, read screen context, and complete multi-step tasks like building shopping carts or booking reservations without the user jumping between services. Rollout starts this summer on Pixel and Galaxy flagships, then expands to Wear OS, Android Auto, Android XR, and Googlebooks laptops later this year.",
+      "id": "anthropic-pwc-alliance-expansion-2026-05-14",
+      "title": "Anthropic and PwC expand alliance: 30,000 staff certified on Claude Code",
+      "summary": "PwC will roll out Claude Code and Claude Cowork to its full global workforce of 364,000, starting with 30,000 US professionals, and is launching a Claude-native finance group inside its CFO practice. Production deployments are already live: insurance underwriting cycles cut from 10 weeks to 10 days, incident response from hours to minutes.",
+      "category": "anthropic",
+      "sourceURL": "https://www.pwc.com/us/en/about-us/newsroom/press-releases/anthropic-pwc-expand-alliance-agentic-enterprise.html",
+      "significance": 7
+    },
+    {
+      "id": "openai-gpt55-instant-default-2026-05-15",
+      "title": "OpenAI rolls GPT-5.5 Instant to all ChatGPT users as new default model",
+      "summary": "GPT-5.5 Instant replaces GPT-5.3 Instant as the default across ChatGPT and as chat-latest in the API, shipping adjustable reasoning effort levels (minimal through xhigh) and better tone control for voice and text agents. GPT-5.3 stays available for paid users for three months before retirement.",
+      "category": "openai",
+      "sourceURL": "https://releasebot.io/updates/openai",
+      "significance": 8
+    },
+    {
+      "id": "openai-realtime-voice-suite-2026-05-15",
+      "title": "OpenAI ships GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper",
+      "summary": "Three new realtime audio models drop: GPT-Realtime-2 handles live voice reasoning and tool calls mid-conversation; GPT-Realtime-Translate does speech-to-speech across 70+ input languages into 13 outputs in real time; GPT-Realtime-Whisper streams live transcription. Builders targeting voice-native products now have a full audio stack from one provider.",
+      "category": "openai",
+      "sourceURL": "https://releasebot.io/updates/openai",
+      "significance": 8
+    },
+    {
+      "id": "microsoft-mdash-agentic-security-2026-05-12",
+      "title": "Microsoft ships MDASH: agentic multi-model scanner hits 96-100% recall on real CVEs",
+      "summary": "Microsoft's Autonomous Code Security team released MDASH into private preview, a multi-model agentic harness that scored 96% recall on five years of MSRC-confirmed bugs in clfs.sys and 100% on tcpip.sys. It moves AI vulnerability research from research novelty to production-scale enterprise security auditing.",
+      "category": "tooling",
+      "sourceURL": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/",
+      "significance": 7
+    },
+    {
+      "id": "google-android-show-gemini-intelligence-googlebooks-2026-05-12",
+      "title": "Google announces Gemini Intelligence for Android and Googlebook laptops",
+      "summary": "Ahead of Google I/O (May 19-20), Google pre-announced Gemini Intelligence — proactive agentic AI baked into Android and ChromeOS — and a new Googlebook laptop lineup from Acer, ASUS, Dell, HP, and Lenovo launching this fall with Gemini at the core. Gemini also ships broadly in Android Auto with hands-free DoorDash ordering.",
       "category": "google",
       "sourceURL": "https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/",
       "significance": 7
     },
     {
-      "id": "cursor-agent-dev-environments-2026-05-13",
-      "title": "Cursor ships agent dev environment config, enabling parallelized agent fleets",
-      "summary": "Cursor's May 13 changelog adds tooling for teams to configure full dev environments for cloud agents — cloned repos, installed dependencies, credentials, build system access — and multi-repo support so a single agent environment spans all the repos it needs. The practical unlock: teams can now run fleets of parallelized agents that handle tasks end-to-end inside environments they fully control.",
-      "category": "tooling",
-      "sourceURL": "https://cursor.com/changelog",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-claude-platform-aws-ga-2026-05-12",
-      "title": "Anthropic's Claude Platform on AWS moves to general availability",
-      "summary": "Claude Platform on AWS is now GA, giving builders full Claude API and console access through their existing AWS accounts — including IAM access control, CloudTrail audit logging, same-day availability for new model releases, and consolidated billing. This is distinct from Claude on Bedrock; it brings Anthropic's native platform experience, not just model weights, into the AWS account layer.",
+      "id": "anthropic-claude-code-changelog-2026-05-14",
+      "title": "Claude Code ships background agent persistence, rewind compression, and new env vars",
+      "summary": "A batch of Claude Code CLI updates landed: background agents launched via /bg now preserve permission mode instead of reverting to default, a new 'Summarize up to here' rewind option compresses earlier context, and CLAUDE_CODE_PLUGIN_PREFER_HTTPS lets teams clone GitHub plugins over HTTPS in keyless environments.",
       "category": "anthropic",
-      "sourceURL": "https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/",
-      "significance": 7
-    },
-    {
-      "id": "openai-deployment-company-launch-2026-05-12",
-      "title": "OpenAI launches Deployment Company backed by 19 firms to ship enterprise AI",
-      "summary": "OpenAI stood up a majority-owned Deployment Company that brings together 19 investment firms, consultancies, and system integrators to handle enterprise AI deployment — data integration, workflow customization, governance, and implementation. The vehicle is reportedly raising roughly $4 billion; Anthropic has a comparable initiative at $1.5 billion.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/",
+      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
       "significance": 6
     },
     {
-      "id": "anthropic-claude-ad-free-commitment-2026-05-14",
-      "title": "Anthropic commits to keeping Claude permanently ad-free",
-      "summary": "Anthropic published a post explaining why advertising incentives are incompatible with a genuinely helpful AI assistant and committing to expand access without running ads. It is a positioning move as subscription fatigue grows, but no new product shipped alongside it.",
+      "id": "anthropic-ramp-business-adoption-lead-2026-05",
+      "title": "Anthropic overtakes OpenAI in business AI adoption per Ramp spend data",
+      "summary": "Ramp's May AI Index shows Claude at 34.4% business adoption in April vs OpenAI at 32.3%, a reversal in a market OpenAI previously dominated. Claude Code is cited as the primary driver of the share shift.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
-      "significance": 5
-    },
-    {
-      "id": "amazon-alexa-shopping-agent-rufus-pivot-2026-05-14",
-      "title": "Amazon kills Rufus chatbot, pivots to Alexa shopping agent",
-      "summary": "Amazon is ditching Rufus — its product-search chatbot — in favor of an agentic Alexa that handles shopping end-to-end rather than just answering questions. No public API or builder surface confirmed yet; signals a broader retreat from standalone chatbot UX toward task-completing agents.",
-      "category": "other",
-      "sourceURL": "https://www.cnbc.com/2026/05/12/google-races-put-gemini-at-center-of-android-before-apples-ai-reboot.html",
-      "significance": 6
-    },
-    {
-      "id": "google-synthid-detector-staging-2026-05-12",
-      "title": "Google's SynthID Detector goes live for images and audio, expands to NVIDIA Cosmos",
-      "summary": "Google DeepMind's SynthID Detector is staging through May with image and audio watermark detection live for early testers and video/text detection flagged for coming weeks. Google also partnered with NVIDIA to embed SynthID into NVIDIA's Cosmos NIM microservice — a push to make SynthID a multi-vendor watermark standard rather than a Google-only signal.",
-      "category": "google",
-      "sourceURL": "https://blurbrahlab.medium.com/claude-platform-lands-on-aws-openai-spins-up-a-4b-deployment-company-top-10-ai-flutter-news-ac0f4f0750e5",
+      "sourceURL": "https://finance.yahoo.com/sectors/technology/articles/anthropic-expands-partnership-pwc-pushes-130101877.html",
       "significance": 6
     }
   ],
