@@ -1,56 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-11T00:00:00Z",
-  "reportGeneratedAt": "2026-05-16T08:09:27Z",
+  "reportGeneratedAt": "2026-05-17T08:26:09Z",
   "learnGeneratedAt": "2026-05-14T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-beats-openai-business-adoption-2026-05-15",
-      "title": "Anthropic overtakes OpenAI in US business AI spending for first time",
-      "summary": "Ramp's May 2026 AI Index shows Claude at 34.4% of US business adoption vs OpenAI's 32.3% — a reversal from under 8% just a year ago, driven almost entirely by Claude Code. Builders shopping AI services now pick Anthropic 70% of the time in head-to-head evaluations, per Ramp data.",
+      "id": "anthropic-dreaming-memory-api-2026-05",
+      "title": "Anthropic ships 'Dreaming' memory consolidation for Managed Agents API",
+      "summary": "Anthropic introduced 'Dreaming,' a research preview feature for its Managed Agents API that consolidates an agent's persistent memory between sessions by merging duplicates and removing stale entries. Drop-in for builders running long-horizon agents who need memory to stay coherent across many runs.",
       "category": "anthropic",
-      "sourceURL": "https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead",
+      "sourceURL": "https://en.wikipedia.org/wiki/Claude_(language_model)",
       "significance": 7
     },
     {
       "id": "anthropic-claude-small-business-2026-05-13",
-      "title": "Anthropic ships Claude for Small Business tier",
-      "summary": "Anthropic launched a dedicated Claude for Small Business plan on May 13, expanding access beyond enterprise and pro tiers. Gives smaller teams a direct on-ramp without enterprise procurement overhead.",
+      "title": "Anthropic launches Claude for Small Business with SMB SaaS integrations",
+      "summary": "Claude for Small Business ships connectors and ready-to-run workflows inside QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, and Microsoft 365, covering payroll, invoicing, sales, and month-end close. Targets the 44% of US GDP that runs on small businesses, which have lagged enterprise AI adoption.",
       "category": "anthropic",
       "sourceURL": "https://www.anthropic.com/news",
       "significance": 6
     },
     {
-      "id": "anthropic-900b-valuation-fundraise-2026-05",
-      "title": "Anthropic closes $30B round at $900B valuation, eclipsing OpenAI",
-      "summary": "Sequoia, Dragoneer, Greenoaks, and Altimeter co-led the raise, which would make Anthropic the world's most valuable private company at $900B vs OpenAI's March valuation of $852B. No product ships with this news — announced only.",
+      "id": "anthropic-claude-ad-free-pledge-2026-05",
+      "title": "Anthropic publicly commits Claude will stay ad-free",
+      "summary": "Anthropic published a statement declaring Claude will remain ad-free, arguing advertising incentives are incompatible with a genuinely helpful assistant. Meaningful signal for enterprise buyers evaluating alignment risk in their AI stack.",
       "category": "anthropic",
-      "sourceURL": "https://llm-stats.com/ai-news",
-      "significance": 6
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 5
     },
     {
-      "id": "google-gemini-intelligence-android-show-2026-05-12",
-      "title": "Google ships Gemini Intelligence for Android with agentic cross-app actions",
-      "summary": "At the Android Show I/O Edition, Google unveiled Gemini Intelligence — an agentic layer baked into Android and ChromeOS that can move across apps, fill forms, build shopping carts, and book reservations, always with a user confirmation step before execution. First Googlebook laptops from Acer, ASUS, Dell, HP, and Lenovo land this fall with Gemini built in.",
+      "id": "anthropic-2028-ai-leadership-paper-2026-05",
+      "title": "Anthropic publishes geopolitical AI paper, frames 2028 as US breakaway moment",
+      "summary": "Anthropic posted a policy paper urging tighter US chip export controls and restrictions on American AI model access to limit China's near-term capabilities, framing 2028 as a decisive milestone for global AI leadership. The paper cites Mythos Preview's April 2026 capability step-change as a reference point for what frontier labs will achieve again by 2028.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/research/2028-ai-leadership",
+      "significance": 5
+    },
+    {
+      "id": "google-gemini-intelligence-android-2026-05-12",
+      "title": "Google ships Gemini Intelligence as Android's new cross-app agent layer",
+      "summary": "At the Android Show I/O Edition, Google announced Gemini Intelligence as the intelligence layer running underneath Android itself, capable of moving across apps, understanding screen content, and completing multi-step tasks on behalf of users. Initial rollout targets the latest Samsung Galaxy and Pixel phones this summer, with watches, cars, and glasses to follow.",
       "category": "google",
       "sourceURL": "https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/",
       "significance": 7
     },
     {
-      "id": "google-io-2026-preview-may-19",
-      "title": "Google I/O 2026 keynote set for May 19 — Gemini model updates and dev tools expected",
-      "summary": "Google I/O kicks off May 19 at 10 AM PT with major Gemini AI announcements, Android 17 details, and developer tooling sessions confirmed. Android hardware was pre-announced at the Android Show, so I/O focus will be Gemini capabilities, AI Studio, and cloud AI workflows.",
+      "id": "google-googlebook-laptops-2026-05-12",
+      "title": "Google introduces Googlebook laptop category built around Gemini Intelligence",
+      "summary": "Google unveiled Googlebooks, a new laptop line running 'Aluminum OS' (a merged Android/ChromeOS), designed from the ground up for Gemini Intelligence, with partners Acer, Asus, Dell, HP, and Lenovo shipping first units this fall. Announced only — no public availability yet.",
       "category": "google",
-      "sourceURL": "https://io.google/2026/",
+      "sourceURL": "https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/",
       "significance": 6
     },
     {
-      "id": "thinking-machines-interaction-models-2026-05-15",
-      "title": "Mira Murati's Thinking Machines reveals real-time multimodal interaction models",
-      "summary": "Thinking Machines announced work on 'interaction models' that continuously process audio, video, and text simultaneously and respond dynamically in real time — no sequential turn-taking. Demos showed live translation and contextual awareness; limited research previews planned for later in 2026, no public access yet.",
-      "category": "otherLLM",
-      "sourceURL": "https://www.marketingprofs.com/opinions/2026/54786/ai-update-may-15-2026-ai-news-and-views-from-the-past-week",
-      "significance": 5
+      "id": "google-io-2026-keynote-preview-may19",
+      "title": "Google I/O 2026 keynote set for May 19 — Gemini model upgrade expected",
+      "summary": "Google I/O kicks off May 19; Android news was pulled forward to the Android Show, so the keynote is expected to focus on a new Gemini model version and developer AI tooling. Rumored to be a major Gemini overhaul — possibly Gemini 4.0 — but nothing confirmed or shipped yet.",
+      "category": "google",
+      "sourceURL": "https://io.google/2026/about",
+      "significance": 6
     }
   ],
   "learn": [
