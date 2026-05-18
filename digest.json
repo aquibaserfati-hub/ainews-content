@@ -1,64 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-18T00:00:00Z",
-  "reportGeneratedAt": "2026-05-18T12:00:00Z",
+  "reportGeneratedAt": "2026-05-18T10:13:07Z",
   "learnGeneratedAt": "2026-05-18T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-spacex-colossus-claude-limits-2026-05-06",
-      "title": "Anthropic leases SpaceX Colossus 1, doubles Claude Code rate limits",
-      "summary": "Anthropic signed a deal to use all 220,000 NVIDIA GPUs at SpaceX's Colossus 1 data center in Memphis, immediately doubling Claude Code's five-hour limits for Pro/Max/Team/Enterprise and removing peak-hour throttling. Largest single-cluster compute addition the company has made public; direct unblock for heavy Claude Code and Opus API users.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/higher-limits-spacex",
-      "significance": 8
+      "id": "google-io-2026-gemini-eve",
+      "title": "Google I/O opens tomorrow: Gemini 4.0, Omni, and XR glasses on deck",
+      "summary": "Google I/O kicks off May 19 at 10 AM PT with a major Gemini model update expected as the centerpiece — sources point to either Gemini 3.2/3.5 or a full 4.0, plus a unified native multimodal model called Gemini Omni leaked via UI strings. Firebase AI Logic GA, Gemma 4 open weights, and Android XR glasses are also confirmed or strongly signaled for the developer keynote.",
+      "category": "google",
+      "sourceURL": "https://io.google/2026/",
+      "significance": 7
     },
     {
-      "id": "anthropic-claude-agent-sdk-ga-2026-05-06",
-      "title": "Anthropic opens Claude Agent SDK to all external developers",
-      "summary": "The Claude Agent SDK — which lets Python code run Claude as an autonomous loop with MCP tool access, subagents, and managed permissions — moved from internal/partner access to public availability. Starting June 15, SDK usage on subscription plans draws from a new monthly credit pool separate from interactive limits.",
+      "id": "anthropic-claude-opus-latest-2026-05",
+      "title": "Anthropic's latest Opus ships with stronger agents, vision, and multi-step tasks",
+      "summary": "Anthropic pushed a new Opus model to its news page with stated gains in coding, agentic tasks, vision, and consistency on multi-step work. No public benchmark sheet posted yet; builders using Claude for long-horizon agents are the immediate audience.",
       "category": "anthropic",
-      "sourceURL": "https://code.claude.com/docs/en/agent-sdk/overview",
-      "significance": 8
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 7
     },
     {
-      "id": "anthropic-claude-small-business-2026-05-13",
-      "title": "Anthropic launches Claude for Small Business with pre-built connectors",
-      "summary": "Claude for Small Business bundles ready-to-run workflows and connectors for tools small businesses already use, announced May 13. Lowers barrier for non-enterprise Claude adoption without custom API work.",
+      "id": "anthropic-claude-design-launch-2026-05",
+      "title": "Anthropic ships Claude Design, a new Labs product for collaborative design",
+      "summary": "Claude Design is now live from Anthropic Labs, letting users collaborate with Claude on design work — the first Anthropic Labs product with an explicit creative-tool framing. Scope and API access details are not yet published.",
       "category": "anthropic",
       "sourceURL": "https://www.anthropic.com/news",
       "significance": 6
     },
     {
-      "id": "openai-gpt55-api-launch-2026-04-24",
-      "title": "OpenAI ships GPT-5.5 to API; fine-tuning API deprecated in May",
-      "summary": "GPT-5.5 hit the API on April 24 at $5/$30 per million tokens (input/output), double GPT-5.4's rates. The model scores 82.7% on Terminal-Bench 2.0 and is the first OpenAI model where the full 1M-token context window holds without degradation — but OpenAI also deprecated its fine-tuning API in May, breaking existing fine-tuned model workflows.",
+      "id": "openai-product-reorg-super-app-2026-05",
+      "title": "OpenAI merges ChatGPT, Codex, and API into one team chasing a super app",
+      "summary": "OpenAI restructured its product org under Codex boss Thibault Sottiaux, folding ChatGPT, the coding agent, and the developer API into a single unit with a stated goal of building a 'super app' that also integrates the Atlas browser. No shipped product yet — this is an org signal, not a launch.",
       "category": "openai",
-      "sourceURL": "https://openai.com/index/introducing-gpt-5-5/",
-      "significance": 7
+      "sourceURL": "https://llm-stats.com/ai-news",
+      "significance": 5
     },
     {
-      "id": "deepseek-v4-open-weights-2026-04-24",
-      "title": "DeepSeek V4 drops open-weight, MIT-licensed, 1.6T params at $1.74/M tokens",
-      "summary": "DeepSeek V4-Pro (1.6T parameters, 49B active via MoE) launched April 24 under MIT license. Input pricing is $1.74/M tokens — roughly 97% cheaper than GPT-5.5 Pro — with a 1M-token context window. DeepSeek self-reports performance 3-6 months behind frontier closed models; independently scores 67.9% on Terminal-Bench 2.0 vs GPT-5.5's 82.7%.",
-      "category": "otherLLM",
-      "sourceURL": "https://www.datacamp.com/blog/deepseek-v4-vs-gpt-5-5",
-      "significance": 7
-    },
-    {
-      "id": "google-io-2026-preview-gemini-2026-05-19",
-      "title": "Google I/O 2026 opens May 19: new Gemini model, Gemma 4, Android XR SDK expected",
-      "summary": "Google I/O keynote starts May 19 at 10am PT. Pre-confirmed slate includes Gemini 3.2 Flash rolling to billions of users, Gemma 4 open-weights, Android XR glasses developer SDK, and Googlebooks (Android+ChromeOS unified laptop). A new flagship Gemini model is rumored but unconfirmed; sources peg it near GPT-5.5 capability, below Anthropic Mythos.",
-      "category": "google",
-      "sourceURL": "https://developers.googleblog.com/get-ready-for-google-io-2026/",
-      "significance": 7
-    },
-    {
-      "id": "openai-gpt55-cyber-eu-access-2026-05-11",
-      "title": "OpenAI releases GPT-5.5-Cyber to EU vetted defenders; Anthropic holds out on Mythos",
-      "summary": "OpenAI on May 11 granted EU access to GPT-5.5-Cyber — a cyber-specialized variant — for vetted security teams under its EU Cyber Action Plan. Anthropic has not extended similar access for Mythos, leaving EU regulators in talks but no deal yet. Sets a new norm for how frontier labs handle dual-use cyber models.",
-      "category": "openai",
-      "sourceURL": "https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html",
+      "id": "vercel-zero-language-agent-2026-05",
+      "title": "Vercel Labs releases Zero, a systems language built for AI agents to read and repair",
+      "summary": "Zero is an experimental systems language from Vercel Labs that compiles to sub-10 KiB native binaries and emits structured JSON diagnostics — designed so agents can parse compiler output, find errors, and ship fixes without human interpretation. It targets the same design space as C or Rust but the entire toolchain is agent-first from day one.",
+      "category": "tooling",
+      "sourceURL": "https://www.marktechpost.com/2026/05/17/vercel-labs-introduces-zero-a-systems-programming-language-designed-so-ai-agents-can-read-repair-and-ship-native-programs/",
       "significance": 6
+    },
+    {
+      "id": "deepseek-v4-open-weights-2026-05",
+      "title": "DeepSeek V4 Pro open weights match GPT-5.5 on agentic benchmarks at 13x lower cost",
+      "summary": "DeepSeek V4 Pro (1.6T params, 49B activated, MIT license) now has weights publicly downloadable on Hugging Face and is live on Vercel AI Gateway and via Alibaba routing. It posts agentic benchmark scores alongside GPT-5.5 and Claude Opus 4.7 at roughly $0.20 in / $0.40 out per 1M tokens for the Flash variant — a real cost inflection point for self-hosted agent stacks.",
+      "category": "otherLLM",
+      "sourceURL": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-fundraise-900b-2026-05",
+      "title": "Anthropic $30B raise at $900B+ valuation expected to close end of May",
+      "summary": "Bloomberg reports the round — co-led by Sequoia, Dragoneer, Greenoaks, and Altimeter — could close as soon as late May, with no term sheet signed as of May 16. Announced but not closed; no product shipped.",
+      "category": "anthropic",
+      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-may-18-2026",
+      "significance": 4
     }
   ],
   "learn": [
