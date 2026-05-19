@@ -1,64 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-18T00:00:00Z",
-  "reportGeneratedAt": "2026-05-18T10:13:07Z",
+  "reportGeneratedAt": "2026-05-19T09:53:46Z",
   "learnGeneratedAt": "2026-05-18T12:00:00Z",
   "report": [
     {
-      "id": "google-io-2026-gemini-eve",
-      "title": "Google I/O opens tomorrow: Gemini 4.0, Omni, and XR glasses on deck",
-      "summary": "Google I/O kicks off May 19 at 10 AM PT with a major Gemini model update expected as the centerpiece — sources point to either Gemini 3.2/3.5 or a full 4.0, plus a unified native multimodal model called Gemini Omni leaked via UI strings. Firebase AI Logic GA, Gemma 4 open weights, and Android XR glasses are also confirmed or strongly signaled for the developer keynote.",
+      "id": "google-io-2026-keynote-may19",
+      "title": "Google I/O 2026 keynote kicks off today with Gemini model updates",
+      "summary": "The two-day I/O conference starts May 19 at 10am PT, with Google confirmed to cover new Gemini model updates and agentic coding — widely read as a Gemini 4.0 or major Gemini 3.x reveal. Also on the docket: Android XR glasses hardware with Samsung and Warby Parker, and the Aluminium OS laptop platform. Nothing has shipped yet; watch for API and SDK announcements in the developer sessions.",
       "category": "google",
-      "sourceURL": "https://io.google/2026/",
+      "sourceURL": "https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news",
+      "significance": 8
+    },
+    {
+      "id": "cursor-composer-25-may18",
+      "title": "Cursor ships Composer 2.5 — Opus 4.7-class benchmarks at 1/10th the cost",
+      "summary": "Cursor's Composer 2.5 landed May 18 on the same Kimi K2.5 base as Composer 2, but with 25x more synthetic training tasks and 85% of its compute budget spent on Cursor's own RL pipeline. It scores 79.8% on SWE-Bench Multilingual — matching Claude Opus 4.7 and GPT-5.5 — at $0.50/M input tokens, roughly one-tenth frontier API rates. Live now in Cursor's model picker with a first-week double-usage promo.",
+      "category": "tooling",
+      "sourceURL": "https://the-decoder.com/cursors-composer-2-5-matches-opus-4-7-and-gpt-5-5-benchmarks-at-a-fraction-of-the-cost/",
       "significance": 7
     },
     {
-      "id": "anthropic-claude-opus-latest-2026-05",
-      "title": "Anthropic's latest Opus ships with stronger agents, vision, and multi-step tasks",
-      "summary": "Anthropic pushed a new Opus model to its news page with stated gains in coding, agentic tasks, vision, and consistency on multi-step work. No public benchmark sheet posted yet; builders using Claude for long-horizon agents are the immediate audience.",
+      "id": "anthropic-business-adoption-crossover-may2026",
+      "title": "Anthropic overtakes OpenAI in US business AI spending for first time",
+      "summary": "The May 2026 Ramp AI Index shows Anthropic at 34.4% business adoption versus OpenAI's 32.3% — a complete reversal from April 2025, when Anthropic sat below 8%. Claude Code is the primary driver, with a recent estimate putting 4% of all GitHub public commits worldwide authored by the tool, double the share from one month prior.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
+      "sourceURL": "https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead",
       "significance": 7
     },
     {
-      "id": "anthropic-claude-design-launch-2026-05",
-      "title": "Anthropic ships Claude Design, a new Labs product for collaborative design",
-      "summary": "Claude Design is now live from Anthropic Labs, letting users collaborate with Claude on design work — the first Anthropic Labs product with an explicit creative-tool framing. Scope and API access details are not yet published.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
+      "id": "openai-chatgpt-personal-finance-may15",
+      "title": "OpenAI launches ChatGPT for Personal Finance via Plaid — US Pro only",
+      "summary": "Launched May 15, the feature connects ChatGPT to 12,000+ banks via Plaid for read-only spend, holdings, and liability views across Chase, Schwab, and Fidelity. Limited to US ChatGPT Pro subscribers; no transaction execution capability. Worth watching if you build in fintech — Plaid integration means the data layer is real, not a demo.",
+      "category": "openai",
+      "sourceURL": "https://asanify.com/blog/news/ai-sdk-consolidation-may-19-2026/",
       "significance": 6
     },
     {
-      "id": "openai-product-reorg-super-app-2026-05",
-      "title": "OpenAI merges ChatGPT, Codex, and API into one team chasing a super app",
-      "summary": "OpenAI restructured its product org under Codex boss Thibault Sottiaux, folding ChatGPT, the coding agent, and the developer API into a single unit with a stated goal of building a 'super app' that also integrates the Atlas browser. No shipped product yet — this is an org signal, not a launch.",
+      "id": "anthropic-stainless-sdk-acquisition",
+      "title": "Anthropic acquires Stainless, locking in SDK and MCP server tooling",
+      "summary": "Anthropic confirmed the acquisition of Stainless, the startup that generates SDKs in Python, TypeScript, Kotlin, Go, and Java used by a wide range of AI vendors. Whoever owns the SDK generator sets the standards and pricing roadmap for downstream builders — vendors on Anthropic's stack who relied on Stainless as a neutral tool should flag this in their dependency reviews.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "significance": 7
+    },
+    {
+      "id": "musk-altman-lawsuit-dismissed-may2026",
+      "title": "Jury unanimously rejects Musk's claims against Altman and OpenAI",
+      "summary": "Nine California jurors dismissed Elon Musk's lawsuits against Sam Altman and OpenAI in under two hours, finding the claims were filed outside the statute of limitations. No material change to OpenAI's legal posture or product roadmap; the long-running distraction ends without a verdict on the underlying merits.",
       "category": "openai",
       "sourceURL": "https://llm-stats.com/ai-news",
-      "significance": 5
-    },
-    {
-      "id": "vercel-zero-language-agent-2026-05",
-      "title": "Vercel Labs releases Zero, a systems language built for AI agents to read and repair",
-      "summary": "Zero is an experimental systems language from Vercel Labs that compiles to sub-10 KiB native binaries and emits structured JSON diagnostics — designed so agents can parse compiler output, find errors, and ship fixes without human interpretation. It targets the same design space as C or Rust but the entire toolchain is agent-first from day one.",
-      "category": "tooling",
-      "sourceURL": "https://www.marktechpost.com/2026/05/17/vercel-labs-introduces-zero-a-systems-programming-language-designed-so-ai-agents-can-read-repair-and-ship-native-programs/",
       "significance": 6
-    },
-    {
-      "id": "deepseek-v4-open-weights-2026-05",
-      "title": "DeepSeek V4 Pro open weights match GPT-5.5 on agentic benchmarks at 13x lower cost",
-      "summary": "DeepSeek V4 Pro (1.6T params, 49B activated, MIT license) now has weights publicly downloadable on Hugging Face and is live on Vercel AI Gateway and via Alibaba routing. It posts agentic benchmark scores alongside GPT-5.5 and Claude Opus 4.7 at roughly $0.20 in / $0.40 out per 1M tokens for the Flash variant — a real cost inflection point for self-hosted agent stacks.",
-      "category": "otherLLM",
-      "sourceURL": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-fundraise-900b-2026-05",
-      "title": "Anthropic $30B raise at $900B+ valuation expected to close end of May",
-      "summary": "Bloomberg reports the round — co-led by Sequoia, Dragoneer, Greenoaks, and Altimeter — could close as soon as late May, with no term sheet signed as of May 16. Announced but not closed; no product shipped.",
-      "category": "anthropic",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-may-18-2026",
-      "significance": 4
     }
   ],
   "learn": [
