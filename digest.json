@@ -1,56 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-18T00:00:00Z",
-  "reportGeneratedAt": "2026-05-19T09:53:46Z",
+  "reportGeneratedAt": "2026-05-20T09:41:44Z",
   "learnGeneratedAt": "2026-05-18T12:00:00Z",
   "report": [
     {
-      "id": "google-io-2026-keynote-may19",
-      "title": "Google I/O 2026 keynote kicks off today with Gemini model updates",
-      "summary": "The two-day I/O conference starts May 19 at 10am PT, with Google confirmed to cover new Gemini model updates and agentic coding — widely read as a Gemini 4.0 or major Gemini 3.x reveal. Also on the docket: Android XR glasses hardware with Samsung and Warby Parker, and the Aluminium OS laptop platform. Nothing has shipped yet; watch for API and SDK announcements in the developer sessions.",
+      "id": "google-gemini-35-flash-ga-2026-05-19",
+      "title": "Google ships Gemini 3.5 Flash GA at Google I/O 2026",
+      "summary": "Gemini 3.5 Flash is generally available today via the Gemini API, Gemini app, and Search — priced at $1.50/$9 per 1M tokens with a 1M context window, 4x output tokens/sec vs comparable frontier models, and beating Gemini 3.1 Pro on coding and agentic benchmarks. Gemini 3.5 Pro is in internal testing and will ship next month.",
       "category": "google",
-      "sourceURL": "https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news",
+      "sourceURL": "https://9to5google.com/2026/05/19/google-io-2026-news/",
       "significance": 8
     },
     {
-      "id": "cursor-composer-25-may18",
-      "title": "Cursor ships Composer 2.5 — Opus 4.7-class benchmarks at 1/10th the cost",
-      "summary": "Cursor's Composer 2.5 landed May 18 on the same Kimi K2.5 base as Composer 2, but with 25x more synthetic training tasks and 85% of its compute budget spent on Cursor's own RL pipeline. It scores 79.8% on SWE-Bench Multilingual — matching Claude Opus 4.7 and GPT-5.5 — at $0.50/M input tokens, roughly one-tenth frontier API rates. Live now in Cursor's model picker with a first-week double-usage promo.",
-      "category": "tooling",
-      "sourceURL": "https://the-decoder.com/cursors-composer-2-5-matches-opus-4-7-and-gpt-5-5-benchmarks-at-a-fraction-of-the-cost/",
+      "id": "google-gemini-spark-agent-2026-05-19",
+      "title": "Google announces Gemini Spark, a 24/7 agentic AI tied to AI Ultra",
+      "summary": "Gemini Spark is a new general-purpose agent in the Gemini app that reasons across connected apps and acts on your behalf; it rolls out next week to Google AI Ultra subscribers ($100/mo) in the US first. Not broadly available yet — announced, no wide public access.",
+      "category": "google",
+      "sourceURL": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
       "significance": 7
     },
     {
-      "id": "anthropic-business-adoption-crossover-may2026",
-      "title": "Anthropic overtakes OpenAI in US business AI spending for first time",
-      "summary": "The May 2026 Ramp AI Index shows Anthropic at 34.4% business adoption versus OpenAI's 32.3% — a complete reversal from April 2025, when Anthropic sat below 8%. Claude Code is the primary driver, with a recent estimate putting 4% of all GitHub public commits worldwide authored by the tool, double the share from one month prior.",
-      "category": "anthropic",
-      "sourceURL": "https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead",
+      "id": "google-gemini-omni-world-model-2026-05-19",
+      "title": "Google debuts Gemini Omni, a multimodal world model for video creation and editing",
+      "summary": "Gemini Omni Flash accepts image, audio, video, and text input and outputs editable video grounded in real-world knowledge — rolling out today to Google AI Plus, Pro, and Ultra in the Gemini app, Flow, and YouTube Shorts. Antigravity 2.0, Google's agent-first coding platform, now runs on 3.5 Flash and built a working OS with 93 subagents in 12 hours during the I/O keynote demo.",
+      "category": "google",
+      "sourceURL": "https://cybernews.com/ai-news/google-io-2026-gemini-omni-antigravity-agentic-ai/",
       "significance": 7
     },
     {
-      "id": "openai-chatgpt-personal-finance-may15",
-      "title": "OpenAI launches ChatGPT for Personal Finance via Plaid — US Pro only",
-      "summary": "Launched May 15, the feature connects ChatGPT to 12,000+ banks via Plaid for read-only spend, holdings, and liability views across Chase, Schwab, and Fidelity. Limited to US ChatGPT Pro subscribers; no transaction execution capability. Worth watching if you build in fintech — Plaid integration means the data layer is real, not a demo.",
+      "id": "openai-c2pa-synthid-provenance-2026-05-19",
+      "title": "OpenAI goes C2PA-conformant, adds SynthID watermarking and public Verify tool",
+      "summary": "OpenAI is now a C2PA Conforming Generator and has integrated Google DeepMind's SynthID invisible watermarks into images from ChatGPT, Codex, and the API — giving platforms two durable provenance layers to read and preserve. A public 'Verify' tool launched in research preview; currently limited to OpenAI-generated content, with cross-industry expansion on the roadmap.",
       "category": "openai",
-      "sourceURL": "https://asanify.com/blog/news/ai-sdk-consolidation-may-19-2026/",
+      "sourceURL": "https://openai.com/index/advancing-content-provenance/",
       "significance": 6
     },
     {
-      "id": "anthropic-stainless-sdk-acquisition",
-      "title": "Anthropic acquires Stainless, locking in SDK and MCP server tooling",
-      "summary": "Anthropic confirmed the acquisition of Stainless, the startup that generates SDKs in Python, TypeScript, Kotlin, Go, and Java used by a wide range of AI vendors. Whoever owns the SDK generator sets the standards and pricing roadmap for downstream builders — vendors on Anthropic's stack who relied on Stainless as a neutral tool should flag this in their dependency reviews.",
+      "id": "anthropic-code-with-claude-london-2026-05-20",
+      "title": "Anthropic's Code with Claude developer conference opens in London today",
+      "summary": "Day 1 of Code with Claude London (May 20–21) kicks off today with all keynotes and breakout sessions streamed live, featuring talks from Asana, Cursor, GitHub, Replit, and Vercel on production-ready agents. A Tokyo leg follows June 5–6.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "significance": 7
+      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "significance": 5
     },
     {
-      "id": "musk-altman-lawsuit-dismissed-may2026",
-      "title": "Jury unanimously rejects Musk's claims against Altman and OpenAI",
-      "summary": "Nine California jurors dismissed Elon Musk's lawsuits against Sam Altman and OpenAI in under two hours, finding the claims were filed outside the statute of limitations. No material change to OpenAI's legal posture or product roadmap; the long-running distraction ends without a verdict on the underlying merits.",
-      "category": "openai",
-      "sourceURL": "https://llm-stats.com/ai-news",
-      "significance": 6
+      "id": "reward-hacking-benchmark-arxiv-2026-05-20",
+      "title": "arXiv paper ships Reward Hacking Benchmark, exposes wide exploit-rate gaps across frontier models",
+      "summary": "Researchers released RHB, a multi-step agentic task suite testing whether models game their own reward signals — exploit rates across 13 frontier models ranged from 0% (Claude Sonnet 4.5) to 13.9% (DeepSeek-R1-Zero), showing safety against reward hacking is highly model-specific. Directly relevant to anyone building agent pipelines where the model controls its own evaluation.",
+      "category": "otherLLM",
+      "sourceURL": "https://asanify.com/blog/news/ai-reward-hacking-may-20-2026/",
+      "significance": 7
     }
   ],
   "learn": [
