@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-18T00:00:00Z",
-  "reportGeneratedAt": "2026-05-21T12:00:00Z",
+  "reportGeneratedAt": "2026-05-21T09:50:01Z",
   "learnGeneratedAt": "2026-05-21T12:00:00Z",
   "report": [
     {
-      "id": "google-io-2026-gemini-35-flash-ga-2026-05-19",
-      "title": "Google ships Gemini 3.5 Flash GA at Google I/O 2026",
-      "summary": "Gemini 3.5 Flash launched generally available on May 19 at $1.50/$9 per million tokens — beating Gemini 3.1 Pro on coding and agentic benchmarks (76.2% Terminal-Bench 2.1, 83.6% MCP Atlas) while running 4x faster. It is now the default model in the Gemini app and AI Mode in Search; model ID is `gemini-3.5-flash` with a 1M-token context window. Watch the `thinking_level` default: it dropped from `high` to `medium` vs. the old preview — a silent production regression if you migrate without checking.",
+      "id": "google-gemini-35-flash-io-2026-05-20",
+      "title": "Google ships Gemini 3.5 Flash at I/O: faster, cheaper, agent-ready",
+      "summary": "Gemini 3.5 Flash is live today across Google APIs and products, outperforming Gemini 3.1 Pro on coding and agentic benchmarks at less than half the cost of comparable frontier models. It delivers 4x the output token speed of competing frontier models — a direct upgrade path for builders running high-volume agent loops.",
       "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
-      "significance": 9
-    },
-    {
-      "id": "google-antigravity-2-launch-2026-05-19",
-      "title": "Google Antigravity 2.0 ships: desktop app, CLI, SDK, Managed Agents API",
-      "summary": "Google replaced Gemini CLI with a full four-surface agent platform at I/O: standalone desktop app, Go-based Antigravity CLI, Antigravity SDK, and Managed Agents in the Gemini API (one API call spins up an agent with a remote Linux sandbox). Gemini CLI sunsets June 18 — existing users have 30 days to migrate. The platform runs multi-agent parallel orchestration with dynamic subagents and cron-style scheduled tasks.",
-      "category": "google",
-      "sourceURL": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+      "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud",
       "significance": 8
     },
     {
-      "id": "cursor-composer-25-kimi-2026-05-18",
-      "title": "Cursor ships Composer 2.5: Opus 4.7-level coding at 1/10th the API cost",
-      "summary": "Composer 2.5 launched May 18 at $0.50/M input tokens standard, matching Claude Opus 4.7 on SWE-Bench Multilingual (79.8% vs 80.5%) and CursorBench v3.1 (63.2% vs 61.6%), built on the Kimi K2.5 base with 25x more synthetic RL training. It runs exclusively inside Cursor IDE and CLI — not a public API. Kimi K2.5 lineage carries procurement risk for federal/regulated environments; Cursor confirmed the base transparently this time after the March disclosure gap.",
-      "category": "tooling",
-      "sourceURL": "https://devtoolpicks.com/blog/cursor-composer-2-5-launch-indie-hackers-2026",
-      "significance": 8
-    },
-    {
-      "id": "anthropic-acquires-stainless-2026-05-18",
-      "title": "Anthropic acquires Stainless for $300M+, winds down hosted SDK generator",
-      "summary": "Anthropic bought Stainless on May 18 — the SDK and MCP tooling startup that powered every official Anthropic, OpenAI, Google, Runway, and Cloudflare SDK. Hosted Stainless products are immediately shut down; existing customers keep generated code but lose the managed workflow. OpenAI and Google now need to rebuild or migrate their automated SDK tooling. Stainless also built MCP server infrastructure, making this more than an SDK play.",
-      "category": "anthropic",
-      "sourceURL": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
-      "significance": 7
-    },
-    {
-      "id": "google-gemini-omni-spark-io-2026-05-19",
-      "title": "Google launches Gemini Omni multimodal model and Gemini Spark personal agent",
-      "summary": "Gemini Omni accepts any input (text, image, audio, video) and outputs video grounded in real-world knowledge with multi-turn iterative editing — live today for AI Plus/Pro/Ultra subscribers. Gemini Spark is a 24/7 personal agent that integrates with Gmail, Docs, and Workspace apps; beta available next week to AI Ultra subscribers in the US. Google also cut AI Ultra pricing from $249.99 to $99.99/month.",
+      "id": "google-gemini-omni-io-2026-05-20",
+      "title": "Google launches Gemini Omni: any-input-to-video multimodal model",
+      "summary": "Gemini Omni Flash is available today for paid Gemini subscribers, supporting conversational video creation and editing from text, audio, image, and video inputs. Builders targeting video generation use cases now have a general-purpose API path that previously required specialized infrastructure.",
       "category": "google",
-      "sourceURL": "https://9to5google.com/2026/05/19/google-io-2026-news/",
+      "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud",
       "significance": 7
     },
     {
-      "id": "anthropic-funding-900b-valuation-2026-05-18",
-      "title": "Anthropic closes in on $30B round at $900B+ valuation — no term sheet yet",
-      "summary": "Bloomberg reported Anthropic is negotiating a $30B raise at over $900B valuation, co-led by Sequoia, Dragoneer, Greenoaks, and Altimeter — expected to close by end of May. No term sheet was signed as of May 16. The round would put Anthropic above OpenAI's $852B March valuation, supported by $44B ARR (up 80x year-over-year) and 1,000+ $1M+ annual customers.",
-      "category": "anthropic",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-may-18-2026",
+      "id": "google-gemini-spark-agent-io-2026-05-20",
+      "title": "Google unveils Gemini Spark: a 24/7 personal AI agent for Workspace",
+      "summary": "Gemini Spark is a persistent agent that runs on Google Cloud VMs and takes actions inside Gmail, Docs, Sheets, and other Workspace tools on a user's behalf. It enters beta next week for AI Ultra subscribers — announced with access gating, so builders cannot yet integrate it directly.",
+      "category": "google",
+      "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud",
       "significance": 6
     },
     {
-      "id": "openai-musk-lawsuit-dismissed-2026-05-19",
-      "title": "Federal jury unanimously dismisses Elon Musk's entire lawsuit against OpenAI",
-      "summary": "A California jury rejected all of Musk's claims against OpenAI in under two hours on May 19. The decision removes a significant legal overhang for OpenAI ahead of its expected IPO and gives the company a clear precedent against challenges to its for-profit conversion.",
-      "category": "openai",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-may-20-2026",
+      "id": "anthropic-karpathy-hire-2026-05-19",
+      "title": "Andrej Karpathy joins Anthropic to lead Claude pre-training research",
+      "summary": "Karpathy starts this week on Anthropic's pre-training team under Nick Joseph, with a mandate to build a sub-team that uses Claude itself to accelerate pre-training runs. The explicit charter — model improving model — is Anthropic's most visible public bet yet on AI-accelerated AI research.",
+      "category": "anthropic",
+      "sourceURL": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-claude-design-launch-2026-05-20",
+      "title": "Anthropic launches Claude Design via Anthropic Labs",
+      "summary": "Claude Design is a new Anthropic Labs product that lets users collaborate with Claude to create designs — publicly listed on anthropic.com/news but details remain thin and no API access is announced. Worth watching but treat as an early preview, not a shipping product for builders.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 5
+    },
+    {
+      "id": "google-search-ai-agents-io-2026-05-20",
+      "title": "Google embeds AI agents directly into Search for real-time task execution",
+      "summary": "Google I/O confirmed agents are now placed inside the Search box, able to complete purchases, check availability, and manage schedules in real time. The redesigned Search box also accommodates longer natural language queries — the biggest structural change to Search's UX in roughly three decades.",
+      "category": "google",
+      "sourceURL": "https://hothardware.com/news/google-io-2026-gemini-35-flash-ai-search-and-more",
+      "significance": 7
+    },
+    {
+      "id": "google-antigravity-20-io-2026-05-20",
+      "title": "Google Antigravity 2.0 becomes an agent runtime for the IDE",
+      "summary": "Antigravity 2.0 ships today with an Editor view (IDE + agent sidebar) and a Manager view for orchestrating multiple parallel agents across workspaces. It stopped being a code-generation tool and is now Google's primary agentic development platform — worth evaluating if you are already on Google Cloud.",
+      "category": "google",
+      "sourceURL": "https://hothardware.com/news/google-io-2026-gemini-35-flash-ai-search-and-more",
       "significance": 6
     }
   ],
