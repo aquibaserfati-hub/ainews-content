@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-18T00:00:00Z",
-  "reportGeneratedAt": "2026-05-22T09:34:53Z",
+  "reportGeneratedAt": "2026-05-23T08:24:28Z",
   "learnGeneratedAt": "2026-05-21T12:00:00Z",
   "report": [
     {
-      "id": "openai-ipo-confidential-s1-2026-05-22",
-      "title": "OpenAI files confidential IPO prospectus with SEC",
-      "summary": "OpenAI filed a confidential S-1 with the SEC today, with Goldman Sachs and Morgan Stanley leading the deal; target listing window is Labor Day to Thanksgiving 2026. The filing kicks off a race with Anthropic — whoever goes public first sets the valuation comp for the other.",
-      "category": "openai",
-      "sourceURL": "https://www.cnbc.com/2026/05/20/openai-ipo-filing.html",
+      "id": "google-gemini-35-flash-ga-2026-05-19",
+      "title": "Google ships Gemini 3.5 Flash GA at I/O 2026 — no waitlist",
+      "summary": "Gemini 3.5 Flash launched generally available on May 19, hitting the Gemini API, AI Studio, Antigravity, and Search's AI Mode simultaneously with no rollout queue. It outperforms Gemini 3.1 Pro on coding and agentic benchmarks (76.2% Terminal-Bench 2.1) while running 4x faster at $1.50/$9.00 per million tokens — making it the go-to swap for agent workloads on the Gemini stack today.",
+      "category": "google",
+      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
       "significance": 8
     },
     {
-      "id": "gemini-35-flash-ga-2026-05-19",
-      "title": "Google ships Gemini 3.5 Flash GA — beats 3.1 Pro on coding, 4x faster",
-      "summary": "Gemini 3.5 Flash (model ID: gemini-3.5-flash) is production-stable as of May 19, priced at $1.50/$9 per 1M tokens with a 1M-token context window and dynamic thinking on by default. It outscores the previous Pro-tier on Terminal-Bench 2.1 (76.2%) and MCP Atlas (83.6%), making it the default swap-in for agent orchestration layers.",
+      "id": "google-antigravity-20-2026-05-19",
+      "title": "Google Antigravity 2.0 ships as five-surface agent platform, kills Gemini CLI",
+      "summary": "Antigravity 2.0 launched at I/O as a desktop IDE, CLI (agy), SDK, Managed Agents API tier, and enterprise deployment path in a single release — all powered by Gemini 3.5 Flash. Gemini CLI is retired with a June 18, 2026 hard shutdown; teams on free or Pro/Ultra accounts need to migrate agent skills, hooks, and subagents before that date.",
       "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
-      "significance": 8
+      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+      "significance": 7
     },
     {
       "id": "google-managed-agents-api-2026-05-19",
-      "title": "Google launches Managed Agents API alongside Gemini 3.5 Flash",
-      "summary": "A single Gemini API call now spins up a full agent running in an isolated Linux container — it reasons, calls tools, executes code, and persists state across turns. This removes the previously manual scaffolding work for stateful multi-turn agent sessions.",
+      "title": "Google ships Managed Agents API — one call spins up a stateful agent",
+      "summary": "The Gemini API now exposes Managed Agents: a single API call that provisions an agent with persistent state, tool use, and code execution in an isolated Linux sandbox. This is Google's direct answer to OpenAI's Responses API server-side history management and is live in AI Studio and via the Interactions API today.",
       "category": "google",
-      "sourceURL": "https://ai.google.dev/gemini-api/docs/interactions/whats-new-gemini-3.5",
+      "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud",
       "significance": 7
     },
     {
-      "id": "anthropic-revenue-q2-projection-2026-05-22",
-      "title": "Anthropic projects $10.9B Q2 revenue, first-ever operating profit",
-      "summary": "Anthropic shared investor projections showing $10.9B in Q2 2026 revenue — up 130% from $4.8B in Q1 — and its first quarterly operating profit. For builders, this signals Anthropic is no longer a loss-leader operation; pricing and rate-limit policy decisions now have a different backstop.",
+      "id": "anthropic-acquires-stainless-2026-05-18",
+      "title": "Anthropic acquires Stainless for ~$300M, shuts hosted SDK generator",
+      "summary": "Anthropic bought Stainless — the SDK and MCP server tooling startup that also powered OpenAI's, Google's, and Cloudflare's client libraries — and is winding down all hosted products including the public SDK generator. Rivals now have to rebuild or migrate their automated SDK pipelines; existing customers keep generated code but lose the managed workflow.",
       "category": "anthropic",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026",
+      "sourceURL": "https://www.anthropic.com/news/anthropic-acquires-stainless",
       "significance": 7
     },
     {
-      "id": "anthropic-spacex-compute-deal-2026-05-22",
-      "title": "SpaceX S-1 reveals Anthropic paying $1.25B/month for GPU compute",
-      "summary": "SpaceX's IPO filing disclosed a line-item showing Anthropic is contracted to pay $1.25 billion per month for compute access through May 2029 — approximately $45B over the contract term. This is the first hard number on what frontier compute actually costs at scale.",
-      "category": "anthropic",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026",
-      "significance": 6
-    },
-    {
-      "id": "google-gemini-spark-agent-rollout-2026-05-19",
-      "title": "Google rolls out Gemini Spark personal agent to early testers",
-      "summary": "Gemini Spark, a 24/7 personal agent built on Gemini 3.5 Flash, started rolling out to trusted testers at I/O with a Beta for Google AI Ultra subscribers in the US planned for next week. Announced with availability — not vaporware, but not broadly accessible yet.",
+      "id": "google-gemini-spark-agent-2026-05-19",
+      "title": "Google announces Gemini Spark 24/7 personal agent — beta starts next week",
+      "summary": "Gemini Spark is a background AI agent that reads inbox, calendar, and connected apps to take action autonomously under user direction. It is rolling out to trusted testers now with a public beta for Google AI Ultra subscribers in the US starting the week of May 26; no general availability date yet.",
       "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "sourceURL": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
       "significance": 6
     },
     {
-      "id": "claude-design-launch-2026-05-22",
-      "title": "Anthropic launches Claude Design via Anthropic Labs",
-      "summary": "Anthropic shipped Claude Design, a new Labs product for collaborative UI/design work with Claude. It's an Anthropic Labs release — expect rough edges and no SLA commitments — but it opens a new surface for builders testing Claude in creative workflows.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
+      "id": "google-ai-ultra-100-tier-2026-05-19",
+      "title": "Google cuts AI Ultra to $100/month, scraps daily prompt limits",
+      "summary": "Google dropped AI Ultra from $250 to $100/month and replaced per-prompt caps with a compute-consumption model that refreshes every five hours — light text queries cost far less than video generation. Direct pressure on OpenAI's $200/month ChatGPT Pro and Anthropic's Claude subscription.",
+      "category": "google",
+      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+      "significance": 6
+    },
+    {
+      "id": "openai-content-provenance-c2pa-synthid-2026-05-22",
+      "title": "OpenAI ships C2PA conformance and SynthID watermarking for images",
+      "summary": "OpenAI added C2PA Content Credentials and Google's SynthID watermarking to its image tools, plus a preview public verification endpoint that confirms whether an image was generated with OpenAI tools. Practical for teams shipping user-generated content pipelines that need provenance signals for downstream moderation or compliance.",
+      "category": "openai",
+      "sourceURL": "https://releasebot.io/updates/openai",
       "significance": 5
     }
   ],
