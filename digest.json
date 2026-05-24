@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-18T00:00:00Z",
-  "reportGeneratedAt": "2026-05-23T08:24:28Z",
+  "reportGeneratedAt": "2026-05-24T08:34:14Z",
   "learnGeneratedAt": "2026-05-21T12:00:00Z",
   "report": [
     {
-      "id": "google-gemini-35-flash-ga-2026-05-19",
-      "title": "Google ships Gemini 3.5 Flash GA at I/O 2026 — no waitlist",
-      "summary": "Gemini 3.5 Flash launched generally available on May 19, hitting the Gemini API, AI Studio, Antigravity, and Search's AI Mode simultaneously with no rollout queue. It outperforms Gemini 3.1 Pro on coding and agentic benchmarks (76.2% Terminal-Bench 2.1) while running 4x faster at $1.50/$9.00 per million tokens — making it the go-to swap for agent workloads on the Gemini stack today.",
+      "id": "google-gemini-35-flash-io2026-2026-05-19",
+      "title": "Google ships Gemini 3.5 Flash at I/O 2026, targets agentic workloads",
+      "summary": "Gemini 3.5 Flash is live across the Gemini API and AI Studio, outperforming Gemini 3.1 Pro on agentic and coding benchmarks while running four times faster than comparable frontier models. It's the default engine under Antigravity 2.0, Managed Agents, and Gemini Spark — making it the practical model choice for anything long-horizon right now. Gemini 3.5 Pro is still internal-only, due next month.",
       "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+      "sourceURL": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
       "significance": 8
     },
     {
-      "id": "google-antigravity-20-2026-05-19",
-      "title": "Google Antigravity 2.0 ships as five-surface agent platform, kills Gemini CLI",
-      "summary": "Antigravity 2.0 launched at I/O as a desktop IDE, CLI (agy), SDK, Managed Agents API tier, and enterprise deployment path in a single release — all powered by Gemini 3.5 Flash. Gemini CLI is retired with a June 18, 2026 hard shutdown; teams on free or Pro/Ultra accounts need to migrate agent skills, hooks, and subagents before that date.",
+      "id": "google-managed-agents-gemini-api-2026-05-19",
+      "title": "Google launches Managed Agents in Gemini API — single call spins up a full agent",
+      "summary": "One API call now provisions a sandboxed Linux environment where a Gemini 3.5 Flash agent can reason, call tools, and execute code with persistent state across follow-up calls. Agents are defined via AGENTS.md and SKILL.md files, removing most orchestration boilerplate — direct competition for LangChain, AutoGen, and OpenAI's Agents SDK.",
+      "category": "google",
+      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/managed-agents-gemini-api/",
+      "significance": 8
+    },
+    {
+      "id": "google-antigravity-20-io2026-2026-05-19",
+      "title": "Google Antigravity 2.0 ships as a five-surface agent platform, kills Gemini CLI",
+      "summary": "Antigravity 2.0 launched May 19 as a desktop app, CLI (agy), SDK, Managed Agents API tier, and enterprise path — all at once. Gemini CLI is deprecated with a June 18, 2026 shutdown deadline. If your team uses Gemini CLI, migration is time-sensitive.",
       "category": "google",
       "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
       "significance": 7
     },
     {
-      "id": "google-managed-agents-api-2026-05-19",
-      "title": "Google ships Managed Agents API — one call spins up a stateful agent",
-      "summary": "The Gemini API now exposes Managed Agents: a single API call that provisions an agent with persistent state, tool use, and code execution in an isolated Linux sandbox. This is Google's direct answer to OpenAI's Responses API server-side history management and is live in AI Studio and via the Interactions API today.",
-      "category": "google",
-      "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-acquires-stainless-2026-05-18",
-      "title": "Anthropic acquires Stainless for ~$300M, shuts hosted SDK generator",
-      "summary": "Anthropic bought Stainless — the SDK and MCP server tooling startup that also powered OpenAI's, Google's, and Cloudflare's client libraries — and is winding down all hosted products including the public SDK generator. Rivals now have to rebuild or migrate their automated SDK pipelines; existing customers keep generated code but lose the managed workflow.",
+      "id": "anthropic-claude-m365-addins-ga-2026-05",
+      "title": "Claude for Microsoft 365 hits GA for Word, Excel, PowerPoint — Outlook in beta",
+      "summary": "Claude add-ins for Word, Excel, and PowerPoint are generally available on paid plans today, with cross-app context maintained as you switch files. Claude for Outlook moves to public beta simultaneously, adding inbox triage and draft replies. Drop-in for teams already on M365 enterprise plans.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
       "significance": 7
     },
     {
-      "id": "google-gemini-spark-agent-2026-05-19",
-      "title": "Google announces Gemini Spark 24/7 personal agent — beta starts next week",
-      "summary": "Gemini Spark is a background AI agent that reads inbox, calendar, and connected apps to take action autonomously under user direction. It is rolling out to trusted testers now with a public beta for Google AI Ultra subscribers in the US starting the week of May 26; no general availability date yet.",
-      "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "id": "anthropic-claude-managed-agents-mcp-tunnels-2026-05",
+      "title": "Anthropic adds MCP tunnels, self-hosted sandboxes, and live tool config to Claude Developer Platform",
+      "summary": "MCP tunnels (Research Preview) let you connect Claude to MCP servers on private networks without exposing them publicly. Self-hosted sandboxes are now an option for Claude Managed Agents, and tool configurations can be updated mid-session without restarting. Three quiet API changes that meaningfully expand what's buildable.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
       "significance": 6
     },
     {
-      "id": "google-ai-ultra-100-tier-2026-05-19",
-      "title": "Google cuts AI Ultra to $100/month, scraps daily prompt limits",
-      "summary": "Google dropped AI Ultra from $250 to $100/month and replaced per-prompt caps with a compute-consumption model that refreshes every five hours — light text queries cost far less than video generation. Direct pressure on OpenAI's $200/month ChatGPT Pro and Anthropic's Claude subscription.",
-      "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
-      "significance": 6
-    },
-    {
-      "id": "openai-content-provenance-c2pa-synthid-2026-05-22",
-      "title": "OpenAI ships C2PA conformance and SynthID watermarking for images",
-      "summary": "OpenAI added C2PA Content Credentials and Google's SynthID watermarking to its image tools, plus a preview public verification endpoint that confirms whether an image was generated with OpenAI tools. Practical for teams shipping user-generated content pipelines that need provenance signals for downstream moderation or compliance.",
+      "id": "openai-erdos-geometry-proof-2026-05-20",
+      "title": "OpenAI model autonomously disproves 80-year-old Erdős geometry conjecture",
+      "summary": "An internal OpenAI general-purpose reasoning model produced a 125-page proof refuting Erdős's conjectured upper bound on unit-distance pairs in planar point sets — connecting elementary geometry to Golod-Shafarevich algebraic number theory in a way mathematicians had not attempted. Fields medalist Tim Gowers called it a milestone. No public model access yet; framed as an AI adoption story by OpenAI.",
       "category": "openai",
-      "sourceURL": "https://releasebot.io/updates/openai",
+      "sourceURL": "https://openai.com/news/",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-claude-no-ads-policy-2026-02-04",
+      "title": "Anthropic reaffirms Claude stays ad-free as OpenAI rolls out ChatGPT ads",
+      "summary": "Anthropic's news page is surfacing its ad-free commitment prominently this week as OpenAI expands advertising to free and Go-tier ChatGPT users. The policy is not new (February 2026), but the positioning is active and worth tracking for enterprise buyers choosing between the two.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
       "significance": 5
     }
   ],
