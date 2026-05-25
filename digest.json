@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-25T00:00:00Z",
-  "reportGeneratedAt": "2026-05-25T12:00:00Z",
+  "reportGeneratedAt": "2026-05-25T10:17:20Z",
   "learnGeneratedAt": "2026-05-25T12:00:00Z",
   "report": [
     {
-      "id": "google-io-2026-gemini-35-antigravity-2026-05-19",
-      "title": "Google I/O 2026 ships Gemini 3.5 Flash, Antigravity 2.0, and Gemini Omni",
-      "summary": "Google launched Gemini 3.5 Flash (GA today, 4x faster than rival frontier models, beats Gemini 3.1 Pro on coding and agentic benchmarks), Antigravity 2.0 with a new CLI and managed-agents API, and Gemini Omni (video-first world model). A single Antigravity API call now provisions a remote Linux sandbox, executes code, and browses the web — directly competitive with Claude Managed Agents and OpenAI Codex.",
+      "id": "google-gemini-35-flash-ga-2026-05-19",
+      "title": "Gemini 3.5 Flash goes GA: beats 3.1 Pro on agents at 4x speed",
+      "summary": "Google shipped Gemini 3.5 Flash generally available at I/O, with a 1M-token context window, $1.50/$9.00 per million tokens, and benchmark leads over Gemini 3.1 Pro on Terminal-Bench 2.1 (76.2%), MCP Atlas (83.6%), and agentic evals. It is now the default model in the Gemini app and AI Mode in Search globally — if you opened Gemini this week, you are already running it.",
       "category": "google",
-      "sourceURL": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
-      "significance": 9
-    },
-    {
-      "id": "anthropic-managed-agents-sandboxes-mcp-tunnels-2026-05-19",
-      "title": "Anthropic ships self-hosted sandboxes and MCP tunnels for Claude Managed Agents",
-      "summary": "Announced at Code with Claude London (May 19), self-hosted sandboxes let enterprise teams run agent tool execution inside their own perimeter (via Cloudflare, Daytona, Modal, or Vercel) while Anthropic handles orchestration. MCP tunnels add a single outbound encrypted connection to private internal APIs — no inbound firewall changes needed. Public beta and research preview respectively; directly unblocks regulated-industry agent deployments.",
-      "category": "anthropic",
-      "sourceURL": "https://claude.com/blog/claude-managed-agents-updates",
+      "sourceURL": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
       "significance": 8
     },
     {
-      "id": "anthropic-acquires-stainless-sdk-2026-05-18",
-      "title": "Anthropic acquires Stainless, the SDK and MCP server generator behind Claude's API libraries",
-      "summary": "Stainless — which generated every official Claude SDK (Python, TypeScript, Go, Java, Kotlin) and also served OpenAI, Google, and Cloudflare — is now fully Anthropic-owned. Stainless is winding down its hosted SDK generator for third-party customers, so teams that relied on it for their own APIs need to find alternatives. Anthropic gains direct control over the SDK toolchain and MCP server generation layer.",
+      "id": "anthropic-acquires-stainless-2026-05-18",
+      "title": "Anthropic buys Stainless for $300M and immediately shuts it to rivals",
+      "summary": "Anthropic acquired Stainless — the SDK-generation platform behind OpenAI's, Google's, and Cloudflare's official developer libraries — for over $300M, then announced it will wind down all hosted Stainless products for every customer except itself. OpenAI and Google now have to rebuild their SDK pipelines in-house; the deal also covers Stainless's MCP server infrastructure, tightening Anthropic's grip on the agent-to-API connection layer.",
       "category": "anthropic",
-      "sourceURL": "https://channellife.news/story/anthropic-acquires-stainless-to-boost-claude-integrations",
+      "sourceURL": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
       "significance": 7
     },
     {
-      "id": "openai-gpt55-instant-default-2026-05-05",
-      "title": "OpenAI promotes GPT-5.5 Instant to default ChatGPT model for all users",
-      "summary": "GPT-5.5 Instant replaces GPT-5.3 Instant as the default for all ChatGPT users (free through enterprise), with improved factuality in law, medicine, and finance, and enhanced personalization pulling from past chats, files, and Gmail. In the API it ships as `chat-latest`; GPT-5.3 Instant stays available to paid users for three months before deprecation.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/gpt-5-5-instant/",
-      "significance": 7
-    },
-    {
-      "id": "openai-codex-goal-mode-ga-2026-05-21",
-      "title": "OpenAI ships Codex Goal Mode GA plus Appshots and remote computer-use for Business",
-      "summary": "Goal Mode — define an outcome and let Codex run autonomously toward it — is now generally available across the Codex app, IDE extension, and CLI. ChatGPT Business also gains Appshots (attach a live app window to a Codex thread with a hotkey), remote locked computer-use, and shared plugins for workspace reuse. This substantially closes the agentic-coding gap with Claude Code.",
-      "category": "openai",
-      "sourceURL": "https://releasebot.io/updates/openai",
-      "significance": 7
-    },
-    {
-      "id": "openai-chatgpt-personal-finance-2026-05-15",
-      "title": "OpenAI launches ChatGPT personal finance tools with Plaid bank-account linking",
-      "summary": "Pro subscribers in the US can now connect over 12,000 financial institutions via Plaid and get a spending, portfolio, and subscription dashboard inside ChatGPT. ChatGPT cannot execute transactions or give licensed financial advice, but the read-only intelligence layer is live and ships to Plus users next.",
-      "category": "openai",
-      "sourceURL": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
+      "id": "google-gemini-spark-agent-2026-05-19",
+      "title": "Google launches Gemini Spark: a 24/7 personal AI agent in beta",
+      "summary": "Alongside Gemini 3.5 Flash, Google announced Gemini Spark, a persistent personal AI agent that runs continuously, monitors connected apps, and takes action on a user's behalf. Beta access starts with trusted testers now and rolls to Google AI Ultra subscribers ($100/month) in the US next week — no general availability yet.",
+      "category": "google",
+      "sourceURL": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
       "significance": 6
     },
     {
-      "id": "elon-musk-openai-lawsuit-dismissed-2026-05-18",
-      "title": "Federal jury clears OpenAI of Musk's claims; IPO path unblocked",
-      "summary": "A unanimous jury ruled against Musk on statute-of-limitations grounds, not the merits of his nonprofit-mission claims. The ruling removes the most significant legal obstacle to OpenAI's October 2026 IPO, currently targeting a $900B+ valuation. Musk announced he will appeal.",
+      "id": "google-gemini-api-managed-agents-2026-05-19",
+      "title": "Gemini API ships Managed Agents: one call spins a stateful agent in a container",
+      "summary": "Google added Managed Agents to the Gemini API — a single API call now provisions an isolated Linux container where the model reasons, calls tools, and executes code with state persisting across follow-up calls. Previously, wiring up that environment was entirely manual; this is a drop-in for builders who want long-horizon agent sessions without building their own orchestration scaffolding.",
+      "category": "google",
+      "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
+      "significance": 7
+    },
+    {
+      "id": "google-gemini-api-breaking-thinking-default-2026-05-19",
+      "title": "Gemini 3.5 Flash silently drops default thinking level from high to medium",
+      "summary": "The thinking_budget integer parameter is replaced by a thinking_level string enum (minimal, low, medium, high), with the new default set to medium — down from high. Builders porting from gemini-3-flash-preview will get less reasoning per call unless they explicitly set thinking_level='high' in their API requests.",
+      "category": "google",
+      "sourceURL": "https://www.buildfastwithai.com/blogs/google-io-2026-gemini-3-5-flash-announcements",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-claude-mythos-trump-eo-canceled-2026-05-22",
+      "title": "Trump cancels AI executive order that would have gated Mythos-class models",
+      "summary": "President Trump abruptly pulled a draft executive order that would have required pre-release government vetting of advanced AI models — a process triggered largely by security concerns around Anthropic's Claude Mythos. The cancellation leaves no federal pre-release review framework in place, which removes near-term regulatory friction for frontier labs but also removes any external safety gate before the next Mythos-tier model ships.",
       "category": "other",
-      "sourceURL": "https://thecreatorsai.com/p/google-io-drops-100-things-karpathy",
+      "sourceURL": "https://opentools.ai/news",
+      "significance": 6
+    },
+    {
+      "id": "google-antigravity-20-io-2026-05-19",
+      "title": "Google ships Antigravity 2.0 with parallel multi-agent workspace management",
+      "summary": "Google updated its agentic development platform Antigravity to version 2.0, adding a Manager view that lets developers orchestrate multiple agents working in parallel across separate workspaces. The Editor view retains the IDE-style interface; the Manager view is new and positions Antigravity as a direct alternative to multi-agent frameworks like LangGraph or CrewAI for teams already on Google Cloud.",
+      "category": "tooling",
+      "sourceURL": "https://hothardware.com/news/google-io-2026-gemini-35-flash-ai-search-and-more",
       "significance": 6
     }
   ],
