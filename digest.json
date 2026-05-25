@@ -1,166 +1,185 @@
 {
   "schemaVersion": 1,
-  "weekOf": "2026-05-18T00:00:00Z",
-  "reportGeneratedAt": "2026-05-24T08:34:14Z",
-  "learnGeneratedAt": "2026-05-21T12:00:00Z",
+  "weekOf": "2026-05-25T00:00:00Z",
+  "reportGeneratedAt": "2026-05-25T12:00:00Z",
+  "learnGeneratedAt": "2026-05-25T12:00:00Z",
   "report": [
     {
-      "id": "google-gemini-35-flash-io2026-2026-05-19",
-      "title": "Google ships Gemini 3.5 Flash at I/O 2026, targets agentic workloads",
-      "summary": "Gemini 3.5 Flash is live across the Gemini API and AI Studio, outperforming Gemini 3.1 Pro on agentic and coding benchmarks while running four times faster than comparable frontier models. It's the default engine under Antigravity 2.0, Managed Agents, and Gemini Spark — making it the practical model choice for anything long-horizon right now. Gemini 3.5 Pro is still internal-only, due next month.",
+      "id": "google-io-2026-gemini-35-antigravity-2026-05-19",
+      "title": "Google I/O 2026 ships Gemini 3.5 Flash, Antigravity 2.0, and Gemini Omni",
+      "summary": "Google launched Gemini 3.5 Flash (GA today, 4x faster than rival frontier models, beats Gemini 3.1 Pro on coding and agentic benchmarks), Antigravity 2.0 with a new CLI and managed-agents API, and Gemini Omni (video-first world model). A single Antigravity API call now provisions a remote Linux sandbox, executes code, and browses the web — directly competitive with Claude Managed Agents and OpenAI Codex.",
       "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+      "sourceURL": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+      "significance": 9
+    },
+    {
+      "id": "anthropic-managed-agents-sandboxes-mcp-tunnels-2026-05-19",
+      "title": "Anthropic ships self-hosted sandboxes and MCP tunnels for Claude Managed Agents",
+      "summary": "Announced at Code with Claude London (May 19), self-hosted sandboxes let enterprise teams run agent tool execution inside their own perimeter (via Cloudflare, Daytona, Modal, or Vercel) while Anthropic handles orchestration. MCP tunnels add a single outbound encrypted connection to private internal APIs — no inbound firewall changes needed. Public beta and research preview respectively; directly unblocks regulated-industry agent deployments.",
+      "category": "anthropic",
+      "sourceURL": "https://claude.com/blog/claude-managed-agents-updates",
       "significance": 8
     },
     {
-      "id": "google-managed-agents-gemini-api-2026-05-19",
-      "title": "Google launches Managed Agents in Gemini API — single call spins up a full agent",
-      "summary": "One API call now provisions a sandboxed Linux environment where a Gemini 3.5 Flash agent can reason, call tools, and execute code with persistent state across follow-up calls. Agents are defined via AGENTS.md and SKILL.md files, removing most orchestration boilerplate — direct competition for LangChain, AutoGen, and OpenAI's Agents SDK.",
-      "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/managed-agents-gemini-api/",
-      "significance": 8
-    },
-    {
-      "id": "google-antigravity-20-io2026-2026-05-19",
-      "title": "Google Antigravity 2.0 ships as a five-surface agent platform, kills Gemini CLI",
-      "summary": "Antigravity 2.0 launched May 19 as a desktop app, CLI (agy), SDK, Managed Agents API tier, and enterprise path — all at once. Gemini CLI is deprecated with a June 18, 2026 shutdown deadline. If your team uses Gemini CLI, migration is time-sensitive.",
-      "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+      "id": "anthropic-acquires-stainless-sdk-2026-05-18",
+      "title": "Anthropic acquires Stainless, the SDK and MCP server generator behind Claude's API libraries",
+      "summary": "Stainless — which generated every official Claude SDK (Python, TypeScript, Go, Java, Kotlin) and also served OpenAI, Google, and Cloudflare — is now fully Anthropic-owned. Stainless is winding down its hosted SDK generator for third-party customers, so teams that relied on it for their own APIs need to find alternatives. Anthropic gains direct control over the SDK toolchain and MCP server generation layer.",
+      "category": "anthropic",
+      "sourceURL": "https://channellife.news/story/anthropic-acquires-stainless-to-boost-claude-integrations",
       "significance": 7
     },
     {
-      "id": "anthropic-claude-m365-addins-ga-2026-05",
-      "title": "Claude for Microsoft 365 hits GA for Word, Excel, PowerPoint — Outlook in beta",
-      "summary": "Claude add-ins for Word, Excel, and PowerPoint are generally available on paid plans today, with cross-app context maintained as you switch files. Claude for Outlook moves to public beta simultaneously, adding inbox triage and draft replies. Drop-in for teams already on M365 enterprise plans.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
+      "id": "openai-gpt55-instant-default-2026-05-05",
+      "title": "OpenAI promotes GPT-5.5 Instant to default ChatGPT model for all users",
+      "summary": "GPT-5.5 Instant replaces GPT-5.3 Instant as the default for all ChatGPT users (free through enterprise), with improved factuality in law, medicine, and finance, and enhanced personalization pulling from past chats, files, and Gmail. In the API it ships as `chat-latest`; GPT-5.3 Instant stays available to paid users for three months before deprecation.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/gpt-5-5-instant/",
       "significance": 7
     },
     {
-      "id": "anthropic-claude-managed-agents-mcp-tunnels-2026-05",
-      "title": "Anthropic adds MCP tunnels, self-hosted sandboxes, and live tool config to Claude Developer Platform",
-      "summary": "MCP tunnels (Research Preview) let you connect Claude to MCP servers on private networks without exposing them publicly. Self-hosted sandboxes are now an option for Claude Managed Agents, and tool configurations can be updated mid-session without restarting. Three quiet API changes that meaningfully expand what's buildable.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "id": "openai-codex-goal-mode-ga-2026-05-21",
+      "title": "OpenAI ships Codex Goal Mode GA plus Appshots and remote computer-use for Business",
+      "summary": "Goal Mode — define an outcome and let Codex run autonomously toward it — is now generally available across the Codex app, IDE extension, and CLI. ChatGPT Business also gains Appshots (attach a live app window to a Codex thread with a hotkey), remote locked computer-use, and shared plugins for workspace reuse. This substantially closes the agentic-coding gap with Claude Code.",
+      "category": "openai",
+      "sourceURL": "https://releasebot.io/updates/openai",
+      "significance": 7
+    },
+    {
+      "id": "openai-chatgpt-personal-finance-2026-05-15",
+      "title": "OpenAI launches ChatGPT personal finance tools with Plaid bank-account linking",
+      "summary": "Pro subscribers in the US can now connect over 12,000 financial institutions via Plaid and get a spending, portfolio, and subscription dashboard inside ChatGPT. ChatGPT cannot execute transactions or give licensed financial advice, but the read-only intelligence layer is live and ships to Plus users next.",
+      "category": "openai",
+      "sourceURL": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
       "significance": 6
     },
     {
-      "id": "openai-erdos-geometry-proof-2026-05-20",
-      "title": "OpenAI model autonomously disproves 80-year-old Erdős geometry conjecture",
-      "summary": "An internal OpenAI general-purpose reasoning model produced a 125-page proof refuting Erdős's conjectured upper bound on unit-distance pairs in planar point sets — connecting elementary geometry to Golod-Shafarevich algebraic number theory in a way mathematicians had not attempted. Fields medalist Tim Gowers called it a milestone. No public model access yet; framed as an AI adoption story by OpenAI.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-claude-no-ads-policy-2026-02-04",
-      "title": "Anthropic reaffirms Claude stays ad-free as OpenAI rolls out ChatGPT ads",
-      "summary": "Anthropic's news page is surfacing its ad-free commitment prominently this week as OpenAI expands advertising to free and Go-tier ChatGPT users. The policy is not new (February 2026), but the positioning is active and worth tracking for enterprise buyers choosing between the two.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
-      "significance": 5
+      "id": "elon-musk-openai-lawsuit-dismissed-2026-05-18",
+      "title": "Federal jury clears OpenAI of Musk's claims; IPO path unblocked",
+      "summary": "A unanimous jury ruled against Musk on statute-of-limitations grounds, not the merits of his nonprofit-mission claims. The ruling removes the most significant legal obstacle to OpenAI's October 2026 IPO, currently targeting a $900B+ valuation. Musk announced he will appeal.",
+      "category": "other",
+      "sourceURL": "https://thecreatorsai.com/p/google-io-drops-100-things-karpathy",
+      "significance": 6
     }
   ],
   "learn": [
     {
-      "id": "google-antigravity-cli-2026-05-19",
-      "name": "Google Antigravity CLI",
-      "category": "tooling",
-      "oneLineDescription": "Terminal-first AI agent CLI replacing Gemini CLI, backed by Gemini 3.5 Flash.",
-      "estimatedSetupMinutes": 5,
-      "detail": {
-        "whatItDoes": "Antigravity CLI is a Go-based terminal agent that shares the same underlying engine as the Antigravity 2.0 desktop app. It supports multi-step reasoning, multi-file editing, tool calling, and dynamic subagent spawning — all from a keyboard-driven TUI. Sessions can be exported to the Antigravity 2.0 GUI if a task outgrows the terminal. It replaced Gemini CLI on May 19, 2026; Gemini CLI stops serving requests June 18, 2026.\n\nThe CLI is one surface of a four-product platform: Antigravity 2.0 desktop app, Antigravity CLI, Antigravity SDK, and Managed Agents in the Gemini API. All four share the same Antigravity agent harness, powered by Gemini 3.5 Flash at 289 tokens/second. Settings and agent state sync bidirectionally between the CLI and GUI.",
-        "whoItsFor": "Backend engineers and DevOps teams who work SSH-first or in headless environments. Also useful for any developer already using Claude Code or Codex CLI who wants a Google-ecosystem alternative with native Workspace integrations and competitive Gemini 3.5 Flash pricing ($1.50/$9 per 1M tokens). Existing Gemini CLI users must migrate before June 18.",
-        "pros": [
-          "Same agent harness as Antigravity 2.0 desktop — no capability gap between CLI and GUI surfaces",
-          "Parallel subagent execution: the manager agent decomposes tasks and runs specialized subagents concurrently",
-          "Multi-model support in a single install: switch between Gemini 3.5 Flash, 3.1 Pro, Claude Sonnet/Opus, and GPT-OSS 120B from the /model menu",
-          "Session export to GUI: if a task becomes too complex for TUI, continue it visually without losing context",
-          "Free entry point with a personal Gmail account via Google AI Studio free tier"
-        ],
-        "cons": [
-          "Gemini CLI migration deadline is June 18, 2026 — existing scripts and configs need updating before then",
-          "Agent can execute code and edit files: requires active monitoring, especially in unattended pipelines",
-          "Antigravity 2.0 codelabs only support versions v1.23.2 or earlier; newer v2.0+ require updated documentation paths"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- macOS, Linux (amd64/arm64), or Windows\n- A Google account (personal Gmail works for the free tier)\n- Google AI Pro ($19.99/mo) or Ultra ($99.99/mo) for sustained heavy use; free tier available with daily limits\n- **Gemini CLI users:** you have until June 18, 2026 before requests stop serving\n\n## Install\n\n```bash\n# macOS / Linux — one-liner\ncurl -fsSL https://antigravity.google/cli/install.sh | bash\n```\n\nThe installer detects your platform, downloads the `agy` binary, verifies the checksum, and configures your shell PATH automatically.\n\n```bash\n# Verify install\nagy --version\n# Expected output: Antigravity CLI 1.0.0\n```\n\n## Authenticate\n\n```bash\n# Standard workstation (opens browser)\nagy auth login\n\n# Remote SSH / headless (no browser available)\nagy auth login --no-browser\n# Follow the printed URL + code flow\n```\n\n## First agent session\n\n```bash\n# Navigate to your project\ncd ~/my-project\n\n# Start an interactive agent session\nagy\n\n# Inside the TUI — ask it to do real work:\n> Refactor the auth module to use the repository pattern and add unit tests\n```\n\n## Switch models inside the TUI\n\n```\n/model\n# Arrow-select from:\n#   Gemini 3.5 Flash (High)  <-- default, best for agentic coding\n#   Gemini 3.1 Pro (High)\n#   Claude Sonnet 4.6 (Thinking)\n#   Claude Opus 4.6 (Thinking)\n#   GPT-OSS 120B (Medium)\n```\n\n## Export session to Antigravity 2.0 GUI\n\n```\n/export\n# Opens the current session in the desktop app with full context intact\n```\n\n## Gotchas\n- **`thinking_level` default changed.** If you migrate from `gemini-3-flash-preview` scripts, the default reasoning dropped from `high` to `medium`. Set `--thinking-level high` explicitly for complex tasks.\n- **Agent has file-write and shell-exec permissions.** Run `agy --dry-run` first on unfamiliar codebases to preview proposed changes before they execute.\n- **Gemini CLI configs do NOT auto-migrate.** Manually move any `.gemini/` project configs to `.antigravity/` after install.",
-        "sourceURL": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
-      }
-    },
-    {
-      "id": "cursor-composer-25-2026-05-18",
-      "name": "Cursor Composer 2.5",
-      "category": "tooling",
-      "oneLineDescription": "Agentic coding model inside Cursor matching Opus 4.7 benchmarks at $0.50/M tokens.",
-      "estimatedSetupMinutes": 3,
-      "detail": {
-        "whatItDoes": "Composer 2.5 is Cursor's third-generation in-house coding agent, designed specifically for long multi-file coding sessions inside the Cursor IDE and CLI. It reads files, runs terminal commands, edits across multiple files simultaneously, executes tests, and iterates autonomously. The base is Moonshot AI's open-source Kimi K2.5 checkpoint (1T total / 32B active params, MoE architecture), with 85% of compute spent on Cursor's own post-training: 25x more synthetic tasks and a new Directive Text Feedback RL technique that provides localized feedback at each failed tool call rather than a single end-of-run reward.\n\nBenchmarks vs. Opus 4.7: SWE-Bench Multilingual 79.8% vs 80.5% (essentially tied), CursorBench v3.1 63.2% vs 61.6% (Composer wins), Terminal-Bench 2.0 69.3% vs 69.4% (tied). GPT-5.5 leads Terminal-Bench at 82.7% — use GPT-5.5 for shell-heavy automation. Standard tier pricing is $0.50/M input and $2.50/M output, versus $15/M for Opus 4.7 and GPT-5.5.",
-        "whoItsFor": "Software engineers and agent builders already on Cursor Pro who run heavy multi-file agentic sessions. Particularly cost-effective for teams running large daily token volumes where the 10x cost differential vs. frontier models is material. Not suitable for teams with federal or data-sovereignty procurement constraints — the Kimi K2.5 base has been flagged by NIST's CAISI and a February 2026 IAPS memo recommending ban from federal devices.",
-        "pros": [
-          "Matches Opus 4.7 on SWE-Bench Multilingual and CursorBench v3.1 at ~1/10th the standard API cost",
-          "Directive Text Feedback RL produces more reliable behavior on long sessions — less mid-task drift than Composer 2",
-          "MCP support: connects to any MCP-compatible tool server inside Cursor agent mode",
-          "Double included usage running through ~May 25, 2026 — ideal time to run real benchmark sessions",
-          "Cursor was transparent about the Kimi base from day one of this release (fixed the March disclosure gap)"
-        ],
-        "cons": [
-          "Cursor-exclusive: no public API, no use outside the Cursor IDE or @cursor/sdk",
-          "GPT-5.5 leads by 13 points on Terminal-Bench 2.0 — shell-intensive agent pipelines should test carefully",
-          "Kimi K2.5 lineage (Beijing-based Moonshot AI) is a procurement blocker for regulated industries and federal-adjacent work",
-          "Cursor flagged reward-hacking behaviors in training logs — monitor agent traces in long unattended runs"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Cursor IDE installed (cursor.sh — free or Pro plan)\n- Cursor Pro recommended for meaningful included usage credits\n- **Not available as a standalone API** — must use inside Cursor IDE or `@cursor/sdk`\n\n## Switch to Composer 2.5 in the IDE\n\n1. Open Cursor\n2. Open the Agent panel (`Cmd+Shift+L` / `Ctrl+Shift+L`)\n3. Click the model dropdown at the top of the panel\n4. Select **Composer 2.5** (listed as `composer-2.5`)\n\nAlternatively, set it as your default in settings:\n\n```json\n// ~/.cursor/settings.json\n{\n  \"cursor.agent.defaultModel\": \"composer-2.5\"\n}\n```\n\n## Run via Cursor CLI\n\n```bash\n# Install Cursor CLI if not already present\nnpm install -g @cursor/sdk\n\n# Run a headless agent task\ncursor agent run \\\n  --model composer-2.5 \\\n  --prompt \"Refactor the payment module to use async/await and add Jest tests\"\n```\n\n## Wire MCP tools\n\n```json\n// .cursor/mcp.json — example connecting an API spec server\n{\n  \"mcpServers\": {\n    \"apidog\": {\n      \"command\": \"npx\",\n      \"args\": [\"@apidog/mcp-server\", \"--spec\", \"./openapi.yaml\"]\n    }\n  }\n}\n```\n\n## Pricing tiers (as of May 2026)\n\n| Tier | Input | Output | Use case |\n|------|-------|--------|----------|\n| Standard | $0.50/M | $2.50/M | Batch, async tasks |\n| Fast (default) | $3.00/M | $15.00/M | Interactive sessions |\n\nCursor Pro subscription users draw from included credits before per-token billing kicks in.\n\n## Gotchas\n- **Fast tier is the interactive default.** Standard tier ($0.50/M) requires explicitly selecting it in the model dropdown — it runs slower but is appropriate for non-interactive batch work.\n- **Reward-hacking risk in long runs.** Cursor's own training notes flagged creative shortcuts. Always review agent diffs before merging; use `git diff --staged` as a final check.\n- **Re-run your evals.** Composer 2.5 is a behavior change from 2, not a rename — treat it as a new model and re-baseline critical test suites before deploying to production agents.",
-        "sourceURL": "https://devtoolpicks.com/blog/cursor-composer-2-5-launch-indie-hackers-2026"
-      }
-    },
-    {
-      "id": "gemini-35-flash-api-2026-05-19",
-      "name": "Gemini 3.5 Flash API",
+      "id": "google-antigravity-cli-managed-agents",
+      "name": "Google Antigravity 2.0 + Antigravity CLI",
       "category": "google",
-      "oneLineDescription": "GA frontier Flash model: beats Gemini 3.1 Pro on agent benchmarks at $1.50/$9 per 1M tokens.",
-      "estimatedSetupMinutes": 5,
+      "oneLineDescription": "Google's agent-first dev platform: managed remote sandboxes via one API call, new CLI.",
+      "estimatedSetupMinutes": 10,
       "detail": {
-        "whatItDoes": "Gemini 3.5 Flash is Google's first Gemini 3.5-series model, launched generally available May 19, 2026. It beats Gemini 3.1 Pro on coding and agentic benchmarks — 76.2% Terminal-Bench 2.1 vs 70.3% for 3.1 Pro, 83.6% MCP Atlas — while running 4x faster and costing ~40% less ($1.50/$9 per 1M vs $2/$12 for 3.1 Pro). The model ID is `gemini-3.5-flash` (no preview suffix). It has a 1M-token context window, accepts text, image, audio, video, and PDF input, and ships with dynamic thinking on by default at medium level.\n\nKey new API primitive shipping alongside the model: the Interactions API (beta), which provides server-side conversation history management — Google's equivalent of OpenAI's Responses API pattern. Managed Agents in the Gemini API is also live: a single call to the Antigravity agent provisions a remote Linux sandbox where the agent reasons, calls tools, and executes code.",
-        "whoItsFor": "API builders replacing Gemini 3.1 Pro in cost-sensitive agentic pipelines — the benchmark inversion means 3.5 Flash is the better default for coding and tool-use workloads. Also the right drop-in for teams migrating off `gemini-3-flash-preview`, and for anyone evaluating alternatives to Claude Opus 4.7 or GPT-5.5 at lower cost. Gemini 2.0 Flash users must migrate before June 1, 2026 when that model is deprecated.",
+        "whatItDoes": "Antigravity 2.0 is Google's agent-first development platform, now shipping a CLI (`antigravity`) and a Managed Agents API. A single API call provisions a full remote Linux sandbox where the Gemini 3.5 Flash-powered agent can reason, plan, execute code, manage files, and browse the web — all in an isolated environment. Orchestration, credential masking, and hardened Git policies are built in. You can also extend the agent with custom instructions in AGENTS.md and SKILL.md files.\n\nThe Antigravity SDK lets you self-host the agent harness on your own infrastructure if you need more control. A WebMCP origin trial (Chrome 149+) is also shipping, proposing an open web standard so browser-based agents can call structured JavaScript functions and HTML forms natively.",
+        "whoItsFor": "Backend and full-stack engineers building agentic workflows on Google Cloud or using Gemini API. Teams already using Android Studio will benefit from the stable Android CLI and open-sourced Android Skills. Any developer who wants a hosted alternative to running a local Claude Code or Cursor session will find Managed Agents a direct drop-in.",
         "pros": [
-          "Beats Gemini 3.1 Pro on coding and agentic benchmarks at 40% lower cost — unusual Pro/Flash hierarchy inversion",
-          "1M-token context window with 90% cached-input discount ($0.15/M cached) cuts costs significantly for RAG-heavy apps",
-          "Parallel function calling and MCP Atlas-leading multi-tool coordination (83.6%)",
-          "Thinking levels (minimal/low/medium/high) let you tune cost vs. reasoning depth per-request",
-          "Available same-day on Gemini API, AI Studio, Vertex AI, Antigravity — no waitlist"
+          "Single API call provisions a full remote Linux sandbox — no infra setup",
+          "Gemini 3.5 Flash powers it: GA today, 4x faster than rival frontier models on output tokens/s",
+          "AGENTS.md / SKILL.md config means no orchestration code for standard workflows",
+          "WebMCP origin trial opens a path to browser-native agent tool execution"
         ],
         "cons": [
-          "GPT-5.5 still leads on general reasoning benchmarks and Terminal-Bench 2.0 (82.7% vs 76.2%)",
-          "thinking_level default changed from `high` to `medium` vs. preview — silent regression for migrated prompts",
-          "3x price jump from Gemini 3 Flash Preview ($0.50/$3) — existing Flash Preview users will see a significant cost increase",
-          "Gemini 3.5 Pro (higher capability) not yet available; slated for June 2026"
+          "Gemini 3.5 Pro (the bigger reasoning model) is still in testing; not GA yet",
+          "Self-hosting the Antigravity harness requires the Antigravity SDK and your own infra — not turnkey",
+          "Managed Agents API pricing not publicly listed; costs for long-horizon agentic runs are unclear"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Google account with API access at [aistudio.google.com](https://aistudio.google.com)\n- `GEMINI_API_KEY` from AI Studio (free tier: 1,500 req/day on Flash models)\n- Python 3.9+ or Node 20+ for the SDK examples below\n- **Gemini 2.0 Flash users:** migrate before June 1, 2026 — that model is deprecated\n\n## Get an API key\n\n```bash\n# Set in your environment\nexport GEMINI_API_KEY=\"your-key-here\"\n```\n\n## Python quickstart\n\n```bash\npip install google-genai\n```\n\n```python\nimport google.generativeai as genai\nimport os\n\ngenai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n\nmodel = genai.GenerativeModel(\n    model_name=\"gemini-3.5-flash\",\n    generation_config={\n        \"thinking_level\": \"high\",  # explicit — default is 'medium', lower than old preview\n    }\n)\n\nresponse = model.generate_content(\n    \"Write a Python function to parse ISO-8601 dates with timezone handling.\"\n)\nprint(response.text)\n```\n\n## Node.js / TypeScript quickstart\n\n```bash\nnpm install @google/generative-ai\n```\n\n```typescript\nimport { GoogleGenerativeAI } from \"@google/generative-ai\";\n\nconst genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);\n\nconst model = genAI.getGenerativeModel({\n  model: \"gemini-3.5-flash\",\n  generationConfig: {\n    thinkingLevel: \"high\", // set explicitly; default 'medium' is a regression from preview\n  },\n});\n\nconst result = await model.generateContent(\"Explain context caching in one paragraph.\");\nconsole.log(result.response.text());\n```\n\n## Managed Agent (one-call sandbox)\n\n```python\n# Spin up a full agent with a remote Linux sandbox — no infra setup\nfrom google import genai\n\nclient = genai.Client(api_key=os.environ[\"GEMINI_API_KEY\"])\n\n# Interactions API (beta) — server-side history management\nresponse = client.interactions.create(\n    model=\"gemini-3.5-flash\",\n    agent=\"antigravity\",  # provisions remote sandbox\n    message=\"Clone the repo, run the test suite, and report failures.\"\n)\nprint(response.output)\n```\n\n## Cost estimation\n\n| Workload | Tokens/request | Cost at $1.50/$9 |\n|----------|---------------|------------------|\n| Chat (1K in / 500 out) | 1.5K | ~$0.0057 |\n| RAG (10K in cached / 1K out) | 11K | ~$0.011 (cached input saves 90%) |\n| Long agent run (100K in / 10K out) | 110K | ~$0.24 |\n\n## Gotchas\n- **`thinking_level` migration:** if your code sets `thinking_budget` (integer), that param is deprecated. Switch to `thinking_level` string enum: `minimal`, `low`, `medium`, `high`. The default dropped from `high` to `medium` — explicitly set `high` for complex reasoning tasks or you will silently get less reasoning.\n- **Model ID change:** use `gemini-3.5-flash` (no preview suffix). The old `gemini-3-flash-preview` id still works temporarily but is deprecated.\n- **Gemini 2.0 Flash deprecation:** June 1, 2026. If you have any `gemini-2.0-flash` calls in production, update them now.",
-        "sourceURL": "https://ai.google.dev/gemini-api/docs/pricing"
+        "setupGuideMarkdown": "### Prerequisites\n- Node 20+ or Python 3.11+\n- A Google Cloud project with billing enabled\n- Gemini API key from [Google AI Studio](https://aistudio.google.com)\n\n### 1. Install the Antigravity CLI\n\n```bash\nnpm install -g @google/antigravity-cli\n# or via pip\npip install google-antigravity\n```\n\n### 2. Authenticate\n\n```bash\nantigravity auth login\n# Opens a browser OAuth flow tied to your Google account\n```\n\n### 3. Spin up a managed agent session\n\n```bash\nantigravity run --model gemini-3.5-flash \\\n  --task \"Clone https://github.com/my-org/my-repo and run the test suite\"\n# Returns a session ID; streams logs to stdout\n```\n\n### 4. Use the Managed Agents REST API directly\n\n```python\nimport requests, os\n\nAPI_KEY = os.environ[\"GEMINI_API_KEY\"]\n\nresp = requests.post(\n    \"https://generativelanguage.googleapis.com/v1beta/agents:run\",\n    headers={\"x-goog-api-key\": API_KEY},\n    json={\n        \"model\": \"gemini-3.5-flash\",\n        \"task\": \"Summarise the open GitHub issues in owner/repo\",\n        \"tools\": [\"code_execution\", \"browser\"]\n    }\n)\nprint(resp.json())\n```\n\n### 5. Add custom skills\n\nCreate an `AGENTS.md` at your repo root:\n\n```markdown\n# My Agent\n\n## Skills\n- name: run-tests\n  description: Run the full pytest suite and return a pass/fail summary\n  command: pytest --tb=short -q\n```\n\nThen register it:\n\n```bash\nantigravity agents register --file AGENTS.md --name my-project-agent\n```\n\n**Gotcha:** The `SKILL.md` and `AGENTS.md` convention is new and separate from the existing `gemini.json` config used in older Antigravity 1.x projects. Don't mix them — the CLI will warn you but won't error out, and the skill won't load silently.",
+        "sourceURL": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/"
       }
     },
     {
-      "id": "huggingface-ml-intern-agent-2026-05",
-      "name": "ml-intern (Hugging Face)",
+      "id": "anthropic-claude-managed-agents-self-hosted-sandboxes",
+      "name": "Claude Managed Agents: Self-Hosted Sandboxes + MCP Tunnels",
+      "category": "anthropic",
+      "oneLineDescription": "Run Claude agent tool execution inside your own infra; connect private APIs via encrypted tunnel.",
+      "estimatedSetupMinutes": 20,
+      "detail": {
+        "whatItDoes": "Claude Managed Agents now supports two new enterprise-facing deployment modes. Self-hosted sandboxes move the tool-execution layer (code runs, file I/O, shell commands) out of Anthropic-managed containers and into your own infrastructure or a managed provider (Cloudflare microVMs, Daytona, Modal, or Vercel). The agent orchestration loop — context management, error recovery, retries — stays on Anthropic's servers. MCP tunnels add a lightweight gateway you deploy inside your network: it opens a single outbound encrypted connection so Claude can reach private MCP servers, internal databases, and APIs without any inbound firewall rules or public DNS entries.",
+        "whoItsFor": "Platform engineers and AI leads at regulated enterprises (banks, insurers, healthcare) who have blocked agent pilots because tool execution was leaving their network boundary. Also relevant to any team that needs custom runtime images, large compute for long builds, or wants existing audit logs and DLP controls to apply automatically to agent runs.",
+        "pros": [
+          "Files, repos, and runtime packages never leave your network perimeter",
+          "Existing audit logging and DLP tools apply automatically — no new compliance work",
+          "MCP tunnels require zero inbound firewall changes; single outbound encrypted connection only",
+          "Works with both Managed Agents and the Messages API, so it's not locked to the agentic product"
+        ],
+        "cons": [
+          "Agent orchestration loop still runs on Anthropic servers — fully on-prem is not possible",
+          "MCP tunnels are research preview only; requires access request, not self-serve yet",
+          "Self-hosted sandbox setup adds infra overhead; teams without Cloudflare/Daytona/Modal/Vercel need to configure their own sandbox client"
+        ],
+        "setupGuideMarkdown": "### Prerequisites\n- Anthropic API key with Claude Platform access (not Bedrock-only)\n- Access to the Claude Console (console.anthropic.com)\n- For MCP tunnels: request early access at console.anthropic.com → Settings → MCP Tunnels\n- Supported sandbox providers: Cloudflare Workers (microVMs), Daytona, Modal, or Vercel\n\n### 1. Install the Claude SDK (Python)\n\n```bash\npip install anthropic>=0.52.0\n```\n\n### 2. Configure self-hosted sandbox (Daytona example)\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\n\nagent = client.beta.managed_agents.create(\n    model=\"claude-opus-4-7\",\n    sandbox={\n        \"type\": \"self_hosted\",\n        \"provider\": \"daytona\",\n        \"config\": {\n            \"workspace_id\": \"my-workspace\",\n            \"api_url\": \"https://my-daytona-instance.example.com\",\n            \"api_key\": \"DAYTONA_API_KEY\"\n        }\n    },\n    task=\"Audit the /src directory for hardcoded secrets and produce a findings report\"\n)\nprint(agent.result)\n```\n\n**Gotcha:** The `sandbox.provider` field is case-sensitive and must exactly match one of: `cloudflare`, `daytona`, `modal`, `vercel`. An unrecognized value silently falls back to Anthropic-hosted execution — check `agent.sandbox_used` in the response to confirm your sandbox was actually applied.\n\n### 3. Configure MCP tunnels (research preview)\n\nDeploy the tunnel gateway inside your private network:\n\n```bash\n# Download the Anthropic MCP tunnel gateway binary\ncurl -L https://releases.anthropic.com/mcp-tunnel/latest/linux-amd64 -o mcp-tunnel\nchmod +x mcp-tunnel\n\n# Start the tunnel, pointing at your internal MCP server\n./mcp-tunnel \\\n  --workspace-id YOUR_WORKSPACE_ID \\\n  --token YOUR_MCP_TUNNEL_TOKEN \\\n  --target http://internal-mcp-server:8080\n```\n\nThen register the tunnel in the Claude Console:\n- Navigate to **Settings → MCP Tunnels → Add Tunnel**\n- Paste the tunnel ID printed by the binary above\n\nThe tunnel token and workspace ID are obtained from console.anthropic.com after early-access approval.\n\n### 4. Verify the configuration\n\n```python\nagent = client.beta.managed_agents.create(\n    model=\"claude-sonnet-4-6\",\n    tools=[{\"type\": \"mcp\", \"tunnel_id\": \"YOUR_TUNNEL_ID\"}],\n    task=\"List all tables in the internal Postgres database\"\n)\nprint(agent.result)\n```",
+        "sourceURL": "https://claude.com/blog/claude-managed-agents-updates"
+      }
+    },
+    {
+      "id": "openai-codex-goal-mode-cli",
+      "name": "OpenAI Codex (Goal Mode GA + CLI)",
+      "category": "openai",
+      "oneLineDescription": "Define an outcome + success criteria; Codex runs autonomously until the goal is met.",
+      "estimatedSetupMinutes": 8,
+      "detail": {
+        "whatItDoes": "OpenAI's Codex is an agentic coding product available as a desktop app, IDE extension, and CLI. This week, Goal Mode graduated to general availability: you define an outcome (e.g. 'all tests passing on the feature/auth branch') and success criteria, and Codex loops autonomously — writing code, running tests, reading diffs — until those criteria are met or it gives up and reports back. The CLI (`codex`) also received richer TUI controls, improved `@mentions` search for pulling in file context, expanded remote workflows, a refreshed Python SDK, and `codex doctor` diagnostics for debugging connectivity and auth. Appshots (macOS only) let you attach a live app window to a Codex thread with a hotkey, so the agent can see the actual UI state.",
+        "whoItsFor": "Engineers who want a Claude Code-style agentic loop without switching away from the OpenAI ecosystem. Teams running ChatGPT Business who want to ship longer coding tasks without approving every step. Particularly useful for CI-adjacent work: fix a failing test suite, migrate a dependency, or run a lint pass across a large repo.",
+        "pros": [
+          "Goal Mode GA: set outcome + success criteria and walk away — no step-by-step approvals required",
+          "Available across app, IDE extension, and CLI — consistent experience on all surfaces",
+          "Appshots give the agent live visual context from a running app window (macOS)",
+          "codex doctor diagnoses auth and sandbox issues before they waste agent time"
+        ],
+        "cons": [
+          "Windows sandbox support still in preview — full Goal Mode on Windows is not yet stable",
+          "Goal Mode can run indefinitely on underspecified criteria; bad success criteria = wasted tokens",
+          "Shared plugins (workspace plugin reuse) require ChatGPT Business plan — not available on Plus/Pro"
+        ],
+        "setupGuideMarkdown": "### Prerequisites\n- macOS 13+ or Linux (Windows in preview)\n- Node 20+ for the CLI\n- OpenAI API key or ChatGPT Pro/Business subscription\n\n### 1. Install the Codex CLI\n\n```bash\nnpm install -g @openai/codex\ncodex --version\n# Should print 1.x.x\n```\n\n### 2. Authenticate\n\n```bash\nexport OPENAI_API_KEY=\"sk-...\"\n# Or use the interactive login:\ncodex auth login\n```\n\n### 3. Run a basic task\n\n```bash\ncd /path/to/your/repo\ncodex run \"Add JSDoc comments to all exported functions in src/\"\n```\n\n### 4. Use Goal Mode (the new GA feature)\n\n```bash\ncodex goal \\\n  --outcome \"All Jest tests pass on the feature/auth branch\" \\\n  --success-criteria \"npm test exits 0 with no skipped tests\" \\\n  --branch feature/auth \\\n  --max-iterations 40\n```\n\nCodex will loop: write → test → inspect output → fix → repeat, up to `--max-iterations` times.\n\n**Gotcha:** `--success-criteria` is evaluated by the model, not by a shell exit code. Write it as an unambiguous, observable statement. Vague criteria like 'code looks good' cause the agent to self-terminate early. Use exit codes or grep patterns where possible:\n\n```bash\ncodex goal \\\n  --outcome \"Migrate lodash imports to native ES2026 equivalents\" \\\n  --success-criteria \"grep -r 'lodash' src/ returns no matches AND npm test exits 0\"\n```\n\n### 5. Diagnose issues\n\n```bash\ncodex doctor\n# Checks: API key validity, sandbox connectivity, Node version, disk space\n```",
+        "sourceURL": "https://releasebot.io/updates/openai"
+      }
+    },
+    {
+      "id": "huggingface-ml-intern-agent",
+      "name": "ml-intern (Hugging Face agentic ML engineer)",
       "category": "otherLLM",
-      "oneLineDescription": "Open-source autonomous ML agent that researches, fine-tunes, and ships models via Hugging Face.",
+      "oneLineDescription": "Autonomous agent that reads papers, fine-tunes models, and uploads artifacts to Hugging Face Hub.",
       "estimatedSetupMinutes": 15,
       "detail": {
-        "whatItDoes": "ml-intern is an agentic loop (up to 300 iterations) that autonomously handles end-to-end ML tasks: reading papers, finding relevant Hugging Face datasets, fine-tuning models in a sandbox, uploading training traces to a private HF dataset, and delivering results without requiring step-by-step supervision. It supports two modes: interactive chat for exploratory work, and single-prompt headless execution for fully automated runs (e.g., 'fine-tune this model on this dataset and push the weights'). Every agent run produces a debuggable artifact stored as a private HF dataset, not a vanished terminal session.\n\nThe project reached 8,100 stars in its first few weeks on GitHub, driven by the practical overlap between ML engineers who need fine-tuning runs and agent workflows that can manage the iteration loop. It has built-in approval gates for sensitive operations (model pushes, external API calls) so it does not run fully blind.",
-        "whoItsFor": "ML engineers and researchers who need to run frequent fine-tuning experiments and want to offload the boilerplate: dataset search, hyperparameter setup, job monitoring, and weight pushing. Particularly useful for small teams without dedicated MLOps staff. Requires a Hugging Face account with write permissions and API token.",
+        "whatItDoes": "ml-intern is an open-source autonomous agent built by Hugging Face that handles the repetitive back-half of ML work: reading papers, finding relevant datasets on HF Hub, fine-tuning models in a sandboxed environment, uploading training traces to a private HF dataset, and returning finished weights. It runs an agentic loop up to 300 iterations with built-in approval gates for sensitive operations (model pushes, dataset writes). Two usage modes: interactive chat for exploration, or single-prompt headless execution ('go fine-tune this model on this dataset and push the weights'). Every session trace uploads to a private HF dataset, making every run a debuggable, shareable artifact rather than a vanished terminal session.",
+        "whoItsFor": "ML engineers and researchers who spend significant time on fine-tuning grunt work — monitoring training jobs, iterating on hyperparameters, pulling datasets. Particularly useful for teams already on Hugging Face Hub who want to automate model iteration without building their own agentic scaffolding. Also useful for solo builders who want to run overnight fine-tuning without babysitting.",
         "pros": [
-          "Full ML pipeline automation: paper reading, dataset selection, training, and HF push in one agent run",
-          "Every session produces a private HF dataset artifact — debuggable, shareable, not lost on terminal close",
-          "Built-in approval gates prevent accidental pushes or external API calls without confirmation",
-          "Headless single-prompt mode for CI/CD integration: trigger a fine-tune run from a script or cron job"
+          "Session traces auto-upload to private HF datasets — every run is reproducible and shareable",
+          "Built-in approval gates prevent destructive pushes without confirmation",
+          "Headless mode enables fire-and-forget fine-tuning jobs without an open terminal",
+          "MIT license; 8,100+ GitHub stars in first weeks"
         ],
         "cons": [
-          "300-iteration cap can hit limits on large training jobs — monitor for early truncation on long runs",
-          "Requires HF Pro or institutional access for private dataset storage of training traces at scale",
-          "Approval gate UX is interactive-first; headless mode requires explicit flag overrides for unattended pipelines"
+          "Requires a Hugging Face account with write access to Hub — not usable without HF credentials",
+          "300-iteration cap means very long fine-tuning runs may need manual continuation",
+          "No built-in cost controls for GPU compute; expensive jobs on HF Spaces can surprise you"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+\n- Hugging Face account with write API token (`HF_TOKEN`)\n- An LLM API key for the agent backbone (supports OpenAI, Anthropic, or any OpenAI-compatible endpoint)\n- Optional: GPU instance or HF Spaces for actual model training\n\n## Install\n\n```bash\ngit clone https://github.com/huggingface/ml-intern\ncd ml-intern\npip install -e .\n```\n\n## Set environment variables\n\n```bash\nexport HF_TOKEN=\"hf_your_token_here\"\nexport OPENAI_API_KEY=\"sk-your-key\"  # or ANTHROPIC_API_KEY for Claude backbone\n```\n\n## Interactive mode\n\n```bash\nml-intern chat\n# Then type:\n# > Find a sentiment classification dataset in French, fine-tune distilbert-base-multilingual-cased, push weights to my org\n```\n\n## Headless / single-prompt mode\n\n```bash\nml-intern run \\\n  --prompt \"Fine-tune Llama-3.2-1B on the HF 'imdb' dataset for 3 epochs. Push weights to my-org/imdb-llama-finetune.\" \\\n  --max-iterations 150\n```\n\n## Review the run artifact\n\n```python\nfrom datasets import load_dataset\n\n# ml-intern uploads traces to a private dataset named after the run ID\ntrace_ds = load_dataset(\"your-hf-username/ml-intern-traces\", split=\"latest\")\nprint(trace_ds[0][\"steps\"])  # Full step-by-step agent log\n```\n\n## Gotchas\n- **Approval gates are interactive by default.** To run fully headless, pass `--auto-approve pushes` — but review what it is about to push first by running with `--dry-run` once.\n- **Max iterations:** the default cap is 300. Large fine-tuning jobs on big datasets may time out. Pass `--max-iterations 300` explicitly and monitor the trace dataset mid-run.\n- **LLM backbone cost:** the agent issues many tool calls per iteration. Use a Flash-tier or cost-efficient model as the backbone (e.g., `gemini-3.5-flash`) to avoid large backbone bills on long runs.",
+        "setupGuideMarkdown": "### Prerequisites\n- Python 3.11+\n- Hugging Face account with a write-access token (`hf_...`)\n- At least 16GB RAM for local fine-tuning; GPU optional but recommended\n\n### 1. Clone and install\n\n```bash\ngit clone https://github.com/huggingface/ml-intern\ncd ml-intern\npip install -e \".[dev]\"\n```\n\n### 2. Set credentials\n\n```bash\nexport HF_TOKEN=\"hf_your_token_here\"\n# Optionally set a backing LLM for the agent brain:\nexport ANTHROPIC_API_KEY=\"sk-ant-...\"   # uses Claude Sonnet 4.6 by default\n# or\nexport OPENAI_API_KEY=\"sk-...\"\n```\n\n### 3. Interactive mode\n\n```bash\nml-intern chat\n# > Fine-tune distilbert-base-uncased on the ag_news dataset for text classification\n# Agent will: search HF Hub, pull dataset, configure trainer, run fine-tune, push weights\n```\n\n### 4. Headless / single-prompt mode\n\n```bash\nml-intern run \\\n  --task \"Fine-tune HuggingFaceTB/SmolLM2-360M on imdb for sentiment classification. \\\n          Push weights to my-org/smollm2-imdb-sentiment. \\\n          Target val accuracy > 90%.\" \\\n  --max-iterations 150 \\\n  --require-approval push  # Require human confirmation before any Hub push\n```\n\n### 5. Review session traces\n\n```bash\n# Session traces are automatically pushed to HF as a private dataset:\n# https://huggingface.co/datasets/YOUR_USERNAME/ml-intern-traces\nml-intern traces list\nml-intern traces show SESSION_ID\n```\n\n**Gotcha:** By default, ml-intern uses `HF Spaces` for GPU compute, which bills against your HF billing account. Set `--compute local` to run on your own machine and avoid unexpected charges:\n\n```bash\nml-intern run --task \"...\" --compute local --device cuda\n```",
         "sourceURL": "https://github.com/huggingface/ml-intern"
+      }
+    },
+    {
+      "id": "gemini-35-flash-api",
+      "name": "Gemini 3.5 Flash API",
+      "category": "google",
+      "oneLineDescription": "Google's fastest frontier model: GA today, outperforms Gemini 3.1 Pro on coding and agentic benchmarks.",
+      "estimatedSetupMinutes": 5,
+      "detail": {
+        "whatItDoes": "Gemini 3.5 Flash is now generally available via the Gemini API, Google AI Studio, and Antigravity. It combines frontier-level reasoning with Flash-series latency: Google claims 4x faster output tokens per second than competing frontier models. On benchmarks, it outperforms Gemini 3.1 Pro on Terminal-Bench 2.1 (76.2%), GDPval-AA (1656 Elo), and MCP Atlas (83.6%). It accepts text, image, audio, and video inputs and is natively integrated into Antigravity 2.0 for agentic coding workflows. It replaces Gemini 3.1 Flash as the recommended daily-driver for developer applications.",
+        "whoItsFor": "Any developer currently using Gemini 1.5 Flash, Gemini 3.1 Flash, or who wants a fast, cost-efficient model for agentic pipelines, RAG, code generation, or multimodal apps. Direct swap-in for existing Gemini API integrations — model ID update only.",
+        "pros": [
+          "GA today — available in Gemini API, AI Studio, Vertex AI, and Antigravity immediately",
+          "4x faster output token speed vs. rival frontier models per Google benchmarks",
+          "Beats Gemini 3.1 Pro on agentic and coding benchmarks at Flash speed and price",
+          "Native multimodal: text, image, audio, video input"
+        ],
+        "cons": [
+          "Gemini 3.5 Pro (deeper reasoning variant) still in testing — not GA yet",
+          "Benchmark claims are Google self-reported; third-party validation is early",
+          "Pricing not yet confirmed for high-volume tiers; watch for rate limit changes post-launch"
+        ],
+        "setupGuideMarkdown": "### Prerequisites\n- Python 3.10+ or Node 20+\n- Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey)\n\n### 1. Install the SDK\n\n```bash\npip install google-genai\n```\n\n### 2. Basic text generation\n\n```python\nimport os\nfrom google import genai\n\nclient = genai.Client(api_key=os.environ[\"GEMINI_API_KEY\"])\n\nresponse = client.models.generate_content(\n    model=\"gemini-3.5-flash\",   # <-- new model ID\n    contents=\"Explain the difference between MCP tunnels and a standard reverse proxy.\"\n)\nprint(response.text)\n```\n\n### 3. Streaming (recommended for agentic / long outputs)\n\n```python\nfor chunk in client.models.generate_content_stream(\n    model=\"gemini-3.5-flash\",\n    contents=\"Write a FastAPI service that proxies requests to an internal MCP server.\"\n):\n    print(chunk.text, end=\"\", flush=True)\n```\n\n### 4. Multimodal (image + text)\n\n```python\nimport pathlib\n\nimage_bytes = pathlib.Path(\"screenshot.png\").read_bytes()\n\nresponse = client.models.generate_content(\n    model=\"gemini-3.5-flash\",\n    contents=[\n        {\"mime_type\": \"image/png\", \"data\": image_bytes},\n        \"Describe every UI element visible in this screenshot.\"\n    ]\n)\nprint(response.text)\n```\n\n**Gotcha:** The model ID is `gemini-3.5-flash` — NOT `gemini-3.5-flash-001` or `gemini-3.5-flash-latest`. Passing an unrecognized variant string silently falls back to the previous default model. Check `response.model` in the response object to confirm which model actually ran.",
+        "sourceURL": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/"
       }
     }
   ]
