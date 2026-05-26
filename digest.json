@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-25T00:00:00Z",
-  "reportGeneratedAt": "2026-05-25T10:17:20Z",
+  "reportGeneratedAt": "2026-05-26T10:03:40Z",
   "learnGeneratedAt": "2026-05-25T12:00:00Z",
   "report": [
     {
-      "id": "google-gemini-35-flash-ga-2026-05-19",
-      "title": "Gemini 3.5 Flash goes GA: beats 3.1 Pro on agents at 4x speed",
-      "summary": "Google shipped Gemini 3.5 Flash generally available at I/O, with a 1M-token context window, $1.50/$9.00 per million tokens, and benchmark leads over Gemini 3.1 Pro on Terminal-Bench 2.1 (76.2%), MCP Atlas (83.6%), and agentic evals. It is now the default model in the Gemini app and AI Mode in Search globally — if you opened Gemini this week, you are already running it.",
-      "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
-      "significance": 8
-    },
-    {
-      "id": "anthropic-acquires-stainless-2026-05-18",
-      "title": "Anthropic buys Stainless for $300M and immediately shuts it to rivals",
-      "summary": "Anthropic acquired Stainless — the SDK-generation platform behind OpenAI's, Google's, and Cloudflare's official developer libraries — for over $300M, then announced it will wind down all hosted Stainless products for every customer except itself. OpenAI and Google now have to rebuild their SDK pipelines in-house; the deal also covers Stainless's MCP server infrastructure, tightening Anthropic's grip on the agent-to-API connection layer.",
-      "category": "anthropic",
-      "sourceURL": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
-      "significance": 7
-    },
-    {
-      "id": "google-gemini-spark-agent-2026-05-19",
-      "title": "Google launches Gemini Spark: a 24/7 personal AI agent in beta",
-      "summary": "Alongside Gemini 3.5 Flash, Google announced Gemini Spark, a persistent personal AI agent that runs continuously, monitors connected apps, and takes action on a user's behalf. Beta access starts with trusted testers now and rolls to Google AI Ultra subscribers ($100/month) in the US next week — no general availability yet.",
-      "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
-      "significance": 6
-    },
-    {
-      "id": "google-gemini-api-managed-agents-2026-05-19",
-      "title": "Gemini API ships Managed Agents: one call spins a stateful agent in a container",
-      "summary": "Google added Managed Agents to the Gemini API — a single API call now provisions an isolated Linux container where the model reasons, calls tools, and executes code with state persisting across follow-up calls. Previously, wiring up that environment was entirely manual; this is a drop-in for builders who want long-horizon agent sessions without building their own orchestration scaffolding.",
+      "id": "gemini-api-interactions-schema-breaking-change-2026-05-26",
+      "title": "Gemini API Interactions schema change goes live today — migration required",
+      "summary": "Google's Interactions API flips to its new request/response schema (outputs → steps) today, May 26; the legacy schema is removed June 8. Any agent or chat app hitting the Interactions API needs the migration applied now or it breaks in 13 days.",
       "category": "google",
       "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
       "significance": 7
     },
     {
-      "id": "google-gemini-api-breaking-thinking-default-2026-05-19",
-      "title": "Gemini 3.5 Flash silently drops default thinking level from high to medium",
-      "summary": "The thinking_budget integer parameter is replaced by a thinking_level string enum (minimal, low, medium, high), with the new default set to medium — down from high. Builders porting from gemini-3-flash-preview will get less reasoning per call unless they explicitly set thinking_level='high' in their API requests.",
+      "id": "gemini-35-flash-ga-2026-05-19",
+      "title": "Gemini 3.5 Flash hits GA: beats 3.1 Pro on coding and agents at Flash price",
+      "summary": "Shipped GA at Google I/O on May 19 with 1M-token context, 4x output speed over comparable models, and $1.50/$9.00 per million tokens — 40% cheaper than Gemini 3.1 Pro. Leads Google's own benchmark table on agentic and tool-use evals including MCP Atlas and Finance Agent v2, though it trails GPT-5.5 on long-context retrieval and raw reasoning.",
       "category": "google",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/google-io-2026-gemini-3-5-flash-announcements",
-      "significance": 6
+      "sourceURL": "https://deepmind.google/models/gemini/flash/",
+      "significance": 8
     },
     {
-      "id": "anthropic-claude-mythos-trump-eo-canceled-2026-05-22",
-      "title": "Trump cancels AI executive order that would have gated Mythos-class models",
-      "summary": "President Trump abruptly pulled a draft executive order that would have required pre-release government vetting of advanced AI models — a process triggered largely by security concerns around Anthropic's Claude Mythos. The cancellation leaves no federal pre-release review framework in place, which removes near-term regulatory friction for frontier labs but also removes any external safety gate before the next Mythos-tier model ships.",
-      "category": "other",
-      "sourceURL": "https://opentools.ai/news",
-      "significance": 6
+      "id": "google-antigravity-agent-preview-2026-05-19",
+      "title": "Google ships Antigravity Agent public preview: full agentic runtime via one API call",
+      "summary": "Antigravity Agent (antigravity-preview-05-2026) launched in public preview alongside Gemini 3.5 Flash — a managed agent that autonomously plans, writes and executes code, manages files, and browses the web inside a sandbox. Single API call spins up the full agent with persistent state across calls, replacing the need to wire together tool loops yourself.",
+      "category": "google",
+      "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
+      "significance": 7
     },
     {
-      "id": "google-antigravity-20-io-2026-05-19",
-      "title": "Google ships Antigravity 2.0 with parallel multi-agent workspace management",
-      "summary": "Google updated its agentic development platform Antigravity to version 2.0, adding a Manager view that lets developers orchestrate multiple agents working in parallel across separate workspaces. The Editor view retains the IDE-style interface; the Manager view is new and positions Antigravity as a direct alternative to multi-agent frameworks like LangGraph or CrewAI for teams already on Google Cloud.",
+      "id": "cursor-composer-25-intro-promo-ends-2026-05-26",
+      "title": "Cursor Composer 2.5 intro pricing expires today — standard rate now $0.50/$2.50",
+      "summary": "Cursor's Composer 2.5 (built on Kimi K2.5, 1.04T/32B active MoE) exits its first-week 2x promo today; list price moves to $0.50 input / $2.50 output per million tokens. At that rate it still prices in at roughly $0.10 per coding task — 10x cheaper than Opus 4.7 Standard — but remains IDE-locked with no public API and only vendor-controlled benchmark scores.",
       "category": "tooling",
-      "sourceURL": "https://hothardware.com/news/google-io-2026-gemini-35-flash-ai-search-and-more",
+      "sourceURL": "https://www.digitalapplied.com/blog/ai-model-releases-may-2026-complete-tracker",
+      "significance": 6
+    },
+    {
+      "id": "github-copilot-ai-credit-billing-2026-05",
+      "title": "GitHub Copilot switches to AI-credit usage-based billing on June 1",
+      "summary": "GitHub announced Copilot is moving from request-based to usage-based 'AI credit' billing, effective June 1. Per-credit dollar pricing is not yet published — builders should check github.com/settings/billing on or after June 1 before building cost assumptions into any Copilot-backed workflows.",
+      "category": "tooling",
+      "sourceURL": "https://www.digitalapplied.com/blog/ai-model-releases-may-2026-complete-tracker",
+      "significance": 6
+    },
+    {
+      "id": "china-ai-worker-travel-restrictions-2026-05",
+      "title": "China imposes overseas travel restrictions on AI workers at Alibaba and DeepSeek",
+      "summary": "Chinese government agencies have begun restricting international travel for individuals working on advanced AI, with reported targets including staff at Alibaba and DeepSeek. No public order has been released; reporting is from Bloomberg sourcing. Signals tightening state control over frontier AI talent egress.",
+      "category": "other",
+      "sourceURL": "https://llm-stats.com/ai-news",
+      "significance": 6
+    },
+    {
+      "id": "google-veo-31-lite-preview-2026-05",
+      "title": "Google releases Veo 3.1 Lite Preview: low-cost video generation via Gemini API",
+      "summary": "Veo 3.1 Lite (veo-3.1-lite-generate-preview) launched via the Gemini API as Google's cheapest video generation tier, designed for high-volume and rapid-iteration use cases. Positioned as a drop-in for builders who found Veo 3 too expensive to run at production volume.",
+      "category": "google",
+      "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
       "significance": 6
     }
   ],
