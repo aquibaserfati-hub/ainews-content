@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-25T00:00:00Z",
-  "reportGeneratedAt": "2026-05-26T10:03:40Z",
+  "reportGeneratedAt": "2026-05-27T10:00:30Z",
   "learnGeneratedAt": "2026-05-25T12:00:00Z",
   "report": [
     {
-      "id": "gemini-api-interactions-schema-breaking-change-2026-05-26",
-      "title": "Gemini API Interactions schema change goes live today — migration required",
-      "summary": "Google's Interactions API flips to its new request/response schema (outputs → steps) today, May 26; the legacy schema is removed June 8. Any agent or chat app hitting the Interactions API needs the migration applied now or it breaks in 13 days.",
+      "id": "google-gemini-35-flash-ga-2026-05-19",
+      "title": "Google ships Gemini 3.5 Flash GA at I/O, replaces 3.x as default",
+      "summary": "Gemini 3.5 Flash is now generally available via the Gemini API, AI Studio, Android Studio, and Google Antigravity — outperforming Gemini 3.1 Pro on Terminal-Bench 2.1 (76.2%) and MCP Atlas (83.6%) at less than half the cost of comparable frontier models. Drop-in for any app currently on 3.1 Flash; Gemini 3.5 Pro follows next month.",
       "category": "google",
-      "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
-      "significance": 7
-    },
-    {
-      "id": "gemini-35-flash-ga-2026-05-19",
-      "title": "Gemini 3.5 Flash hits GA: beats 3.1 Pro on coding and agents at Flash price",
-      "summary": "Shipped GA at Google I/O on May 19 with 1M-token context, 4x output speed over comparable models, and $1.50/$9.00 per million tokens — 40% cheaper than Gemini 3.1 Pro. Leads Google's own benchmark table on agentic and tool-use evals including MCP Atlas and Finance Agent v2, though it trails GPT-5.5 on long-context retrieval and raw reasoning.",
-      "category": "google",
-      "sourceURL": "https://deepmind.google/models/gemini/flash/",
+      "sourceURL": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
       "significance": 8
     },
     {
-      "id": "google-antigravity-agent-preview-2026-05-19",
-      "title": "Google ships Antigravity Agent public preview: full agentic runtime via one API call",
-      "summary": "Antigravity Agent (antigravity-preview-05-2026) launched in public preview alongside Gemini 3.5 Flash — a managed agent that autonomously plans, writes and executes code, manages files, and browses the web inside a sandbox. Single API call spins up the full agent with persistent state across calls, replacing the need to wire together tool loops yourself.",
+      "id": "google-gemini-omni-flash-launch-2026-05-19",
+      "title": "Google launches Gemini Omni Flash: any-input-to-video model now live",
+      "summary": "Gemini Omni Flash — Google's new model that generates video from text, audio, image, and video inputs — is available today in Google Flow and on YouTube Shorts, with API access rolling out to developers in coming weeks. Consumer-facing first; enterprise API builders will need to wait for the broader rollout.",
       "category": "google",
-      "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
+      "sourceURL": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
       "significance": 7
     },
     {
-      "id": "cursor-composer-25-intro-promo-ends-2026-05-26",
-      "title": "Cursor Composer 2.5 intro pricing expires today — standard rate now $0.50/$2.50",
-      "summary": "Cursor's Composer 2.5 (built on Kimi K2.5, 1.04T/32B active MoE) exits its first-week 2x promo today; list price moves to $0.50 input / $2.50 output per million tokens. At that rate it still prices in at roughly $0.10 per coding task — 10x cheaper than Opus 4.7 Standard — but remains IDE-locked with no public API and only vendor-controlled benchmark scores.",
-      "category": "tooling",
-      "sourceURL": "https://www.digitalapplied.com/blog/ai-model-releases-may-2026-complete-tracker",
-      "significance": 6
-    },
-    {
-      "id": "github-copilot-ai-credit-billing-2026-05",
-      "title": "GitHub Copilot switches to AI-credit usage-based billing on June 1",
-      "summary": "GitHub announced Copilot is moving from request-based to usage-based 'AI credit' billing, effective June 1. Per-credit dollar pricing is not yet published — builders should check github.com/settings/billing on or after June 1 before building cost assumptions into any Copilot-backed workflows.",
-      "category": "tooling",
-      "sourceURL": "https://www.digitalapplied.com/blog/ai-model-releases-may-2026-complete-tracker",
-      "significance": 6
-    },
-    {
-      "id": "china-ai-worker-travel-restrictions-2026-05",
-      "title": "China imposes overseas travel restrictions on AI workers at Alibaba and DeepSeek",
-      "summary": "Chinese government agencies have begun restricting international travel for individuals working on advanced AI, with reported targets including staff at Alibaba and DeepSeek. No public order has been released; reporting is from Bloomberg sourcing. Signals tightening state control over frontier AI talent egress.",
-      "category": "other",
-      "sourceURL": "https://llm-stats.com/ai-news",
-      "significance": 6
-    },
-    {
-      "id": "google-veo-31-lite-preview-2026-05",
-      "title": "Google releases Veo 3.1 Lite Preview: low-cost video generation via Gemini API",
-      "summary": "Veo 3.1 Lite (veo-3.1-lite-generate-preview) launched via the Gemini API as Google's cheapest video generation tier, designed for high-volume and rapid-iteration use cases. Positioned as a drop-in for builders who found Veo 3 too expensive to run at production volume.",
+      "id": "google-managed-agents-api-2026-05-19",
+      "title": "Google launches Managed Agents API on Antigravity platform",
+      "summary": "A single API call to Google Antigravity now provisions a remote Linux sandbox where an agent can reason, plan, execute code, manage files, and browse the web — powered by Gemini 3.5 Flash and available via the Interactions API and AI Studio. Direct competitor to Anthropic's Claude Managed Agents for hosted agent infra.",
       "category": "google",
-      "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
+      "sourceURL": "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-self-hosted-sandboxes-mcp-tunnels-2026-05-19",
+      "title": "Anthropic ships self-hosted sandboxes and MCP tunnels for Claude Managed Agents",
+      "summary": "Self-hosted sandboxes (public beta) move tool execution onto customer infrastructure — via Cloudflare, Daytona, Modal, or Vercel — while the agent loop stays on Anthropic's side; MCP tunnels (research preview, request access required) connect agents to private internal databases and APIs over an outbound-only encrypted channel with no inbound firewall changes. Both unblock enterprise deployments with data-residency or security-perimeter requirements.",
+      "category": "anthropic",
+      "sourceURL": "https://claude.com/blog/claude-managed-agents-updates",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-karpathy-joins-2026-05-19",
+      "title": "Andrej Karpathy joins Anthropic for frontier LLM R&D",
+      "summary": "Karpathy announced on May 19 that he has joined Anthropic to get back to frontier LLM research, citing the next few years as especially formative. No product change today, but a notable signal about where serious AI researchers are placing bets.",
+      "category": "anthropic",
+      "sourceURL": "https://9to5mac.com/2026/05/19/anthropic-enhances-claude-managed-agents-with-two-new-privacy-and-security-features/",
+      "significance": 6
+    },
+    {
+      "id": "openai-image-provenance-c2pa-synthid-2026-05",
+      "title": "OpenAI previews public image verification tool with C2PA and SynthID",
+      "summary": "OpenAI is previewing a public verification tool that checks whether an uploaded image was generated by ChatGPT, the OpenAI API, or Codex — combining C2PA Content Credentials with SynthID watermarks. Currently limited to OpenAI-generated content only; cross-platform support is on the roadmap.",
+      "category": "openai",
+      "sourceURL": "https://releasebot.io/updates/openai",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-mythos-project-glasswing-expansion-2026-05-25",
+      "title": "Anthropic expands Project Glasswing with Claude Security public beta for vetted teams",
+      "summary": "Anthropic opened Claude Security — a Mythos-class capability for scanning codebases, triaging vulnerabilities, and generating fixes — to eligible security teams in public beta under Project Glasswing, while reiterating that a general Mythos release is contingent on safeguards no company has built yet. Builders outside vetted security orgs still cannot access it.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
       "significance": 6
     }
   ],
