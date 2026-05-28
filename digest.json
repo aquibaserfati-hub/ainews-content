@@ -1,63 +1,55 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-25T00:00:00Z",
-  "reportGeneratedAt": "2026-05-28T12:00:00Z",
+  "reportGeneratedAt": "2026-05-28T10:10:17Z",
   "learnGeneratedAt": "2026-05-28T12:00:00Z",
   "report": [
     {
-      "id": "google-io-2026-gemini-35-flash-antigravity-2026-05-19",
-      "title": "Google I/O ships Gemini 3.5 Flash and Antigravity 2.0 agent platform",
-      "summary": "Gemini 3.5 Flash launches GA at Google I/O with benchmark wins over 3.1 Pro at 4x the output speed, alongside Antigravity 2.0—a full agent-first platform with desktop app, Go-based CLI, SDK, and Managed Agents API. Gemini CLI is retired; migration deadline is June 18.",
-      "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
-      "significance": 9
-    },
-    {
-      "id": "anthropic-project-glasswing-mythos-2026-05-22",
-      "title": "Anthropic launches Project Glasswing, deploys Mythos to find zero-days",
-      "summary": "Anthropic's unreleased Claude Mythos Preview has found thousands of zero-day vulnerabilities across every major OS and browser. Project Glasswing extends access to 40+ critical infrastructure orgs with $100M in usage credits and $4M in open-source security donations.",
+      "id": "claude-code-v2-1-152-2026-05-27",
+      "title": "Claude Code v2.1.152 ships /code-review --fix and skill management",
+      "summary": "The May 27 release adds /code-review --fix, which applies review findings directly to your working tree, and /reload-skills, which rescans skill directories without restarting a session. Skills and slash commands can now declare disallowed-tools in frontmatter, giving teams tighter control over what the model can touch while a skill is active.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/glasswing",
-      "significance": 8
-    },
-    {
-      "id": "anthropic-acquires-stainless-2026-05-18",
-      "title": "Anthropic acquires Stainless for ~$300M, shutting down hosted SDK tools",
-      "summary": "Anthropic bought Stainless—the SDK and MCP-server generator that also powered OpenAI, Google, and Cloudflare—and is winding down all hosted products. Existing customers keep generated SDKs but new signups are cut off, giving Anthropic control over a key layer of the AI developer toolchain.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/anthropic-acquires-stainless",
-      "significance": 8
-    },
-    {
-      "id": "openai-gpt55-instant-new-default-2026-05-05",
-      "title": "OpenAI makes GPT-5.5 Instant the default ChatGPT model across all tiers",
-      "summary": "GPT-5.5 Instant replaced GPT-5.3 Instant as the default model for free and paid ChatGPT on May 5, available in the API as `chat-latest`. OpenAI also shipped three new Realtime voice models (GPT-Realtime-2, Translate, Whisper) with GPT-5-class reasoning and 128K context.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/research/index/release/",
-      "significance": 7
-    },
-    {
-      "id": "openai-dell-codex-on-prem-2026-05-19",
-      "title": "OpenAI and Dell partner to bring Codex to on-premises enterprise environments",
-      "summary": "OpenAI and Dell Technologies announced a partnership to deploy Codex in hybrid and on-premises setups, targeting enterprises with strict data residency requirements. This is part of a broader Big Four enterprise wave—KPMG (276K seats), PwC, and SAP also deployed Claude this month.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
+      "sourceURL": "https://code.claude.com/docs/en/changelog",
       "significance": 6
     },
     {
-      "id": "google-managed-agents-gemini-api-2026-05-19",
-      "title": "Google launches Managed Agents API: single call spins up a sandboxed Linux agent",
-      "summary": "The Gemini API now lets developers provision a fully sandboxed agent with one API call via the Interactions API—the agent reasons, runs code, and browses the web in an isolated environment that persists across turns. Powered by the same Antigravity harness as the desktop app.",
+      "id": "gemini-spark-live-ultra-2026-05-27",
+      "title": "Gemini Spark goes live for Google AI Ultra subscribers at $100/month",
+      "summary": "Google's 24/7 background agent is now available to Ultra subscribers in the US, running on cloud VMs even when your laptop is closed and working autonomously across Gmail, Sheets, Docs, Drive, and Calendar. Every action still requires user approval before executing, and MCP support is included.",
       "category": "google",
-      "sourceURL": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/",
       "significance": 7
     },
     {
-      "id": "huggingface-ml-intern-open-source-agent-2026-05",
-      "title": "Hugging Face ships ml-intern, an open-source autonomous ML engineer agent",
-      "summary": "ml-intern is a CLI agent from Hugging Face that reads papers, fine-tunes models, and ships weights—running up to 300 agentic iterations against the full HF ecosystem. In a benchmark self-improvement run, it raised a Qwen3-1.7B model's GPQA score from ~9% to 32% in under 10 hours on a single H100.",
+      "id": "kpmg-claude-276k-employees-2026-05-19",
+      "title": "KPMG embeds Claude across 276,000 employees in 138 countries",
+      "summary": "KPMG's Digital Gateway Powered by Claude puts Anthropic's model directly into its core client delivery platform globally, with cybersecurity work among the first deployment areas. At this scale it's one of the largest single enterprise Claude rollouts on record.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 7
+    },
+    {
+      "id": "openai-deployCo-4b-consulting-2026-05-28",
+      "title": "OpenAI launches $4B consulting subsidiary DeployCo",
+      "summary": "OpenAI stood up a dedicated enterprise deployment arm, signaling a direct push into the SI and consulting channel that has historically belonged to partners like Accenture and KPMG. No public API changes ship with this; it is a go-to-market move, not a model release.",
+      "category": "openai",
+      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-may-28-2026",
+      "significance": 6
+    },
+    {
+      "id": "cohere-aleph-alpha-merger-2026-04-24",
+      "title": "Cohere absorbs Aleph Alpha in $20B sovereign-AI transatlantic merger",
+      "summary": "Cohere takes over Germany's Aleph Alpha with backing from both governments and a $600M Series E anchor from Schwarz Group (Lidl's parent), targeting enterprise and public-sector customers who need data sovereignty outside US hyperscalers. The deal has not closed yet and remains subject to regulatory approval.",
       "category": "otherLLM",
-      "sourceURL": "https://github.com/huggingface/ml-intern",
+      "sourceURL": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
+      "significance": 6
+    },
+    {
+      "id": "openai-geometry-conjecture-disproved-2026-05-21",
+      "title": "OpenAI reasoning model autonomously disproves 1946 geometry conjecture",
+      "summary": "An OpenAI model resolved the planar unit distance problem, an open question in combinatorial geometry dating to 1946, using techniques from algebraic number theory that were independently verified by external mathematicians. First confirmed case of an AI system resolving a prominent unsolved math problem end-to-end.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/news/",
       "significance": 7
     }
   ],
