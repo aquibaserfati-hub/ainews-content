@@ -1,64 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-25T00:00:00Z",
-  "reportGeneratedAt": "2026-05-29T10:00:23Z",
+  "reportGeneratedAt": "2026-05-30T08:32:39Z",
   "learnGeneratedAt": "2026-05-28T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-opus-48-launch-2026-05-29",
-      "title": "Anthropic ships Claude Opus 4.8 with adaptive thinking and 84% browser-agent score",
-      "summary": "Claude Opus 4.8 is now generally available via API and on Pro/Max/Team/Enterprise plans, priced at $5/M input and $25/M output tokens. It introduces adaptive thinking (auto-scales reasoning depth by task), tops CursorBench across every effort level, scores 84% on Online-Mind2Web, and is the only model to complete every case on Anthropic's Super-Agent benchmark — beating GPT-5.5 at cost parity.",
+      "id": "anthropic-claude-opus-48-2026-05-28",
+      "title": "Anthropic ships Claude Opus 4.8 with Dynamic Workflows for Claude Code",
+      "summary": "Opus 4.8 lands 41 days after 4.7 at the same price ($5/$25 per MTok), with agentic coding benchmark up from 64.3% to 69.2% and the model now four times less likely to let code flaws pass unremarked. Dynamic Workflows (research preview, Enterprise/Team/Max only) lets Claude Code spin up hundreds of parallel subagents in a single session — Anthropic's demo: a 750k-line Zig-to-Rust port of Bun in 11 days.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/claude/opus",
-      "significance": 9
+      "sourceURL": "https://www.anthropic.com/news/claude-opus-4-8",
+      "significance": 8
     },
     {
-      "id": "anthropic-claude-ad-free-2026-05-29",
-      "title": "Anthropic commits Claude will remain ad-free permanently",
-      "summary": "Anthropic published a policy post explaining it will not introduce advertising to Claude, arguing ad incentives are structurally incompatible with a trustworthy assistant. Meaningful for enterprise buyers and consumer trust positioning, but no API or product change ships with the announcement.",
+      "id": "anthropic-opus-48-api-changes-2026-05-28",
+      "title": "Opus 4.8 ships mid-conversation system messages and lower cache minimum",
+      "summary": "Three quiet API changes ship alongside Opus 4.8: mid-conversation system messages (role: system after a user turn, preserving cache hits), a dropped prompt cache minimum of 1,024 tokens, and publicly documented stop_details for refusal categories. These reduce integration friction for teams building long-running agentic loops without requiring code rewrites.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
-      "significance": 6
-    },
-    {
-      "id": "anthropic-cowork-ga-analytics-api-2026-05-28",
-      "title": "Claude Cowork goes GA on macOS and Windows with new Enterprise Analytics API",
-      "summary": "Anthropic made Claude Cowork generally available on the desktop app and added two builder-facing features: a Claude Enterprise Analytics API for tracking team engagement and adoption data, and usage analytics scoped to Cowork sessions. Useful for enterprises benchmarking rollout health.",
-      "category": "anthropic",
-      "sourceURL": "https://support.claude.com/en/articles/12138966-release-notes",
+      "sourceURL": "https://appwrite.io/blog/post/anthropic-just-launched-claude-opus-48-with-fast-mode-and-dynamic-workflows",
       "significance": 7
     },
     {
-      "id": "anthropic-managed-agents-sandbox-2026-05-28",
-      "title": "Anthropic launches self-hosted sandboxes for Claude Managed Agents in public beta",
-      "summary": "Claude Managed Agents can now run tool execution inside infrastructure you control — your own servers or managed providers including Cloudflare, Daytona, Modal, or Vercel — while the agent orchestration loop stays on Anthropic's side. Also adds private MCP server connectivity, giving enterprise teams a cleaner security boundary for agentic workflows.",
+      "id": "anthropic-mythos-preview-delay-2026-05-28",
+      "title": "Anthropic holds Mythos back after cybersecurity preview raised concerns",
+      "summary": "Anthropic confirmed Mythos-class models remain gated to a small set of organizations under Project Glasswing while safety work continues, saying wider availability is expected \"in the coming weeks.\" Opus 4.8 is essentially the placeholder while those safeguards complete.",
       "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "sourceURL": "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-valuation-65b-raise-2026-05-28",
+      "title": "Anthropic raises $65B, hits $965B valuation — tops OpenAI for first time",
+      "summary": "Paired with the Opus 4.8 launch, Anthropic closed a $65B round taking its valuation to $965B, surpassing OpenAI's. Run-rate revenue is now above $30B (up from ~$9B at end of 2025) and enterprise customers spending $1M+ annually doubled to 1,000+ in under two months.",
+      "category": "anthropic",
+      "sourceURL": "https://www.axios.com/2026/05/28/anthropic-ai-fundraising-openai",
       "significance": 7
     },
     {
-      "id": "claude-code-v2-1-152-2026-05-27",
-      "title": "Claude Code v2.1.152 ships with per-category usage breakdown and agent-view monitor",
-      "summary": "The latest Claude Code release adds a /usage command that breaks down limit consumption by skills, subagents, plugins, and per-MCP-server costs — giving teams visibility into where token budget goes. The release also adds a unified agent-view screen to monitor all sessions at once and a goal mode that keeps working until a defined condition is met.",
-      "category": "anthropic",
-      "sourceURL": "https://github.com/anthropics/claude-code/releases",
-      "significance": 6
+      "id": "openclaw-cve-gartner-advisory-2026-05-26",
+      "title": "OpenClaw logs 454+ CVEs; Gartner advises enterprises to block downloads",
+      "summary": "The open-source agentic AI framework OpenClaw has accumulated over 454 vulnerabilities in the National Vulnerability Database, with critical flaws including a CVSS 9.9 privilege escalation (CVE-2026-32922) enabling full admin takeover via a single API call. Gartner issued a block-downloads advisory; approximately 245,000 instances remain publicly exposed per Shodan and ZoomEye scans as of May 2026.",
+      "category": "tooling",
+      "sourceURL": "https://thehackernews.com/2026/05/four-openclaw-flaws-enable-data-theft.html",
+      "significance": 7
     },
     {
-      "id": "cohere-aleph-alpha-merger-2026-04-24",
-      "title": "Cohere acquires Aleph Alpha at $20B valuation to build transatlantic sovereign AI challenger",
-      "summary": "Cohere is absorbing Germany's Aleph Alpha — Cohere shareholders retain ~90% of the combined entity — backed by $600M from Schwarz Group (Lidl's parent) as part of a forthcoming Series E. The deal, blessed by Canadian and German governments, targets regulated European enterprises that need data residency and sovereignty guarantees. No new model shipped; deal still pending regulatory close.",
-      "category": "otherLLM",
-      "sourceURL": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
+      "id": "google-search-ai-overhaul-duckduckgo-spike-2026-05-26",
+      "title": "Google's forced AI Search overhaul drives DuckDuckGo installs up 30%",
+      "summary": "Following Google I/O's announcement that Search would become a conversational AI-first engine with AI Overviews by default, DuckDuckGo reported U.S. app installs up 30.5% week-over-week peaking May 25, with iOS growth hitting 69.9%. Visits to DuckDuckGo's AI-free search page averaged 22.7% WoW growth — a measurable signal that a segment of users will route around mandatory AI UX.",
+      "category": "google",
+      "sourceURL": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
       "significance": 6
-    },
-    {
-      "id": "cohere-reliant-ai-biopharma-2026-05",
-      "title": "Cohere acquires Reliant AI to launch North for Pharma agentic product",
-      "summary": "Weeks after the Aleph Alpha deal, Cohere acquired Berlin/Montreal biopharma AI startup Reliant AI and is productizing it as 'North for Pharma' — an agentic system for R&D, clinical development, and scientific analytics teams. Existing customers include GSK and Kyowa Kirin; no public API access yet.",
-      "category": "otherLLM",
-      "sourceURL": "https://www.trendingtopics.eu/cohere-acquires-reliant-ai-just-weeks-after-the-merger-with-aleph-alpha/",
-      "significance": 5
     }
   ],
   "learn": [
