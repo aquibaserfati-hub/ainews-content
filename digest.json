@@ -1,56 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-05-25T00:00:00Z",
-  "reportGeneratedAt": "2026-05-30T08:32:39Z",
+  "reportGeneratedAt": "2026-05-31T08:51:56Z",
   "learnGeneratedAt": "2026-05-28T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-claude-opus-48-2026-05-28",
-      "title": "Anthropic ships Claude Opus 4.8 with Dynamic Workflows for Claude Code",
-      "summary": "Opus 4.8 lands 41 days after 4.7 at the same price ($5/$25 per MTok), with agentic coding benchmark up from 64.3% to 69.2% and the model now four times less likely to let code flaws pass unremarked. Dynamic Workflows (research preview, Enterprise/Team/Max only) lets Claude Code spin up hundreds of parallel subagents in a single session — Anthropic's demo: a 750k-line Zig-to-Rust port of Bun in 11 days.",
+      "id": "anthropic-claude-opus-4-8-2026-05-28",
+      "title": "Anthropic ships Claude Opus 4.8 with Dynamic Workflows and cheaper Fast mode",
+      "summary": "Opus 4.8 (model ID claude-opus-4-8) landed May 28 at the same $5/$25 per million token price as 4.7, with agentic coding up to 69.2% on SWE-bench Pro (+4.9pts), a 4x reduction in unreported code flaws, and Dynamic Workflows in Claude Code — which fans out hundreds of parallel subagents inside a single session. Fast mode is now 3x cheaper than it was on previous models. Drop-in swap for teams already on claude-opus-4-7.",
       "category": "anthropic",
       "sourceURL": "https://www.anthropic.com/news/claude-opus-4-8",
       "significance": 8
     },
     {
-      "id": "anthropic-opus-48-api-changes-2026-05-28",
-      "title": "Opus 4.8 ships mid-conversation system messages and lower cache minimum",
-      "summary": "Three quiet API changes ship alongside Opus 4.8: mid-conversation system messages (role: system after a user turn, preserving cache hits), a dropped prompt cache minimum of 1,024 tokens, and publicly documented stop_details for refusal categories. These reduce integration friction for teams building long-running agentic loops without requiring code rewrites.",
-      "category": "anthropic",
-      "sourceURL": "https://appwrite.io/blog/post/anthropic-just-launched-claude-opus-48-with-fast-mode-and-dynamic-workflows",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-mythos-preview-delay-2026-05-28",
-      "title": "Anthropic holds Mythos back after cybersecurity preview raised concerns",
-      "summary": "Anthropic confirmed Mythos-class models remain gated to a small set of organizations under Project Glasswing while safety work continues, saying wider availability is expected \"in the coming weeks.\" Opus 4.8 is essentially the placeholder while those safeguards complete.",
-      "category": "anthropic",
-      "sourceURL": "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/",
-      "significance": 6
-    },
-    {
       "id": "anthropic-valuation-65b-raise-2026-05-28",
-      "title": "Anthropic raises $65B, hits $965B valuation — tops OpenAI for first time",
-      "summary": "Paired with the Opus 4.8 launch, Anthropic closed a $65B round taking its valuation to $965B, surpassing OpenAI's. Run-rate revenue is now above $30B (up from ~$9B at end of 2025) and enterprise customers spending $1M+ annually doubled to 1,000+ in under two months.",
+      "title": "Anthropic raises $65B, hits $965B valuation — overtakes OpenAI",
+      "summary": "Anthropic closed a $65B round valuing it at $965B, surpassing OpenAI as the most valuable AI startup for the first time. Run-rate revenue has crossed $30B and the number of enterprise customers each spending $1M+ doubled to 1,000 in under two months.",
       "category": "anthropic",
       "sourceURL": "https://www.axios.com/2026/05/28/anthropic-ai-fundraising-openai",
       "significance": 7
     },
     {
-      "id": "openclaw-cve-gartner-advisory-2026-05-26",
-      "title": "OpenClaw logs 454+ CVEs; Gartner advises enterprises to block downloads",
-      "summary": "The open-source agentic AI framework OpenClaw has accumulated over 454 vulnerabilities in the National Vulnerability Database, with critical flaws including a CVSS 9.9 privilege escalation (CVE-2026-32922) enabling full admin takeover via a single API call. Gartner issued a block-downloads advisory; approximately 245,000 instances remain publicly exposed per Shodan and ZoomEye scans as of May 2026.",
-      "category": "tooling",
-      "sourceURL": "https://thehackernews.com/2026/05/four-openclaw-flaws-enable-data-theft.html",
+      "id": "google-gemini-spark-beta-2026-05-29",
+      "title": "Google Gemini Spark personal agent goes live in beta for AI Ultra subscribers",
+      "summary": "Gemini Spark — Google's general-purpose personal agent that takes actions across connected apps on your behalf — entered beta on May 29 for Google AI Ultra subscribers in the US. It surfaces as a new tab in the Gemini sidebar on web and between Search and Daily Brief on mobile; broader rollout timeline not yet stated.",
+      "category": "google",
+      "sourceURL": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
       "significance": 7
     },
     {
-      "id": "google-search-ai-overhaul-duckduckgo-spike-2026-05-26",
-      "title": "Google's forced AI Search overhaul drives DuckDuckGo installs up 30%",
-      "summary": "Following Google I/O's announcement that Search would become a conversational AI-first engine with AI Overviews by default, DuckDuckGo reported U.S. app installs up 30.5% week-over-week peaking May 25, with iOS growth hitting 69.9%. Visits to DuckDuckGo's AI-free search page averaged 22.7% WoW growth — a measurable signal that a segment of users will route around mandatory AI UX.",
-      "category": "google",
-      "sourceURL": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
+      "id": "microsoft-build-2026-windows-agent-runtime-2026-06-02",
+      "title": "Microsoft Build 2026 opens June 2 with Windows Agent Runtime and Azure Agent Mesh",
+      "summary": "Build kicks off tomorrow at Fort Mason, San Francisco with the Windows Agent Runtime, a new Windows Agent Store, and Azure Agent Mesh — a control plane federating agent execution across on-prem, Windows 365 Cloud PCs, and Azure Arc edge devices. The Windows Agent Runtime preview for Insiders targets June 2026 for text-based agents; vision agents pushed to 2027.",
+      "category": "tooling",
+      "sourceURL": "https://windowsnews.ai/article/build-2026-microsoft-makes-windows-an-agent-platform-for-ai-developers.420496",
+      "significance": 7
+    },
+    {
+      "id": "mistral-acquires-emmi-ai-2026-05-31",
+      "title": "Mistral acquires Vienna physics-AI startup Emmi AI to target European manufacturers",
+      "summary": "Mistral confirmed its second 2026 acquisition: Emmi AI, a 30+ researcher team building physics-aware surrogate models for airflow, heat transfer, and material stress simulations. The deal plants Mistral on European factory floors in aerospace, automotive, and semiconductors — a vertical bet that sidesteps the frontier-model race entirely.",
+      "category": "otherLLM",
+      "sourceURL": "https://asanify.com/blog/news/ai-hypothesis-generation-agent-may-31-2026/",
       "significance": 6
+    },
+    {
+      "id": "deepmind-co-scientist-nature-2026-05-19",
+      "title": "Google DeepMind Co-Scientist multi-agent system published in Nature",
+      "summary": "DeepMind's Co-Scientist — a Gemini-based multi-agent system that drafts, debates, and refines scientific hypotheses — cleared peer review and landed in Nature on May 19. In a validation run on acute myeloid leukemia, it generated 30 drug candidates; oncologists narrowed to five for lab testing, one of which showed real biological activity.",
+      "category": "google",
+      "sourceURL": "https://asanify.com/blog/news/ai-hypothesis-generation-agent-may-31-2026/",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-claude-code-dynamic-workflows-research-preview-2026-05-28",
+      "title": "Claude Code Dynamic Workflows ships in research preview for Max, Team, and Enterprise plans",
+      "summary": "Alongside Opus 4.8, Anthropic launched Dynamic Workflows inside Claude Code — the CLI, Desktop app, and VS Code extension. Claude writes its own orchestration scripts, spins up hundreds of parallel subagents attacking a problem from independent angles, and deploys adversarial agents to challenge findings before reporting back. Designed for large codebase refactors and long-running async tasks.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/claude-opus-4-8",
+      "significance": 7
     }
   ],
   "learn": [
