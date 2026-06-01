@@ -1,64 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-01T00:00:00Z",
-  "reportGeneratedAt": "2026-06-01T12:00:00Z",
+  "reportGeneratedAt": "2026-06-01T11:43:25Z",
   "learnGeneratedAt": "2026-06-01T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-claude-opus-4-8-2026-05-28",
-      "title": "Anthropic ships Claude Opus 4.8 with dynamic workflows and ultracode mode",
-      "summary": "Claude Opus 4.8 landed May 28, replacing Opus 4.7 as the frontier Claude model. It adds benchmark gains, dynamic workflows in Claude Code (parallel codebase bug hunts, large migrations, adversarial verification), a faster cheap Fast mode, and effort control in claude.ai. Available via API at the same price as 4.7.",
+      "id": "anthropic-claude-opus-48-may-2026",
+      "title": "Anthropic ships Claude Opus 4.8 with configurable effort modes and parallel subagents",
+      "summary": "Opus 4.8 lands at the same $5/$25 per million token price as 4.7 but adds per-request effort controls (high/xhigh/max via the API's budget_tokens parameter) and Dynamic Workflows in Claude Code — now in research preview for Team, Enterprise, and Max plans — capping at 1,000 total subagents and 16 concurrent. SWE-bench Pro jumps to 69.2% from 64.3%, the model flags its own code flaws 4x more often than its predecessor, and Opus 4.6 was hard-deprecated on the same day.",
       "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
+      "sourceURL": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-8",
       "significance": 8
     },
     {
-      "id": "anthropic-managed-agents-self-hosted-sandboxes-2026-05",
-      "title": "Anthropic adds self-hosted sandboxes and multi-agent orchestration to Managed Agents",
-      "summary": "Claude Managed Agents (public beta since April 8) gained self-hosted sandboxes — tool execution moves to your own infra on Cloudflare, Daytona, Modal, or Vercel — while the orchestration loop stays on Anthropic. Multi-agent sessions, MCP vault credential refresh, and webhooks are also now generally available under the managed-agents-2026-04-01 beta header.",
-      "category": "anthropic",
-      "sourceURL": "https://platform.claude.com/docs/en/release-notes/overview",
-      "significance": 8
-    },
-    {
-      "id": "google-io-2026-gemini-35-flash-antigravity-2026-05-19",
-      "title": "Google I/O 2026: Gemini 3.5 Flash beats 3.1 Pro at Flash cost, Antigravity 2.0 ships",
-      "summary": "Gemini 3.5 Flash launched at I/O on May 19 — it outperforms Gemini 3.1 Pro across coding, agentic, and multimodal benchmarks at 4x the output token speed. Antigravity 2.0 (desktop app + CLI + SDK) replaces Gemini CLI as Google's agent-first dev platform; Managed Agents in the Gemini API now spin up a sandboxed Linux agent with a single API call.",
-      "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
-      "significance": 8
-    },
-    {
-      "id": "openai-gpt55-instant-default-2026-05-05",
-      "title": "OpenAI makes GPT-5.5 Instant ChatGPT's default model for all users",
-      "summary": "GPT-5.5 Instant became the default model for all ChatGPT users on May 5, replacing GPT-5.3 Instant. OpenAI claims a 52.5% reduction in hallucinated claims on high-stakes domains (law, medicine, finance) and improved personalization for Plus/Pro users. Available in the API as chat-latest.",
-      "category": "openai",
-      "sourceURL": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
-      "significance": 7
-    },
-    {
-      "id": "openai-realtime-2-voice-models-2026-05-07",
-      "title": "OpenAI ships Realtime 2 with reasoning, translation, and transcription in a single voice API",
-      "summary": "Realtime 2 launched May 7 in the OpenAI API alongside Realtime Translate and Realtime Whisper — a new family of speech-to-speech models that can reason, translate, and transcribe in a streaming session. The old Realtime API Beta was simultaneously deprecated and removed.",
-      "category": "openai",
-      "sourceURL": "https://developers.openai.com/api/docs/changelog",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-claude-design-opus47-2026-05",
-      "title": "Anthropic launches Claude Design for visual prototyping alongside Opus 4.7",
-      "summary": "Alongside Opus 4.7, Anthropic shipped Claude Design — an Anthropic Labs product that lets you collaborate with Claude to produce visual outputs: designs, prototypes, slides, and one-pagers. Available in claude.ai for Max and Team plan users.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
-      "significance": 6
-    },
-    {
-      "id": "anthropic-claude-ad-free-commitment-2026-06",
-      "title": "Anthropic publicly commits to keeping Claude ad-free",
-      "summary": "Anthropic posted an explicit policy statement this week that Claude will remain ad-free, citing incompatibility between advertising incentives and genuinely helpful AI. Signals a deliberate product positioning choice against OpenAI, which has flagged AI ads as a $100B business.",
+      "id": "anthropic-mythos-glasswing-preview-2026",
+      "title": "Anthropic's Mythos-class model enters limited production via Project Glasswing",
+      "summary": "Mythos is confirmed in private preview with select cybersecurity partners under Project Glasswing, with broad public access expected in coming weeks pending additional safeguards. Announced-but-not-yet-public; score reflects real limited deployment, not a vaporware tease.",
       "category": "anthropic",
       "sourceURL": "https://www.anthropic.com/news",
+      "significance": 7
+    },
+    {
+      "id": "github-copilot-token-billing-june-2026",
+      "title": "GitHub Copilot token-based billing goes live June 1, replacing flat-rate subscriptions",
+      "summary": "Starting today, Copilot's flat Premium Request Units are gone — all monthly individual subscribers now burn metered AI Credits at $0.01 each, with each plan's monthly fee buying an equivalent credit budget instead of unlimited requests. Developers estimate a single agentic coding session can consume $30–$40, blowing past a Pro subscriber's entire $10 monthly allotment; code completions and Next Edit Suggestions remain unlimited, but anything agentic is now on the meter.",
+      "category": "tooling",
+      "sourceURL": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/",
+      "significance": 7
+    },
+    {
+      "id": "google-vertex-vector-search-2-ga-2026",
+      "title": "Google ships Vector Search 2.0 GA on Vertex AI with hybrid search and auto-embeddings",
+      "summary": "Vector Search 2.0 is now generally available on Vertex AI, adding collections that unify data and vectors, auto-embeddings for automatic vector field population, and hybrid search combining vector, full-text, and semantic re-ranking in a single parallel query. Drop-in upgrade path for any RAG or agent memory stack already on Vertex.",
+      "category": "google",
+      "sourceURL": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
       "significance": 6
+    },
+    {
+      "id": "anthropic-ad-free-commitment-2026",
+      "title": "Anthropic publicly commits to keeping Claude ad-free",
+      "summary": "Anthropic published a post stating Claude will remain ad-free, arguing advertising incentives are structurally incompatible with a genuinely helpful AI assistant. Directly positions against OpenAI, which has said it sees AI ads as a $100B business by 2030.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 5
+    },
+    {
+      "id": "sysdig-llm-agent-cyberattack-2026",
+      "title": "Sysdig documents first live cyberattack using an LLM agent for autonomous post-exploitation",
+      "summary": "Sysdig published a report on a real-world attack where an LLM agent autonomously performed post-exploitation on AWS — exfiltrating a database via a Marimo CVE in under an hour. First documented case of an LLM agent used as the operative layer (not just a recon tool) in a live breach.",
+      "category": "other",
+      "sourceURL": "https://thehackernews.com",
+      "significance": 7
     }
   ],
   "learn": [
