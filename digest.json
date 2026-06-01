@@ -1,159 +1,187 @@
 {
   "schemaVersion": 1,
-  "weekOf": "2026-05-25T00:00:00Z",
-  "reportGeneratedAt": "2026-05-31T08:51:56Z",
-  "learnGeneratedAt": "2026-05-28T12:00:00Z",
+  "weekOf": "2026-06-01T00:00:00Z",
+  "reportGeneratedAt": "2026-06-01T12:00:00Z",
+  "learnGeneratedAt": "2026-06-01T12:00:00Z",
   "report": [
     {
       "id": "anthropic-claude-opus-4-8-2026-05-28",
-      "title": "Anthropic ships Claude Opus 4.8 with Dynamic Workflows and cheaper Fast mode",
-      "summary": "Opus 4.8 (model ID claude-opus-4-8) landed May 28 at the same $5/$25 per million token price as 4.7, with agentic coding up to 69.2% on SWE-bench Pro (+4.9pts), a 4x reduction in unreported code flaws, and Dynamic Workflows in Claude Code — which fans out hundreds of parallel subagents inside a single session. Fast mode is now 3x cheaper than it was on previous models. Drop-in swap for teams already on claude-opus-4-7.",
+      "title": "Anthropic ships Claude Opus 4.8 with dynamic workflows and ultracode mode",
+      "summary": "Claude Opus 4.8 landed May 28, replacing Opus 4.7 as the frontier Claude model. It adds benchmark gains, dynamic workflows in Claude Code (parallel codebase bug hunts, large migrations, adversarial verification), a faster cheap Fast mode, and effort control in claude.ai. Available via API at the same price as 4.7.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/claude-opus-4-8",
+      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
       "significance": 8
     },
     {
-      "id": "anthropic-valuation-65b-raise-2026-05-28",
-      "title": "Anthropic raises $65B, hits $965B valuation — overtakes OpenAI",
-      "summary": "Anthropic closed a $65B round valuing it at $965B, surpassing OpenAI as the most valuable AI startup for the first time. Run-rate revenue has crossed $30B and the number of enterprise customers each spending $1M+ doubled to 1,000 in under two months.",
+      "id": "anthropic-managed-agents-self-hosted-sandboxes-2026-05",
+      "title": "Anthropic adds self-hosted sandboxes and multi-agent orchestration to Managed Agents",
+      "summary": "Claude Managed Agents (public beta since April 8) gained self-hosted sandboxes — tool execution moves to your own infra on Cloudflare, Daytona, Modal, or Vercel — while the orchestration loop stays on Anthropic. Multi-agent sessions, MCP vault credential refresh, and webhooks are also now generally available under the managed-agents-2026-04-01 beta header.",
       "category": "anthropic",
-      "sourceURL": "https://www.axios.com/2026/05/28/anthropic-ai-fundraising-openai",
-      "significance": 7
+      "sourceURL": "https://platform.claude.com/docs/en/release-notes/overview",
+      "significance": 8
     },
     {
-      "id": "google-gemini-spark-beta-2026-05-29",
-      "title": "Google Gemini Spark personal agent goes live in beta for AI Ultra subscribers",
-      "summary": "Gemini Spark — Google's general-purpose personal agent that takes actions across connected apps on your behalf — entered beta on May 29 for Google AI Ultra subscribers in the US. It surfaces as a new tab in the Gemini sidebar on web and between Search and Daily Brief on mobile; broader rollout timeline not yet stated.",
+      "id": "google-io-2026-gemini-35-flash-antigravity-2026-05-19",
+      "title": "Google I/O 2026: Gemini 3.5 Flash beats 3.1 Pro at Flash cost, Antigravity 2.0 ships",
+      "summary": "Gemini 3.5 Flash launched at I/O on May 19 — it outperforms Gemini 3.1 Pro across coding, agentic, and multimodal benchmarks at 4x the output token speed. Antigravity 2.0 (desktop app + CLI + SDK) replaces Gemini CLI as Google's agent-first dev platform; Managed Agents in the Gemini API now spin up a sandboxed Linux agent with a single API call.",
       "category": "google",
-      "sourceURL": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+      "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+      "significance": 8
+    },
+    {
+      "id": "openai-gpt55-instant-default-2026-05-05",
+      "title": "OpenAI makes GPT-5.5 Instant ChatGPT's default model for all users",
+      "summary": "GPT-5.5 Instant became the default model for all ChatGPT users on May 5, replacing GPT-5.3 Instant. OpenAI claims a 52.5% reduction in hallucinated claims on high-stakes domains (law, medicine, finance) and improved personalization for Plus/Pro users. Available in the API as chat-latest.",
+      "category": "openai",
+      "sourceURL": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
       "significance": 7
     },
     {
-      "id": "microsoft-build-2026-windows-agent-runtime-2026-06-02",
-      "title": "Microsoft Build 2026 opens June 2 with Windows Agent Runtime and Azure Agent Mesh",
-      "summary": "Build kicks off tomorrow at Fort Mason, San Francisco with the Windows Agent Runtime, a new Windows Agent Store, and Azure Agent Mesh — a control plane federating agent execution across on-prem, Windows 365 Cloud PCs, and Azure Arc edge devices. The Windows Agent Runtime preview for Insiders targets June 2026 for text-based agents; vision agents pushed to 2027.",
-      "category": "tooling",
-      "sourceURL": "https://windowsnews.ai/article/build-2026-microsoft-makes-windows-an-agent-platform-for-ai-developers.420496",
+      "id": "openai-realtime-2-voice-models-2026-05-07",
+      "title": "OpenAI ships Realtime 2 with reasoning, translation, and transcription in a single voice API",
+      "summary": "Realtime 2 launched May 7 in the OpenAI API alongside Realtime Translate and Realtime Whisper — a new family of speech-to-speech models that can reason, translate, and transcribe in a streaming session. The old Realtime API Beta was simultaneously deprecated and removed.",
+      "category": "openai",
+      "sourceURL": "https://developers.openai.com/api/docs/changelog",
       "significance": 7
     },
     {
-      "id": "mistral-acquires-emmi-ai-2026-05-31",
-      "title": "Mistral acquires Vienna physics-AI startup Emmi AI to target European manufacturers",
-      "summary": "Mistral confirmed its second 2026 acquisition: Emmi AI, a 30+ researcher team building physics-aware surrogate models for airflow, heat transfer, and material stress simulations. The deal plants Mistral on European factory floors in aerospace, automotive, and semiconductors — a vertical bet that sidesteps the frontier-model race entirely.",
-      "category": "otherLLM",
-      "sourceURL": "https://asanify.com/blog/news/ai-hypothesis-generation-agent-may-31-2026/",
+      "id": "anthropic-claude-design-opus47-2026-05",
+      "title": "Anthropic launches Claude Design for visual prototyping alongside Opus 4.7",
+      "summary": "Alongside Opus 4.7, Anthropic shipped Claude Design — an Anthropic Labs product that lets you collaborate with Claude to produce visual outputs: designs, prototypes, slides, and one-pagers. Available in claude.ai for Max and Team plan users.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
       "significance": 6
     },
     {
-      "id": "deepmind-co-scientist-nature-2026-05-19",
-      "title": "Google DeepMind Co-Scientist multi-agent system published in Nature",
-      "summary": "DeepMind's Co-Scientist — a Gemini-based multi-agent system that drafts, debates, and refines scientific hypotheses — cleared peer review and landed in Nature on May 19. In a validation run on acute myeloid leukemia, it generated 30 drug candidates; oncologists narrowed to five for lab testing, one of which showed real biological activity.",
-      "category": "google",
-      "sourceURL": "https://asanify.com/blog/news/ai-hypothesis-generation-agent-may-31-2026/",
-      "significance": 6
-    },
-    {
-      "id": "anthropic-claude-code-dynamic-workflows-research-preview-2026-05-28",
-      "title": "Claude Code Dynamic Workflows ships in research preview for Max, Team, and Enterprise plans",
-      "summary": "Alongside Opus 4.8, Anthropic launched Dynamic Workflows inside Claude Code — the CLI, Desktop app, and VS Code extension. Claude writes its own orchestration scripts, spins up hundreds of parallel subagents attacking a problem from independent angles, and deploys adversarial agents to challenge findings before reporting back. Designed for large codebase refactors and long-running async tasks.",
+      "id": "anthropic-claude-ad-free-commitment-2026-06",
+      "title": "Anthropic publicly commits to keeping Claude ad-free",
+      "summary": "Anthropic posted an explicit policy statement this week that Claude will remain ad-free, citing incompatibility between advertising incentives and genuinely helpful AI. Signals a deliberate product positioning choice against OpenAI, which has flagged AI ads as a $100B business.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/claude-opus-4-8",
-      "significance": 7
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 6
     }
   ],
   "learn": [
     {
-      "id": "google-antigravity-cli-2026-05",
-      "name": "Antigravity CLI",
-      "category": "google",
-      "oneLineDescription": "Google's Go-based terminal agent that replaces Gemini CLI with multi-agent support.",
-      "estimatedSetupMinutes": 5,
-      "detail": {
-        "whatItDoes": "Antigravity CLI is the terminal surface of Google's Antigravity 2.0 platform, launched at Google I/O 2026 on May 19. It shares the same agent harness as the Antigravity 2.0 desktop app, meaning it can spawn dynamic subagents, call tools, run code in sandboxes, and browse the web from a single prompt in your terminal. The CLI is written in Go for low overhead and keyboard-first remote workflows.\n\nIt fully replaces Gemini CLI. Gemini CLI and Gemini Code Assist IDE extensions stop serving requests for Google AI Pro/Ultra accounts on June 18, 2026. The Antigravity CLI preserves Gemini CLI's key features—Agent Skills, Hooks, Subagents, and Extensions (rebranded as Antigravity plugins)—and adds the multi-agent orchestration layer. It connects by default to Gemini 3.5 Flash at 289 tokens/sec.",
-        "whoItsFor": "Backend and full-stack engineers who prefer terminal workflows over IDE GUIs, especially those already on Google AI Pro/Ultra or Google Cloud. Teams doing CI/CD pipeline automation, infrastructure provisioning, or multi-step code generation tasks will get the most out of the multi-agent dispatch. Anyone currently using Gemini CLI must migrate before June 18, 2026.",
-        "pros": [
-          "Same agent harness as Antigravity 2.0 desktop—all future improvements apply automatically to CLI too",
-          "Spawns dynamic parallel subagents from a single natural-language goal without manual orchestration code",
-          "Go-based binary: fast startup, low memory footprint, works well over SSH on remote machines",
-          "Free for individuals at launch; integrates with existing Google AI Pro/Ultra subscriptions"
-        ],
-        "cons": [
-          "Not 1:1 feature parity with Gemini CLI at launch—some extensions may not migrate cleanly",
-          "Heavy use requires at least $20/month Google AI Pro; free tier limits are very constrained",
-          "Optimized for Gemini models; Claude and GPT-OSS are supported but at higher latency and cost"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- macOS, Linux, or Windows (WSL recommended on Windows)\n- A Google account with Google AI Pro/Ultra **or** a Google Cloud project\n- No Go installation required—the installer ships a self-contained binary\n\n## 1. Install via the official install script\n\n```bash\ncurl -fsSL https://antigravity.google/cli/install.sh | bash\n```\n\nThe installer detects your platform (linux_amd64, darwin_arm64, etc.), downloads the versioned binary, and adds `agy` to your PATH. Verify:\n\n```bash\nagy --version\n# Antigravity CLI 1.0.0\n```\n\n## 2. Authenticate\n\n**Option A — Google Account (personal/Pro/Ultra):**\n```bash\nagy auth login\n# Opens a browser OAuth flow. Accept the permissions.\n```\n\n**Option B — Google Cloud project (enterprise/Gemini Enterprise Agent Platform):**\n```bash\ngcloud auth application-default login\nagy config set project YOUR_GCP_PROJECT_ID\nagy config set region us-central1\n# All agent inference now runs inside your Cloud boundary.\n```\n\n## 3. Run your first agent task\n\n```bash\n# Single-turn task (headless)\nagy \"Scaffold a FastAPI app with a /health endpoint and write a pytest suite for it\"\n\n# Interactive TUI mode\nagy\n```\n\n## 4. Define a custom AGENTS.md skill (optional)\n\nCreate `AGENTS.md` in your repo root. Antigravity reads it as agent instructions:\n\n```markdown\n# AGENTS.md\n## Project context\nThis is a Python monorepo. All new modules go in `src/`. Tests go in `tests/`.\n## Preferred tools\n- Use `uv` for package management, never `pip` directly.\n- Run `pytest -x` before marking any task complete.\n```\n\nThen invoke with context:\n\n```bash\nagy \"Add a Redis cache layer to the user service\"\n# Agent reads AGENTS.md, follows project conventions automatically.\n```\n\n## Gotcha: Gemini CLI migration deadline\nIf you have `gemini` on your PATH, note that **Gemini CLI stops serving on June 18, 2026** for Pro/Ultra accounts. Your existing scripts that call `gemini` need to be updated to `agy`. The command syntax is largely compatible for simple prompts, but check your extensions—they are now called plugins and need re-registration:\n\n```bash\nagy plugins list      # see migrated plugins\nagy plugins install PATH_TO_PLUGIN\n```",
-        "sourceURL": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
-      }
-    },
-    {
-      "id": "huggingface-ml-intern-2026-05",
-      "name": "ml-intern (Hugging Face)",
-      "category": "tooling",
-      "oneLineDescription": "Open-source agentic ML engineer that fine-tunes models and ships weights autonomously.",
-      "estimatedSetupMinutes": 10,
-      "detail": {
-        "whatItDoes": "ml-intern is an open-source CLI agent from Hugging Face that autonomously handles the post-training research loop: reading papers, searching datasets, writing training code, launching HF Jobs, tracking experiments with Trackio, and uploading trained model weights back to the Hub. It runs an agentic loop of up to 300 iterations with a ContextManager that auto-compacts at 170K tokens and a ToolRouter dispatching to HF docs, repos, datasets, papers, GitHub code search, and external MCP servers. Sensitive operations—paid job launches, destructive commands—pause for explicit user approval.\n\nEvery session is auto-uploaded to a private HF dataset in Claude Code JSONL format, making every agent run a debuggable artifact browsable in the HF Agent Trace Viewer. In a benchmark self-improvement run, ml-intern raised a Qwen3-1.7B GPQA score from ~9% to 32% in under 10 hours on a single H100 with no human intervention beyond the initial goal prompt.",
-        "whoItsFor": "ML researchers and engineers who spend time on fine-tuning, dataset curation, and post-training experiments. Especially useful for academic labs and independent researchers who lack large security teams but want to automate RLHF, dataset distillation, or supervised fine-tuning loops. Works with Anthropic, OpenAI, HF-hosted models, or local models via Ollama/vLLM.",
-        "pros": [
-          "Native Hugging Face ecosystem access: HF Jobs, Hub datasets, Spaces sandbox, Trackio—no custom infra glue needed",
-          "Session traces auto-upload to a private HF dataset; every run is reproducible and auditable",
-          "Model-agnostic: swap between Claude, GPT-5.5, Llama, or any vLLM/Ollama model with a single flag",
-          "Approval gates on expensive/destructive operations prevent runaway spend on cloud compute"
-        ],
-        "cons": [
-          "Requires HF_TOKEN even for local model runs because it creates private HF Spaces for the sandbox",
-          "300-iteration cap and doom-loop detector can interrupt complex multi-stage training pipelines unexpectedly",
-          "Autonomous data generation decisions (e.g. synthetic dataset creation) still need human review in sensitive domains"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.11+\n- `uv` package manager (`pip install uv` or `brew install uv`)\n- A Hugging Face account with a write-access token\n- At least one of: `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, or a local model server\n\n## 1. Clone and install\n\n```bash\ngit clone git@github.com:huggingface/ml-intern.git\ncd ml-intern\nuv sync\nuv tool install -e .\n```\n\nVerify the CLI is on your PATH:\n```bash\nml-intern --help\n```\n\n## 2. Set environment variables\n\nCreate a `.env` file or export directly:\n\n```bash\nexport HF_TOKEN=hf_...             # Required — even for local models (creates private HF Spaces)\nexport ANTHROPIC_API_KEY=sk-ant-... # If using Claude\nexport OPENAI_API_KEY=sk-...        # If using GPT-5.5\nexport GITHUB_TOKEN=ghp_...         # For code search tool\n# Optional: local model server\nexport LOCAL_LLM_BASE_URL=http://localhost:8000\n```\n\n## 3. Run a task\n\n```bash\n# Interactive mode (recommended for first run)\nml-intern\n\n# Headless single-prompt mode with a specific model\nml-intern --model anthropic/claude-opus-4-7 \\\n  \"Fine-tune llama3.1-8b on the HuggingFaceH4/ultrafeedback_binarized dataset for 1 epoch, \\\n   upload weights to my Hub profile as my-llama-sft-run\"\n\n# Cap iterations to avoid runaway loops on expensive tasks\nml-intern --max-iterations 50 \"your prompt\"\n```\n\n## 4. Use the HF Sandbox (GPU jobs)\n\nThe `--sandbox-tools` flag switches from local execution to an HF Space sandbox with GPU access:\n\n```bash\nml-intern --sandbox-tools \\\n  \"Run a GPQA evaluation on Qwen3-1.7B and report the score\"\n# Agent will request GPU hardware, create a private HF Space, run the eval, and report results.\n```\n\n## 5. Review traces\n\n```bash\n# Inside the CLI, toggle trace visibility\n/share-traces         # shows current dataset URL\n/share-traces public  # makes traces publicly browsable on the Hub\n/share-traces private # lock back down\n```\n\n## Gotcha: the sandbox always needs HF_TOKEN\nEven if you pass `--model ollama/llama3.1:8b` for local inference, the sandbox runtime creates private HF Spaces in the background. The CLI will prompt you on first launch if `HF_TOKEN` is missing, but it will silently disable sandbox features rather than error loudly—so set the token upfront.",
-        "sourceURL": "https://github.com/huggingface/ml-intern"
-      }
-    },
-    {
-      "id": "google-gemini-managed-agents-api-2026-05",
-      "name": "Gemini Managed Agents API",
-      "category": "google",
-      "oneLineDescription": "Single Gemini API call provisions a sandboxed Linux agent with persistent state.",
+      "id": "claude-managed-agents-api",
+      "name": "Claude Managed Agents API",
+      "category": "anthropic",
+      "oneLineDescription": "Hosted agent harness: define config, spin up sandbox, stream results — no infra.",
       "estimatedSetupMinutes": 15,
       "detail": {
-        "whatItDoes": "The Managed Agents API, launched at Google I/O 2026, lets you spin up a fully sandboxed agent with a single call to the Gemini Interactions API. The agent reasons with Gemini 3.5 Flash, calls tools, executes code in an isolated Linux environment, and browses the web. Crucially, each interaction creates an environment that persists across follow-up calls with all files and state intact—enabling multi-turn sessions without reinitializing context.\n\nThe agent is powered by the same Antigravity harness that runs Google's own products. You can extend it via markdown skill files (AGENTS.md, SKILL.md) registered as named agents. The API is available now via Google AI Studio and the Interactions API endpoint.",
-        "whoItsFor": "Backend engineers and product teams that want agentic capabilities embedded inside their own applications or internal tools without managing execution infrastructure. Particularly useful for teams building document processing pipelines, code review workflows, or any multi-step task that currently requires a custom orchestration layer.",
+        "whatItDoes": "Claude Managed Agents is Anthropic's hosted infrastructure for running autonomous Claude agents. You define a versioned Agent config (model, system prompt, tools, MCP servers), create an Environment (cloud or self-hosted), and start Sessions. Each session gets an isolated container with bash, file ops, web search, and code execution built in. The agent loop, context compaction, prompt caching, and session state are all managed on Anthropic's side.\n\nPricing is $0.08/session-hour billed to the millisecond (idle time does not count) plus standard Claude token costs. Multi-agent orchestration, webhooks, MCP vault credentials, and self-hosted sandboxes (run tool execution on your own infra via Cloudflare, Modal, Vercel, or Daytona) are all now in public beta under the `managed-agents-2026-04-01` beta header.",
+        "whoItsFor": "Backend engineers who want to ship autonomous agent pipelines — PR review bots, CI code-quality agents, documentation generators, overnight test runners — without building sandbox infrastructure, managing Docker containers, or writing their own agent loop. Also useful for teams already using Claude Code interactively who want to schedule or automate the same work programmatically.",
         "pros": [
-          "One API call replaces an entire orchestration stack: sandboxed Linux env, web browsing, code execution all included",
-          "Persistent environment across turns—agent state survives between API calls, no re-upload of files each turn",
-          "Customizable via plain markdown AGENTS.md and SKILL.md files; no SDK-specific DSL to learn",
-          "Available in Google AI Studio for rapid prototyping before wiring into production"
+          "No DIY orchestration: agent loop, context compaction, retries, and sandbox are all handled by Anthropic",
+          "Session state is durable — sessions survive harness crashes and resume cleanly",
+          "Self-hosted sandbox option lets you move tool execution to your own infra for compliance requirements",
+          "Versioned Agent configs enable GitOps-style rollout and rollback without breaking running sessions",
+          "All Anthropic API accounts have access with no waitlist"
         ],
         "cons": [
-          "Currently only powered by Gemini 3.5 Flash—no model choice within Managed Agents yet",
-          "Execution environment is Google-managed; teams with strict data residency need to route via Gemini Enterprise Agent Platform instead"
+          "Claude-only — no multi-model routing; for GPT or open-weight models you need your own orchestration",
+          "Not eligible for Zero Data Retention or HIPAA BAA coverage because sessions are stateful server-side",
+          "Multi-agent orchestration and dreaming (agent memory consolidation) are still research preview, gated access"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- A Google AI Studio account or a Google Cloud project\n- A Gemini API key from https://aistudio.google.com/apikey\n- Python 3.10+ and `google-genai` SDK\n\n## 1. Install the SDK\n\n```bash\npip install google-genai\n```\n\n## 2. Set your API key\n\n```bash\nexport GEMINI_API_KEY=\"AIza...\"\n```\n\n## 3. Create and run a Managed Agent\n\n```python\nimport os\nfrom google import genai\nfrom google.genai.types import GenerateContentConfig\n\nclient = genai.Client(api_key=os.environ[\"GEMINI_API_KEY\"])\n\n# Start an interaction — this provisions the sandboxed agent\nresponse = client.models.generate_content(\n    model=\"gemini-3.5-flash\",\n    contents=\"Clone https://github.com/psf/requests, run the test suite, and return a summary of any failures.\",\n    config=GenerateContentConfig(\n        # Enable the Antigravity agent harness\n        tools=[{\"managed_agent\": {}}],\n    ),\n)\n\nprint(response.text)\n```\n\n## 4. Resume a persistent session\n\nThe Managed Agents API returns a `session_id`. Pass it on follow-up calls to resume the same sandboxed environment:\n\n```python\n# First turn — get session_id from response metadata\nsession_id = response.candidates[0].content.parts[0].managed_agent_result.session_id\n\n# Follow-up turn — environment (files, state) is intact\nresponse2 = client.models.generate_content(\n    model=\"gemini-3.5-flash\",\n    contents=\"Now fix the first failing test and re-run only that test file.\",\n    config=GenerateContentConfig(\n        tools=[{\"managed_agent\": {\"session_id\": session_id}}],\n    ),\n)\n```\n\n## 5. Define a custom skill (optional)\n\nCreate a file called `SKILL.md` and register it as a named agent in AI Studio, or pass it inline:\n\n```markdown\n# SKILL.md\n## Project conventions\n- All Python must pass `ruff check` before the task is marked complete.\n- Use `pytest -x --tb=short` for test runs.\n- Never commit secrets; use environment variables.\n```\n\n## Gotcha: Managed Agents vs. standard chat\nThe `managed_agent` tool flag is what triggers sandbox provisioning. Without it, `generate_content` behaves like a normal chat completion. If you forget the flag, your code will appear to work but the agent will not have filesystem or web access.",
-        "sourceURL": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/"
+        "setupGuideMarkdown": "## Prerequisites\n- Anthropic API key with an active billing account (`ANTHROPIC_API_KEY`)\n- `ant` CLI or the Python/TypeScript SDK\n- All Managed Agents requests need the beta header `managed-agents-2026-04-01` (SDKs set it automatically)\n\n## 1. Install the `ant` CLI\n\n```bash\n# macOS (Homebrew)\nbrew install anthropics/tap/ant\n\n# Verify\nant --version\n\n# Set your API key\nexport ANTHROPIC_API_KEY=\"sk-ant-...\"\n```\n\n## 2. Create an Agent config\n\n```bash\nant beta:agents create \\\n  --name \"code-reviewer\" \\\n  --model '{id: claude-opus-4-8}' \\\n  --system \"You are a senior code reviewer. Analyze repos for bugs, security issues, and style. Be specific about line numbers.\" \\\n  --tool '{type: agent_toolset_20260401}'\n# Save the returned agent_id, e.g. agent_abc123\n```\n\nThe `agent_toolset_20260401` tool type enables bash, file read/write, web search, web fetch, grep, and glob — all sandboxed.\n\n## 3. Create an Environment\n\n```bash\nant beta:environments create \\\n  --name \"python-dev\" \\\n  --config '{type: cloud, networking: {type: unrestricted}, packages: {pip: [\"pytest\", \"black\", \"ruff\"]}}'\n# Save the returned environment_id, e.g. env_xyz789\n```\n\n## 4. Start a Session and send a task\n\n```bash\n# Start session\ncurl https://api.anthropic.com/v1/sessions \\\n  -H \"x-api-key: $ANTHROPIC_API_KEY\" \\\n  -H \"anthropic-beta: managed-agents-2026-04-01\" \\\n  -H \"content-type: application/json\" \\\n  -d '{\"agent_id\": \"agent_abc123\", \"environment_id\": \"env_xyz789\"}'\n# Save session_id from response\n\n# Send a task\ncurl https://api.anthropic.com/v1/sessions/sess_123/events \\\n  -H \"x-api-key: $ANTHROPIC_API_KEY\" \\\n  -H \"anthropic-beta: managed-agents-2026-04-01\" \\\n  -H \"content-type: application/json\" \\\n  -d '{\"type\": \"user_message\", \"content\": \"Clone https://github.com/myorg/api-service, run the test suite, and give me a code quality report.\"}'\n```\n\n## 5. Stream results\n\n```bash\ncurl -N https://api.anthropic.com/v1/sessions/sess_123/events/stream \\\n  -H \"x-api-key: $ANTHROPIC_API_KEY\" \\\n  -H \"anthropic-beta: managed-agents-2026-04-01\"\n```\n\n## Python SDK (alternative)\n\n```python\npip install anthropic\n```\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\n\n# SDKs auto-set the managed-agents-2026-04-01 beta header\nagent = client.beta.agents.create(\n    name=\"code-reviewer\",\n    model=\"claude-opus-4-8\",\n    system_prompt=\"You are a senior code reviewer.\",\n    tools=[{\"type\": \"agent_toolset_20260401\"}],\n)\n\nenv = client.beta.environments.create(\n    name=\"python-dev\",\n    config={\"type\": \"cloud\", \"networking\": {\"type\": \"unrestricted\"}},\n)\n\nsession = client.beta.sessions.create(\n    agent_id=agent.id,\n    environment_id=env.id,\n)\n\nfor event in client.beta.sessions.stream(session.id, message=\"Review the latest commit for security issues\"):\n    print(event)\n```\n\n## Gotchas\n- **Beta header is mandatory** — raw HTTP calls will 400 without `anthropic-beta: managed-agents-2026-04-01`\n- **Do not store credentials in system prompts** — use the vault system (`client.beta.vaults.credentials.create`) and pass `vault_ids` at session creation\n- **SSE stream has no replay** — if your stream drops mid-tool-call, reconnect with `GET /v1/sessions/{id}/events`, dedupe by event ID, then reopen the stream; otherwise the session deadlocks\n- **Not HIPAA-eligible** — sessions are stateful server-side; not covered by ZDR or BAA",
+        "sourceURL": "https://platform.claude.com/docs/en/managed-agents/overview"
       }
     },
     {
-      "id": "anthropic-stainless-sdk-generator-context-2026-05",
-      "name": "Stainless SDK Generator (pre-acquisition context)",
-      "category": "tooling",
-      "oneLineDescription": "OpenAPI-spec-to-SDK generator that powered every official Anthropic SDK—now Anthropic-owned.",
-      "estimatedSetupMinutes": 20,
+      "id": "gemini-cli-google",
+      "name": "Gemini CLI",
+      "category": "google",
+      "oneLineDescription": "Free, open-source terminal AI agent backed by Gemini — 1M token context, MCP support.",
+      "estimatedSetupMinutes": 5,
       "detail": {
-        "whatItDoes": "Stainless converts an OpenAPI specification into production-ready SDKs across TypeScript, Python, Go, Java, Kotlin, and more—plus CLIs and MCP servers. It was the tool behind every official Anthropic SDK and was also used by OpenAI, Google, Cloudflare, Replicate, and Runway. Anthropic acquired it on May 18, 2026 for a reported ~$300M and is winding down all hosted products (new signups closed). Existing customers keep generated SDKs with full rights to modify and extend them.\n\nDevelopers who were using Stainless's hosted platform need to migrate. The open-source Stainless CLI still works for local generation from an OpenAPI spec. The acquisition makes SDK and MCP server generation a core part of Anthropic's developer platform, with plans to tighten integration with the Claude API over time.",
-        "whoItsFor": "API platform teams that need to ship and maintain SDKs in multiple languages without hand-writing each one. Teams that built MCP servers via Stainless are most immediately affected—they need a migration path. Teams evaluating how to connect their APIs to Claude agents should watch for updated Anthropic-native SDK generation tooling in the coming months.",
+        "whatItDoes": "Gemini CLI is Google's open-source (Apache 2.0) terminal AI agent. It runs a ReAct loop against Gemini models with built-in tools: bash execution, file read/write, web search, and MCP server integration. It supports GEMINI.md context files (same idea as CLAUDE.md), session checkpointing so long coding runs survive crashes, headless/scripting mode for CI pipelines, and a skills system for shareable capability packs.\n\nThe free tier with a personal Google account gives 60 requests/minute and 1,000 requests/day — no API key needed. For heavier workloads, pass a Google AI Studio or Vertex AI key. Note: Google announced at I/O 2026 that Antigravity 2.0 (a Go-based CLI) is the longer-term direction; Gemini CLI has a sunset date of June 18, 2026 for free/individual users, after which Antigravity CLI is the migration path. Existing Google AI Studio or Vertex API-key users can continue past that date.",
+        "whoItsFor": "Budget-conscious developers who want a Claude Code or Codex CLI equivalent at zero cost. Google Cloud teams that want native GCP service integration. Open-source advocates who want to inspect and extend the agent. Anyone building CI automation who needs a free headless coding agent that can pipe from stdin.",
         "pros": [
-          "Generated SDKs are idiomatic per language—not mechanical HTTP wrappers—reducing integration friction",
-          "MCP server generation from an OpenAPI spec is the fastest path to making your API agent-accessible",
-          "Existing generated SDKs and code remain fully owned by customers; no forced migration of the output"
+          "Genuinely free for personal use — 60 req/min, 1,000 req/day with a Google account, no card required",
+          "1M token context window handles large codebases without chunking",
+          "MCP server support lets you extend with GitHub, Slack, databases, and custom tools via settings.json",
+          "Session checkpointing survives crashes; headless mode works in GitHub Actions and cron jobs",
+          "Apache 2.0 licensed — fully auditable and forkable"
         ],
         "cons": [
-          "Hosted platform is shut down—no new projects, no managed SDK regeneration on API changes",
-          "Future development will prioritize Anthropic/Claude integration; OpenAI and Google parity may degrade",
-          "No clear ETA on when Anthropic's replacement developer tooling ships with equivalent capabilities"
+          "Sunset for free/individual users on June 18, 2026 — migration to Antigravity CLI required after that date",
+          "Requires Node.js 20+ runtime (not a single binary like some alternatives)",
+          "Free tier rate limits (60 req/min) can throttle long agentic loops on large codebases"
         ],
-        "setupGuideMarkdown": "## Using the Stainless CLI locally (post-acquisition fallback)\n\nThe hosted product is gone, but the Stainless CLI for local generation still works. This is the recommended path for existing customers who need to regenerate SDKs when their API spec changes.\n\n## Prerequisites\n- Node 20+\n- Your OpenAPI 3.x spec as a YAML or JSON file\n- A Stainless config file (`stainless.yml`) — export it from your old hosted project before the dashboard closes\n\n## 1. Install the Stainless CLI\n\n```bash\nnpm install -g stainless-api\nstainless --version\n```\n\n## 2. Generate SDKs locally\n\n```bash\n# TypeScript SDK\nstainless generate \\\n  --spec ./openapi.yaml \\\n  --config ./stainless.yml \\\n  --language typescript \\\n  --output ./sdks/typescript\n\n# Python SDK\nstainless generate \\\n  --spec ./openapi.yaml \\\n  --config ./stainless.yml \\\n  --language python \\\n  --output ./sdks/python\n```\n\n## 3. Generate an MCP server from your API spec\n\n```bash\nstainless generate \\\n  --spec ./openapi.yaml \\\n  --config ./stainless.yml \\\n  --language mcp \\\n  --output ./mcp-server\n\ncd ./mcp-server && npm install && npm run build\n\n# Test with Claude Code\nclaude mcp add local ./mcp-server/build/index.js\n```\n\n## 4. Wire into CI so SDKs regenerate on spec changes\n\n```yaml\n# .github/workflows/sdk-gen.yml\nname: Regenerate SDKs\non:\n  push:\n    paths: ['openapi.yaml']\njobs:\n  generate:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-node@v4\n        with: { node-version: '20' }\n      - run: npm install -g stainless-api\n      - run: stainless generate --spec openapi.yaml --config stainless.yml --language typescript --output sdks/typescript\n      - run: stainless generate --spec openapi.yaml --config stainless.yml --language python --output sdks/python\n      - uses: stefanzweifel/git-auto-commit-action@v5\n        with:\n          commit_message: 'chore: regenerate SDKs from updated spec'\n```\n\n## Gotcha: export your stainless.yml NOW\nThe hosted Stainless dashboard is the only place your config lives. If you have not exported it before the platform fully shuts down, local regeneration will produce generic output without your per-language customizations. Log in and export immediately.",
-        "sourceURL": "https://www.anthropic.com/news/anthropic-acquires-stainless"
+        "setupGuideMarkdown": "## Prerequisites\n- Node.js 20 or later (`node --version` to check)\n- A Google account (no credit card needed for free tier)\n- macOS 15+, Windows 11 24H2+, or Ubuntu 20.04+\n\n## Install\n\n```bash\n# Stable channel (released every Tuesday 20:00 UTC)\nnpm install -g @google/gemini-cli\n\n# Verify\ngemini --version\n\n# Alternative: Homebrew (macOS)\nbrew install google-gemini/gemini-cli/gemini-cli\n```\n\n## Authenticate\n\n```bash\n# Option A: Personal Google account (free tier, no API key needed)\ngemini login\n# Opens browser — sign in with Google account\n\n# Option B: API key (AI Studio or Vertex for higher limits)\nexport GEMINI_API_KEY=\"your-ai-studio-key\"\n# Or for Vertex:\nexport GOOGLE_CLOUD_PROJECT=\"your-project-id\"\ngcloud auth application-default login\n```\n\n## First session\n\n```bash\n# Start interactive session in your project root\ncd your-project\ngemini\n\n# Inside the session:\n> Give me a summary of all changes merged to main this week\n> Write unit tests for src/auth.ts and run them\n> Fix the failing test in src/utils.test.ts\n```\n\n## Headless mode (CI / scripts)\n\n```bash\n# Single-shot prompt from CLI\ngemini --headless -p \"Review this PR diff for security issues\" < pr.diff\n\n# In a GitHub Actions step:\n- name: Security review\n  run: echo \"$(git diff main)\" | gemini --headless -p \"Flag any security issues in this diff\"\n  env:\n    GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}\n```\n\n## Add an MCP server (e.g. GitHub)\n\n```bash\ngemini mcp add github \\\n  --command \"npx\" \\\n  --args \"-y,@modelcontextprotocol/server-github\" \\\n  --env GITHUB_PERSONAL_ACCESS_TOKEN=ghp_yourtoken\n\n# Verify\ngemini mcp list\n\n# Use in session\ngemini\n> @github List my open pull requests\n```\n\n## GEMINI.md context file\n\nCreate a `GEMINI.md` in your project root to give the agent persistent context:\n\n```markdown\n# Project: Payments API\n- Language: TypeScript, Node 22\n- Test runner: Vitest (`npm test`)\n- Lint: `npm run lint` (ESLint + Prettier)\n- Never edit files in `dist/` — that is build output\n- Open PRs against `main`; squash merge only\n```\n\n## Gotchas\n- **Sunset June 18, 2026** — free/individual users must migrate to Antigravity CLI after this date; API-key users can continue\n- **MCP server cold start** — if `gemini mcp list` stalls, your MCP server is taking too long to start via `npx`; add `--timeout 5000` to `mcp add` or remove unused servers\n- **Node deprecation warning on install** — a transitive native addon prints a deprecation notice; it is cosmetic and the install succeeds\n- **`GEMINI_API_KEY` vs `gcloud` auth** — set one, not both; having both configured can cause silent auth failures",
+        "sourceURL": "https://github.com/google-gemini/gemini-cli"
+      }
+    },
+    {
+      "id": "anthropic-ant-cli",
+      "name": "ant CLI",
+      "category": "anthropic",
+      "oneLineDescription": "kubectl-style CLI for Anthropic's Claude API — manages agents, environments, and sessions.",
+      "estimatedSetupMinutes": 5,
+      "detail": {
+        "whatItDoes": "The `ant` CLI is Anthropic's official Go-based command-line client for the Claude API, launched April 2026 alongside Claude Managed Agents. It exposes every Claude API resource as a shell subcommand with a `kubectl`-style resource/verb structure (`ant [resource] <command> [flags]`). It handles YAML-based agent config files for GitOps workflows, auto-paginates list endpoints, auto-injects the correct `anthropic-beta` headers so you never have to track them manually, and supports `@path` syntax to inline file contents into any string field.\n\nBeta resources — agents, sessions, environments, deployments, skills, vaults, memory stores — live under the `beta:` prefix. For programmatic agent execution inside applications, pair `ant` with the Python or TypeScript SDK; `ant` is the control-plane tool, the SDK is the data-plane tool.",
+        "whoItsFor": "DevOps and platform engineers who manage Claude agent infrastructure via CI/CD pipelines. Developers who want to provision, debug, and rotate agent configs from the terminal without writing curl commands or maintaining JSON request bodies. Teams doing GitOps-style agent config management (check YAML into git, deploy from CI).",
+        "pros": [
+          "Auto-sets the correct anthropic-beta header for every beta endpoint — no header tracking needed",
+          "YAML agent config files enable GitOps: check configs into git, apply from CI, roll back to previous versions",
+          "Tab completion for bash, zsh, fish, and PowerShell speeds up working with the long beta: namespaced commands",
+          "Go binary — single installable with no Node or Python runtime dependency"
+        ],
+        "cons": [
+          "Requires a paid Anthropic API account — no free tier for Managed Agents",
+          "All Managed Agents commands are under the beta: prefix; command structure may change before GA",
+          "Not the right tool for embedding agent interactions in applications — use the Python/TypeScript SDK for that"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Anthropic API key (`ANTHROPIC_API_KEY`) — generate at console.anthropic.com\n- macOS, Linux, or Windows (Go binary, no Node/Python required)\n\n## Install\n\n```bash\n# macOS (Homebrew)\nbrew install anthropics/tap/ant\n\n# Linux (direct binary)\ncurl -sSL https://api.anthropic.com/cli/install.sh | sh\n\n# Verify\nant --version\n```\n\n## Authenticate\n\n```bash\nexport ANTHROPIC_API_KEY=\"sk-ant-...\"\n\n# Optional: shell completion (zsh)\nant completion zsh > ~/.zfunc/_ant\necho 'fpath=(~/.zfunc $fpath)' >> ~/.zshrc\necho 'autoload -Uz compinit && compinit' >> ~/.zshrc\nsource ~/.zshrc\n```\n\n## Create and deploy an agent (imperative style)\n\n```bash\n# Create an agent config\nant beta:agents create \\\n  --name \"pr-reviewer\" \\\n  --model '{id: claude-opus-4-8}' \\\n  --system \"You are a senior code reviewer. Clone repos, run tests, report bugs with line numbers.\" \\\n  --tool '{type: agent_toolset_20260401}'\n# Note the returned agent_id\n\n# Create a cloud environment\nant beta:environments create \\\n  --name \"python-ci\" \\\n  --config '{type: cloud, networking: {type: unrestricted}, packages: {pip: [\"pytest\", \"ruff\"]}}'\n# Note the returned environment_id\n\n# Start a session\nant beta:sessions create \\\n  --agent-id agent_abc123 \\\n  --environment-id env_xyz789\n# Note the returned session_id\n\n# Send a task\nant beta:sessions messages create sess_123 \\\n  --content \"Review the latest commit on main for security vulnerabilities\"\n\n# Stream results\nant beta:sessions stream sess_123\n```\n\n## GitOps style (YAML config)\n\n```yaml\n# agent.yaml\napiVersion: v1\nkind: Agent\nname: pr-reviewer\nmodel:\n  id: claude-opus-4-8\nsystem: |\n  You are a senior code reviewer.\n  Always check for SQL injection, SSRF, and insecure deserialization.\ntools:\n  - type: agent_toolset_20260401\nmcp_servers:\n  - name: github\n    url: https://mcp.github.com\n```\n\n```bash\n# Apply from file (idempotent, creates new version if changed)\nant beta:agents apply -f agent.yaml\n\n# Check current versions\nant beta:agents list\nant beta:agents versions list --agent-id agent_abc123\n\n# Roll back to a previous version\nant beta:agents rollback --agent-id agent_abc123 --version 2\n```\n\n## Gotchas\n- **`beta:` prefix is required** for all Managed Agents commands — `ant agents create` will fail; use `ant beta:agents create`\n- **Auth token collision** — if both `ANTHROPIC_API_KEY` and `ANTHROPIC_AUTH_TOKEN` are set in env, the API rejects the request; unset one before running `ant`\n- **MCP credentials go in vaults, not system prompts** — use `ant beta:vaults credentials create` and pass `vault_ids` at session creation; hardcoding tokens in system prompts is a ToS violation and a security risk\n- **Archive is permanent** — archiving an agent, environment, or session is irreversible; archived agents cannot be referenced by new sessions",
+        "sourceURL": "https://platform.claude.com/docs/en/release-notes/overview"
+      }
+    },
+    {
+      "id": "google-antigravity-2-cli",
+      "name": "Google Antigravity 2.0",
+      "category": "google",
+      "oneLineDescription": "Google's agent-first dev platform: desktop app + CLI + SDK powered by Gemini 3.5 Flash.",
+      "estimatedSetupMinutes": 10,
+      "detail": {
+        "whatItDoes": "Google Antigravity 2.0 is the agent-first development platform announced at Google I/O 2026 on May 19. It ships as three surfaces: a desktop application, a CLI (`antigravity` or `antg`), and a Go-based SDK. It replaces Gemini CLI as Google's primary developer tool and is powered by Gemini 3.5 Flash (289 tokens/sec output). The CLI component directly competes with Claude Code and Codex CLI.\n\nAntigravity 2.0 adds subagent orchestration — spin up multiple specialized agents for complex workflows — with built-in cross-platform terminal sandboxing, credential masking, and hardened Git policies. The Antigravity SDK lets you embed Google's agentic capabilities in your own applications or self-host the agent harness on your own infrastructure. Managed Agents in the Gemini API (single API call spins up a fully sandboxed Linux agent) is also powered by the Antigravity harness.",
+        "whoItsFor": "Google Cloud developers and teams currently using Gemini CLI who need to migrate before the June 18, 2026 sunset. Developers who want a Claude Code alternative with Google account free-tier access and native Google Workspace, GCP, and Android Studio integration. Teams building Android apps who want AI-assisted migration from React Native or web frameworks.",
+        "pros": [
+          "Powered by Gemini 3.5 Flash — outperforms Gemini 3.1 Pro at 4x the speed; no quality/cost tradeoff for Flash tier",
+          "Subagent orchestration built in — delegate subtasks to parallel specialized agents from a single session",
+          "Native Google Workspace and GCP integration (Gmail, Docs, Sheets, Drive, Android Studio)",
+          "SDK enables self-hosted deployments for teams that need to keep data on-prem"
+        ],
+        "cons": [
+          "Replaces Gemini CLI — existing Gemini CLI installations and GEMINI.md configs need migration",
+          "New CLI syntax is different from Gemini CLI; muscle memory from `gemini` commands does not transfer",
+          "Desktop app currently requires Google AI Plus ($25/mo) or Ultra ($100/mo) for full agentic features; basic CLI is free"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Node.js 18+ or use the standalone binary\n- A Google account (free tier available for CLI; Plus/Ultra for full agent features)\n- macOS, Linux, or Windows\n\n## Install the Antigravity CLI\n\n```bash\n# via npm (recommended, cross-platform)\nnpm install -g @google/antigravity\n\n# verify\nantg --version\n\n# macOS Homebrew (once available in stable channel)\nbrew install google/antigravity/antg\n```\n\n## Authenticate\n\n```bash\n# Personal Google account (free tier)\nantg login\n# Opens browser — sign in with Google account\n\n# Google AI Studio API key (higher limits)\nexport GOOGLE_AI_API_KEY=\"your-key\"\n\n# Vertex AI / GCP\ngcloud auth application-default login\nexport GOOGLE_CLOUD_PROJECT=\"your-project\"\n```\n\n## First coding session\n\n```bash\ncd your-project\n\n# Start interactive session (Gemini 3.5 Flash default)\nantg\n\n# Inside the session:\n> Build a REST endpoint for user authentication in src/auth.ts\n> Run the test suite and fix any failures\n> Review this PR diff for security issues\n```\n\n## Subagent orchestration\n\n```bash\n# Spin up parallel specialized agents for a complex task\nantg --orchestrate \\\n  --agents \"security-reviewer,performance-analyzer,test-writer\" \\\n  --task \"Harden the payments module: security audit, perf profile, and 90% test coverage\"\n```\n\n## Headless / CI mode\n\n```bash\n# Single-shot in CI\nantg --headless -p \"Review this diff for breaking API changes\" < git.diff\n\n# GitHub Actions\n- name: API compat check\n  run: git diff origin/main | antg --headless -p \"List any breaking API changes\"\n  env:\n    GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}\n```\n\n## Migrate from Gemini CLI\n\n```bash\n# Export existing GEMINI.md as ANTIGRAVITY.md (Antigravity reads both during transition)\ncp GEMINI.md ANTIGRAVITY.md\n\n# Migrate MCP server config\n# Old: ~/.gemini/settings.json\n# New: ~/.antigravity/settings.json (same JSON schema, different path)\ncp ~/.gemini/settings.json ~/.antigravity/settings.json\n\n# Verify MCP servers still work\nantg mcp list\n```\n\n## Gotchas\n- **Gemini CLI sunset is June 18, 2026** for individual/free-tier users — migrate now, not the day before\n- **`GEMINI.md` is still read** by Antigravity during the transition period, but rename to `ANTIGRAVITY.md` for clarity; both files are read if present, with ANTIGRAVITY.md taking precedence\n- **Subagent orchestration** requires Google AI Plus or Ultra subscription; single-agent mode is free\n- **Desktop app and CLI share config** at `~/.antigravity/` — changing model settings in the desktop app affects CLI sessions immediately",
+        "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
+      }
+    },
+    {
+      "id": "openai-realtime-2-api",
+      "name": "OpenAI Realtime 2 API",
+      "category": "openai",
+      "oneLineDescription": "Streaming speech-to-speech API with reasoning, translation, and transcription in one session.",
+      "estimatedSetupMinutes": 20,
+      "detail": {
+        "whatItDoes": "OpenAI's Realtime 2 API (released May 7, 2026) is a new family of speech-to-speech models that replace the deprecated Realtime API Beta. It ships three distinct surfaces in one API: Realtime 2 (full speech-to-speech with configurable reasoning), Realtime Translate (streaming speech-to-speech translation across languages), and Realtime Whisper (streaming speech-to-text transcription). All three use WebSocket or server-sent-event sessions for low-latency, streaming output.\n\nThe key upgrade over the beta is configurable reasoning — the model can spend tokens reasoning before producing audio, enabling more accurate responses for complex questions without a separate LLM hop. The old Realtime API Beta was removed from the API on May 12, 2026 simultaneously.",
+        "whoItsFor": "Developers building voice agents, real-time customer support bots, live translation tools, or meeting transcription products. Teams that were using the deprecated Realtime API Beta and need to migrate. Anyone who needs low-latency audio input and audio output from a single streaming API without stitching together separate STT, LLM, and TTS services.",
+        "pros": [
+          "Three services (speech-to-speech, translation, transcription) in one unified API — no stitching",
+          "Configurable reasoning lets the model think before speaking, reducing hallucinations on complex queries",
+          "Streaming output keeps latency low even with reasoning enabled",
+          "Replaces the deprecated Realtime API Beta — existing WebSocket patterns mostly transfer with parameter updates"
+        ],
+        "cons": [
+          "Occasional audio quality issues noted in release notes: unexpected tone/pitch variations with certain voice options",
+          "Migration from Realtime API Beta is required — the beta endpoint was removed May 12, 2026 with no fallback",
+          "Reasoning mode increases token consumption; budget carefully for high-volume voice workloads"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- OpenAI API key with access to Realtime models (`OPENAI_API_KEY`)\n- Node.js 18+ (for the TypeScript/JS SDK) or Python 3.9+\n- If migrating from Realtime API Beta: read the [migration guide](https://platform.openai.com/docs/guides/realtime-migration) — the beta endpoint was removed May 12, 2026\n\n## Install the SDK\n\n```bash\n# Node.js / TypeScript\nnpm install openai\n\n# Python\npip install openai\n```\n\n## Basic Realtime 2 session (TypeScript)\n\n```typescript\nimport OpenAI from 'openai';\n\nconst client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });\n\n// Create a Realtime session\nconst session = await client.beta.realtime.sessions.create({\n  model: 'realtime-2',       // Realtime 2 model\n  voice: 'alloy',\n  instructions: 'You are a helpful assistant. Answer concisely.',\n  turn_detection: { type: 'server_vad' },\n  // Enable reasoning (trades latency for accuracy)\n  reasoning: { effort: 'medium' },\n});\n\nconsole.log('Session created:', session.id);\nconsole.log('Client secret:', session.client_secret.value);\n// Use client_secret to authenticate WebSocket from the browser/client\n```\n\n## WebSocket connection (browser-side)\n\n```typescript\n// Use the ephemeral client_secret from the session above\nconst ws = new WebSocket(\n  'wss://api.openai.com/v1/realtime',\n  ['realtime', `openai-insecure-api-key.${session.client_secret.value}`, 'openai-beta.realtime-v2']\n);\n\nws.onopen = () => {\n  // Send audio input as base64 PCM16 24kHz\n  ws.send(JSON.stringify({\n    type: 'input_audio_buffer.append',\n    audio: base64EncodedPCM16Audio,\n  }));\n};\n\nws.onmessage = (event) => {\n  const msg = JSON.parse(event.data);\n  if (msg.type === 'response.audio.delta') {\n    // msg.delta is base64 PCM16 audio — pipe to your audio output\n    playAudio(msg.delta);\n  }\n};\n```\n\n## Realtime Translate (streaming speech translation)\n\n```typescript\n// Same session create, different model surface\nconst translateSession = await client.beta.realtime.sessions.create({\n  model: 'realtime-translate',\n  // Translate from Spanish to English\n  input_language: 'es',\n  output_language: 'en',\n  voice: 'alloy',\n});\n```\n\n## Realtime Whisper (streaming transcription only)\n\n```typescript\nconst transcribeSession = await client.beta.realtime.sessions.create({\n  model: 'realtime-whisper',\n  input_language: 'en',  // null for auto-detect\n});\n// Response events will be response.transcript.delta instead of response.audio.delta\n```\n\n## Gotchas\n- **Realtime API Beta is gone** — the old `wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview` endpoint was removed May 12. Update your model string to `realtime-2` and review the [migration guide](https://platform.openai.com/docs/guides/realtime-migration)\n- **Audio format is PCM16 24kHz** — not MP3, not Opus; encode/decode accordingly on both ends\n- **Reasoning increases first-audio latency** — with `effort: 'high'`, expect ~500–800ms before first audio chunk; use `effort: 'low'` for conversational applications where speed matters more than depth\n- **Voice options affect audio quality** — OpenAI's release notes flag occasional pitch/tone variations with certain voices; test your chosen voice under load before production",
+        "sourceURL": "https://developers.openai.com/api/docs/changelog"
       }
     }
   ]
