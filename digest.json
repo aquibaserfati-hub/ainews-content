@@ -1,56 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-01T00:00:00Z",
-  "reportGeneratedAt": "2026-06-01T11:43:25Z",
+  "reportGeneratedAt": "2026-06-02T10:43:43Z",
   "learnGeneratedAt": "2026-06-01T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-claude-opus-48-may-2026",
-      "title": "Anthropic ships Claude Opus 4.8 with configurable effort modes and parallel subagents",
-      "summary": "Opus 4.8 lands at the same $5/$25 per million token price as 4.7 but adds per-request effort controls (high/xhigh/max via the API's budget_tokens parameter) and Dynamic Workflows in Claude Code — now in research preview for Team, Enterprise, and Max plans — capping at 1,000 total subagents and 16 concurrent. SWE-bench Pro jumps to 69.2% from 64.3%, the model flags its own code flaws 4x more often than its predecessor, and Opus 4.6 was hard-deprecated on the same day.",
+      "id": "anthropic-ipo-s1-sec-2026-06-01",
+      "title": "Anthropic files confidential S-1 with SEC, targets October IPO",
+      "summary": "Anthropic submitted a draft Form S-1 to the SEC on June 1, beating OpenAI to the public-market starting line. The filing comes on the back of a $65B Series H that pushed the valuation to $965B and a $47B annual revenue run-rate; no shares or pricing have been set yet.",
       "category": "anthropic",
-      "sourceURL": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-8",
+      "sourceURL": "https://finance.yahoo.com/markets/stocks/articles/anthropic-files-confidential-1-joins-161008569.html",
       "significance": 8
     },
     {
-      "id": "anthropic-mythos-glasswing-preview-2026",
-      "title": "Anthropic's Mythos-class model enters limited production via Project Glasswing",
-      "summary": "Mythos is confirmed in private preview with select cybersecurity partners under Project Glasswing, with broad public access expected in coming weeks pending additional safeguards. Announced-but-not-yet-public; score reflects real limited deployment, not a vaporware tease.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
-      "significance": 7
-    },
-    {
-      "id": "github-copilot-token-billing-june-2026",
-      "title": "GitHub Copilot token-based billing goes live June 1, replacing flat-rate subscriptions",
-      "summary": "Starting today, Copilot's flat Premium Request Units are gone — all monthly individual subscribers now burn metered AI Credits at $0.01 each, with each plan's monthly fee buying an equivalent credit budget instead of unlimited requests. Developers estimate a single agentic coding session can consume $30–$40, blowing past a Pro subscriber's entire $10 monthly allotment; code completions and Next Edit Suggestions remain unlimited, but anything agentic is now on the meter.",
+      "id": "microsoft-build-2026-mai-waf-polaris-2026-06-02",
+      "title": "Microsoft Build ships MAI model family, open-sources Windows Agent Framework",
+      "summary": "Nadella's keynote delivered the full agent stack: MAI-Thinking-1 (first-party reasoning model, no distillation), WAF v1.0 MIT-licensed, Azure Agent Mesh, and Copilot Workspace out of beta. Project Polaris — Microsoft's homegrown coding model — replaces GPT-4 in GitHub Copilot by August, cutting the OpenAI revenue dependency at the model layer.",
       "category": "tooling",
-      "sourceURL": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/",
+      "sourceURL": "https://chatforest.com/builders-log/microsoft-build-2026-recap-windows-agent-platform-project-polaris-copilot-workspace/",
+      "significance": 8
+    },
+    {
+      "id": "github-copilot-token-billing-2026-06-01",
+      "title": "GitHub Copilot drops flat subscriptions, switches to token-based billing",
+      "summary": "Usage-based AI Credits went live June 1 across all Copilot plans; developers who lean on agentic workflows or large-codebase refactoring are seeing cost estimates balloon from $29/month toward $750+. Enterprise teams need a new forecasting model for per-seat AI spend.",
+      "category": "tooling",
+      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-1-2026",
       "significance": 7
     },
     {
-      "id": "google-vertex-vector-search-2-ga-2026",
-      "title": "Google ships Vector Search 2.0 GA on Vertex AI with hybrid search and auto-embeddings",
-      "summary": "Vector Search 2.0 is now generally available on Vertex AI, adding collections that unify data and vectors, auto-embeddings for automatic vector field population, and hybrid search combining vector, full-text, and semantic re-ranking in a single parallel query. Drop-in upgrade path for any RAG or agent memory stack already on Vertex.",
+      "id": "gemini-35-flash-ga-2026-05-19",
+      "title": "Gemini 3.5 Flash is GA: beats Gemini 3.1 Pro on coding at 4x speed",
+      "summary": "GA since May 19 at $1.50/$9 per million tokens with a 1M context window; it outperforms Gemini 3.1 Pro on coding and agentic benchmarks at roughly 4x the throughput, inverting the usual Flash-under-Pro hierarchy. Google also retired Gemini 2.0 Flash today as the new tier takes over.",
       "category": "google",
-      "sourceURL": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
-      "significance": 6
-    },
-    {
-      "id": "anthropic-ad-free-commitment-2026",
-      "title": "Anthropic publicly commits to keeping Claude ad-free",
-      "summary": "Anthropic published a post stating Claude will remain ad-free, arguing advertising incentives are structurally incompatible with a genuinely helpful AI assistant. Directly positions against OpenAI, which has said it sees AI ads as a $100B business by 2030.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
-      "significance": 5
-    },
-    {
-      "id": "sysdig-llm-agent-cyberattack-2026",
-      "title": "Sysdig documents first live cyberattack using an LLM agent for autonomous post-exploitation",
-      "summary": "Sysdig published a report on a real-world attack where an LLM agent autonomously performed post-exploitation on AWS — exfiltrating a database via a Marimo CVE in under an hour. First documented case of an LLM agent used as the operative layer (not just a recon tool) in a live breach.",
-      "category": "other",
-      "sourceURL": "https://thehackernews.com",
+      "sourceURL": "https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/",
       "significance": 7
+    },
+    {
+      "id": "nvidia-nemotron3-ultra-computex-2026-06-01",
+      "title": "NVIDIA launches Nemotron 3 Ultra at GTC Taipei: 550B-param US open-weights leader",
+      "summary": "Jensen Huang's Computex keynote dropped Nemotron 3 Ultra (550B total, 55B active via MoE), claiming the top spot among US-origin open-weight models. Also announced: JetPack 7.2 with agentic AI skills for Jetson edge hardware.",
+      "category": "otherLLM",
+      "sourceURL": "https://radicaldatascience.wordpress.com/2026/06/01/ai-news-briefs-bulletin-board-for-june-2026/",
+      "significance": 7
+    },
+    {
+      "id": "claude-opus-48-parallel-subagents-2026-05-28",
+      "title": "Claude Opus 4.8 ships with parallel sub-agents and 2.5x fast mode",
+      "summary": "Anthropic's latest scores 88.6% on SWE-bench Verified and 74.6% on Terminal-Bench 2.1 while holding the $5/$25 per-million-token price. Claude Code gains parallel sub-agent support for complex long-running tasks; Fast mode cuts latency at 3x lower cost.",
+      "category": "anthropic",
+      "sourceURL": "https://www.therundown.ai/p/anthropic-just-eclipsed-openai",
+      "significance": 6
     }
   ],
   "learn": [
