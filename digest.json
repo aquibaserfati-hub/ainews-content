@@ -1,56 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-01T00:00:00Z",
-  "reportGeneratedAt": "2026-06-02T10:43:43Z",
+  "reportGeneratedAt": "2026-06-03T11:07:13Z",
   "learnGeneratedAt": "2026-06-01T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-ipo-s1-sec-2026-06-01",
-      "title": "Anthropic files confidential S-1 with SEC, targets October IPO",
-      "summary": "Anthropic submitted a draft Form S-1 to the SEC on June 1, beating OpenAI to the public-market starting line. The filing comes on the back of a $65B Series H that pushed the valuation to $965B and a $47B annual revenue run-rate; no shares or pricing have been set yet.",
+      "id": "anthropic-claude-opus-48-dynamic-workflows-2026-06-02",
+      "title": "Anthropic ships Claude Opus 4.8 with dynamic workflows and cheaper fast mode",
+      "summary": "Opus 4.8 lands today at the same price as 4.7, with benchmark gains, a new dynamic workflows feature in Claude Code for large-scale agentic tasks, and fast mode now three times cheaper than before. Effort control also ships in claude.ai, giving users direct dial over how hard the model works on a task.",
       "category": "anthropic",
-      "sourceURL": "https://finance.yahoo.com/markets/stocks/articles/anthropic-files-confidential-1-joins-161008569.html",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
       "significance": 8
     },
     {
-      "id": "microsoft-build-2026-mai-waf-polaris-2026-06-02",
-      "title": "Microsoft Build ships MAI model family, open-sources Windows Agent Framework",
-      "summary": "Nadella's keynote delivered the full agent stack: MAI-Thinking-1 (first-party reasoning model, no distillation), WAF v1.0 MIT-licensed, Azure Agent Mesh, and Copilot Workspace out of beta. Project Polaris — Microsoft's homegrown coding model — replaces GPT-4 in GitHub Copilot by August, cutting the OpenAI revenue dependency at the model layer.",
-      "category": "tooling",
-      "sourceURL": "https://chatforest.com/builders-log/microsoft-build-2026-recap-windows-agent-platform-project-polaris-copilot-workspace/",
-      "significance": 8
-    },
-    {
-      "id": "github-copilot-token-billing-2026-06-01",
-      "title": "GitHub Copilot drops flat subscriptions, switches to token-based billing",
-      "summary": "Usage-based AI Credits went live June 1 across all Copilot plans; developers who lean on agentic workflows or large-codebase refactoring are seeing cost estimates balloon from $29/month toward $750+. Enterprise teams need a new forecasting model for per-seat AI spend.",
-      "category": "tooling",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-1-2026",
-      "significance": 7
-    },
-    {
-      "id": "gemini-35-flash-ga-2026-05-19",
-      "title": "Gemini 3.5 Flash is GA: beats Gemini 3.1 Pro on coding at 4x speed",
-      "summary": "GA since May 19 at $1.50/$9 per million tokens with a 1M context window; it outperforms Gemini 3.1 Pro on coding and agentic benchmarks at roughly 4x the throughput, inverting the usual Flash-under-Pro hierarchy. Google also retired Gemini 2.0 Flash today as the new tier takes over.",
-      "category": "google",
-      "sourceURL": "https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/",
-      "significance": 7
-    },
-    {
-      "id": "nvidia-nemotron3-ultra-computex-2026-06-01",
-      "title": "NVIDIA launches Nemotron 3 Ultra at GTC Taipei: 550B-param US open-weights leader",
-      "summary": "Jensen Huang's Computex keynote dropped Nemotron 3 Ultra (550B total, 55B active via MoE), claiming the top spot among US-origin open-weight models. Also announced: JetPack 7.2 with agentic AI skills for Jetson edge hardware.",
+      "id": "microsoft-build-2026-mai-models-2026-06-02",
+      "title": "Microsoft debuts 7 in-house MAI models at Build 2026, including coding and reasoning variants",
+      "summary": "MAI-Code-1 is live now in GitHub Copilot and VS Code; MAI-Thinking-1 is a 35B-parameter reasoning model in private preview on Foundry, claimed to match Opus 4.6 on SWE Bench Pro at lower token cost. Microsoft is no longer purely an OpenAI reseller — it now has its own model stack across code, reasoning, image, transcription, and voice.",
       "category": "otherLLM",
-      "sourceURL": "https://radicaldatascience.wordpress.com/2026/06/01/ai-news-briefs-bulletin-board-for-june-2026/",
+      "sourceURL": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+      "significance": 8
+    },
+    {
+      "id": "openai-gpt55-ga-foundry-2026-06-03",
+      "title": "OpenAI GPT-5.5 goes generally available in Microsoft Foundry today",
+      "summary": "GPT-5.5 and its GPT-5.5 Pro variant hit GA in Azure Foundry on June 3, priced at $5/M input and $30/M output for the base tier. Builders already on Foundry can swap it in without leaving the Azure billing and auth stack.",
+      "category": "openai",
+      "sourceURL": "https://www.aguidetocloud.com/blog/microsoft-build-2026-recap/",
       "significance": 7
     },
     {
-      "id": "claude-opus-48-parallel-subagents-2026-05-28",
-      "title": "Claude Opus 4.8 ships with parallel sub-agents and 2.5x fast mode",
-      "summary": "Anthropic's latest scores 88.6% on SWE-bench Verified and 74.6% on Terminal-Bench 2.1 while holding the $5/$25 per-million-token price. Claude Code gains parallel sub-agent support for complex long-running tasks; Fast mode cuts latency at 3x lower cost.",
+      "id": "anthropic-project-glasswing-expansion-2026-06-01",
+      "title": "Anthropic expands Project Glasswing to 150 new orgs across 15 countries",
+      "summary": "Claude Mythos Preview access — the withheld model that found 10,000+ high/critical security flaws in partner codebases — is rolling out to roughly 150 additional organizations for vulnerability scanning and patch suggestions. Anthropic is also sharing exploit-finding tooling directly with trusted security teams.",
       "category": "anthropic",
-      "sourceURL": "https://www.therundown.ai/p/anthropic-just-eclipsed-openai",
+      "sourceURL": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "significance": 7
+    },
+    {
+      "id": "microsoft-build-2026-agent-infra-2026-06-02",
+      "title": "Microsoft ships Microsoft IQ GA and Foundry Hosted Agents for production agentic apps",
+      "summary": "Microsoft IQ — the enterprise context layer spanning Work IQ, Fabric IQ, and new Web IQ — is generally available today across Copilot and Foundry. Foundry Hosted Agents reach GA end of June with hypervisor-isolated sandboxes per session, sub-100ms cold starts, and zero idle cost, making the infra story more credible for production workloads.",
+      "category": "tooling",
+      "sourceURL": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-ipo-confidential-s1-2026-06-01",
+      "title": "Anthropic files confidential S-1 with SEC at ~$965B valuation",
+      "summary": "Anthropic submitted a draft S-1 on June 1, filing before rival OpenAI with no price or share count set yet. Revenue run rate hit $47B in May 2026, up from $10B last year — the public filing, when it comes, will be the first hard look at unit economics behind Claude's enterprise growth.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/confidential-draft-s1-sec",
       "significance": 6
+    },
+    {
+      "id": "white-house-ai-security-executive-order-2026-06-02",
+      "title": "White House signs executive order on AI security and frontier model deployment",
+      "summary": "Signed June 2, the order directs OMB and CISA to redirect federal grant funding toward AI vulnerability detection within 30 days and tasks OPM with expanding cybersecurity hiring pathways within 60 days. No new technical constraints on frontier model development; the policy thrust is hardening federal systems and protecting IP from adversaries.",
+      "category": "other",
+      "sourceURL": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+      "significance": 5
     }
   ],
   "learn": [
