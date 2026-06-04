@@ -1,64 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-01T00:00:00Z",
-  "reportGeneratedAt": "2026-06-04T12:00:00Z",
+  "reportGeneratedAt": "2026-06-04T10:01:56Z",
   "learnGeneratedAt": "2026-06-04T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-ipo-s1-filing-2026-06-01",
-      "title": "Anthropic confidentially files S-1 for IPO at $965B valuation",
-      "summary": "Anthropic filed a confidential S-1 with the SEC on June 1, days after closing a $65B Series H at a $965B post-money valuation. The filing positions Anthropic to list in October 2026, potentially beating OpenAI (September target) to public markets — which matters because both companies will be competing for the same institutional capital in quick succession.",
+      "id": "microsoft-build-2026-mai-thinking-1-code-1-flash",
+      "title": "Microsoft launches MAI-Thinking-1 and MAI-Code-1-Flash at Build 2026",
+      "summary": "Microsoft shipped its first in-house reasoning model (MAI-Thinking-1, 35B active params, private preview on Foundry) and a live coding model (MAI-Code-1-Flash, 5B params, already in the GitHub Copilot/VS Code model picker) — both trained without OpenAI data, signaling a real break from exclusive reliance on OpenAI. MAI-Code-1-Flash claims 60% fewer tokens on hard SWE-bench tasks than comparable models and is cheaper than Claude Haiku 4.5 under Copilot's new token billing.",
+      "category": "tooling",
+      "sourceURL": "https://datanorth.ai/news/microsoft-launches-mai-thinking-1-and-mai-code-1-flash",
+      "significance": 8
+    },
+    {
+      "id": "openai-codex-bedrock-azure-ga-june2026",
+      "title": "OpenAI GPT-5.5 and Codex go GA on Amazon Bedrock and Azure Foundry",
+      "summary": "GPT-5.5 and Codex landed on Amazon Bedrock (June 1) and Azure Foundry (June 3) with pricing matching the direct OpenAI API. Builders already on AWS or Azure procurement can now use GPT-5.5 without leaving their existing cloud contracts or going through OpenAI directly.",
+      "category": "openai",
+      "sourceURL": "https://developers.openai.com/api/docs/changelog",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-claude-partner-network-services-track-june2026",
+      "title": "Anthropic launches Services Track and Partner Hub for Claude Partner Network",
+      "summary": "Anthropic introduced a Services Track and Partner Hub inside its Claude Partner Network on June 3, giving SI and consulting partners a formal path to build and sell Claude-based services. Coming two days after Anthropic's confidential S-1 filing, this reads as pre-IPO enterprise-depth signaling rather than a pure product ship.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-project-glasswing-expansion-june2026",
+      "title": "Anthropic expands Project Glasswing to power, water, healthcare, and hardware sectors",
+      "summary": "Anthropic's cybersecurity program Glasswing added sectors including power, water, healthcare, communications, and hardware on June 2, with most new partners being vendors whose codebases affect more than 100 million people. The original Glasswing cohort of ~50 partners already used Mythos Preview to identify over 10,000 high- or critical-severity vulnerabilities.",
+      "category": "anthropic",
+      "sourceURL": "https://www.investing.com/analysis/anthropic-mythos-expansion-opens-a-new-ai-cybersecurity-market-200681377",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-confidential-ipo-s1-june2026",
+      "title": "Anthropic confidentially files S-1 with SEC ahead of potential 2026 IPO",
+      "summary": "Anthropic submitted a draft S-1 to the SEC on June 1, one day before the Glasswing expansion, at a $965B post-money valuation following its $65B Series H. Run-rate revenue has crossed $30B, up from ~$9B at end of 2025, with enterprise customers spending over $1M annually doubling to more than 1,000 in under two months.",
       "category": "anthropic",
       "sourceURL": "https://www.anthropic.com/news",
       "significance": 7
     },
     {
-      "id": "microsoft-build-2026-agent-platform-2026-06-02",
-      "title": "Microsoft Build 2026 ships full agent stack: WAF open-sourced, Foundry Agent Service GA, Project Polaris unveiled",
-      "summary": "Build 2026 (June 2-3, San Francisco) delivered the Windows Agent Framework open-sourced under MIT, Azure AI Foundry Agent Service moving to GA by end of June, Copilot Workspace out of beta, and Project Polaris — Microsoft's own in-house coding model — set to replace GPT-4 Turbo in GitHub Copilot by August 2026. Builders on .NET or Python now have a full production-grade agent runtime without locking into OpenAI's stack.",
-      "category": "other",
-      "sourceURL": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
-      "significance": 8
+      "id": "gemini-3-5-flash-ga-may2026",
+      "title": "Gemini 3.5 Flash is GA: frontier-tier speed at $1.50/$9 per million tokens",
+      "summary": "Google's Gemini 3.5 Flash went generally available as the default model in the Gemini app and AI Mode in Search, priced at $1.50 input / $9.00 output per million tokens. At 4x the speed of comparable models by Google's own claim, it undercuts GPT-5.5's $5/$30 API pricing significantly and is the benchmark pressure forcing OpenAI's hand on cost.",
+      "category": "google",
+      "sourceURL": "https://llm-stats.com/ai-news",
+      "significance": 7
     },
     {
-      "id": "openai-codex-plugins-sites-2026-06-02",
-      "title": "OpenAI ships Codex role-specific plugins, Sites hosting preview, and Annotations on June 2",
-      "summary": "OpenAI expanded Codex with six role-specific plugins bundling 62 apps and 110 skills for non-developer workflows, a Sites preview that lets teams build and share hosted internal apps via URL, and Annotations for in-place document editing. With 5M weekly users and non-developers growing 3x faster than engineers, OpenAI is clearly repositioning Codex as a general enterprise automation platform, not just a coding tool.",
+      "id": "openai-codex-goal-mode-ga-june2026",
+      "title": "OpenAI ships Codex Goal Mode GA across app, IDE extension, and CLI",
+      "summary": "Codex Goal Mode — define an outcome plus success criteria and let Codex keep working toward it autonomously — moved from limited preview to generally available across the macOS app, VS Code extension, and CLI. Also shipping: Appshots in the macOS app, letting you attach a live app window to a Codex thread with a hotkey so the agent sees exactly what you see.",
       "category": "openai",
-      "sourceURL": "https://openai.com/index/codex-for-every-role-tool-workflow/",
-      "significance": 7
-    },
-    {
-      "id": "openai-api-container-billing-secure-mcp-2026-06-02",
-      "title": "OpenAI changes container session billing to per-minute starting June 2, ships Secure MCP Tunnel",
-      "summary": "OpenAI moved container sessions from a flat 20-minute billing block to per-minute with a 5-minute minimum, cutting effective costs for short tasks. The same week, Secure MCP Tunnel shipped for enterprise customers, letting Codex and the Responses API connect to private on-prem MCP servers without exposing them to the public internet.",
-      "category": "openai",
-      "sourceURL": "https://developers.openai.com/api/docs/changelog",
+      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
       "significance": 6
-    },
-    {
-      "id": "anthropic-claude-partner-network-services-track-2026-06-03",
-      "title": "Anthropic launches Claude Partner Network Services Track and Partner Hub with 40K+ applicants",
-      "summary": "Anthropic formalized its partner ecosystem on June 3 with a three-tier Services Track (Select, Preferred, Global Premier) and a public Partner Hub portal. Over 40,000 firms have applied and 10,000 consultants are certified; Deloitte, KPMG, Accenture, Cognizant, and PwC are already deploying Claude at scale. The move pairs the IPO filing and signals Anthropic is building the enterprise distribution layer before going public.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/services-track-partner-hub",
-      "significance": 6
-    },
-    {
-      "id": "microsoft-project-polaris-github-copilot-2026-06-02",
-      "title": "Microsoft's Project Polaris to replace GPT-4 Turbo in GitHub Copilot by August 2026",
-      "summary": "Microsoft unveiled Project Polaris — a mixture-of-experts model with sub-modules tuned per programming language — as the new default reasoning engine for GitHub Copilot subscribers starting August 2026, with an optional three-month GPT-4 fallback. Microsoft now controls the model, inference, and developer experience end-to-end, cutting the commercial dependency on OpenAI for its flagship coding product.",
-      "category": "other",
-      "sourceURL": "https://chatforest.com/builders-log/microsoft-build-2026-recap-windows-agent-platform-project-polaris-copilot-workspace/",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-run-rate-revenue-30b-2026-06-04",
-      "title": "Anthropic run-rate revenue surpasses $30B, enterprise clients spending $1M+ doubles to 1,000",
-      "summary": "Anthropic disclosed that its annual run-rate revenue has surpassed $30 billion, up from roughly $9 billion at end of 2025, and that the number of business customers each spending over $1M annually has doubled to more than 1,000 in under two months. Claude Code's dominance in enterprise coding is the primary driver.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "significance": 7
     }
   ],
   "learn": [
