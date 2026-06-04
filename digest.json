@@ -1,187 +1,181 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-01T00:00:00Z",
-  "reportGeneratedAt": "2026-06-03T11:07:13Z",
-  "learnGeneratedAt": "2026-06-01T12:00:00Z",
+  "reportGeneratedAt": "2026-06-04T12:00:00Z",
+  "learnGeneratedAt": "2026-06-04T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-claude-opus-48-dynamic-workflows-2026-06-02",
-      "title": "Anthropic ships Claude Opus 4.8 with dynamic workflows and cheaper fast mode",
-      "summary": "Opus 4.8 lands today at the same price as 4.7, with benchmark gains, a new dynamic workflows feature in Claude Code for large-scale agentic tasks, and fast mode now three times cheaper than before. Effort control also ships in claude.ai, giving users direct dial over how hard the model works on a task.",
+      "id": "anthropic-ipo-s1-filing-2026-06-01",
+      "title": "Anthropic confidentially files S-1 for IPO at $965B valuation",
+      "summary": "Anthropic filed a confidential S-1 with the SEC on June 1, days after closing a $65B Series H at a $965B post-money valuation. The filing positions Anthropic to list in October 2026, potentially beating OpenAI (September target) to public markets — which matters because both companies will be competing for the same institutional capital in quick succession.",
       "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 7
+    },
+    {
+      "id": "microsoft-build-2026-agent-platform-2026-06-02",
+      "title": "Microsoft Build 2026 ships full agent stack: WAF open-sourced, Foundry Agent Service GA, Project Polaris unveiled",
+      "summary": "Build 2026 (June 2-3, San Francisco) delivered the Windows Agent Framework open-sourced under MIT, Azure AI Foundry Agent Service moving to GA by end of June, Copilot Workspace out of beta, and Project Polaris — Microsoft's own in-house coding model — set to replace GPT-4 Turbo in GitHub Copilot by August 2026. Builders on .NET or Python now have a full production-grade agent runtime without locking into OpenAI's stack.",
+      "category": "other",
+      "sourceURL": "https://devblogs.microsoft.com/foundry/agent-service-build2026/",
       "significance": 8
     },
     {
-      "id": "microsoft-build-2026-mai-models-2026-06-02",
-      "title": "Microsoft debuts 7 in-house MAI models at Build 2026, including coding and reasoning variants",
-      "summary": "MAI-Code-1 is live now in GitHub Copilot and VS Code; MAI-Thinking-1 is a 35B-parameter reasoning model in private preview on Foundry, claimed to match Opus 4.6 on SWE Bench Pro at lower token cost. Microsoft is no longer purely an OpenAI reseller — it now has its own model stack across code, reasoning, image, transcription, and voice.",
-      "category": "otherLLM",
-      "sourceURL": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
-      "significance": 8
-    },
-    {
-      "id": "openai-gpt55-ga-foundry-2026-06-03",
-      "title": "OpenAI GPT-5.5 goes generally available in Microsoft Foundry today",
-      "summary": "GPT-5.5 and its GPT-5.5 Pro variant hit GA in Azure Foundry on June 3, priced at $5/M input and $30/M output for the base tier. Builders already on Foundry can swap it in without leaving the Azure billing and auth stack.",
+      "id": "openai-codex-plugins-sites-2026-06-02",
+      "title": "OpenAI ships Codex role-specific plugins, Sites hosting preview, and Annotations on June 2",
+      "summary": "OpenAI expanded Codex with six role-specific plugins bundling 62 apps and 110 skills for non-developer workflows, a Sites preview that lets teams build and share hosted internal apps via URL, and Annotations for in-place document editing. With 5M weekly users and non-developers growing 3x faster than engineers, OpenAI is clearly repositioning Codex as a general enterprise automation platform, not just a coding tool.",
       "category": "openai",
-      "sourceURL": "https://www.aguidetocloud.com/blog/microsoft-build-2026-recap/",
+      "sourceURL": "https://openai.com/index/codex-for-every-role-tool-workflow/",
       "significance": 7
     },
     {
-      "id": "anthropic-project-glasswing-expansion-2026-06-01",
-      "title": "Anthropic expands Project Glasswing to 150 new orgs across 15 countries",
-      "summary": "Claude Mythos Preview access — the withheld model that found 10,000+ high/critical security flaws in partner codebases — is rolling out to roughly 150 additional organizations for vulnerability scanning and patch suggestions. Anthropic is also sharing exploit-finding tooling directly with trusted security teams.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/confidential-draft-s1-sec",
-      "significance": 7
-    },
-    {
-      "id": "microsoft-build-2026-agent-infra-2026-06-02",
-      "title": "Microsoft ships Microsoft IQ GA and Foundry Hosted Agents for production agentic apps",
-      "summary": "Microsoft IQ — the enterprise context layer spanning Work IQ, Fabric IQ, and new Web IQ — is generally available today across Copilot and Foundry. Foundry Hosted Agents reach GA end of June with hypervisor-isolated sandboxes per session, sub-100ms cold starts, and zero idle cost, making the infra story more credible for production workloads.",
-      "category": "tooling",
-      "sourceURL": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-ipo-confidential-s1-2026-06-01",
-      "title": "Anthropic files confidential S-1 with SEC at ~$965B valuation",
-      "summary": "Anthropic submitted a draft S-1 on June 1, filing before rival OpenAI with no price or share count set yet. Revenue run rate hit $47B in May 2026, up from $10B last year — the public filing, when it comes, will be the first hard look at unit economics behind Claude's enterprise growth.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "id": "openai-api-container-billing-secure-mcp-2026-06-02",
+      "title": "OpenAI changes container session billing to per-minute starting June 2, ships Secure MCP Tunnel",
+      "summary": "OpenAI moved container sessions from a flat 20-minute billing block to per-minute with a 5-minute minimum, cutting effective costs for short tasks. The same week, Secure MCP Tunnel shipped for enterprise customers, letting Codex and the Responses API connect to private on-prem MCP servers without exposing them to the public internet.",
+      "category": "openai",
+      "sourceURL": "https://developers.openai.com/api/docs/changelog",
       "significance": 6
     },
     {
-      "id": "white-house-ai-security-executive-order-2026-06-02",
-      "title": "White House signs executive order on AI security and frontier model deployment",
-      "summary": "Signed June 2, the order directs OMB and CISA to redirect federal grant funding toward AI vulnerability detection within 30 days and tasks OPM with expanding cybersecurity hiring pathways within 60 days. No new technical constraints on frontier model development; the policy thrust is hardening federal systems and protecting IP from adversaries.",
+      "id": "anthropic-claude-partner-network-services-track-2026-06-03",
+      "title": "Anthropic launches Claude Partner Network Services Track and Partner Hub with 40K+ applicants",
+      "summary": "Anthropic formalized its partner ecosystem on June 3 with a three-tier Services Track (Select, Preferred, Global Premier) and a public Partner Hub portal. Over 40,000 firms have applied and 10,000 consultants are certified; Deloitte, KPMG, Accenture, Cognizant, and PwC are already deploying Claude at scale. The move pairs the IPO filing and signals Anthropic is building the enterprise distribution layer before going public.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/services-track-partner-hub",
+      "significance": 6
+    },
+    {
+      "id": "microsoft-project-polaris-github-copilot-2026-06-02",
+      "title": "Microsoft's Project Polaris to replace GPT-4 Turbo in GitHub Copilot by August 2026",
+      "summary": "Microsoft unveiled Project Polaris — a mixture-of-experts model with sub-modules tuned per programming language — as the new default reasoning engine for GitHub Copilot subscribers starting August 2026, with an optional three-month GPT-4 fallback. Microsoft now controls the model, inference, and developer experience end-to-end, cutting the commercial dependency on OpenAI for its flagship coding product.",
       "category": "other",
-      "sourceURL": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
-      "significance": 5
+      "sourceURL": "https://chatforest.com/builders-log/microsoft-build-2026-recap-windows-agent-platform-project-polaris-copilot-workspace/",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-run-rate-revenue-30b-2026-06-04",
+      "title": "Anthropic run-rate revenue surpasses $30B, enterprise clients spending $1M+ doubles to 1,000",
+      "summary": "Anthropic disclosed that its annual run-rate revenue has surpassed $30 billion, up from roughly $9 billion at end of 2025, and that the number of business customers each spending over $1M annually has doubled to more than 1,000 in under two months. Claude Code's dominance in enterprise coding is the primary driver.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "significance": 7
     }
   ],
   "learn": [
     {
-      "id": "claude-managed-agents-api",
-      "name": "Claude Managed Agents API",
-      "category": "anthropic",
-      "oneLineDescription": "Hosted agent harness: define config, spin up sandbox, stream results — no infra.",
-      "estimatedSetupMinutes": 15,
-      "detail": {
-        "whatItDoes": "Claude Managed Agents is Anthropic's hosted infrastructure for running autonomous Claude agents. You define a versioned Agent config (model, system prompt, tools, MCP servers), create an Environment (cloud or self-hosted), and start Sessions. Each session gets an isolated container with bash, file ops, web search, and code execution built in. The agent loop, context compaction, prompt caching, and session state are all managed on Anthropic's side.\n\nPricing is $0.08/session-hour billed to the millisecond (idle time does not count) plus standard Claude token costs. Multi-agent orchestration, webhooks, MCP vault credentials, and self-hosted sandboxes (run tool execution on your own infra via Cloudflare, Modal, Vercel, or Daytona) are all now in public beta under the `managed-agents-2026-04-01` beta header.",
-        "whoItsFor": "Backend engineers who want to ship autonomous agent pipelines — PR review bots, CI code-quality agents, documentation generators, overnight test runners — without building sandbox infrastructure, managing Docker containers, or writing their own agent loop. Also useful for teams already using Claude Code interactively who want to schedule or automate the same work programmatically.",
-        "pros": [
-          "No DIY orchestration: agent loop, context compaction, retries, and sandbox are all handled by Anthropic",
-          "Session state is durable — sessions survive harness crashes and resume cleanly",
-          "Self-hosted sandbox option lets you move tool execution to your own infra for compliance requirements",
-          "Versioned Agent configs enable GitOps-style rollout and rollback without breaking running sessions",
-          "All Anthropic API accounts have access with no waitlist"
-        ],
-        "cons": [
-          "Claude-only — no multi-model routing; for GPT or open-weight models you need your own orchestration",
-          "Not eligible for Zero Data Retention or HIPAA BAA coverage because sessions are stateful server-side",
-          "Multi-agent orchestration and dreaming (agent memory consolidation) are still research preview, gated access"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Anthropic API key with an active billing account (`ANTHROPIC_API_KEY`)\n- `ant` CLI or the Python/TypeScript SDK\n- All Managed Agents requests need the beta header `managed-agents-2026-04-01` (SDKs set it automatically)\n\n## 1. Install the `ant` CLI\n\n```bash\n# macOS (Homebrew)\nbrew install anthropics/tap/ant\n\n# Verify\nant --version\n\n# Set your API key\nexport ANTHROPIC_API_KEY=\"sk-ant-...\"\n```\n\n## 2. Create an Agent config\n\n```bash\nant beta:agents create \\\n  --name \"code-reviewer\" \\\n  --model '{id: claude-opus-4-8}' \\\n  --system \"You are a senior code reviewer. Analyze repos for bugs, security issues, and style. Be specific about line numbers.\" \\\n  --tool '{type: agent_toolset_20260401}'\n# Save the returned agent_id, e.g. agent_abc123\n```\n\nThe `agent_toolset_20260401` tool type enables bash, file read/write, web search, web fetch, grep, and glob — all sandboxed.\n\n## 3. Create an Environment\n\n```bash\nant beta:environments create \\\n  --name \"python-dev\" \\\n  --config '{type: cloud, networking: {type: unrestricted}, packages: {pip: [\"pytest\", \"black\", \"ruff\"]}}'\n# Save the returned environment_id, e.g. env_xyz789\n```\n\n## 4. Start a Session and send a task\n\n```bash\n# Start session\ncurl https://api.anthropic.com/v1/sessions \\\n  -H \"x-api-key: $ANTHROPIC_API_KEY\" \\\n  -H \"anthropic-beta: managed-agents-2026-04-01\" \\\n  -H \"content-type: application/json\" \\\n  -d '{\"agent_id\": \"agent_abc123\", \"environment_id\": \"env_xyz789\"}'\n# Save session_id from response\n\n# Send a task\ncurl https://api.anthropic.com/v1/sessions/sess_123/events \\\n  -H \"x-api-key: $ANTHROPIC_API_KEY\" \\\n  -H \"anthropic-beta: managed-agents-2026-04-01\" \\\n  -H \"content-type: application/json\" \\\n  -d '{\"type\": \"user_message\", \"content\": \"Clone https://github.com/myorg/api-service, run the test suite, and give me a code quality report.\"}'\n```\n\n## 5. Stream results\n\n```bash\ncurl -N https://api.anthropic.com/v1/sessions/sess_123/events/stream \\\n  -H \"x-api-key: $ANTHROPIC_API_KEY\" \\\n  -H \"anthropic-beta: managed-agents-2026-04-01\"\n```\n\n## Python SDK (alternative)\n\n```python\npip install anthropic\n```\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\n\n# SDKs auto-set the managed-agents-2026-04-01 beta header\nagent = client.beta.agents.create(\n    name=\"code-reviewer\",\n    model=\"claude-opus-4-8\",\n    system_prompt=\"You are a senior code reviewer.\",\n    tools=[{\"type\": \"agent_toolset_20260401\"}],\n)\n\nenv = client.beta.environments.create(\n    name=\"python-dev\",\n    config={\"type\": \"cloud\", \"networking\": {\"type\": \"unrestricted\"}},\n)\n\nsession = client.beta.sessions.create(\n    agent_id=agent.id,\n    environment_id=env.id,\n)\n\nfor event in client.beta.sessions.stream(session.id, message=\"Review the latest commit for security issues\"):\n    print(event)\n```\n\n## Gotchas\n- **Beta header is mandatory** — raw HTTP calls will 400 without `anthropic-beta: managed-agents-2026-04-01`\n- **Do not store credentials in system prompts** — use the vault system (`client.beta.vaults.credentials.create`) and pass `vault_ids` at session creation\n- **SSE stream has no replay** — if your stream drops mid-tool-call, reconnect with `GET /v1/sessions/{id}/events`, dedupe by event ID, then reopen the stream; otherwise the session deadlocks\n- **Not HIPAA-eligible** — sessions are stateful server-side; not covered by ZDR or BAA",
-        "sourceURL": "https://platform.claude.com/docs/en/managed-agents/overview"
-      }
-    },
-    {
-      "id": "gemini-cli-google",
-      "name": "Gemini CLI",
-      "category": "google",
-      "oneLineDescription": "Free, open-source terminal AI agent backed by Gemini — 1M token context, MCP support.",
-      "estimatedSetupMinutes": 5,
-      "detail": {
-        "whatItDoes": "Gemini CLI is Google's open-source (Apache 2.0) terminal AI agent. It runs a ReAct loop against Gemini models with built-in tools: bash execution, file read/write, web search, and MCP server integration. It supports GEMINI.md context files (same idea as CLAUDE.md), session checkpointing so long coding runs survive crashes, headless/scripting mode for CI pipelines, and a skills system for shareable capability packs.\n\nThe free tier with a personal Google account gives 60 requests/minute and 1,000 requests/day — no API key needed. For heavier workloads, pass a Google AI Studio or Vertex AI key. Note: Google announced at I/O 2026 that Antigravity 2.0 (a Go-based CLI) is the longer-term direction; Gemini CLI has a sunset date of June 18, 2026 for free/individual users, after which Antigravity CLI is the migration path. Existing Google AI Studio or Vertex API-key users can continue past that date.",
-        "whoItsFor": "Budget-conscious developers who want a Claude Code or Codex CLI equivalent at zero cost. Google Cloud teams that want native GCP service integration. Open-source advocates who want to inspect and extend the agent. Anyone building CI automation who needs a free headless coding agent that can pipe from stdin.",
-        "pros": [
-          "Genuinely free for personal use — 60 req/min, 1,000 req/day with a Google account, no card required",
-          "1M token context window handles large codebases without chunking",
-          "MCP server support lets you extend with GitHub, Slack, databases, and custom tools via settings.json",
-          "Session checkpointing survives crashes; headless mode works in GitHub Actions and cron jobs",
-          "Apache 2.0 licensed — fully auditable and forkable"
-        ],
-        "cons": [
-          "Sunset for free/individual users on June 18, 2026 — migration to Antigravity CLI required after that date",
-          "Requires Node.js 20+ runtime (not a single binary like some alternatives)",
-          "Free tier rate limits (60 req/min) can throttle long agentic loops on large codebases"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Node.js 20 or later (`node --version` to check)\n- A Google account (no credit card needed for free tier)\n- macOS 15+, Windows 11 24H2+, or Ubuntu 20.04+\n\n## Install\n\n```bash\n# Stable channel (released every Tuesday 20:00 UTC)\nnpm install -g @google/gemini-cli\n\n# Verify\ngemini --version\n\n# Alternative: Homebrew (macOS)\nbrew install google-gemini/gemini-cli/gemini-cli\n```\n\n## Authenticate\n\n```bash\n# Option A: Personal Google account (free tier, no API key needed)\ngemini login\n# Opens browser — sign in with Google account\n\n# Option B: API key (AI Studio or Vertex for higher limits)\nexport GEMINI_API_KEY=\"your-ai-studio-key\"\n# Or for Vertex:\nexport GOOGLE_CLOUD_PROJECT=\"your-project-id\"\ngcloud auth application-default login\n```\n\n## First session\n\n```bash\n# Start interactive session in your project root\ncd your-project\ngemini\n\n# Inside the session:\n> Give me a summary of all changes merged to main this week\n> Write unit tests for src/auth.ts and run them\n> Fix the failing test in src/utils.test.ts\n```\n\n## Headless mode (CI / scripts)\n\n```bash\n# Single-shot prompt from CLI\ngemini --headless -p \"Review this PR diff for security issues\" < pr.diff\n\n# In a GitHub Actions step:\n- name: Security review\n  run: echo \"$(git diff main)\" | gemini --headless -p \"Flag any security issues in this diff\"\n  env:\n    GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}\n```\n\n## Add an MCP server (e.g. GitHub)\n\n```bash\ngemini mcp add github \\\n  --command \"npx\" \\\n  --args \"-y,@modelcontextprotocol/server-github\" \\\n  --env GITHUB_PERSONAL_ACCESS_TOKEN=ghp_yourtoken\n\n# Verify\ngemini mcp list\n\n# Use in session\ngemini\n> @github List my open pull requests\n```\n\n## GEMINI.md context file\n\nCreate a `GEMINI.md` in your project root to give the agent persistent context:\n\n```markdown\n# Project: Payments API\n- Language: TypeScript, Node 22\n- Test runner: Vitest (`npm test`)\n- Lint: `npm run lint` (ESLint + Prettier)\n- Never edit files in `dist/` — that is build output\n- Open PRs against `main`; squash merge only\n```\n\n## Gotchas\n- **Sunset June 18, 2026** — free/individual users must migrate to Antigravity CLI after this date; API-key users can continue\n- **MCP server cold start** — if `gemini mcp list` stalls, your MCP server is taking too long to start via `npx`; add `--timeout 5000` to `mcp add` or remove unused servers\n- **Node deprecation warning on install** — a transitive native addon prints a deprecation notice; it is cosmetic and the install succeeds\n- **`GEMINI_API_KEY` vs `gcloud` auth** — set one, not both; having both configured can cause silent auth failures",
-        "sourceURL": "https://github.com/google-gemini/gemini-cli"
-      }
-    },
-    {
-      "id": "anthropic-ant-cli",
-      "name": "ant CLI",
-      "category": "anthropic",
-      "oneLineDescription": "kubectl-style CLI for Anthropic's Claude API — manages agents, environments, and sessions.",
-      "estimatedSetupMinutes": 5,
-      "detail": {
-        "whatItDoes": "The `ant` CLI is Anthropic's official Go-based command-line client for the Claude API, launched April 2026 alongside Claude Managed Agents. It exposes every Claude API resource as a shell subcommand with a `kubectl`-style resource/verb structure (`ant [resource] <command> [flags]`). It handles YAML-based agent config files for GitOps workflows, auto-paginates list endpoints, auto-injects the correct `anthropic-beta` headers so you never have to track them manually, and supports `@path` syntax to inline file contents into any string field.\n\nBeta resources — agents, sessions, environments, deployments, skills, vaults, memory stores — live under the `beta:` prefix. For programmatic agent execution inside applications, pair `ant` with the Python or TypeScript SDK; `ant` is the control-plane tool, the SDK is the data-plane tool.",
-        "whoItsFor": "DevOps and platform engineers who manage Claude agent infrastructure via CI/CD pipelines. Developers who want to provision, debug, and rotate agent configs from the terminal without writing curl commands or maintaining JSON request bodies. Teams doing GitOps-style agent config management (check YAML into git, deploy from CI).",
-        "pros": [
-          "Auto-sets the correct anthropic-beta header for every beta endpoint — no header tracking needed",
-          "YAML agent config files enable GitOps: check configs into git, apply from CI, roll back to previous versions",
-          "Tab completion for bash, zsh, fish, and PowerShell speeds up working with the long beta: namespaced commands",
-          "Go binary — single installable with no Node or Python runtime dependency"
-        ],
-        "cons": [
-          "Requires a paid Anthropic API account — no free tier for Managed Agents",
-          "All Managed Agents commands are under the beta: prefix; command structure may change before GA",
-          "Not the right tool for embedding agent interactions in applications — use the Python/TypeScript SDK for that"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Anthropic API key (`ANTHROPIC_API_KEY`) — generate at console.anthropic.com\n- macOS, Linux, or Windows (Go binary, no Node/Python required)\n\n## Install\n\n```bash\n# macOS (Homebrew)\nbrew install anthropics/tap/ant\n\n# Linux (direct binary)\ncurl -sSL https://api.anthropic.com/cli/install.sh | sh\n\n# Verify\nant --version\n```\n\n## Authenticate\n\n```bash\nexport ANTHROPIC_API_KEY=\"sk-ant-...\"\n\n# Optional: shell completion (zsh)\nant completion zsh > ~/.zfunc/_ant\necho 'fpath=(~/.zfunc $fpath)' >> ~/.zshrc\necho 'autoload -Uz compinit && compinit' >> ~/.zshrc\nsource ~/.zshrc\n```\n\n## Create and deploy an agent (imperative style)\n\n```bash\n# Create an agent config\nant beta:agents create \\\n  --name \"pr-reviewer\" \\\n  --model '{id: claude-opus-4-8}' \\\n  --system \"You are a senior code reviewer. Clone repos, run tests, report bugs with line numbers.\" \\\n  --tool '{type: agent_toolset_20260401}'\n# Note the returned agent_id\n\n# Create a cloud environment\nant beta:environments create \\\n  --name \"python-ci\" \\\n  --config '{type: cloud, networking: {type: unrestricted}, packages: {pip: [\"pytest\", \"ruff\"]}}'\n# Note the returned environment_id\n\n# Start a session\nant beta:sessions create \\\n  --agent-id agent_abc123 \\\n  --environment-id env_xyz789\n# Note the returned session_id\n\n# Send a task\nant beta:sessions messages create sess_123 \\\n  --content \"Review the latest commit on main for security vulnerabilities\"\n\n# Stream results\nant beta:sessions stream sess_123\n```\n\n## GitOps style (YAML config)\n\n```yaml\n# agent.yaml\napiVersion: v1\nkind: Agent\nname: pr-reviewer\nmodel:\n  id: claude-opus-4-8\nsystem: |\n  You are a senior code reviewer.\n  Always check for SQL injection, SSRF, and insecure deserialization.\ntools:\n  - type: agent_toolset_20260401\nmcp_servers:\n  - name: github\n    url: https://mcp.github.com\n```\n\n```bash\n# Apply from file (idempotent, creates new version if changed)\nant beta:agents apply -f agent.yaml\n\n# Check current versions\nant beta:agents list\nant beta:agents versions list --agent-id agent_abc123\n\n# Roll back to a previous version\nant beta:agents rollback --agent-id agent_abc123 --version 2\n```\n\n## Gotchas\n- **`beta:` prefix is required** for all Managed Agents commands — `ant agents create` will fail; use `ant beta:agents create`\n- **Auth token collision** — if both `ANTHROPIC_API_KEY` and `ANTHROPIC_AUTH_TOKEN` are set in env, the API rejects the request; unset one before running `ant`\n- **MCP credentials go in vaults, not system prompts** — use `ant beta:vaults credentials create` and pass `vault_ids` at session creation; hardcoding tokens in system prompts is a ToS violation and a security risk\n- **Archive is permanent** — archiving an agent, environment, or session is irreversible; archived agents cannot be referenced by new sessions",
-        "sourceURL": "https://platform.claude.com/docs/en/release-notes/overview"
-      }
-    },
-    {
-      "id": "google-antigravity-2-cli",
-      "name": "Google Antigravity 2.0",
-      "category": "google",
-      "oneLineDescription": "Google's agent-first dev platform: desktop app + CLI + SDK powered by Gemini 3.5 Flash.",
+      "id": "microsoft-agent-framework-1-0",
+      "name": "Microsoft Agent Framework 1.0",
+      "category": "tooling",
+      "oneLineDescription": "MIT-licensed Python/.NET SDK for building and deploying production multi-agent workflows.",
       "estimatedSetupMinutes": 10,
       "detail": {
-        "whatItDoes": "Google Antigravity 2.0 is the agent-first development platform announced at Google I/O 2026 on May 19. It ships as three surfaces: a desktop application, a CLI (`antigravity` or `antg`), and a Go-based SDK. It replaces Gemini CLI as Google's primary developer tool and is powered by Gemini 3.5 Flash (289 tokens/sec output). The CLI component directly competes with Claude Code and Codex CLI.\n\nAntigravity 2.0 adds subagent orchestration — spin up multiple specialized agents for complex workflows — with built-in cross-platform terminal sandboxing, credential masking, and hardened Git policies. The Antigravity SDK lets you embed Google's agentic capabilities in your own applications or self-host the agent harness on your own infrastructure. Managed Agents in the Gemini API (single API call spins up a fully sandboxed Linux agent) is also powered by the Antigravity harness.",
-        "whoItsFor": "Google Cloud developers and teams currently using Gemini CLI who need to migrate before the June 18, 2026 sunset. Developers who want a Claude Code alternative with Google account free-tier access and native Google Workspace, GCP, and Android Studio integration. Teams building Android apps who want AI-assisted migration from React Native or web frameworks.",
+        "whatItDoes": "Microsoft Agent Framework (MAF) 1.0 is an open-source Python and .NET library for building, orchestrating, and deploying multi-agent AI workflows. It unifies AutoGen's multi-agent conversation patterns with Semantic Kernel's production-grade state management, authentication, and plugin architecture into a single framework with graph-based execution. Agents are defined around a first-class 'harness' concept that bundles skills, context memory, and middleware as named, versioned constructs.\n\nAt Build 2026, MAF was highlighted as the core build layer of the Microsoft Foundry stack. Agents built with MAF can run locally, escalate to Windows 365 cloud nodes, deploy to Azure via `azd ai agent init`, or publish into Teams and Office 365 Copilot. The Foundry Agent Service (GA end of June 2026) provides the managed hosted runtime, with hypervisor-isolated sandboxes, per-agent Entra ID identity, sub-100ms cold starts, and zero idle cost.",
+        "whoItsFor": "Platform and backend engineers building production agent systems on Azure or Windows. Teams currently using AutoGen or Semantic Kernel who need a unified path from prototype to production without rewriting. Enterprise teams that need auditability, Entra ID identity, and OpenTelemetry tracing baked in from day one. Python-first teams can start locally; .NET teams get the same surface via NuGet.",
         "pros": [
-          "Powered by Gemini 3.5 Flash — outperforms Gemini 3.1 Pro at 4x the speed; no quality/cost tradeoff for Flash tier",
-          "Subagent orchestration built in — delegate subtasks to parallel specialized agents from a single session",
-          "Native Google Workspace and GCP integration (Gmail, Docs, Sheets, Drive, Android Studio)",
-          "SDK enables self-hosted deployments for teams that need to keep data on-prem"
+          "MIT-licensed with active Microsoft engineering backing and a published v1.0 GA release (April 2, 2026)",
+          "Framework-agnostic deployment: the same agent manifest runs locally, on Windows 365, or in Azure Foundry Agent Service without rewrites",
+          "First-class observability: built-in OpenTelemetry, Azure Monitor integration, and Foundry tracing reach GA end of June 2026",
+          "Supports concurrent, handoff, and group-chat multi-agent workflow patterns out of the box",
+          "MCP server support for external tool integration; connectors for Azure OpenAI, standard OpenAI, and GitHub Copilot SDK"
         ],
         "cons": [
-          "Replaces Gemini CLI — existing Gemini CLI installations and GEMINI.md configs need migration",
-          "New CLI syntax is different from Gemini CLI; muscle memory from `gemini` commands does not transfer",
-          "Desktop app currently requires Google AI Plus ($25/mo) or Ultra ($100/mo) for full agentic features; basic CLI is free"
+          "Hosted Foundry Agent Service billing is per-invocation and per-tool-call; high-volume workloads should audit costs under the new AI Credits model before going to production",
+          "The framework is still maturing: several advanced features (Agent Optimizer, Adaptive Evaluations, incoming A2A) are in public preview rather than GA"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Node.js 18+ or use the standalone binary\n- A Google account (free tier available for CLI; Plus/Ultra for full agent features)\n- macOS, Linux, or Windows\n\n## Install the Antigravity CLI\n\n```bash\n# via npm (recommended, cross-platform)\nnpm install -g @google/antigravity\n\n# verify\nantg --version\n\n# macOS Homebrew (once available in stable channel)\nbrew install google/antigravity/antg\n```\n\n## Authenticate\n\n```bash\n# Personal Google account (free tier)\nantg login\n# Opens browser — sign in with Google account\n\n# Google AI Studio API key (higher limits)\nexport GOOGLE_AI_API_KEY=\"your-key\"\n\n# Vertex AI / GCP\ngcloud auth application-default login\nexport GOOGLE_CLOUD_PROJECT=\"your-project\"\n```\n\n## First coding session\n\n```bash\ncd your-project\n\n# Start interactive session (Gemini 3.5 Flash default)\nantg\n\n# Inside the session:\n> Build a REST endpoint for user authentication in src/auth.ts\n> Run the test suite and fix any failures\n> Review this PR diff for security issues\n```\n\n## Subagent orchestration\n\n```bash\n# Spin up parallel specialized agents for a complex task\nantg --orchestrate \\\n  --agents \"security-reviewer,performance-analyzer,test-writer\" \\\n  --task \"Harden the payments module: security audit, perf profile, and 90% test coverage\"\n```\n\n## Headless / CI mode\n\n```bash\n# Single-shot in CI\nantg --headless -p \"Review this diff for breaking API changes\" < git.diff\n\n# GitHub Actions\n- name: API compat check\n  run: git diff origin/main | antg --headless -p \"List any breaking API changes\"\n  env:\n    GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}\n```\n\n## Migrate from Gemini CLI\n\n```bash\n# Export existing GEMINI.md as ANTIGRAVITY.md (Antigravity reads both during transition)\ncp GEMINI.md ANTIGRAVITY.md\n\n# Migrate MCP server config\n# Old: ~/.gemini/settings.json\n# New: ~/.antigravity/settings.json (same JSON schema, different path)\ncp ~/.gemini/settings.json ~/.antigravity/settings.json\n\n# Verify MCP servers still work\nantg mcp list\n```\n\n## Gotchas\n- **Gemini CLI sunset is June 18, 2026** for individual/free-tier users — migrate now, not the day before\n- **`GEMINI.md` is still read** by Antigravity during the transition period, but rename to `ANTIGRAVITY.md` for clarity; both files are read if present, with ANTIGRAVITY.md taking precedence\n- **Subagent orchestration** requires Google AI Plus or Ultra subscription; single-agent mode is free\n- **Desktop app and CLI share config** at `~/.antigravity/` — changing model settings in the desktop app affects CLI sessions immediately",
-        "sourceURL": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+ (or .NET 10 for C#)\n- Azure subscription (optional for local dev; required for hosted Foundry deployment)\n- An OpenAI-compatible API key or Azure OpenAI endpoint\n\n## Python quickstart\n\n```bash\n# Install the framework\npip install agent-framework\n\n# Set your model credentials\nexport OPENAI_API_KEY=\"sk-...\"\n```\n\n```python\n# minimal_agent.py\nfrom agent_framework import Agent\n\nagent = Agent(\n    name=\"ResearchAgent\",\n    model=\"gpt-4o\",          # or \"azure/gpt-4o\" for Azure OpenAI\n    instructions=\"Help users research topics. Be concise and cite sources.\"\n)\n\nresponse = agent.run(\"Summarize the key announcements from Microsoft Build 2026.\")\nprint(response)\n```\n\n## .NET quickstart\n\n```bash\n# Add the NuGet package (v1.7.0 as of Build 2026)\ndotnet add package Microsoft.Agents.AI\n```\n\n```csharp\n// Program.cs\nusing Microsoft.Agents.AI;\n\nvar agent = new Agent(new AgentConfig\n{\n    Name = \"ResearchAgent\",\n    Model = \"gpt-4o\",\n    Instructions = \"Help users research topics.\"\n});\n\nvar response = await agent.RunAsync(\"What shipped at Build 2026?\");\nConsole.WriteLine(response);\n```\n\n## Multi-agent workflow (Python)\n\n```python\nfrom agent_framework import Agent, Handoff\n\nwriter = Agent(\n    name=\"Writer\",\n    model=\"gpt-4o\",\n    instructions=\"Write a first draft based on the user's brief.\"\n)\n\neditor = Agent(\n    name=\"Editor\",\n    model=\"gpt-4o\",\n    instructions=\"Improve clarity and remove jargon from the writer's draft.\",\n    handoffs=[Handoff(from_agent=\"Writer\")]\n)\n\n# Run the pipeline\nresult = writer.run(\"Write a short blog post about agentic AI in 2026.\")\nfinal  = editor.run(result)\nprint(final)\n```\n\n## Deploy to Azure Foundry Agent Service\n\n```bash\n# Requires Azure Developer CLI (azd)\nnpm install -g @azure/azd     # or: winget install Microsoft.Azd\n\ncd your-agent-project\nazd ai agent init             # scaffolds agent.json manifest\nazd deploy                    # source-code deploy, no container required\n```\n\n**Gotcha:** Foundry Agent Service billing switched to the AI Credits model on June 1, 2026. Run `azd ai agent cost-estimate` before deploying high-frequency agents to avoid surprise invoices. Local dev is always free.",
+        "sourceURL": "https://github.com/microsoft/agent-framework"
       }
     },
     {
-      "id": "openai-realtime-2-api",
-      "name": "OpenAI Realtime 2 API",
+      "id": "openai-codex-cli-june-2026",
+      "name": "OpenAI Codex CLI",
       "category": "openai",
-      "oneLineDescription": "Streaming speech-to-speech API with reasoning, translation, and transcription in one session.",
-      "estimatedSetupMinutes": 20,
+      "oneLineDescription": "Open-source terminal coding agent: assigns tasks, writes code, runs tests, opens PRs autonomously.",
+      "estimatedSetupMinutes": 8,
       "detail": {
-        "whatItDoes": "OpenAI's Realtime 2 API (released May 7, 2026) is a new family of speech-to-speech models that replace the deprecated Realtime API Beta. It ships three distinct surfaces in one API: Realtime 2 (full speech-to-speech with configurable reasoning), Realtime Translate (streaming speech-to-speech translation across languages), and Realtime Whisper (streaming speech-to-text transcription). All three use WebSocket or server-sent-event sessions for low-latency, streaming output.\n\nThe key upgrade over the beta is configurable reasoning — the model can spend tokens reasoning before producing audio, enabling more accurate responses for complex questions without a separate LLM hop. The old Realtime API Beta was removed from the API on May 12, 2026 simultaneously.",
-        "whoItsFor": "Developers building voice agents, real-time customer support bots, live translation tools, or meeting transcription products. Teams that were using the deprecated Realtime API Beta and need to migrate. Anyone who needs low-latency audio input and audio output from a single streaming API without stitching together separate STT, LLM, and TTS services.",
+        "whatItDoes": "OpenAI Codex CLI is an open-source command-line coding agent that runs locally in your terminal. It accepts natural-language task descriptions, writes code, runs tests in a sandboxed environment, and can open PRs against your repo. Each session runs inside a secure sandbox with configurable network access (package registries only, full internet, or specific-domain allowlists). The Python SDK now ships with a first-class `CodexConfig` API and supports async workflows; sessions can be archived, resumed, and forked.\n\nAs of June 2026, the CLI reached full production status with 5M+ weekly users. The latest updates add session archiving (`/archive`, `codex archive`), TUI markdown with clickable OSC 8 links, remote execution via `CODEX_API_KEY`, and a feature-gated image generation extension. Memory summaries are versioned and auto-rebuilt to keep long-lived contexts lean. The Python SDK can now be staged and published independently from runtime releases using `python-v*` tags.",
+        "whoItsFor": "Individual developers and small teams who want async background coding tasks. Particularly effective for batching maintenance work (dependency updates, test coverage, documentation fixes) that would otherwise consume 30-40% of a developer's day. Also useful for non-developers (analysts, researchers) who can describe outcomes in plain English and let Codex handle the implementation via role-specific plugins.",
         "pros": [
-          "Three services (speech-to-speech, translation, transcription) in one unified API — no stitching",
-          "Configurable reasoning lets the model think before speaking, reducing hallucinations on complex queries",
-          "Streaming output keeps latency low even with reasoning enabled",
-          "Replaces the deprecated Realtime API Beta — existing WebSocket patterns mostly transfer with parameter updates"
+          "Fully open-source (MIT) with active weekly releases; the Python SDK supports API-key, ChatGPT browser, and device-code auth flows",
+          "Configurable sandbox network access: choose package-registry-only, full internet, or a per-domain allowlist depending on your security posture",
+          "Goal mode (now GA across app, IDE extension, and CLI) lets you define a success criterion and let Codex keep iterating until it's met",
+          "Integrates with Netlify, Vercel, Cloudflare, Figma, and Salesforce natively; MCP server support for custom tool connections"
         ],
         "cons": [
-          "Occasional audio quality issues noted in release notes: unexpected tone/pitch variations with certain voice options",
-          "Migration from Realtime API Beta is required — the beta endpoint was removed May 12, 2026 with no fallback",
-          "Reasoning mode increases token consumption; budget carefully for high-volume voice workloads"
+          "Remote execution still requires an approved OpenAI host for CODEX_API_KEY registration — you cannot point it at an arbitrary self-hosted endpoint yet",
+          "Container session costs: billed per-minute with a 5-minute minimum as of June 2, 2026; long-running autonomous tasks can accumulate charges quickly if you are not monitoring session duration"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- OpenAI API key with access to Realtime models (`OPENAI_API_KEY`)\n- Node.js 18+ (for the TypeScript/JS SDK) or Python 3.9+\n- If migrating from Realtime API Beta: read the [migration guide](https://platform.openai.com/docs/guides/realtime-migration) — the beta endpoint was removed May 12, 2026\n\n## Install the SDK\n\n```bash\n# Node.js / TypeScript\nnpm install openai\n\n# Python\npip install openai\n```\n\n## Basic Realtime 2 session (TypeScript)\n\n```typescript\nimport OpenAI from 'openai';\n\nconst client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });\n\n// Create a Realtime session\nconst session = await client.beta.realtime.sessions.create({\n  model: 'realtime-2',       // Realtime 2 model\n  voice: 'alloy',\n  instructions: 'You are a helpful assistant. Answer concisely.',\n  turn_detection: { type: 'server_vad' },\n  // Enable reasoning (trades latency for accuracy)\n  reasoning: { effort: 'medium' },\n});\n\nconsole.log('Session created:', session.id);\nconsole.log('Client secret:', session.client_secret.value);\n// Use client_secret to authenticate WebSocket from the browser/client\n```\n\n## WebSocket connection (browser-side)\n\n```typescript\n// Use the ephemeral client_secret from the session above\nconst ws = new WebSocket(\n  'wss://api.openai.com/v1/realtime',\n  ['realtime', `openai-insecure-api-key.${session.client_secret.value}`, 'openai-beta.realtime-v2']\n);\n\nws.onopen = () => {\n  // Send audio input as base64 PCM16 24kHz\n  ws.send(JSON.stringify({\n    type: 'input_audio_buffer.append',\n    audio: base64EncodedPCM16Audio,\n  }));\n};\n\nws.onmessage = (event) => {\n  const msg = JSON.parse(event.data);\n  if (msg.type === 'response.audio.delta') {\n    // msg.delta is base64 PCM16 audio — pipe to your audio output\n    playAudio(msg.delta);\n  }\n};\n```\n\n## Realtime Translate (streaming speech translation)\n\n```typescript\n// Same session create, different model surface\nconst translateSession = await client.beta.realtime.sessions.create({\n  model: 'realtime-translate',\n  // Translate from Spanish to English\n  input_language: 'es',\n  output_language: 'en',\n  voice: 'alloy',\n});\n```\n\n## Realtime Whisper (streaming transcription only)\n\n```typescript\nconst transcribeSession = await client.beta.realtime.sessions.create({\n  model: 'realtime-whisper',\n  input_language: 'en',  // null for auto-detect\n});\n// Response events will be response.transcript.delta instead of response.audio.delta\n```\n\n## Gotchas\n- **Realtime API Beta is gone** — the old `wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview` endpoint was removed May 12. Update your model string to `realtime-2` and review the [migration guide](https://platform.openai.com/docs/guides/realtime-migration)\n- **Audio format is PCM16 24kHz** — not MP3, not Opus; encode/decode accordingly on both ends\n- **Reasoning increases first-audio latency** — with `effort: 'high'`, expect ~500–800ms before first audio chunk; use `effort: 'low'` for conversational applications where speed matters more than depth\n- **Voice options affect audio quality** — OpenAI's release notes flag occasional pitch/tone variations with certain voices; test your chosen voice under load before production",
-        "sourceURL": "https://developers.openai.com/api/docs/changelog"
+        "setupGuideMarkdown": "## Prerequisites\n- Node 20+ (for the npm install path) **or** Rust toolchain (for build-from-source)\n- An OpenAI API key (`OPENAI_API_KEY`), or a ChatGPT Plus/Business subscription for browser auth\n\n## Install\n\n```bash\n# Recommended: npm global install (macOS/Linux/Windows)\nnpm install -g openai-codex\n\n# Verify install and check system prerequisites\ncodex doctor\n```\n\n```bash\n# Alternative: pip install (Python SDK beta)\npip install openai-codex\n```\n\n## Authenticate\n\n```bash\n# Option 1: API key (fastest)\nexport OPENAI_API_KEY=\"sk-...\"\n\n# Option 2: ChatGPT browser flow (no API key needed)\ncodex auth login --flow browser\n\n# Option 3: Device code (for headless environments)\ncodex auth login --flow device\n```\n\n## Run your first task\n\n```bash\n# Inside any git repo\ncd your-project\n\n# Describe a task in plain English\ncodex \"Add input validation to the /signup endpoint and write unit tests\"\n\n# Watch it work in the TUI; approve or reject the proposed changes\n```\n\n## Configure sandbox network access\n\n```toml\n# ~/.codex/config.toml\n[sandbox]\n# Options: \"package_registries\" | \"full_internet\" | \"specific_domains\"\nnetwork_access = \"package_registries\"\nallowed_domains = []  # populate if using \"specific_domains\"\n\n[git]\n# Attribute commits to Codex (requires codex_git_commit = true)\ncodex_git_commit = true\n```\n\n## Goal mode (define success criteria)\n\n```bash\n# Let Codex keep iterating until tests pass\ncodex goal \"All existing tests pass and coverage is above 80%\" --max-iterations 10\n```\n\n## Archive a session\n\n```bash\n# From TUI\n/archive\n\n# From CLI\ncodex archive <session-id>\ncodex unarchive <session-id>   # restore when needed\n```\n\n**Gotcha:** The `--full-auto` flag was deprecated. Use explicit permission profiles instead (`--permission-profile trusted` or `--permission-profile sandboxed`). Old scripts using `--full-auto` will warn and fall back to the sandboxed profile.",
+        "sourceURL": "https://github.com/openai/codex"
+      }
+    },
+    {
+      "id": "microsoft-agent-governance-toolkit",
+      "name": "Microsoft Agent Governance Toolkit",
+      "category": "tooling",
+      "oneLineDescription": "MIT-licensed policy enforcement and audit layer for autonomous AI agents — covers all 10 OWASP Agentic AI risks.",
+      "estimatedSetupMinutes": 15,
+      "detail": {
+        "whatItDoes": "The Microsoft Agent Governance Toolkit is an open-source, MIT-licensed runtime security layer for autonomous AI agents. It enforces deterministic policies at sub-millisecond latency (<0.1ms p99), covering all 10 OWASP Agentic AI Top 10 risks: goal hijacking, tool misuse, identity abuse, memory poisoning, cascading failures, and rogue agents. The toolkit is structured as a monorepo with seven independently installable packages — you can start with just the policy engine and add identity management, sandboxing, and SRE tooling as your agent system grows.\n\nIt integrates natively with LangChain, CrewAI, Google ADK, Microsoft Agent Framework, OpenAI Agents SDK, Haystack, LangGraph, and PydanticAI by hooking into each framework's native extension points. A TypeScript SDK (`@microsoft/agentmesh-sdk`) and a .NET NuGet package (`Microsoft.AgentGovernance`) cover Node.js and C# teams. The toolkit also maps agent behavior to EU AI Act, HIPAA, and SOC2 compliance requirements and generates evidence collection reports.",
+        "whoItsFor": "Platform and security engineers deploying agents to production who need auditable, tamper-evident records of every agent decision. Compliance-sensitive industries (healthcare, finance, legal) where HIPAA, SOC2, or the EU AI Act (enforcement starts August 2026) require provable controls. Teams running multi-agent systems where a single API key is shared across five agents and 'an agent did it' is not an acceptable incident response.",
+        "pros": [
+          "Sub-millisecond policy enforcement (<0.1ms p99) — governance adds no perceptible latency to agent tool calls",
+          "Framework-agnostic: integrates via native extension points, not wrappers; adding governance does not require rewriting agent code",
+          "Covers all 10 OWASP Agentic AI Top 10 risks with deterministic controls, not prompt-level guardrails",
+          "Incremental adoption: seven independently installable packages; start with just the policy engine"
+        ],
+        "cons": [
+          "Azure-hosted deployment path (AKS sidecar, Foundry middleware, Container Apps) assumes familiarity with Azure infrastructure; purely local setups require more manual configuration",
+          "The plugin marketplace (Agent Marketplace component) uses Ed25519 signing and trust-tiered capability gating — correct setup requires understanding the key management flow before going to production"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+\n- An agent built with any supported framework (LangChain, LangGraph, OpenAI Agents SDK, CrewAI, MAF, etc.)\n- (Optional) Azure subscription for AKS or Container Apps deployment\n\n## Install\n\n```bash\n# Core policy engine only (lightest starting point)\npip install microsoft-agent-governance\n\n# Full suite (policy + identity + sandboxing + SRE + compliance + marketplace + lightning)\npip install microsoft-agent-governance[full]\n\n# TypeScript / Node.js\nnpm install @microsoft/agentmesh-sdk\n\n# .NET\ndotnet add package Microsoft.AgentGovernance\n```\n\n## Minimal Python integration (LangChain)\n\n```python\nfrom agent_governance import PolicyEngine, GovernanceConfig\nfrom langchain.agents import initialize_agent\n\n# Define a policy: block drop_table even if the model requests it\npolicy = PolicyEngine(\n    config=GovernanceConfig(\n        denied_tools=[\"drop_table\", \"delete_all_records\"],\n        require_audit_log=True,\n        audit_log_path=\"./agent_audit.jsonl\"\n    )\n)\n\n# Wrap your existing LangChain agent\n@policy.enforce\ndef run_agent(query: str):\n    agent = initialize_agent(tools, llm, agent=\"zero-shot-react-description\")\n    return agent.run(query)\n\nresult = run_agent(\"Summarize the sales report for Q1 2026\")\n```\n\n## Identity isolation for multi-agent systems\n\n```python\nfrom agent_governance.identity import AgentIdentityManager\n\n# Give each agent its own identity and audit trail\nidentity_mgr = AgentIdentityManager()\n\nresearch_agent_id = identity_mgr.register(\"ResearchAgent\", capabilities=[\"web_search\", \"read_file\"])\nbilling_agent_id  = identity_mgr.register(\"BillingAgent\",  capabilities=[\"query_database\"])\n\n# Now every tool call is attributed to a specific agent, not a shared API key\n```\n\n## Clone and explore the full repo\n\n```bash\ngit clone https://github.com/microsoft/agent-governance-toolkit\ncd agent-governance-toolkit\n\n# Run example: policy enforcement demo\npython examples/policy_enforcement_demo.py\n\n# Run compliance report against EU AI Act\npython examples/compliance_report.py --framework eu-ai-act\n```\n\n## Azure AKS sidecar deployment\n\n```bash\n# Deploy as a sidecar alongside your existing agent container\n# Full step-by-step in the repo's /deploy/aks directory\ngit clone https://github.com/microsoft/agent-governance-toolkit\ncd agent-governance-toolkit/deploy/aks\n\n# Edit values.yaml with your agent image and policy config\nhelm install agent-governance ./chart -f values.yaml\n```\n\n**Gotcha:** The EU AI Act's high-risk AI obligations take effect in August 2026 and the Colorado AI Act becomes enforceable in June 2026. If you deploy agents in regulated contexts, run `python -m agent_governance compliance-check --standard eu-ai-act` before launch — it outputs a gap report with evidence collection instructions.",
+        "sourceURL": "https://github.com/microsoft/agent-governance-toolkit"
+      }
+    },
+    {
+      "id": "openclaw-local-ai-agent",
+      "name": "OpenClaw",
+      "category": "otherLLM",
+      "oneLineDescription": "Local-first AI personal agent with 50+ integrations (WhatsApp, Slack, iMessage) that writes its own skills.",
+      "estimatedSetupMinutes": 20,
+      "detail": {
+        "whatItDoes": "OpenClaw is an open-source local AI assistant and agent gateway. It runs entirely on your own device and connects AI models to over 50 integrations including WhatsApp, Telegram, Slack, Discord, Signal, and iMessage. Unlike cloud-based assistants, all data stays on your machine. The assistant runs persistently in the background and can browse the web, fill out forms, run shell commands, write and execute code, and control desktop apps. Its standout capability: it can write new skills for itself, extending its own functionality without manual developer intervention. Originally created by PSPDFKit founder Peter Steinberger, it went viral in January 2026 (9K to 210K+ stars in weeks) and has since transitioned to an open-source foundation after Steinberger joined OpenAI.",
+        "whoItsFor": "Developers and power users who want a fully private, always-on AI agent without sending data to cloud APIs. Teams with strict data sovereignty requirements. Anyone building personal automation workflows across messaging platforms without writing custom integrations. Security-conscious individuals who want local inference via Ollama or llama.cpp as the model backend.",
+        "pros": [
+          "All data stays on your machine — no cloud API required if paired with Ollama or another local inference backend",
+          "50+ messaging and productivity integrations available out of the box with no custom API connection work",
+          "Self-extending: the agent writes new skill modules for itself based on observed user workflows",
+          "210K+ GitHub stars with an active open-source foundation maintaining it post-Steinberger"
+        ],
+        "cons": [
+          "Requires broad OS permissions (shell access, contacts, browser control) — the permission surface is wide and security researchers have flagged that the community skill repository lacks rigorous vetting for malicious submissions",
+          "Self-written skills can behave unpredictably; production or enterprise use requires careful sandboxing and skill auditing before deployment"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- macOS (primary), Linux (beta), or Windows (via WSL2)\n- Node 20+ and npm\n- Optional but recommended: [Ollama](https://ollama.com) for local model inference (no API key needed)\n\n## Install\n\n```bash\n# Clone the repo\ngit clone https://github.com/openclaw-ai/openclaw\ncd openclaw\n\n# Install dependencies\nnpm install\n\n# Copy the example config\ncp config.example.json config.json\n```\n\n## Configure a model backend\n\n```json\n// config.json — local inference via Ollama (no API key)\n{\n  \"model\": {\n    \"provider\": \"ollama\",\n    \"name\": \"llama3.1:8b\",\n    \"base_url\": \"http://localhost:11434\"\n  }\n}\n```\n\n```json\n// config.json — cloud inference via OpenAI\n{\n  \"model\": {\n    \"provider\": \"openai\",\n    \"name\": \"gpt-4o\",\n    \"api_key\": \"sk-...\"\n  }\n}\n```\n\n## Start Ollama (if using local inference)\n\n```bash\n# Install Ollama first: https://ollama.com/download\nollama pull llama3.1:8b\nollama serve        # runs on localhost:11434 by default\n```\n\n## Launch OpenClaw\n\n```bash\nnpm run start\n# OpenClaw starts in the background and opens a tray icon\n# Access the dashboard at http://localhost:3000\n```\n\n## Add an integration (example: Slack)\n\n```bash\n# From the dashboard -> Integrations -> Slack\n# Follow the OAuth flow, then test:\nnpx openclaw test-integration slack\n```\n\n## Write a custom skill manually\n\n```javascript\n// skills/summarize-slack-channel.js\nmodule.exports = {\n  name: 'summarize-slack-channel',\n  description: 'Summarizes the last N messages in a Slack channel',\n  parameters: { channel: 'string', count: 'number' },\n  async run({ channel, count }, { integrations }) {\n    const messages = await integrations.slack.getMessages(channel, count);\n    return messages.map(m => `${m.user}: ${m.text}`).join('\\n');\n  }\n};\n```\n\n**Gotcha:** The community skill repository (`skills/community/`) is not centrally reviewed. Before installing any community skill, read its source — a malicious skill with shell access can exfiltrate files. Stick to first-party skills or skills you've read yourself until the foundation ships a formal review process.",
+        "sourceURL": "https://github.com/openclaw-ai/openclaw"
+      }
+    },
+    {
+      "id": "microsoft-foundry-local-windows-sdk",
+      "name": "AI Foundry for Windows SDK",
+      "category": "tooling",
+      "oneLineDescription": "Single NuGet package bundling ONNX Runtime, DirectML, and Copilot Runtime for on-device Windows AI agents.",
+      "estimatedSetupMinutes": 10,
+      "detail": {
+        "whatItDoes": "The AI Foundry for Windows SDK, shipped at Build 2026, is a single NuGet package (`Microsoft.AI.Foundry.Local.WinML`) that bundles the ONNX Runtime, DirectML, and the Windows Copilot Runtime together. Previously, wiring up on-device AI on Windows required managing three separate libraries with incompatible versioning. The SDK auto-targets whatever compute is available: NPU on Copilot+ PCs, GPU on gaming rigs, CPU everywhere else. No Azure subscription, no API keys, no per-token cost — data stays on device. Minimum bar is Windows 10/11 x64 with 8GB RAM; 16GB is comfortable for larger models.\n\nThe SDK is the local runtime layer of the broader Windows Agent Framework. It supports C#, JavaScript, Python, and Rust. Agents built locally can be promoted to Azure Foundry Agent Service using the same `agent.json` manifest without rewrites — making it the lowest-friction path to local-first agent development on Windows.",
+        "whoItsFor": "Windows and .NET developers who want to run AI inference on-device without Azure costs or cloud dependencies. Enterprise teams with data residency requirements that prevent sending data to any cloud API. Game developers, productivity tool builders, and Copilot+ PC ISVs targeting Microsoft's new agent distribution channel (Windows Agent Store). Teams who want to prototype locally and deploy to Azure later without changing their code.",
+        "pros": [
+          "Zero cloud cost for local execution — no API keys, no per-token billing, no Azure subscription required",
+          "Single package replaces three previously separate libraries (ONNX Runtime, DirectML, Copilot Runtime) with one versioned install",
+          "Hardware auto-targeting: NPU on Copilot+ PCs, GPU on gaming machines, CPU fallback everywhere else — no hardware-specific code branches",
+          "Same agent.json manifest works locally and in Azure Foundry Agent Service — no rewrites when scaling out"
+        ],
+        "cons": [
+          "Windows 10/11 x64 only; no macOS or Linux support — cross-platform teams cannot share the same local inference path",
+          "Larger models require 16GB+ RAM and a recent GPU or NPU for comfortable performance; 8GB minimum systems will hit latency limits on anything beyond a 3B parameter model"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Windows 10 or Windows 11 (x64)\n- 8 GB RAM minimum; 16 GB recommended\n- .NET 8+ or .NET 10 (for C# projects)\n- Optional: Copilot+ PC (Snapdragon X, AMD Strix, or Intel Lunar Lake) for NPU acceleration\n\n## Install Foundry Local (winget)\n\n```powershell\n# Install the Foundry Local runtime (already GA before Build 2026)\nwinget install Microsoft.FoundryLocal\n\n# Verify\nfoundry-local --version\n```\n\n## Add the SDK to your .NET project\n\n```bash\n# Core agent SDK\ndotnet add package Microsoft.Agents.AI\n\n# On-device WinML inference layer (the new Build 2026 package)\ndotnet add package Microsoft.AI.Foundry.Local.WinML\n```\n\n## Minimal C# on-device agent\n\n```csharp\nusing Microsoft.Agents.AI;\nusing Microsoft.AI.Foundry.Local.WinML;\n\n// Auto-selects NPU > GPU > CPU based on available hardware\nvar localModel = await WinMLModelLoader.LoadAsync(\"phi-3.5-mini\");\n\nvar agent = new Agent(new AgentConfig\n{\n    Name        = \"LocalResearchAgent\",\n    ModelClient = localModel,   // runs entirely on-device\n    Instructions = \"Answer questions concisely using only local knowledge.\"\n});\n\nvar response = await agent.RunAsync(\"Summarize the risks of agentic AI.\");\nConsole.WriteLine(response);\n// No network call made — data never leaves the machine\n```\n\n## Download a model for local use\n\n```powershell\n# List available on-device models\nfoundry-local model list\n\n# Pull a model (stored in %LOCALAPPDATA%\\Microsoft\\FoundryLocal\\models)\nfoundry-local model pull phi-3.5-mini\nfoundry-local model pull llama-3.2-3b\n```\n\n## Promote local agent to Azure Foundry Agent Service\n\n```bash\n# When you're ready to scale out, the same manifest works in Azure\nazd ai agent init   # generates agent.json from your local config\nazd deploy          # no container required — source-code deploy\n```\n\n**Gotcha:** The `WinML` package requires the Windows Copilot Runtime, which ships in Windows 11 24H2 and later. On Windows 10 or older Windows 11 builds, you need to install the runtime separately via `winget install Microsoft.CopilotRuntime`. Running `foundry-local doctor` will flag this and give you the exact install command.",
+        "sourceURL": "https://devblogs.microsoft.com/foundry/agent-service-build2026/"
       }
     }
   ]
