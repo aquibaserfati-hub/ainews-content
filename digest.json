@@ -1,181 +1,131 @@
 {
   "schemaVersion": 1,
-  "weekOf": "2026-06-01T00:00:00Z",
-  "reportGeneratedAt": "2026-06-05T09:58:55Z",
-  "learnGeneratedAt": "2026-06-04T12:00:00Z",
+  "weekOf": "2026-04-20T00:00:00Z",
+  "reportGeneratedAt": "2026-06-05T18:45:01Z",
+  "learnGeneratedAt": "2026-04-23T06:00:00Z",
   "report": [
     {
-      "id": "openai-gpt53-codex-2026-06-04",
-      "title": "OpenAI ships GPT-5.3-Codex, moves Codex beyond pure coding",
-      "summary": "GPT-5.3-Codex is now live for paid ChatGPT plans across the app, CLI, and IDE extension, running 25% faster than its predecessor via NVIDIA GB200 NVL72 infrastructure. The model pushes Codex from code generation into full computer-use and end-to-end task execution; API access is still pending.",
+      "id": "openai-dreaming-v3-memory-2026-06-04",
+      "title": "OpenAI ships Dreaming V3, overhauling ChatGPT memory architecture",
+      "summary": "Dreaming V3 replaces the saved-memories list as ChatGPT's memory foundation, synthesizing context automatically across conversations without explicit user prompts. Rolling out now to US Plus/Pro users; free-tier access follows as a ~5x compute efficiency gain makes it viable at scale.",
       "category": "openai",
-      "sourceURL": "https://openai.com/index/introducing-gpt-5-3-codex/",
-      "significance": 8
-    },
-    {
-      "id": "openai-codex-sites-windows-2026-06-04",
-      "title": "Codex adds Sites preview, Computer Use on Windows, and GPT-5.5 Instant update",
-      "summary": "ChatGPT Business workspaces get Codex Sites — deploy hosted full-stack JS/TS internal apps directly from Codex — plus Computer Use on Windows for seeing and clicking inside native apps during builds. Separately, GPT-5.5 Instant rolled out to all ChatGPT users with cleaner response formatting; canvas support is dropped from both Instant and Thinking variants.",
-      "category": "openai",
-      "sourceURL": "https://releasebot.io/updates/openai/chatgpt",
+      "sourceURL": "https://openai.com/index/chatgpt-memory-dreaming/",
       "significance": 7
     },
     {
-      "id": "anthropic-claude-ad-free-2026-06-05",
-      "title": "Anthropic commits Claude will stay ad-free as OpenAI tests ads",
-      "summary": "Anthropic published a formal statement declaring Claude will never carry advertising, citing incompatibility between ad incentives and a trustworthy assistant. The move is a direct positioning shot at OpenAI, which is actively testing ads in the ChatGPT free tier.",
+      "id": "great-american-ai-act-draft-2026-06-04",
+      "title": "Bipartisan House draft would freeze state AI development laws for 3 years",
+      "summary": "Reps. Obernolte (R-CA) and Trahan (D-MA) dropped a 269-page discussion draft of the Great American Artificial Intelligence Act, which would preempt all state laws regulating AI model development for three years and require frontier labs with over $500M revenue to publish public safety frameworks. Still a discussion draft — no committee vote scheduled.",
+      "category": "other",
+      "sourceURL": "https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/",
+      "significance": 7
+    },
+    {
+      "id": "openai-codex-bedrock-ga-2026-06-03",
+      "title": "OpenAI models and Codex go GA on Amazon Bedrock",
+      "summary": "OpenAI's full model lineup, including GPT-5.5, plus its Codex software engineering agent are now generally available on AWS Bedrock in both Commercial and GovCloud regions. Builders who already live in AWS can now skip cross-cloud credential plumbing and route directly through Bedrock's IAM and governance controls.",
+      "category": "openai",
+      "sourceURL": "https://releasebot.io/updates/openai",
+      "significance": 6
+    },
+    {
+      "id": "microsoft-mai-code-1-flash-build-2026-06-03",
+      "title": "Microsoft ships MAI-Code-1-Flash and MAI-Thinking-1 at Build 2026",
+      "summary": "Microsoft launched its first proprietary coding model (MAI-Code-1-Flash) and a mid-size reasoning model (MAI-Thinking-1) at Build, pitching both on low token cost rather than raw benchmark scores. Positions Microsoft to stop routing all coding traffic through Anthropic and OpenAI, though neither model has published third-party evals yet.",
+      "category": "otherLLM",
+      "sourceURL": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-glasswing-expansion-2026-06-02",
+      "title": "Anthropic expands Project Glasswing to 150 more orgs, adds Claude Security plugin",
+      "summary": "Glasswing — Anthropic's restricted-access program using Claude Mythos Preview for codebase vulnerability scanning — grew from ~50 to ~200 partner organizations and gained a Claude Security plugin that reviews code changes and suggests patches in the same session. Mythos itself remains invite-only; this is access expansion, not a public model release.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-ipo-s1-filing-2026-06-01",
+      "title": "Anthropic confidentially files S-1 with the SEC",
+      "summary": "Anthropic submitted a confidential draft S-1 on June 1, following its $65B Series H at a $965B valuation and a run-rate revenue figure that crossed $30B ARR. No public prospectus yet; IPO timeline unconfirmed.",
       "category": "anthropic",
       "sourceURL": "https://www.anthropic.com/news",
       "significance": 6
     },
     {
-      "id": "anthropic-glasswing-expansion-2026-06-02",
-      "title": "Anthropic expands Project Glasswing to 150 new orgs across critical infrastructure",
-      "summary": "Claude Mythos Preview access was extended to roughly 150 additional organizations spanning power, water, healthcare, and communications sectors — all vendors whose codebases cover more than 100 million people by Anthropic's estimate. Filed one day after Anthropic's confidential S-1; the commercial and pre-IPO optics here are not subtle.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-claude-code-billing-change-2026-06-15",
-      "title": "Anthropic June 15 billing change moves Agent SDK onto separate metered credit",
-      "summary": "Starting June 15, Claude Agent SDK, claude -p, and third-party agents leave the flat subscription limit and bill against a new monthly credit ($20 Pro / $100 Max 5x / $200 Max 20x) at full API rates with no rollover. Teams running heavy agentic CI pipelines should claim the credit before the deadline and model overflow costs now.",
-      "category": "anthropic",
-      "sourceURL": "https://codersera.com/blog/anthropic-june-2026-billing-change-claude-code/",
-      "significance": 7
-    },
-    {
-      "id": "deepseek-v4pro-permanent-price-cut-2026-06-01",
-      "title": "DeepSeek makes V4 Pro 75% price cut permanent at $0.87/M output tokens",
-      "summary": "DeepSeek locked in its promotional rate as the new list price: $0.435 input, $0.87 output, and $0.003625 cache-hit per million tokens — permanently below GPT-5.5, Claude Opus 4.8, and Gemini 3.5 Flash on every line. Cache-hit pricing is the sharpest edge for agentic workloads where the same system prompt repeats constantly; at $0.003625/MTok the input cost of agent loops is effectively zero.",
-      "category": "otherLLM",
-      "sourceURL": "https://thenextweb.com/news/deepseek-v4-pro-75-percent-price-cut-permanent",
-      "significance": 7
-    },
-    {
-      "id": "google-gemini35-flash-ga-2026-05-19",
-      "title": "Gemini 3.5 Flash is GA: frontier-grade benchmarks at Flash speed and price",
-      "summary": "Gemini 3.5 Flash went generally available via the Gemini API, Google AI Studio, and Android Studio, priced at $1.50/$9.00 per million tokens. It beats Gemini 3.1 Pro on Terminal-Bench 2.1 (76.2%) and MCP Atlas (83.6%) at roughly 4x the speed — inverting the usual Pro-over-Flash hierarchy and making it a credible default for agentic and coding pipelines.",
-      "category": "google",
-      "sourceURL": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
-      "significance": 8
+      "id": "jetbrains-mellum2-12b-moe-2026-06-05",
+      "title": "JetBrains releases Mellum2, a 12B MoE model for multi-model coding pipelines",
+      "summary": "JetBrains shipped Mellum2, a 12B mixture-of-experts model designed for fast, specialized tasks inside multi-model AI pipelines — targeting IDE-native coding workflows rather than general-purpose chat. Positions as a lightweight drop-in for teams already using JetBrains tooling who want local or low-latency inference on narrow tasks.",
+      "category": "tooling",
+      "sourceURL": "https://aiflashreport.com/topics/new-ai-model-releases.html",
+      "significance": 5
     }
   ],
   "learn": [
     {
-      "id": "microsoft-agent-framework-1-0",
-      "name": "Microsoft Agent Framework 1.0",
+      "id": "github-com-ggerganov-llama-cpp",
+      "name": "llama.cpp 2.0",
       "category": "tooling",
-      "oneLineDescription": "MIT-licensed Python/.NET SDK for building and deploying production multi-agent workflows.",
-      "estimatedSetupMinutes": 10,
+      "oneLineDescription": "High-performance C++ inference engine for running LLMs locally on your laptop.",
+      "estimatedSetupMinutes": 5,
       "detail": {
-        "whatItDoes": "Microsoft Agent Framework (MAF) 1.0 is an open-source Python and .NET library for building, orchestrating, and deploying multi-agent AI workflows. It unifies AutoGen's multi-agent conversation patterns with Semantic Kernel's production-grade state management, authentication, and plugin architecture into a single framework with graph-based execution. Agents are defined around a first-class 'harness' concept that bundles skills, context memory, and middleware as named, versioned constructs.\n\nAt Build 2026, MAF was highlighted as the core build layer of the Microsoft Foundry stack. Agents built with MAF can run locally, escalate to Windows 365 cloud nodes, deploy to Azure via `azd ai agent init`, or publish into Teams and Office 365 Copilot. The Foundry Agent Service (GA end of June 2026) provides the managed hosted runtime, with hypervisor-isolated sandboxes, per-agent Entra ID identity, sub-100ms cold starts, and zero idle cost.",
-        "whoItsFor": "Platform and backend engineers building production agent systems on Azure or Windows. Teams currently using AutoGen or Semantic Kernel who need a unified path from prototype to production without rewriting. Enterprise teams that need auditability, Entra ID identity, and OpenTelemetry tracing baked in from day one. Python-first teams can start locally; .NET teams get the same surface via NuGet.",
+        "whatItDoes": "Lets you run open-weight large language models (Llama, Mistral, Qwen, DeepSeek) directly on your CPU, Apple Silicon, or NVIDIA GPU. Single C++ binary, no Python, no Docker, no cloud. Loads quantized GGUF model files and serves them via a REST API or interactive CLI.",
+        "whoItsFor": "Developers who want to run LLMs offline, prototype agents without API costs, fine-tune locally, or ship desktop apps with embedded AI. Builders allergic to cloud lock-in. Anyone whose laptop can spare 8-16GB of RAM.",
         "pros": [
-          "MIT-licensed with active Microsoft engineering backing and a published v1.0 GA release (April 2, 2026)",
-          "Framework-agnostic deployment: the same agent manifest runs locally, on Windows 365, or in Azure Foundry Agent Service without rewrites",
-          "First-class observability: built-in OpenTelemetry, Azure Monitor integration, and Foundry tracing reach GA end of June 2026",
-          "Supports concurrent, handoff, and group-chat multi-agent workflow patterns out of the box",
-          "MCP server support for external tool integration; connectors for Azure OpenAI, standard OpenAI, and GitHub Copilot SDK"
+          "Truly local: zero API calls, full privacy, works offline",
+          "Cross-platform: same binary runs on Mac (Metal), Linux/Windows (CUDA), or pure CPU",
+          "Mature ecosystem: GGUF model format is the de-facto local-LLM standard"
         ],
         "cons": [
-          "Hosted Foundry Agent Service billing is per-invocation and per-tool-call; high-volume workloads should audit costs under the new AI Credits model before going to production",
-          "The framework is still maturing: several advanced features (Agent Optimizer, Adaptive Evaluations, incoming A2A) are in public preview rather than GA"
+          "Inference speed depends on hardware: an M1 MacBook is fine for 7B models, slower for 70B",
+          "GGUF model conversion can be a one-time pain if you start with a HuggingFace transformer checkpoint"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+ (or .NET 10 for C#)\n- Azure subscription (optional for local dev; required for hosted Foundry deployment)\n- An OpenAI-compatible API key or Azure OpenAI endpoint\n\n## Python quickstart\n\n```bash\n# Install the framework\npip install agent-framework\n\n# Set your model credentials\nexport OPENAI_API_KEY=\"sk-...\"\n```\n\n```python\n# minimal_agent.py\nfrom agent_framework import Agent\n\nagent = Agent(\n    name=\"ResearchAgent\",\n    model=\"gpt-4o\",          # or \"azure/gpt-4o\" for Azure OpenAI\n    instructions=\"Help users research topics. Be concise and cite sources.\"\n)\n\nresponse = agent.run(\"Summarize the key announcements from Microsoft Build 2026.\")\nprint(response)\n```\n\n## .NET quickstart\n\n```bash\n# Add the NuGet package (v1.7.0 as of Build 2026)\ndotnet add package Microsoft.Agents.AI\n```\n\n```csharp\n// Program.cs\nusing Microsoft.Agents.AI;\n\nvar agent = new Agent(new AgentConfig\n{\n    Name = \"ResearchAgent\",\n    Model = \"gpt-4o\",\n    Instructions = \"Help users research topics.\"\n});\n\nvar response = await agent.RunAsync(\"What shipped at Build 2026?\");\nConsole.WriteLine(response);\n```\n\n## Multi-agent workflow (Python)\n\n```python\nfrom agent_framework import Agent, Handoff\n\nwriter = Agent(\n    name=\"Writer\",\n    model=\"gpt-4o\",\n    instructions=\"Write a first draft based on the user's brief.\"\n)\n\neditor = Agent(\n    name=\"Editor\",\n    model=\"gpt-4o\",\n    instructions=\"Improve clarity and remove jargon from the writer's draft.\",\n    handoffs=[Handoff(from_agent=\"Writer\")]\n)\n\n# Run the pipeline\nresult = writer.run(\"Write a short blog post about agentic AI in 2026.\")\nfinal  = editor.run(result)\nprint(final)\n```\n\n## Deploy to Azure Foundry Agent Service\n\n```bash\n# Requires Azure Developer CLI (azd)\nnpm install -g @azure/azd     # or: winget install Microsoft.Azd\n\ncd your-agent-project\nazd ai agent init             # scaffolds agent.json manifest\nazd deploy                    # source-code deploy, no container required\n```\n\n**Gotcha:** Foundry Agent Service billing switched to the AI Credits model on June 1, 2026. Run `azd ai agent cost-estimate` before deploying high-frequency agents to avoid surprise invoices. Local dev is always free.",
-        "sourceURL": "https://github.com/microsoft/agent-framework"
+        "setupGuideMarkdown": "## Setup llama.cpp 2.0 on macOS (Apple Silicon)\n\n```bash\n# 1. Clone and build\ngit clone https://github.com/ggerganov/llama.cpp\ncd llama.cpp\nmake LLAMA_METAL=1\n\n# 2. Download a quantized model (e.g., Llama 3 8B, ~5GB)\ncurl -L -o models/llama-3-8b-q4.gguf \\\n  https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf\n\n# 3. Run interactive chat\n./main -m models/llama-3-8b-q4.gguf -p \"Hello, world\" -n 256\n```\n\nIf the build complains about missing tools, install Xcode CLI: `xcode-select --install`. Reasonable laptops produce ~30 tokens/sec on Llama 3 8B Q4.",
+        "sourceURL": "https://github.com/ggerganov/llama.cpp"
       }
     },
     {
-      "id": "openai-codex-cli-june-2026",
-      "name": "OpenAI Codex CLI",
-      "category": "openai",
-      "oneLineDescription": "Open-source terminal coding agent: assigns tasks, writes code, runs tests, opens PRs autonomously.",
+      "id": "anthropic-com-memory-api",
+      "name": "Anthropic Memory API",
+      "category": "anthropic",
+      "oneLineDescription": "Persistent memory for Claude that survives across conversations.",
       "estimatedSetupMinutes": 8,
       "detail": {
-        "whatItDoes": "OpenAI Codex CLI is an open-source command-line coding agent that runs locally in your terminal. It accepts natural-language task descriptions, writes code, runs tests in a sandboxed environment, and can open PRs against your repo. Each session runs inside a secure sandbox with configurable network access (package registries only, full internet, or specific-domain allowlists). The Python SDK now ships with a first-class `CodexConfig` API and supports async workflows; sessions can be archived, resumed, and forked.\n\nAs of June 2026, the CLI reached full production status with 5M+ weekly users. The latest updates add session archiving (`/archive`, `codex archive`), TUI markdown with clickable OSC 8 links, remote execution via `CODEX_API_KEY`, and a feature-gated image generation extension. Memory summaries are versioned and auto-rebuilt to keep long-lived contexts lean. The Python SDK can now be staged and published independently from runtime releases using `python-v*` tags.",
-        "whoItsFor": "Individual developers and small teams who want async background coding tasks. Particularly effective for batching maintenance work (dependency updates, test coverage, documentation fixes) that would otherwise consume 30-40% of a developer's day. Also useful for non-developers (analysts, researchers) who can describe outcomes in plain English and let Codex handle the implementation via role-specific plugins.",
+        "whatItDoes": "Adds long-term memory to Claude. Conversations can write to a memory store keyed by user ID; subsequent conversations retrieve relevant memories automatically. The model decides when to write and when to read; you can also call the memory store directly via the API for explicit control.",
+        "whoItsFor": "Anyone building agent-style products: chatbots, personal assistants, customer-support bots, coding agents. If your app currently passes a giant 'previous turns' blob into every request, this replaces that with structured retrieval and dramatically lowers token cost.",
         "pros": [
-          "Fully open-source (MIT) with active weekly releases; the Python SDK supports API-key, ChatGPT browser, and device-code auth flows",
-          "Configurable sandbox network access: choose package-registry-only, full internet, or a per-domain allowlist depending on your security posture",
-          "Goal mode (now GA across app, IDE extension, and CLI) lets you define a success criterion and let Codex keep iterating until it's met",
-          "Integrates with Netlify, Vercel, Cloudflare, Figma, and Salesforce natively; MCP server support for custom tool connections"
+          "Drop-in: existing message-completion calls work, memory is opt-in via a single header",
+          "Persists across sessions per user — no more 'sorry, who are you?' on every login",
+          "Claude decides relevance, so the prompt stays clean even with thousands of memories"
         ],
         "cons": [
-          "Remote execution still requires an approved OpenAI host for CODEX_API_KEY registration — you cannot point it at an arbitrary self-hosted endpoint yet",
-          "Container session costs: billed per-minute with a 5-minute minimum as of June 2, 2026; long-running autonomous tasks can accumulate charges quickly if you are not monitoring session duration"
+          "Beta: schema and pricing are not yet final, expect breaking changes through Q2 2026",
+          "Per-user memory adds a privacy surface — you need a clear deletion path for GDPR/CCPA"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Node 20+ (for the npm install path) **or** Rust toolchain (for build-from-source)\n- An OpenAI API key (`OPENAI_API_KEY`), or a ChatGPT Plus/Business subscription for browser auth\n\n## Install\n\n```bash\n# Recommended: npm global install (macOS/Linux/Windows)\nnpm install -g openai-codex\n\n# Verify install and check system prerequisites\ncodex doctor\n```\n\n```bash\n# Alternative: pip install (Python SDK beta)\npip install openai-codex\n```\n\n## Authenticate\n\n```bash\n# Option 1: API key (fastest)\nexport OPENAI_API_KEY=\"sk-...\"\n\n# Option 2: ChatGPT browser flow (no API key needed)\ncodex auth login --flow browser\n\n# Option 3: Device code (for headless environments)\ncodex auth login --flow device\n```\n\n## Run your first task\n\n```bash\n# Inside any git repo\ncd your-project\n\n# Describe a task in plain English\ncodex \"Add input validation to the /signup endpoint and write unit tests\"\n\n# Watch it work in the TUI; approve or reject the proposed changes\n```\n\n## Configure sandbox network access\n\n```toml\n# ~/.codex/config.toml\n[sandbox]\n# Options: \"package_registries\" | \"full_internet\" | \"specific_domains\"\nnetwork_access = \"package_registries\"\nallowed_domains = []  # populate if using \"specific_domains\"\n\n[git]\n# Attribute commits to Codex (requires codex_git_commit = true)\ncodex_git_commit = true\n```\n\n## Goal mode (define success criteria)\n\n```bash\n# Let Codex keep iterating until tests pass\ncodex goal \"All existing tests pass and coverage is above 80%\" --max-iterations 10\n```\n\n## Archive a session\n\n```bash\n# From TUI\n/archive\n\n# From CLI\ncodex archive <session-id>\ncodex unarchive <session-id>   # restore when needed\n```\n\n**Gotcha:** The `--full-auto` flag was deprecated. Use explicit permission profiles instead (`--permission-profile trusted` or `--permission-profile sandboxed`). Old scripts using `--full-auto` will warn and fall back to the sandboxed profile.",
-        "sourceURL": "https://github.com/openai/codex"
+        "setupGuideMarkdown": "## Try the Memory API in TypeScript\n\n```bash\nnpm install @anthropic-ai/sdk\nexport ANTHROPIC_API_KEY=sk-ant-...\n```\n\n```typescript\nimport Anthropic from \"@anthropic-ai/sdk\";\n\nconst client = new Anthropic();\n\nconst response = await client.messages.create({\n  model: \"claude-sonnet-4-6\",\n  max_tokens: 1024,\n  system: \"You are a helpful assistant. Remember what the user tells you.\",\n  messages: [\n    { role: \"user\", content: \"My name is Aquib. I'm building an iOS app called AINews Weekly.\" }\n  ],\n  // Required beta header for v1 of the API\n  extra_headers: { \"anthropic-beta\": \"memory-2026-04-22\" },\n  // Memory bucket key — use a stable per-user identifier\n  metadata: { user_id: \"aquib-123\" }\n});\n\nconsole.log(response.content);\n```\n\nIn a follow-up call with the same `user_id`, ask 'what's my name?' — Claude pulls the memory automatically.",
+        "sourceURL": "https://docs.claude.com/en/api/memory"
       }
     },
     {
-      "id": "microsoft-agent-governance-toolkit",
-      "name": "Microsoft Agent Governance Toolkit",
+      "id": "github-com-stanfordnlp-dspy",
+      "name": "DSPy 3.0",
       "category": "tooling",
-      "oneLineDescription": "MIT-licensed policy enforcement and audit layer for autonomous AI agents — covers all 10 OWASP Agentic AI risks.",
-      "estimatedSetupMinutes": 15,
-      "detail": {
-        "whatItDoes": "The Microsoft Agent Governance Toolkit is an open-source, MIT-licensed runtime security layer for autonomous AI agents. It enforces deterministic policies at sub-millisecond latency (<0.1ms p99), covering all 10 OWASP Agentic AI Top 10 risks: goal hijacking, tool misuse, identity abuse, memory poisoning, cascading failures, and rogue agents. The toolkit is structured as a monorepo with seven independently installable packages — you can start with just the policy engine and add identity management, sandboxing, and SRE tooling as your agent system grows.\n\nIt integrates natively with LangChain, CrewAI, Google ADK, Microsoft Agent Framework, OpenAI Agents SDK, Haystack, LangGraph, and PydanticAI by hooking into each framework's native extension points. A TypeScript SDK (`@microsoft/agentmesh-sdk`) and a .NET NuGet package (`Microsoft.AgentGovernance`) cover Node.js and C# teams. The toolkit also maps agent behavior to EU AI Act, HIPAA, and SOC2 compliance requirements and generates evidence collection reports.",
-        "whoItsFor": "Platform and security engineers deploying agents to production who need auditable, tamper-evident records of every agent decision. Compliance-sensitive industries (healthcare, finance, legal) where HIPAA, SOC2, or the EU AI Act (enforcement starts August 2026) require provable controls. Teams running multi-agent systems where a single API key is shared across five agents and 'an agent did it' is not an acceptable incident response.",
-        "pros": [
-          "Sub-millisecond policy enforcement (<0.1ms p99) — governance adds no perceptible latency to agent tool calls",
-          "Framework-agnostic: integrates via native extension points, not wrappers; adding governance does not require rewriting agent code",
-          "Covers all 10 OWASP Agentic AI Top 10 risks with deterministic controls, not prompt-level guardrails",
-          "Incremental adoption: seven independently installable packages; start with just the policy engine"
-        ],
-        "cons": [
-          "Azure-hosted deployment path (AKS sidecar, Foundry middleware, Container Apps) assumes familiarity with Azure infrastructure; purely local setups require more manual configuration",
-          "The plugin marketplace (Agent Marketplace component) uses Ed25519 signing and trust-tiered capability gating — correct setup requires understanding the key management flow before going to production"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+\n- An agent built with any supported framework (LangChain, LangGraph, OpenAI Agents SDK, CrewAI, MAF, etc.)\n- (Optional) Azure subscription for AKS or Container Apps deployment\n\n## Install\n\n```bash\n# Core policy engine only (lightest starting point)\npip install microsoft-agent-governance\n\n# Full suite (policy + identity + sandboxing + SRE + compliance + marketplace + lightning)\npip install microsoft-agent-governance[full]\n\n# TypeScript / Node.js\nnpm install @microsoft/agentmesh-sdk\n\n# .NET\ndotnet add package Microsoft.AgentGovernance\n```\n\n## Minimal Python integration (LangChain)\n\n```python\nfrom agent_governance import PolicyEngine, GovernanceConfig\nfrom langchain.agents import initialize_agent\n\n# Define a policy: block drop_table even if the model requests it\npolicy = PolicyEngine(\n    config=GovernanceConfig(\n        denied_tools=[\"drop_table\", \"delete_all_records\"],\n        require_audit_log=True,\n        audit_log_path=\"./agent_audit.jsonl\"\n    )\n)\n\n# Wrap your existing LangChain agent\n@policy.enforce\ndef run_agent(query: str):\n    agent = initialize_agent(tools, llm, agent=\"zero-shot-react-description\")\n    return agent.run(query)\n\nresult = run_agent(\"Summarize the sales report for Q1 2026\")\n```\n\n## Identity isolation for multi-agent systems\n\n```python\nfrom agent_governance.identity import AgentIdentityManager\n\n# Give each agent its own identity and audit trail\nidentity_mgr = AgentIdentityManager()\n\nresearch_agent_id = identity_mgr.register(\"ResearchAgent\", capabilities=[\"web_search\", \"read_file\"])\nbilling_agent_id  = identity_mgr.register(\"BillingAgent\",  capabilities=[\"query_database\"])\n\n# Now every tool call is attributed to a specific agent, not a shared API key\n```\n\n## Clone and explore the full repo\n\n```bash\ngit clone https://github.com/microsoft/agent-governance-toolkit\ncd agent-governance-toolkit\n\n# Run example: policy enforcement demo\npython examples/policy_enforcement_demo.py\n\n# Run compliance report against EU AI Act\npython examples/compliance_report.py --framework eu-ai-act\n```\n\n## Azure AKS sidecar deployment\n\n```bash\n# Deploy as a sidecar alongside your existing agent container\n# Full step-by-step in the repo's /deploy/aks directory\ngit clone https://github.com/microsoft/agent-governance-toolkit\ncd agent-governance-toolkit/deploy/aks\n\n# Edit values.yaml with your agent image and policy config\nhelm install agent-governance ./chart -f values.yaml\n```\n\n**Gotcha:** The EU AI Act's high-risk AI obligations take effect in August 2026 and the Colorado AI Act becomes enforceable in June 2026. If you deploy agents in regulated contexts, run `python -m agent_governance compliance-check --standard eu-ai-act` before launch — it outputs a gap report with evidence collection instructions.",
-        "sourceURL": "https://github.com/microsoft/agent-governance-toolkit"
-      }
-    },
-    {
-      "id": "openclaw-local-ai-agent",
-      "name": "OpenClaw",
-      "category": "otherLLM",
-      "oneLineDescription": "Local-first AI personal agent with 50+ integrations (WhatsApp, Slack, iMessage) that writes its own skills.",
-      "estimatedSetupMinutes": 20,
-      "detail": {
-        "whatItDoes": "OpenClaw is an open-source local AI assistant and agent gateway. It runs entirely on your own device and connects AI models to over 50 integrations including WhatsApp, Telegram, Slack, Discord, Signal, and iMessage. Unlike cloud-based assistants, all data stays on your machine. The assistant runs persistently in the background and can browse the web, fill out forms, run shell commands, write and execute code, and control desktop apps. Its standout capability: it can write new skills for itself, extending its own functionality without manual developer intervention. Originally created by PSPDFKit founder Peter Steinberger, it went viral in January 2026 (9K to 210K+ stars in weeks) and has since transitioned to an open-source foundation after Steinberger joined OpenAI.",
-        "whoItsFor": "Developers and power users who want a fully private, always-on AI agent without sending data to cloud APIs. Teams with strict data sovereignty requirements. Anyone building personal automation workflows across messaging platforms without writing custom integrations. Security-conscious individuals who want local inference via Ollama or llama.cpp as the model backend.",
-        "pros": [
-          "All data stays on your machine — no cloud API required if paired with Ollama or another local inference backend",
-          "50+ messaging and productivity integrations available out of the box with no custom API connection work",
-          "Self-extending: the agent writes new skill modules for itself based on observed user workflows",
-          "210K+ GitHub stars with an active open-source foundation maintaining it post-Steinberger"
-        ],
-        "cons": [
-          "Requires broad OS permissions (shell access, contacts, browser control) — the permission surface is wide and security researchers have flagged that the community skill repository lacks rigorous vetting for malicious submissions",
-          "Self-written skills can behave unpredictably; production or enterprise use requires careful sandboxing and skill auditing before deployment"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- macOS (primary), Linux (beta), or Windows (via WSL2)\n- Node 20+ and npm\n- Optional but recommended: [Ollama](https://ollama.com) for local model inference (no API key needed)\n\n## Install\n\n```bash\n# Clone the repo\ngit clone https://github.com/openclaw-ai/openclaw\ncd openclaw\n\n# Install dependencies\nnpm install\n\n# Copy the example config\ncp config.example.json config.json\n```\n\n## Configure a model backend\n\n```json\n// config.json — local inference via Ollama (no API key)\n{\n  \"model\": {\n    \"provider\": \"ollama\",\n    \"name\": \"llama3.1:8b\",\n    \"base_url\": \"http://localhost:11434\"\n  }\n}\n```\n\n```json\n// config.json — cloud inference via OpenAI\n{\n  \"model\": {\n    \"provider\": \"openai\",\n    \"name\": \"gpt-4o\",\n    \"api_key\": \"sk-...\"\n  }\n}\n```\n\n## Start Ollama (if using local inference)\n\n```bash\n# Install Ollama first: https://ollama.com/download\nollama pull llama3.1:8b\nollama serve        # runs on localhost:11434 by default\n```\n\n## Launch OpenClaw\n\n```bash\nnpm run start\n# OpenClaw starts in the background and opens a tray icon\n# Access the dashboard at http://localhost:3000\n```\n\n## Add an integration (example: Slack)\n\n```bash\n# From the dashboard -> Integrations -> Slack\n# Follow the OAuth flow, then test:\nnpx openclaw test-integration slack\n```\n\n## Write a custom skill manually\n\n```javascript\n// skills/summarize-slack-channel.js\nmodule.exports = {\n  name: 'summarize-slack-channel',\n  description: 'Summarizes the last N messages in a Slack channel',\n  parameters: { channel: 'string', count: 'number' },\n  async run({ channel, count }, { integrations }) {\n    const messages = await integrations.slack.getMessages(channel, count);\n    return messages.map(m => `${m.user}: ${m.text}`).join('\\n');\n  }\n};\n```\n\n**Gotcha:** The community skill repository (`skills/community/`) is not centrally reviewed. Before installing any community skill, read its source — a malicious skill with shell access can exfiltrate files. Stick to first-party skills or skills you've read yourself until the foundation ships a formal review process.",
-        "sourceURL": "https://github.com/openclaw-ai/openclaw"
-      }
-    },
-    {
-      "id": "microsoft-foundry-local-windows-sdk",
-      "name": "AI Foundry for Windows SDK",
-      "category": "tooling",
-      "oneLineDescription": "Single NuGet package bundling ONNX Runtime, DirectML, and Copilot Runtime for on-device Windows AI agents.",
+      "oneLineDescription": "Compile-don't-prompt framework for building reliable LLM pipelines.",
       "estimatedSetupMinutes": 10,
       "detail": {
-        "whatItDoes": "The AI Foundry for Windows SDK, shipped at Build 2026, is a single NuGet package (`Microsoft.AI.Foundry.Local.WinML`) that bundles the ONNX Runtime, DirectML, and the Windows Copilot Runtime together. Previously, wiring up on-device AI on Windows required managing three separate libraries with incompatible versioning. The SDK auto-targets whatever compute is available: NPU on Copilot+ PCs, GPU on gaming rigs, CPU everywhere else. No Azure subscription, no API keys, no per-token cost — data stays on device. Minimum bar is Windows 10/11 x64 with 8GB RAM; 16GB is comfortable for larger models.\n\nThe SDK is the local runtime layer of the broader Windows Agent Framework. It supports C#, JavaScript, Python, and Rust. Agents built locally can be promoted to Azure Foundry Agent Service using the same `agent.json` manifest without rewrites — making it the lowest-friction path to local-first agent development on Windows.",
-        "whoItsFor": "Windows and .NET developers who want to run AI inference on-device without Azure costs or cloud dependencies. Enterprise teams with data residency requirements that prevent sending data to any cloud API. Game developers, productivity tool builders, and Copilot+ PC ISVs targeting Microsoft's new agent distribution channel (Windows Agent Store). Teams who want to prototype locally and deploy to Azure later without changing their code.",
+        "whatItDoes": "DSPy treats your LLM pipeline like compiled code: you declare signatures (inputs/outputs), provide a few examples, and DSPy optimizes the underlying prompts automatically. When you change models or improve the data, it re-compiles. No more hand-tuning prompts forever.",
+        "whoItsFor": "Engineers tired of prompt-engineering whack-a-mole. Teams running production LLM pipelines that need to be portable across models. Researchers benchmarking prompting strategies.",
         "pros": [
-          "Zero cloud cost for local execution — no API keys, no per-token billing, no Azure subscription required",
-          "Single package replaces three previously separate libraries (ONNX Runtime, DirectML, Copilot Runtime) with one versioned install",
-          "Hardware auto-targeting: NPU on Copilot+ PCs, GPU on gaming machines, CPU fallback everywhere else — no hardware-specific code branches",
-          "Same agent.json manifest works locally and in Azure Foundry Agent Service — no rewrites when scaling out"
+          "Treats prompts as compilation targets — change the model, re-compile, ship",
+          "Built-in optimizers (BootstrapFewShot, MIPRO) consistently beat hand-tuned prompts",
+          "Stanford-NLP-backed, real research velocity, active community"
         ],
         "cons": [
-          "Windows 10/11 x64 only; no macOS or Linux support — cross-platform teams cannot share the same local inference path",
-          "Larger models require 16GB+ RAM and a recent GPU or NPU for comfortable performance; 8GB minimum systems will hit latency limits on anything beyond a 3B parameter model"
+          "Steep concept curve: 'signatures', 'modules', 'optimizers' takes a weekend to internalize",
+          "Less useful for one-shot generation tasks where prompt-tuning is overkill"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Windows 10 or Windows 11 (x64)\n- 8 GB RAM minimum; 16 GB recommended\n- .NET 8+ or .NET 10 (for C# projects)\n- Optional: Copilot+ PC (Snapdragon X, AMD Strix, or Intel Lunar Lake) for NPU acceleration\n\n## Install Foundry Local (winget)\n\n```powershell\n# Install the Foundry Local runtime (already GA before Build 2026)\nwinget install Microsoft.FoundryLocal\n\n# Verify\nfoundry-local --version\n```\n\n## Add the SDK to your .NET project\n\n```bash\n# Core agent SDK\ndotnet add package Microsoft.Agents.AI\n\n# On-device WinML inference layer (the new Build 2026 package)\ndotnet add package Microsoft.AI.Foundry.Local.WinML\n```\n\n## Minimal C# on-device agent\n\n```csharp\nusing Microsoft.Agents.AI;\nusing Microsoft.AI.Foundry.Local.WinML;\n\n// Auto-selects NPU > GPU > CPU based on available hardware\nvar localModel = await WinMLModelLoader.LoadAsync(\"phi-3.5-mini\");\n\nvar agent = new Agent(new AgentConfig\n{\n    Name        = \"LocalResearchAgent\",\n    ModelClient = localModel,   // runs entirely on-device\n    Instructions = \"Answer questions concisely using only local knowledge.\"\n});\n\nvar response = await agent.RunAsync(\"Summarize the risks of agentic AI.\");\nConsole.WriteLine(response);\n// No network call made — data never leaves the machine\n```\n\n## Download a model for local use\n\n```powershell\n# List available on-device models\nfoundry-local model list\n\n# Pull a model (stored in %LOCALAPPDATA%\\Microsoft\\FoundryLocal\\models)\nfoundry-local model pull phi-3.5-mini\nfoundry-local model pull llama-3.2-3b\n```\n\n## Promote local agent to Azure Foundry Agent Service\n\n```bash\n# When you're ready to scale out, the same manifest works in Azure\nazd ai agent init   # generates agent.json from your local config\nazd deploy          # no container required — source-code deploy\n```\n\n**Gotcha:** The `WinML` package requires the Windows Copilot Runtime, which ships in Windows 11 24H2 and later. On Windows 10 or older Windows 11 builds, you need to install the runtime separately via `winget install Microsoft.CopilotRuntime`. Running `foundry-local doctor` will flag this and give you the exact install command.",
-        "sourceURL": "https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+        "setupGuideMarkdown": "## Setup DSPy in Python\n\n```bash\npip install dspy-ai\nexport ANTHROPIC_API_KEY=sk-ant-...\n```\n\n```python\nimport dspy\n\n# Configure your LM\nlm = dspy.LM(\"anthropic/claude-sonnet-4-6\")\ndspy.configure(lm=lm)\n\n# Declare a signature: inputs and outputs\nclass Summarize(dspy.Signature):\n    \"\"\"Summarize a paragraph in one sentence.\"\"\"\n    paragraph = dspy.InputField()\n    summary = dspy.OutputField(desc=\"one-sentence summary\")\n\n# Use it like a function\nsummarize = dspy.ChainOfThought(Summarize)\nresult = summarize(paragraph=\"DSPy is a framework that lets you...\")\nprint(result.summary)\n```\n\nFor real pipelines, add `BootstrapFewShot` optimizer with a small training set (5-20 examples) and let DSPy auto-tune the prompt.",
+        "sourceURL": "https://github.com/stanfordnlp/dspy"
       }
     }
   ]
