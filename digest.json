@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "weekOf": "2026-04-20T00:00:00Z",
+  "weekOf": "2026-06-01T00:00:00Z",
   "reportGeneratedAt": "2026-06-05T18:45:01Z",
   "learnGeneratedAt": "2026-04-23T06:00:00Z",
   "report": [
@@ -15,7 +15,7 @@
     {
       "id": "great-american-ai-act-draft-2026-06-04",
       "title": "Bipartisan House draft would freeze state AI development laws for 3 years",
-      "summary": "Reps. Obernolte (R-CA) and Trahan (D-MA) dropped a 269-page discussion draft of the Great American Artificial Intelligence Act, which would preempt all state laws regulating AI model development for three years and require frontier labs with over $500M revenue to publish public safety frameworks. Still a discussion draft — no committee vote scheduled.",
+      "summary": "Reps. Obernolte (R-CA) and Trahan (D-MA) dropped a 269-page discussion draft of the Great American Artificial Intelligence Act, which would preempt all state laws regulating AI model development for three years and require frontier labs with over $500M revenue to publish public safety frameworks. Still a discussion draft \u2014 no committee vote scheduled.",
       "category": "other",
       "sourceURL": "https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/",
       "significance": 7
@@ -39,7 +39,7 @@
     {
       "id": "anthropic-glasswing-expansion-2026-06-02",
       "title": "Anthropic expands Project Glasswing to 150 more orgs, adds Claude Security plugin",
-      "summary": "Glasswing — Anthropic's restricted-access program using Claude Mythos Preview for codebase vulnerability scanning — grew from ~50 to ~200 partner organizations and gained a Claude Security plugin that reviews code changes and suggests patches in the same session. Mythos itself remains invite-only; this is access expansion, not a public model release.",
+      "summary": "Glasswing \u2014 Anthropic's restricted-access program using Claude Mythos Preview for codebase vulnerability scanning \u2014 grew from ~50 to ~200 partner organizations and gained a Claude Security plugin that reviews code changes and suggests patches in the same session. Mythos itself remains invite-only; this is access expansion, not a public model release.",
       "category": "anthropic",
       "sourceURL": "https://releasebot.io/updates/anthropic",
       "significance": 6
@@ -55,7 +55,7 @@
     {
       "id": "jetbrains-mellum2-12b-moe-2026-06-05",
       "title": "JetBrains releases Mellum2, a 12B MoE model for multi-model coding pipelines",
-      "summary": "JetBrains shipped Mellum2, a 12B mixture-of-experts model designed for fast, specialized tasks inside multi-model AI pipelines — targeting IDE-native coding workflows rather than general-purpose chat. Positions as a lightweight drop-in for teams already using JetBrains tooling who want local or low-latency inference on narrow tasks.",
+      "summary": "JetBrains shipped Mellum2, a 12B mixture-of-experts model designed for fast, specialized tasks inside multi-model AI pipelines \u2014 targeting IDE-native coding workflows rather than general-purpose chat. Positions as a lightweight drop-in for teams already using JetBrains tooling who want local or low-latency inference on narrow tasks.",
       "category": "tooling",
       "sourceURL": "https://aiflashreport.com/topics/new-ai-model-releases.html",
       "significance": 5
@@ -95,14 +95,14 @@
         "whoItsFor": "Anyone building agent-style products: chatbots, personal assistants, customer-support bots, coding agents. If your app currently passes a giant 'previous turns' blob into every request, this replaces that with structured retrieval and dramatically lowers token cost.",
         "pros": [
           "Drop-in: existing message-completion calls work, memory is opt-in via a single header",
-          "Persists across sessions per user — no more 'sorry, who are you?' on every login",
+          "Persists across sessions per user \u2014 no more 'sorry, who are you?' on every login",
           "Claude decides relevance, so the prompt stays clean even with thousands of memories"
         ],
         "cons": [
           "Beta: schema and pricing are not yet final, expect breaking changes through Q2 2026",
-          "Per-user memory adds a privacy surface — you need a clear deletion path for GDPR/CCPA"
+          "Per-user memory adds a privacy surface \u2014 you need a clear deletion path for GDPR/CCPA"
         ],
-        "setupGuideMarkdown": "## Try the Memory API in TypeScript\n\n```bash\nnpm install @anthropic-ai/sdk\nexport ANTHROPIC_API_KEY=sk-ant-...\n```\n\n```typescript\nimport Anthropic from \"@anthropic-ai/sdk\";\n\nconst client = new Anthropic();\n\nconst response = await client.messages.create({\n  model: \"claude-sonnet-4-6\",\n  max_tokens: 1024,\n  system: \"You are a helpful assistant. Remember what the user tells you.\",\n  messages: [\n    { role: \"user\", content: \"My name is Aquib. I'm building an iOS app called AINews Weekly.\" }\n  ],\n  // Required beta header for v1 of the API\n  extra_headers: { \"anthropic-beta\": \"memory-2026-04-22\" },\n  // Memory bucket key — use a stable per-user identifier\n  metadata: { user_id: \"aquib-123\" }\n});\n\nconsole.log(response.content);\n```\n\nIn a follow-up call with the same `user_id`, ask 'what's my name?' — Claude pulls the memory automatically.",
+        "setupGuideMarkdown": "## Try the Memory API in TypeScript\n\n```bash\nnpm install @anthropic-ai/sdk\nexport ANTHROPIC_API_KEY=sk-ant-...\n```\n\n```typescript\nimport Anthropic from \"@anthropic-ai/sdk\";\n\nconst client = new Anthropic();\n\nconst response = await client.messages.create({\n  model: \"claude-sonnet-4-6\",\n  max_tokens: 1024,\n  system: \"You are a helpful assistant. Remember what the user tells you.\",\n  messages: [\n    { role: \"user\", content: \"My name is Aquib. I'm building an iOS app called AINews Weekly.\" }\n  ],\n  // Required beta header for v1 of the API\n  extra_headers: { \"anthropic-beta\": \"memory-2026-04-22\" },\n  // Memory bucket key \u2014 use a stable per-user identifier\n  metadata: { user_id: \"aquib-123\" }\n});\n\nconsole.log(response.content);\n```\n\nIn a follow-up call with the same `user_id`, ask 'what's my name?' \u2014 Claude pulls the memory automatically.",
         "sourceURL": "https://docs.claude.com/en/api/memory"
       }
     },
@@ -116,7 +116,7 @@
         "whatItDoes": "DSPy treats your LLM pipeline like compiled code: you declare signatures (inputs/outputs), provide a few examples, and DSPy optimizes the underlying prompts automatically. When you change models or improve the data, it re-compiles. No more hand-tuning prompts forever.",
         "whoItsFor": "Engineers tired of prompt-engineering whack-a-mole. Teams running production LLM pipelines that need to be portable across models. Researchers benchmarking prompting strategies.",
         "pros": [
-          "Treats prompts as compilation targets — change the model, re-compile, ship",
+          "Treats prompts as compilation targets \u2014 change the model, re-compile, ship",
           "Built-in optimizers (BootstrapFewShot, MIPRO) consistently beat hand-tuned prompts",
           "Stanford-NLP-backed, real research velocity, active community"
         ],
