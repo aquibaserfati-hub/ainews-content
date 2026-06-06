@@ -1,64 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-01T00:00:00Z",
-  "reportGeneratedAt": "2026-06-05T18:45:01Z",
+  "reportGeneratedAt": "2026-06-06T08:39:39Z",
   "learnGeneratedAt": "2026-04-23T06:00:00Z",
   "report": [
     {
-      "id": "openai-dreaming-v3-memory-2026-06-04",
-      "title": "OpenAI ships Dreaming V3, overhauling ChatGPT memory architecture",
-      "summary": "Dreaming V3 replaces the saved-memories list as ChatGPT's memory foundation, synthesizing context automatically across conversations without explicit user prompts. Rolling out now to US Plus/Pro users; free-tier access follows as a ~5x compute efficiency gain makes it viable at scale.",
+      "id": "openai-gpt55-codex-bedrock-ga-2026-06-01",
+      "title": "OpenAI GPT-5.5 and Codex go GA on Amazon Bedrock",
+      "summary": "GPT-5.5, GPT-5.4, and Codex are now generally available on Amazon Bedrock in both Commercial and GovCloud regions, with pricing matching OpenAI first-party rates and usage counting toward AWS commits. Teams already inside AWS can now route Codex through IAM, PrivateLink, and Bedrock's inference engine without standing up a separate OpenAI integration.",
       "category": "openai",
-      "sourceURL": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "sourceURL": "https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available/",
       "significance": 7
     },
     {
-      "id": "great-american-ai-act-draft-2026-06-04",
-      "title": "Bipartisan House draft would freeze state AI development laws for 3 years",
-      "summary": "Reps. Obernolte (R-CA) and Trahan (D-MA) dropped a 269-page discussion draft of the Great American Artificial Intelligence Act, which would preempt all state laws regulating AI model development for three years and require frontier labs with over $500M revenue to publish public safety frameworks. Still a discussion draft \u2014 no committee vote scheduled.",
-      "category": "other",
-      "sourceURL": "https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/",
-      "significance": 7
-    },
-    {
-      "id": "openai-codex-bedrock-ga-2026-06-03",
-      "title": "OpenAI models and Codex go GA on Amazon Bedrock",
-      "summary": "OpenAI's full model lineup, including GPT-5.5, plus its Codex software engineering agent are now generally available on AWS Bedrock in both Commercial and GovCloud regions. Builders who already live in AWS can now skip cross-cloud credential plumbing and route directly through Bedrock's IAM and governance controls.",
+      "id": "openai-chatgpt-dreaming-memory-2026-06-04",
+      "title": "OpenAI ships 'Dreaming' memory to all ChatGPT tiers including Free",
+      "summary": "Dreaming is a background process that synthesizes cross-conversation memory into a coherent user profile, replacing scattered saved-memory bullet points with time-aware context that updates automatically as facts go stale. Free users now get access after the feature had been Plus/Pro-only.",
       "category": "openai",
-      "sourceURL": "https://releasebot.io/updates/openai",
+      "sourceURL": "https://openai.com/index/better-memory-for-a-more-helpful-chatgpt/",
       "significance": 6
     },
     {
-      "id": "microsoft-mai-code-1-flash-build-2026-06-03",
-      "title": "Microsoft ships MAI-Code-1-Flash and MAI-Thinking-1 at Build 2026",
-      "summary": "Microsoft launched its first proprietary coding model (MAI-Code-1-Flash) and a mid-size reasoning model (MAI-Thinking-1) at Build, pitching both on low token cost rather than raw benchmark scores. Positions Microsoft to stop routing all coding traffic through Anthropic and OpenAI, though neither model has published third-party evals yet.",
-      "category": "otherLLM",
-      "sourceURL": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-glasswing-expansion-2026-06-02",
-      "title": "Anthropic expands Project Glasswing to 150 more orgs, adds Claude Security plugin",
-      "summary": "Glasswing \u2014 Anthropic's restricted-access program using Claude Mythos Preview for codebase vulnerability scanning \u2014 grew from ~50 to ~200 partner organizations and gained a Claude Security plugin that reviews code changes and suggests patches in the same session. Mythos itself remains invite-only; this is access expansion, not a public model release.",
+      "id": "anthropic-glasswing-expansion-claude-security-2026-06",
+      "title": "Anthropic expands Project Glasswing to 150 new orgs, ships Claude Security plugin",
+      "summary": "Anthropic extended Claude Mythos Preview access to roughly 150 additional organizations and released the Claude Security plugin for Claude Code, which runs a fast pattern check on each edit and a deeper agentic review on commit or push. Partners have flagged more than 10,000 high- or critical-severity flaws so far.",
       "category": "anthropic",
       "sourceURL": "https://releasebot.io/updates/anthropic",
-      "significance": 6
+      "significance": 7
     },
     {
-      "id": "anthropic-ipo-s1-filing-2026-06-01",
-      "title": "Anthropic confidentially files S-1 with the SEC",
-      "summary": "Anthropic submitted a confidential draft S-1 on June 1, following its $65B Series H at a $965B valuation and a run-rate revenue figure that crossed $30B ARR. No public prospectus yet; IPO timeline unconfirmed.",
+      "id": "anthropic-opus48-default-claude-code-2026-06",
+      "title": "Claude Opus 4.8 becomes the default model in Claude Code",
+      "summary": "Opus 4.8 is now the default across Max, Team Premium, Enterprise pay-as-you-go, and the Anthropic API, requiring Claude Code v2.1.154 or later. The release also ships parallel-subagent workflows via /workflows for codebase-wide audits and large migrations.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
-      "significance": 6
+      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "significance": 7
     },
     {
-      "id": "jetbrains-mellum2-12b-moe-2026-06-05",
-      "title": "JetBrains releases Mellum2, a 12B MoE model for multi-model coding pipelines",
-      "summary": "JetBrains shipped Mellum2, a 12B mixture-of-experts model designed for fast, specialized tasks inside multi-model AI pipelines \u2014 targeting IDE-native coding workflows rather than general-purpose chat. Positions as a lightweight drop-in for teams already using JetBrains tooling who want local or low-latency inference on narrow tasks.",
-      "category": "tooling",
-      "sourceURL": "https://aiflashreport.com/topics/new-ai-model-releases.html",
-      "significance": 5
+      "id": "deepseek-v4-pro-75pct-price-permanent-2026-06-01",
+      "title": "DeepSeek makes V4-Pro's 75% price cut permanent",
+      "summary": "What was a promotional discount through May 31 is now the list rate: $0.435/$0.87 per million input/output tokens, roughly 17-19x cheaper than Claude Opus 4.7 and GPT-5.5 on output for comparable reasoning tasks. Cache-hit pricing at $0.003625/MTok is now the lowest first-party frontier-model cache price on the market, making V4-Pro a hard-to-ignore option for high-volume agent loops.",
+      "category": "otherLLM",
+      "sourceURL": "https://www.engadget.com/2180062/deepseek-permanently-reduces-the-price-of-its-flagship-v4-model-by-75-percent/",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-ipo-confidential-filing-2026-06-02",
+      "title": "Anthropic confidentially files IPO at $965B valuation, targets October listing",
+      "summary": "Anthropic filed its S-1 confidentially around June 2, following a $65B funding round at a $965B post-money valuation that put it ahead of OpenAI by market cap. Expected listing window is October 2026, setting the public-market comparable that OpenAI's own September roadshow will be measured against.",
+      "category": "anthropic",
+      "sourceURL": "https://www.cnbc.com/amp/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html",
+      "significance": 6
     }
   ],
   "learn": [
@@ -95,14 +87,14 @@
         "whoItsFor": "Anyone building agent-style products: chatbots, personal assistants, customer-support bots, coding agents. If your app currently passes a giant 'previous turns' blob into every request, this replaces that with structured retrieval and dramatically lowers token cost.",
         "pros": [
           "Drop-in: existing message-completion calls work, memory is opt-in via a single header",
-          "Persists across sessions per user \u2014 no more 'sorry, who are you?' on every login",
+          "Persists across sessions per user — no more 'sorry, who are you?' on every login",
           "Claude decides relevance, so the prompt stays clean even with thousands of memories"
         ],
         "cons": [
           "Beta: schema and pricing are not yet final, expect breaking changes through Q2 2026",
-          "Per-user memory adds a privacy surface \u2014 you need a clear deletion path for GDPR/CCPA"
+          "Per-user memory adds a privacy surface — you need a clear deletion path for GDPR/CCPA"
         ],
-        "setupGuideMarkdown": "## Try the Memory API in TypeScript\n\n```bash\nnpm install @anthropic-ai/sdk\nexport ANTHROPIC_API_KEY=sk-ant-...\n```\n\n```typescript\nimport Anthropic from \"@anthropic-ai/sdk\";\n\nconst client = new Anthropic();\n\nconst response = await client.messages.create({\n  model: \"claude-sonnet-4-6\",\n  max_tokens: 1024,\n  system: \"You are a helpful assistant. Remember what the user tells you.\",\n  messages: [\n    { role: \"user\", content: \"My name is Aquib. I'm building an iOS app called AINews Weekly.\" }\n  ],\n  // Required beta header for v1 of the API\n  extra_headers: { \"anthropic-beta\": \"memory-2026-04-22\" },\n  // Memory bucket key \u2014 use a stable per-user identifier\n  metadata: { user_id: \"aquib-123\" }\n});\n\nconsole.log(response.content);\n```\n\nIn a follow-up call with the same `user_id`, ask 'what's my name?' \u2014 Claude pulls the memory automatically.",
+        "setupGuideMarkdown": "## Try the Memory API in TypeScript\n\n```bash\nnpm install @anthropic-ai/sdk\nexport ANTHROPIC_API_KEY=sk-ant-...\n```\n\n```typescript\nimport Anthropic from \"@anthropic-ai/sdk\";\n\nconst client = new Anthropic();\n\nconst response = await client.messages.create({\n  model: \"claude-sonnet-4-6\",\n  max_tokens: 1024,\n  system: \"You are a helpful assistant. Remember what the user tells you.\",\n  messages: [\n    { role: \"user\", content: \"My name is Aquib. I'm building an iOS app called AINews Weekly.\" }\n  ],\n  // Required beta header for v1 of the API\n  extra_headers: { \"anthropic-beta\": \"memory-2026-04-22\" },\n  // Memory bucket key — use a stable per-user identifier\n  metadata: { user_id: \"aquib-123\" }\n});\n\nconsole.log(response.content);\n```\n\nIn a follow-up call with the same `user_id`, ask 'what's my name?' — Claude pulls the memory automatically.",
         "sourceURL": "https://docs.claude.com/en/api/memory"
       }
     },
@@ -116,7 +108,7 @@
         "whatItDoes": "DSPy treats your LLM pipeline like compiled code: you declare signatures (inputs/outputs), provide a few examples, and DSPy optimizes the underlying prompts automatically. When you change models or improve the data, it re-compiles. No more hand-tuning prompts forever.",
         "whoItsFor": "Engineers tired of prompt-engineering whack-a-mole. Teams running production LLM pipelines that need to be portable across models. Researchers benchmarking prompting strategies.",
         "pros": [
-          "Treats prompts as compilation targets \u2014 change the model, re-compile, ship",
+          "Treats prompts as compilation targets — change the model, re-compile, ship",
           "Built-in optimizers (BootstrapFewShot, MIPRO) consistently beat hand-tuned prompts",
           "Stanford-NLP-backed, real research velocity, active community"
         ],
