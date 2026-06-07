@@ -1,55 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-01T00:00:00Z",
-  "reportGeneratedAt": "2026-06-06T08:39:39Z",
+  "reportGeneratedAt": "2026-06-07T09:19:59Z",
   "learnGeneratedAt": "2026-04-23T06:00:00Z",
   "report": [
     {
-      "id": "openai-gpt55-codex-bedrock-ga-2026-06-01",
-      "title": "OpenAI GPT-5.5 and Codex go GA on Amazon Bedrock",
-      "summary": "GPT-5.5, GPT-5.4, and Codex are now generally available on Amazon Bedrock in both Commercial and GovCloud regions, with pricing matching OpenAI first-party rates and usage counting toward AWS commits. Teams already inside AWS can now route Codex through IAM, PrivateLink, and Bedrock's inference engine without standing up a separate OpenAI integration.",
+      "id": "google-gemini-35-flash-ga-2026-05-19",
+      "title": "Gemini 3.5 Flash goes GA: beats last-gen Pro on coding and agents",
+      "summary": "Google shipped Gemini 3.5 Flash as a stable, production-ready model via the Gemini API, AI Studio, Vertex, and the Gemini app globally. It outperforms Gemini 3.1 Pro on agentic and coding benchmarks at $1.50/$9.00 per million tokens, with a 1M-token context window and 65k max output — making it the practical default for codebase-spanning agent work right now.",
+      "category": "google",
+      "sourceURL": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "significance": 8
+    },
+    {
+      "id": "openai-chatgpt-dreaming-v3-memory-2026-06-04",
+      "title": "OpenAI ships Dreaming V3: ChatGPT memory now auto-updates across sessions",
+      "summary": "OpenAI rolled out Dreaming V3, a rebuilt background memory architecture that synthesizes context across years of past conversations and automatically revises stale facts — no user prompts needed. Plus and Pro US users got it first on June 4; Free tier follows after a ~5x compute cost reduction made it viable at scale. Plus and Pro users also get 2x the memory capacity.",
       "category": "openai",
-      "sourceURL": "https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available/",
+      "sourceURL": "https://openai.com/index/chatgpt-memory-dreaming/",
       "significance": 7
     },
     {
-      "id": "openai-chatgpt-dreaming-memory-2026-06-04",
-      "title": "OpenAI ships 'Dreaming' memory to all ChatGPT tiers including Free",
-      "summary": "Dreaming is a background process that synthesizes cross-conversation memory into a coherent user profile, replacing scattered saved-memory bullet points with time-aware context that updates automatically as facts go stale. Free users now get access after the feature had been Plus/Pro-only.",
+      "id": "openai-codex-goal-mode-ga-windows-computer-use-2026-06",
+      "title": "Codex ships Goal Mode GA, Windows Computer Use, and workspace plugin sharing",
+      "summary": "Codex Goal Mode — define an outcome and let Codex run toward it autonomously — is now generally available across the app, IDE extension, and CLI. The same update adds Computer Use on Windows, remote continuation from mobile, and default plugin sharing for Enterprise workspaces, tightening Codex's grip on the agentic coding workflow.",
       "category": "openai",
-      "sourceURL": "https://openai.com/index/better-memory-for-a-more-helpful-chatgpt/",
+      "sourceURL": "https://developers.openai.com/codex/changelog",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-claude-partner-hub-services-track-2026-06-03",
+      "title": "Anthropic launches Services Track and Partner Hub for Claude Partner Network",
+      "summary": "Anthropic added a Services Track and Partner Hub to the Claude Partner Network, giving enterprises a public directory of vetted implementation partners and a transparent tier ladder with twice-yearly promotion reviews. Builders evaluating Claude for production can now find certified firms without cold outreach; the $100M partner training fund backs the program.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 5
+    },
+    {
+      "id": "anthropic-claude-opus-41-deprecation-2026-06",
+      "title": "Anthropic deprecates Claude Opus 4.1, retirement set for August 5",
+      "summary": "Anthropic announced the deprecation of claude-opus-4-1-20250805 from the Claude API, with shutdown on August 5, 2026. Teams still on Opus 4.1 should migrate to Opus 4.8, which scores 88.6% on SWE-bench Verified and adds parallel sub-agent workflows.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
       "significance": 6
     },
     {
-      "id": "anthropic-glasswing-expansion-claude-security-2026-06",
-      "title": "Anthropic expands Project Glasswing to 150 new orgs, ships Claude Security plugin",
-      "summary": "Anthropic extended Claude Mythos Preview access to roughly 150 additional organizations and released the Claude Security plugin for Claude Code, which runs a fast pattern check on each edit and a deeper agentic review on commit or push. Partners have flagged more than 10,000 high- or critical-severity flaws so far.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
-      "significance": 7
+      "id": "openai-o3-gpt45-chatgpt-retirement-2026-06",
+      "title": "OpenAI retires o3 and GPT-4.5 from ChatGPT — API unaffected",
+      "summary": "OpenAI announced GPT-4.5 leaves ChatGPT on June 27 and o3 on August 26, both following sunset periods. The API is untouched, so production integrations are safe; the change only affects model-picker options for paid ChatGPT users.",
+      "category": "openai",
+      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "significance": 5
     },
     {
-      "id": "anthropic-opus48-default-claude-code-2026-06",
-      "title": "Claude Opus 4.8 becomes the default model in Claude Code",
-      "summary": "Opus 4.8 is now the default across Max, Team Premium, Enterprise pay-as-you-go, and the Anthropic API, requiring Claude Code v2.1.154 or later. The release also ships parallel-subagent workflows via /workflows for codebase-wide audits and large migrations.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
-      "significance": 7
-    },
-    {
-      "id": "deepseek-v4-pro-75pct-price-permanent-2026-06-01",
-      "title": "DeepSeek makes V4-Pro's 75% price cut permanent",
-      "summary": "What was a promotional discount through May 31 is now the list rate: $0.435/$0.87 per million input/output tokens, roughly 17-19x cheaper than Claude Opus 4.7 and GPT-5.5 on output for comparable reasoning tasks. Cache-hit pricing at $0.003625/MTok is now the lowest first-party frontier-model cache price on the market, making V4-Pro a hard-to-ignore option for high-volume agent loops.",
+      "id": "alibaba-qwen-37-max-cost-pressure-2026-06",
+      "title": "Qwen 3.7 Max draws builder attention at half the cost of Claude Sonnet 4.6",
+      "summary": "Alibaba's Qwen 3.7 Max is scoring within range of Claude Opus 4.7 on agentic benchmarks at roughly $1.50/$6 per million input/output tokens — versus Sonnet 4.6 at $3/$15. For high-volume agent workloads the cost delta is now large enough to stress-test vendor loyalty.",
       "category": "otherLLM",
-      "sourceURL": "https://www.engadget.com/2180062/deepseek-permanently-reduces-the-price-of-its-flagship-v4-model-by-75-percent/",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-ipo-confidential-filing-2026-06-02",
-      "title": "Anthropic confidentially files IPO at $965B valuation, targets October listing",
-      "summary": "Anthropic filed its S-1 confidentially around June 2, following a $65B funding round at a $965B post-money valuation that put it ahead of OpenAI by market cap. Expected listing window is October 2026, setting the public-market comparable that OpenAI's own September roadshow will be measured against.",
-      "category": "anthropic",
-      "sourceURL": "https://www.cnbc.com/amp/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html",
+      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026",
       "significance": 6
     }
   ],
