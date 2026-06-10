@@ -1,64 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-08T00:00:00Z",
-  "reportGeneratedAt": "2026-06-09T09:53:15Z",
+  "reportGeneratedAt": "2026-06-10T10:09:40Z",
   "learnGeneratedAt": "2026-06-08T12:00:00Z",
   "report": [
     {
-      "id": "openai-ipo-confidential-filing-2026-06-08",
-      "title": "OpenAI files confidentially for IPO, one week after Anthropic",
-      "summary": "OpenAI submitted a draft S-1 to the SEC on June 8, kicking off a dual-IPO race with Anthropic that Wall Street is calling the largest AI listings of 2026. The company signaled timing is undecided and flagged it may stay private longer — relevant context given WSJ reporting that OpenAI projects burning $85B in 2028 even after doubling revenue.",
-      "category": "openai",
-      "sourceURL": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/",
+      "id": "anthropic-claude-fable-5-2026-06-09",
+      "title": "Anthropic ships Claude Fable 5: first Mythos-class model for general use",
+      "summary": "Fable 5 is now live on the Claude API and Amazon Bedrock at $10/$50 per million tokens, with a 1M-token context window and 128K max output — same underlying model as Mythos 5 but with safety classifiers that reroute ~5% of sessions to Opus 4.8 for high-risk topics. Subscription plans (Pro, Max, Team, Enterprise) get free access through June 22, then shift to usage credits; builders integrating today should account for mandatory 30-day traffic retention Anthropic is requiring to operate the safety scaffolding.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "significance": 9
+    },
+    {
+      "id": "anthropic-claude-mythos-5-glasswing-2026-06-09",
+      "title": "Anthropic also launches Mythos 5 for vetted infra providers via Glasswing",
+      "summary": "Alongside the public Fable 5 release, Anthropic deployed Claude Mythos 5 — the same model with safeguards lifted — exclusively through Project Glasswing in collaboration with the US government, positioned as the strongest cybersecurity model in the world. Access stays gated to approved infrastructure providers for now, with a broader trusted-access program planned.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
       "significance": 7
     },
     {
-      "id": "openai-chatgpt-lockdown-mode-2026-06-06",
-      "title": "OpenAI ships ChatGPT Lockdown Mode to block prompt-injection exfiltration",
-      "summary": "Lockdown Mode rolled out June 6 across Free, Plus, Pro, and self-serve Business plans — it cuts outbound network requests to reduce prompt-injection data-exfiltration risk at the cost of disabling some web-connected features. Builders running ChatGPT in sensitive-data workflows should test whether their integrations break under the new mode.",
+      "id": "apple-wwdc-2026-siri-ai-ios27-2026-06-08",
+      "title": "Apple WWDC 2026: Siri rebuilt on Gemini, iOS 27 ships developer beta",
+      "summary": "Apple shipped the Siri AI overhaul at WWDC on June 8 — a full ground-up rebuild powered by Google Gemini with real-time on-screen awareness, a standalone chatbot interface, and multi-step cross-app task execution. iOS 27 developer beta dropped the same day; Xcode 27 opens AI coding agent support to multiple external model providers including Claude, a meaningful shift from Apple's historically locked ecosystem. EU launch of Siri AI is blocked at release due to DMA compliance concerns.",
+      "category": "other",
+      "sourceURL": "https://www.tomsguide.com/news/live/wwdc-2026-live-news-updates",
+      "significance": 8
+    },
+    {
+      "id": "openai-confidential-ipo-filing-2026-06-08",
+      "title": "OpenAI confidentially files IPO prospectus with the SEC",
+      "summary": "OpenAI submitted a draft S-1 to the SEC on June 8, joining Anthropic (filed June 1) in queuing for a public listing; the company is valued at $852 billion post-money. No public access to the filing yet — announcement only, no product shipped.",
       "category": "openai",
-      "sourceURL": "https://thehackernews.com/",
+      "sourceURL": "https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-openai-joins-anthropic-spacex-in-filing-ipo-paperwork-apple-stock-falls-after-wwdc-120420800.html",
       "significance": 6
     },
     {
-      "id": "openai-dreaming-v3-memory-2026-06-04",
-      "title": "OpenAI's Dreaming V3 memory ships to Plus and Pro users",
-      "summary": "Dreaming V3 is a background-synthesis memory architecture that automatically builds user profiles without explicit 'remember this' commands — roughly 5x more compute-efficient than the prior system, which is what enabled free-tier access. Began rolling out to US Plus and Pro on June 4; drop-in improvement for anyone building on the ChatGPT memory API.",
-      "category": "openai",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-5-2026",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-glasswing-expansion-june-2026",
-      "title": "Anthropic expands Project Glasswing to 200 orgs, grants ENISA first EU Mythos access",
-      "summary": "Glasswing grew to 200 total partner organizations across 15+ countries on June 2, adding power, water, healthcare, and hardware sectors; separately, EU cybersecurity agency ENISA became the first non-US entity to receive Claude Mythos access. Partners have now flagged 23,000 potential vulnerabilities in 1,000 open-source projects — Anthropic is using this as its enterprise-depth narrative ahead of the IPO.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
-      "significance": 6
-    },
-    {
-      "id": "anthropic-claude-partner-network-services-track-2026-06-03",
-      "title": "Anthropic launches Services Track and Partner Hub for Claude Partner Network",
-      "summary": "Announced June 3, the Services Track formalizes a structured channel for implementation and integration partners building on Claude. Builders scoping enterprise deals now have a cleaner path to co-sell and co-build with Anthropic's partner ecosystem.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
+      "id": "spacex-ai1-orbital-datacenter-2026-06-09",
+      "title": "SpaceX reveals AI1 orbital data center satellite ahead of Friday IPO",
+      "summary": "SpaceX dropped a video Monday revealing AI1, its first orbital data center satellite, days before its anticipated public market debut on June 12. Announcement only — no technical specs or availability timeline confirmed.",
+      "category": "other",
+      "sourceURL": "https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-openai-joins-anthropic-spacex-in-filing-ipo-paperwork-apple-stock-falls-after-wwdc-120420800.html",
       "significance": 5
     },
     {
-      "id": "microsoft-mai-models-build-2026",
-      "title": "Microsoft ships MAI-Code-1-Flash and MAI-Thinking-1 at Build 2026",
-      "summary": "At Build, Microsoft launched MAI-Code-1-Flash — its first in-house text-to-code model — and MAI-Thinking-1, a reasoning model available in private preview via Microsoft Foundry. Both moves are Microsoft's direct attempt to reduce margin leakage to OpenAI and Anthropic as those two race toward IPO.",
-      "category": "tooling",
-      "sourceURL": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html",
-      "significance": 7
-    },
-    {
-      "id": "gemini-35-pro-pending-grok5-rumor-june-2026",
-      "title": "Gemini 3.5 Pro still unscheduled; Grok 5 Polymarket odds collapse to ~12%",
-      "summary": "Gemini 3.5 Flash is in production at $1.50/$9.00 per million tokens and already beats Gemini 3.1 Pro on coding benchmarks at 4x the speed, but Pro has no public model ID or release date despite Pichai's I/O stage promise. Grok 5 Polymarket odds for a June ship dropped from 68% to roughly 12% — both are watchlist items, not integration targets.",
+      "id": "google-vertex-vector-search-2-ga-2026",
+      "title": "Google ships Vector Search 2.0 GA on Vertex AI",
+      "summary": "Vector Search 2.0 is now generally available on Vertex AI, adding unified data-plus-vector collections, auto-embeddings, and hybrid search combining vector, full-text, and semantic re-ranking in a single parallel query. Drop-in upgrade for RAG pipelines already on Vertex.",
       "category": "google",
-      "sourceURL": "https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/",
-      "significance": 5
+      "sourceURL": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
+      "significance": 6
     }
   ],
   "learn": [
