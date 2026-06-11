@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-08T00:00:00Z",
-  "reportGeneratedAt": "2026-06-11T12:00:00Z",
+  "reportGeneratedAt": "2026-06-11T10:43:11Z",
   "learnGeneratedAt": "2026-06-11T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-ipo-s1-sec-2026-06-01",
-      "title": "Anthropic files confidential S-1 with SEC, targets public listing",
-      "summary": "Anthropic submitted a draft Form S-1 on June 1 at a $965B post-money valuation, days after closing a $65B Series H. No share count or price range is set yet — this starts the SEC review clock, not a listing date. Run-rate revenue has crossed $47B, up from $9B at end of 2025.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/confidential-draft-s1-sec",
-      "significance": 8
+      "id": "openai-oracle-oci-codex-2026-06-11",
+      "title": "OpenAI and Oracle let enterprises spend OCI credits on GPT models and Codex",
+      "summary": "Oracle cloud customers can now apply existing Universal Credits toward OpenAI frontier models and Codex through OCI, removing the need for a separate procurement path. Rollout is coming in the next few weeks — no new contract required for Oracle shops already committed to OCI.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/openai-on-oracle-cloud/",
+      "significance": 6
     },
     {
-      "id": "microsoft-build-2026-mai-models-github-copilot-app-2026-06-02",
-      "title": "Microsoft Build ships 7 MAI models and GitHub Copilot desktop app",
-      "summary": "Microsoft debuted MAI-Thinking-1 (35B MoE, 53% SWE-Bench Pro), MAI-Code-1-Flash for GitHub Copilot CLI, and a new GitHub Copilot desktop app in technical preview that runs parallel agent sessions in isolated git worktrees. MAI-Code-1-Flash is priced below Claude Haiku 4.5 in Copilot's token billing, giving enterprise teams a cheaper routing option.",
-      "category": "tooling",
-      "sourceURL": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
-      "significance": 8
-    },
-    {
-      "id": "openai-chatgpt-memory-dreaming-2026-06-08",
-      "title": "OpenAI ships 'Dreaming' memory system with 2x capacity for Plus/Pro",
-      "summary": "ChatGPT's memory backend was replaced with a background synthesis system that auto-updates and deduplicates memories, doubling storage capacity for Plus and Pro users. A reviewable memory summary page is now available; rollout starts US-first with Free tier coming soon.",
+      "id": "openai-ipo-s1-2026-06-10",
+      "title": "OpenAI confidentially files draft S-1 with the SEC",
+      "summary": "OpenAI submitted a confidential draft S-1 to the SEC on June 10, kicking off the formal IPO process. No pricing or timeline disclosed — this is a filing event, not a public offering.",
       "category": "openai",
       "sourceURL": "https://openai.com/news/",
-      "significance": 6
+      "significance": 7
     },
     {
-      "id": "openai-codex-sites-workspace-agents-2026-06-03",
-      "title": "OpenAI Codex adds Sites hosting and Enterprise workspace agents",
-      "summary": "Codex now ships a Sites plugin (preview) that lets you deploy web apps, dashboards, and tools hosted by OpenAI directly from the Codex app. Separately, ChatGPT Enterprise/Edu added workspace agents that can own team workflows end-to-end; credit-based pricing starts July 6.",
+      "id": "openai-codex-sites-plugin-2026-06-10",
+      "title": "Codex ships Sites plugin and workspace-agent migration flows in latest release",
+      "summary": "The Codex app now includes a Sites plugin for building and hosting web apps and dashboards directly inside OAI infrastructure, plus a migration flow that imports Claude Code and Claude Cowork setups during onboarding. ChatGPT Business workspaces get Sites by default; Enterprise admins control access via RBAC.",
       "category": "openai",
-      "sourceURL": "https://openai.com/news/product-releases/",
+      "sourceURL": "https://releasebot.io/updates/openai/codex",
       "significance": 6
     },
     {
-      "id": "google-gemini-cli-deprecated-antigravity-cli-2026-06-18",
-      "title": "Google kills free Gemini CLI on June 18, replaces it with Antigravity CLI",
-      "summary": "Free, Pro, and Ultra Gemini CLI users lose API access on June 18 — any CI/CD scripts calling the gemini command will break with no grace period. The closed-source replacement, Antigravity CLI (Go rewrite, agy command), lacks 1:1 feature parity at launch. Enterprise Code Assist Standard/Enterprise licenses are unaffected.",
+      "id": "anthropic-when-ai-builds-itself-pause-proposal-2026-06-04",
+      "title": "Anthropic publishes global AI-pause proposal, cites Claude writing 80% of its own code",
+      "summary": "Anthropic's paper \"When AI builds itself\" calls for a globally coordinated option to slow frontier AI development, citing internal data that Claude now authors over 80% of code merged into Anthropic's own production codebase. The company did not commit to a unilateral halt — the proposal is a governance signal, not a product change.",
+      "category": "anthropic",
+      "sourceURL": "https://www.shumaker.com/insight/client-alert-anthropics-call-for-a-global-ai-pause-what-businesses-need-to-know-about-the-governance-landscape/",
+      "significance": 7
+    },
+    {
+      "id": "google-gemini-35-pro-pending-june-2026",
+      "title": "Gemini 3.5 Pro still incoming — no API ID or date, confirmed for June by Pichai",
+      "summary": "Gemini 3.5 Flash is in production at $1.50/$9.00 per million tokens and is already the default in the Gemini app and AI Mode in Search. Gemini 3.5 Pro has a confirmed June window from Sundar Pichai at Google I/O but no model card or public API ID yet — don't build against it until the stable ID lands in Google's docs.",
       "category": "google",
-      "sourceURL": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
-      "significance": 7
+      "sourceURL": "https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/",
+      "significance": 5
     },
     {
-      "id": "openai-gpt55-instant-default-model-2026-05-05",
-      "title": "GPT-5.5 Instant becomes ChatGPT's default model for all users",
-      "summary": "GPT-5.5 Instant replaced GPT-5.3 Instant as the default for all ChatGPT tiers, with sharper accuracy, reduced hallucination in law/medicine/finance, and better search-triggered responses. API alias is chat-latest; GPT-5.3 Instant remains available for paid users for 3 months.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/introducing-gpt-5-5/",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-claude-partner-network-services-track-2026-06-03",
-      "title": "Anthropic launches Claude Partner Network with Services Track and Partner Hub",
-      "summary": "Anthropic opened a formal partner program with a Services Track for system integrators and a Partner Hub directory, aimed at enterprise deployments of Claude. Builders building on Claude now have a structured path for co-selling and certification.",
+      "id": "anthropic-claude-partner-network-hub-2026-06-03",
+      "title": "Anthropic launches Services Track and Partner Hub for Claude Partner Network",
+      "summary": "Anthropic opened a Services Track and Partner Hub inside the Claude Partner Network on June 3, extending the ecosystem program beyond resellers to include implementation partners. Relevant for teams evaluating SI relationships for Claude Code enterprise rollouts.",
       "category": "anthropic",
       "sourceURL": "https://www.anthropic.com/news",
+      "significance": 5
+    },
+    {
+      "id": "openai-chatgpt-memory-upgrade-2026-06-08",
+      "title": "ChatGPT ships upgraded persistent memory across all paid tiers",
+      "summary": "OpenAI announced improved memory for ChatGPT on June 8, expanding what the model retains across sessions for more personalized responses. No API-level memory primitives were confirmed — this update is consumer-product-facing, not a developer primitive change.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/news/",
       "significance": 5
     }
   ],
