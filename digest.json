@@ -1,153 +1,180 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-08T00:00:00Z",
-  "reportGeneratedAt": "2026-06-10T10:09:40Z",
-  "learnGeneratedAt": "2026-06-08T12:00:00Z",
+  "reportGeneratedAt": "2026-06-11T12:00:00Z",
+  "learnGeneratedAt": "2026-06-11T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-claude-fable-5-2026-06-09",
-      "title": "Anthropic ships Claude Fable 5: first Mythos-class model for general use",
-      "summary": "Fable 5 is now live on the Claude API and Amazon Bedrock at $10/$50 per million tokens, with a 1M-token context window and 128K max output — same underlying model as Mythos 5 but with safety classifiers that reroute ~5% of sessions to Opus 4.8 for high-risk topics. Subscription plans (Pro, Max, Team, Enterprise) get free access through June 22, then shift to usage credits; builders integrating today should account for mandatory 30-day traffic retention Anthropic is requiring to operate the safety scaffolding.",
+      "id": "anthropic-ipo-s1-sec-2026-06-01",
+      "title": "Anthropic files confidential S-1 with SEC, targets public listing",
+      "summary": "Anthropic submitted a draft Form S-1 on June 1 at a $965B post-money valuation, days after closing a $65B Series H. No share count or price range is set yet — this starts the SEC review clock, not a listing date. Run-rate revenue has crossed $47B, up from $9B at end of 2025.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "significance": 9
-    },
-    {
-      "id": "anthropic-claude-mythos-5-glasswing-2026-06-09",
-      "title": "Anthropic also launches Mythos 5 for vetted infra providers via Glasswing",
-      "summary": "Alongside the public Fable 5 release, Anthropic deployed Claude Mythos 5 — the same model with safeguards lifted — exclusively through Project Glasswing in collaboration with the US government, positioned as the strongest cybersecurity model in the world. Access stays gated to approved infrastructure providers for now, with a broader trusted-access program planned.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "significance": 7
-    },
-    {
-      "id": "apple-wwdc-2026-siri-ai-ios27-2026-06-08",
-      "title": "Apple WWDC 2026: Siri rebuilt on Gemini, iOS 27 ships developer beta",
-      "summary": "Apple shipped the Siri AI overhaul at WWDC on June 8 — a full ground-up rebuild powered by Google Gemini with real-time on-screen awareness, a standalone chatbot interface, and multi-step cross-app task execution. iOS 27 developer beta dropped the same day; Xcode 27 opens AI coding agent support to multiple external model providers including Claude, a meaningful shift from Apple's historically locked ecosystem. EU launch of Siri AI is blocked at release due to DMA compliance concerns.",
-      "category": "other",
-      "sourceURL": "https://www.tomsguide.com/news/live/wwdc-2026-live-news-updates",
+      "sourceURL": "https://www.anthropic.com/news/confidential-draft-s1-sec",
       "significance": 8
     },
     {
-      "id": "openai-confidential-ipo-filing-2026-06-08",
-      "title": "OpenAI confidentially files IPO prospectus with the SEC",
-      "summary": "OpenAI submitted a draft S-1 to the SEC on June 8, joining Anthropic (filed June 1) in queuing for a public listing; the company is valued at $852 billion post-money. No public access to the filing yet — announcement only, no product shipped.",
+      "id": "microsoft-build-2026-mai-models-github-copilot-app-2026-06-02",
+      "title": "Microsoft Build ships 7 MAI models and GitHub Copilot desktop app",
+      "summary": "Microsoft debuted MAI-Thinking-1 (35B MoE, 53% SWE-Bench Pro), MAI-Code-1-Flash for GitHub Copilot CLI, and a new GitHub Copilot desktop app in technical preview that runs parallel agent sessions in isolated git worktrees. MAI-Code-1-Flash is priced below Claude Haiku 4.5 in Copilot's token billing, giving enterprise teams a cheaper routing option.",
+      "category": "tooling",
+      "sourceURL": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+      "significance": 8
+    },
+    {
+      "id": "openai-chatgpt-memory-dreaming-2026-06-08",
+      "title": "OpenAI ships 'Dreaming' memory system with 2x capacity for Plus/Pro",
+      "summary": "ChatGPT's memory backend was replaced with a background synthesis system that auto-updates and deduplicates memories, doubling storage capacity for Plus and Pro users. A reviewable memory summary page is now available; rollout starts US-first with Free tier coming soon.",
       "category": "openai",
-      "sourceURL": "https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-openai-joins-anthropic-spacex-in-filing-ipo-paperwork-apple-stock-falls-after-wwdc-120420800.html",
+      "sourceURL": "https://openai.com/news/",
       "significance": 6
     },
     {
-      "id": "spacex-ai1-orbital-datacenter-2026-06-09",
-      "title": "SpaceX reveals AI1 orbital data center satellite ahead of Friday IPO",
-      "summary": "SpaceX dropped a video Monday revealing AI1, its first orbital data center satellite, days before its anticipated public market debut on June 12. Announcement only — no technical specs or availability timeline confirmed.",
-      "category": "other",
-      "sourceURL": "https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-openai-joins-anthropic-spacex-in-filing-ipo-paperwork-apple-stock-falls-after-wwdc-120420800.html",
-      "significance": 5
+      "id": "openai-codex-sites-workspace-agents-2026-06-03",
+      "title": "OpenAI Codex adds Sites hosting and Enterprise workspace agents",
+      "summary": "Codex now ships a Sites plugin (preview) that lets you deploy web apps, dashboards, and tools hosted by OpenAI directly from the Codex app. Separately, ChatGPT Enterprise/Edu added workspace agents that can own team workflows end-to-end; credit-based pricing starts July 6.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/news/product-releases/",
+      "significance": 6
     },
     {
-      "id": "google-vertex-vector-search-2-ga-2026",
-      "title": "Google ships Vector Search 2.0 GA on Vertex AI",
-      "summary": "Vector Search 2.0 is now generally available on Vertex AI, adding unified data-plus-vector collections, auto-embeddings, and hybrid search combining vector, full-text, and semantic re-ranking in a single parallel query. Drop-in upgrade for RAG pipelines already on Vertex.",
+      "id": "google-gemini-cli-deprecated-antigravity-cli-2026-06-18",
+      "title": "Google kills free Gemini CLI on June 18, replaces it with Antigravity CLI",
+      "summary": "Free, Pro, and Ultra Gemini CLI users lose API access on June 18 — any CI/CD scripts calling the gemini command will break with no grace period. The closed-source replacement, Antigravity CLI (Go rewrite, agy command), lacks 1:1 feature parity at launch. Enterprise Code Assist Standard/Enterprise licenses are unaffected.",
       "category": "google",
-      "sourceURL": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
-      "significance": 6
+      "sourceURL": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
+      "significance": 7
+    },
+    {
+      "id": "openai-gpt55-instant-default-model-2026-05-05",
+      "title": "GPT-5.5 Instant becomes ChatGPT's default model for all users",
+      "summary": "GPT-5.5 Instant replaced GPT-5.3 Instant as the default for all ChatGPT tiers, with sharper accuracy, reduced hallucination in law/medicine/finance, and better search-triggered responses. API alias is chat-latest; GPT-5.3 Instant remains available for paid users for 3 months.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/introducing-gpt-5-5/",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-claude-partner-network-services-track-2026-06-03",
+      "title": "Anthropic launches Claude Partner Network with Services Track and Partner Hub",
+      "summary": "Anthropic opened a formal partner program with a Services Track for system integrators and a Partner Hub directory, aimed at enterprise deployments of Claude. Builders building on Claude now have a structured path for co-selling and certification.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 5
     }
   ],
   "learn": [
     {
-      "id": "claude-code-dynamic-workflows",
-      "name": "Claude Code Dynamic Workflows",
-      "category": "anthropic",
-      "oneLineDescription": "Spawn hundreds of parallel sub-agents from Claude Code for large codebase tasks.",
-      "estimatedSetupMinutes": 5,
+      "id": "github-copilot-desktop-app-2026",
+      "name": "GitHub Copilot Desktop App",
+      "category": "tooling",
+      "oneLineDescription": "Agent-native desktop app for managing parallel Copilot sessions across repos.",
+      "estimatedSetupMinutes": 10,
       "detail": {
-        "whatItDoes": "Dynamic Workflows is a Claude Code feature (available in v2.1.154+) where Claude writes an orchestration script for your task and then fans it out across many background sub-agents running in parallel. Each sub-agent operates in an isolated context window and reports back to a lead agent that synthesizes findings. You trigger a workflow with /workflows and manage runs from the same interface.\n\nUse cases include codebase-wide security audits, large framework migrations, incident post-mortems where sub-agents fan out through deploy history, error logs, metrics, and support tickets simultaneously. The full execution trace is visible in Claude Console — every sub-agent's actions, ordering, and reasoning are inspectable.",
-        "whoItsFor": "Platform engineers, senior developers, and teams running large codebase migrations or multi-file audits who have previously had to wire together custom orchestration code to parallelize Claude tasks. Requires a Max, Team Premium, or Enterprise plan with Opus 4.8 as the default model.",
+        "whatItDoes": "The GitHub Copilot desktop app is a native client for Windows, macOS, and Linux that treats AI agents as first-class, parallel workers. From a single 'My Work' view you can see active sessions, open issues, pull requests, and background automations across all connected repositories. Each agent session runs in its own git worktree so multiple agents can work concurrently without conflicting — you can then use 'agent merge' to bring changes together.\n\nThe app supports both cloud sandboxing (remote execution on GitHub infrastructure) and local sandboxing (process-isolated execution on your machine) with per-repo policy controls. It ships alongside the GitHub Copilot SDK, now GA in Node.js/TypeScript, Python, Go, .NET, Rust, and Java, letting you build custom tools the agents can call.",
+        "whoItsFor": "Developers who already use Claude Code or Codex CLI for multi-file tasks and want a GUI control plane. Useful for engineering managers who want visibility into what agents are doing across a team's repos. Requires an existing GitHub Copilot subscription (Pro, Pro+, Business, or Enterprise); Free users are on a waitlist.",
         "pros": [
-          "Parallelizes tasks that would previously require custom orchestration scripts",
-          "Full audit trail in Claude Console — every sub-agent action is inspectable",
-          "Works with self-hosted sandboxes (public beta) so code never leaves your perimeter",
-          "Automatically handles context management and error recovery across sub-agents"
+          "Parallel agent sessions in isolated git worktrees prevent conflicts with zero manual branching setup",
+          "Unified 'My Work' view across repos reduces context-switching when directing multiple long-running agents",
+          "GitHub Copilot SDK now GA in 6 languages — build custom tools agents can call without Python lock-in",
+          "Cloud and local sandboxing options with RBAC policy support for enterprise compliance"
         ],
         "cons": [
-          "Token costs scale linearly with sub-agent count — large workflows can be expensive fast",
-          "Requires Opus 4.8 (v2.1.154+); older versions will not support /workflows",
-          "Still early — complex dependency graphs between sub-agents are not yet natively modeled"
+          "Technical preview only — not feature-complete; some workflows still require CLI fallback",
+          "Requires a paid Copilot subscription; no free tier at launch and Free-user waitlist timeline is unspecified"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Claude Code v2.1.154 or later (`claude --version`)\n- Max, Team Premium, Enterprise pay-as-you-go, or Anthropic API plan\n- Opus 4.8 set as your active model\n\n## Step 1: Update Claude Code\n\n```bash\nnpm update -g @anthropic-ai/claude-code\nclaude --version  # should show 2.1.154 or later\n```\n\n## Step 2: Set Opus 4.8 as your model\n\nInside a Claude Code session:\n\n```\n/model opus-4-8\n```\n\nOr pin it in your project settings file `.claude/settings.json`:\n\n```json\n{\n  \"model\": \"claude-opus-4-8-20260601\",\n  \"effort\": \"high\"\n}\n```\n\nFor harder tasks, bump effort:\n\n```\n/effort xhigh\n```\n\n## Step 3: Trigger a workflow\n\nNavigate to your project root and start Claude Code:\n\n```bash\ncd your-project\nclaude\n```\n\nDescribe a large task naturally — Claude will decide if a workflow is appropriate:\n\n```\n> Audit every file in src/ for SQL injection vulnerabilities, then generate a patch for each one found.\n```\n\nOr explicitly manage workflows:\n\n```\n/workflows          # list active and past workflow runs\n/workflows status   # check sub-agent progress\n```\n\n## Gotcha: Token cost\n\nWorkflows spawn many sub-agents, each with its own context. A codebase-wide audit on a large repo can consume 10–50M tokens. Check your usage in Claude Console before kicking off wide searches. Use `/effort high` (not `xhigh`) for exploratory passes to limit per-sub-agent thinking budget.\n\n## Step 4 (optional): Enable self-hosted sandboxes\n\nFor teams that need code to stay in their perimeter, enroll in the public beta via Claude Console under **Settings > Managed Agents > Sandboxes**, then point execution at your own infrastructure (Cloudflare, Modal, Vercel, or a custom endpoint).",
-        "sourceURL": "https://releasebot.io/updates/anthropic/claude-code"
+        "setupGuideMarkdown": "## Prerequisites\n- GitHub account with Copilot Pro, Pro+, Business, or Enterprise subscription\n- Windows 11, macOS 12+, or Linux (x64/arm64)\n- Git 2.38+ installed\n\n## Install\n\nDownload the installer from the GitHub Copilot app page:\n\n```bash\n# macOS: install via the downloaded .dmg, then verify\ncopilot --version\n\n# Linux (Debian/Ubuntu): download .deb from the GitHub Copilot releases page\nsudo dpkg -i github-copilot-app_*.deb\ncopilot --version\n```\n\n## Authenticate\n\n```bash\n# Launch the app and sign in via browser OAuth\ncopilot auth login\n# Follow the browser prompt; your token is stored in the system keychain\n```\n\n## Connect a repository\n\n```bash\ncd ~/your-project\n# The app auto-detects repos; open My Work to see it appear\ncopilot workspace connect .\n```\n\n## Start a parallel agent session\n\nIn the app UI:\n1. Open **My Work** > **New Session**\n2. Type a prompt or drag in a GitHub Issue\n3. The agent spawns in an isolated git worktree under `.git/worktrees/`\n4. Start a second session from the same view — both run concurrently\n\n```bash\n# Verify worktrees created by the app\ngit worktree list\n```\n\n## Gotcha\nThe app requires `git worktree` support, which means your repo must not be a bare clone and must be on git 2.38+. Shallow clones (`--depth 1`) will cause agent sessions to fail silently on file-history-dependent tasks.",
+        "sourceURL": "https://github.blog/news-insights/product-news/github-copilot-app/"
       }
     },
     {
-      "id": "openai-codex-cli-rust",
-      "name": "OpenAI Codex CLI",
-      "category": "openai",
-      "oneLineDescription": "Open-source, Rust-built terminal coding agent from OpenAI backed by GPT-5.5.",
+      "id": "google-antigravity-cli-2026",
+      "name": "Google Antigravity CLI",
+      "category": "google",
+      "oneLineDescription": "Go-based successor to Gemini CLI with async multi-agent workflows and MCP support.",
       "estimatedSetupMinutes": 5,
       "detail": {
-        "whatItDoes": "Codex CLI is OpenAI's terminal coding agent. It runs locally, can read and modify files in your working directory, and executes shell commands. It is built in Rust for speed, is open source (github.com/openai/codex), and is backed by GPT-5.5. It supports multi-agent v2 (each spawned thread keeps its own model runtime choice), plugin sharing for Enterprise workspaces, remote-control pairing so a colleague can attach to your session, and sandboxed code execution.\n\nThe June 2026 releases added multi-agent v2 with cleaner follow-up defaults for spawned agents, machine-readable `codex plugin list --json` output, hosted web and image tools inside code-mode flows, and standalone parallel web searches.",
-        "whoItsFor": "Developers who want a ChatGPT-account-backed coding agent in the terminal without leaving OpenAI's ecosystem. ChatGPT Plus, Pro, Business, Edu, and Enterprise plans include Codex access. Teams on Enterprise get workspace-level plugin sharing so teammates can install shared local plugins from the Codex plugin directory.",
+        "whatItDoes": "Antigravity CLI (invoked as agy) is Google's closed-source replacement for Gemini CLI, built in Go for lower latency and a smaller binary footprint. Unlike Gemini CLI — which exposed a single Gemini session in the terminal — Antigravity CLI is designed as one surface of the broader Antigravity agent platform. It can orchestrate multiple background agents for complex tasks (large-scale refactors, parallel research) without locking your terminal session, and shares the same agent harness as the Antigravity 2.0 desktop app.\n\nKey capabilities carried over from Gemini CLI: Agent Skills, Hooks, Subagents, file operations, shell execution, Google Search grounding, MCP server integration, and persistent context via an AGENTS.md file (renamed from GEMINI.md). Extensions are now Antigravity plugins. Asynchronous workflows are new — you can fire off a task and get a notification when it completes rather than waiting at the prompt.",
+        "whoItsFor": "Developers who used Gemini CLI and need to migrate before June 18, 2026 (the hard shutoff date for free, Pro, and Ultra personal Gemini CLI access). Also relevant for any team running CI/CD pipelines that call the gemini command — those will break on June 18 with no grace period. Enterprise Code Assist Standard/Enterprise customers keep Gemini CLI access, so migration is not urgent for them.",
         "pros": [
-          "Open source (Apache 2.0) — inspect and extend the Rust source",
-          "Backed by GPT-5.5, which scores 82.7% on Terminal-Bench 2.0",
-          "Multi-agent v2 supports parallel sub-agent threads each with independent runtime choices",
-          "Single install script works on macOS, Linux, and Windows"
+          "Ships as a single native Go binary — no Node.js or Python runtime required",
+          "Async background agents free the terminal for other work during long-running tasks",
+          "Existing Gemini CLI extensions migrate via agy plugin import gemini with one command",
+          "Unified backend with Antigravity desktop app means CLI improvements propagate automatically"
         ],
         "cons": [
-          "Tightly coupled to GPT-5.5 — no support for non-OpenAI models",
-          "Requires a paid ChatGPT plan; free tier does not include Codex",
-          "Windows sandbox support is still alpha (`codex sandbox setup --elevated`)"
+          "Closed-source — community cannot inspect or contribute code, unlike the Apache 2.0 Gemini CLI",
+          "Not feature-complete at launch relative to Gemini CLI; some advanced Skills and Hook patterns have no equivalent yet"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- macOS or Linux (Windows alpha available)\n- ChatGPT Plus, Pro, Business, Edu, or Enterprise plan\n- No other dependencies — the installer is self-contained\n\n## Step 1: Install\n\n**macOS / Linux**\n```bash\ncurl -fsSL https://chatgpt.com/codex/install.sh | sh\n```\n\n**Windows (PowerShell)**\n```powershell\npowershell -ExecutionPolicy ByPass -c \"irm https://chatgpt.com/codex/install.ps1 | iex\"\n```\n\nAlternatively, install via Homebrew:\n```bash\nbrew install openai-codex\n```\n\n## Step 2: Authenticate\n\n```bash\ncodex login\n# Opens browser — sign in with your ChatGPT account\n# Or use an API key:\nexport OPENAI_API_KEY=\"sk-...\"\n```\n\n## Step 3: Run in your project\n\n```bash\ncd your-project\ncodex\n```\n\nCode-mode with a single prompt (non-interactive):\n```bash\ncodex -p \"Add input validation to every POST endpoint in src/routes/\"\n```\n\n## Step 4: Enable plugins (Enterprise)\n\nList installed plugins:\n```bash\ncodex plugin list --json\n```\n\nInstall a plugin from the marketplace:\n```bash\ncodex plugin install <plugin-name>\n```\n\nShare a plugin with your workspace so teammates can install it:\n```bash\ncodex plugin share <plugin-name>\n```\n\n## Gotcha: Unattended / CI installs\n\nSet `CODEX_NON_INTERACTIVE=1` before running the installer in CI to skip all prompts:\n```bash\nexport CODEX_NON_INTERACTIVE=1\ncurl -fsSL https://chatgpt.com/codex/install.sh | sh\n```\n\nThen authenticate via API key rather than browser OAuth:\n```bash\nexport OPENAI_API_KEY=\"sk-...\"\ncodex -p \"Run the test suite and report failures\" --output-format json\n```",
+        "setupGuideMarkdown": "## Prerequisites\n- macOS 12+ or Linux (x64/arm64); Windows support in preview\n- Google Cloud project or Google AI Studio API key\n- Existing Gemini CLI users: migrate before June 18, 2026\n\n## Install\n\n```bash\n# macOS/Linux: install via the official installer\ncurl -fsSL https://antigravity.google/install.sh | bash\n\n# Verify\nagy --version\n```\n\n## Authenticate\n\n```bash\n# Personal Google account (60 req/min free tier)\nagy auth login\n\n# Google Cloud project (Vertex AI)\nexport GOOGLE_CLOUD_PROJECT=\"your-project-id\"\nagy auth login --gcloud\n```\n\n## Migrate from Gemini CLI\n\n```bash\n# Import existing Gemini CLI extensions as Antigravity plugins\nagy plugin import gemini\n\n# Rename config file (Antigravity reads AGENTS.md, not GEMINI.md)\nmv GEMINI.md AGENTS.md\n\n# Move skills directory\nmv .gemini/skills/ .agents/skills/\n\n# Update any CI scripts\n# Old: gemini -p \"run tests\"\n# New:\nagy run \"run tests\"\n```\n\n## Run your first task\n\n```bash\ncd your-project\nagy \"Refactor all usages of the deprecated Logger class to use StructuredLogger\"\n# Antigravity spawns background agents; your terminal stays free\nagy status   # check progress\nagy attach   # re-attach to see output\n```\n\n## Gotcha\nThe agy command is not available in PATH until you restart your shell or run `source ~/.bashrc` (or `~/.zshrc`). The install script appends to your shell profile but does not reload it. Also: GEMINI.md is NOT automatically read — you must rename it to AGENTS.md or Antigravity CLI will have no persistent context.",
+        "sourceURL": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
+      }
+    },
+    {
+      "id": "openai-codex-cli-sites-plugin-2026",
+      "name": "OpenAI Codex CLI + Sites Plugin",
+      "category": "openai",
+      "oneLineDescription": "Terminal coding agent with new Sites plugin for deploying apps hosted by OpenAI.",
+      "estimatedSetupMinutes": 10,
+      "detail": {
+        "whatItDoes": "OpenAI Codex CLI is the open-source terminal agent (github.com/openai/codex) that runs GPT-5.5 or GPT-5.3-Codex models locally, handling file edits, shell commands, git workflows, and multi-step coding tasks. The June 2026 update adds three notable capabilities: (1) standalone web search in code mode — agents can call search directly from nested JavaScript tool calls and receive plaintext results; (2) the Sites plugin (preview), which lets Codex create, deploy, and manage web apps, dashboards, and games hosted by OpenAI's infrastructure directly from the CLI or app sidebar; and (3) richer MCP tool schema support, preserving oneOf/allOf in tool input schemas so complex MCP integrations no longer break.\n\nThe Sites plugin is available in the Codex app sidebar and by default in ChatGPT Business workspaces. Enterprise admins can gate it via RBAC. Deployed sites get a hosted URL and support environment variable/secret management from within Codex.",
+        "whoItsFor": "Engineers who use Codex CLI for agentic coding tasks and want to ship internal tools, dashboards, or prototypes without setting up separate hosting. Also useful for anyone integrating MCP servers with complex schemas that previously got mangled by Codex's schema compaction. Requires a ChatGPT Plus, Pro, Business, or Enterprise subscription for full model access; open-source CLI works with any OpenAI API key.",
+        "pros": [
+          "Sites plugin closes the prototype-to-URL gap — ship a dashboard without leaving the terminal",
+          "Web search in code mode lets agents look up documentation or APIs mid-task without a separate tool call",
+          "Preserved oneOf/allOf in MCP schemas fixes a long-standing pain point for complex tool integrations",
+          "codex doctor now includes editor/pager environment details to speed up debugging local installs"
+        ],
+        "cons": [
+          "Sites is preview-only — no SLA, and hosted environment variables are managed via OpenAI infra (no bring-your-own-cloud)",
+          "GPT-5.5 model access requires a paid ChatGPT plan; the open-source CLI defaults to whichever model your API key has access to"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Node.js 20+ (check: `node --version`)\n- OpenAI API key with access to GPT-5.5 or GPT-5.3-Codex\n- macOS or Linux (Windows support via WSL2 or the native Codex app)\n\n## Install\n\n```bash\nnpm install -g @openai/codex\n\n# Verify\ncodex --version\n```\n\n## Authenticate\n\n```bash\nexport OPENAI_API_KEY=\"sk-...\"\n\n# Or for ChatGPT subscription users (recommended for higher rate limits):\ncodex auth login\n# Follow the browser OAuth prompt\n```\n\n## Run your first task\n\n```bash\ncd your-project\ncodex \"Add input validation to the createUser function and write a test for it\"\n# Codex reads your codebase, proposes a plan, then edits files and runs tests\n```\n\n## Use the Sites plugin (preview)\n\n```bash\n# Inside Codex app: open the sidebar and click Sites\n# From CLI:\ncodex \"Build a React dashboard showing our API usage stats from data.json, then deploy it\"\n# Codex generates the app and calls the Sites plugin automatically\n# You get back a hosted URL: https://sites.openai.com/your-site-id\n```\n\n## Enable web search in code mode\n\n```bash\n# Web search is on by default in code mode; to test it:\ncodex \"Find the latest breaking change in the Stripe API and update our payment module accordingly\"\n# Codex will call web search inline before editing files\n```\n\n## Gotcha\nThe `--dangerously-auto-approve-everything` flag is real and bypasses all confirmation prompts — never run it against a production codebase. For CI use cases, prefer `--approval-policy on-failure` which only pauses on error. Also: MCP server configs live in `~/.codex/mcp_servers.json`, not in the project directory — a common source of confusion when onboarding teammates.",
         "sourceURL": "https://github.com/openai/codex"
       }
     },
     {
-      "id": "gemini-cli-google-open-source",
-      "name": "Gemini CLI (google-gemini/gemini-cli)",
-      "category": "google",
-      "oneLineDescription": "Free, open-source terminal AI agent with 1M-token context and 1,000 req/day free tier.",
-      "estimatedSetupMinutes": 3,
+      "id": "mai-thinking-1-azure-ai-foundry-2026",
+      "name": "MAI-Thinking-1 on Azure AI Foundry",
+      "category": "tooling",
+      "oneLineDescription": "Microsoft's first in-house reasoning model: 35B MoE, 256K context, 53% SWE-Bench Pro.",
+      "estimatedSetupMinutes": 15,
       "detail": {
-        "whatItDoes": "Gemini CLI is Google's open-source (Apache 2.0) terminal AI agent. It uses a ReAct (reason-and-act) loop with built-in tools — file operations, shell commands, web fetching, and Google Search grounding — plus MCP support for custom integrations. The free tier with a personal Google account gives 60 req/min and 1,000 req/day against Gemini models with a 1M-token context window.\n\nNote: Google announced at I/O 2026 that Gemini CLI will transition to Antigravity CLI for consumer users by June 18, 2026. Gemini CLI continues to work for paid Gemini Code Assist Standard/Enterprise license holders. If you are on a free Google account, plan to migrate to Antigravity CLI. The install and usage commands below work today for the Gemini CLI stable release.",
-        "whoItsFor": "Developers who want a free, zero-lock-in terminal AI agent for everyday coding tasks, long-context codebase reads, or Google Cloud-native automation. Also a strong choice for teams already on Vertex AI — authentication integrates cleanly with existing IAM. On hard multi-file refactors, Claude Code still leads on SWE-bench Verified; for free exploration and long-context reads, Gemini CLI is the most cost-effective starting point.",
+        "whatItDoes": "MAI-Thinking-1 is Microsoft's first proprietary reasoning model, a 35B active parameter Mixture-of-Experts architecture with a 256K token context window. It scores 97% on AIME 2025 and 53% on SWE-Bench Pro — placing it alongside Claude Opus 4.6 on the coding benchmark — and was trained entirely on commercially licensed data with no model distillation, giving enterprise teams a clean IP lineage for production deployment.\n\nThe model is available on Azure AI Foundry and via Baseten. It sits in the medium-weight class (comparable to GPT-5.4 Thinking by price/capability) and is specifically tuned for reasoning-heavy SWE tasks. Microsoft projects up to 10x improvement in output tokens per dollar compared to GPT-5.5 when fine-tuned via Foundry's Frontier Tuning (private preview), making it a cost-optimization target for agent pipelines that currently route to frontier models.",
+        "whoItsFor": "Azure-based engineering teams building agentic coding or reasoning pipelines that need a mid-weight model with clean IP lineage and competitive SWE-Bench scores. Also relevant for enterprises using GitHub Copilot on token-based billing — MAI-Code-1-Flash (the sibling model tuned for VS Code) is priced below Claude Haiku 4.5 and auto-routes from the Copilot model picker.",
         "pros": [
-          "Genuinely free: 1,000 req/day with a personal Google account, no credit card required",
-          "1M-token context window beats most competitors' defaults by 2.5-7x",
-          "Open source under Apache 2.0 — inspect, fork, and contribute",
-          "Built-in Google Search grounding directly inside the agent loop"
+          "53% SWE-Bench Pro matches Claude Opus 4.6 at medium-weight cost, not flagship pricing",
+          "Zero distillation and fully licensed training data — defensible IP chain for regulated industries",
+          "256K context window supports large codebase or document analysis without chunking",
+          "Projected 10x token-cost improvement over GPT-5.5 when fine-tuned via Foundry Frontier Tuning"
         ],
         "cons": [
-          "Transitioning to Antigravity CLI for consumer users on June 18 — new installs of Gemini CLI will not receive feature updates",
-          "Scores ~12 points behind Claude Opus 4.7 on SWE-bench Verified for hard multi-file refactors",
-          "The --yolo auto-approve flag will execute any shell command without confirmation — avoid outside a sandbox"
+          "Frontier Tuning (the key cost-optimization feature) is still private preview — most teams can't access it yet",
+          "Only available on Azure AI Foundry and Baseten at launch; not on AWS Bedrock or Google Vertex"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Node.js 18 or later (`node --version`)\n- A Google account (for the free tier)\n\n## Step 1: Install\n\n```bash\nnpm install -g @google/gemini-cli\n```\n\nOr run without installing:\n```bash\nnpx @google/gemini-cli\n```\n\n## Step 2: Authenticate\n\n**Personal Google account (free tier — 1,000 req/day):**\n```bash\ngemini login\n# Opens browser — sign in with your Google account\n```\n\n**API key (pay-as-you-go, no daily cap):**\n```bash\n# Get a key at https://aistudio.google.com/apikey\nexport GEMINI_API_KEY=\"AIza...\"\n```\n\n**Vertex AI (enterprise/GCP):**\n```bash\nexport GOOGLE_API_KEY=\"YOUR_API_KEY\"\nexport GOOGLE_GENAI_USE_VERTEXAI=true\ngemini\n```\n\n## Step 3: Run in your project\n\n```bash\ncd your-project\ngemini\n```\n\nSingle-shot prompt:\n```bash\ngemini -p \"Explain the architecture of this codebase\"\n```\n\nAttach a specific file:\n```bash\ngemini -f src/auth.ts -p \"Review this for security issues\"\n```\n\nHeadless/CI mode:\n```bash\ngemini --headless -p \"Run tests and report failures\" --output-format json\n```\n\n## Step 4: Per-project config\n\nCreate a `GEMINI.md` at your project root to give persistent context:\n```markdown\n# Project Context\nThis is a Django 5.x API. Always use type hints. Tests use pytest.\n```\n\nGemini CLI reads this file automatically at session start.\n\n## Gotchas\n\n**`command not found: gemini`** — npm global bin is not on your PATH.\n```bash\nnpm config get prefix\n# Add $prefix/bin to your shell profile, e.g.:\necho 'export PATH=\"$(npm config get prefix)/bin:$PATH\"' >> ~/.zshrc\nsource ~/.zshrc\n```\n\n**`EACCES` on `npm install -g`** — Switch to nvm or run:\n```bash\nnpm config set prefix ~/.npm-global\nexport PATH=\"$HOME/.npm-global/bin:$PATH\"\nnpm install -g @google/gemini-cli\n```\n\n**Migration to Antigravity CLI (June 18+):** Enterprise/paid users stay on Gemini CLI. Free users should follow Google's migration guide at developers.googleblog.com.",
-        "sourceURL": "https://github.com/google-gemini/gemini-cli"
+        "setupGuideMarkdown": "## Prerequisites\n- Azure subscription with Azure AI Foundry access\n- Azure CLI installed and authenticated (`az login`)\n- Python 3.10+ or Node.js 20+\n\n## Deploy MAI-Thinking-1 via Azure AI Foundry\n\n```bash\n# Install the Azure AI Foundry SDK\npip install azure-ai-foundry\n\n# Authenticate\naz login\naz account set --subscription \"<your-subscription-id>\"\n```\n\n## Python: call MAI-Thinking-1\n\n```python\nfrom azure.ai.foundry import FoundryClient\nfrom azure.identity import DefaultAzureCredential\n\nclient = FoundryClient(\n    endpoint=\"https://<your-foundry-endpoint>.openai.azure.com/\",\n    credential=DefaultAzureCredential()\n)\n\nresponse = client.chat.completions.create(\n    model=\"mai-thinking-1\",  # exact model ID from your deployment\n    messages=[\n        {\"role\": \"user\", \"content\": \"Refactor this Python function to be async and add error handling: def get_user(id): return db.query(id)\"}\n    ],\n    max_tokens=4096\n)\n\nprint(response.choices[0].message.content)\n```\n\n## Deploy via Azure CLI\n\n```bash\n# Create a Foundry project (if you don't have one)\naz ai foundry project create \\\n  --name my-mai-project \\\n  --resource-group my-rg \\\n  --location eastus\n\n# Deploy MAI-Thinking-1\naz ai foundry deployment create \\\n  --project-name my-mai-project \\\n  --model-id mai-thinking-1 \\\n  --deployment-name mai-thinking-prod \\\n  --sku Standard\n```\n\n## Enable in GitHub Copilot (MAI-Code-1-Flash)\n\n```jsonc\n// .vscode/settings.json — set Copilot to auto-route (may select MAI-Code-1-Flash)\n{\n  \"github.copilot.chat.localeOverride\": \"en\",\n  \"github.copilot.advanced\": {\n    \"model\": \"auto\"  // lets Copilot pick MAI-Code-1-Flash for cost-optimized tasks\n  }\n}\n```\n\n## Gotcha\nMAI-Thinking-1 is billed per output token with a thinking-token surcharge (similar to o3/GPT-5.4 Thinking). If you're running batch eval jobs, set `budget_tokens` in the request to cap thinking depth and prevent runaway costs. The Foundry SDK exposes this as `reasoning_effort: \"low\" | \"medium\" | \"high\"`.",
+        "sourceURL": "https://microsoft.ai/news/microsoft-build-2026-mai-keynote-transcript/"
       }
     },
     {
-      "id": "microsoft-mai-thinking-1-foundry",
-      "name": "MAI-Thinking-1 on Microsoft Foundry",
-      "category": "other",
-      "oneLineDescription": "Microsoft's first in-house reasoning model: 35B active params, 256K context, private preview on Foundry.",
-      "estimatedSetupMinutes": 15,
+      "id": "openai-codex-cli-open-source-agent-2026",
+      "name": "OpenClaw (open-source local AI agent)",
+      "category": "tooling",
+      "oneLineDescription": "Local-first AI assistant gateway to 50+ integrations with self-extending skill system.",
+      "estimatedSetupMinutes": 20,
       "detail": {
-        "whatItDoes": "MAI-Thinking-1 is the flagship model from Microsoft's seven-model MAI family, shipped at Build 2026. It is a 35B active-parameter reasoning model with a 256K context window, trained from scratch without distillation from any third-party model on enterprise-grade, commercially licensed data. Microsoft claims it matches Claude Opus 4.6 on SWE-bench Pro coding benchmarks and was preferred over Claude Sonnet 4.6 in blind evaluations — though these results have not been independently verified.\n\nThe model is currently in private preview on Azure Foundry (formerly Azure AI Studio). Access requires a Foundry workspace and an approved private-preview enrollment. It is model-agnostic in the sense that the same Foundry endpoint and billing relationship works for all 11,000+ models in the catalog, including OpenAI GPT-5.5 and Anthropic Claude Opus 4.8/Sonnet 4.5.",
-        "whoItsFor": "Enterprise teams already in the Azure ecosystem who need a reasoning model with clean data provenance for compliance-sensitive workloads. The low-token-cost positioning also makes it a candidate for high-volume agentic pipelines where GPT-5.5 costs are prohibitive. Not yet suitable for teams that need a stable public GA model — private preview status means availability and API shape can change.",
+        "whatItDoes": "OpenClaw is an open-source personal AI agent that runs entirely on your own hardware, acting as a local gateway that connects AI models (Claude, GPT, Gemini, local Ollama models) to over 50 integrations including WhatsApp, Telegram, Slack, Discord, Signal, and iMessage. The agent is always-on — it can browse the web, fill forms, run shell commands, write and execute code, and control desktop applications. A standout feature is that it can write its own new skills, extending its own capabilities at runtime without manual intervention.\n\nOriginally created by PSPDFKit founder Peter Steinberger and open-sourced in early 2026, the project crossed 210,000 GitHub stars. In February 2026, Steinberger joined OpenAI and the project transitioned to an open-source foundation. Microsoft demonstrated OpenClaw running on the Surface Laptop Ultra at Build 2026, positioning it as the reference stack for always-on local agent workflows. The MXC sandboxing model used by OpenClaw is the same model adopted by GitHub Copilot CLI for process isolation.",
+        "whoItsFor": "Developers and power users who want an always-on local agent that bridges messaging platforms and desktop automation without routing data through a cloud assistant. Particularly useful for anyone building custom automations that span multiple communication channels. Security-conscious builders should review the broad permissions the agent requires — the skill repository currently lacks rigorous vetting for malicious submissions.",
         "pros": [
-          "Trained on commercially licensed data with auditable provenance — relevant for regulated industries",
-          "256K context window at reportedly low token cost compared to GPT-5.5",
-          "Same Foundry endpoint and billing for all 11,000+ catalog models — no additional integration work",
-          "Model Router can auto-switch between MAI-Thinking-1 and other models at runtime for cost/performance"
+          "Data never leaves your machine — all model calls go through local config, no cloud proxy required",
+          "50+ native integrations including iMessage, Signal, and WhatsApp without webhooks or third-party bridges",
+          "Self-extending: the agent writes new skills at runtime, so capabilities grow with use",
+          "210K+ GitHub stars and active community; MXC sandboxing model shared with GitHub Copilot CLI"
         ],
         "cons": [
-          "Private preview only — no guaranteed SLA, API shape may change before GA",
-          "Microsoft's benchmark claims (vs Claude Sonnet/Opus 4.6) are self-reported and not independently verified",
-          "Requires Azure Foundry workspace setup and private-preview enrollment — not accessible in minutes"
+          "Requires broad system permissions (contacts, messages, file system, browser) — significant attack surface if a malicious skill is installed from the community repository",
+          "Skill repository lacks rigorous vetting; always review skill source before installing from the community hub"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Azure subscription with an active resource group\n- Azure CLI installed (`az --version`) and authenticated (`az login`)\n- Private-preview enrollment for MAI-Thinking-1 (request at https://aka.ms/MAI-Thinking-1-preview)\n\n## Step 1: Create a Foundry project\n\n```bash\n# Install the Azure AI Foundry SDK\npip install azure-ai-projects azure-identity\n\n# Create a Foundry hub and project via CLI\naz ml workspace create \\\n  --name my-foundry-project \\\n  --resource-group my-rg \\\n  --kind hub\n```\n\nOr navigate to https://ai.azure.com and create a new project under your subscription.\n\n## Step 2: Deploy MAI-Thinking-1\n\nIn the Foundry portal:\n1. Go to **Model catalog** → search `MAI-Thinking-1`\n2. Click **Deploy** → choose **Serverless (pay-as-you-go)**\n3. Name your deployment (e.g., `mai-thinking-1-prod`)\n4. Copy the **endpoint URL** and **API key** from the deployment page\n\n## Step 3: Call the endpoint\n\n```python\nimport os\nfrom openai import AzureOpenAI\n\nclient = AzureOpenAI(\n    azure_endpoint=os.environ[\"AZURE_FOUNDRY_ENDPOINT\"],\n    api_key=os.environ[\"AZURE_FOUNDRY_API_KEY\"],\n    api_version=\"2025-01-01-preview\",\n)\n\nresponse = client.chat.completions.create(\n    model=\"mai-thinking-1-prod\",  # your deployment name\n    messages=[\n        {\"role\": \"system\", \"content\": \"You are a senior software engineer.\"},\n        {\"role\": \"user\", \"content\": \"Review this Python function for edge cases: ...\"}\n    ],\n    max_tokens=4096,\n)\n\nprint(response.choices[0].message.content)\n```\n\n## Step 4: Use Model Router for automatic fallback\n\n```python\n# Point at the Foundry Model Router endpoint instead of a specific deployment\nclient = AzureOpenAI(\n    azure_endpoint=os.environ[\"AZURE_FOUNDRY_ROUTER_ENDPOINT\"],\n    api_key=os.environ[\"AZURE_FOUNDRY_API_KEY\"],\n    api_version=\"2025-01-01-preview\",\n)\n# Model Router picks MAI-Thinking-1 for reasoning tasks, Flash models for simple queries\n```\n\n## Gotcha: Private preview gating\n\nMAI-Thinking-1 will return a `404` or `ModelNotFound` error if your subscription has not been approved for private preview. The enrollment link is https://aka.ms/MAI-Thinking-1-preview. Approvals have been taking 3-5 business days as of Build week.",
-        "sourceURL": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/"
+        "setupGuideMarkdown": "## Prerequisites\n- macOS 13+ (primary platform; Linux support is experimental, Windows via WSL2)\n- Node.js 20+ and npm\n- At least one API key: Anthropic, OpenAI, or a local Ollama instance\n- For messaging integrations: the relevant app must be installed and accessible on your machine\n\n## Install\n\n```bash\nnpm install -g openclaw\n\n# Verify\nopenclaw --version\n```\n\n## Initial setup\n\n```bash\nopenclaw init\n# Interactive setup wizard: sets your default model provider and API key\n# Config is stored in ~/.openclaw/config.json\n```\n\n## Configure an AI model\n\n```bash\n# Anthropic Claude (recommended for coding tasks)\nexport ANTHROPIC_API_KEY=\"sk-ant-...\"\nopenclaw config set model anthropic/claude-sonnet-4\n\n# Or use a local Ollama model (no API key required)\n# First: brew install ollama && ollama pull llama3.2\nopenclaw config set model ollama/llama3.2\n```\n\n## Connect messaging integrations\n\n```bash\n# List available integrations\nopenclaw integrations list\n\n# Connect Slack (OAuth flow)\nopenclaw integrations connect slack\n\n# Connect iMessage (requires macOS with Messages.app signed in)\nopenclaw integrations connect imessage\n# Grant Full Disk Access to the openclaw process in System Settings > Privacy\n```\n\n## Install a skill\n\n```bash\n# Browse community skills\nopenclaw skills search \"github\"\n\n# Install a specific skill (ALWAYS review source before installing)\nopenclaw skills install openclaw-hub/github-pr-reviewer\n\n# List installed skills\nopenclaw skills list\n```\n\n## Run the agent\n\n```bash\n# Start the always-on daemon\nopenclaw start --daemon\n\n# Check status\nopenclaw status\n\n# Send a test message in any connected channel:\n# \"@openclaw summarize my GitHub notifications from the last 24 hours\"\n```\n\n## Gotcha\nThe most common setup failure is missing Full Disk Access permission on macOS, which silently prevents iMessage and file-system integrations from working. Go to **System Settings > Privacy & Security > Full Disk Access** and add the `openclaw` binary. Also: the daemon writes logs to `~/.openclaw/logs/`; tail that file first when debugging integration failures.",
+        "sourceURL": "https://github.com/OpenClaw/openclaw"
       }
     }
   ]
