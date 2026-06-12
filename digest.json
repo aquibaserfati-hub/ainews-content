@@ -1,63 +1,55 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-08T00:00:00Z",
-  "reportGeneratedAt": "2026-06-11T10:43:11Z",
+  "reportGeneratedAt": "2026-06-12T10:19:43Z",
   "learnGeneratedAt": "2026-06-11T12:00:00Z",
   "report": [
     {
-      "id": "openai-oracle-oci-codex-2026-06-11",
-      "title": "OpenAI and Oracle let enterprises spend OCI credits on GPT models and Codex",
-      "summary": "Oracle cloud customers can now apply existing Universal Credits toward OpenAI frontier models and Codex through OCI, removing the need for a separate procurement path. Rollout is coming in the next few weeks — no new contract required for Oracle shops already committed to OCI.",
+      "id": "spacex-ipo-nasdaq-2026-06-12",
+      "title": "SpaceX begins trading on Nasdaq today under SPCX",
+      "summary": "SpaceX lists on Nasdaq today at a targeted $1.75 trillion valuation, the largest IPO in history. The listing starts the 30-day clock on its planned $60 billion acquisition of AI coding platform Cursor, which would give xAI an immediate foothold with 67% of the Fortune 500.",
+      "category": "other",
+      "sourceURL": "https://thenextweb.com/news/spacex-plans-to-buy-cursor-for-60-billion-once-its-record-ipo-wraps",
+      "significance": 7
+    },
+    {
+      "id": "openai-oracle-codex-2026-06-11",
+      "title": "OpenAI and Oracle let enterprise teams buy GPT and Codex via OCI credits",
+      "summary": "Oracle Cloud customers can now apply existing Universal Credits toward OpenAI frontier models and Codex through OCI, removing the need for a separate purchasing path. For enterprise builders already on Oracle commitments, this is the lowest-friction route yet to deploy Codex in governed environments.",
       "category": "openai",
       "sourceURL": "https://openai.com/index/openai-on-oracle-cloud/",
       "significance": 6
     },
     {
-      "id": "openai-ipo-s1-2026-06-10",
-      "title": "OpenAI confidentially files draft S-1 with the SEC",
-      "summary": "OpenAI submitted a confidential draft S-1 to the SEC on June 10, kicking off the formal IPO process. No pricing or timeline disclosed — this is a filing event, not a public offering.",
+      "id": "openai-secure-mcp-tunnel-2026-06",
+      "title": "OpenAI ships Secure MCP Tunnel for enterprise private server connections",
+      "summary": "OpenAI released Secure MCP Tunnel, letting ChatGPT, Codex, the Responses API, and AgentKit connect to private or on-prem MCP servers without exposing them to the public internet. Practical unblock for enterprises that want agentic workflows but can't whitelist external MCP endpoints.",
       "category": "openai",
-      "sourceURL": "https://openai.com/news/",
+      "sourceURL": "https://developers.openai.com/api/docs/changelog",
       "significance": 7
     },
     {
-      "id": "openai-codex-sites-plugin-2026-06-10",
-      "title": "Codex ships Sites plugin and workspace-agent migration flows in latest release",
-      "summary": "The Codex app now includes a Sites plugin for building and hosting web apps and dashboards directly inside OAI infrastructure, plus a migration flow that imports Claude Code and Claude Cowork setups during onboarding. ChatGPT Business workspaces get Sites by default; Enterprise admins control access via RBAC.",
+      "id": "openai-codex-desktop-handoff-june-2026",
+      "title": "Codex CLI adds desktop handoff, shared workspace plugins, and tighter auth",
+      "summary": "The latest Codex release adds /app CLI-to-desktop handoff on macOS and Windows, shared local plugins for Enterprise workspaces, and short-lived server tokens replacing ChatGPT access tokens in remote-control websockets. Security hardening also blocks browser-origin exec-server websocket handshakes.",
       "category": "openai",
-      "sourceURL": "https://releasebot.io/updates/openai/codex",
-      "significance": 6
+      "sourceURL": "https://developers.openai.com/codex/changelog",
+      "significance": 5
     },
     {
-      "id": "anthropic-when-ai-builds-itself-pause-proposal-2026-06-04",
-      "title": "Anthropic publishes global AI-pause proposal, cites Claude writing 80% of its own code",
-      "summary": "Anthropic's paper \"When AI builds itself\" calls for a globally coordinated option to slow frontier AI development, citing internal data that Claude now authors over 80% of code merged into Anthropic's own production codebase. The company did not commit to a unilateral halt — the proposal is a governance signal, not a product change.",
-      "category": "anthropic",
-      "sourceURL": "https://www.shumaker.com/insight/client-alert-anthropics-call-for-a-global-ai-pause-what-businesses-need-to-know-about-the-governance-landscape/",
-      "significance": 7
+      "id": "frontier-labs-g7-summit-2026-06-12",
+      "title": "Altman, Hassabis, and Amodei to attend G7 summit in France next week",
+      "summary": "The French presidential office confirmed that OpenAI's Sam Altman, Google's Demis Hassabis, and Anthropic's Dario Amodei are on the G7 attendee list. No product announcements tied to the summit yet — this is policy positioning, not a product drop.",
+      "category": "other",
+      "sourceURL": "https://www.bloomberg.com/news/articles/2026-06-12/anthropic-openai-google-executives-plan-to-attend-g7-summit",
+      "significance": 5
     },
     {
-      "id": "google-gemini-35-pro-pending-june-2026",
-      "title": "Gemini 3.5 Pro still incoming — no API ID or date, confirmed for June by Pichai",
-      "summary": "Gemini 3.5 Flash is in production at $1.50/$9.00 per million tokens and is already the default in the Gemini app and AI Mode in Search. Gemini 3.5 Pro has a confirmed June window from Sundar Pichai at Google I/O but no model card or public API ID yet — don't build against it until the stable ID lands in Google's docs.",
+      "id": "gemini-35-pro-pending-june-2026",
+      "title": "Gemini 3.5 Pro still unshipped — Pichai's 'next month' window closes this month",
+      "summary": "Sundar Pichai's Google I/O stage commitment to ship Gemini 3.5 Pro 'next month' places the deadline in June, but as of today there is no public API ID, no model card, and no GA date. Gemini 3.5 Flash remains the only confirmed-shipped 3.5-series model, already the default in the Gemini app at $1.50/$9 per million tokens.",
       "category": "google",
       "sourceURL": "https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/",
-      "significance": 5
-    },
-    {
-      "id": "anthropic-claude-partner-network-hub-2026-06-03",
-      "title": "Anthropic launches Services Track and Partner Hub for Claude Partner Network",
-      "summary": "Anthropic opened a Services Track and Partner Hub inside the Claude Partner Network on June 3, extending the ecosystem program beyond resellers to include implementation partners. Relevant for teams evaluating SI relationships for Claude Code enterprise rollouts.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
-      "significance": 5
-    },
-    {
-      "id": "openai-chatgpt-memory-upgrade-2026-06-08",
-      "title": "ChatGPT ships upgraded persistent memory across all paid tiers",
-      "summary": "OpenAI announced improved memory for ChatGPT on June 8, expanding what the model retains across sessions for more personalized responses. No API-level memory primitives were confirmed — this update is consumer-product-facing, not a developer primitive change.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
       "significance": 5
     }
   ],
