@@ -1,56 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-08T00:00:00Z",
-  "reportGeneratedAt": "2026-06-12T10:19:43Z",
+  "reportGeneratedAt": "2026-06-13T09:21:56Z",
   "learnGeneratedAt": "2026-06-11T12:00:00Z",
   "report": [
     {
-      "id": "spacex-ipo-nasdaq-2026-06-12",
-      "title": "SpaceX begins trading on Nasdaq today under SPCX",
-      "summary": "SpaceX lists on Nasdaq today at a targeted $1.75 trillion valuation, the largest IPO in history. The listing starts the 30-day clock on its planned $60 billion acquisition of AI coding platform Cursor, which would give xAI an immediate foothold with 67% of the Fortune 500.",
-      "category": "other",
-      "sourceURL": "https://thenextweb.com/news/spacex-plans-to-buy-cursor-for-60-billion-once-its-record-ipo-wraps",
+      "id": "anthropic-fable5-mythos5-launch-2026-06-09",
+      "title": "Anthropic ships Claude Fable 5: first Mythos-class model for general use",
+      "summary": "Launched June 9, Fable 5 is Anthropic's first publicly accessible Mythos-class model — available via API (claude-fable-5), Claude apps, and Amazon Bedrock at $10/$50 per million input/output tokens. In high-risk domains like cybersecurity and biology, it falls back to Opus 4.8; Mythos 5 (same base, fewer guardrails) stays locked to Project Glasswing partners only.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "significance": 9
+    },
+    {
+      "id": "anthropic-fable5-us-export-order-2026-06-13",
+      "title": "US government orders Anthropic to suspend global access to Fable 5 and Mythos 5",
+      "summary": "A US government export control order has forced Anthropic to shut down global access to both Fable 5 and Mythos 5, citing alleged jailbreak risks. Anthropic is complying but pushing back publicly, calling the order a misunderstanding and saying it is working to restore access.",
+      "category": "anthropic",
+      "sourceURL": "https://llm-stats.com/ai-news",
+      "significance": 8
+    },
+    {
+      "id": "moonshot-kimi-k27-code-2026-06-12",
+      "title": "Moonshot AI open-sources Kimi K2.7-Code, a 1T-parameter agentic coding model",
+      "summary": "Released June 12 on Hugging Face under Modified MIT, Kimi K2.7-Code is a 1-trillion-parameter MoE model (32B active) with a 256K context window and ~30% fewer reasoning tokens than K2.6, targeting long-horizon agentic software engineering. API pricing is $0.95/$4.00 per million input/output tokens; model ID is kimi-k2.7-code — all benchmarks are Moonshot-reported only, so wait for independent results before betting a production stack on it.",
+      "category": "otherLLM",
+      "sourceURL": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/",
       "significance": 7
     },
     {
-      "id": "openai-oracle-codex-2026-06-11",
-      "title": "OpenAI and Oracle let enterprise teams buy GPT and Codex via OCI credits",
-      "summary": "Oracle Cloud customers can now apply existing Universal Credits toward OpenAI frontier models and Codex through OCI, removing the need for a separate purchasing path. For enterprise builders already on Oracle commitments, this is the lowest-friction route yet to deploy Codex in governed environments.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/openai-on-oracle-cloud/",
+      "id": "google-gemini-sql2-gemini31pro-2026-06-12",
+      "title": "Google Research ships Gemini-SQL2 on Gemini 3.1 Pro, hits 80% on BIRD leaderboard",
+      "summary": "Announced June 12, Gemini-SQL2 is a text-to-SQL system powered by Gemini 3.1 Pro that posted 80.04% execution accuracy on the BIRD single-model leaderboard. No public API ID or pricing disclosed yet — watch for a Vertex AI integration before treating this as production-ready.",
+      "category": "google",
+      "sourceURL": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/",
       "significance": 6
     },
     {
-      "id": "openai-secure-mcp-tunnel-2026-06",
-      "title": "OpenAI ships Secure MCP Tunnel for enterprise private server connections",
-      "summary": "OpenAI released Secure MCP Tunnel, letting ChatGPT, Codex, the Responses API, and AgentKit connect to private or on-prem MCP servers without exposing them to the public internet. Practical unblock for enterprises that want agentic workflows but can't whitelist external MCP endpoints.",
-      "category": "openai",
-      "sourceURL": "https://developers.openai.com/api/docs/changelog",
+      "id": "anthropic-fable5-data-retention-change-2026-06-09",
+      "title": "Anthropic mandates 30-day data retention on all Mythos-class API traffic",
+      "summary": "Starting with Fable 5 and Mythos 5, Anthropic now requires a 30-day retention window on all traffic — first- and third-party surfaces included — to detect novel attacks and distillation attempts. Builders relying on zero-retention guarantees for enterprise contracts need to re-check their agreements before upgrading model versions.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
       "significance": 7
     },
     {
-      "id": "openai-codex-desktop-handoff-june-2026",
-      "title": "Codex CLI adds desktop handoff, shared workspace plugins, and tighter auth",
-      "summary": "The latest Codex release adds /app CLI-to-desktop handoff on macOS and Windows, shared local plugins for Enterprise workspaces, and short-lived server tokens replacing ChatGPT access tokens in remote-control websockets. Security hardening also blocks browser-origin exec-server websocket handshakes.",
-      "category": "openai",
-      "sourceURL": "https://developers.openai.com/codex/changelog",
-      "significance": 5
-    },
-    {
-      "id": "frontier-labs-g7-summit-2026-06-12",
-      "title": "Altman, Hassabis, and Amodei to attend G7 summit in France next week",
-      "summary": "The French presidential office confirmed that OpenAI's Sam Altman, Google's Demis Hassabis, and Anthropic's Dario Amodei are on the G7 attendee list. No product announcements tied to the summit yet — this is policy positioning, not a product drop.",
-      "category": "other",
-      "sourceURL": "https://www.bloomberg.com/news/articles/2026-06-12/anthropic-openai-google-executives-plan-to-attend-g7-summit",
-      "significance": 5
-    },
-    {
-      "id": "gemini-35-pro-pending-june-2026",
-      "title": "Gemini 3.5 Pro still unshipped — Pichai's 'next month' window closes this month",
-      "summary": "Sundar Pichai's Google I/O stage commitment to ship Gemini 3.5 Pro 'next month' places the deadline in June, but as of today there is no public API ID, no model card, and no GA date. Gemini 3.5 Flash remains the only confirmed-shipped 3.5-series model, already the default in the Gemini app at $1.50/$9 per million tokens.",
-      "category": "google",
-      "sourceURL": "https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/",
-      "significance": 5
+      "id": "zyphra-zamba2-vl-open-release-2026-06-12",
+      "title": "Zyphra releases Zamba2-VL open vision-language models at 1.2B, 2.7B, and 7B",
+      "summary": "Zyphra shipped Zamba2-VL under Apache 2.0 — a hybrid Mamba2/Transformer family that cuts time-to-first-token by roughly an order of magnitude versus comparable Transformer VLMs while staying competitive on benchmarks. A practical pick for latency-sensitive on-device or edge vision pipelines.",
+      "category": "otherLLM",
+      "sourceURL": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/",
+      "significance": 6
     }
   ],
   "learn": [
