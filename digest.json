@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-15T00:00:00Z",
-  "reportGeneratedAt": "2026-06-15T12:00:00Z",
+  "reportGeneratedAt": "2026-06-15T12:23:54Z",
   "learnGeneratedAt": "2026-06-15T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-claude-fable-5-2026-06-09",
-      "title": "Anthropic ships Claude Fable 5, first public Mythos-class model",
-      "summary": "Claude Fable 5 launched June 9 — the first publicly available Mythos-class model, priced at $10/$50 per million tokens. It leads nearly every benchmark including ~80% on SWE-Bench Pro, ships with hard safety blocks for cybersecurity and bio, and falls back to Opus 4.8 for flagged requests. Free on Pro/Max/Team plans only through June 22; usage-credit billing kicks in June 23.",
+      "id": "anthropic-programmatic-credit-split-2026-06-15",
+      "title": "Anthropic billing split goes live: Agent SDK moves to separate credit pool",
+      "summary": "Effective today, Claude Agent SDK, headless Claude Code, GitHub Actions, and third-party agents exit subscription rate-limit pools and draw from a separate monthly dollar credit ($20 Pro / $100 Max 5x / $200 Max 20x) billed at API list prices with no rollover. Teams running shared production automation on subscription plans should migrate to API keys — the credit is per-user, not pooled.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "significance": 9
-    },
-    {
-      "id": "anthropic-agent-sdk-billing-2026-06-15",
-      "title": "Anthropic moves Claude Agent SDK and headless usage to separate metered credit today",
-      "summary": "Starting today (June 15), Claude Agent SDK, claude -p, Claude Code GitHub Actions, and third-party agents exit subscription pools and draw from a new dollar-denominated monthly credit ($20 Pro / $100 Max 5x / $200 Max 20x) billed at API rates with no rollover. Teams running production CI pipelines or autonomous agents need to claim their credit and decide on overflow settings now.",
-      "category": "anthropic",
-      "sourceURL": "https://codersera.com/blog/anthropic-june-2026-billing-change-claude-code/",
-      "significance": 8
-    },
-    {
-      "id": "anthropic-claude-code-sub-agents-2026-06-10",
-      "title": "Claude Code gains nested sub-agents up to 5 levels deep",
-      "summary": "Claude Code v2.1.170 ships nested sub-agent spawning (up to 5 levels), smarter Bedrock region handling, new plugin search, and post-session hooks. The same release introduced Fable 5 access and fixed a long-standing VS Code terminal transcript bug.",
-      "category": "anthropic",
-      "sourceURL": "https://code.claude.com/docs/en/changelog",
+      "sourceURL": "https://www.digitalapplied.com/blog/anthropic-claude-credit-overhaul-june-15-2026",
       "significance": 7
     },
     {
-      "id": "github-copilot-app-preview-build-2026",
-      "title": "Microsoft ships GitHub Copilot desktop app at Build 2026",
-      "summary": "The GitHub Copilot app launched in technical preview at Build 2026 (June 2-3) for Windows and Mac — a native agent dashboard where each session runs in its own Git worktree, parallel agents can work without collision, and the Copilot SDK is now GA in Node, Python, Go, .NET, Rust, and Java. Requires an existing Copilot subscription; free-tier access promised later.",
-      "category": "tooling",
-      "sourceURL": "https://www.thurrott.com/dev/336962/build-2026-microsoft-announces-github-copilot-app",
+      "id": "anthropic-claude-sonnet4-opus4-retirement-2026-06-15",
+      "title": "Anthropic retires Claude Sonnet 4 and Claude Opus 4 from API today",
+      "summary": "Claude Sonnet 4 and Claude Opus 4 hit their API retirement date today, June 15. Any integration still pinning these model IDs will start failing — check your model strings and migrate to Sonnet 4.5 or Opus 4.8.",
+      "category": "anthropic",
+      "sourceURL": "https://hidekazu-konishi.com/entry/anthropic_claude_model_release_timeline.html",
       "significance": 7
     },
     {
-      "id": "google-gemini-35-flash-ga-2026-06",
-      "title": "Gemini 3.5 Flash is now the default in all Google products; Pro still MIA",
-      "summary": "Gemini 3.5 Flash became the mandatory default in Gemini Enterprise on June 8 — no opt-out toggle remains. It is GA in the API at $1.50/$9 per million tokens. Gemini 3.5 Pro was announced at I/O on May 19 with Pichai promising 'next month,' but has not shipped as of June 15.",
-      "category": "google",
-      "sourceURL": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
-      "significance": 6
+      "id": "anthropic-claude-ios27-foundation-models-2026-06-15",
+      "title": "Anthropic ships Claude support via Apple Foundation Models framework for iOS 27",
+      "summary": "Claude is now accessible through Apple's Foundation Models framework on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27 — drop in an Anthropic API key and pass typed outputs directly from Apple's framework. Goes live tomorrow per Anthropic's release notes.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
+      "significance": 7
     },
     {
-      "id": "openai-gpt-54-consolidation-2026-06",
-      "title": "OpenAI's GPT-5.4 absorbs Codex capabilities; GPT-4.5 retiring June 27",
-      "summary": "GPT-5.4 rolled into the main OpenAI lineup consolidating GPT-5.3-Codex agentic coding skills — hitting 75% on OSWorld-Verified computer use, surpassing the human baseline for the first time. GPT-4.5 retires June 27 and o3 retires August 26; teams still on either model need to migrate.",
+      "id": "apple-ios27-extensions-siri-ai-third-party-2026-06-14",
+      "title": "iOS 27 beta Extensions framework surfaces: Claude and Gemini baked into Siri",
+      "summary": "Apple's iOS 27 developer beta contains a built-in Extensions framework letting users set Claude, ChatGPT, or Gemini as their default assistant across Siri, Writing Tools, and Image Playground — but Apple skipped the announcement at WWDC, likely due to EU regulatory friction and OpenAI contract tensions. The feature is in the beta but toggled off server-side; expect a formal launch before iOS 27's fall release.",
+      "category": "other",
+      "sourceURL": "https://thenextweb.com/news/apple-siri-extensions-third-party-ai-missing-wwdc",
+      "significance": 7
+    },
+    {
+      "id": "openai-partner-network-150m-2026-06-15",
+      "title": "OpenAI launches Partner Network with $150M investment for enterprise deployment",
+      "summary": "OpenAI is standing up a tiered Partner Network backed by $150M to accelerate enterprise AI adoption through third-party consultancies and integrators. No new model or API surface ships with this — it is a go-to-market structure, not a product release.",
       "category": "openai",
-      "sourceURL": "https://help.openai.com/en/articles/9624314-model-release-notes",
-      "significance": 6
+      "sourceURL": "https://llm-stats.com/ai-news",
+      "significance": 5
     },
     {
-      "id": "google-gemini-api-managed-agents-2026-06",
-      "title": "Gemini API ships Managed Agents in public preview",
-      "summary": "Google launched Managed Agents in the Gemini API — stateful, autonomous agents that run inside secure Google-hosted Linux sandbox environments. Builders get persistent state and isolation without managing their own infra. Event-driven Webhooks for the Batch API also shipped, replacing polling.",
-      "category": "google",
-      "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
+      "id": "anthropic-g7-summit-ceos-2026-06-15",
+      "title": "Altman, Amodei, and Hassabis appear together at G7 summit in France",
+      "summary": "The CEOs of OpenAI, Anthropic, and Google DeepMind are all attending the G7 summit in France June 15–17 — the first time all three have appeared before world leaders together. No product ships from this, but the regulatory positioning signals are worth watching.",
+      "category": "other",
+      "sourceURL": "https://aiweekly.co/ai-news-today/anthropic-news",
+      "significance": 5
+    },
+    {
+      "id": "anthropic-mcp-connector-observability-beta-2026-06-09",
+      "title": "Anthropic ships MCP connector observability dashboard in public beta",
+      "summary": "Connector owners can now monitor adoption, errors, latency, and usage across Claude product surfaces from a new dashboard, and submit MCP connectors to the directory directly in-app. Useful for any team shipping integrations into the Claude ecosystem.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
       "significance": 6
     }
   ],
