@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-15T00:00:00Z",
-  "reportGeneratedAt": "2026-06-15T12:23:54Z",
+  "reportGeneratedAt": "2026-06-16T11:19:23Z",
   "learnGeneratedAt": "2026-06-15T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-programmatic-credit-split-2026-06-15",
-      "title": "Anthropic billing split goes live: Agent SDK moves to separate credit pool",
-      "summary": "Effective today, Claude Agent SDK, headless Claude Code, GitHub Actions, and third-party agents exit subscription rate-limit pools and draw from a separate monthly dollar credit ($20 Pro / $100 Max 5x / $200 Max 20x) billed at API list prices with no rollover. Teams running shared production automation on subscription plans should migrate to API keys — the credit is per-user, not pooled.",
+      "id": "anthropic-fable5-export-control-2026-06-16",
+      "title": "White House forces Anthropic to geo-block Fable 5 and Mythos 5",
+      "summary": "The Trump administration issued an export control directive ordering Anthropic to suspend access to Claude Fable 5 and Mythos 5 for all foreign nationals, citing a reported jailbreak that could expose software vulnerability data. Senior Anthropic staff flew to D.C. on June 15 for talks; no resolution reached as of June 16, leaving both models US-only with no timeline for broader restore.",
       "category": "anthropic",
-      "sourceURL": "https://www.digitalapplied.com/blog/anthropic-claude-credit-overhaul-june-15-2026",
+      "sourceURL": "https://www.cnbc.com/2026/06/15/anthropic-mythos-trump-ai.html",
+      "significance": 9
+    },
+    {
+      "id": "anthropic-fable5-jailbreak-detail-2026-06-16",
+      "title": "Fable 5 jailbreak details: ask-the-model-to-fix-its-own-codebase vector",
+      "summary": "The government's 'verbal evidence' of the Fable 5 vulnerability is narrow: prompting the model to read a specific codebase and fix software flaws reportedly bypasses safety filters. Anthropic says it was given 90 minutes to act and disputes the severity; Amazon separately flagged the same flaw to the administration.",
+      "category": "anthropic",
+      "sourceURL": "https://www.businesstoday.in/technology/artificial-intelligence/story/anthropic-had-90-minutes-to-restrict-claude-fable-5-as-white-house-feared-chinese-access-537095-2026-06-16",
+      "significance": 8
+    },
+    {
+      "id": "anthropic-ipo-filing-2026-06-01",
+      "title": "Anthropic files confidentially for IPO at near-$1T valuation",
+      "summary": "Anthropic filed for an IPO around June 1, 2026, with its latest private round valuing the company at roughly $965 billion. The Fable 5/Mythos export-control dispute landed days after the filing, adding regulatory risk to a deal that could cross $1 trillion at open.",
+      "category": "anthropic",
+      "sourceURL": "https://www.shumaker.com/insight/client-alert-anthropics-call-for-a-global-ai-pause-what-businesses-need-to-know-about-the-governance-landscape/",
       "significance": 7
     },
     {
-      "id": "anthropic-claude-sonnet4-opus4-retirement-2026-06-15",
-      "title": "Anthropic retires Claude Sonnet 4 and Claude Opus 4 from API today",
-      "summary": "Claude Sonnet 4 and Claude Opus 4 hit their API retirement date today, June 15. Any integration still pinning these model IDs will start failing — check your model strings and migrate to Sonnet 4.5 or Opus 4.8.",
-      "category": "anthropic",
-      "sourceURL": "https://hidekazu-konishi.com/entry/anthropic_claude_model_release_timeline.html",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-claude-ios27-foundation-models-2026-06-15",
-      "title": "Anthropic ships Claude support via Apple Foundation Models framework for iOS 27",
-      "summary": "Claude is now accessible through Apple's Foundation Models framework on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27 — drop in an Anthropic API key and pass typed outputs directly from Apple's framework. Goes live tomorrow per Anthropic's release notes.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
-      "significance": 7
-    },
-    {
-      "id": "apple-ios27-extensions-siri-ai-third-party-2026-06-14",
-      "title": "iOS 27 beta Extensions framework surfaces: Claude and Gemini baked into Siri",
-      "summary": "Apple's iOS 27 developer beta contains a built-in Extensions framework letting users set Claude, ChatGPT, or Gemini as their default assistant across Siri, Writing Tools, and Image Playground — but Apple skipped the announcement at WWDC, likely due to EU regulatory friction and OpenAI contract tensions. The feature is in the beta but toggled off server-side; expect a formal launch before iOS 27's fall release.",
+      "id": "apple-ios27-siri-extensions-third-party-ai-2026-06-16",
+      "title": "iOS 27 beta contains hidden Extensions framework for Claude, Gemini, ChatGPT in Siri",
+      "summary": "Mark Gurman reports the first iOS 27 developer beta ships backend controls and an App Store section for a Siri Extensions system that lets users route queries to Claude, Gemini, or ChatGPT — the feature was never mentioned at WWDC, apparently held back due to EU regulatory friction and a potential OpenAI exclusivity dispute. Framework is built; public ship date is unconfirmed.",
       "category": "other",
       "sourceURL": "https://thenextweb.com/news/apple-siri-extensions-third-party-ai-missing-wwdc",
       "significance": 7
     },
     {
-      "id": "openai-partner-network-150m-2026-06-15",
-      "title": "OpenAI launches Partner Network with $150M investment for enterprise deployment",
-      "summary": "OpenAI is standing up a tiered Partner Network backed by $150M to accelerate enterprise AI adoption through third-party consultancies and integrators. No new model or API surface ships with this — it is a go-to-market structure, not a product release.",
-      "category": "openai",
-      "sourceURL": "https://llm-stats.com/ai-news",
-      "significance": 5
+      "id": "apple-wwdc26-siri-ai-gemini-2026-06-08",
+      "title": "Apple ships iOS 27 developer beta with rebuilt Siri AI powered by Gemini",
+      "summary": "WWDC 2026 unveiled Siri AI, a rebuilt assistant running on a custom 1.2T-parameter Gemini model, now operating at the OS level with real-time access to Messages, Mail, and Photos. Developer beta is live now; public beta ships July; stable iOS 27 arrives September 2026.",
+      "category": "google",
+      "sourceURL": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+      "significance": 8
     },
     {
-      "id": "anthropic-g7-summit-ceos-2026-06-15",
-      "title": "Altman, Amodei, and Hassabis appear together at G7 summit in France",
-      "summary": "The CEOs of OpenAI, Anthropic, and Google DeepMind are all attending the G7 summit in France June 15–17 — the first time all three have appeared before world leaders together. No product ships from this, but the regulatory positioning signals are worth watching.",
-      "category": "other",
-      "sourceURL": "https://aiweekly.co/ai-news-today/anthropic-news",
-      "significance": 5
+      "id": "cohere-north-mini-code-2026-06-10",
+      "title": "Cohere ships North Mini Code, a 30B MoE model for agentic coding under Apache 2.0",
+      "summary": "North Mini Code is a 30B-parameter mixture-of-experts model with 3B active parameters, Apache 2.0 licensed, aimed at agentic software development in sovereign AI environments. It targets teams that need an on-prem coding agent without proprietary model dependencies.",
+      "category": "otherLLM",
+      "sourceURL": "https://radicaldatascience.wordpress.com/2026/06/11/ai-news-briefs-bulletin-board-for-june-2026/",
+      "significance": 6
     },
     {
-      "id": "anthropic-mcp-connector-observability-beta-2026-06-09",
-      "title": "Anthropic ships MCP connector observability dashboard in public beta",
-      "summary": "Connector owners can now monitor adoption, errors, latency, and usage across Claude product surfaces from a new dashboard, and submit MCP connectors to the directory directly in-app. Useful for any team shipping integrations into the Claude ecosystem.",
+      "id": "anthropic-global-ai-pause-proposal-2026-06-04",
+      "title": "Anthropic publishes 'When AI builds itself,' calls for coordinated global development pause",
+      "summary": "Anthropic's June 4 paper argues AI systems are accelerating their own development faster than safety frameworks can track, and proposes a globally coordinated slowdown. Published days after its confidential IPO filing, the proposal draws pointed scrutiny from critics who note the tension between an imminent public market debut and asking the industry to slow down.",
       "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
+      "sourceURL": "https://www.shumaker.com/insight/client-alert-anthropics-call-for-a-global-ai-pause-what-businesses-need-to-know-about-the-governance-landscape/",
       "significance": 6
     }
   ],
