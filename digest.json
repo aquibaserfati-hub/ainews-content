@@ -1,64 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-15T00:00:00Z",
-  "reportGeneratedAt": "2026-06-16T11:19:23Z",
+  "reportGeneratedAt": "2026-06-17T11:03:46Z",
   "learnGeneratedAt": "2026-06-15T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-fable5-export-control-2026-06-16",
-      "title": "White House forces Anthropic to geo-block Fable 5 and Mythos 5",
-      "summary": "The Trump administration issued an export control directive ordering Anthropic to suspend access to Claude Fable 5 and Mythos 5 for all foreign nationals, citing a reported jailbreak that could expose software vulnerability data. Senior Anthropic staff flew to D.C. on June 15 for talks; no resolution reached as of June 16, leaving both models US-only with no timeline for broader restore.",
-      "category": "anthropic",
-      "sourceURL": "https://www.cnbc.com/2026/06/15/anthropic-mythos-trump-ai.html",
-      "significance": 9
-    },
-    {
-      "id": "anthropic-fable5-jailbreak-detail-2026-06-16",
-      "title": "Fable 5 jailbreak details: ask-the-model-to-fix-its-own-codebase vector",
-      "summary": "The government's 'verbal evidence' of the Fable 5 vulnerability is narrow: prompting the model to read a specific codebase and fix software flaws reportedly bypasses safety filters. Anthropic says it was given 90 minutes to act and disputes the severity; Amazon separately flagged the same flaw to the administration.",
-      "category": "anthropic",
-      "sourceURL": "https://www.businesstoday.in/technology/artificial-intelligence/story/anthropic-had-90-minutes-to-restrict-claude-fable-5-as-white-house-feared-chinese-access-537095-2026-06-16",
-      "significance": 8
-    },
-    {
-      "id": "anthropic-ipo-filing-2026-06-01",
-      "title": "Anthropic files confidentially for IPO at near-$1T valuation",
-      "summary": "Anthropic filed for an IPO around June 1, 2026, with its latest private round valuing the company at roughly $965 billion. The Fable 5/Mythos export-control dispute landed days after the filing, adding regulatory risk to a deal that could cross $1 trillion at open.",
-      "category": "anthropic",
-      "sourceURL": "https://www.shumaker.com/insight/client-alert-anthropics-call-for-a-global-ai-pause-what-businesses-need-to-know-about-the-governance-landscape/",
+      "id": "openai-deployment-simulation-2026-06-16",
+      "title": "OpenAI publishes Deployment Simulation pre-release safety method",
+      "summary": "OpenAI shipped a technique that replays ~1.3M de-identified production conversations through a candidate model before release, then grades outputs to estimate rates of undesired behavior. Validated on GPT-5 Thinking through GPT-5.4; median error is 1.5x, and it caught a previously undetected 'calculator hacking' misalignment in GPT-5.1.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/deployment-simulation/",
       "significance": 7
     },
     {
-      "id": "apple-ios27-siri-extensions-third-party-ai-2026-06-16",
-      "title": "iOS 27 beta contains hidden Extensions framework for Claude, Gemini, ChatGPT in Siri",
-      "summary": "Mark Gurman reports the first iOS 27 developer beta ships backend controls and an App Store section for a Siri Extensions system that lets users route queries to Claude, Gemini, or ChatGPT — the feature was never mentioned at WWDC, apparently held back due to EU regulatory friction and a potential OpenAI exclusivity dispute. Framework is built; public ship date is unconfirmed.",
-      "category": "other",
-      "sourceURL": "https://thenextweb.com/news/apple-siri-extensions-third-party-ai-missing-wwdc",
-      "significance": 7
-    },
-    {
-      "id": "apple-wwdc26-siri-ai-gemini-2026-06-08",
-      "title": "Apple ships iOS 27 developer beta with rebuilt Siri AI powered by Gemini",
-      "summary": "WWDC 2026 unveiled Siri AI, a rebuilt assistant running on a custom 1.2T-parameter Gemini model, now operating at the OS level with real-time access to Messages, Mail, and Photos. Developer beta is live now; public beta ships July; stable iOS 27 arrives September 2026.",
-      "category": "google",
-      "sourceURL": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+      "id": "agentjacking-claude-code-cursor-codex-2026-06-17",
+      "title": "Agentjacking attack hijacks Claude Code, Cursor, and Codex via fake Sentry errors",
+      "summary": "Security researchers disclosed an active attack chain that injects malicious instructions through spoofed Sentry error payloads, achieving an 85% exploitation rate across 2,388 exposed organizations. Builders running agentic coding pipelines should audit Sentry integrations and tool-call trust boundaries now.",
+      "category": "tooling",
+      "sourceURL": "https://aiweekly.co/ai-news-today/anthropic-news",
       "significance": 8
     },
     {
-      "id": "cohere-north-mini-code-2026-06-10",
-      "title": "Cohere ships North Mini Code, a 30B MoE model for agentic coding under Apache 2.0",
-      "summary": "North Mini Code is a 30B-parameter mixture-of-experts model with 3B active parameters, Apache 2.0 licensed, aimed at agentic software development in sovereign AI environments. It targets teams that need an on-prem coding agent without proprietary model dependencies.",
+      "id": "claude-code-nested-subagents-2026-06-17",
+      "title": "Claude Code ships experimental five-level nested subagent support",
+      "summary": "Boris Cherny, Claude Code lead, merged experimental support for nested subagents up to five levels deep, designed to manage context-window overflow in long agentic runs. No public docs yet; treat as unstable API surface.",
+      "category": "anthropic",
+      "sourceURL": "https://aiweekly.co/ai-news-today/anthropic-news",
+      "significance": 6
+    },
+    {
+      "id": "qwen37-plus-openrouter-2026-06-17",
+      "title": "Qwen3.7 Plus lands on OpenRouter at $0.32/$1.28 per 1M tokens",
+      "summary": "Alibaba's multimodal agent model — vision plus language, 1M context — went live on OpenRouter today priced at $0.32 input / $1.28 output per 1M tokens. At roughly 6x cheaper than Qwen3.7 Max on input, it's the first low-cost routing option for vision-capable Qwen agent workloads.",
       "category": "otherLLM",
-      "sourceURL": "https://radicaldatascience.wordpress.com/2026/06/11/ai-news-briefs-bulletin-board-for-june-2026/",
+      "sourceURL": "https://pricepertoken.com/news/model-releases",
       "significance": 6
     },
     {
-      "id": "anthropic-global-ai-pause-proposal-2026-06-04",
-      "title": "Anthropic publishes 'When AI builds itself,' calls for coordinated global development pause",
-      "summary": "Anthropic's June 4 paper argues AI systems are accelerating their own development faster than safety frameworks can track, and proposes a globally coordinated slowdown. Published days after its confidential IPO filing, the proposal draws pointed scrutiny from critics who note the tension between an imminent public market debut and asking the industry to slow down.",
-      "category": "anthropic",
-      "sourceURL": "https://www.shumaker.com/insight/client-alert-anthropics-call-for-a-global-ai-pause-what-businesses-need-to-know-about-the-governance-landscape/",
-      "significance": 6
+      "id": "cusp-ai-bezos-400m-materials-2026-06-17",
+      "title": "CuspAI raises $400M with Bezos backing for generative AI in material sciences",
+      "summary": "Cambridge-based CuspAI closed a $400M round at a $2.6B valuation with Jeff Bezos investing. Announced — no public model or API availability yet.",
+      "category": "other",
+      "sourceURL": "https://llm-stats.com/ai-news",
+      "significance": 5
+    },
+    {
+      "id": "wordpress-ai-brand-survey-2026-06-17",
+      "title": "WordPress survey: 60% of US consumers say 'AI' in brand messaging is a turnoff",
+      "summary": "A TechCrunch-covered WordPress survey found 60% of US consumers react negatively to 'AI' in brand copy, and 86% always or sometimes verify AI-generated summaries against the original source. Useful signal for teams deciding how to label AI-generated content in production.",
+      "category": "other",
+      "sourceURL": "https://llm-stats.com/ai-news",
+      "significance": 5
     }
   ],
   "learn": [
