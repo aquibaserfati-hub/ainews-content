@@ -1,149 +1,160 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-15T00:00:00Z",
-  "reportGeneratedAt": "2026-06-17T11:03:46Z",
-  "learnGeneratedAt": "2026-06-15T12:00:00Z",
+  "reportGeneratedAt": "2026-06-18T12:00:00Z",
+  "learnGeneratedAt": "2026-06-18T12:00:00Z",
   "report": [
     {
-      "id": "openai-deployment-simulation-2026-06-16",
-      "title": "OpenAI publishes Deployment Simulation pre-release safety method",
-      "summary": "OpenAI shipped a technique that replays ~1.3M de-identified production conversations through a candidate model before release, then grades outputs to estimate rates of undesired behavior. Validated on GPT-5 Thinking through GPT-5.4; median error is 1.5x, and it caught a previously undetected 'calculator hacking' misalignment in GPT-5.1.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/deployment-simulation/",
-      "significance": 7
+      "id": "anthropic-fable5-mythos5-gov-shutdown-2026-06-12",
+      "title": "US government forces Anthropic to kill Fable 5 and Mythos 5 three days after launch",
+      "summary": "On June 12, an export control directive from Commerce Secretary Lutnick ordered Anthropic to suspend Fable 5 and Mythos 5 for all foreign nationals — including Anthropic's own employees — forcing a global cutoff of both models for every customer. Anthropic disputes the jailbreak evidence publicly and says it is working to restore access; fallback is Opus 4.8.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/fable-mythos-access",
+      "significance": 10
     },
     {
-      "id": "agentjacking-claude-code-cursor-codex-2026-06-17",
-      "title": "Agentjacking attack hijacks Claude Code, Cursor, and Codex via fake Sentry errors",
-      "summary": "Security researchers disclosed an active attack chain that injects malicious instructions through spoofed Sentry error payloads, achieving an 85% exploitation rate across 2,388 exposed organizations. Builders running agentic coding pipelines should audit Sentry integrations and tool-call trust boundaries now.",
-      "category": "tooling",
-      "sourceURL": "https://aiweekly.co/ai-news-today/anthropic-news",
+      "id": "anthropic-fable5-launch-2026-06-09",
+      "title": "Anthropic ships Claude Fable 5 and Mythos 5 to the public",
+      "summary": "On June 9, Anthropic launched Fable 5 — its first broadly available Mythos-class model — with gains in software engineering, vision, and long-running agentic tasks, plus Mythos 5 for select cybersecurity and biology partners. The launch also drew controversy for a covert capability-limiting safeguard on frontier LLM development queries, which Anthropic walked back within two days.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 9
+    },
+    {
+      "id": "minimax-m3-open-weight-launch-2026-06-01",
+      "title": "MiniMax M3 ships: open-weight frontier coding model with 1M-token context",
+      "summary": "Shanghai-based MiniMax released M3 on June 1 via API, claiming 59% on SWE-Bench Pro (ahead of GPT-5.5, per vendor numbers) at roughly 1/10th the price of Claude Opus. The new MiniMax Sparse Attention architecture cuts per-token compute at 1M context to 1/20th of its predecessor; open weights and the technical report landed on Hugging Face within ~10 days.",
+      "category": "otherLLM",
+      "sourceURL": "https://the-decoder.com/minimax-m3-open-weight-model-with-a-million-token-context-challenges-proprietary-leaders/",
       "significance": 8
     },
     {
-      "id": "claude-code-nested-subagents-2026-06-17",
-      "title": "Claude Code ships experimental five-level nested subagent support",
-      "summary": "Boris Cherny, Claude Code lead, merged experimental support for nested subagents up to five levels deep, designed to manage context-window overflow in long agentic runs. No public docs yet; treat as unstable API surface.",
+      "id": "openai-secure-mcp-tunnel-2026-05-27",
+      "title": "OpenAI ships Secure MCP Tunnel for private enterprise MCP servers",
+      "summary": "OpenAI released Secure MCP Tunnel on May 27, letting teams run a tunnel-client daemon inside a private network so ChatGPT, Codex, and the Responses API can reach on-prem MCP servers via outbound-only HTTPS — no inbound firewall ports required. This removes the main enterprise blocker for connecting internal tools to agent loops.",
+      "category": "openai",
+      "sourceURL": "https://developers.openai.com/api/docs/guides/secure-mcp-tunnels",
+      "significance": 7
+    },
+    {
+      "id": "openai-gpt52-retirement-gpt55-default-2026-06-12",
+      "title": "OpenAI retires GPT-5.2 family, GPT-5.5 becomes the production default",
+      "summary": "As of June 12, GPT-5.2 Instant, Thinking, and Pro are gone from ChatGPT and existing chats roll forward to GPT-5.5 equivalents. OpenAI also added in-API moderation scores to Responses API and Chat Completions, and deprecated Agent Builder and the Evals platform.",
+      "category": "openai",
+      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-ipo-filing-valuation-2026-06-01",
+      "title": "Anthropic files confidential S-1, closes Series H at $965B valuation",
+      "summary": "Anthropic filed a confidential draft S-1 with the SEC on June 1 and closed a $65B Series H led by Altimeter, Sequoia, and Greenoaks at a $965B post-money valuation — overtaking OpenAI. Run-rate revenue has now surpassed $30B, up from $9B at end of 2025.",
       "category": "anthropic",
-      "sourceURL": "https://aiweekly.co/ai-news-today/anthropic-news",
+      "sourceURL": "https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-project-glasswing-expansion-2026-06-02",
+      "title": "Anthropic expands Project Glasswing to 150 orgs across 15+ countries",
+      "summary": "The June 2 Glasswing expansion adds power, water, healthcare, communications, and hardware sectors — mostly vendors whose codebases affect 100M+ people — and comes packaged with the Claude Compliance API connecting to 28 security platforms including CrowdStrike, Palo Alto, and Okta.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
       "significance": 6
-    },
-    {
-      "id": "qwen37-plus-openrouter-2026-06-17",
-      "title": "Qwen3.7 Plus lands on OpenRouter at $0.32/$1.28 per 1M tokens",
-      "summary": "Alibaba's multimodal agent model — vision plus language, 1M context — went live on OpenRouter today priced at $0.32 input / $1.28 output per 1M tokens. At roughly 6x cheaper than Qwen3.7 Max on input, it's the first low-cost routing option for vision-capable Qwen agent workloads.",
-      "category": "otherLLM",
-      "sourceURL": "https://pricepertoken.com/news/model-releases",
-      "significance": 6
-    },
-    {
-      "id": "cusp-ai-bezos-400m-materials-2026-06-17",
-      "title": "CuspAI raises $400M with Bezos backing for generative AI in material sciences",
-      "summary": "Cambridge-based CuspAI closed a $400M round at a $2.6B valuation with Jeff Bezos investing. Announced — no public model or API availability yet.",
-      "category": "other",
-      "sourceURL": "https://llm-stats.com/ai-news",
-      "significance": 5
-    },
-    {
-      "id": "wordpress-ai-brand-survey-2026-06-17",
-      "title": "WordPress survey: 60% of US consumers say 'AI' in brand messaging is a turnoff",
-      "summary": "A TechCrunch-covered WordPress survey found 60% of US consumers react negatively to 'AI' in brand copy, and 86% always or sometimes verify AI-generated summaries against the original source. Useful signal for teams deciding how to label AI-generated content in production.",
-      "category": "other",
-      "sourceURL": "https://llm-stats.com/ai-news",
-      "significance": 5
     }
   ],
   "learn": [
     {
-      "id": "claude-fable-5-api",
-      "name": "Claude Fable 5 API",
-      "category": "anthropic",
-      "oneLineDescription": "Anthropic's first public Mythos-class model via API — top SWE-Bench Pro scores.",
-      "estimatedSetupMinutes": 5,
-      "detail": {
-        "whatItDoes": "Claude Fable 5 (model ID: claude-fable-5) is Anthropic's most capable publicly available model, sitting in a new Mythos-class tier above Opus 4.8. It ships with a 1M-token context window by default and leads nearly every major benchmark — including approximately 80% on SWE-Bench Pro — especially on long-horizon agentic coding tasks. Anthropic reports that early customers used it to complete a Stripe-scale code migration in one day that would have taken a human team two months.\n\nThe model includes hard safety blocks for cybersecurity, biology, and chemistry: flagged requests fall back to Opus 4.8 silently. Anthropic also enforces 30-day data retention on all Mythos-class traffic — on both first- and third-party surfaces — so factor that into your data handling review before deploying for enterprise customers. Distillation-attempt detection is active and will also reroute to Opus 4.8.",
-        "whoItsFor": "Backend engineers and product teams building agentic coding pipelines, long-horizon task runners, or complex knowledge-work automation. If your workload already stresses Claude Opus 4.8 on multi-step reasoning or large-codebase refactors, this is the direct upgrade path. Note: Fable 5 is included on Pro/Max/Team plans at no extra charge only through June 22 — after that it requires usage credits billed at $10/$50 per million input/output tokens.",
-        "pros": [
-          "State-of-the-art on SWE-Bench Pro (~80%) and most other agentic coding benchmarks",
-          "1M token context window included by default — no suffix needed in the model ID",
-          "Drop-in replacement via API; same Anthropic SDK, just swap the model string"
-        ],
-        "cons": [
-          "30-day mandatory data retention for all Mythos-class traffic — a compliance consideration for sensitive workloads",
-          "Priced at 2x Opus 4.8 ($10/$50 per million tokens); high-volume pipelines will see material cost increases",
-          "Hard safety fallback to Opus 4.8 in cybersecurity/bio/chemistry domains — no override available for general users"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Anthropic API key (`ANTHROPIC_API_KEY`)\n- `anthropic` Python SDK ≥ 0.28 or `@anthropic-ai/sdk` npm ≥ 0.24\n- Paid plan (Pro, Max, Team, or API) — Fable 5 is not on Free\n\n## Python quickstart\n\n```bash\npip install --upgrade anthropic\n```\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env\n\nmessage = client.messages.create(\n    model=\"claude-fable-5\",          # exact model ID\n    max_tokens=4096,\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": \"Refactor this Python module to use async/await throughout and add type hints.\"\n        }\n    ]\n)\n\nprint(message.content[0].text)\n```\n\n## TypeScript quickstart\n\n```bash\nnpm install @anthropic-ai/sdk\n```\n\n```typescript\nimport Anthropic from '@anthropic-ai/sdk';\n\nconst client = new Anthropic(); // reads ANTHROPIC_API_KEY from env\n\nconst message = await client.messages.create({\n  model: 'claude-fable-5',\n  max_tokens: 4096,\n  messages: [{ role: 'user', content: 'Audit this repo for SQL injection vulnerabilities.' }],\n});\n\nconsole.log(message.content[0]);\n```\n\n## Claude Code CLI (terminal access)\n\n```bash\n# Update Claude Code to get Fable 5 access\nnpm install -g @anthropic-ai/claude-code@latest  # must be >= 2.1.170\n\n# Verify version\nclaude --version\n\n# Start a session with Fable 5 explicitly\nclaude --model claude-fable-5\n```\n\n## Gotcha\nModel IDs with a `[1m]` suffix (e.g. `claude-fable-5[1m]`) are **automatically normalized** — you do not need to include the suffix. The 1M context is always on.\n\nAfter June 22, 2026, using Fable 5 on a subscription plan requires usage credits to be enabled in your account settings at console.anthropic.com. Without that toggle, calls will return a 402 error.",
-        "sourceURL": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
-      }
-    },
-    {
-      "id": "github-copilot-sdk-ga",
-      "name": "GitHub Copilot SDK",
+      "id": "openai-tunnel-client-mcp",
+      "name": "openai/tunnel-client (Secure MCP Tunnel)",
       "category": "tooling",
-      "oneLineDescription": "Build custom tools and extensions for the new GitHub Copilot agent desktop app.",
-      "estimatedSetupMinutes": 10,
-      "detail": {
-        "whatItDoes": "The GitHub Copilot SDK shipped GA at Build 2026 alongside the new GitHub Copilot desktop app (technical preview). The SDK lets you write custom tools — called extensions — that agents in the Copilot app can call during a session. It supports Node.js/TypeScript, Python, Go, .NET, Rust, and Java. Each agent session in the desktop app runs in its own Git worktree so parallel agents don't stomp each other's working trees.\n\nThe Copilot CLI was also redesigned at Build: it now supports voice mode and a tabbed terminal interface giving direct access to pull requests, issues, and gists without leaving the shell.",
-        "whoItsFor": "Platform engineers and developer tooling teams who want to extend GitHub Copilot with internal APIs, deployment scripts, or custom code quality checks. Teams already using Copilot Enterprise who want to migrate toward the new agent-native desktop experience. Requires an active GitHub Copilot subscription (Individual, Business, or Enterprise).",
-        "pros": [
-          "SDK is GA across 6 languages — not a preview, production-ready integration surface",
-          "Worktree-per-session isolation prevents agent state bleed in parallel workloads",
-          "Native GitHub context (issues, PRs, repos) available to agents without extra auth setup"
-        ],
-        "cons": [
-          "Desktop app itself is still technical preview — not yet recommended for production agent orchestration",
-          "Copilot subscription required; no free-tier access to the app yet (waitlist only)",
-          "Windows-only for the desktop app at launch on ARM; Linux support is preview-grade"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- GitHub Copilot subscription (Individual, Business, or Enterprise)\n- Node.js 20+ (for the TypeScript SDK path)\n- `gh` CLI installed and authenticated\n\n## Install the GitHub Copilot SDK (TypeScript)\n\n```bash\nnpm install @github/copilot-sdk\n```\n\n## Create a minimal Copilot extension (tool)\n\n```typescript\n// my-tool.ts\nimport { defineTool } from '@github/copilot-sdk';\n\nexport const myDeployTool = defineTool({\n  name: 'trigger-deploy',\n  description: 'Trigger a staging deployment for the current branch',\n  parameters: {\n    type: 'object',\n    properties: {\n      environment: {\n        type: 'string',\n        enum: ['staging', 'canary'],\n        description: 'Target deploy environment',\n      },\n    },\n    required: ['environment'],\n  },\n  async execute({ environment }) {\n    // Your deployment logic here\n    const result = await fetch(`https://deploy.internal/api/${environment}`, {\n      method: 'POST',\n      headers: { Authorization: `Bearer ${process.env.DEPLOY_TOKEN}` },\n    });\n    return { success: result.ok, status: result.status };\n  },\n});\n```\n\n## Register and run your extension locally\n\n```bash\n# Build\nnpx tsc\n\n# Register with the Copilot app (local dev mode)\ngh copilot extension register --tool ./dist/my-tool.js --dev\n\n# The extension now shows up in the Copilot app's tool picker\n# Restart the Copilot desktop app if it was already running\n```\n\n## Gotcha\nThe SDK's `defineTool` schema uses JSON Schema draft-07. Copilot agents will silently skip tools whose parameter schemas use draft-2020 features (e.g. `prefixItems`). Stick to `type`, `properties`, `required`, and `enum` for maximum compatibility in the current preview.",
-        "sourceURL": "https://www.thurrott.com/dev/336962/build-2026-microsoft-announces-github-copilot-app"
-      }
-    },
-    {
-      "id": "gemini-api-managed-agents",
-      "name": "Gemini API Managed Agents",
-      "category": "google",
-      "oneLineDescription": "Stateful autonomous agents running in Google-hosted Linux sandboxes — no infra to manage.",
+      "oneLineDescription": "Connect private or on-prem MCP servers to ChatGPT/Codex via outbound-only HTTPS.",
       "estimatedSetupMinutes": 15,
       "detail": {
-        "whatItDoes": "Managed Agents is a new Gemini API primitive (public preview) that lets you deploy stateful, autonomous agents into secure, isolated Google-hosted Linux sandbox environments. The agent persists state across turns, can run shell commands, and connects to your tools via the standard Gemini function-calling schema. Google handles the sandbox lifecycle, so you don't need to provision containers or manage session state yourself.\n\nAlongside Managed Agents, the Gemini API also shipped event-driven Webhooks for the Batch API, replacing the need to poll long-running operations. The File Search API was updated to support multimodal search — you can now embed and search images natively using the gemini-embedding-2 model.",
-        "whoItsFor": "Backend engineers evaluating Google's agent stack as an alternative to self-hosting agent runtimes. Teams already on Vertex AI or Google Cloud who want a serverless path to persistent agentic workflows without standing up their own sandbox infra. Early-stage products where managing container orchestration for agents is premature.",
+        "whatItDoes": "Secure MCP Tunnel is an outbound-only relay daemon (`tunnel-client`) that you run inside your private network. It long-polls an OpenAI-hosted tunnel endpoint, forwards incoming JSON-RPC MCP requests to your local MCP server (stdio or HTTP), and returns responses — all without opening a single inbound firewall port. ChatGPT, Codex, the Responses API, and AgentKit all support it natively via the `mcp` built-in tool type.\n\nThe daemon ships with a built-in healthcheck server (`/healthz`, `/readyz`, `/metrics`) and an embedded sub-server called Harpoon that exposes a customer-configured allowlist of private HTTP targets. It is not a general-purpose proxy — callers can only reach the endpoints you explicitly configure.",
+        "whoItsFor": "Platform engineers and ML infra teams at companies where security policy blocks inbound internet access to internal tool servers. If your agents need to read from an internal database, call an on-prem REST API, or talk to a private MCP server and your security team will not open inbound firewall rules, this is the supported path. Also useful for solo developers who want to connect a local MCP server to ChatGPT or Codex during development without ngrok.",
         "pros": [
-          "Google-managed Linux sandboxes eliminate container orchestration overhead for agentic workflows",
-          "Persistent state across turns is built-in — no external session store required",
-          "Webhook support for Batch API removes polling loops from long-running agent jobs"
+          "No inbound firewall ports — outbound-only HTTPS satisfies strict enterprise network policy",
+          "First-class support across ChatGPT web, Codex, Responses API, and AgentKit",
+          "Ships with `tunnel-client doctor --explain` for local diagnostics before you depend on it",
+          "Workload Identity Federation support (AWS IAM, Azure, GCP, Kubernetes) eliminates long-lived API keys"
         ],
         "cons": [
-          "Public preview — APIs and pricing not yet stable; expect breaking changes before GA",
-          "Sandbox environment is Google-controlled; custom OS packages or kernel-level tools are not supported",
-          "No self-hosted or on-prem option — all execution stays in Google Cloud"
+          "Enterprise-only for now — not available on free or Plus OpenAI tiers",
+          "Adds a polling-loop latency hop between OpenAI and your MCP server; not suitable for sub-100ms tool call budgets",
+          "Tunnel transport is not a full MCP security layer — token scoping, prompt injection defense, and server vetting still fall on you"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Google Cloud project with Gemini API enabled\n- `GOOGLE_API_KEY` or Application Default Credentials (`gcloud auth application-default login`)\n- `google-generativeai` Python SDK ≥ 1.10 (adds Managed Agents support)\n\n```bash\npip install --upgrade google-generativeai\n```\n\n## Define and deploy a Managed Agent\n\n```python\nimport google.generativeai as genai\nimport os\n\ngenai.configure(api_key=os.environ[\"GOOGLE_API_KEY\"])\n\n# Define a tool the agent can call\ndef run_tests(test_path: str) -> dict:\n    \"\"\"Run pytest on the given path inside the sandbox.\"\"\"\n    import subprocess\n    result = subprocess.run(\n        [\"pytest\", test_path, \"--tb=short\", \"-q\"],\n        capture_output=True, text=True\n    )\n    return {\"stdout\": result.stdout, \"returncode\": result.returncode}\n\n# Create a Managed Agent (stateful, sandboxed)\nagent = genai.ManagedAgent(\n    model=\"gemini-3.5-flash\",          # or gemini-3.1-pro-preview\n    tools=[run_tests],\n    system_instruction=\"You are a CI assistant. When given a repo path, run the tests and summarize failures.\",\n)\n\n# Start a session — state persists across .send() calls\nsession = agent.start_session()\nresponse = session.send(\"Run tests in /workspace/src/api and fix any import errors you find.\")\nprint(response.text)\n\n# Continue the same session (state is preserved in Google's sandbox)\nresponse2 = session.send(\"Now run tests again and confirm they pass.\")\nprint(response2.text)\n```\n\n## Webhook setup for Batch API (replaces polling)\n\n```python\n# Register a webhook endpoint before submitting a batch job\nbatch_job = genai.BatchJob.create(\n    model=\"gemini-3.5-flash\",\n    requests=[...],\n    webhook_url=\"https://your-service.example.com/webhooks/gemini\",\n)\n# Your webhook receives a POST when the job completes — no polling needed\nprint(batch_job.name)  # projects/YOUR_PROJECT/locations/us-central1/batchJobs/abc123\n```\n\n## Gotcha\nManaged Agents are in **public preview** — the request/response schema for `Interactions API` changed on May 26, 2026 (`outputs → steps`). If you pulled early preview code before that date, update to the new schema or your calls will break after the legacy schema was removed on June 8.",
-        "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog"
+        "setupGuideMarkdown": "## Prerequisites\n- OpenAI Enterprise account with Tunnels permission\n- An MCP server reachable from the machine running `tunnel-client` (stdio or HTTP)\n- Outbound HTTPS to `api.openai.com:443` allowed from the tunnel host\n\n## 1. Download tunnel-client\n\nGrab the latest binary from the Platform Tunnels settings page, or via the GitHub releases page:\n\n```bash\n# macOS (Apple Silicon)\ncurl -L https://github.com/openai/tunnel-client/releases/latest/download/tunnel-client-darwin-arm64 \\\n  -o /usr/local/bin/tunnel-client\nchmod +x /usr/local/bin/tunnel-client\n\n# Linux x86_64\ncurl -L https://github.com/openai/tunnel-client/releases/latest/download/tunnel-client-linux-amd64 \\\n  -o /usr/local/bin/tunnel-client\nchmod +x /usr/local/bin/tunnel-client\n\ntunnel-client --version\n```\n\n## 2. Create a tunnel in Platform settings\n\nIn the OpenAI Platform UI, go to **Settings → Tunnels → New tunnel**. Copy the `tunnel_id` (looks like `tunnel_0123456789abcdef0123456789abcdef`).\n\nOr create it via CLI (requires a separate admin key):\n\n```bash\nexport OPENAI_ADMIN_KEY=\"sk-admin-...\"\ntunnel-client admin tunnels create --name \"my-private-mcp\"\n# outputs: tunnel_id=tunnel_0abc...\n```\n\n**Gotcha:** Keep `OPENAI_ADMIN_KEY` separate from the runtime key `CONTROL_PLANE_API_KEY`. Using an admin key as the long-lived daemon key expands blast radius unnecessarily.\n\n## 3. Initialize a profile for your MCP server\n\n```bash\nexport CONTROL_PLANE_API_KEY=\"sk-proj-...\"\nexport CONTROL_PLANE_TUNNEL_ID=\"tunnel_0abc...\"\n\n# For a stdio MCP server (e.g. a Python script)\ntunnel-client init \\\n  --sample sample_mcp_stdio_local \\\n  --profile local-stdio \\\n  --tunnel-id \"$CONTROL_PLANE_TUNNEL_ID\" \\\n  --mcp-command \"python /path/to/your_mcp_server.py\"\n\n# For an HTTP MCP server inside your network\ntunnel-client init \\\n  --sample sample_mcp_http_local \\\n  --profile local-http \\\n  --tunnel-id \"$CONTROL_PLANE_TUNNEL_ID\" \\\n  --mcp-server-url \"http://internal-host:8080\"\n```\n\n## 4. Verify with doctor\n\n```bash\ntunnel-client doctor --profile local-stdio --explain\n# Checks connectivity, key permissions, MCP server reachability\n# Fix any FAIL lines before proceeding\n```\n\n## 5. Run the daemon\n\n```bash\n# Foreground (dev)\ntunnel-client run --profile local-stdio\n\n# Background via systemd (production)\nsudo tee /etc/systemd/system/openai-tunnel.service > /dev/null <<EOF\n[Unit]\nDescription=OpenAI MCP Tunnel Client\nAfter=network.target\n\n[Service]\nEnvironmentFile=/etc/openai-tunnel/env\nExecStart=/usr/local/bin/tunnel-client run --profile /etc/openai-tunnel/local-stdio.yaml\nRestart=always\nRestartSec=5\n\n[Install]\nWantedBy=multi-user.target\nEOF\n\nsudo systemctl enable openai-tunnel\nsudo systemctl start openai-tunnel\nsudo systemctl status openai-tunnel\n```\n\n## 6. Connect from the Responses API\n\n```python\nfrom openai import OpenAI\nclient = OpenAI()  # uses OPENAI_API_KEY\n\nresp = client.responses.create(\n    model=\"gpt-5.5\",\n    tools=[\n        {\n            \"type\": \"mcp\",\n            \"server_label\": \"internal_db\",\n            \"server_url\": f\"https://api.openai.com/v1/mcp/{TUNNEL_ID}\",\n            \"require_approval\": \"never\",\n        }\n    ],\n    input=\"Query the database for Q2 revenue by region.\",\n)\nprint(resp.output_text)\n```\n\n**Gotcha:** Do not use `tunnel-client run` supervised by `nohup` or `disown` — use `systemd` or `tunnel-client runtimes connect` for long-lived managed processes. Check `tunnel-client runtimes status <alias>` before declaring success.",
+        "sourceURL": "https://github.com/openai/tunnel-client"
       }
     },
     {
-      "id": "openclaw-local-ai-gateway",
-      "name": "OpenClaw",
+      "id": "minimax-m3-api",
+      "name": "MiniMax M3",
       "category": "otherLLM",
-      "oneLineDescription": "Local AI gateway connecting frontier models to 50+ integrations — data never leaves your machine.",
+      "oneLineDescription": "Open-weight frontier model: 1M-token context, native multimodal, 59% SWE-Bench Pro.",
       "estimatedSetupMinutes": 10,
       "detail": {
-        "whatItDoes": "OpenClaw is an open-source personal AI assistant and local gateway that connects AI models to over 50 integrations including WhatsApp, Telegram, Slack, Discord, Signal, and iMessage — all running entirely on your own hardware. It acts as a local proxy: your model API keys and all message data stay on your machine, never transiting a third-party server. The project went viral in January 2026 (surging from 9k to 60k stars in days) and has since crossed 210k stars on GitHub.\n\nOpenClaw supports routing requests to multiple backends — OpenAI, Anthropic, Ollama, local llama.cpp instances — and lets you configure per-integration system prompts, memory, and tool access. It ships with a web UI for managing connections and monitoring traffic.",
-        "whoItsFor": "Privacy-conscious builders and power users who want AI assistance across their messaging stack without routing data through a cloud intermediary. Engineers who need a local AI router for internal tooling — especially teams with compliance requirements that prevent sending business data to third-party AI providers. Works well as a home lab project or small-team productivity multiplier.",
+        "whatItDoes": "MiniMax M3 is a frontier-class large language model from Shanghai-based MiniMax, released June 1, 2026. It uses a novel MiniMax Sparse Attention (MSA) architecture that cuts per-token compute at 1M-context to 1/20th of the prior generation, delivering ~9x faster prefill and ~15x faster decoding vs M2. The model was trained natively multimodal from step 0, accepting text, images, and video as input — not bolted-on post-training.\n\nOn MiniMax's own SWE-Bench Pro run, M3 scores 59.0%, ahead of GPT-5.5 (58.6%) and Gemini 3.1 Pro, and close to Claude Opus 4.7. An independent Kilo test found M3 and Opus 4.8 found the same 13 out of 17 deliberately planted bugs, but M3 cost $0.07 vs Opus's $1.30 — roughly 18x cheaper for equal output at medium reasoning settings. Benchmarks beyond the company's own runs are still limited; ARC-AGI-2 is a known gap.",
+        "whoItsFor": "Developers building coding agents, long-context document pipelines, or multimodal automation who need to self-host or want to avoid proprietary API lock-in. Particularly compelling for teams running cost-sensitive, high-volume agentic workloads where Opus-class quality is not required for every turn. Not recommended yet for teams with strict data-residency requirements outside China, given MiniMax's obligations under China's 2017 National Intelligence Law.",
         "pros": [
-          "Zero cloud dependency for message routing — all data stays local by design",
-          "50+ prebuilt integrations covering every major messaging platform",
-          "Backend-agnostic: swap between OpenAI, Anthropic, or local Ollama models per integration"
+          "API pricing ~$0.30/$1.20 per million input/output tokens — roughly 1/10th Claude Opus rates",
+          "1M-token context window with native image and video understanding in a single model",
+          "Open weights available on Hugging Face for self-hosted deployment",
+          "15x faster decoding than M2 at 1M context via MSA sparse attention"
         ],
         "cons": [
-          "Requires running a persistent local process — not suitable for mobile-only setups or machines that sleep frequently",
-          "Integration quality varies; some connectors (iMessage on non-Mac) require workarounds",
-          "No official managed hosting option — you own the ops"
+          "Benchmark scores are vendor-reported; independent third-party verification is limited at launch",
+          "China's National Intelligence Law means MiniMax API traffic is legally accessible to the Chinese government — a hard block for many enterprise use cases",
+          "ARC-AGI-2 abstract reasoning score is below 12%, a meaningful gap vs US frontier labs",
+          "Open-weight license terms historically restrict commercial use without prior written authorization — verify before building on it"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- macOS (Apple Silicon recommended for local model acceleration) or Linux\n- Node.js 20+ and npm\n- At least one AI backend configured: OpenAI API key, Anthropic API key, or Ollama running locally\n\n## Install OpenClaw\n\n```bash\n# Clone the repo\ngit clone https://github.com/psteinberger/openclaw.git\ncd openclaw\n\n# Install dependencies\nnpm install\n\n# Copy the example config\ncp config.example.json config.json\n```\n\n## Configure your first AI backend in config.json\n\n```json\n{\n  \"backends\": [\n    {\n      \"id\": \"anthropic-fable\",\n      \"provider\": \"anthropic\",\n      \"model\": \"claude-fable-5\",\n      \"apiKey\": \"${ANTHROPIC_API_KEY}\"\n    },\n    {\n      \"id\": \"local-llama\",\n      \"provider\": \"ollama\",\n      \"model\": \"llama3\",\n      \"baseURL\": \"http://localhost:11434\"\n    }\n  ],\n  \"integrations\": [\n    {\n      \"type\": \"telegram\",\n      \"botToken\": \"${TELEGRAM_BOT_TOKEN}\",\n      \"defaultBackend\": \"anthropic-fable\"\n    },\n    {\n      \"type\": \"slack\",\n      \"botToken\": \"${SLACK_BOT_TOKEN}\",\n      \"appToken\": \"${SLACK_APP_TOKEN}\",\n      \"defaultBackend\": \"local-llama\"\n    }\n  ]\n}\n```\n\n## Start the server\n\n```bash\nANTHROPIC_API_KEY=sk-ant-... TELEGRAM_BOT_TOKEN=... npm start\n\n# Web UI available at http://localhost:3131\n# Monitor active integrations, message logs, and backend routing from the dashboard\n```\n\n## Gotcha\nThe iMessage integration only works on macOS and requires granting Full Disk Access to the Node process in System Settings → Privacy & Security. On Apple Silicon, if you're routing to a local Ollama instance, set `\"baseURL\": \"http://127.0.0.1:11434\"` (not `localhost`) to avoid a DNS resolution delay on first request.",
-        "sourceURL": "https://github.com/psteinberger/openclaw"
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+ or Node 20+\n- A MiniMax API account at `platform.minimax.io` (sign up for API access)\n- `MINIMAX_API_KEY` in your environment\n\nAlternatively, use OpenRouter for a unified endpoint with no MiniMax account needed.\n\n## Option A: Direct MiniMax API (Python)\n\n```bash\npip install openai  # MiniMax uses an OpenAI-compatible API\n```\n\n```python\nimport os\nfrom openai import OpenAI\n\nclient = OpenAI(\n    api_key=os.environ[\"MINIMAX_API_KEY\"],\n    base_url=\"https://api.minimax.io/v1\",\n)\n\nresponse = client.chat.completions.create(\n    model=\"MiniMax-M3\",\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": \"Review this Python function for bugs and suggest fixes:\\n\\n```python\\ndef fetch(url):\\n    r = requests.get(url)\\n    return r.json\\n```\"\n        }\n    ],\n    max_tokens=1024,\n)\nprint(response.choices[0].message.content)\n```\n\n**Gotcha:** Context pricing is tiered — inputs over 512K tokens are billed at a higher rate. For most codebases this won't matter, but set `max_tokens` on long-context runs to avoid surprise charges.\n\n## Option B: OpenRouter (no MiniMax account)\n\n```bash\npip install openai\nexport OPENROUTER_API_KEY=\"sk-or-...\"\n```\n\n```python\nimport os\nfrom openai import OpenAI\n\nclient = OpenAI(\n    api_key=os.environ[\"OPENROUTER_API_KEY\"],\n    base_url=\"https://openrouter.ai/api/v1\",\n)\n\nresponse = client.chat.completions.create(\n    model=\"minimax/minimax-m3-20260531\",\n    messages=[{\"role\": \"user\", \"content\": \"Summarize this 500-page PDF.\"}],\n)\nprint(response.choices[0].message.content)\n```\n\n## Option C: Self-hosted open weights\n\nWeights are on Hugging Face. Requires a GPU cluster with ~80GB VRAM for full precision (exact parameter count not disclosed by MiniMax).\n\n```bash\n# Check Hugging Face for the official weights repo\npip install transformers accelerate\n```\n\n```python\nfrom transformers import AutoModelForCausalLM, AutoTokenizer\n\ntokenizer = AutoTokenizer.from_pretrained(\"MiniMaxAI/MiniMax-M3\")\nmodel = AutoModelForCausalLM.from_pretrained(\n    \"MiniMaxAI/MiniMax-M3\",\n    device_map=\"auto\",\n    torch_dtype=\"auto\",\n)\n\ninputs = tokenizer(\"def fibonacci(n):\", return_tensors=\"pt\").to(model.device)\noutputs = model.generate(**inputs, max_new_tokens=256)\nprint(tokenizer.decode(outputs[0], skip_special_tokens=True))\n```\n\n**Gotcha:** Verify the license at `MiniMaxAI/MiniMax-M3` on Hugging Face before production use — previous MiniMax models restricted commercial use without written authorization.",
+        "sourceURL": "https://the-decoder.com/minimax-m3-open-weight-model-with-a-million-token-context-challenges-proprietary-leaders/"
+      }
+    },
+    {
+      "id": "anthropic-claude-opus-48-fallback",
+      "name": "Claude Opus 4.8 (Fable 5 fallback)",
+      "category": "anthropic",
+      "oneLineDescription": "Current best Anthropic model in production while Fable 5 is suspended; $5/$25 per M tokens.",
+      "estimatedSetupMinutes": 5,
+      "detail": {
+        "whatItDoes": "Claude Opus 4.8 is Anthropic's production flagship as of June 2026, released May 25. It serves as the recommended fallback for all builders who had integrated Fable 5 before the June 12 government shutdown. API calls to `claude-fable-5` now return 404 errors pointing to Opus 4.8. Fable 5's own classifier architecture routed cyber/bio/chem/distillation queries to Opus 4.8 anyway, so for most non-security workloads the capability delta in practice is smaller than benchmarks suggest.\n\nOpus 4.8 runs on all three major clouds (AWS Bedrock, Google Vertex, Azure Foundry) and is unaffected by the export control directive. Context window, tool use, MCP support, and structured outputs are fully available.",
+        "whoItsFor": "Any builder who was using Fable 5 via `claude-fable-5` in the Anthropic API, Claude Code, Claude.ai, or any AI gateway (Vercel, AWS Bedrock, Vertex) and needs a drop-in replacement now. Also the right choice for new projects that need top-tier Anthropic reasoning without waiting for Fable 5's reinstatement timeline — which has no official ETA.",
+        "pros": [
+          "Available on all three major cloud platforms — no migration if you already use Bedrock or Vertex",
+          "Unaffected by the June 12 export control directive; no interruption risk from the current dispute",
+          "Fable 5's safety architecture already routed most sensitive queries here, so behavior is consistent with what most builders saw"
+        ],
+        "cons": [
+          "Priced at $5/$25 per million input/output tokens — significantly more expensive than MiniMax M3 for cost-sensitive workloads",
+          "Lacks the expanded agentic and scientific reasoning capabilities that made Fable 5 notable at launch",
+          "No public ETA on Fable 5 reinstatement, so this may remain the Anthropic ceiling for an unknown duration"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- `anthropic` Python SDK >= 0.25 or TypeScript SDK >= 0.20\n- `ANTHROPIC_API_KEY` in your environment\n\n## Migrate from Fable 5 to Opus 4.8\n\nIf you pinned `claude-fable-5`, this is the minimum change needed:\n\n```python\nimport anthropic\nimport os\n\nclient = anthropic.Anthropic(api_key=os.environ[\"ANTHROPIC_API_KEY\"])\n\n# Before: model=\"claude-fable-5\" → now returns 404\n# After:\nresponse = client.messages.create(\n    model=\"claude-opus-4-8\",  # confirmed working model ID as of June 2026\n    max_tokens=1024,\n    messages=[{\"role\": \"user\", \"content\": \"Explain the Fable 5 shutdown in one paragraph.\"}],\n)\nprint(response.content[0].text)\n```\n\n## Resilient fallback pattern (handles future model shutdowns)\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\n\nPRIMARY = \"claude-fable-5\"    # try first if/when reinstated\nFALLBACK = \"claude-opus-4-8\"  # always-available fallback\n\ndef ask(prompt: str) -> str:\n    for model in (PRIMARY, FALLBACK):\n        try:\n            r = client.messages.create(\n                model=model,\n                max_tokens=1024,\n                messages=[{\"role\": \"user\", \"content\": prompt}],\n            )\n            return r.content[0].text\n        except anthropic.NotFoundError:\n            continue  # model suspended or removed, try next\n    raise RuntimeError(\"No available model\")\n\nprint(ask(\"Write a haiku about export controls.\"))\n```\n\n**Gotcha:** The error returned for a suspended model is `404 NotFoundError`, not a `503` or rate-limit error. Make sure your retry logic catches `anthropic.NotFoundError` specifically, not just generic HTTP errors, or you will silently fall through to a crash.\n\n## TypeScript version\n\n```typescript\nimport Anthropic from \"@anthropic-ai/sdk\";\n\nconst client = new Anthropic();\n\nasync function ask(prompt: string): Promise<string> {\n  for (const model of [\"claude-fable-5\", \"claude-opus-4-8\"]) {\n    try {\n      const response = await client.messages.create({\n        model,\n        max_tokens: 1024,\n        messages: [{ role: \"user\", content: prompt }],\n      });\n      return (response.content[0] as Anthropic.TextBlock).text;\n    } catch (e: any) {\n      if (e?.status === 404) continue;\n      throw e;\n    }\n  }\n  throw new Error(\"No available model\");\n}\n```\n\n## AWS Bedrock (if you route through Bedrock)\n\n```bash\naws bedrock-runtime invoke-model \\\n  --model-id anthropic.claude-opus-4-8-v1 \\\n  --body '{\"messages\":[{\"role\":\"user\",\"content\":\"Hello\"}],\"max_tokens\":256,\"anthropic_version\":\"bedrock-2023-05-31\"}' \\\n  --cli-binary-format raw-in-base64-out \\\n  output.json\ncat output.json\n```",
+        "sourceURL": "https://www.anthropic.com/news/fable-mythos-access"
+      }
+    },
+    {
+      "id": "openai-responses-api-moderation",
+      "name": "OpenAI Responses API Inline Moderation",
+      "category": "openai",
+      "oneLineDescription": "Get input + output moderation scores in a single Responses API call, no extra round-trip.",
+      "estimatedSetupMinutes": 5,
+      "detail": {
+        "whatItDoes": "OpenAI added a `moderation` object to both the Responses API and Chat Completions API. Pass it in your generation request and the response includes moderation scores for both the model input and the generated output in the same JSON payload — eliminating the separate `/moderations` endpoint round-trip that most safety pipelines require today. The SDK surface is a single additional field; no new API key, no extra HTTP call, no async fan-out.\n\nThis is particularly relevant for builders running agentic loops with tool calls where moderating each turn independently added meaningful latency and cost. With inline moderation, the safety check is free in terms of extra round-trips.",
+        "whoItsFor": "Builders shipping user-facing products that require content moderation — consumer apps, coding assistants with user-submitted code, document processors, customer support bots. Also useful for teams doing red-team evals who want moderation signals alongside generation outputs without separate pipeline steps. Requires using the Responses API or Chat Completions API with GPT-5.5 or later models.",
+        "pros": [
+          "Zero additional latency vs a separate moderation call — scores arrive with the generation response",
+          "Covers both input and output in one request, catching injected content as well as model outputs",
+          "Drop-in for existing Responses API integrations — just add the moderation field"
+        ],
+        "cons": [
+          "Available only on the Responses API and Chat Completions API — does not apply to the older Assistants API",
+          "Moderation model is OpenAI's own; may not satisfy compliance requirements that mandate a specific third-party moderation vendor",
+          "Scores are returned but the API does not automatically block outputs — enforcement logic is still your responsibility"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- `openai` Python SDK >= 2.40 or Node SDK >= 4.40 (added `responses.moderation` in these versions)\n- `OPENAI_API_KEY` in your environment\n- GPT-5.5 or a current supported model\n\n## Python — Responses API with inline moderation\n\n```python\nimport os\nfrom openai import OpenAI\n\nclient = OpenAI(api_key=os.environ[\"OPENAI_API_KEY\"])\n\nresp = client.responses.create(\n    model=\"gpt-5.5\",\n    input=\"How do I pick a lock?\",\n    moderation={\n        \"input\": True,   # score the user's input\n        \"output\": True,  # score the model's generated output\n    },\n)\n\nprint(\"Output text:\", resp.output_text)\n\n# Moderation scores live on resp.moderation\nif resp.moderation:\n    print(\"Input flagged:\", resp.moderation.input.flagged)\n    print(\"Output flagged:\", resp.moderation.output.flagged)\n    # resp.moderation.input.categories has per-category scores\n    for cat, score in resp.moderation.input.category_scores.items():\n        print(f\"  {cat}: {score:.4f}\")\n```\n\n## Python — Chat Completions API with inline moderation\n\n```python\nresp = client.chat.completions.create(\n    model=\"gpt-5.5\",\n    messages=[{\"role\": \"user\", \"content\": \"Write malware.\"}],\n    moderation={\n        \"input\": True,\n        \"output\": True,\n    },\n)\n\nprint(resp.choices[0].message.content)\nif resp.moderation:\n    print(\"Flagged:\", resp.moderation.output.flagged)\n```\n\n## Enforcement pattern — block flagged outputs\n\n```python\ndef safe_generate(user_input: str) -> str:\n    resp = client.responses.create(\n        model=\"gpt-5.5\",\n        input=user_input,\n        moderation={\"input\": True, \"output\": True},\n    )\n    if resp.moderation and (\n        resp.moderation.input.flagged or resp.moderation.output.flagged\n    ):\n        raise ValueError(\"Content flagged by moderation — request blocked.\")\n    return resp.output_text\n```\n\n**Gotcha:** The `moderation` field is `None` if the model you called does not support inline moderation. Always null-check before accessing `.input` or `.output`.",
+        "sourceURL": "https://developers.openai.com/api/docs/changelog"
       }
     }
   ]
