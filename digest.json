@@ -1,56 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-15T00:00:00Z",
-  "reportGeneratedAt": "2026-06-18T10:25:36Z",
+  "reportGeneratedAt": "2026-06-19T10:43:40Z",
   "learnGeneratedAt": "2026-06-18T12:00:00Z",
   "report": [
     {
-      "id": "spacex-cursor-acquisition-2026-06-16",
-      "title": "SpaceX acquires Cursor for $60B in largest VC startup deal ever",
-      "summary": "SpaceX confirmed a $60B all-stock acquisition of Anysphere (Cursor) on June 16, the largest VC-backed startup acquisition on record. Closing is expected in Q3 2026; joint model training is already underway, and the combined entity plans to reduce Cursor's dependence on Anthropic and OpenAI for inference. Builders using Cursor should watch for product direction changes as xAI/SpaceX takes the wheel.",
-      "category": "tooling",
-      "sourceURL": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
-      "significance": 8
-    },
-    {
-      "id": "google-antigravity-cli-migration-2026-06-18",
-      "title": "Google retires Gemini CLI today; Antigravity CLI is the replacement",
-      "summary": "Google's Antigravity CLI goes live June 18 as the official replacement for the Gemini CLI, part of Google's broader push to consolidate developers onto the Gemini 3.5 agentic platform. Any CI/CD pipeline or workflow calling the old Gemini CLI command set needs migration today to avoid breakage.",
-      "category": "google",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-17-2026",
+      "id": "anthropic-mcp-okta-enterprise-2026-06-19",
+      "title": "Anthropic ships enterprise-managed MCP connectors with Okta SSO",
+      "summary": "Admins can now provision MCP connectors org-wide through their identity provider — starting with Okta — and users get zero-touch access on first login. The beta covers Claude chat, Claude Code, and Cowork on Team and Enterprise plans, cutting the previous two-step authorization per user.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
       "significance": 7
     },
     {
-      "id": "openai-lifescibench-2026-06-17",
-      "title": "OpenAI ships LifeSciBench, a 750-task life science eval built with 173 scientists",
-      "summary": "OpenAI released LifeSciBench, an expert-authored benchmark spanning 750 free-response tasks across seven biological domains and workflows, co-built with 173 practicing scientists. The benchmark is far from saturated — even the strongest models pass roughly one task in three — making it a credible signal for teams evaluating AI in drug discovery or research automation.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/index/introducing-life-sci-bench/",
+      "id": "anthropic-wif-service-accounts-2026-06-19",
+      "title": "Anthropic adds Workload Identity Federation and service accounts to Claude Platform",
+      "summary": "Static API keys are out: workloads now authenticate via short-lived OIDC tokens from AWS IAM, GCP, Azure, GitHub Actions, or Okta. Each workload gets its own service account with scoped roles and an audit trail, which removes a common credential-leak surface for teams running agents in CI or cloud environments.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-seoul-office-korea-enterprise-2026-06-17",
+      "title": "Anthropic opens Seoul office, lands Samsung SDS, LG CNS, NAVER, and Nexon deals",
+      "summary": "Anthropic's third Asia-Pacific office opened June 17 with a cluster of Korean enterprise deployments: Samsung SDS rolling out Claude Cowork and Claude Code across Samsung Electronics, LG CNS deploying Claude Enterprise group-wide across all LG affiliates, NAVER deploying Claude Code across its full engineering org, and Nexon using Claude Code for live-service game development. This is the densest single-announcement enterprise cluster Claude has had in one market.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
       "significance": 6
     },
     {
-      "id": "openai-ai-chemist-gpt54-2026-06-17",
-      "title": "OpenAI and Molecule.one demo near-autonomous AI chemist on GPT-5.4",
-      "summary": "OpenAI published research showing a near-autonomous AI chemist built on GPT-5.4 that improved a challenging medicinal chemistry reaction in collaboration with Molecule.one. This is a live applied result, not a benchmark — relevant for builders working on scientific workflow automation.",
+      "id": "openai-gpt52-retirement-chatgpt-2026-06-12",
+      "title": "OpenAI retires GPT-5.2 from ChatGPT; GPT-4.5 sunset date set for June 27",
+      "summary": "As of June 12, GPT-5.2 Instant, Thinking, and Pro are gone from ChatGPT — existing conversations auto-migrate to GPT-5.5. OpenAI also confirmed GPT-4.5 leaves ChatGPT on June 27 and o3 on August 26; API access for both is unaffected.",
       "category": "openai",
-      "sourceURL": "https://openai.com/news/",
+      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
       "significance": 6
     },
     {
-      "id": "openai-predicting-model-behavior-deployment-sim-2026-06-16",
-      "title": "OpenAI publishes research on simulating deployment to predict model behavior",
-      "summary": "OpenAI released a research paper on predicting model behavior before release by simulating deployment conditions, targeting the gap between lab evals and production performance. This is a methodology paper — no new model shipped — but it signals an internal shift toward deployment-grounded safety testing that could shape future release processes.",
+      "id": "openai-codex-goal-mode-ga-2026-06-19",
+      "title": "OpenAI ships Codex Goal Mode GA and Appshots for macOS",
+      "summary": "Goal Mode — define an outcome and success criteria, let Codex run — is now generally available across the Codex app, IDE extension, and CLI. Appshots let you attach a live macOS app window to a Codex thread with a hotkey, giving the agent visual and text context without a manual setup prompt.",
       "category": "openai",
-      "sourceURL": "https://openai.com/news/",
+      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-claude-design-update-2026-06-19",
+      "title": "Claude Design ships tighter Claude Code sync and direct canvas editing",
+      "summary": "The update keeps generated UI aligned to your design system across projects, adds direct canvas editing, stronger layout controls, and more tool integrations for smoother design-to-code handoff. Claude Code sync is now bidirectional, reducing round-trips between design and implementation.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
       "significance": 5
-    },
-    {
-      "id": "ai-coding-consolidation-all-major-tools-acquired-2026-06-17",
-      "title": "Every major AI coding tool is now owned by a big incumbent",
-      "summary": "With the Cursor deal closed, the independent AI coding tool era is over: GitHub Copilot (Microsoft), Windsurf (OpenAI), Claude Code (Anthropic), and now Cursor (SpaceX/xAI) are all platform-owned. Builders who have avoided lock-in by spreading spend across tools should reassess whether that strategy still holds as roadmaps shift toward proprietary model stacks.",
-      "category": "founderLens",
-      "sourceURL": "https://reptile.haus/journal/spacex-cursor-acquisition-ai-coding-strategy-2026/",
-      "significance": 7
     }
   ],
   "learn": [
