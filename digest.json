@@ -1,56 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-15T00:00:00Z",
-  "reportGeneratedAt": "2026-06-19T10:43:40Z",
+  "reportGeneratedAt": "2026-06-20T09:22:57Z",
   "learnGeneratedAt": "2026-06-18T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-mcp-okta-enterprise-2026-06-19",
-      "title": "Anthropic ships enterprise-managed MCP connectors with Okta SSO",
-      "summary": "Admins can now provision MCP connectors org-wide through their identity provider — starting with Okta — and users get zero-touch access on first login. The beta covers Claude chat, Claude Code, and Cowork on Team and Enterprise plans, cutting the previous two-step authorization per user.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "id": "openai-rare-disease-diagnostics-2026-06-18",
+      "title": "OpenAI ships AI tool to help physicians diagnose rare genetic diseases in children",
+      "summary": "OpenAI published a product post on June 18 detailing an applied AI system that assists physicians in diagnosing rare genetic diseases in children. Real clinical workflow integration — not a demo — signals OpenAI's continued push into high-stakes applied medicine.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/news/",
       "significance": 7
     },
     {
-      "id": "anthropic-wif-service-accounts-2026-06-19",
-      "title": "Anthropic adds Workload Identity Federation and service accounts to Claude Platform",
-      "summary": "Static API keys are out: workloads now authenticate via short-lived OIDC tokens from AWS IAM, GCP, Azure, GitHub Actions, or Okta. Each workload gets its own service account with scoped roles and an audit trail, which removes a common credential-leak surface for teams running agents in CI or cloud environments.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
+      "id": "openai-ai-chemist-2026-06-18",
+      "title": "OpenAI demonstrates near-autonomous AI chemist that improves medicinal chemistry reactions",
+      "summary": "OpenAI's applied AI team published findings on a near-autonomous AI chemist that improved a challenging reaction in medicinal chemistry. This is research output, not a public API — no builder access yet, but the autonomous lab-agent direction is real.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/news/",
       "significance": 7
     },
     {
-      "id": "anthropic-seoul-office-korea-enterprise-2026-06-17",
-      "title": "Anthropic opens Seoul office, lands Samsung SDS, LG CNS, NAVER, and Nexon deals",
-      "summary": "Anthropic's third Asia-Pacific office opened June 17 with a cluster of Korean enterprise deployments: Samsung SDS rolling out Claude Cowork and Claude Code across Samsung Electronics, LG CNS deploying Claude Enterprise group-wide across all LG affiliates, NAVER deploying Claude Code across its full engineering org, and Nexon using Claude Code for live-service game development. This is the densest single-announcement enterprise cluster Claude has had in one market.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "id": "openai-lifescibench-2026-06-17",
+      "title": "OpenAI releases LifeSciBench, a new life-sciences model evaluation benchmark",
+      "summary": "OpenAI dropped LifeSciBench on June 17, a benchmark targeting life-sciences reasoning — useful for teams evaluating models on biomedical tasks and comparing across providers.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/news/",
       "significance": 6
     },
     {
-      "id": "openai-gpt52-retirement-chatgpt-2026-06-12",
-      "title": "OpenAI retires GPT-5.2 from ChatGPT; GPT-4.5 sunset date set for June 27",
-      "summary": "As of June 12, GPT-5.2 Instant, Thinking, and Pro are gone from ChatGPT — existing conversations auto-migrate to GPT-5.5. OpenAI also confirmed GPT-4.5 leaves ChatGPT on June 27 and o3 on August 26; API access for both is unaffected.",
+      "id": "openai-prerelease-behavior-simulation-2026-06-17",
+      "title": "OpenAI publishes method for predicting model behavior before release via deployment simulation",
+      "summary": "OpenAI's safety research team released a paper on simulating deployment environments to surface model misbehavior before public launch. Directly relevant to anyone running red-teaming or pre-production eval pipelines.",
       "category": "openai",
-      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "sourceURL": "https://openai.com/news/",
       "significance": 6
     },
     {
-      "id": "openai-codex-goal-mode-ga-2026-06-19",
-      "title": "OpenAI ships Codex Goal Mode GA and Appshots for macOS",
-      "summary": "Goal Mode — define an outcome and success criteria, let Codex run — is now generally available across the Codex app, IDE extension, and CLI. Appshots let you attach a live macOS app window to a Codex thread with a hotkey, giving the agent visual and text context without a manual setup prompt.",
-      "category": "openai",
-      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "id": "google-vertex-vector-search-2-ga-2026-06",
+      "title": "Google Vertex AI Vector Search 2.0 hits general availability",
+      "summary": "Vector Search 2.0 is now GA on Vertex AI, bringing collections that unify data and vectors plus auto-embeddings for automatic vector field population. Drop-in upgrade path for teams already on Vertex RAG stacks.",
+      "category": "google",
+      "sourceURL": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
+      "significance": 6
+    },
+    {
+      "id": "glm-52-mit-weights-2026-06",
+      "title": "GLM-5.2 ships MIT-licensed weights at up to 5.7x lower cost than Claude Opus 4.8",
+      "summary": "GLM-5.2 is now available with MIT-licensed open weights, benchmarking competitively against Claude Opus 4.8 at a fraction of the price. Strong option for teams that need self-hosted inference or want to escape per-token pricing at scale.",
+      "category": "otherLLM",
+      "sourceURL": "https://llm-stats.com/ai-news",
       "significance": 7
     },
     {
-      "id": "anthropic-claude-design-update-2026-06-19",
-      "title": "Claude Design ships tighter Claude Code sync and direct canvas editing",
-      "summary": "The update keeps generated UI aligned to your design system across projects, adds direct canvas editing, stronger layout controls, and more tool integrations for smoother design-to-code handoff. Claude Code sync is now bidirectional, reducing round-trips between design and implementation.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
-      "significance": 5
+      "id": "vertex-ai-video-deprecation-deadline-2026-06-30",
+      "title": "Google Vertex AI video generation endpoint deprecations hit June 30 deadline",
+      "summary": "Google's Vertex AI video generation endpoints are deprecated with a hard cutover on June 30, 2026 — ten days away. Teams still on old endpoints need to migrate now to avoid service disruption.",
+      "category": "google",
+      "sourceURL": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
+      "significance": 6
     }
   ],
   "learn": [
