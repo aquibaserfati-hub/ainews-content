@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-15T00:00:00Z",
-  "reportGeneratedAt": "2026-06-20T09:22:57Z",
+  "reportGeneratedAt": "2026-06-21T09:56:00Z",
   "learnGeneratedAt": "2026-06-18T12:00:00Z",
   "report": [
     {
-      "id": "openai-rare-disease-diagnostics-2026-06-18",
-      "title": "OpenAI ships AI tool to help physicians diagnose rare genetic diseases in children",
-      "summary": "OpenAI published a product post on June 18 detailing an applied AI system that assists physicians in diagnosing rare genetic diseases in children. Real clinical workflow integration — not a demo — signals OpenAI's continued push into high-stakes applied medicine.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
-      "significance": 7
+      "id": "us-govt-suspends-anthropic-fable5-mythos5-2026-06-12",
+      "title": "US government orders Anthropic to suspend Fable 5 and Mythos 5 access",
+      "summary": "The US government issued a directive on June 12 requiring Anthropic to suspend access to Fable 5 and Mythos 5, its two most capable models. Anthropic published a statement acknowledging the order; no timeline for reinstatement has been given, and the models remain inaccessible to all users.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 8
     },
     {
-      "id": "openai-ai-chemist-2026-06-18",
-      "title": "OpenAI demonstrates near-autonomous AI chemist that improves medicinal chemistry reactions",
-      "summary": "OpenAI's applied AI team published findings on a near-autonomous AI chemist that improved a challenging reaction in medicinal chemistry. This is research output, not a public API — no builder access yet, but the autonomous lab-agent direction is real.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
-      "significance": 7
-    },
-    {
-      "id": "openai-lifescibench-2026-06-17",
-      "title": "OpenAI releases LifeSciBench, a new life-sciences model evaluation benchmark",
-      "summary": "OpenAI dropped LifeSciBench on June 17, a benchmark targeting life-sciences reasoning — useful for teams evaluating models on biomedical tasks and comparing across providers.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
+      "id": "anthropic-claude-code-safety-tooling-update-2026-06-19",
+      "title": "Claude Code ships destructive-command blocks and new tool versioning",
+      "summary": "A June 19 Claude Code update blocks destructive git and infrastructure commands (git reset --hard, terraform destroy, etc.) unless explicitly requested, and adds versioned tool IDs for code execution, web search, and web fetch with no beta header required. The response_inclusion parameter on web tools lets agentic loops trim consumed result blocks from API responses.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
       "significance": 6
     },
     {
-      "id": "openai-prerelease-behavior-simulation-2026-06-17",
-      "title": "OpenAI publishes method for predicting model behavior before release via deployment simulation",
-      "summary": "OpenAI's safety research team released a paper on simulating deployment environments to surface model misbehavior before public launch. Directly relevant to anyone running red-teaming or pre-production eval pipelines.",
-      "category": "openai",
-      "sourceURL": "https://openai.com/news/",
-      "significance": 6
+      "id": "anthropic-workload-identity-federation-service-accounts-2026-06",
+      "title": "Claude Platform adds workload identity federation and per-workload service accounts",
+      "summary": "The Claude Platform now supports WIF, letting workloads authenticate with existing AWS IAM roles, GCP service accounts, GitHub Actions tokens, or other OIDC providers — no static API keys to rotate or leak. Per-workload service accounts give each agent its own identity, roles, and audit trail, a meaningful upgrade for teams running production agent fleets.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "significance": 7
     },
     {
-      "id": "google-vertex-vector-search-2-ga-2026-06",
-      "title": "Google Vertex AI Vector Search 2.0 hits general availability",
-      "summary": "Vector Search 2.0 is now GA on Vertex AI, bringing collections that unify data and vectors plus auto-embeddings for automatic vector field population. Drop-in upgrade path for teams already on Vertex RAG stacks.",
+      "id": "anthropic-when-ai-builds-itself-pause-proposal-2026-06-04",
+      "title": "Anthropic publishes \"When AI builds itself,\" calls for coordinated frontier slowdown",
+      "summary": "Published June 4, the paper backs a globally coordinated option to pause frontier AI development, citing internal data showing Claude now authors over 80% of Anthropic's production code and that Mythos Preview achieved roughly 52x performance improvements over skilled human engineers. Anthropic did not commit to a unilateral halt, and filed confidentially for an IPO the same week.",
+      "category": "anthropic",
+      "sourceURL": "https://www.shumaker.com/insight/client-alert-anthropics-call-for-a-global-ai-pause-what-businesses-need-to-know-about-the-governance-landscape/",
+      "significance": 7
+    },
+    {
+      "id": "microsoft-mai-model-family-build-2026-06-02",
+      "title": "Microsoft ships seven MAI models including MAI-Thinking-1 reasoning and MAI-Code-1-Flash",
+      "summary": "Announced at Build, MAI-Thinking-1 is a mid-size reasoning model trained from scratch (no third-party distillation) that matches leading models on SWE-bench and is integrated into GitHub Copilot and VS Code with 5B active parameters at Haiku-comparable cost. Microsoft also launched MAI-Image-2.5, MAI-Transcribe-1.5, and a Microsoft-Mayo Clinic healthcare frontier model in development.",
+      "category": "other",
+      "sourceURL": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
+      "significance": 7
+    },
+    {
+      "id": "gemini-35-pro-still-pending-june-2026",
+      "title": "Gemini 3.5 Pro window closes with no ship date confirmed",
+      "summary": "Google confirmed at I/O that Gemini 3.5 Pro would land \"next month\" (June), but as of June 21 there is no stable model ID, no model card, and no API availability — announced, not shipped. Gemini 3.5 Flash (GA May 19, $1.50/$9 per million tokens) remains the only production option in the 3.5 line.",
       "category": "google",
-      "sourceURL": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
-      "significance": 6
+      "sourceURL": "https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/",
+      "significance": 5
     },
     {
-      "id": "glm-52-mit-weights-2026-06",
-      "title": "GLM-5.2 ships MIT-licensed weights at up to 5.7x lower cost than Claude Opus 4.8",
-      "summary": "GLM-5.2 is now available with MIT-licensed open weights, benchmarking competitively against Claude Opus 4.8 at a fraction of the price. Strong option for teams that need self-hosted inference or want to escape per-token pricing at scale.",
-      "category": "otherLLM",
-      "sourceURL": "https://llm-stats.com/ai-news",
-      "significance": 7
-    },
-    {
-      "id": "vertex-ai-video-deprecation-deadline-2026-06-30",
-      "title": "Google Vertex AI video generation endpoint deprecations hit June 30 deadline",
-      "summary": "Google's Vertex AI video generation endpoints are deprecated with a hard cutover on June 30, 2026 — ten days away. Teams still on old endpoints need to migrate now to avoid service disruption.",
-      "category": "google",
-      "sourceURL": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
+      "id": "anthropic-ipo-filing-965b-valuation-2026-06-01",
+      "title": "Anthropic files confidentially for IPO at ~$965B valuation",
+      "summary": "Anthropic made a confidential S-1 filing around June 1, days after closing a $65B Series H at a $965B post-money valuation and disclosing run-rate revenue surpassing $30B. Both Anthropic and OpenAI are now in IPO preparation simultaneously, setting up a dual public-market debut with governance and revenue-recognition differences already under investor scrutiny.",
+      "category": "anthropic",
+      "sourceURL": "https://www.cnbc.com/2026/06/02/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html",
       "significance": 6
     }
   ],
