@@ -1,160 +1,184 @@
 {
   "schemaVersion": 1,
-  "weekOf": "2026-06-15T00:00:00Z",
-  "reportGeneratedAt": "2026-06-21T09:56:00Z",
-  "learnGeneratedAt": "2026-06-18T12:00:00Z",
+  "weekOf": "2026-06-22T00:00:00Z",
+  "reportGeneratedAt": "2026-06-22T12:00:00Z",
+  "learnGeneratedAt": "2026-06-22T12:00:00Z",
   "report": [
     {
-      "id": "us-govt-suspends-anthropic-fable5-mythos5-2026-06-12",
-      "title": "US government orders Anthropic to suspend Fable 5 and Mythos 5 access",
-      "summary": "The US government issued a directive on June 12 requiring Anthropic to suspend access to Fable 5 and Mythos 5, its two most capable models. Anthropic published a statement acknowledging the order; no timeline for reinstatement has been given, and the models remain inaccessible to all users.",
+      "id": "anthropic-ipo-s1-filing-2026-06-01",
+      "title": "Anthropic files confidential S-1 with SEC, targets late-2026 IPO",
+      "summary": "Anthropic submitted a draft Form S-1 on June 1, days after closing a $65B Series H at a $965B valuation — the first major AI lab to formally enter the public-markets process. Revenue run-rate is reported at $47B annualized; share price and count are unset. Builders should note that a publicly-traded Anthropic changes API durability calculus.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
+      "sourceURL": "https://www.anthropic.com/news/confidential-draft-s1-sec",
       "significance": 8
     },
     {
-      "id": "anthropic-claude-code-safety-tooling-update-2026-06-19",
-      "title": "Claude Code ships destructive-command blocks and new tool versioning",
-      "summary": "A June 19 Claude Code update blocks destructive git and infrastructure commands (git reset --hard, terraform destroy, etc.) unless explicitly requested, and adds versioned tool IDs for code execution, web search, and web fetch with no beta header required. The response_inclusion parameter on web tools lets agentic loops trim consumed result blocks from API responses.",
+      "id": "google-kills-gemini-cli-antigravity-2026-06-18",
+      "title": "Google kills Gemini CLI for free and Pro users, ships closed-source Antigravity CLI",
+      "summary": "As of June 18, Gemini CLI stopped serving free, Google AI Pro, and Ultra users with no grace period. The replacement is Antigravity CLI (binary: agy) — a closed-source Go rewrite that ships parallel async agents but lacks feature parity at launch, and downgrades quotas from daily to weekly limits. Any CI pipeline calling gemini is broken now.",
+      "category": "google",
+      "sourceURL": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
+      "significance": 8
+    },
+    {
+      "id": "claude-code-artifacts-mcp-okta-2026-06-week",
+      "title": "Claude Code ships Artifacts, enterprise MCP Okta provisioning, and auto mode on Bedrock/Vertex",
+      "summary": "Claude Code added shareable live Artifacts that auto-update as sessions run — useful for PR walkthroughs and incident pages. Separately, admins can now provision MCP connectors org-wide via Okta with zero-touch user access. Auto mode also landed on Bedrock, Vertex, and Foundry for Opus 4.7/4.8.",
       "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
+      "sourceURL": "https://code.claude.com/docs/en/whats-new",
+      "significance": 7
+    },
+    {
+      "id": "openai-codex-record-replay-sites-2026-06-week",
+      "title": "OpenAI Codex adds Record & Replay workflow capture and Sites hosted-app builder",
+      "summary": "Codex for macOS Business users can now record a workflow once and replay it as a reusable skill across Computer Use, browser actions, and plugins. Sites (preview) lets Codex deploy web apps and dashboards directly inside the app — ChatGPT Business workspaces get it by default.",
+      "category": "openai",
+      "sourceURL": "https://developers.openai.com/codex/changelog",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-john-jumper-deepmind-hire-2026-06-19",
+      "title": "Anthropic poaches AlphaFold's John Jumper from Google DeepMind",
+      "summary": "John Jumper, the Nobel Prize-winning architect of AlphaFold and a VP Engineering Fellow at DeepMind, is joining Anthropic — a significant science talent signal ahead of the company's June 30 science event.",
+      "category": "anthropic",
+      "sourceURL": "https://www.cnbc.com/2026/06/19/john-jumper-to-leave-google-deepmind-for-anthropic.html",
+      "significance": 7
+    },
+    {
+      "id": "openai-codex-5m-weekly-users-2026-06-02",
+      "title": "OpenAI Codex hits 5 million weekly users — 8x growth in five months",
+      "summary": "OpenAI confirmed Codex crossed 5M weekly active users on June 2, up from 600K at the start of 2026, with 20% now knowledge workers rather than developers. The CLI is Apache-2.0, Rust-based, and tops SWE-bench Verified at 88.7% with GPT-5.5.",
+      "category": "openai",
+      "sourceURL": "https://www.gradually.ai/en/codex-statistics/",
       "significance": 6
     },
     {
-      "id": "anthropic-workload-identity-federation-service-accounts-2026-06",
-      "title": "Claude Platform adds workload identity federation and per-workload service accounts",
-      "summary": "The Claude Platform now supports WIF, letting workloads authenticate with existing AWS IAM roles, GCP service accounts, GitHub Actions tokens, or other OIDC providers — no static API keys to rotate or leak. Per-workload service accounts give each agent its own identity, roles, and audit trail, a meaningful upgrade for teams running production agent fleets.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-when-ai-builds-itself-pause-proposal-2026-06-04",
-      "title": "Anthropic publishes \"When AI builds itself,\" calls for coordinated frontier slowdown",
-      "summary": "Published June 4, the paper backs a globally coordinated option to pause frontier AI development, citing internal data showing Claude now authors over 80% of Anthropic's production code and that Mythos Preview achieved roughly 52x performance improvements over skilled human engineers. Anthropic did not commit to a unilateral halt, and filed confidentially for an IPO the same week.",
-      "category": "anthropic",
-      "sourceURL": "https://www.shumaker.com/insight/client-alert-anthropics-call-for-a-global-ai-pause-what-businesses-need-to-know-about-the-governance-landscape/",
-      "significance": 7
-    },
-    {
-      "id": "microsoft-mai-model-family-build-2026-06-02",
-      "title": "Microsoft ships seven MAI models including MAI-Thinking-1 reasoning and MAI-Code-1-Flash",
-      "summary": "Announced at Build, MAI-Thinking-1 is a mid-size reasoning model trained from scratch (no third-party distillation) that matches leading models on SWE-bench and is integrated into GitHub Copilot and VS Code with 5B active parameters at Haiku-comparable cost. Microsoft also launched MAI-Image-2.5, MAI-Transcribe-1.5, and a Microsoft-Mayo Clinic healthcare frontier model in development.",
-      "category": "other",
-      "sourceURL": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
-      "significance": 7
-    },
-    {
-      "id": "gemini-35-pro-still-pending-june-2026",
-      "title": "Gemini 3.5 Pro window closes with no ship date confirmed",
-      "summary": "Google confirmed at I/O that Gemini 3.5 Pro would land \"next month\" (June), but as of June 21 there is no stable model ID, no model card, and no API availability — announced, not shipped. Gemini 3.5 Flash (GA May 19, $1.50/$9 per million tokens) remains the only production option in the 3.5 line.",
-      "category": "google",
-      "sourceURL": "https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/",
-      "significance": 5
-    },
-    {
-      "id": "anthropic-ipo-filing-965b-valuation-2026-06-01",
-      "title": "Anthropic files confidentially for IPO at ~$965B valuation",
-      "summary": "Anthropic made a confidential S-1 filing around June 1, days after closing a $65B Series H at a $965B post-money valuation and disclosing run-rate revenue surpassing $30B. Both Anthropic and OpenAI are now in IPO preparation simultaneously, setting up a dual public-market debut with governance and revenue-recognition differences already under investor scrutiny.",
-      "category": "anthropic",
-      "sourceURL": "https://www.cnbc.com/2026/06/02/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html",
+      "id": "anthropic-openai-talent-war-noam-shazeer-2026-06",
+      "title": "Google Gemini co-lead Noam Shazeer leaves for IPO-bound OpenAI",
+      "summary": "Noam Shazeer, VP of Engineering and co-lead of Google's Gemini models, announced he is joining OpenAI — arriving the same week that Jumper left DeepMind for Anthropic, underscoring how fast talent is moving between frontier labs ahead of their IPOs.",
+      "category": "otherLLM",
+      "sourceURL": "https://www.cnbc.com/2026/06/19/john-jumper-to-leave-google-deepmind-for-anthropic.html",
       "significance": 6
     }
   ],
   "learn": [
     {
-      "id": "openai-tunnel-client-mcp",
-      "name": "openai/tunnel-client (Secure MCP Tunnel)",
-      "category": "tooling",
-      "oneLineDescription": "Connect private or on-prem MCP servers to ChatGPT/Codex via outbound-only HTTPS.",
-      "estimatedSetupMinutes": 15,
-      "detail": {
-        "whatItDoes": "Secure MCP Tunnel is an outbound-only relay daemon (`tunnel-client`) that you run inside your private network. It long-polls an OpenAI-hosted tunnel endpoint, forwards incoming JSON-RPC MCP requests to your local MCP server (stdio or HTTP), and returns responses — all without opening a single inbound firewall port. ChatGPT, Codex, the Responses API, and AgentKit all support it natively via the `mcp` built-in tool type.\n\nThe daemon ships with a built-in healthcheck server (`/healthz`, `/readyz`, `/metrics`) and an embedded sub-server called Harpoon that exposes a customer-configured allowlist of private HTTP targets. It is not a general-purpose proxy — callers can only reach the endpoints you explicitly configure.",
-        "whoItsFor": "Platform engineers and ML infra teams at companies where security policy blocks inbound internet access to internal tool servers. If your agents need to read from an internal database, call an on-prem REST API, or talk to a private MCP server and your security team will not open inbound firewall rules, this is the supported path. Also useful for solo developers who want to connect a local MCP server to ChatGPT or Codex during development without ngrok.",
-        "pros": [
-          "No inbound firewall ports — outbound-only HTTPS satisfies strict enterprise network policy",
-          "First-class support across ChatGPT web, Codex, Responses API, and AgentKit",
-          "Ships with `tunnel-client doctor --explain` for local diagnostics before you depend on it",
-          "Workload Identity Federation support (AWS IAM, Azure, GCP, Kubernetes) eliminates long-lived API keys"
-        ],
-        "cons": [
-          "Enterprise-only for now — not available on free or Plus OpenAI tiers",
-          "Adds a polling-loop latency hop between OpenAI and your MCP server; not suitable for sub-100ms tool call budgets",
-          "Tunnel transport is not a full MCP security layer — token scoping, prompt injection defense, and server vetting still fall on you"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- OpenAI Enterprise account with Tunnels permission\n- An MCP server reachable from the machine running `tunnel-client` (stdio or HTTP)\n- Outbound HTTPS to `api.openai.com:443` allowed from the tunnel host\n\n## 1. Download tunnel-client\n\nGrab the latest binary from the Platform Tunnels settings page, or via the GitHub releases page:\n\n```bash\n# macOS (Apple Silicon)\ncurl -L https://github.com/openai/tunnel-client/releases/latest/download/tunnel-client-darwin-arm64 \\\n  -o /usr/local/bin/tunnel-client\nchmod +x /usr/local/bin/tunnel-client\n\n# Linux x86_64\ncurl -L https://github.com/openai/tunnel-client/releases/latest/download/tunnel-client-linux-amd64 \\\n  -o /usr/local/bin/tunnel-client\nchmod +x /usr/local/bin/tunnel-client\n\ntunnel-client --version\n```\n\n## 2. Create a tunnel in Platform settings\n\nIn the OpenAI Platform UI, go to **Settings → Tunnels → New tunnel**. Copy the `tunnel_id` (looks like `tunnel_0123456789abcdef0123456789abcdef`).\n\nOr create it via CLI (requires a separate admin key):\n\n```bash\nexport OPENAI_ADMIN_KEY=\"sk-admin-...\"\ntunnel-client admin tunnels create --name \"my-private-mcp\"\n# outputs: tunnel_id=tunnel_0abc...\n```\n\n**Gotcha:** Keep `OPENAI_ADMIN_KEY` separate from the runtime key `CONTROL_PLANE_API_KEY`. Using an admin key as the long-lived daemon key expands blast radius unnecessarily.\n\n## 3. Initialize a profile for your MCP server\n\n```bash\nexport CONTROL_PLANE_API_KEY=\"sk-proj-...\"\nexport CONTROL_PLANE_TUNNEL_ID=\"tunnel_0abc...\"\n\n# For a stdio MCP server (e.g. a Python script)\ntunnel-client init \\\n  --sample sample_mcp_stdio_local \\\n  --profile local-stdio \\\n  --tunnel-id \"$CONTROL_PLANE_TUNNEL_ID\" \\\n  --mcp-command \"python /path/to/your_mcp_server.py\"\n\n# For an HTTP MCP server inside your network\ntunnel-client init \\\n  --sample sample_mcp_http_local \\\n  --profile local-http \\\n  --tunnel-id \"$CONTROL_PLANE_TUNNEL_ID\" \\\n  --mcp-server-url \"http://internal-host:8080\"\n```\n\n## 4. Verify with doctor\n\n```bash\ntunnel-client doctor --profile local-stdio --explain\n# Checks connectivity, key permissions, MCP server reachability\n# Fix any FAIL lines before proceeding\n```\n\n## 5. Run the daemon\n\n```bash\n# Foreground (dev)\ntunnel-client run --profile local-stdio\n\n# Background via systemd (production)\nsudo tee /etc/systemd/system/openai-tunnel.service > /dev/null <<EOF\n[Unit]\nDescription=OpenAI MCP Tunnel Client\nAfter=network.target\n\n[Service]\nEnvironmentFile=/etc/openai-tunnel/env\nExecStart=/usr/local/bin/tunnel-client run --profile /etc/openai-tunnel/local-stdio.yaml\nRestart=always\nRestartSec=5\n\n[Install]\nWantedBy=multi-user.target\nEOF\n\nsudo systemctl enable openai-tunnel\nsudo systemctl start openai-tunnel\nsudo systemctl status openai-tunnel\n```\n\n## 6. Connect from the Responses API\n\n```python\nfrom openai import OpenAI\nclient = OpenAI()  # uses OPENAI_API_KEY\n\nresp = client.responses.create(\n    model=\"gpt-5.5\",\n    tools=[\n        {\n            \"type\": \"mcp\",\n            \"server_label\": \"internal_db\",\n            \"server_url\": f\"https://api.openai.com/v1/mcp/{TUNNEL_ID}\",\n            \"require_approval\": \"never\",\n        }\n    ],\n    input=\"Query the database for Q2 revenue by region.\",\n)\nprint(resp.output_text)\n```\n\n**Gotcha:** Do not use `tunnel-client run` supervised by `nohup` or `disown` — use `systemd` or `tunnel-client runtimes connect` for long-lived managed processes. Check `tunnel-client runtimes status <alias>` before declaring success.",
-        "sourceURL": "https://github.com/openai/tunnel-client"
-      }
-    },
-    {
-      "id": "minimax-m3-api",
-      "name": "MiniMax M3",
-      "category": "otherLLM",
-      "oneLineDescription": "Open-weight frontier model: 1M-token context, native multimodal, 59% SWE-Bench Pro.",
+      "id": "antigravity-cli-agy",
+      "name": "Antigravity CLI (agy)",
+      "category": "google",
+      "oneLineDescription": "Google's closed-source Go terminal agent that replaced Gemini CLI on June 18.",
       "estimatedSetupMinutes": 10,
       "detail": {
-        "whatItDoes": "MiniMax M3 is a frontier-class large language model from Shanghai-based MiniMax, released June 1, 2026. It uses a novel MiniMax Sparse Attention (MSA) architecture that cuts per-token compute at 1M-context to 1/20th of the prior generation, delivering ~9x faster prefill and ~15x faster decoding vs M2. The model was trained natively multimodal from step 0, accepting text, images, and video as input — not bolted-on post-training.\n\nOn MiniMax's own SWE-Bench Pro run, M3 scores 59.0%, ahead of GPT-5.5 (58.6%) and Gemini 3.1 Pro, and close to Claude Opus 4.7. An independent Kilo test found M3 and Opus 4.8 found the same 13 out of 17 deliberately planted bugs, but M3 cost $0.07 vs Opus's $1.30 — roughly 18x cheaper for equal output at medium reasoning settings. Benchmarks beyond the company's own runs are still limited; ARC-AGI-2 is a known gap.",
-        "whoItsFor": "Developers building coding agents, long-context document pipelines, or multimodal automation who need to self-host or want to avoid proprietary API lock-in. Particularly compelling for teams running cost-sensitive, high-volume agentic workloads where Opus-class quality is not required for every turn. Not recommended yet for teams with strict data-residency requirements outside China, given MiniMax's obligations under China's 2017 National Intelligence Law.",
+        "whatItDoes": "Antigravity CLI is Google's replacement for Gemini CLI, invoked with the binary `agy`. It is a compiled Go binary (no Node.js dependency) that defaults to Gemini 3 Pro and adds parallel async agent orchestration: you can kick off a large-scale refactor or a research task in the background without locking your terminal. It shares a common agent harness with the Antigravity 2.0 desktop app, so improvements to core agents propagate to both.\n\nKey behavioral differences from Gemini CLI: the streaming output format changed from plain text deltas to SSE-formatted events; exit codes are now non-zero on tool-use failures (Gemini CLI exited 0); and MCP server config moved from `~/.gemini/settings.json` (field: `url`) to `~/.antigravity/mcp_config.json` (field: `serverUrl`). Quotas also shifted from a 1,000-requests-per-day cap to a weekly compute cap — heavy users report hitting it mid-workday.",
+        "whoItsFor": "Any developer who was on a free, Google AI Pro, or Ultra tier using Gemini CLI. Enterprise users on Gemini Code Assist Standard/Enterprise are exempt for now. If your CI pipelines, cron jobs, or shell scripts call `gemini`, you need to audit and replace those calls with `agy` — otherwise they broke on June 18 with no grace period.",
         "pros": [
-          "API pricing ~$0.30/$1.20 per million input/output tokens — roughly 1/10th Claude Opus rates",
-          "1M-token context window with native image and video understanding in a single model",
-          "Open weights available on Hugging Face for self-hosted deployment",
-          "15x faster decoding than M2 at 1M context via MSA sparse attention"
+          "Faster execution: single compiled Go binary, no Node.js/npm runtime required",
+          "Parallel async sub-agents for complex multi-step tasks without blocking the terminal",
+          "Unified harness with Antigravity 2.0 desktop app; agent improvements ship to both simultaneously",
+          "Defaults to Gemini 3 Pro instead of gemini-1.5-pro"
         ],
         "cons": [
-          "Benchmark scores are vendor-reported; independent third-party verification is limited at launch",
-          "China's National Intelligence Law means MiniMax API traffic is legally accessible to the Chinese government — a hard block for many enterprise use cases",
-          "ARC-AGI-2 abstract reasoning score is below 12%, a meaningful gap vs US frontier labs",
-          "Open-weight license terms historically restrict commercial use without prior written authorization — verify before building on it"
+          "Closed-source — no Apache 2.0 repo with readable source; GitHub presence is just a changelog and a README",
+          "Not at full feature parity with Gemini CLI at launch; some edge-case capabilities may never arrive",
+          "Weekly compute quota replaces the old 1,000-requests/day cap; heavy users report hitting it fast",
+          "Google has cut usage quotas four times since December 2025 without advance notice"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+ or Node 20+\n- A MiniMax API account at `platform.minimax.io` (sign up for API access)\n- `MINIMAX_API_KEY` in your environment\n\nAlternatively, use OpenRouter for a unified endpoint with no MiniMax account needed.\n\n## Option A: Direct MiniMax API (Python)\n\n```bash\npip install openai  # MiniMax uses an OpenAI-compatible API\n```\n\n```python\nimport os\nfrom openai import OpenAI\n\nclient = OpenAI(\n    api_key=os.environ[\"MINIMAX_API_KEY\"],\n    base_url=\"https://api.minimax.io/v1\",\n)\n\nresponse = client.chat.completions.create(\n    model=\"MiniMax-M3\",\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": \"Review this Python function for bugs and suggest fixes:\\n\\n```python\\ndef fetch(url):\\n    r = requests.get(url)\\n    return r.json\\n```\"\n        }\n    ],\n    max_tokens=1024,\n)\nprint(response.choices[0].message.content)\n```\n\n**Gotcha:** Context pricing is tiered — inputs over 512K tokens are billed at a higher rate. For most codebases this won't matter, but set `max_tokens` on long-context runs to avoid surprise charges.\n\n## Option B: OpenRouter (no MiniMax account)\n\n```bash\npip install openai\nexport OPENROUTER_API_KEY=\"sk-or-...\"\n```\n\n```python\nimport os\nfrom openai import OpenAI\n\nclient = OpenAI(\n    api_key=os.environ[\"OPENROUTER_API_KEY\"],\n    base_url=\"https://openrouter.ai/api/v1\",\n)\n\nresponse = client.chat.completions.create(\n    model=\"minimax/minimax-m3-20260531\",\n    messages=[{\"role\": \"user\", \"content\": \"Summarize this 500-page PDF.\"}],\n)\nprint(response.choices[0].message.content)\n```\n\n## Option C: Self-hosted open weights\n\nWeights are on Hugging Face. Requires a GPU cluster with ~80GB VRAM for full precision (exact parameter count not disclosed by MiniMax).\n\n```bash\n# Check Hugging Face for the official weights repo\npip install transformers accelerate\n```\n\n```python\nfrom transformers import AutoModelForCausalLM, AutoTokenizer\n\ntokenizer = AutoTokenizer.from_pretrained(\"MiniMaxAI/MiniMax-M3\")\nmodel = AutoModelForCausalLM.from_pretrained(\n    \"MiniMaxAI/MiniMax-M3\",\n    device_map=\"auto\",\n    torch_dtype=\"auto\",\n)\n\ninputs = tokenizer(\"def fibonacci(n):\", return_tensors=\"pt\").to(model.device)\noutputs = model.generate(**inputs, max_new_tokens=256)\nprint(tokenizer.decode(outputs[0], skip_special_tokens=True))\n```\n\n**Gotcha:** Verify the license at `MiniMaxAI/MiniMax-M3` on Hugging Face before production use — previous MiniMax models restricted commercial use without written authorization.",
-        "sourceURL": "https://the-decoder.com/minimax-m3-open-weight-model-with-a-million-token-context-challenges-proprietary-leaders/"
+        "setupGuideMarkdown": "## Prerequisites\n- A Google account (free, Google AI Pro, or Ultra) OR a paid Gemini API key\n- macOS, Linux, or Windows\n- **No Node.js required** — agy is a single Go binary\n\n## 1. Remove Gemini CLI (avoids conflicts)\n\n```bash\n# If you installed via npm\nnpm uninstall -g @google/gemini-cli\n\n# Verify it's gone\nwhich gemini  # should return nothing\n```\n\n## 2. Install Antigravity CLI\n\n```bash\n# macOS / Linux — official install script\ncurl -sSL https://dl.google.com/antigravity/install.sh | bash\n\n# Or via Homebrew (macOS)\nbrew install --cask google-antigravity\n\n# Windows — download from the Antigravity release page and add to PATH\n# https://cloud.google.com/antigravity/docs/cli/install\n```\n\n## 3. Verify the install\n\n```bash\nagy --version\n# Should print something like: Antigravity CLI 1.x.x\n```\n\n## 4. Sign in\n\n```bash\nagy auth login\n# Opens a browser for Google OAuth — same account as your old Gemini CLI login\n```\n\n## 5. Migrate MCP server config (if you used MCP with Gemini CLI)\n\n**Gotcha:** The field name changed from `url` to `serverUrl`. Copying your old config verbatim causes *silent* failures — `agy` starts successfully but MCP tools never connect.\n\n```bash\n# Create the new config directory\nmkdir -p ~/.antigravity\n\n# Manually migrate your MCP servers:\n# OLD: ~/.gemini/settings.json had { \"mcpServers\": { \"myserver\": { \"url\": \"...\" } } }\n# NEW: ~/.antigravity/mcp_config.json needs { \"mcpServers\": { \"myserver\": { \"serverUrl\": \"...\" } } }\n\ncat > ~/.antigravity/mcp_config.json << 'EOF'\n{\n  \"mcpServers\": {\n    \"my-mcp-server\": {\n      \"serverUrl\": \"http://localhost:3000\"\n    }\n  }\n}\nEOF\n```\n\n**Verify MCP actually connected** — don't just check that `agy` starts:\n\n```bash\nagy \"list the tools you have available from MCP\"\n# If MCP is broken, you'll get no tools listed despite a clean startup\n```\n\n## 6. Fix your automation scripts\n\n```bash\n# Find every place you call gemini in scripts, GitHub Actions, Makefiles, cron:\ngrep -r 'gemini ' ~/.bashrc ~/.zshrc ~/scripts/ .github/ Makefile 2>/dev/null\n\n# Replace:\n# BEFORE: gemini \"do something\"\n# AFTER:  agy \"do something\"\n```\n\n## Gotchas\n- **Streaming format changed**: scripts that parse `--stream` output (plain text deltas in Gemini CLI) now receive SSE-formatted events from `agy`. Rewrite any parsers.\n- **Exit codes changed**: Gemini CLI exited 0 on tool-use failures; `agy` exits non-zero. CI pipelines with `set -e` will now halt on previously-silent errors.\n- **Weekly quota**: Parallel agents consume quota faster than single-turn calls. Monitor with `agy quota status`.\n- **State directory moved**: `~/.gemini/agents/` → `~/.antigravity/agents/` — existing agent state is not auto-migrated.",
+        "sourceURL": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
       }
     },
     {
-      "id": "anthropic-claude-opus-48-fallback",
-      "name": "Claude Opus 4.8 (Fable 5 fallback)",
+      "id": "claude-code-artifacts",
+      "name": "Claude Code Artifacts",
       "category": "anthropic",
-      "oneLineDescription": "Current best Anthropic model in production while Fable 5 is suspended; $5/$25 per M tokens.",
-      "estimatedSetupMinutes": 5,
+      "oneLineDescription": "Turn any Claude Code session into a live, shareable, auto-updating web page.",
+      "estimatedSetupMinutes": 2,
       "detail": {
-        "whatItDoes": "Claude Opus 4.8 is Anthropic's production flagship as of June 2026, released May 25. It serves as the recommended fallback for all builders who had integrated Fable 5 before the June 12 government shutdown. API calls to `claude-fable-5` now return 404 errors pointing to Opus 4.8. Fable 5's own classifier architecture routed cyber/bio/chem/distillation queries to Opus 4.8 anyway, so for most non-security workloads the capability delta in practice is smaller than benchmarks suggest.\n\nOpus 4.8 runs on all three major clouds (AWS Bedrock, Google Vertex, Azure Foundry) and is unaffected by the export control directive. Context window, tool use, MCP support, and structured outputs are fully available.",
-        "whoItsFor": "Any builder who was using Fable 5 via `claude-fable-5` in the Anthropic API, Claude Code, Claude.ai, or any AI gateway (Vercel, AWS Bedrock, Vertex) and needs a drop-in replacement now. Also the right choice for new projects that need top-tier Anthropic reasoning without waiting for Fable 5's reinstatement timeline — which has no official ETA.",
+        "whatItDoes": "Claude Code Artifacts let a running session publish its work as a live web page that updates in place as the session progresses. The artifact can be a PR walkthrough, an incident timeline, a dashboard (filterable and sortable), a release checklist that fills itself out, or a system architecture explainer. It draws from the session's full context — codebase, connected MCP tools, and conversation — without requiring separate data wiring.\n\nEvery publish creates a new version at the same link, with version history so teammates can restore a prior state. Sharing is private by default (org-only) on Team and Enterprise plans. The artifact updates live: anyone with the link sees changes the moment Claude Code publishes them.",
+        "whoItsFor": "Engineering teams and tech leads who currently write status updates, incident reports, or PR descriptions by hand after a Claude Code session. Also useful for solo developers who want a living document that tracks what an agent session changed and why — especially helpful for long-running refactors or incident investigations where context would otherwise be lost in terminal scroll.",
         "pros": [
-          "Available on all three major cloud platforms — no migration if you already use Bedrock or Vertex",
-          "Unaffected by the June 12 export control directive; no interruption risk from the current dispute",
-          "Fable 5's safety architecture already routed most sensitive queries here, so behavior is consistent with what most builders saw"
+          "Zero infrastructure: Claude Code builds and hosts the artifact from session context — no separate dashboard tooling required",
+          "Live updates: open page refreshes in place as the session progresses, so no manual re-sharing",
+          "Version history lets you restore any prior published state from the gallery",
+          "Combines code, MCP connector data, and reasoning in one page — e.g. failing test + error spike from monitoring + root-cause from the session"
         ],
         "cons": [
-          "Priced at $5/$25 per million input/output tokens — significantly more expensive than MiniMax M3 for cost-sensitive workloads",
-          "Lacks the expanded agentic and scientific reasoning capabilities that made Fable 5 notable at launch",
-          "No public ETA on Fable 5 reinstatement, so this may remain the Anthropic ceiling for an unknown duration"
+          "Private org-only sharing and version history are in beta — availability varies by plan",
+          "Artifact quality depends on how well the session was structured; poorly-scoped sessions produce poorly-structured artifacts",
+          "No custom domain or export to PDF/HTML yet at launch"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- `anthropic` Python SDK >= 0.25 or TypeScript SDK >= 0.20\n- `ANTHROPIC_API_KEY` in your environment\n\n## Migrate from Fable 5 to Opus 4.8\n\nIf you pinned `claude-fable-5`, this is the minimum change needed:\n\n```python\nimport anthropic\nimport os\n\nclient = anthropic.Anthropic(api_key=os.environ[\"ANTHROPIC_API_KEY\"])\n\n# Before: model=\"claude-fable-5\" → now returns 404\n# After:\nresponse = client.messages.create(\n    model=\"claude-opus-4-8\",  # confirmed working model ID as of June 2026\n    max_tokens=1024,\n    messages=[{\"role\": \"user\", \"content\": \"Explain the Fable 5 shutdown in one paragraph.\"}],\n)\nprint(response.content[0].text)\n```\n\n## Resilient fallback pattern (handles future model shutdowns)\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\n\nPRIMARY = \"claude-fable-5\"    # try first if/when reinstated\nFALLBACK = \"claude-opus-4-8\"  # always-available fallback\n\ndef ask(prompt: str) -> str:\n    for model in (PRIMARY, FALLBACK):\n        try:\n            r = client.messages.create(\n                model=model,\n                max_tokens=1024,\n                messages=[{\"role\": \"user\", \"content\": prompt}],\n            )\n            return r.content[0].text\n        except anthropic.NotFoundError:\n            continue  # model suspended or removed, try next\n    raise RuntimeError(\"No available model\")\n\nprint(ask(\"Write a haiku about export controls.\"))\n```\n\n**Gotcha:** The error returned for a suspended model is `404 NotFoundError`, not a `503` or rate-limit error. Make sure your retry logic catches `anthropic.NotFoundError` specifically, not just generic HTTP errors, or you will silently fall through to a crash.\n\n## TypeScript version\n\n```typescript\nimport Anthropic from \"@anthropic-ai/sdk\";\n\nconst client = new Anthropic();\n\nasync function ask(prompt: string): Promise<string> {\n  for (const model of [\"claude-fable-5\", \"claude-opus-4-8\"]) {\n    try {\n      const response = await client.messages.create({\n        model,\n        max_tokens: 1024,\n        messages: [{ role: \"user\", content: prompt }],\n      });\n      return (response.content[0] as Anthropic.TextBlock).text;\n    } catch (e: any) {\n      if (e?.status === 404) continue;\n      throw e;\n    }\n  }\n  throw new Error(\"No available model\");\n}\n```\n\n## AWS Bedrock (if you route through Bedrock)\n\n```bash\naws bedrock-runtime invoke-model \\\n  --model-id anthropic.claude-opus-4-8-v1 \\\n  --body '{\"messages\":[{\"role\":\"user\",\"content\":\"Hello\"}],\"max_tokens\":256,\"anthropic_version\":\"bedrock-2023-05-31\"}' \\\n  --cli-binary-format raw-in-base64-out \\\n  output.json\ncat output.json\n```",
-        "sourceURL": "https://www.anthropic.com/news/fable-mythos-access"
+        "setupGuideMarkdown": "## Prerequisites\n- Claude Code v2.1.150+ (run `claude --version` to check; update with `claude update`)\n- Claude Team, Enterprise, or pay-as-you-go plan (Artifacts sharing scope varies by plan)\n\n## 1. Update Claude Code\n\n```bash\nclaude update\nclaude --version\n# Should be v2.1.150 or higher\n```\n\n## 2. Create an artifact during a session\n\nStart any session and ask Claude to publish an artifact:\n\n```bash\nclaude\n```\n\nThen inside the session:\n\n```\n> Refactor the auth module to use the new JWT library, then create an artifact summarizing what changed, why, and any migration steps the team needs.\n```\n\nClaude Code will run the refactor and then publish a live page.\n\n## 3. Ask for specific artifact types\n\n```\n# PR walkthrough\n> Create a PR walkthrough artifact for these changes.\n\n# Incident page (combine MCP monitoring data + code context)\n> Create an incident artifact covering the error spike we just diagnosed.\n\n# Release checklist that auto-fills\n> Create a release checklist artifact for v2.4.0 and check off each item as we complete it.\n```\n\n## 4. Browse and manage your artifacts\n\n```bash\n# Inside a Claude Code session:\n/artifacts\n# Opens the gallery showing all published artifacts with version history\n```\n\n## Gotchas\n- **Artifacts are org-only by default**: the shareable link requires the recipient to be in your Claude org. Public sharing is not available at launch.\n- **Version history is in beta**: if you don't see it, check your plan tier and wait for the beta to roll out to your org.\n- **MCP connector data requires active connectors**: if your session doesn't have MCP tools connected, artifacts won't include external data (monitoring, Jira, etc.). Set up connectors first via the Claude web app Settings → Connectors.",
+        "sourceURL": "https://code.claude.com/docs/en/whats-new"
       }
     },
     {
-      "id": "openai-responses-api-moderation",
-      "name": "OpenAI Responses API Inline Moderation",
+      "id": "openai-codex-cli-record-replay",
+      "name": "OpenAI Codex CLI (Record & Replay)",
       "category": "openai",
-      "oneLineDescription": "Get input + output moderation scores in a single Responses API call, no extra round-trip.",
-      "estimatedSetupMinutes": 5,
+      "oneLineDescription": "Demonstrate a workflow once on macOS; Codex turns it into a reusable skill automatically.",
+      "estimatedSetupMinutes": 15,
       "detail": {
-        "whatItDoes": "OpenAI added a `moderation` object to both the Responses API and Chat Completions API. Pass it in your generation request and the response includes moderation scores for both the model input and the generated output in the same JSON payload — eliminating the separate `/moderations` endpoint round-trip that most safety pipelines require today. The SDK surface is a single additional field; no new API key, no extra HTTP call, no async fan-out.\n\nThis is particularly relevant for builders running agentic loops with tool calls where moderating each turn independently added meaningful latency and cost. With inline moderation, the safety check is free in terms of extra round-trips.",
-        "whoItsFor": "Builders shipping user-facing products that require content moderation — consumer apps, coding assistants with user-submitted code, document processors, customer support bots. Also useful for teams doing red-team evals who want moderation signals alongside generation outputs without separate pipeline steps. Requires using the Responses API or Chat Completions API with GPT-5.5 or later models.",
+        "whatItDoes": "Codex CLI is OpenAI's open-source (Apache-2.0), Rust-based coding agent for the terminal. The June 2026 release adds Record & Replay: on macOS, Business users can record a workflow — clicking through a UI, filling forms, running commands — and Codex captures it as a reusable skill that can be replayed via Computer Use, browser actions, plugins, or any combination. It is most useful for stable, repeatable workflows that are easier to demonstrate than describe (e.g., creating a configured issue in a project tracker, publishing a video, downloading a recurring report).\n\nThe CLI also added a Sites plugin (preview) that lets Codex deploy web apps, dashboards, and internal tools directly to OpenAI-hosted infrastructure from inside the terminal. The underlying model is GPT-5.5, which holds the highest SWE-bench Verified score (88.7%) of any coding agent as of June 2026. Context window is 256K tokens (standard) or 1M tokens with GPT-5.4.",
+        "whoItsFor": "Developers and technical product teams on ChatGPT Plus, Pro, Business, or Enterprise plans who run repetitive cross-app workflows. Record & Replay specifically targets tasks that are painful to script but trivial to click through once. Also relevant for teams evaluating Codex as an alternative to Claude Code — the Rust rewrite, sandboxed shell execution, and GPT-5.5 integration make it a competitive option.",
         "pros": [
-          "Zero additional latency vs a separate moderation call — scores arrive with the generation response",
-          "Covers both input and output in one request, catching injected content as well as model outputs",
-          "Drop-in for existing Responses API integrations — just add the moderation field"
+          "Record & Replay captures GUI workflows without writing automation scripts — show it once, reuse indefinitely",
+          "Open-source (Apache-2.0) and Rust-built: fast startup, low memory, readable source at github.com/openai/codex",
+          "Shell commands run in a sandboxed container by default — can't touch the rest of your machine without explicit approval",
+          "GPT-5.5 default model scores 88.7% on SWE-bench Verified, essentially tied with Claude Opus 4.8"
         ],
         "cons": [
-          "Available only on the Responses API and Chat Completions API — does not apply to the older Assistants API",
-          "Moderation model is OpenAI's own; may not satisfy compliance requirements that mandate a specific third-party moderation vendor",
-          "Scores are returned but the API does not automatically block outputs — enforcement logic is still your responsibility"
+          "Record & Replay requires Computer Use enabled, and is currently macOS-only; excluded from EU, UK, Switzerland",
+          "Full feature set (Codex app, Sites, Computer Use) requires Business or higher plan — CLI is included in Plus/Pro but advanced features are gated",
+          "Sites plugin is preview-only; not suitable for production traffic yet"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- `openai` Python SDK >= 2.40 or Node SDK >= 4.40 (added `responses.moderation` in these versions)\n- `OPENAI_API_KEY` in your environment\n- GPT-5.5 or a current supported model\n\n## Python — Responses API with inline moderation\n\n```python\nimport os\nfrom openai import OpenAI\n\nclient = OpenAI(api_key=os.environ[\"OPENAI_API_KEY\"])\n\nresp = client.responses.create(\n    model=\"gpt-5.5\",\n    input=\"How do I pick a lock?\",\n    moderation={\n        \"input\": True,   # score the user's input\n        \"output\": True,  # score the model's generated output\n    },\n)\n\nprint(\"Output text:\", resp.output_text)\n\n# Moderation scores live on resp.moderation\nif resp.moderation:\n    print(\"Input flagged:\", resp.moderation.input.flagged)\n    print(\"Output flagged:\", resp.moderation.output.flagged)\n    # resp.moderation.input.categories has per-category scores\n    for cat, score in resp.moderation.input.category_scores.items():\n        print(f\"  {cat}: {score:.4f}\")\n```\n\n## Python — Chat Completions API with inline moderation\n\n```python\nresp = client.chat.completions.create(\n    model=\"gpt-5.5\",\n    messages=[{\"role\": \"user\", \"content\": \"Write malware.\"}],\n    moderation={\n        \"input\": True,\n        \"output\": True,\n    },\n)\n\nprint(resp.choices[0].message.content)\nif resp.moderation:\n    print(\"Flagged:\", resp.moderation.output.flagged)\n```\n\n## Enforcement pattern — block flagged outputs\n\n```python\ndef safe_generate(user_input: str) -> str:\n    resp = client.responses.create(\n        model=\"gpt-5.5\",\n        input=user_input,\n        moderation={\"input\": True, \"output\": True},\n    )\n    if resp.moderation and (\n        resp.moderation.input.flagged or resp.moderation.output.flagged\n    ):\n        raise ValueError(\"Content flagged by moderation — request blocked.\")\n    return resp.output_text\n```\n\n**Gotcha:** The `moderation` field is `None` if the model you called does not support inline moderation. Always null-check before accessing `.input` or `.output`.",
-        "sourceURL": "https://developers.openai.com/api/docs/changelog"
+        "setupGuideMarkdown": "## Prerequisites\n- macOS, Linux, or Windows\n- ChatGPT Plus, Pro, Business, Edu, or Enterprise subscription (OR an OpenAI API key)\n- Node.js 18+ for npm install path; or use the standalone installer (no Node.js needed)\n- For Record & Replay: macOS, ChatGPT Business or higher, Computer Use enabled by your org admin\n\n## 1. Install Codex CLI\n\n```bash\n# Option A: npm (requires Node 18+)\nnpm install -g @openai/codex\n\n# Option B: standalone installer (macOS/Linux, no Node dependency)\ncurl -fsSL https://cdn.openai.com/codex/install.sh | bash\n\n# Option C: Homebrew (macOS)\nbrew install --cask codex\n\n# Verify\ncodex --version\n```\n\n## 2. Authenticate\n\n```bash\ncodex\n# First run prompts for sign-in.\n# Choose: ChatGPT account (browser OAuth) OR API key\n\n# To use an API key directly:\nexport OPENAI_API_KEY=\"sk-...\"\ncodex\n```\n\n## 3. Run your first task\n\n```bash\n# Interactive TUI session\ncodex\n\n# One-shot non-interactive (good for scripts)\ncodex exec \"add input validation to the signup form in src/auth.ts\"\n\n# Switch model inside TUI\n# Type: /model\n# Then select from the picker (GPT-5.5, GPT-5.4, GPT-5.2-Codex, etc.)\n```\n\n## 4. Set up Record & Replay (macOS Business only)\n\n```\n# Inside the Codex macOS app (not CLI):\n# 1. Ensure Computer Use is enabled: Settings → Computer Use → Enable\n# 2. Click the Record button (top bar) to start capturing\n# 3. Perform the workflow you want to automate\n# 4. Click Stop — Codex names and saves the skill\n# 5. Use the skill: open the skill picker and select it, or reference it in a prompt\n```\n\n## 5. Run Codex in fully automated mode (CI/CD)\n\n```bash\n# --full-auto skips all approval prompts — use only in sandboxed CI environments\ncodex exec --full-auto \"run the test suite and fix any failing tests\"\n\n# For unattended installs:\nCODEX_NON_INTERACTIVE=1 bash install.sh\n```\n\n## Gotchas\n- **Approval mode matters**: default mode asks before every file write or shell command. `--full-auto` removes that gate — only use it in disposable CI containers.\n- **Record & Replay is excluded from EU/UK/Switzerland** at initial launch; check your region before planning workflows around it.\n- **API key vs. ChatGPT login**: logging in via ChatGPT gives you GPT-5.5 and the full 256K context. An API key defaults to GPT-5.2-Codex and bills per token — check which you want before starting.\n- **Sites plugin (preview)**: enable it from the Codex app sidebar → Sites. Hosted environment variables and secrets are managed per-site in the UI.",
+        "sourceURL": "https://developers.openai.com/codex/changelog"
+      }
+    },
+    {
+      "id": "bumblebee-supply-chain-scanner",
+      "name": "Bumblebee",
+      "category": "tooling",
+      "oneLineDescription": "Read-only supply chain scanner for npm, PyPI, MCP servers, VS Code extensions from Perplexity AI.",
+      "estimatedSetupMinutes": 5,
+      "detail": {
+        "whatItDoes": "Bumblebee is a read-only supply chain security scanner from Perplexity AI written in Go 1.25 with zero non-standard library dependencies. In a single pass it scans npm packages, PyPI packages, Go modules, RubyGems, Composer packages, MCP servers, VS Code extensions, and browser extensions for suspicious or malicious packages. Because it is read-only by design and makes no unexpected network calls, it can be safely added to CI pipelines and developer laptops without introducing new attack surface.\n\nThe motivation is direct: the AI tooling era has dramatically expanded the supply chain attack surface. MCP servers are often installed by clicking a Discord link. Editor extensions have full filesystem access. Browser extensions see every page. Bumblebee audits all of these at once instead of requiring separate tools per ecosystem.",
+        "whoItsFor": "Security-conscious developers and DevSecOps teams who install MCP servers, editor extensions, or AI tooling from third-party sources. Useful as a pre-commit hook or CI step for any team that has expanded its AI tool footprint in 2025-2026 and wants a fast audit of what is actually in the dependency graph.",
+        "pros": [
+          "Single binary, zero runtime dependencies — trivial to add to any CI pipeline or developer machine",
+          "Covers MCP servers and editor extensions, not just traditional package ecosystems",
+          "Read-only by design — cannot modify files or make unexpected outbound calls",
+          "Written in Go 1.25 with zero non-standard library dependencies: easy to audit the scanner itself"
+        ],
+        "cons": [
+          "Backed by Perplexity AI — longevity and update cadence depend on Perplexity's prioritization",
+          "Detection quality depends on the threat intelligence database; novel or very new malicious packages may not be flagged yet"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- macOS or Linux (Windows support: check the README)\n- No runtime dependencies — single binary\n\n## 1. Install Bumblebee\n\n```bash\n# macOS via Homebrew\nbrew install perplexity-ai/tap/bumblebee\n\n# Linux: download the binary directly\ncurl -fsSL https://github.com/perplexity-ai/bumblebee/releases/latest/download/bumblebee-linux-amd64 \\\n  -o /usr/local/bin/bumblebee\nchmod +x /usr/local/bin/bumblebee\n\n# Verify\nbumblebee --version\n```\n\n## 2. Scan your current project\n\n```bash\n# From your project root — scans all detected package manifests\nbumblebee scan .\n\n# Scan a specific ecosystem\nbumblebee scan --npm .\nbumblebee scan --pypi .\nbumblebee scan --mcp ~/.claude/mcp_config.json\n```\n\n## 3. Scan editor extensions and MCP servers\n\n```bash\n# VS Code extensions\nbumblebee scan --vscode\n\n# MCP servers (Claude Code config)\nbumblebee scan --mcp ~/.claude/mcp_config.json\n\n# Everything at once\nbumblebee scan --all\n```\n\n## 4. Add to CI (GitHub Actions example)\n\n```yaml\n# .github/workflows/supply-chain.yml\nname: Supply Chain Scan\non: [push, pull_request]\njobs:\n  bumblebee:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - name: Install Bumblebee\n        run: |\n          curl -fsSL https://github.com/perplexity-ai/bumblebee/releases/latest/download/bumblebee-linux-amd64 \\\n            -o /usr/local/bin/bumblebee\n          chmod +x /usr/local/bin/bumblebee\n      - name: Scan dependencies\n        run: bumblebee scan --all .\n```\n\n## Gotchas\n- **MCP server scanning requires the config file path**: Bumblebee doesn't auto-discover MCP configs; pass the path explicitly with `--mcp <path>`.\n- **Browser extension scanning may require elevated permissions** on some platforms to read the extensions directory.\n- **Read-only means no auto-remediation**: Bumblebee flags issues but does not remove packages. You act on the report manually.",
+        "sourceURL": "https://github.com/perplexity-ai/bumblebee"
+      }
+    },
+    {
+      "id": "claude-code-official-plugins",
+      "name": "anthropics/claude-plugins-official",
+      "category": "anthropic",
+      "oneLineDescription": "Anthropic's managed GitHub directory of production-ready Claude Code plugins (30k+ stars).",
+      "estimatedSetupMinutes": 3,
+      "detail": {
+        "whatItDoes": "claude-plugins-official is the Anthropic-managed GitHub repository that serves as the official marketplace for Claude Code plugins. Plugins are packages that add domain-specific skills, slash commands, MCP server connectors, subagents, hooks, and LSP support on top of Claude Code. Each plugin is implemented as markdown and JSON — no build steps, no compiled code — making them readable and customizable by anyone.\n\nThe official library covers productivity (Slack, Notion, Linear), sales (HubSpot, Clay, ZoomInfo), customer support (ticket triage, knowledge base), legal, finance, data, and security (Security Guidance, Semgrep). As of June 1, 2026, the top plugins by installs were Frontend Design (829K installs), Superpowers (752K installs), and Context7 (348K installs). The separately maintained anthropics/knowledge-work-plugins repo covers 11 production knowledge-work plugins (sales, legal, finance, data, product management) at 17K+ stars.",
+        "whoItsFor": "Any Claude Code user who wants to extend the tool with domain-specific context, external service connectors, or repeatable slash commands — without writing code. Particularly useful for team leads who want to standardize how an entire team interacts with Claude Code (same skills, same hooks, same MCP connectors installed from one place).",
+        "pros": [
+          "Anthropic-managed quality bar — official plugins are reviewed and maintained by the team that builds Claude Code",
+          "Zero-code plugin format: skills and commands are plain markdown files any team member can read and customize",
+          "Directly installable from inside Claude Code via /plugin marketplace or the /plugin init scaffold command",
+          "Covers the full stack from LSP code intelligence to external service connectors (Jira, Figma, Supabase, etc.)"
+        ],
+        "cons": [
+          "Official library is curated and slow-moving — community plugins in third-party repos move faster but lack quality guarantees",
+          "Plugin executables run on the Bash tool PATH — review any plugin that includes executable scripts before installing in a sensitive environment"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Claude Code v2.1.145+ (run `claude --version`; update with `claude update`)\n- Claude account (plugins require API or subscription access; no free tier for Claude Code)\n\n## 1. Browse the official marketplace inside Claude Code\n\n```bash\nclaude\n# Then inside the TUI:\n/plugin\n# Opens the Discover tab showing the official marketplace\n```\n\n## 2. Install a plugin directly by name\n\n```bash\n# Inside a Claude Code session:\n/plugin install security-guidance\n/plugin install context7\n/plugin install frontend-design\n\n# Or from the CLI before starting a session:\nclaude --plugin-dir ~/.claude/plugins/security-guidance\n```\n\n## 3. Install the full official library from GitHub\n\n```bash\n# Clone the official plugin repo\ngit clone https://github.com/anthropics/claude-plugins-official.git ~/.claude/official-plugins\n\n# Point Claude Code at it (one-time setup in settings.json)\ncat >> ~/.claude/settings.json << 'EOF'\n{\n  \"pluginMarketplaces\": [\n    { \"source\": \"~/.claude/official-plugins\", \"name\": \"official\" }\n  ]\n}\nEOF\n```\n\n## 4. Install the knowledge-work plugins (sales, legal, finance, data)\n\n```bash\ngit clone https://github.com/anthropics/knowledge-work-plugins.git ~/.claude/knowledge-work\n\n# Then inside Claude Code:\n/plugin install --dir ~/.claude/knowledge-work/sales\n/plugin install --dir ~/.claude/knowledge-work/legal\n```\n\n## 5. Scaffold a custom plugin for your team\n\n```bash\n# Inside a Claude Code session:\n/plugin init my-team-workflow\n# Creates ~/.claude/skills/my-team-workflow/ with a CLAUDE.md template\n# Edit the markdown to add your team's skills, then /plugin install it\n```\n\n## Gotchas\n- **Plugin hooks run as shell commands**: any plugin with PostToolUse or PreToolUse hooks executes shell code on your machine. Read the hook definitions in the plugin's CLAUDE.md before installing.\n- **Marketplace auto-loads on session start**: if a plugin update breaks something, run `/plugin marketplace update claude-plugins-official` to refresh, or `--safe-mode` to start with all plugins disabled for debugging.\n- **`/plugin list` shows installed plugins inline** (added in v2.1.157) — use this to audit what is active in a session before running sensitive tasks.",
+        "sourceURL": "https://github.com/anthropics/claude-plugins-official"
       }
     }
   ]
