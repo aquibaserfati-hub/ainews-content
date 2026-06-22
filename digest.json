@@ -1,64 +1,56 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-22T00:00:00Z",
-  "reportGeneratedAt": "2026-06-22T12:00:00Z",
+  "reportGeneratedAt": "2026-06-22T12:11:26Z",
   "learnGeneratedAt": "2026-06-22T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-ipo-s1-filing-2026-06-01",
-      "title": "Anthropic files confidential S-1 with SEC, targets late-2026 IPO",
-      "summary": "Anthropic submitted a draft Form S-1 on June 1, days after closing a $65B Series H at a $965B valuation — the first major AI lab to formally enter the public-markets process. Revenue run-rate is reported at $47B annualized; share price and count are unset. Builders should note that a publicly-traded Anthropic changes API durability calculus.",
+      "id": "anthropic-fable5-export-ban-june2026",
+      "title": "Anthropic Fable 5 and Mythos 5 remain offline under US export ban",
+      "summary": "The US Commerce Department ban on Fable 5 and Mythos 5 enters day 10 with no restoration date announced. The free-trial window for paid subscribers closes today (June 22), meaning any subscriber who did not use it during the outage loses it — Anthropic has not said whether it will extend.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "sourceURL": "https://www.anthropic.com/news",
       "significance": 8
     },
     {
-      "id": "google-kills-gemini-cli-antigravity-2026-06-18",
-      "title": "Google kills Gemini CLI for free and Pro users, ships closed-source Antigravity CLI",
-      "summary": "As of June 18, Gemini CLI stopped serving free, Google AI Pro, and Ultra users with no grace period. The replacement is Antigravity CLI (binary: agy) — a closed-source Go rewrite that ships parallel async agents but lacks feature parity at launch, and downgrades quotas from daily to weekly limits. Any CI pipeline calling gemini is broken now.",
-      "category": "google",
-      "sourceURL": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
-      "significance": 8
-    },
-    {
-      "id": "claude-code-artifacts-mcp-okta-2026-06-week",
-      "title": "Claude Code ships Artifacts, enterprise MCP Okta provisioning, and auto mode on Bedrock/Vertex",
-      "summary": "Claude Code added shareable live Artifacts that auto-update as sessions run — useful for PR walkthroughs and incident pages. Separately, admins can now provision MCP connectors org-wide via Okta with zero-touch user access. Auto mode also landed on Bedrock, Vertex, and Foundry for Opus 4.7/4.8.",
-      "category": "anthropic",
-      "sourceURL": "https://code.claude.com/docs/en/whats-new",
-      "significance": 7
-    },
-    {
-      "id": "openai-codex-record-replay-sites-2026-06-week",
-      "title": "OpenAI Codex adds Record & Replay workflow capture and Sites hosted-app builder",
-      "summary": "Codex for macOS Business users can now record a workflow once and replay it as a reusable skill across Computer Use, browser actions, and plugins. Sites (preview) lets Codex deploy web apps and dashboards directly inside the app — ChatGPT Business workspaces get it by default.",
-      "category": "openai",
-      "sourceURL": "https://developers.openai.com/codex/changelog",
-      "significance": 7
-    },
-    {
-      "id": "anthropic-john-jumper-deepmind-hire-2026-06-19",
-      "title": "Anthropic poaches AlphaFold's John Jumper from Google DeepMind",
-      "summary": "John Jumper, the Nobel Prize-winning architect of AlphaFold and a VP Engineering Fellow at DeepMind, is joining Anthropic — a significant science talent signal ahead of the company's June 30 science event.",
-      "category": "anthropic",
-      "sourceURL": "https://www.cnbc.com/2026/06/19/john-jumper-to-leave-google-deepmind-for-anthropic.html",
-      "significance": 7
-    },
-    {
-      "id": "openai-codex-5m-weekly-users-2026-06-02",
-      "title": "OpenAI Codex hits 5 million weekly users — 8x growth in five months",
-      "summary": "OpenAI confirmed Codex crossed 5M weekly active users on June 2, up from 600K at the start of 2026, with 20% now knowledge workers rather than developers. The CLI is Apache-2.0, Rust-based, and tops SWE-bench Verified at 88.7% with GPT-5.5.",
-      "category": "openai",
-      "sourceURL": "https://www.gradually.ai/en/codex-statistics/",
-      "significance": 6
-    },
-    {
-      "id": "anthropic-openai-talent-war-noam-shazeer-2026-06",
-      "title": "Google Gemini co-lead Noam Shazeer leaves for IPO-bound OpenAI",
-      "summary": "Noam Shazeer, VP of Engineering and co-lead of Google's Gemini models, announced he is joining OpenAI — arriving the same week that Jumper left DeepMind for Anthropic, underscoring how fast talent is moving between frontier labs ahead of their IPOs.",
+      "id": "zai-glm52-open-weights-june2026",
+      "title": "Z.ai ships GLM-5.2: MIT-licensed 753B MoE beats GPT-5.5 on coding benchmarks at 1/6 the cost",
+      "summary": "GLM-5.2 open weights went public on Hugging Face June 16, scoring 62.1 on SWE-bench Pro (GPT-5.5: 58.6) and 74.4% on FrontierSWE — within 1 point of Claude Opus 4.8 — at $4.40/M output tokens versus GPT-5.5's $30. Self-hosting requires ~1.5 TB of GPU memory; teams routing through Z.ai's cloud API remain subject to China's National Intelligence Law, which is a real data-risk consideration.",
       "category": "otherLLM",
-      "sourceURL": "https://www.cnbc.com/2026/06/19/john-jumper-to-leave-google-deepmind-for-anthropic.html",
+      "sourceURL": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost",
+      "significance": 7
+    },
+    {
+      "id": "openai-gpt56-imminent-june2026",
+      "title": "GPT-5.6 unconfirmed but prediction markets put June 22–28 window at 40%, Pro users report sharper responses",
+      "summary": "OpenAI has made no official announcement as of June 22, but Polymarket now splits: 58% on 'not by June 28' versus 40% on a this-week release. The model is described internally by chief scientist Jakub Pachocki as a meaningful improvement and is the first trained to fix the GPT-5.5 reward-hacking alignment failure documented in April. Watch openai.com/news — no action needed before an official system card drops.",
+      "category": "openai",
+      "sourceURL": "https://www.techtimes.com/articles/318799/20260621/gpt-56-launch-window-starts-monday-alignment-fix-15m-token-context-inside.htm",
       "significance": 6
+    },
+    {
+      "id": "openai-codex-goal-mode-ga-june2026",
+      "title": "OpenAI ships Codex Goal Mode to GA across app, IDE extension, and CLI",
+      "summary": "Goal Mode — define an outcome and success criteria and let Codex keep working until it resolves — is now generally available on all three Codex surfaces. Appshots on macOS also ship, letting you attach a live app window to a Codex thread via hotkey so the model sees what you see without a long setup prompt.",
+      "category": "openai",
+      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "significance": 6
+    },
+    {
+      "id": "openai-gpt52-retired-june2026",
+      "title": "OpenAI retires GPT-5.2 family from ChatGPT, routes all traffic to GPT-5.5",
+      "summary": "As of June 12, GPT-5.2 Instant, Thinking, and Pro are gone from ChatGPT; existing conversations auto-migrate to the corresponding GPT-5.5 variants. o3 is next on the chopping block, set for August 26, and GPT-4.5 exits ChatGPT on June 27 — API endpoints for those models remain unchanged.",
+      "category": "openai",
+      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "significance": 5
+    },
+    {
+      "id": "noam-shazeer-joins-openai-june2026",
+      "title": "Transformer co-author Noam Shazeer joins OpenAI as Lead for Architecture Research",
+      "summary": "Shazeer announced on June 18 he is leaving Google DeepMind — where he returned in a $2.7B licensing deal from Character.AI in 2024 — to lead architecture research at OpenAI. He co-authored the 2017 'Attention Is All You Need' paper, Multi-Query Attention, and Sparsely-Gated MoE, putting him on the short list of people whose design choices still show up in every frontier model.",
+      "category": "openai",
+      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-20-2026",
+      "significance": 7
     }
   ],
   "learn": [
