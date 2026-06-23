@@ -1,56 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-22T00:00:00Z",
-  "reportGeneratedAt": "2026-06-22T12:11:26Z",
+  "reportGeneratedAt": "2026-06-23T09:49:31Z",
   "learnGeneratedAt": "2026-06-22T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-fable5-export-ban-june2026",
-      "title": "Anthropic Fable 5 and Mythos 5 remain offline under US export ban",
-      "summary": "The US Commerce Department ban on Fable 5 and Mythos 5 enters day 10 with no restoration date announced. The free-trial window for paid subscribers closes today (June 22), meaning any subscriber who did not use it during the outage loses it — Anthropic has not said whether it will extend.",
+      "id": "google-gemini-25-pro-deep-think-2026-06-22",
+      "title": "Google ships Gemini 2.5 Pro with Deep Think on API and Vertex AI",
+      "summary": "Gemini 2.5 Pro with Deep Think reasoning mode is now live on the API, AI Studio, and Vertex AI with a 2 million token context window — available immediately. Google positions it as its most capable model ever, with benchmark claims that may put it ahead of current public frontier models.",
+      "category": "google",
+      "sourceURL": "https://medium.com/adi-insights-innovations-collective/ai-update-monday-june-22-2026-ad347993f9ad",
+      "significance": 9
+    },
+    {
+      "id": "anthropic-fable5-billing-shift-2026-06-23",
+      "title": "Anthropic's Claude Fable 5 free window closes — credits required starting today",
+      "summary": "As of June 23, all Fable 5 usage moves to consumption credits at $10 input / $50 output per million tokens; the free subscription window that launched June 9 is over. Builders who stood up Fable 5 integrations during the free period now have a real cost line — and the model was offline for six of those thirteen days due to the government-forced shutdown, with no extension announced.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
-      "significance": 8
-    },
-    {
-      "id": "zai-glm52-open-weights-june2026",
-      "title": "Z.ai ships GLM-5.2: MIT-licensed 753B MoE beats GPT-5.5 on coding benchmarks at 1/6 the cost",
-      "summary": "GLM-5.2 open weights went public on Hugging Face June 16, scoring 62.1 on SWE-bench Pro (GPT-5.5: 58.6) and 74.4% on FrontierSWE — within 1 point of Claude Opus 4.8 — at $4.40/M output tokens versus GPT-5.5's $30. Self-hosting requires ~1.5 TB of GPU memory; teams routing through Z.ai's cloud API remain subject to China's National Intelligence Law, which is a real data-risk consideration.",
-      "category": "otherLLM",
-      "sourceURL": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost",
+      "sourceURL": "https://medium.com/adi-insights-innovations-collective/ai-update-monday-june-22-2026-ad347993f9ad",
       "significance": 7
     },
     {
-      "id": "openai-gpt56-imminent-june2026",
-      "title": "GPT-5.6 unconfirmed but prediction markets put June 22–28 window at 40%, Pro users report sharper responses",
-      "summary": "OpenAI has made no official announcement as of June 22, but Polymarket now splits: 58% on 'not by June 28' versus 40% on a this-week release. The model is described internally by chief scientist Jakub Pachocki as a meaningful improvement and is the first trained to fix the GPT-5.5 reward-hacking alignment failure documented in April. Watch openai.com/news — no action needed before an official system card drops.",
+      "id": "openai-chatgpt-weekend-upgrade-2026-06-22",
+      "title": "OpenAI quietly ships a major ChatGPT upgrade over the weekend",
+      "summary": "OpenAI pushed a significant ChatGPT update over the June 21–22 weekend; details remain thin as of this writing. Watch the API changelog for model ID changes — GPT-4.5 is also due to be retired from ChatGPT on June 27.",
       "category": "openai",
-      "sourceURL": "https://www.techtimes.com/articles/318799/20260621/gpt-56-launch-window-starts-monday-alignment-fix-15m-token-context-inside.htm",
+      "sourceURL": "https://help.openai.com/en/articles/9624314-model-release-notes",
       "significance": 6
     },
     {
-      "id": "openai-codex-goal-mode-ga-june2026",
-      "title": "OpenAI ships Codex Goal Mode to GA across app, IDE extension, and CLI",
-      "summary": "Goal Mode — define an outcome and success criteria and let Codex keep working until it resolves — is now generally available on all three Codex surfaces. Appshots on macOS also ship, letting you attach a live app window to a Codex thread via hotkey so the model sees what you see without a long setup prompt.",
+      "id": "openai-gpt45-chatgpt-retirement-2026-06-27",
+      "title": "OpenAI retiring GPT-4.5 from ChatGPT on June 27",
+      "summary": "GPT-4.5 sunsets from ChatGPT in four days; o3 follows on August 26. If any of your internal tooling or evals depend on GPT-4.5 via the ChatGPT interface, the clock is running.",
       "category": "openai",
-      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "sourceURL": "https://help.openai.com/en/articles/9624314-model-release-notes",
       "significance": 6
     },
     {
-      "id": "openai-gpt52-retired-june2026",
-      "title": "OpenAI retires GPT-5.2 family from ChatGPT, routes all traffic to GPT-5.5",
-      "summary": "As of June 12, GPT-5.2 Instant, Thinking, and Pro are gone from ChatGPT; existing conversations auto-migrate to the corresponding GPT-5.5 variants. o3 is next on the chopping block, set for August 26, and GPT-4.5 exits ChatGPT on June 27 — API endpoints for those models remain unchanged.",
-      "category": "openai",
-      "sourceURL": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-      "significance": 5
-    },
-    {
-      "id": "noam-shazeer-joins-openai-june2026",
-      "title": "Transformer co-author Noam Shazeer joins OpenAI as Lead for Architecture Research",
-      "summary": "Shazeer announced on June 18 he is leaving Google DeepMind — where he returned in a $2.7B licensing deal from Character.AI in 2024 — to lead architecture research at OpenAI. He co-authored the 2017 'Attention Is All You Need' paper, Multi-Query Attention, and Sparsely-Gated MoE, putting him on the short list of people whose design choices still show up in every frontier model.",
-      "category": "openai",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-20-2026",
+      "id": "anthropic-claude-code-agent-teams-wif-2026-06-22",
+      "title": "Claude Code ships simplified agent teams and Workload Identity Federation",
+      "summary": "A broad Claude Code release removes the TeamCreate/TeamDelete setup step — sessions now get one implicit team, spawn subagents directly via the Agent tool name parameter. The same release adds Workload Identity Federation so CI/CD workloads (GitHub Actions, AWS IAM, GCP service accounts) authenticate without static API keys.",
+      "category": "anthropic",
+      "sourceURL": "https://releasebot.io/updates/anthropic",
       "significance": 7
+    },
+    {
+      "id": "garry-tan-claude-code-setup-github-trending-2026-06-23",
+      "title": "Garry Tan's Claude Code setup repo hits GitHub trending with 16k+ stars today",
+      "summary": "A TypeScript repo publishing Garry Tan's opinionated 23-tool Claude Code configuration — covering CEO, designer, eng manager, release manager, doc engineer, and QA roles — is trending #1 on GitHub today with 16,745 stars. Practical signal: it doubles as a ready-made multi-agent skill scaffold for teams standing up Claude Code workflows.",
+      "category": "tooling",
+      "sourceURL": "https://github.com/trending",
+      "significance": 6
+    },
+    {
+      "id": "eu-ai-act-enforcement-deadline-2026-06-23",
+      "title": "EU AI Act full enforcement 41 days out — most companies still scrambling",
+      "summary": "The August 2, 2026 compliance deadline for high-risk AI systems under the EU AI Act is now 41 days away, with Google, OpenAI, and Meta flagged as the worst-positioned vendors given large European user bases. Builders shipping to EU users should confirm their system-risk classification and transparency obligations now.",
+      "category": "other",
+      "sourceURL": "https://medium.com/adi-insights-innovations-collective/ai-update-monday-june-22-2026-ad347993f9ad",
+      "significance": 6
     }
   ],
   "learn": [
