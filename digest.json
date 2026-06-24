@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-22T00:00:00Z",
-  "reportGeneratedAt": "2026-06-23T09:49:31Z",
+  "reportGeneratedAt": "2026-06-24T09:37:44Z",
   "learnGeneratedAt": "2026-06-22T12:00:00Z",
   "report": [
     {
-      "id": "google-gemini-25-pro-deep-think-2026-06-22",
-      "title": "Google ships Gemini 2.5 Pro with Deep Think on API and Vertex AI",
-      "summary": "Gemini 2.5 Pro with Deep Think reasoning mode is now live on the API, AI Studio, and Vertex AI with a 2 million token context window — available immediately. Google positions it as its most capable model ever, with benchmark claims that may put it ahead of current public frontier models.",
-      "category": "google",
-      "sourceURL": "https://medium.com/adi-insights-innovations-collective/ai-update-monday-june-22-2026-ad347993f9ad",
-      "significance": 9
-    },
-    {
-      "id": "anthropic-fable5-billing-shift-2026-06-23",
-      "title": "Anthropic's Claude Fable 5 free window closes — credits required starting today",
-      "summary": "As of June 23, all Fable 5 usage moves to consumption credits at $10 input / $50 output per million tokens; the free subscription window that launched June 9 is over. Builders who stood up Fable 5 integrations during the free period now have a real cost line — and the model was offline for six of those thirteen days due to the government-forced shutdown, with no extension announced.",
-      "category": "anthropic",
-      "sourceURL": "https://medium.com/adi-insights-innovations-collective/ai-update-monday-june-22-2026-ad347993f9ad",
-      "significance": 7
-    },
-    {
-      "id": "openai-chatgpt-weekend-upgrade-2026-06-22",
-      "title": "OpenAI quietly ships a major ChatGPT upgrade over the weekend",
-      "summary": "OpenAI pushed a significant ChatGPT update over the June 21–22 weekend; details remain thin as of this writing. Watch the API changelog for model ID changes — GPT-4.5 is also due to be retired from ChatGPT on June 27.",
-      "category": "openai",
-      "sourceURL": "https://help.openai.com/en/articles/9624314-model-release-notes",
-      "significance": 6
-    },
-    {
-      "id": "openai-gpt45-chatgpt-retirement-2026-06-27",
-      "title": "OpenAI retiring GPT-4.5 from ChatGPT on June 27",
-      "summary": "GPT-4.5 sunsets from ChatGPT in four days; o3 follows on August 26. If any of your internal tooling or evals depend on GPT-4.5 via the ChatGPT interface, the clock is running.",
-      "category": "openai",
-      "sourceURL": "https://help.openai.com/en/articles/9624314-model-release-notes",
-      "significance": 6
-    },
-    {
-      "id": "anthropic-claude-code-agent-teams-wif-2026-06-22",
-      "title": "Claude Code ships simplified agent teams and Workload Identity Federation",
-      "summary": "A broad Claude Code release removes the TeamCreate/TeamDelete setup step — sessions now get one implicit team, spawn subagents directly via the Agent tool name parameter. The same release adds Workload Identity Federation so CI/CD workloads (GitHub Actions, AWS IAM, GCP service accounts) authenticate without static API keys.",
+      "id": "claude-code-agent-teams-wif-2026-06-24",
+      "title": "Claude Code ships implicit agent teams and Workload Identity Federation",
+      "summary": "Anthropic's latest Claude Code release removes the TeamCreate/TeamDelete setup step — every session now gets one implicit team, with subagents spawned directly via the Agent tool's name parameter. Separately, the Claude Platform gains Workload Identity Federation and per-workload service accounts, eliminating static API keys in favor of short-lived OIDC tokens from AWS IAM, GCP, GitHub Actions, and other providers.",
       "category": "anthropic",
       "sourceURL": "https://releasebot.io/updates/anthropic",
       "significance": 7
     },
     {
-      "id": "garry-tan-claude-code-setup-github-trending-2026-06-23",
-      "title": "Garry Tan's Claude Code setup repo hits GitHub trending with 16k+ stars today",
-      "summary": "A TypeScript repo publishing Garry Tan's opinionated 23-tool Claude Code configuration — covering CEO, designer, eng manager, release manager, doc engineer, and QA roles — is trending #1 on GitHub today with 16,745 stars. Practical signal: it doubles as a ready-made multi-agent skill scaffold for teams standing up Claude Code workflows.",
-      "category": "tooling",
-      "sourceURL": "https://github.com/trending",
+      "id": "anthropic-fable5-paid-credits-required-2026-06-23",
+      "title": "Anthropic Fable 5 free trial window closes — paid credits now required",
+      "summary": "As of June 23, access to Fable 5 requires paid usage credits; the 13-day free window for Pro/Max/Team/Enterprise subscribers has ended. Fable 5 also remains under a US government export-control suspension for foreign nationals, meaning many developers are simultaneously losing both free access and general availability.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
+      "significance": 7
+    },
+    {
+      "id": "gemini-35-pro-still-no-ga-june24-2026",
+      "title": "Gemini 3.5 Pro misses mid-June window — June 30 the last realistic date",
+      "summary": "As of June 23, Gemini 3.5 Pro remains in limited Vertex AI enterprise preview with no model card, no public API ID, and no pricing published. Google's June commitment leaves six days; prediction markets put odds of a June 30 GA at roughly 50–55%, making this the most-watched unreleased model in the ecosystem right now.",
+      "category": "google",
+      "sourceURL": "https://techjournal.org/gemini-3-5-pro-release-date",
       "significance": 6
     },
     {
-      "id": "eu-ai-act-enforcement-deadline-2026-06-23",
-      "title": "EU AI Act full enforcement 41 days out — most companies still scrambling",
-      "summary": "The August 2, 2026 compliance deadline for high-risk AI systems under the EU AI Act is now 41 days away, with Google, OpenAI, and Meta flagged as the worst-positioned vendors given large European user bases. Builders shipping to EU users should confirm their system-risk classification and transparency obligations now.",
-      "category": "other",
-      "sourceURL": "https://medium.com/adi-insights-innovations-collective/ai-update-monday-june-22-2026-ad347993f9ad",
+      "id": "gemini-api-veo-deprecation-deadline-2026-06-30",
+      "title": "Google deprecates Veo 2 video generation endpoints June 30 — action required",
+      "summary": "The Gemini API changelog confirms older video generation model IDs shut down on June 30, 2026; teams must migrate to veo-3.1-generate-preview or the 3.1 GA models on the Gemini Enterprise Agent Platform before the deadline. The gemini-3.1-flash-image-preview model also shuts down June 25.",
+      "category": "google",
+      "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
+      "significance": 6
+    },
+    {
+      "id": "openai-gpt56-still-unannounced-june24-2026",
+      "title": "GPT-5.6 not shipped as of June 24 — prediction markets at ~75% for this week",
+      "summary": "OpenAI has still made no official announcement for GPT-5.6; GPT-5.5 remains the documented production model. Polymarket implied odds for a June 22–28 release sit around 75%, driven by OpenAI chief scientist Jakub Pachocki's internal memo calling it a meaningful improvement — but no model card, no API ID, and SEC quiet-period constraints from the June 8 S-1 filing all create real slip risk.",
+      "category": "openai",
+      "sourceURL": "https://polymarket.com/event/when-will-gpt-5pt6-be-released",
+      "significance": 5
+    },
+    {
+      "id": "openai-acquires-uv-ruff-astral-2026-06-23",
+      "title": "OpenAI's acquisition of Astral (uv + ruff) now closed — Python toolchain shift underway",
+      "summary": "OpenAI acquired Astral, owner of uv and ruff — two of the most-downloaded Python packages used by millions of developers with no prior OpenAI relationship. The strategic read is clear: owning the Python dev-environment layer gives OpenAI a distribution surface directly in every developer's terminal, independent of ChatGPT.",
+      "category": "openai",
+      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-23-2026",
+      "significance": 7
+    },
+    {
+      "id": "reflection-ai-colossus2-compute-deal-2026-06-24",
+      "title": "Reflection AI commits $150M/month for GB300 compute on SpaceX Colossus 2",
+      "summary": "Reflection AI will pay $150 million per month from July 1, 2026 through 2029 for immediate access to Nvidia GB300 chips and hardware at SpaceX's Colossus 2 data center. The deal signals a new tier of frontier-lab compute spend and further consolidates SpaceX's position as a major AI infrastructure broker following its Cursor acquisition.",
+      "category": "otherLLM",
+      "sourceURL": "https://llm-stats.com/ai-news",
       "significance": 6
     }
   ],
