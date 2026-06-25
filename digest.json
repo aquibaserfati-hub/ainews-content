@@ -1,184 +1,180 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-22T00:00:00Z",
-  "reportGeneratedAt": "2026-06-24T09:37:44Z",
-  "learnGeneratedAt": "2026-06-22T12:00:00Z",
+  "reportGeneratedAt": "2026-06-25T12:00:00Z",
+  "learnGeneratedAt": "2026-06-25T12:00:00Z",
   "report": [
     {
-      "id": "claude-code-agent-teams-wif-2026-06-24",
-      "title": "Claude Code ships implicit agent teams and Workload Identity Federation",
-      "summary": "Anthropic's latest Claude Code release removes the TeamCreate/TeamDelete setup step — every session now gets one implicit team, with subagents spawned directly via the Agent tool's name parameter. Separately, the Claude Platform gains Workload Identity Federation and per-workload service accounts, eliminating static API keys in favor of short-lived OIDC tokens from AWS IAM, GCP, GitHub Actions, and other providers.",
+      "id": "anthropic-fable5-mythos5-us-government-suspend-2026-06-12",
+      "title": "US government forces Anthropic to pull Fable 5 and Mythos 5 globally",
+      "summary": "The Commerce Department issued an export control directive on June 12 requiring Anthropic to suspend all access to Claude Fable 5 and Mythos 5 for foreign nationals, forcing Anthropic to disable both models for all customers worldwide — just three days after their launch. Anthropic complied while publicly disputing the rationale, calling the cited jailbreak narrow and non-universal; other models including Opus 4.8 remain available.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news/fable-mythos-access",
+      "significance": 9
+    },
+    {
+      "id": "anthropic-claude-tag-slack-beta-2026-06",
+      "title": "Anthropic ships Claude Tag for Slack — @Claude joins your team channels",
+      "summary": "Claude Tag lets Enterprise and Team plan users add @Claude as a Slack team member, delegating async tasks with tool and codebase access. Claude builds channel-level context over time and can plan future tasks — it's Claude Code's agentic loop extended to the whole team, not just the developer at the terminal.",
       "category": "anthropic",
       "sourceURL": "https://releasebot.io/updates/anthropic",
-      "significance": 7
+      "significance": 8
     },
     {
-      "id": "anthropic-fable5-paid-credits-required-2026-06-23",
-      "title": "Anthropic Fable 5 free trial window closes — paid credits now required",
-      "summary": "As of June 23, access to Fable 5 requires paid usage credits; the 13-day free window for Pro/Max/Team/Enterprise subscribers has ended. Fable 5 also remains under a US government export-control suspension for foreign nationals, meaning many developers are simultaneously losing both free access and general availability.",
+      "id": "anthropic-managed-agents-dreaming-multiagent-2026-05-29",
+      "title": "Anthropic ships Managed Agents with Dreaming, multiagent orchestration, and 2x Claude Code rate limits",
+      "summary": "Four new capabilities landed on the Claude Platform: Dreaming (scheduled session review that curates agent memory between runs), multiagent orchestration (a lead agent dispatching parallel subagents on a shared filesystem), outcomes tracking, and webhooks. Claude Code rate limits doubled simultaneously.",
       "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news",
+      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
+      "significance": 8
+    },
+    {
+      "id": "openai-jalapeno-inference-chip-broadcom-2026-06-24",
+      "title": "OpenAI and Broadcom unveil Jalapeño, OpenAI's first custom LLM inference chip",
+      "summary": "Jalapeño is an LLM inference accelerator co-designed with Broadcom, developed from initial design to tape-out in nine months — claimed to be the fastest ASIC development cycle in high-performance semiconductors. Initial deployment is targeted before end of 2026; OpenAI says improvements in cost and speed will flow directly into ChatGPT and API pricing.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "significance": 8
+    },
+    {
+      "id": "openai-codex-role-plugins-sites-2026-06-02",
+      "title": "OpenAI ships Codex role plugins and Codex Sites — 62 apps, 110 skills, prompt-to-deployed-app",
+      "summary": "Six role-specific plugins (data analytics, sales, equity investing, investment banking, and more) connect Codex to 62 popular business apps with 110 pre-built skills. Codex Sites lets Business and Enterprise teams prompt Codex to build and host interactive internal apps directly from the Codex app. Non-developers now make up 20% of Codex's 5M weekly users and are growing 3x faster than developers.",
+      "category": "openai",
+      "sourceURL": "https://openai.com/index/codex-for-every-role-tool-workflow/",
       "significance": 7
     },
     {
-      "id": "gemini-35-pro-still-no-ga-june24-2026",
-      "title": "Gemini 3.5 Pro misses mid-June window — June 30 the last realistic date",
-      "summary": "As of June 23, Gemini 3.5 Pro remains in limited Vertex AI enterprise preview with no model card, no public API ID, and no pricing published. Google's June commitment leaves six days; prediction markets put odds of a June 30 GA at roughly 50–55%, making this the most-watched unreleased model in the ecosystem right now.",
-      "category": "google",
-      "sourceURL": "https://techjournal.org/gemini-3-5-pro-release-date",
-      "significance": 6
-    },
-    {
-      "id": "gemini-api-veo-deprecation-deadline-2026-06-30",
-      "title": "Google deprecates Veo 2 video generation endpoints June 30 — action required",
-      "summary": "The Gemini API changelog confirms older video generation model IDs shut down on June 30, 2026; teams must migrate to veo-3.1-generate-preview or the 3.1 GA models on the Gemini Enterprise Agent Platform before the deadline. The gemini-3.1-flash-image-preview model also shuts down June 25.",
-      "category": "google",
-      "sourceURL": "https://ai.google.dev/gemini-api/docs/changelog",
-      "significance": 6
-    },
-    {
-      "id": "openai-gpt56-still-unannounced-june24-2026",
-      "title": "GPT-5.6 not shipped as of June 24 — prediction markets at ~75% for this week",
-      "summary": "OpenAI has still made no official announcement for GPT-5.6; GPT-5.5 remains the documented production model. Polymarket implied odds for a June 22–28 release sit around 75%, driven by OpenAI chief scientist Jakub Pachocki's internal memo calling it a meaningful improvement — but no model card, no API ID, and SEC quiet-period constraints from the June 8 S-1 filing all create real slip risk.",
-      "category": "openai",
-      "sourceURL": "https://polymarket.com/event/when-will-gpt-5pt6-be-released",
-      "significance": 5
-    },
-    {
-      "id": "openai-acquires-uv-ruff-astral-2026-06-23",
-      "title": "OpenAI's acquisition of Astral (uv + ruff) now closed — Python toolchain shift underway",
-      "summary": "OpenAI acquired Astral, owner of uv and ruff — two of the most-downloaded Python packages used by millions of developers with no prior OpenAI relationship. The strategic read is clear: owning the Python dev-environment layer gives OpenAI a distribution surface directly in every developer's terminal, independent of ChatGPT.",
-      "category": "openai",
-      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-23-2026",
+      "id": "anthropic-ipo-filing-valuation-2026-06",
+      "title": "Anthropic confidentially files for IPO at ~$965B valuation, run-rate revenue hits $30B",
+      "summary": "Anthropic announced a confidential S-1 filing with the SEC, following a financing round that closed at a $965B valuation — surpassing OpenAI. Run-rate revenue surpassed $30B (up from $9B at end of 2025), with 1,000+ enterprise customers each spending over $1M annually.",
+      "category": "anthropic",
+      "sourceURL": "https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html",
       "significance": 7
     },
     {
-      "id": "reflection-ai-colossus2-compute-deal-2026-06-24",
-      "title": "Reflection AI commits $150M/month for GB300 compute on SpaceX Colossus 2",
-      "summary": "Reflection AI will pay $150 million per month from July 1, 2026 through 2029 for immediate access to Nvidia GB300 chips and hardware at SpaceX's Colossus 2 data center. The deal signals a new tier of frontier-lab compute spend and further consolidates SpaceX's position as a major AI infrastructure broker following its Cursor acquisition.",
-      "category": "otherLLM",
-      "sourceURL": "https://llm-stats.com/ai-news",
-      "significance": 6
+      "id": "google-gemini-cli-consumer-sunset-antigravity-2026-06-18",
+      "title": "Google sunsets free Gemini CLI on June 18, replaces it with closed-source Antigravity CLI",
+      "summary": "Gemini CLI (104K+ GitHub stars, Apache 2.0) stopped serving Google AI Pro, Ultra, and free Code Assist users on June 18; the replacement is Antigravity CLI, a closed-source Go rewrite that swaps daily limits for weekly ones. Enterprise Standard/Enterprise license holders keep Gemini CLI access uninterrupted.",
+      "category": "google",
+      "sourceURL": "https://www.theregister.com/ai-ml/2026/05/20/bye-bye-gemini-cli-google-nudges-devs-toward-antigravity/5243605",
+      "significance": 7
     }
   ],
   "learn": [
     {
-      "id": "antigravity-cli-agy",
-      "name": "Antigravity CLI (agy)",
-      "category": "google",
-      "oneLineDescription": "Google's closed-source Go terminal agent that replaced Gemini CLI on June 18.",
-      "estimatedSetupMinutes": 10,
-      "detail": {
-        "whatItDoes": "Antigravity CLI is Google's replacement for Gemini CLI, invoked with the binary `agy`. It is a compiled Go binary (no Node.js dependency) that defaults to Gemini 3 Pro and adds parallel async agent orchestration: you can kick off a large-scale refactor or a research task in the background without locking your terminal. It shares a common agent harness with the Antigravity 2.0 desktop app, so improvements to core agents propagate to both.\n\nKey behavioral differences from Gemini CLI: the streaming output format changed from plain text deltas to SSE-formatted events; exit codes are now non-zero on tool-use failures (Gemini CLI exited 0); and MCP server config moved from `~/.gemini/settings.json` (field: `url`) to `~/.antigravity/mcp_config.json` (field: `serverUrl`). Quotas also shifted from a 1,000-requests-per-day cap to a weekly compute cap — heavy users report hitting it mid-workday.",
-        "whoItsFor": "Any developer who was on a free, Google AI Pro, or Ultra tier using Gemini CLI. Enterprise users on Gemini Code Assist Standard/Enterprise are exempt for now. If your CI pipelines, cron jobs, or shell scripts call `gemini`, you need to audit and replace those calls with `agy` — otherwise they broke on June 18 with no grace period.",
-        "pros": [
-          "Faster execution: single compiled Go binary, no Node.js/npm runtime required",
-          "Parallel async sub-agents for complex multi-step tasks without blocking the terminal",
-          "Unified harness with Antigravity 2.0 desktop app; agent improvements ship to both simultaneously",
-          "Defaults to Gemini 3 Pro instead of gemini-1.5-pro"
-        ],
-        "cons": [
-          "Closed-source — no Apache 2.0 repo with readable source; GitHub presence is just a changelog and a README",
-          "Not at full feature parity with Gemini CLI at launch; some edge-case capabilities may never arrive",
-          "Weekly compute quota replaces the old 1,000-requests/day cap; heavy users report hitting it fast",
-          "Google has cut usage quotas four times since December 2025 without advance notice"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- A Google account (free, Google AI Pro, or Ultra) OR a paid Gemini API key\n- macOS, Linux, or Windows\n- **No Node.js required** — agy is a single Go binary\n\n## 1. Remove Gemini CLI (avoids conflicts)\n\n```bash\n# If you installed via npm\nnpm uninstall -g @google/gemini-cli\n\n# Verify it's gone\nwhich gemini  # should return nothing\n```\n\n## 2. Install Antigravity CLI\n\n```bash\n# macOS / Linux — official install script\ncurl -sSL https://dl.google.com/antigravity/install.sh | bash\n\n# Or via Homebrew (macOS)\nbrew install --cask google-antigravity\n\n# Windows — download from the Antigravity release page and add to PATH\n# https://cloud.google.com/antigravity/docs/cli/install\n```\n\n## 3. Verify the install\n\n```bash\nagy --version\n# Should print something like: Antigravity CLI 1.x.x\n```\n\n## 4. Sign in\n\n```bash\nagy auth login\n# Opens a browser for Google OAuth — same account as your old Gemini CLI login\n```\n\n## 5. Migrate MCP server config (if you used MCP with Gemini CLI)\n\n**Gotcha:** The field name changed from `url` to `serverUrl`. Copying your old config verbatim causes *silent* failures — `agy` starts successfully but MCP tools never connect.\n\n```bash\n# Create the new config directory\nmkdir -p ~/.antigravity\n\n# Manually migrate your MCP servers:\n# OLD: ~/.gemini/settings.json had { \"mcpServers\": { \"myserver\": { \"url\": \"...\" } } }\n# NEW: ~/.antigravity/mcp_config.json needs { \"mcpServers\": { \"myserver\": { \"serverUrl\": \"...\" } } }\n\ncat > ~/.antigravity/mcp_config.json << 'EOF'\n{\n  \"mcpServers\": {\n    \"my-mcp-server\": {\n      \"serverUrl\": \"http://localhost:3000\"\n    }\n  }\n}\nEOF\n```\n\n**Verify MCP actually connected** — don't just check that `agy` starts:\n\n```bash\nagy \"list the tools you have available from MCP\"\n# If MCP is broken, you'll get no tools listed despite a clean startup\n```\n\n## 6. Fix your automation scripts\n\n```bash\n# Find every place you call gemini in scripts, GitHub Actions, Makefiles, cron:\ngrep -r 'gemini ' ~/.bashrc ~/.zshrc ~/scripts/ .github/ Makefile 2>/dev/null\n\n# Replace:\n# BEFORE: gemini \"do something\"\n# AFTER:  agy \"do something\"\n```\n\n## Gotchas\n- **Streaming format changed**: scripts that parse `--stream` output (plain text deltas in Gemini CLI) now receive SSE-formatted events from `agy`. Rewrite any parsers.\n- **Exit codes changed**: Gemini CLI exited 0 on tool-use failures; `agy` exits non-zero. CI pipelines with `set -e` will now halt on previously-silent errors.\n- **Weekly quota**: Parallel agents consume quota faster than single-turn calls. Monitor with `agy quota status`.\n- **State directory moved**: `~/.gemini/agents/` → `~/.antigravity/agents/` — existing agent state is not auto-migrated.",
-        "sourceURL": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
-      }
-    },
-    {
-      "id": "claude-code-artifacts",
-      "name": "Claude Code Artifacts",
-      "category": "anthropic",
-      "oneLineDescription": "Turn any Claude Code session into a live, shareable, auto-updating web page.",
-      "estimatedSetupMinutes": 2,
-      "detail": {
-        "whatItDoes": "Claude Code Artifacts let a running session publish its work as a live web page that updates in place as the session progresses. The artifact can be a PR walkthrough, an incident timeline, a dashboard (filterable and sortable), a release checklist that fills itself out, or a system architecture explainer. It draws from the session's full context — codebase, connected MCP tools, and conversation — without requiring separate data wiring.\n\nEvery publish creates a new version at the same link, with version history so teammates can restore a prior state. Sharing is private by default (org-only) on Team and Enterprise plans. The artifact updates live: anyone with the link sees changes the moment Claude Code publishes them.",
-        "whoItsFor": "Engineering teams and tech leads who currently write status updates, incident reports, or PR descriptions by hand after a Claude Code session. Also useful for solo developers who want a living document that tracks what an agent session changed and why — especially helpful for long-running refactors or incident investigations where context would otherwise be lost in terminal scroll.",
-        "pros": [
-          "Zero infrastructure: Claude Code builds and hosts the artifact from session context — no separate dashboard tooling required",
-          "Live updates: open page refreshes in place as the session progresses, so no manual re-sharing",
-          "Version history lets you restore any prior published state from the gallery",
-          "Combines code, MCP connector data, and reasoning in one page — e.g. failing test + error spike from monitoring + root-cause from the session"
-        ],
-        "cons": [
-          "Private org-only sharing and version history are in beta — availability varies by plan",
-          "Artifact quality depends on how well the session was structured; poorly-scoped sessions produce poorly-structured artifacts",
-          "No custom domain or export to PDF/HTML yet at launch"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- Claude Code v2.1.150+ (run `claude --version` to check; update with `claude update`)\n- Claude Team, Enterprise, or pay-as-you-go plan (Artifacts sharing scope varies by plan)\n\n## 1. Update Claude Code\n\n```bash\nclaude update\nclaude --version\n# Should be v2.1.150 or higher\n```\n\n## 2. Create an artifact during a session\n\nStart any session and ask Claude to publish an artifact:\n\n```bash\nclaude\n```\n\nThen inside the session:\n\n```\n> Refactor the auth module to use the new JWT library, then create an artifact summarizing what changed, why, and any migration steps the team needs.\n```\n\nClaude Code will run the refactor and then publish a live page.\n\n## 3. Ask for specific artifact types\n\n```\n# PR walkthrough\n> Create a PR walkthrough artifact for these changes.\n\n# Incident page (combine MCP monitoring data + code context)\n> Create an incident artifact covering the error spike we just diagnosed.\n\n# Release checklist that auto-fills\n> Create a release checklist artifact for v2.4.0 and check off each item as we complete it.\n```\n\n## 4. Browse and manage your artifacts\n\n```bash\n# Inside a Claude Code session:\n/artifacts\n# Opens the gallery showing all published artifacts with version history\n```\n\n## Gotchas\n- **Artifacts are org-only by default**: the shareable link requires the recipient to be in your Claude org. Public sharing is not available at launch.\n- **Version history is in beta**: if you don't see it, check your plan tier and wait for the beta to roll out to your org.\n- **MCP connector data requires active connectors**: if your session doesn't have MCP tools connected, artifacts won't include external data (monitoring, Jira, etc.). Set up connectors first via the Claude web app Settings → Connectors.",
-        "sourceURL": "https://code.claude.com/docs/en/whats-new"
-      }
-    },
-    {
-      "id": "openai-codex-cli-record-replay",
-      "name": "OpenAI Codex CLI (Record & Replay)",
-      "category": "openai",
-      "oneLineDescription": "Demonstrate a workflow once on macOS; Codex turns it into a reusable skill automatically.",
-      "estimatedSetupMinutes": 15,
-      "detail": {
-        "whatItDoes": "Codex CLI is OpenAI's open-source (Apache-2.0), Rust-based coding agent for the terminal. The June 2026 release adds Record & Replay: on macOS, Business users can record a workflow — clicking through a UI, filling forms, running commands — and Codex captures it as a reusable skill that can be replayed via Computer Use, browser actions, plugins, or any combination. It is most useful for stable, repeatable workflows that are easier to demonstrate than describe (e.g., creating a configured issue in a project tracker, publishing a video, downloading a recurring report).\n\nThe CLI also added a Sites plugin (preview) that lets Codex deploy web apps, dashboards, and internal tools directly to OpenAI-hosted infrastructure from inside the terminal. The underlying model is GPT-5.5, which holds the highest SWE-bench Verified score (88.7%) of any coding agent as of June 2026. Context window is 256K tokens (standard) or 1M tokens with GPT-5.4.",
-        "whoItsFor": "Developers and technical product teams on ChatGPT Plus, Pro, Business, or Enterprise plans who run repetitive cross-app workflows. Record & Replay specifically targets tasks that are painful to script but trivial to click through once. Also relevant for teams evaluating Codex as an alternative to Claude Code — the Rust rewrite, sandboxed shell execution, and GPT-5.5 integration make it a competitive option.",
-        "pros": [
-          "Record & Replay captures GUI workflows without writing automation scripts — show it once, reuse indefinitely",
-          "Open-source (Apache-2.0) and Rust-built: fast startup, low memory, readable source at github.com/openai/codex",
-          "Shell commands run in a sandboxed container by default — can't touch the rest of your machine without explicit approval",
-          "GPT-5.5 default model scores 88.7% on SWE-bench Verified, essentially tied with Claude Opus 4.8"
-        ],
-        "cons": [
-          "Record & Replay requires Computer Use enabled, and is currently macOS-only; excluded from EU, UK, Switzerland",
-          "Full feature set (Codex app, Sites, Computer Use) requires Business or higher plan — CLI is included in Plus/Pro but advanced features are gated",
-          "Sites plugin is preview-only; not suitable for production traffic yet"
-        ],
-        "setupGuideMarkdown": "## Prerequisites\n- macOS, Linux, or Windows\n- ChatGPT Plus, Pro, Business, Edu, or Enterprise subscription (OR an OpenAI API key)\n- Node.js 18+ for npm install path; or use the standalone installer (no Node.js needed)\n- For Record & Replay: macOS, ChatGPT Business or higher, Computer Use enabled by your org admin\n\n## 1. Install Codex CLI\n\n```bash\n# Option A: npm (requires Node 18+)\nnpm install -g @openai/codex\n\n# Option B: standalone installer (macOS/Linux, no Node dependency)\ncurl -fsSL https://cdn.openai.com/codex/install.sh | bash\n\n# Option C: Homebrew (macOS)\nbrew install --cask codex\n\n# Verify\ncodex --version\n```\n\n## 2. Authenticate\n\n```bash\ncodex\n# First run prompts for sign-in.\n# Choose: ChatGPT account (browser OAuth) OR API key\n\n# To use an API key directly:\nexport OPENAI_API_KEY=\"sk-...\"\ncodex\n```\n\n## 3. Run your first task\n\n```bash\n# Interactive TUI session\ncodex\n\n# One-shot non-interactive (good for scripts)\ncodex exec \"add input validation to the signup form in src/auth.ts\"\n\n# Switch model inside TUI\n# Type: /model\n# Then select from the picker (GPT-5.5, GPT-5.4, GPT-5.2-Codex, etc.)\n```\n\n## 4. Set up Record & Replay (macOS Business only)\n\n```\n# Inside the Codex macOS app (not CLI):\n# 1. Ensure Computer Use is enabled: Settings → Computer Use → Enable\n# 2. Click the Record button (top bar) to start capturing\n# 3. Perform the workflow you want to automate\n# 4. Click Stop — Codex names and saves the skill\n# 5. Use the skill: open the skill picker and select it, or reference it in a prompt\n```\n\n## 5. Run Codex in fully automated mode (CI/CD)\n\n```bash\n# --full-auto skips all approval prompts — use only in sandboxed CI environments\ncodex exec --full-auto \"run the test suite and fix any failing tests\"\n\n# For unattended installs:\nCODEX_NON_INTERACTIVE=1 bash install.sh\n```\n\n## Gotchas\n- **Approval mode matters**: default mode asks before every file write or shell command. `--full-auto` removes that gate — only use it in disposable CI containers.\n- **Record & Replay is excluded from EU/UK/Switzerland** at initial launch; check your region before planning workflows around it.\n- **API key vs. ChatGPT login**: logging in via ChatGPT gives you GPT-5.5 and the full 256K context. An API key defaults to GPT-5.2-Codex and bills per token — check which you want before starting.\n- **Sites plugin (preview)**: enable it from the Codex app sidebar → Sites. Hosted environment variables and secrets are managed per-site in the UI.",
-        "sourceURL": "https://developers.openai.com/codex/changelog"
-      }
-    },
-    {
-      "id": "bumblebee-supply-chain-scanner",
-      "name": "Bumblebee",
+      "id": "headroom-token-compression-mcp-2026-06",
+      "name": "Headroom",
       "category": "tooling",
-      "oneLineDescription": "Read-only supply chain scanner for npm, PyPI, MCP servers, VS Code extensions from Perplexity AI.",
+      "oneLineDescription": "Compress tool outputs, logs, and RAG chunks 60-95% before they hit the LLM.",
       "estimatedSetupMinutes": 5,
       "detail": {
-        "whatItDoes": "Bumblebee is a read-only supply chain security scanner from Perplexity AI written in Go 1.25 with zero non-standard library dependencies. In a single pass it scans npm packages, PyPI packages, Go modules, RubyGems, Composer packages, MCP servers, VS Code extensions, and browser extensions for suspicious or malicious packages. Because it is read-only by design and makes no unexpected network calls, it can be safely added to CI pipelines and developer laptops without introducing new attack surface.\n\nThe motivation is direct: the AI tooling era has dramatically expanded the supply chain attack surface. MCP servers are often installed by clicking a Discord link. Editor extensions have full filesystem access. Browser extensions see every page. Bumblebee audits all of these at once instead of requiring separate tools per ecosystem.",
-        "whoItsFor": "Security-conscious developers and DevSecOps teams who install MCP servers, editor extensions, or AI tooling from third-party sources. Useful as a pre-commit hook or CI step for any team that has expanded its AI tool footprint in 2025-2026 and wants a fast audit of what is actually in the dependency graph.",
+        "whatItDoes": "Headroom is an open-source context compression layer that preprocesses tool outputs, system logs, raw files, and RAG-retrieved chunks before they are sent to an LLM. It strips redundancy and non-essential content while preserving semantic integrity, achieving 60-95% token reduction with claimed identical answer quality.\n\nIt ships in three integration modes: a Python library for inline use inside your own code, an HTTP proxy that transparently compresses any LLM request pipeline, and an MCP server so any MCP-compatible agent (Claude Code, Codex, Cursor) can compress context without code changes.",
+        "whoItsFor": "Engineers running agentic coding pipelines (Claude Code, Codex, Cursor) where tool call outputs and file reads are burning context budget. Particularly valuable for RAG pipelines returning large document chunks, CI/CD agents looping over verbose logs, and teams hitting rate limits or token cost ceilings on paid API tiers.",
         "pros": [
-          "Single binary, zero runtime dependencies — trivial to add to any CI pipeline or developer machine",
-          "Covers MCP servers and editor extensions, not just traditional package ecosystems",
-          "Read-only by design — cannot modify files or make unexpected outbound calls",
-          "Written in Go 1.25 with zero non-standard library dependencies: easy to audit the scanner itself"
+          "60-95% token reduction directly lowers API costs and extends effective context window",
+          "Three deployment modes (library, proxy, MCP server) fit most stack architectures without refactoring",
+          "Zero-dependency on any specific LLM provider — works with OpenAI, Anthropic, Google, and local models",
+          "10K+ GitHub stars in weeks, active issue tracker, real-world validation from Claude Code and Cursor users"
         ],
         "cons": [
-          "Backed by Perplexity AI — longevity and update cadence depend on Perplexity's prioritization",
-          "Detection quality depends on the threat intelligence database; novel or very new malicious packages may not be flagged yet"
+          "Compression quality on highly structured or code-heavy outputs is unverified at scale; benchmark claims are self-reported",
+          "Proxy mode adds a network hop and a potential single point of failure in production pipelines"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- macOS or Linux (Windows support: check the README)\n- No runtime dependencies — single binary\n\n## 1. Install Bumblebee\n\n```bash\n# macOS via Homebrew\nbrew install perplexity-ai/tap/bumblebee\n\n# Linux: download the binary directly\ncurl -fsSL https://github.com/perplexity-ai/bumblebee/releases/latest/download/bumblebee-linux-amd64 \\\n  -o /usr/local/bin/bumblebee\nchmod +x /usr/local/bin/bumblebee\n\n# Verify\nbumblebee --version\n```\n\n## 2. Scan your current project\n\n```bash\n# From your project root — scans all detected package manifests\nbumblebee scan .\n\n# Scan a specific ecosystem\nbumblebee scan --npm .\nbumblebee scan --pypi .\nbumblebee scan --mcp ~/.claude/mcp_config.json\n```\n\n## 3. Scan editor extensions and MCP servers\n\n```bash\n# VS Code extensions\nbumblebee scan --vscode\n\n# MCP servers (Claude Code config)\nbumblebee scan --mcp ~/.claude/mcp_config.json\n\n# Everything at once\nbumblebee scan --all\n```\n\n## 4. Add to CI (GitHub Actions example)\n\n```yaml\n# .github/workflows/supply-chain.yml\nname: Supply Chain Scan\non: [push, pull_request]\njobs:\n  bumblebee:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - name: Install Bumblebee\n        run: |\n          curl -fsSL https://github.com/perplexity-ai/bumblebee/releases/latest/download/bumblebee-linux-amd64 \\\n            -o /usr/local/bin/bumblebee\n          chmod +x /usr/local/bin/bumblebee\n      - name: Scan dependencies\n        run: bumblebee scan --all .\n```\n\n## Gotchas\n- **MCP server scanning requires the config file path**: Bumblebee doesn't auto-discover MCP configs; pass the path explicitly with `--mcp <path>`.\n- **Browser extension scanning may require elevated permissions** on some platforms to read the extensions directory.\n- **Read-only means no auto-remediation**: Bumblebee flags issues but does not remove packages. You act on the report manually.",
-        "sourceURL": "https://github.com/perplexity-ai/bumblebee"
+        "setupGuideMarkdown": "## Prerequisites\n- Python 3.10+\n- An existing LLM API key (Anthropic, OpenAI, etc.)\n\n## Option 1: Library (inline, fastest to try)\n\n```bash\npip install headroom\n```\n\n```python\nfrom headroom import compress\n\n# Compress a tool output string before inserting into a prompt\nraw_log = open(\"build.log\").read()  # e.g. 50K tokens of CI output\ncompressed = compress(raw_log)\n\n# Drop compressed into your messages array as usual\nmessages = [\n    {\"role\": \"user\", \"content\": f\"Debug this build:\\n{compressed}\"}\n]\n```\n\n**Gotcha:** `compress()` is lossy by design — always test on your actual data before deploying to production. Structured JSON tool outputs compress well; tightly formatted code diffs may degrade.\n\n## Option 2: MCP Server (zero-code change for Claude Code / Codex)\n\n```bash\n# Install\npip install headroom\n\n# Start the MCP server\nheadroom serve --port 8765\n```\n\nThen add to your `claude_code_settings.json` or `~/.codex/mcp.json`:\n\n```json\n{\n  \"mcpServers\": {\n    \"headroom\": {\n      \"url\": \"http://localhost:8765\"\n    }\n  }\n}\n```\n\nRestart your agent. All tool call responses will be compressed transparently before reaching the model.\n\n## Option 3: HTTP Proxy (drop-in for any LLM client)\n\n```bash\n# Run proxy on port 4000, forwarding to Anthropic\nheadroom proxy --upstream https://api.anthropic.com --port 4000\n```\n\n```bash\n# Point your client at localhost:4000 instead\nexport ANTHROPIC_BASE_URL=http://localhost:4000\n```\n\n**Gotcha for proxy mode:** You must pass your real API key through the proxy. Check the Headroom docs for the `--passthrough-auth` flag if your client adds auth headers that conflict.",
+        "sourceURL": "https://github.com/chopratejas/headroom"
       }
     },
     {
-      "id": "claude-code-official-plugins",
-      "name": "anthropics/claude-plugins-official",
+      "id": "anthropic-claude-tag-slack-learn-2026-06",
+      "name": "Claude Tag (Slack)",
       "category": "anthropic",
-      "oneLineDescription": "Anthropic's managed GitHub directory of production-ready Claude Code plugins (30k+ stars).",
-      "estimatedSetupMinutes": 3,
+      "oneLineDescription": "Add @Claude to your Slack workspace as a persistent team member that handles async tasks.",
+      "estimatedSetupMinutes": 10,
       "detail": {
-        "whatItDoes": "claude-plugins-official is the Anthropic-managed GitHub repository that serves as the official marketplace for Claude Code plugins. Plugins are packages that add domain-specific skills, slash commands, MCP server connectors, subagents, hooks, and LSP support on top of Claude Code. Each plugin is implemented as markdown and JSON — no build steps, no compiled code — making them readable and customizable by anyone.\n\nThe official library covers productivity (Slack, Notion, Linear), sales (HubSpot, Clay, ZoomInfo), customer support (ticket triage, knowledge base), legal, finance, data, and security (Security Guidance, Semgrep). As of June 1, 2026, the top plugins by installs were Frontend Design (829K installs), Superpowers (752K installs), and Context7 (348K installs). The separately maintained anthropics/knowledge-work-plugins repo covers 11 production knowledge-work plugins (sales, legal, finance, data, product management) at 17K+ stars.",
-        "whoItsFor": "Any Claude Code user who wants to extend the tool with domain-specific context, external service connectors, or repeatable slash commands — without writing code. Particularly useful for team leads who want to standardize how an entire team interacts with Claude Code (same skills, same hooks, same MCP connectors installed from one place).",
+        "whatItDoes": "Claude Tag lets teams add Claude as a named participant in Slack channels. Admins grant Claude access to specific channels and connect it to tools, data sources, and codebases. Anyone in the channel can then @-mention Claude to delegate a task — it picks up context from the channel history, executes using its connected tools, and posts results asynchronously.\n\nClaude builds a persistent memory of channel context over time, learning team preferences, recurring workflows, and project state. It is powered by Opus 4.8 and sits on top of the same agentic infrastructure as Claude Code, meaning it can run subagents, use MCP servers, and plan multi-step tasks.",
+        "whoItsFor": "Engineering and product teams on Claude Enterprise or Team plans who already use Slack as a coordination layer. Particularly suited for teams doing repeated code reviews, codebase Q&A, incident response triage, or documentation updates — tasks where the workflow is well-defined but the requester is not a developer sitting at a terminal.",
         "pros": [
-          "Anthropic-managed quality bar — official plugins are reviewed and maintained by the team that builds Claude Code",
-          "Zero-code plugin format: skills and commands are plain markdown files any team member can read and customize",
-          "Directly installable from inside Claude Code via /plugin marketplace or the /plugin init scaffold command",
-          "Covers the full stack from LSP code intelligence to external service connectors (Jira, Figma, Supabase, etc.)"
+          "Async by default — delegate a task and context-switch; Claude posts results when done",
+          "Persistent channel memory means Claude learns your project conventions over time without reprompting",
+          "Same underlying model and tool access as Claude Code; not a stripped-down chatbot",
+          "Enterprise-grade access controls: admins choose which channels and which tools Claude can see"
         ],
         "cons": [
-          "Official library is curated and slow-moving — community plugins in third-party repos move faster but lack quality guarantees",
-          "Plugin executables run on the Bash tool PATH — review any plugin that includes executable scripts before installing in a sensitive environment"
+          "Beta — currently Enterprise and Team plan only, no individual Pro support at launch",
+          "Channel memory is Anthropic-managed cloud storage; teams with strict data residency requirements should review terms before enabling"
         ],
-        "setupGuideMarkdown": "## Prerequisites\n- Claude Code v2.1.145+ (run `claude --version`; update with `claude update`)\n- Claude account (plugins require API or subscription access; no free tier for Claude Code)\n\n## 1. Browse the official marketplace inside Claude Code\n\n```bash\nclaude\n# Then inside the TUI:\n/plugin\n# Opens the Discover tab showing the official marketplace\n```\n\n## 2. Install a plugin directly by name\n\n```bash\n# Inside a Claude Code session:\n/plugin install security-guidance\n/plugin install context7\n/plugin install frontend-design\n\n# Or from the CLI before starting a session:\nclaude --plugin-dir ~/.claude/plugins/security-guidance\n```\n\n## 3. Install the full official library from GitHub\n\n```bash\n# Clone the official plugin repo\ngit clone https://github.com/anthropics/claude-plugins-official.git ~/.claude/official-plugins\n\n# Point Claude Code at it (one-time setup in settings.json)\ncat >> ~/.claude/settings.json << 'EOF'\n{\n  \"pluginMarketplaces\": [\n    { \"source\": \"~/.claude/official-plugins\", \"name\": \"official\" }\n  ]\n}\nEOF\n```\n\n## 4. Install the knowledge-work plugins (sales, legal, finance, data)\n\n```bash\ngit clone https://github.com/anthropics/knowledge-work-plugins.git ~/.claude/knowledge-work\n\n# Then inside Claude Code:\n/plugin install --dir ~/.claude/knowledge-work/sales\n/plugin install --dir ~/.claude/knowledge-work/legal\n```\n\n## 5. Scaffold a custom plugin for your team\n\n```bash\n# Inside a Claude Code session:\n/plugin init my-team-workflow\n# Creates ~/.claude/skills/my-team-workflow/ with a CLAUDE.md template\n# Edit the markdown to add your team's skills, then /plugin install it\n```\n\n## Gotchas\n- **Plugin hooks run as shell commands**: any plugin with PostToolUse or PreToolUse hooks executes shell code on your machine. Read the hook definitions in the plugin's CLAUDE.md before installing.\n- **Marketplace auto-loads on session start**: if a plugin update breaks something, run `/plugin marketplace update claude-plugins-official` to refresh, or `--safe-mode` to start with all plugins disabled for debugging.\n- **`/plugin list` shows installed plugins inline** (added in v2.1.157) — use this to audit what is active in a session before running sensitive tasks.",
-        "sourceURL": "https://github.com/anthropics/claude-plugins-official"
+        "setupGuideMarkdown": "## Prerequisites\n- Claude Enterprise or Team plan\n- Slack workspace admin access\n- Claude Code access (included with Team plan Standard seats as of recent update)\n\n## Setup Steps\n\n### 1. Enable Claude Tag in Claude Console\n\n```\n1. Go to console.anthropic.com\n2. Navigate to Integrations > Claude Tag\n3. Click \"Connect to Slack\"\n4. Authorize the OAuth flow for your Slack workspace\n```\n\n### 2. Invite Claude to a channel\n\n```\n# In Slack, in the target channel:\n/invite @Claude\n```\n\n### 3. Connect tools (optional but recommended)\n\n```\n# Back in Claude Console:\n# Integrations > Claude Tag > Configure Tools\n# Add MCP servers, GitHub, or other connectors\n# Scope them to specific channels as needed\n```\n\n### 4. Delegate your first task\n\n```\n# In Slack:\n@Claude review the last 3 PRs merged to main and summarize any risky changes\n\n@Claude check our open GitHub issues labeled \"bug\" and triage them by severity\n```\n\n**Gotcha:** Claude Tag uses Opus 4.8 by default, which counts against your plan's Opus token quota. Heavy async usage can burn through credits faster than interactive Claude.ai sessions — monitor usage in Console > Analytics for the first week.\n\n**Gotcha 2:** Claude builds memory from channel history it can see *after* being invited. It does not backfill historical messages before the invitation date.",
+        "sourceURL": "https://www.anthropic.com/news"
+      }
+    },
+    {
+      "id": "gemini-cli-open-source-terminal-agent-2026",
+      "name": "Gemini CLI",
+      "category": "google",
+      "oneLineDescription": "Google's open-source terminal AI agent — 1M context, MCP support, free personal quota.",
+      "estimatedSetupMinutes": 3,
+      "detail": {
+        "whatItDoes": "Gemini CLI is an Apache 2.0 TypeScript terminal agent from Google that runs a ReAct (reason-and-act) loop with built-in tools: Google Search grounding, file operations, shell command execution, and web fetching. It supports MCP servers for custom tool integrations and uses a GEMINI.md context file for persistent per-project instructions.\n\nIt targets the same workflow as Claude Code and Codex CLI — autonomous coding, codebase Q&A, and multi-step task execution from the terminal. Note: as of June 18, 2026, free consumer access (Google AI Pro/Ultra/free Code Assist) has been migrated to the closed-source Antigravity CLI. The open-source Gemini CLI repo remains active for enterprise/API-key users and the open-source community.",
+        "whoItsFor": "Developers who want an open-source, inspectable coding agent that runs locally in their terminal with a Gemini API key or Google Cloud Vertex AI credentials. Good for teams that need to self-host or audit the agent code. Enterprise users on Gemini Code Assist Standard/Enterprise plans retain full Gemini CLI access unchanged.",
+        "pros": [
+          "Apache 2.0 — fully inspectable, forkable, and self-hostable; no closed-source binary risk",
+          "1M token context window with Gemini 3 models via API key",
+          "MCP support and GEMINI.md project context files; ecosystem of 100+ community extensions already published",
+          "105K+ GitHub stars with 1,100+ contributors; actively maintained by Google"
+        ],
+        "cons": [
+          "Free consumer tier (personal Google account) was sunset June 18, 2026 — now requires paid API key or enterprise license for ongoing use",
+          "Closed-source Antigravity CLI is Google's new consumer product; Gemini CLI's free-tier replacement has aggressive weekly quota limits per community reports"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Node.js 20+\n- A Google AI Studio API key (free at aistudio.google.com) OR a Vertex AI service account key\n\n## Quickstart (no install, one-shot)\n\n```bash\nexport GOOGLE_API_KEY=\"YOUR_AI_STUDIO_KEY\"\nnpx @google/gemini-cli\n```\n\n## Permanent install\n\n```bash\nnpm install -g @google/gemini-cli\n\n# Verify\ngemini --version\n```\n\n## Configure your API key\n\n```bash\n# Option A: AI Studio key (simplest for individuals)\nexport GOOGLE_API_KEY=\"YOUR_AI_STUDIO_KEY\"\ngemini\n\n# Option B: Vertex AI (for enterprise/GCP billing)\nexport GOOGLE_GENAI_USE_VERTEXAI=true\nexport GOOGLE_CLOUD_PROJECT=\"your-project-id\"\ngcloud auth application-default login\ngemini\n```\n\n## Add project context (GEMINI.md)\n\n```bash\n# In your repo root:\ncat > GEMINI.md << 'EOF'\n# Project: MyApp\n- Language: TypeScript, Node 20\n- Test runner: vitest\n- Branching: always create a feature branch before editing\n- Do not modify package-lock.json manually\nEOF\n\ngemini \"add error handling to all API routes\"\n```\n\n## Add an MCP server\n\n```bash\n# Edit ~/.gemini/settings.json\n{\n  \"mcpServers\": {\n    \"github\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-github\"],\n      \"env\": { \"GITHUB_TOKEN\": \"your-pat\" }\n    }\n  }\n}\n```\n\n**Gotcha:** If you are on a free personal Google account after June 18, 2026, your requests now route to Antigravity CLI, not Gemini CLI. To use the open-source Gemini CLI, you **must** supply an explicit `GOOGLE_API_KEY` or Vertex AI credentials. The `gemini` binary from a global npm install will still work correctly if credentials are set.",
+        "sourceURL": "https://github.com/google-gemini/gemini-cli"
+      }
+    },
+    {
+      "id": "openai-codex-sites-role-plugins-learn-2026-06",
+      "name": "Codex Sites + Role Plugins",
+      "category": "openai",
+      "oneLineDescription": "Codex now builds and hosts internal apps from a prompt; six role plugins for 62 SaaS tools.",
+      "estimatedSetupMinutes": 10,
+      "detail": {
+        "whatItDoes": "OpenAI shipped two capabilities together on June 2. Role Plugins bundle 62 popular business apps (Snowflake, Salesforce, HubSpot, Figma, Databricks, Tableau, and more) with 110 pre-built agentic skills into six domain packs: Data Analytics, Sales, Equity Investing, Investment Banking, Design, and Software Engineering. Install a plugin and Codex understands your tool's API surface without custom configuration.\n\nCodex Sites (preview for Business/Enterprise) lets Codex generate and host interactive internal web apps — dashboards, scenario planners, project boards, review hubs — available at a workspace URL. Teams can update the app by prompting Codex rather than touching code.",
+        "whoItsFor": "Enterprise teams on ChatGPT Business or Enterprise plans who want Codex to operate inside their existing SaaS stack without building custom MCP servers or API integrations. Data analysts, sales ops, and finance teams are the stated primary users; non-developers already make up 20% of Codex's 5M weekly active users.",
+        "pros": [
+          "62 pre-wired SaaS integrations available at plugin install — no custom glue code for standard tools",
+          "Sites removes the need for a front-end developer for lightweight internal dashboards",
+          "Annotations let users make surgical edits to documents, spreadsheets, and slides without regenerating the whole artifact",
+          "Plugin ecosystem is explicitly opening to third-party partners — a growing catalog expected"
+        ],
+        "cons": [
+          "Sites is preview-only with no published usage caps or approval workflow; governance must be defined manually by admins before broad rollout",
+          "Business/Enterprise plan required — no access for individual ChatGPT Plus users at launch"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- ChatGPT Business or Enterprise plan\n- Workspace admin access to enable Sites\n- Codex app installed (codex.openai.com or via ChatGPT sidebar)\n\n## Install a Role Plugin\n\n```\n1. Open the Codex app\n2. Click the plugin icon in the sidebar\n3. Browse the plugin directory\n4. Select a role plugin (e.g., \"Data Analytics\")\n5. Click Install — Codex will walk you through connecting accounts\n```\n\n**Example prompt after installing Data Analytics plugin:**\n```\nPull last month's revenue by product line from Snowflake and build a \nweek-over-week trend chart. Export as a Hex notebook.\n```\n\n## Enable Codex Sites (Enterprise admin)\n\n```\n1. Go to ChatGPT Admin Console\n2. Settings > Features > Sites\n3. Enable Sites and configure RBAC — choose which roles can create Sites\n```\n\n## Build a Site from a prompt\n\n```\n# In the Codex composer:\n\"Create a sales pipeline dashboard showing open deals by stage,\nACV by rep, and time-in-stage heatmap. Make it shareable with the\nsales team by URL.\"\n```\n\nCodex will generate, deploy, and return a workspace URL. To update:\n```\n# Iterate by prompting directly:\n\"Add a filter for deal owner and a 30/60/90 day forecast panel.\"\n```\n\n**Gotcha:** Sites uses workspace identity, not SAML. Any workspace member with the link can view — confirm with your security team before sharing dashboards containing sensitive pipeline data. Published usage caps are not documented; monitor token credits during the preview period.",
+        "sourceURL": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      }
+    },
+    {
+      "id": "anthropic-claude-managed-agents-dreaming-2026-06",
+      "name": "Claude Managed Agents (Dreaming + Multiagent)",
+      "category": "anthropic",
+      "oneLineDescription": "Cloud-hosted Claude agents with persistent memory, parallel subagents, and webhook callbacks.",
+      "estimatedSetupMinutes": 20,
+      "detail": {
+        "whatItDoes": "Claude Managed Agents on the Claude Platform adds four production-ready capabilities for cloud-hosted agents. Dreaming is a scheduled background process that reviews past agent sessions, identifies patterns, and curates a persistent memory store — agents improve between runs without manual prompt engineering. Multiagent orchestration lets a lead agent decompose work and dispatch specialist subagents working in parallel on a shared filesystem, each with its own model, prompt, and tool access, with the full execution trace visible in Claude Console.\n\nOutcomes lets you record what happened after an agent run (success, failure, partial) and feed that signal back to improve future sessions. Webhooks deliver agent lifecycle events to your own infrastructure for integration with CI/CD, alerting, and audit systems.",
+        "whoItsFor": "Backend engineers and platform teams building production agentic workflows on Anthropic's platform — particularly those running multi-day coding tasks, large codebase migrations, or research pipelines that need to improve from run to run. Also valuable for teams evaluating whether to self-host agent orchestration versus using Anthropic's managed infrastructure.",
+        "pros": [
+          "Dreaming eliminates manual memory management — the platform curates agent memory automatically between runs",
+          "Parallel subagents on a shared filesystem match the multi-worker patterns most teams build by hand in LangGraph or CrewAI",
+          "Full execution trace in Claude Console without standing up your own observability stack",
+          "Doubled Claude Code rate limits shipped alongside this release"
+        ],
+        "cons": [
+          "Managed execution means Anthropic-controlled sandboxes — teams with strict data residency or air-gap requirements must use the self-hosted sandbox option instead",
+          "Dreaming memory curation is automatic and not fully transparent; what gets remembered vs. discarded is not yet user-configurable"
+        ],
+        "setupGuideMarkdown": "## Prerequisites\n- Claude API key (claude.ai API or Anthropic Console)\n- `anthropic` Python SDK >= latest (`pip install --upgrade anthropic`)\n- A Claude Enterprise, Team, or pay-as-you-go API account\n\n## Install / upgrade SDK\n\n```bash\npip install --upgrade anthropic\n```\n\n## Launch a Managed Agent with Dreaming enabled\n\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\n\n# Create a managed agent session with dreaming enabled\nsession = client.agents.sessions.create(\n    model=\"claude-opus-4-8\",\n    system=\"You are a senior engineer. Complete the task autonomously.\",\n    dreaming=True,  # enable cross-session memory curation\n    tools=[{\"type\": \"bash\"}, {\"type\": \"file_editor\"}],\n)\n\nprint(f\"Session ID: {session.id}\")\n\n# Start a task\nrun = client.agents.sessions.runs.create(\n    session_id=session.id,\n    messages=[{\"role\": \"user\", \"content\": \"Migrate all API handlers to async/await.\"}],\n)\n\nprint(f\"Run ID: {run.id} — Status: {run.status}\")\n```\n\n## Configure a webhook for lifecycle events\n\n```python\n# Register a webhook endpoint (do this once per project)\nwebhook = client.agents.webhooks.create(\n    url=\"https://your-server.example.com/claude-webhooks\",\n    events=[\"run.completed\", \"run.failed\", \"run.requires_action\"],\n)\nprint(f\"Webhook ID: {webhook.id}\")\n```\n\n## Monitor execution in Claude Console\n\n```\nconsole.anthropic.com > Agents > Sessions > [your session ID]\n```\n\nThe console shows the full subagent dispatch tree, tool calls, and memory writes in real time.\n\n**Gotcha:** Dreaming runs on a schedule set by Anthropic (not real-time). Memory from the current session is not available to the same session mid-run — it becomes available to *future* sessions. Design your prompts so the current run is self-contained; use Dreaming to accumulate cross-run learning, not intra-run state.\n\n**Gotcha 2:** Doubled rate limits apply to Claude Code CLI sessions, not raw API calls. If you are hitting rate limits on the API directly, submit a limit increase request via Console.",
+        "sourceURL": "https://releasebot.io/updates/anthropic/claude"
       }
     }
   ]
