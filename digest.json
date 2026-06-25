@@ -1,64 +1,64 @@
 {
   "schemaVersion": 1,
   "weekOf": "2026-06-22T00:00:00Z",
-  "reportGeneratedAt": "2026-06-25T12:00:00Z",
+  "reportGeneratedAt": "2026-06-25T09:28:52Z",
   "learnGeneratedAt": "2026-06-25T12:00:00Z",
   "report": [
     {
-      "id": "anthropic-fable5-mythos5-us-government-suspend-2026-06-12",
-      "title": "US government forces Anthropic to pull Fable 5 and Mythos 5 globally",
-      "summary": "The Commerce Department issued an export control directive on June 12 requiring Anthropic to suspend all access to Claude Fable 5 and Mythos 5 for foreign nationals, forcing Anthropic to disable both models for all customers worldwide — just three days after their launch. Anthropic complied while publicly disputing the rationale, calling the cited jailbreak narrow and non-universal; other models including Opus 4.8 remain available.",
-      "category": "anthropic",
-      "sourceURL": "https://www.anthropic.com/news/fable-mythos-access",
-      "significance": 9
-    },
-    {
-      "id": "anthropic-claude-tag-slack-beta-2026-06",
-      "title": "Anthropic ships Claude Tag for Slack — @Claude joins your team channels",
-      "summary": "Claude Tag lets Enterprise and Team plan users add @Claude as a Slack team member, delegating async tasks with tool and codebase access. Claude builds channel-level context over time and can plan future tasks — it's Claude Code's agentic loop extended to the whole team, not just the developer at the terminal.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic",
-      "significance": 8
-    },
-    {
-      "id": "anthropic-managed-agents-dreaming-multiagent-2026-05-29",
-      "title": "Anthropic ships Managed Agents with Dreaming, multiagent orchestration, and 2x Claude Code rate limits",
-      "summary": "Four new capabilities landed on the Claude Platform: Dreaming (scheduled session review that curates agent memory between runs), multiagent orchestration (a lead agent dispatching parallel subagents on a shared filesystem), outcomes tracking, and webhooks. Claude Code rate limits doubled simultaneously.",
-      "category": "anthropic",
-      "sourceURL": "https://releasebot.io/updates/anthropic/claude",
-      "significance": 8
-    },
-    {
-      "id": "openai-jalapeno-inference-chip-broadcom-2026-06-24",
-      "title": "OpenAI and Broadcom unveil Jalapeño, OpenAI's first custom LLM inference chip",
-      "summary": "Jalapeño is an LLM inference accelerator co-designed with Broadcom, developed from initial design to tape-out in nine months — claimed to be the fastest ASIC development cycle in high-performance semiconductors. Initial deployment is targeted before end of 2026; OpenAI says improvements in cost and speed will flow directly into ChatGPT and API pricing.",
+      "id": "openai-gpt56-launch-2026-06-25",
+      "title": "OpenAI ships GPT-5.6 and GPT-5.6 Pro today",
+      "summary": "GPT-5.6 and GPT-5.6 Pro were rumored for today's launch, with leaked codename 'kindle-alpha' clearing staging and stealth tests already running inside ChatGPT Pro accounts. Reported spec bumps: 1.5M token context window, stronger agentic coding, Playwright-native browser testing, and a redesigned reward-audit pipeline meant to prevent the cross-persona alignment failure that contaminated GPT-5.5 training data. Pricing is said to be roughly 5x cheaper than Anthropic's Fable 5. No official OpenAI release note confirmed at time of publication — verify at openai.com/news before integrating.",
       "category": "openai",
-      "sourceURL": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "sourceURL": "https://www.eweek.com/news/gpt-5-6-openai-coding-agent-rumors-neuron/",
       "significance": 8
     },
     {
-      "id": "openai-codex-role-plugins-sites-2026-06-02",
-      "title": "OpenAI ships Codex role plugins and Codex Sites — 62 apps, 110 skills, prompt-to-deployed-app",
-      "summary": "Six role-specific plugins (data analytics, sales, equity investing, investment banking, and more) connect Codex to 62 popular business apps with 110 pre-built skills. Codex Sites lets Business and Enterprise teams prompt Codex to build and host interactive internal apps directly from the Codex app. Non-developers now make up 20% of Codex's 5M weekly users and are growing 3x faster than developers.",
+      "id": "openai-gpt45-sunset-2026-06-27",
+      "title": "OpenAI retires GPT-4.5 from ChatGPT on June 27",
+      "summary": "GPT-4.5 exits ChatGPT for paid users on June 27, 2026, following a 30-day sunset. The API is unaffected, but any ChatGPT-based workflow defaulting to GPT-4.5 will auto-migrate — check your model settings before the weekend.",
       "category": "openai",
-      "sourceURL": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "sourceURL": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "significance": 6
+    },
+    {
+      "id": "openai-gpt55cyber-daybreak-2026-06-22",
+      "title": "OpenAI ships GPT-5.5-Cyber with record CyberGym score",
+      "summary": "GPT-5.5-Cyber launched June 22 as part of OpenAI's Daybreak cybersecurity initiative, hitting 85.6% on CyberGym and 39.5% on ExploitGym — both record scores. Access is gated to vetted partners including Akamai, Cloudflare, CrowdStrike, and Palo Alto Networks; no public API endpoint.",
+      "category": "openai",
+      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-24-2026",
       "significance": 7
     },
     {
-      "id": "anthropic-ipo-filing-valuation-2026-06",
-      "title": "Anthropic confidentially files for IPO at ~$965B valuation, run-rate revenue hits $30B",
-      "summary": "Anthropic announced a confidential S-1 filing with the SEC, following a financing round that closed at a $965B valuation — surpassing OpenAI. Run-rate revenue surpassed $30B (up from $9B at end of 2025), with 1,000+ enterprise customers each spending over $1M annually.",
-      "category": "anthropic",
-      "sourceURL": "https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html",
-      "significance": 7
-    },
-    {
-      "id": "google-gemini-cli-consumer-sunset-antigravity-2026-06-18",
-      "title": "Google sunsets free Gemini CLI on June 18, replaces it with closed-source Antigravity CLI",
-      "summary": "Gemini CLI (104K+ GitHub stars, Apache 2.0) stopped serving Google AI Pro, Ultra, and free Code Assist users on June 18; the replacement is Antigravity CLI, a closed-source Go rewrite that swaps daily limits for weekly ones. Enterprise Standard/Enterprise license holders keep Gemini CLI access uninterrupted.",
+      "id": "google-gemini35pro-ga-window-2026-06-25",
+      "title": "Gemini 3.5 Pro still stuck in enterprise preview as GA window closes",
+      "summary": "Google's Gemini 3.5 Pro remains limited Vertex AI preview as of June 25, the final day of Sundar Pichai's 'give us until next month' promise from Google I/O. Confirmed specs when it does land: 2M token context window, Deep Think reasoning mode behind the $250/month Ultra tier, estimated $15/$60 per million token pricing. No public model ID published yet.",
       "category": "google",
-      "sourceURL": "https://www.theregister.com/ai-ml/2026/05/20/bye-bye-gemini-cli-google-nudges-devs-toward-antigravity/5243605",
+      "sourceURL": "https://www.buildfastwithai.com/blogs/ai-news-today-june-23-2026",
+      "significance": 6
+    },
+    {
+      "id": "anthropic-fable5-export-control-2026-06-12",
+      "title": "Fable 5 export ban redirects non-US builders to GLM-5.2",
+      "summary": "A June 12 US government directive suspended international access to Anthropic's Fable 5 and Mythos 5, pushing non-US teams toward GLM-5.2 from Z.ai — MIT-licensed, 1M context, SWE-bench Pro score of 62.1 beating GPT-5.5's 58.6, at $1.40/$4.40 per million tokens. Self-hosting requires at minimum eight H100 GPUs.",
+      "category": "anthropic",
+      "sourceURL": "https://www.anthropic.com/news",
       "significance": 7
+    },
+    {
+      "id": "minimax-m3-open-weight-2026-06-01",
+      "title": "MiniMax M3 ships as first open-weight model with frontier coding, 1M context, and multimodal",
+      "summary": "MiniMax M3 launched June 1 with 59% SWE-bench Pro (edging GPT-5.5's 58.6%), a 1M-token context window via novel MSA sparse attention, and native image/video input — the first open-weight model to combine all three. API pricing started at $0.30/$1.20 per million tokens on OpenRouter promo; weights hit Hugging Face roughly ten days post-launch under a commercial-use license that requires review before production deployment.",
+      "category": "otherLLM",
+      "sourceURL": "https://www.minimax.io/blog/minimax-m3",
+      "significance": 7
+    },
+    {
+      "id": "anthropic-claude-tag-slack-2026-06-25",
+      "title": "Claude Tag brings @Claude into Slack with task assignment",
+      "summary": "Anthropic shipped Claude Tag, letting teams add Claude to any Slack channel by tagging @Claude and assigning it work directly in-thread. Internally it already generates 65% of code on Anthropic's own product team — a useful signal for teams evaluating async agent workflows over chat.",
+      "category": "anthropic",
+      "sourceURL": "https://llm-stats.com/ai-news",
+      "significance": 6
     }
   ],
   "learn": [
